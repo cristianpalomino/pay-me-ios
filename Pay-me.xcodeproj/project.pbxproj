@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */; };
+		40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
+		403377361E0334E700261759 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377351E0334E700261759 /* PMButton.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA201DFB0D88005D2E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1F1DFB0D88005D2E87 /* ViewController.swift */; };
 		406EEA231DFB0D88005D2E87 /* Servicios.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA211DFB0D88005D2E87 /* Servicios.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTabBarViewController.swift; sourceTree = "<group>"; };
+		40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationViewController.swift; sourceTree = "<group>"; };
+		403377351E0334E700261759 /* PMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406EEA1F1DFB0D88005D2E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +110,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		40180E5E1E021D230098B8C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */,
+				40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		406EEA111DFB0D88005D2E87 = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +144,10 @@
 		406EEA1C1DFB0D88005D2E87 /* Pay-me */ = {
 			isa = PBXGroup;
 			children = (
+				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
 				408E501E1DFB7A6D007BEEDE /* Views */,
 				408E501D1DFB6DF0007BEEDE /* Utils */,
 				408E501B1DFB67DF007BEEDE /* Servicios */,
-				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
-				406EEA1F1DFB0D88005D2E87 /* ViewController.swift */,
-				406EEA211DFB0D88005D2E87 /* Servicios.storyboard */,
 				406EEA241DFB0D88005D2E87 /* Assets.xcassets */,
 				406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */,
 				406EEA291DFB0D88005D2E87 /* Info.plist */,
@@ -163,6 +176,7 @@
 		408E501B1DFB67DF007BEEDE /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
+				40180E5E1E021D230098B8C4 /* Controllers */,
 				408E501C1DFB67F8007BEEDE /* UI */,
 			);
 			name = Servicios;
@@ -171,6 +185,8 @@
 		408E501C1DFB67F8007BEEDE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				406EEA1F1DFB0D88005D2E87 /* ViewController.swift */,
+				406EEA211DFB0D88005D2E87 /* Servicios.storyboard */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -186,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				408E501F1DFB7B13007BEEDE /* PMTextField.swift */,
+				403377351E0334E700261759 /* PMButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -484,9 +501,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403377361E0334E700261759 /* PMButton.swift in Sources */,
+				40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */,
 				406EEA201DFB0D88005D2E87 /* ViewController.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
+				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
