@@ -10,8 +10,11 @@
 		40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */; };
 		40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
 		403377361E0334E700261759 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377351E0334E700261759 /* PMButton.swift */; };
+		403377381E03D41900261759 /* NivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377371E03D41900261759 /* NivelUnoViewController.swift */; };
+		4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* NivelDosViewController.swift */; };
+		4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* NivelTresViewController.swift */; };
+		4033773E1E03D44800261759 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
-		406EEA201DFB0D88005D2E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1F1DFB0D88005D2E87 /* ViewController.swift */; };
 		406EEA231DFB0D88005D2E87 /* Servicios.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA211DFB0D88005D2E87 /* Servicios.storyboard */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
@@ -44,9 +47,12 @@
 		40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTabBarViewController.swift; sourceTree = "<group>"; };
 		40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationViewController.swift; sourceTree = "<group>"; };
 		403377351E0334E700261759 /* PMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
+		403377371E03D41900261759 /* NivelUnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelUnoViewController.swift; sourceTree = "<group>"; };
+		403377391E03D42600261759 /* NivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelDosViewController.swift; sourceTree = "<group>"; };
+		4033773B1E03D43A00261759 /* NivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelTresViewController.swift; sourceTree = "<group>"; };
+		4033773D1E03D44800261759 /* PMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		406EEA1F1DFB0D88005D2E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		406EEA221DFB0D88005D2E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Servicios.storyboard; sourceTree = "<group>"; };
 		406EEA241DFB0D88005D2E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		406EEA271DFB0D88005D2E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 			children = (
 				40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */,
 				40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */,
+				4033773D1E03D44800261759 /* PMViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -185,8 +192,10 @@
 		408E501C1DFB67F8007BEEDE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				406EEA1F1DFB0D88005D2E87 /* ViewController.swift */,
 				406EEA211DFB0D88005D2E87 /* Servicios.storyboard */,
+				403377371E03D41900261759 /* NivelUnoViewController.swift */,
+				403377391E03D42600261759 /* NivelDosViewController.swift */,
+				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -501,12 +510,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				403377381E03D41900261759 /* NivelUnoViewController.swift in Sources */,
 				403377361E0334E700261759 /* PMButton.swift in Sources */,
 				40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */,
-				406EEA201DFB0D88005D2E87 /* ViewController.swift in Sources */,
+				4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
+				4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
+				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
