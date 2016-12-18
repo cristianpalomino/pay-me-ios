@@ -21,7 +21,13 @@ class PMTabBarViewController: UITabBarController {
     }
 }
 
-extension PMTabBarViewController {
+extension UIViewController {
     
+    func blueTheme() {
+        
+    }
     
+    func whiteTheme() {
+        
+    }
 }

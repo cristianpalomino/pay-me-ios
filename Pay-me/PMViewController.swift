@@ -10,6 +10,8 @@ import UIKit
 
 class PMViewController: UIViewController {
 
+    var pmheader :PMHeaderView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavigationLogo()
@@ -20,16 +22,31 @@ class PMViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension PMViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func initHeader(titles :[String]) {
+        let width = Int(self.view.frame.width)
+        let heigth = Int(self.view.frame.height * 0.065)
+        let frame = CGRect(x: 0, y: 50, width: width, height: heigth)
+        pmheader = PMHeaderView(frame: frame, titles: titles)
+        self.view.addSubview(pmheader)
     }
-    */
+}
 
+extension UIViewController {
+    
+    func addKeyBoardObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDidShow), name: .UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDidHide), name: .UIKeyboardDidHide, object: nil)
+    }
+    
+    func keyboardDidShow() {
+        
+    }
+    
+    func keyboardDidHide() {
+        
+    }
 }
