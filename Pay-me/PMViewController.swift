@@ -38,11 +38,11 @@ extension PMViewController {
 extension UIViewController {
     
     func addKeyBoardObservers() {
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDidShow), name: .UIKeyboardDidShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDidShow), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDidHide), name: .UIKeyboardDidHide, object: nil)
     }
     
-    func keyboardDidShow() {
+    func keyboardDidShow(notification: NSNotification) {
         
     }
     

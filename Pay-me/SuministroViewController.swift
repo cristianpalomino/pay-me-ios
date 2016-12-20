@@ -10,8 +10,10 @@ import UIKit
 import Material
 
 class SuministroViewController: PMViewController {
-    @IBOutlet weak var bigBannerHeigth: NSLayoutConstraint!
-
+    @IBOutlet weak var bigBannerHeigth :NSLayoutConstraint!
+    @IBOutlet weak var buttonBottomConstraint :NSLayoutConstraint!
+    @IBOutlet weak var mainView: UIView!
+    
     @IBOutlet weak var txtIndentifier: TextField!
     @IBOutlet weak var btnInfo: UIButton!
     @IBOutlet weak var viewInfo: UIView!
@@ -37,11 +39,8 @@ extension SuministroViewController {
     
     func initComponents() {
         self.bannerView.layer.borderColor = UIColor.darkGray.cgColor
-        self.bannerView.backgroundColor = UIColor.lightGray
         self.bannerView.layer.borderWidth = 1
-        
-        self.bigBannerView.layer.borderColor = UIColor.darkGray.cgColor
-        self.bigBannerView.backgroundColor = UIColor.lightGray
+        self.bigBannerView.layer.borderColor = UIColor.gray.cgColor
         self.bigBannerView.layer.borderWidth = 1
     }
 }
@@ -59,14 +58,16 @@ extension SuministroViewController {
 
 extension SuministroViewController {
     
-    func hiddeBigBanner() {
-        print(self.bigBannerHeigth.constant)
-        self.bigBannerHeigth.multiplier = 0.0001
-        self.bigBannerView.layoutIfNeeded()
-    }
-    
-    override func keyboardDidShow() {
-        hiddeBigBanner()
+    override func keyboardDidShow(notification: NSNotification) {
+        if let userInfo = notification.userInfo {
+            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                self.bigBannerHeigth.constant = 0
+                self.buttonBottomConstraint.constant = keyboardSize.size.height - self.tabBarController!.tabBar.frame.size.height
+                UIView.animate(withDuration: 0.15, animations: {
+                    self.mainView.layoutIfNeeded()
+                })
+            }
+        }
     }
     
     override func keyboardDidHide() {
