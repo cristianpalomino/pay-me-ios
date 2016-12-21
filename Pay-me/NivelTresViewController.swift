@@ -10,13 +10,11 @@ import UIKit
 
 class NivelTresViewController: PMViewController {
     
-    var services = [String]()
+    var entidades = [String]()
     @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initComponents()
-        
         initHeader(titles: ["Publicas", "Privadas"])
     }
     
@@ -33,10 +31,8 @@ class NivelTresViewController: PMViewController {
 
 extension NivelTresViewController {
     
-    func initComponents() {
-        services = ["Service Item A","Service Item B","Service Item C","Service Item D"]
-        self.tableview.delegate = self
-        self.tableview.dataSource = self
+    override func initComponents() {
+        entidades = ["Service Item A","Service Item B","Service Item C","Service Item D"]
     }
 }
 
@@ -57,12 +53,12 @@ extension NivelTresViewController : UITableViewDelegate {
 extension NivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return services.count
+        return entidades.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ServiceTableViewCell.identifier, for: indexPath) as! ServiceTableViewCell
-        cell.title = services[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
+        cell.title = entidades[indexPath.row]
         return cell
     }
 }

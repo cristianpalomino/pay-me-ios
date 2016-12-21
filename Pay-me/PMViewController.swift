@@ -15,6 +15,7 @@ class PMViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavigationLogo()
+        initComponents()
         // Do any additional setup after loading the view.
     }
 
@@ -35,6 +36,13 @@ extension PMViewController {
     }
 }
 
+extension PMViewController: PMViewControllerDelegate {
+    
+    func initComponents() {
+        
+    }
+}
+
 extension UIViewController {
     
     func addKeyBoardObservers() {
@@ -49,4 +57,8 @@ extension UIViewController {
     func keyboardDidHide() {
         
     }
+}
+
+protocol PMViewControllerDelegate {
+    func initComponents()
 }

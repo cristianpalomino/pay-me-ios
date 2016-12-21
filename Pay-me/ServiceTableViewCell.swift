@@ -2,26 +2,21 @@
 //  ServiceTableViewCell.swift
 //  Pay-me
 //
-//  Created by Cristian Palomino Rivera on 16/12/16.
+//  Created by Cristian Palomino Rivera on 21/12/16.
 //  Copyright © 2016 Cristian Palomino Rivera. All rights reserved.
 //
 
 import UIKit
 
 class ServiceTableViewCell: UITableViewCell {
-    static let identifier = "ServiceCell"
-    
-    @IBOutlet weak var addRigthMargin: NSLayoutConstraint!
-    
-    @IBOutlet weak var add: UIImageView!
-    @IBOutlet weak var btnVerServicio: UIButton!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var logo: UIImageView!
+    static let identifier = "ServicioCell"
+
+    @IBOutlet weak var add: UIView!
+    @IBOutlet weak var icon: UIImageView!
     
     internal var title: String! {
         didSet {
-            self.name.text = title
-            if title == "Service Item A" {
+            if title == "0" || title == "2" {
                 defaultStyle()
             }
             else {
@@ -41,13 +36,15 @@ class ServiceTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    @IBAction func tapVerServicio() {
-        
-    }
+
 }
 
 extension ServiceTableViewCell {
+    
+    func primaryStyle() {
+        let side = self.add.frame.width
+        self.add.backgroundColor = UIColor.lightGray
+    }
     
     func defaultStyle() {
         let side = self.add.frame.width
@@ -63,32 +60,14 @@ extension ServiceTableViewCell {
         shape.lineWidth = 1
         shape.strokeColor = UIColor.lightGray.cgColor
         shape.path = path.cgPath
-
+        
         self.add.layer.addSublayer(shape)
     }
-    
-    func primaryStyle() {
-        let side = self.add.frame.width
-        let frame = CGRect(x: 0, y: 0, width: side * 0.6, height: side * 0.6)
-        let countlabel = UILabel(frame: frame)
-        countlabel.center = CGPoint(x: (self.frame.width - (addRigthMargin.constant + side * 0.9)), y: self.frame.height * 0.5)
-        countlabel.backgroundColor = UIColor.appBlueColor()
-        countlabel.layer.cornerRadius = frame.height * 0.5
 
-        countlabel.textColor = UIColor.white
-        countlabel.textAlignment = .center
-        countlabel.text = "1"
-        countlabel.font = UIFont.systemFont(ofSize: UIFont.smallSystemFontSize)
-        countlabel.clipsToBounds = true
-        
-        self.add.backgroundColor = UIColor.lightGray
-        self.addSubview(countlabel)
-    }
-    
     func addStyles() {
-        self.logo.layer.cornerRadius = self.logo.frame.height * 0.5
-        self.logo.layer.borderWidth = 1
-        self.logo.layer.borderColor = UIColor.lightGray.cgColor
+        self.icon.layer.cornerRadius = self.icon.frame.height * 0.5
+        self.icon.layer.borderWidth = 1
+        self.icon.layer.borderColor = UIColor.lightGray.cgColor
         self.add.layer.cornerRadius = self.add.frame.height * 0.5
         self.add.layer.borderWidth = 1
         self.add.layer.borderColor = UIColor.lightGray.cgColor

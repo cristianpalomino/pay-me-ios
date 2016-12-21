@@ -20,8 +20,11 @@
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
 		406EEA331DFB0D88005D2E87 /* Pay_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA321DFB0D88005D2E87 /* Pay_meTests.swift */; };
 		406EEA3E1DFB0D88005D2E87 /* Pay_meUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA3D1DFB0D88005D2E87 /* Pay_meUITests.swift */; };
+		407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */; };
+		407C03621E0B1C1000CD5D4C /* ListaServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */; };
+		407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */; };
 		408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
-		40CF1E3D1E04AE010072CB29 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3C1E04AE010072CB29 /* ServiceTableViewCell.swift */; };
+		40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */; };
 		40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */; };
 		40CF1E431E058D720072CB29 /* PMTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E421E058D720072CB29 /* PMTitleButton.swift */; };
 		40CF1E451E058D830072CB29 /* PMTitleButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40CF1E441E058D830072CB29 /* PMTitleButton.xib */; };
@@ -70,8 +73,11 @@
 		406EEA391DFB0D88005D2E87 /* Pay-meUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pay-meUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA3D1DFB0D88005D2E87 /* Pay_meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay_meUITests.swift; sourceTree = "<group>"; };
 		406EEA3F1DFB0D88005D2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleSuministroViewController.swift; sourceTree = "<group>"; };
+		407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaServiciosViewController.swift; sourceTree = "<group>"; };
+		407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
-		40CF1E3C1E04AE010072CB29 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntidadTableViewCell.swift; sourceTree = "<group>"; };
 		40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHeaderView.swift; sourceTree = "<group>"; };
 		40CF1E421E058D720072CB29 /* PMTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleButton.swift; sourceTree = "<group>"; };
 		40CF1E441E058D830072CB29 /* PMTitleButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMTitleButton.xib; sourceTree = "<group>"; };
@@ -212,6 +218,8 @@
 				403377391E03D42600261759 /* NivelDosViewController.swift */,
 				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
 				40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */,
+				407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */,
+				407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -240,7 +248,8 @@
 		40CF1E3B1E04ADDA0072CB29 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				40CF1E3C1E04AE010072CB29 /* ServiceTableViewCell.swift */,
+				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
+				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -547,9 +556,12 @@
 				4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
+				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
+				407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */,
+				407C03621E0B1C1000CD5D4C /* ListaServiciosViewController.swift in Sources */,
 				40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */,
 				4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */,
-				40CF1E3D1E04AE010072CB29 /* ServiceTableViewCell.swift in Sources */,
+				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				40CF1E431E058D720072CB29 /* PMTitleButton.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
