@@ -37,10 +37,7 @@ class SuministroViewController: PMViewController {
 extension SuministroViewController {
     
     override func initComponents() {
-        self.bannerView.layer.borderColor = UIColor.darkGray.cgColor
-        self.bannerView.layer.borderWidth = 1
-        self.bigBannerView.layer.borderColor = UIColor.gray.cgColor
-        self.bigBannerView.layer.borderWidth = 1
+
     }
 }
 
