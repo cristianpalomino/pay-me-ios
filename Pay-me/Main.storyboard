@@ -92,7 +92,6 @@
         <!--Mis Favoritos-->
         <scene sceneID="pqZ-Px-mTB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WUZ-N4-nQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QZ4-2h-iRI" customClass="PMNavigationViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mis Favoritos" id="V77-M9-upB"/>
                     <toolbarItems/>
@@ -112,6 +111,7 @@
                         <segue destination="aSg-di-BpN" kind="relationship" relationship="rootViewController" id="9jf-Ei-K6z"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUZ-N4-nQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1276" y="-940"/>
         </scene>
@@ -140,7 +140,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yaY-WC-9aM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Agenda" id="qHa-dT-x50"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="JMs-m3-KwT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JMs-m3-KwT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -175,7 +175,6 @@
         <!--Nivel Uno View Controller-->
         <scene sceneID="QkT-NC-tbd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sPO-KT-Mis" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Osn-Tx-luz" customClass="NivelUnoViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jt9-Ma-5Tr"/>
@@ -547,13 +546,13 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPO-KT-Mis" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2865" y="-940"/>
         </scene>
         <!--Nivel Dos View Controller-->
         <scene sceneID="gkv-08-RCU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QfA-u2-5o5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="096-AS-Eae" customClass="NivelDosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0d-HB-CFg"/>
@@ -1078,13 +1077,13 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfA-u2-5o5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3647" y="-940"/>
         </scene>
         <!--Nivel Tres View Controller-->
         <scene sceneID="B2T-OO-wPi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5wd-5a-29N" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="XOg-HL-QOq" customClass="NivelTresViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lt3-dD-e2a"/>
@@ -1149,7 +1148,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l4T-r3-VIG" id="al0-lY-nfc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-wp-a5d">
@@ -1261,13 +1260,13 @@
                         <outlet property="tableview" destination="ade-Pi-HnU" id="07p-YJ-fTS"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wd-5a-29N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4441" y="-940"/>
         </scene>
         <!--Suministro View Controller-->
         <scene sceneID="VC6-gn-vx8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vRY-uP-B5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NVx-h2-ogj" customClass="SuministroViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Chq-sV-0cd"/>
@@ -1472,13 +1471,13 @@
                         <outlet property="viewInfo" destination="YRW-xy-bq8" id="7xV-6h-KnJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRY-uP-B5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5172" y="-940"/>
         </scene>
         <!--Detalle Suministro View Controller-->
         <scene sceneID="uaX-s9-lMe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hZ1-pI-KUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="LJL-Ho-l4M" customClass="DetalleSuministroViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qvO-k7-3u2"/>
@@ -1681,13 +1680,13 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZ1-pI-KUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5927" y="-940"/>
         </scene>
         <!--Lista Servicios View Controller-->
         <scene sceneID="Plh-nX-hmK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NQG-5W-tGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="HG1-22-eLe" customClass="ListaServiciosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bIQ-XP-gT4"/>
@@ -1816,7 +1815,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LtK-Fa-itB" id="8bB-mK-Aoz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-gx-hhz">
@@ -1920,13 +1919,13 @@
                         <outlet property="tableview" destination="wgQ-MK-UzM" id="pEH-EM-OII"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQG-5W-tGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6671" y="-940"/>
         </scene>
         <!--Favoritos View Controller-->
         <scene sceneID="qRa-LX-hBh">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oMs-Fa-c62" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="aSg-di-BpN" customClass="FavoritosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zYs-VJ-lzu"/>
@@ -1991,7 +1990,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKw-Rs-Dr6" id="4HY-UV-JGl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RrU-4Y-92p">
@@ -2125,13 +2124,13 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMs-Fa-c62" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2117.5999999999999" y="-940.47976011994012"/>
         </scene>
         <!--Lista Servicios View Controller-->
         <scene sceneID="RJf-2L-T2z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wBl-Tu-KWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="QmJ-lW-6cf" customClass="ListaServiciosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FFj-bY-SmP"/>
@@ -2427,6 +2426,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBl-Tu-KWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2117.5999999999999" y="-1640.3298350824589"/>
         </scene>
