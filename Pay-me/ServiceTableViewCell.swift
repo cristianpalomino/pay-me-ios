@@ -72,7 +72,7 @@ extension ServiceTableViewCell {
         self.add.layer.borderWidth = 1
         self.add.layer.borderColor = UIColor.lightGray.cgColor
         
-        self.icon.image = self.icon.image!.imageWithInsets(insetDimen: 16)
+        self.icon.image = self.icon.image!.imageWithInsets(insetDimen: 20)
         self.icon.image = icon.image!.withRenderingMode(.alwaysTemplate)
         self.icon.tintColor = UIColor.appBlueColor()
     }

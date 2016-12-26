@@ -10,6 +10,9 @@ import UIKit
 
 class FavoritosViewController: PMViewController {
 
+    @IBOutlet var txtEmision        :PMTextField!
+    @IBOutlet var txtVencimiento    :PMTextField!
+    
     var favoritos = [Favorito]()
     
     override func viewDidLoad() {
@@ -21,6 +24,9 @@ class FavoritosViewController: PMViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension FavoritosViewController {
     
     override func initComponents() {
         favoritos = [Favorito(data: ["upc-logo","Universidad Karolina","UPC","WLAN38472 F","pendiente","1,548.70"]),

@@ -27,6 +27,7 @@
 		407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */; };
 		407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036F1E0B530600CD5D4C /* PMLabel.swift */; };
 		408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
+		40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
 		40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
 		40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */; };
 		40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */; };
@@ -94,6 +95,7 @@
 		407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
+		40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosViewController.swift; sourceTree = "<group>"; };
 		40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
 		40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Heavy.ttf"; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */,
 				407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */,
 				407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */,
+				40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				40CF1E431E058D720072CB29 /* PMTitleButton.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
+				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
 				40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */,
