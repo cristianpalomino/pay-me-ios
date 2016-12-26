@@ -42,7 +42,7 @@ class ServiceTableViewCell: UITableViewCell {
 extension ServiceTableViewCell {
     
     func primaryStyle() {
-        let side = self.add.frame.width
+        //let side = self.add.frame.width
         self.add.backgroundColor = UIColor.lightGray
     }
     
@@ -71,5 +71,9 @@ extension ServiceTableViewCell {
         self.add.layer.cornerRadius = self.add.frame.height * 0.5
         self.add.layer.borderWidth = 1
         self.add.layer.borderColor = UIColor.lightGray.cgColor
+        
+        self.icon.image = self.icon.image!.imageWithInsets(insetDimen: 16)
+        self.icon.image = icon.image!.withRenderingMode(.alwaysTemplate)
+        self.icon.tintColor = UIColor.appBlueColor()
     }
 }

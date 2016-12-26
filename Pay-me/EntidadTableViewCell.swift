@@ -21,7 +21,8 @@ class EntidadTableViewCell: UITableViewCell {
     internal var title: String! {
         didSet {
             self.name.text = title
-            if title == "Service Item A" {
+            let randomNum:UInt32 = arc4random_uniform(3)
+            if randomNum == 1 {
                 defaultStyle()
             }
             else {
@@ -89,6 +90,8 @@ extension EntidadTableViewCell {
         self.logo.layer.cornerRadius = self.logo.frame.height * 0.5
         self.logo.layer.borderWidth = 1
         self.logo.layer.borderColor = UIColor.lightGray.cgColor
+        self.logo.image = self.logo.image!.imageWithInsets(insetDimen: 12)
+        
         self.add.layer.cornerRadius = self.add.frame.height * 0.5
         self.add.layer.borderWidth = 1
         self.add.layer.borderColor = UIColor.lightGray.cgColor

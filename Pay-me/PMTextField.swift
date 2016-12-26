@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Material
 
-class PMTextField: UITextField {
+class PMTextField: TextField {
 
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+}
+
+extension PMTextField {
+    
+    func setPMTheme() {
+        self.placeholderActiveColor = UIColor.lightGray
+        self.placeholderNormalColor = UIColor.lightGray
+        self.dividerActiveColor = UIColor.appGrayColor()
+        self.dividerNormalColor = UIColor.appGrayColor()
+        self.dividerNormalHeight = 1
+        self.placeholderVerticalOffset = 10
     }
 }

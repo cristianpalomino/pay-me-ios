@@ -10,6 +10,9 @@ import UIKit
 
 class DetalleSuministroViewController: PMViewController {
 
+    @IBOutlet weak var txtIndentifier       : PMTextField!
+    @IBOutlet weak var txtName              : PMTextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +23,12 @@ class DetalleSuministroViewController: PMViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension DetalleSuministroViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func initComponents() {
+        self.txtIndentifier.setPMTheme()
+        self.txtName.setPMTheme()
     }
-    */
-
 }

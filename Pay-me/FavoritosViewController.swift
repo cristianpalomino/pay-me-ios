@@ -10,11 +10,10 @@ import UIKit
 
 class FavoritosViewController: PMViewController {
 
-    var favoritos = [String]()
+    var favoritos = [Favorito]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initHeader(titles: ["Publicas", "Privadas"])
         // Do any additional setup after loading the view.
     }
 
@@ -24,14 +23,16 @@ class FavoritosViewController: PMViewController {
     }
     
     override func initComponents() {
-        favoritos = ["0","1","2","3","4"]
+        favoritos = [Favorito(data: ["upc-logo","Universidad Karolina","UPC","WLAN38472 F","pendiente","1,548.70"]),
+                     Favorito(data: ["entel-logo","Celular Juan","Entel Celulares","982 366 740 F","cargo","1,548.70"]),
+                     Favorito(data: ["zeta-logo","Gas Casa Playa","Zeta Gas","WLAN38472 F","verficacion",""])]
     }
 }
 
 extension FavoritosViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 65
     }
 }
 
@@ -43,7 +44,7 @@ extension FavoritosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritoTableViewCell.identifier, for: indexPath) as! FavoritoTableViewCell
-        //cell.title = favoritos[indexPath.row]
+        cell.item = favoritos[indexPath.row]
         return cell
     }
 }

@@ -421,7 +421,7 @@ extension TextField {
     
     /// Prepares the placeholderLabel.
     fileprivate func preparePlaceholderLabel() {
-        font = RobotoFont.regular(with: 16)
+        font = RobotoFont.regular(with: 13)
         placeholderNormalColor = Color.darkText.others
         addSubview(placeholderLabel)
     }

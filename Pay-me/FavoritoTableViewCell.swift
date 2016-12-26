@@ -9,19 +9,31 @@
 import UIKit
 
 class FavoritoTableViewCell: UITableViewCell {
+    struct State {
+        static let kPendiente   = "pendiente"
+        static let kCargo       = "cargo"
+        static let kVerficacion = "verficacion"
+    };
+    
     static let identifier = "favoritoCell"
 
-    @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var estado: UILabel!
+    @IBOutlet weak var icon     : UIImageView!
+    @IBOutlet weak var name     : UILabel!
+    @IBOutlet weak var entidad  : UILabel!
+    @IBOutlet weak var code     : UILabel!
+    @IBOutlet weak var estado   : UILabel!
+    @IBOutlet weak var monto    : UILabel!
 
-    internal var title: String! {
+    internal var item: Favorito! {
         didSet {
-            if title == "0" || title == "2" {
-//                defaultStyle()
-            }
-            else {
-//                primaryStyle()
-            }
+            let image = UIImage(named: item.image)
+            self.icon.image = image!.imageWithInsets(insetDimen: 12)
+            self.name.text = item.name
+            self.entidad.text = item.entidad
+            self.code.text = item.code
+            self.monto.text = item.monto
+            
+            self.defineState(state: item.etiqueta)
         }
     }
     
@@ -39,6 +51,25 @@ class FavoritoTableViewCell: UITableViewCell {
 
 extension FavoritoTableViewCell {
     
+    func defineState(state :String) {
+        self.estado.text = state
+        if state == State.kPendiente {
+            self.estado.text = "  PENDIENTE DE PAGO  "
+            self.estado.backgroundColor = UIColor.appRedColor()
+        }
+        else if state == State.kCargo {
+            self.estado.text = "  CARGO AUTOMATICO  "
+            self.estado.backgroundColor = UIColor.appGrayColor()
+        }
+        else if state == State.kVerficacion {
+            self.estado.text = "  PENDIENTE DE VERIFICACIÓN  "
+            self.estado.backgroundColor = UIColor.appGrayColor()
+        }
+    }
+}
+
+extension FavoritoTableViewCell {
+    
     func addStyles() {
         self.icon.layer.cornerRadius = self.icon.frame.height * 0.5
         self.icon.layer.borderWidth = 1
@@ -48,5 +79,6 @@ extension FavoritoTableViewCell {
         self.estado.layer.cornerRadius = self.estado.frame.height * 0.5
     }
 }
+
 
 

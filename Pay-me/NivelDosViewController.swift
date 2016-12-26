@@ -10,6 +10,15 @@ import UIKit
 
 class NivelDosViewController: PMViewController {
 
+    @IBOutlet var topIcon           :UIImageView!
+    @IBOutlet var rigthTopIcon      :UIImageView!
+    @IBOutlet var leftTopIcon       :UIImageView!
+    @IBOutlet var rigthMiddleIcon   :UIImageView!
+    @IBOutlet var leftMiddleIcon    :UIImageView!
+    @IBOutlet var rigthBottomIcon   :UIImageView!
+    @IBOutlet var leftBottomIcon    :UIImageView!
+    @IBOutlet var bottomIcon        :UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,15 +34,15 @@ class NivelDosViewController: PMViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func initComponents() {
+        let imageviews = [topIcon,rigthTopIcon,leftTopIcon,rigthMiddleIcon,leftMiddleIcon,rigthBottomIcon,leftBottomIcon,bottomIcon]
+        for item in imageviews {
+            item?.image = item?.image!.withRenderingMode(.alwaysTemplate)
+            item?.tintColor = UIColor.appBlueColor()
+        }
     }
-    */
+}
+
+extension NivelDosViewController {
 
 }

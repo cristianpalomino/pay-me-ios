@@ -15,7 +15,6 @@ class NivelTresViewController: PMViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initHeader(titles: ["Publicas", "Privadas"])
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +31,18 @@ class NivelTresViewController: PMViewController {
 extension NivelTresViewController {
     
     override func initComponents() {
-        entidades = ["Service Item A","Service Item B","Service Item C","Service Item D"]
+        entidades = ["UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas",
+                     "UPC Universidad Peruana de Ciencias Aplicadas"]
     }
 }
 
@@ -46,7 +56,7 @@ extension NivelTresViewController {
 extension NivelTresViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 75
+        return 65
     }
 }
 
