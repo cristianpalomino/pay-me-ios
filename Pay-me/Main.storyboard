@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JDm-o0-hMj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JDm-o0-hMj">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -199,10 +199,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7e-8q-SKF">
-                                <rect key="frame" x="0.0" y="35.5" width="320" height="468.5"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="468"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="yK0-kL-z6x">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="468.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -214,7 +214,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hva-LG-dSf">
-                                <rect key="frame" x="0.0" y="35.5" width="320" height="419.5"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="419"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fr-Jq-LdT">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
@@ -227,22 +227,22 @@
                                                 <rect key="frame" x="213.5" y="0.0" width="106.5" height="162"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tU2-Tz-8T4">
-                                                        <rect key="frame" x="0.0" y="81.5" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="0.0" y="82" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="raO-tJ-kfi">
-                                                                <rect key="frame" x="20" y="25" width="40" height="40"/>
+                                                                <rect key="frame" x="20" y="24" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="raO-tJ-kfi" secondAttribute="height" multiplier="1:1" id="r7j-d2-lDm"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zf2-Gv-r1t">
-                                                                <rect key="frame" x="0.0" y="69" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2z-Ml-6an">
-                                                                <rect key="frame" x="0.0" y="0.5" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -271,22 +271,22 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="106.5" height="162"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OW-1E-xGu">
-                                                        <rect key="frame" x="26" y="81.5" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="26.5" y="82" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-jg-HIR">
-                                                                <rect key="frame" x="20.5" y="25" width="40" height="40"/>
+                                                                <rect key="frame" x="21" y="24.5" width="39.5" height="39.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="CMY-jg-HIR" secondAttribute="height" multiplier="1:1" id="k3o-T0-xSo"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basicos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbD-54-0EX">
-                                                                <rect key="frame" x="0.0" y="69" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmq-Uj-OAd">
-                                                                <rect key="frame" x="0.0" y="0.5" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <connections>
                                                                     <segue destination="096-AS-Eae" kind="show" id="hLx-2W-DWw">
                                                                         <nil key="action"/>
@@ -337,32 +337,32 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QW0-cy-EvJ">
-                                        <rect key="frame" x="0.0" y="258" width="320" height="161.5"/>
+                                        <rect key="frame" x="0.0" y="258" width="320" height="161"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yal-64-ujK">
-                                                <rect key="frame" x="106.5" y="0.0" width="107" height="161.5"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="107" height="161"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVG-sz-5xd">
-                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="161.5"/>
+                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="161"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AI-2L-OV7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="5x7-EN-tRh">
-                                                                <rect key="frame" x="20" y="24.5" width="40" height="40"/>
+                                                                <rect key="frame" x="20" y="24" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="5x7-EN-tRh" secondAttribute="height" multiplier="1:1" id="F7W-8r-AVJ"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tributos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-Jz-puz">
-                                                                <rect key="frame" x="0.0" y="68.5" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdw-eo-q4v">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -388,25 +388,25 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9o7-MW-W39">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="161"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-te-fp4">
-                                                        <rect key="frame" x="26" y="0.0" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="26.5" y="0.0" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="TqN-9A-nGQ">
-                                                                <rect key="frame" x="20.5" y="24.5" width="40" height="40"/>
+                                                                <rect key="frame" x="21" y="24.5" width="39.5" height="39.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="TqN-9A-nGQ" secondAttribute="height" multiplier="1:1" id="Lho-A5-EGq"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Educación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2D-m8-4n5">
-                                                                <rect key="frame" x="0.0" y="68.5" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LR-f0-Po9">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -454,7 +454,7 @@
                                         <rect key="frame" x="112" y="162" width="96" height="96"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-dN-qfy">
-                                                <rect key="frame" x="0.0" y="0.5" width="96" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -486,7 +486,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lm-hF-zZK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicios" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0L-Sw-E4e">
                                         <rect key="frame" x="130" y="9" width="60" height="18"/>
@@ -495,11 +495,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKx-nU-Aoq">
-                                        <rect key="frame" x="286.5" y="8.5" width="17.5" height="18"/>
+                                        <rect key="frame" x="286" y="9" width="18" height="18"/>
                                         <state key="normal" image="ic-buscar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kul-R1-GqO">
-                                        <rect key="frame" x="16" y="8.5" width="18" height="18"/>
+                                        <rect key="frame" x="16" y="9" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kul-R1-GqO" secondAttribute="height" multiplier="1:1" id="YFq-FS-rWH"/>
                                         </constraints>
@@ -571,28 +571,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmC-aZ-LcR">
-                                <rect key="frame" x="0.0" y="35.5" width="320" height="419.5"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="419"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-aY-dyv">
                                         <rect key="frame" x="208" y="162" width="112" height="96"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4k-Jp-4h3">
-                                                <rect key="frame" x="32" y="8" width="80" height="80.5"/>
+                                                <rect key="frame" x="32" y="8" width="80" height="80"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="bSv-co-Ihc">
-                                                        <rect key="frame" x="19.5" y="24" width="40.5" height="40.5"/>
+                                                        <rect key="frame" x="20" y="24" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="bSv-co-Ihc" secondAttribute="height" multiplier="1:1" id="VCn-4w-MAY"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Institutos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtY-Ek-PU8">
-                                                        <rect key="frame" x="0.0" y="68.5" width="80" height="12"/>
+                                                        <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-B8-Vm3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -617,22 +617,22 @@
                                         <rect key="frame" x="0.0" y="162" width="112" height="96"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkq-1p-KIw">
-                                                <rect key="frame" x="0.0" y="8.5" width="80" height="79.5"/>
+                                                <rect key="frame" x="0.0" y="8" width="80" height="80"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="X1C-IZ-WpX">
-                                                        <rect key="frame" x="20" y="23.5" width="40" height="40"/>
+                                                        <rect key="frame" x="20" y="24" width="40" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="X1C-IZ-WpX" secondAttribute="height" multiplier="1:1" id="bd0-VO-kUr"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maestrías" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHx-qv-zOG">
-                                                        <rect key="frame" x="0.0" y="67.5" width="80" height="12"/>
+                                                        <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ph-sh-Za3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -660,22 +660,22 @@
                                                 <rect key="frame" x="106.5" y="0.0" width="107" height="162"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrV-D4-f8x">
-                                                        <rect key="frame" x="12.5" y="49.5" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="13" y="50" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="AZT-zU-8vC">
-                                                                <rect key="frame" x="20" y="25" width="40" height="40"/>
+                                                                <rect key="frame" x="20" y="24.5" width="39.5" height="39.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="AZT-zU-8vC" secondAttribute="height" multiplier="1:1" id="k0b-xq-ag1"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Universidades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxU-lo-O5S">
-                                                                <rect key="frame" x="0.0" y="69" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-8H-cj5">
-                                                                <rect key="frame" x="0.0" y="0.5" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <connections>
                                                                     <segue destination="XOg-HL-QOq" kind="show" id="jje-uE-bVi">
                                                                         <nil key="action"/>
@@ -705,7 +705,7 @@
                                                 <rect key="frame" x="213.5" y="0.0" width="106.5" height="162"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJn-jm-P0t">
-                                                        <rect key="frame" x="0.0" y="82.5" width="80" height="79.5"/>
+                                                        <rect key="frame" x="0.0" y="82" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-RC-1aw">
                                                                 <rect key="frame" x="20" y="24" width="40" height="40"/>
@@ -720,7 +720,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOj-Fu-fDG">
-                                                                <rect key="frame" x="0.0" y="0.5" width="80" height="79.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -749,22 +749,22 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="106.5" height="162"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBo-Rn-4cD">
-                                                        <rect key="frame" x="26" y="81.5" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="26.5" y="82" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="z54-n2-o98">
-                                                                <rect key="frame" x="20.5" y="25" width="40" height="40"/>
+                                                                <rect key="frame" x="21" y="24.5" width="39.5" height="39.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="z54-n2-o98" secondAttribute="height" multiplier="1:1" id="Xep-dS-qIh"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postgrado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh4-Jx-uZq">
-                                                                <rect key="frame" x="0.0" y="69" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRo-Vd-Pfc">
-                                                                <rect key="frame" x="0.0" y="0.5" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -809,28 +809,28 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdD-7S-Lu4">
-                                        <rect key="frame" x="0.0" y="258" width="320" height="161.5"/>
+                                        <rect key="frame" x="0.0" y="258" width="320" height="161"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-1I-SSP">
-                                                <rect key="frame" x="106.5" y="0.0" width="107" height="161.5"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="107" height="161"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0P6-Vb-NRp">
-                                                        <rect key="frame" x="12.5" y="32" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="13" y="32" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="ULO-PQ-1oK">
-                                                                <rect key="frame" x="20" y="24.5" width="40" height="40"/>
+                                                                <rect key="frame" x="20" y="24.5" width="39.5" height="39.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="ULO-PQ-1oK" secondAttribute="height" multiplier="1:1" id="g0d-su-JEh"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Academias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foa-jr-fTk">
-                                                                <rect key="frame" x="0.0" y="68.5" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Q8-bS-veI">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -852,25 +852,25 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-sJ-qu4">
-                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="161.5"/>
+                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="161"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfp-JF-khT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="F4P-xy-w1Q">
-                                                                <rect key="frame" x="20" y="24.5" width="40" height="40"/>
+                                                                <rect key="frame" x="20" y="24" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="F4P-xy-w1Q" secondAttribute="height" multiplier="1:1" id="pJg-Rm-Hcz"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-escolar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37w-wg-zfi">
-                                                                <rect key="frame" x="0.0" y="68.5" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-yX-TkQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -896,25 +896,25 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRD-uD-h8I">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="161"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZa-Eb-2UX">
-                                                        <rect key="frame" x="26" y="0.0" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="26.5" y="0.0" width="80" height="80"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="I0O-Xz-71o">
-                                                                <rect key="frame" x="20.5" y="24.5" width="40" height="40"/>
+                                                                <rect key="frame" x="21" y="24.5" width="39.5" height="39.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="I0O-Xz-71o" secondAttribute="height" multiplier="1:1" id="Iz7-E4-bqs"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idiomas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT7-bw-YNl">
-                                                                <rect key="frame" x="0.0" y="68.5" width="80.5" height="12"/>
+                                                                <rect key="frame" x="0.0" y="68" width="80" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-C8-bfZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -962,10 +962,10 @@
                                         <rect key="frame" x="112" y="162" width="96" height="96"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="servicio-mid" translatesAutoresizingMaskIntoConstraints="NO" id="OoZ-do-jEo">
-                                                <rect key="frame" x="0.0" y="0.5" width="96" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="zx4-y3-CBq">
-                                                <rect key="frame" x="29.5" y="29" width="38" height="38"/>
+                                                <rect key="frame" x="29" y="29" width="38" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zx4-y3-CBq" secondAttribute="height" multiplier="1:1" id="X6X-u2-T9Q"/>
                                                 </constraints>
@@ -1023,20 +1023,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bb1-7m-4mZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Educación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyN-9n-bL1">
-                                        <rect key="frame" x="126" y="9.5" width="68" height="17"/>
+                                        <rect key="frame" x="126" y="9" width="68" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEq-gD-0qI">
-                                        <rect key="frame" x="286.5" y="8.5" width="17.5" height="18"/>
+                                        <rect key="frame" x="286" y="9" width="18" height="18"/>
                                         <state key="normal" image="ic-buscar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-oY-rGK">
-                                        <rect key="frame" x="16" y="8.5" width="18" height="18"/>
+                                        <rect key="frame" x="16" y="9" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xcF-oY-rGK" secondAttribute="height" multiplier="1:1" id="y98-mV-iaE"/>
                                         </constraints>
@@ -1143,7 +1143,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGC-Tb-AP2">
-                                                    <rect key="frame" x="70" y="42" width="55" height="14"/>
+                                                    <rect key="frame" x="70" y="42" width="55" height="13"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1288,7 +1288,9 @@
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-Qa-s9S">
                                                                 <rect key="frame" x="12" y="36" width="111" height="36"/>
-                                                                <string key="text">Prolongación Primavera2390 MonterricoSantiago de Surco</string>
+                                                                <string key="text">Prolongación Primavera
+2390 Monterrico
+Santiago de Surco</string>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1533,10 +1535,10 @@
                                 <rect key="frame" x="0.0" y="36" width="320" height="419"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esk-77-40F">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upc-center-banner" translatesAutoresizingMaskIntoConstraints="NO" id="IlY-Jo-EEN">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1548,16 +1550,16 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxr-gX-Bwu">
-                                        <rect key="frame" x="20" y="84.5" width="280" height="18"/>
+                                        <rect key="frame" x="20" y="85" width="280" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zL7-QE-QZd">
-                                        <rect key="frame" x="0.0" y="308.5" width="320" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="308" width="320" height="61"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apL-QE-BY0">
-                                                <rect key="frame" x="20" y="18" width="25" height="25"/>
+                                                <rect key="frame" x="20" y="18.5" width="25" height="25"/>
                                                 <color key="backgroundColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="FdI-Fw-nSw"/>
@@ -1565,7 +1567,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No es mi servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR6-Re-xtx">
-                                                <rect key="frame" x="57" y="24" width="82.5" height="13.5"/>
+                                                <rect key="frame" x="57" y="24.5" width="83" height="14"/>
                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="11"/>
                                                 <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1580,7 +1582,7 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WLAN 34 572 C" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-UZ-AMa" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="118.5" width="280" height="30"/>
+                                        <rect key="frame" x="20" y="119" width="280" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1589,7 +1591,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Karolina Briceño del Norte" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilb-sR-EOo" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="164.5" width="280" height="30"/>
+                                        <rect key="frame" x="20" y="165" width="280" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1722,25 +1724,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-Zl-fSp">
-                                <rect key="frame" x="0.0" y="35.5" width="320" height="419.5"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="419"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9e-gX-RgZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upc-banner" translatesAutoresizingMaskIntoConstraints="NO" id="urc-As-UDa">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4j-53-yMV">
-                                                <rect key="frame" x="160" y="0.0" width="160" height="60.5"/>
+                                                <rect key="frame" x="160" y="0.0" width="160" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador de servicio" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-Yj-OH4">
-                                                        <rect key="frame" x="8" y="18.5" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="18" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 34 111 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-8e-vSn">
-                                                        <rect key="frame" x="8" y="34.5" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="34" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -1770,7 +1772,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wgQ-MK-UzM">
-                                        <rect key="frame" x="0.0" y="61" width="320" height="308.5"/>
+                                        <rect key="frame" x="0.0" y="60" width="320" height="309"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServicioCell" rowHeight="65" id="LtK-Fa-itB" customClass="ServiceTableViewCell" customModule="Pay_me" customModuleProvider="target">
@@ -1781,14 +1783,14 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-gx-hhz">
-                                                            <rect key="frame" x="16" y="9.5" width="45.5" height="45.5"/>
+                                                            <rect key="frame" x="16" y="10" width="46" height="45"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="45.5" id="aim-il-3qm"/>
                                                                 <constraint firstAttribute="height" constant="45.5" id="ndQ-U8-5bd"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AV-te-Hyf">
-                                                            <rect key="frame" x="69.5" y="15" width="205.5" height="16.5"/>
+                                                            <rect key="frame" x="70" y="15" width="205" height="17"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="13.5"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -1802,7 +1804,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitar recibos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0db-pT-gzx">
-                                                            <rect key="frame" x="69.5" y="35.5" width="205.5" height="13.5"/>
+                                                            <rect key="frame" x="70" y="36" width="205" height="14"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                                                             <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1833,7 +1835,7 @@
                                         </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-wQ-qXx">
-                                        <rect key="frame" x="0.0" y="369.5" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="369" width="320" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <state key="normal" title="Recordar servicio">
@@ -1857,20 +1859,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bn-8g-WNR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicios UPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHl-gO-fs5">
-                                        <rect key="frame" x="115.5" y="9.5" width="90" height="18"/>
+                                        <rect key="frame" x="115" y="9" width="90" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNk-tc-8VZ">
-                                        <rect key="frame" x="286.5" y="8.5" width="17.5" height="18"/>
+                                        <rect key="frame" x="286" y="9" width="18" height="18"/>
                                         <state key="normal" image="ic-buscar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0O-tK-fw9">
-                                        <rect key="frame" x="16" y="8.5" width="18" height="18"/>
+                                        <rect key="frame" x="16" y="9" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="t0O-tK-fw9" secondAttribute="height" multiplier="1:1" id="Efe-pb-FTM"/>
                                         </constraints>
@@ -1941,20 +1943,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW9-bw-YCi">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis Favoritos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWZ-Gp-eYi">
-                                        <rect key="frame" x="118" y="9.5" width="85" height="17"/>
+                                        <rect key="frame" x="118" y="9" width="85" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74Z-zd-Xg3">
-                                        <rect key="frame" x="286" y="8.5" width="18" height="18"/>
+                                        <rect key="frame" x="286" y="9" width="18" height="18"/>
                                         <state key="normal" image="ic-buscar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0W-bg-lXZ">
-                                        <rect key="frame" x="16" y="8.5" width="18" height="18"/>
+                                        <rect key="frame" x="16" y="9" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="L0W-bg-lXZ" secondAttribute="height" multiplier="1:1" id="L8A-1z-WZE"/>
                                         </constraints>
@@ -1975,11 +1977,11 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYh-aY-7oP">
-                                <rect key="frame" x="0.0" y="35.5" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JTV-F1-lGi">
-                                <rect key="frame" x="0.0" y="70.5" width="320" height="334.5"/>
+                                <rect key="frame" x="0.0" y="71" width="320" height="334"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="favoritoCell" rowHeight="65" id="iKw-Rs-Dr6" customClass="FavoritoTableViewCell" customModule="Pay_me" customModuleProvider="target">
@@ -2064,7 +2066,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8X-9X-aud">
-                                <rect key="frame" x="0.0" y="404.5" width="320" height="50.5"/>
+                                <rect key="frame" x="0.0" y="405" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                 <state key="normal" title="Agregar otros servicios">
@@ -2122,20 +2124,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVo-Vl-rTo">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I30-UI-plS">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="134" y="9" width="52" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENO-vY-WUY">
-                                        <rect key="frame" x="286.5" y="8.5" width="17.5" height="18"/>
+                                        <rect key="frame" x="286" y="9" width="18" height="18"/>
                                         <state key="normal" image="ic-buscar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmE-tX-6wk">
-                                        <rect key="frame" x="16" y="8.5" width="18" height="18"/>
+                                        <rect key="frame" x="16" y="9" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="bmE-tX-6wk" secondAttribute="height" multiplier="1:1" id="xcj-4S-ySz"/>
                                         </constraints>
@@ -2159,25 +2161,25 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOG-Dz-0Jk">
-                                <rect key="frame" x="0.0" y="35.5" width="320" height="369"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="369"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prc-JB-H4T">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upc-banner" translatesAutoresizingMaskIntoConstraints="NO" id="xns-fc-k7K">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Cz-4F-1Cb">
-                                                <rect key="frame" x="160" y="0.0" width="160" height="60.5"/>
+                                                <rect key="frame" x="160" y="0.0" width="160" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador de servicio" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rd-JS-g1Y">
-                                                        <rect key="frame" x="8" y="18.5" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="18" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 34 111 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oy-3d-zCU">
-                                                        <rect key="frame" x="8" y="34.5" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="34" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -2207,52 +2209,52 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YU-jh-5FQ">
-                                        <rect key="frame" x="8" y="60.5" width="304" height="191.5"/>
+                                        <rect key="frame" x="8" y="60" width="304" height="192"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNo-CU-2Sn">
-                                                <rect key="frame" x="0.0" y="8" width="304" height="183.5"/>
+                                                <rect key="frame" x="0.0" y="8" width="304" height="184"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loc-Up-deF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="60.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="61"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibo" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dou-Gc-e9W">
-                                                                <rect key="frame" x="41.5" y="27.5" width="29.5" height="12"/>
+                                                                <rect key="frame" x="41" y="28" width="30" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asJ-pf-4b5">
-                                                                <rect key="frame" x="41.5" y="8" width="20.5" height="12"/>
+                                                                <rect key="frame" x="41" y="8" width="21" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffI-Of-udn">
-                                                                <rect key="frame" x="41.5" y="41.5" width="56.5" height="12"/>
+                                                                <rect key="frame" x="41" y="42" width="57" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ky-4L-csl">
-                                                                <rect key="frame" x="12" y="20" width="21.5" height="21"/>
+                                                                <rect key="frame" x="12" y="20" width="21" height="21"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="6ky-4L-csl" secondAttribute="height" multiplier="1:1" id="SkW-Bu-OVJ"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5T2-lQ-1dF">
-                                                                <rect key="frame" x="254" y="0.0" width="50" height="60.5"/>
+                                                                <rect key="frame" x="254" y="0.0" width="50" height="61"/>
                                                                 <color key="backgroundColor" red="0.79607843137254897" green="0.82352941176470584" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="0Ns-WH-ZzO"/>
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJX-IE-8fB">
-                                                                <rect key="frame" x="242.5" y="20" width="21.5" height="21"/>
+                                                                <rect key="frame" x="243" y="20" width="21" height="21"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s/ 1,000.70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gL0-hw-Cqm">
-                                                                <rect key="frame" x="128.5" y="16" width="106" height="29"/>
+                                                                <rect key="frame" x="129" y="16" width="106" height="29"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="24"/>
                                                                 <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2281,16 +2283,16 @@
                                                         </constraints>
                                                     </view>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carpet" translatesAutoresizingMaskIntoConstraints="NO" id="Coe-RE-B1S">
-                                                        <rect key="frame" x="0.0" y="60.5" width="304" height="123"/>
+                                                        <rect key="frame" x="0.0" y="61" width="304" height="123"/>
                                                     </imageView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2Z-zf-NQm" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                                        <rect key="frame" x="12" y="72" width="280" height="30"/>
+                                                        <rect key="frame" x="12" y="73" width="280" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xu9-Pb-wZd" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                                        <rect key="frame" x="12" y="114" width="280" height="30"/>
+                                                        <rect key="frame" x="12" y="115" width="280" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -2334,7 +2336,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chD-bu-yl4">
-                                <rect key="frame" x="0.0" y="404.5" width="320" height="50.5"/>
+                                <rect key="frame" x="0.0" y="405" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                 <state key="normal" title="Pagar recibo">
