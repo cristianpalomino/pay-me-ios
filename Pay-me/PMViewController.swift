@@ -10,11 +10,12 @@ import UIKit
 
 class PMViewController: UIViewController {
 
+    var keyboardHeigth :CGFloat = 0.0
     var pmheader :PMHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addNavigationLogo()
+        addNavigationLogo(isGradient: false)
         initComponents()
         // Do any additional setup after loading the view.
     }
@@ -43,7 +44,7 @@ extension PMViewController: PMViewControllerDelegate {
     }
 }
 
-extension UIViewController {
+extension PMViewController {
     
     func addKeyBoardObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDidShow), name: .UIKeyboardWillShow, object: nil)
@@ -51,7 +52,11 @@ extension UIViewController {
     }
     
     func keyboardDidShow(notification: NSNotification) {
-        
+        if let userInfo = notification.userInfo {
+            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                self.keyboardHeigth = keyboardSize.size.height
+            }
+        }
     }
     
     func keyboardDidHide() {

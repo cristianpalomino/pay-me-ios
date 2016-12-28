@@ -9,9 +9,6 @@
 import UIKit
 
 class FavoritosViewController: PMViewController {
-
-    @IBOutlet var txtEmision        :PMTextField!
-    @IBOutlet var txtVencimiento    :PMTextField!
     
     var favoritos = [Favorito]()
     
