@@ -220,6 +220,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="5QJ-O9-zcj" id="Q6D-P6-ACT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1Z-vW-aOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

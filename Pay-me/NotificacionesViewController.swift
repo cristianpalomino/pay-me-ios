@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import SWTableViewCell
 
-class NotificacionesViewController: PMViewController {
+class NotificacionesViewController: PMViewController, SWTableViewCellDelegate {
     
     var notificaciones = [Notificacion]()
-
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnPagar: UIButton!
     
     //tableview.
@@ -49,6 +50,7 @@ extension NotificacionesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
     }
+
 }
 
 extension NotificacionesViewController: UITableViewDataSource {
@@ -63,17 +65,22 @@ extension NotificacionesViewController: UITableViewDataSource {
         cell.leftUtilityButtons = self.leftButton() as! [Any]
         cell.rightUtilityButtons = self.rigthButton() as! [Any]
         
+        cell.delegate = self;
         cell.item = notificaciones[indexPath.row]
         
         return cell
     }
     
+}
+
+//MARK : Extension to SWTableViewCellDelegate methods
+extension NotificacionesViewController{
     
     //MARK : Pay Button
     func rigthButton() -> NSArray{
         let rigthUtilityButton : NSMutableArray = NSMutableArray()
         
-        let payIcon = UIImage(named:"default")
+        let payIcon = UIImage(named:"payButtonDefault")
         rigthUtilityButton.sw_addUtilityButton(with: UIColor.appBlueColor(), icon: payIcon)
         
         return rigthUtilityButton
@@ -82,12 +89,30 @@ extension NotificacionesViewController: UITableViewDataSource {
     //MARK : Delete Button
     func leftButton() -> NSArray{
         let leftUtilityButton : NSMutableArray = NSMutableArray()
-        let deleteIcon = UIImage(named:"default")
+        let deleteIcon = UIImage(named:"deleteButtonDefault")
         leftUtilityButton.sw_addUtilityButton(with: UIColor.appRedColor(), icon: deleteIcon)
         
         return leftUtilityButton
     }
     
-
-
+    func swipeableTableViewCell(_ cell: SWTableViewCell!, didTriggerLeftUtilityButtonWith index: Int) {
+        switch index {
+        case 0:
+            let cellIndexPath : IndexPath =  self.tableView.indexPath(for: cell)!
+            notificaciones.remove(at: (cellIndexPath.row))
+            self.tableView.deleteRows(at: [cellIndexPath], with: UITableViewRowAnimation.automatic)
+            break
+        default:break
+        }
+    }
+    
+    func swipeableTableViewCell(_ cell: SWTableViewCell!, didTriggerRightUtilityButtonWith index: Int) {
+        switch index {
+        case 0:
+            print("accion pagar")
+        default:break
+        }
+    }
+    
+    
 }
