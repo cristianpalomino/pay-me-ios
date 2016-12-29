@@ -55,6 +55,10 @@
 		40CF1E491E068AAF0072CB29 /* SuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */; };
 		40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */; };
 		4C36C99C446B1D9859B013C7 /* Pods_Pay_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */; };
+		4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */; };
+		4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1898461E11BA470060DD41 /* Notify.storyboard */; };
+		4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
+		4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */; };
 		693C4236FF6A88FBB1834A2A /* Pods_Pay_meUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */; };
 		C058572CDEC34F9F5E697CEC /* Pods_Pay_meTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC645C84DF5D84B5B8A878EB /* Pods_Pay_meTests.framework */; };
 /* End PBXBuildFile section */
@@ -130,6 +134,11 @@
 		40CF1E461E0680090072CB29 /* PMColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMColors.swift; sourceTree = "<group>"; };
 		40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuministroViewController.swift; sourceTree = "<group>"; };
 		40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTriangleView.swift; sourceTree = "<group>"; };
+		4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesViewController.swift; sourceTree = "<group>"; };
+		4F1898461E11BA470060DD41 /* Notify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify.storyboard; sourceTree = "<group>"; };
+		4F1898481E11BB240060DD41 /* Notificacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacion.swift; sourceTree = "<group>"; };
+		4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionTableViewCell.swift; sourceTree = "<group>"; };
+		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
 		5488BC2B09210A80F78E15DF /* Pods-Pay-meUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meUITests/Pods-Pay-meUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6826DCD174ACF4A68D5559B7 /* Pods-Pay-me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE6167217B90CD9FA9ECF9C /* Pods-Pay-meTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meTests/Pods-Pay-meTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +257,7 @@
 				406EEA241DFB0D88005D2E87 /* Assets.xcassets */,
 				406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */,
 				406EEA291DFB0D88005D2E87 /* Info.plist */,
+				4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */,
 			);
 			path = "Pay-me";
 			sourceTree = "<group>";
@@ -284,6 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				404672DB1E14656800A578EA /* Messages */,
+				4F1898431E11B7E80060DD41 /* Notify */,
 				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
 				403377371E03D41900261759 /* NivelUnoViewController.swift */,
 				403377391E03D42600261759 /* NivelDosViewController.swift */,
@@ -341,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				40B2E4001E0E4481003CBAC3 /* Favorito.swift */,
+				4F1898481E11BB240060DD41 /* Notificacion.swift */,
 			);
 			name = Beans;
 			sourceTree = "<group>";
@@ -351,8 +363,18 @@
 				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
 				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
+				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		4F1898431E11B7E80060DD41 /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */,
+				4F1898461E11BA470060DD41 /* Notify.storyboard */,
+			);
+			name = Notify;
 			sourceTree = "<group>";
 		};
 		F22665E33AA68B27541E5D52 /* Frameworks */ = {
@@ -443,6 +465,7 @@
 					406EEA191DFB0D88005D2E87 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 79SAEB56W5;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					406EEA2D1DFB0D88005D2E87 = {
@@ -490,6 +513,7 @@
 				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
 				404672DA1E14608500A578EA /* Messages.storyboard in Resources */,
 				40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
+				4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */,
 				40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
 				40CF1E451E058D830072CB29 /* PMTitleButton.xib in Resources */,
 				40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
@@ -673,6 +697,7 @@
 				40B2E4011E0E4481003CBAC3 /* Favorito.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */,
+				4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */,
 				407C03621E0B1C1000CD5D4C /* ListaServiciosViewController.swift in Sources */,
 				407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */,
 				4081E9211E15916000A44FEC /* TCNVViewController.swift in Sources */,
@@ -685,7 +710,9 @@
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				40CF1E431E058D720072CB29 /* PMTitleButton.swift in Sources */,
+				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
+				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,
 				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
 				404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
@@ -838,12 +865,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
 				INFOPLIST_FILE = "Pay-me/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -855,12 +885,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
 				INFOPLIST_FILE = "Pay-me/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

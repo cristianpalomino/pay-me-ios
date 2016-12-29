@@ -28,6 +28,13 @@ class PMViewController: UIViewController {
 
 extension PMViewController {
     
+    @IBAction func tapNotifications() {
+        showNotificaciones()
+    }
+}
+
+extension PMViewController {
+    
     func initHeader(titles :[String]) {
         let width = Int(self.view.frame.width)
         let heigth = Int(self.view.frame.height * 0.065)
@@ -57,6 +64,10 @@ extension PMViewController: PMViewControllerDelegate {
     
     func showPagoExitoso() {
         self.present(UIStoryboard.createPagoExitoso(), animated: true, completion: nil)
+    }
+    
+    func showNotificaciones() {
+        self.present(UIStoryboard.createNotificaciones(), animated: true, completion: nil)
     }
 }
 

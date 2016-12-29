@@ -14,6 +14,14 @@ extension UIStoryboard {
         return UIStoryboard(name: Constants.Storyboard.kMessages, bundle: Bundle.main)
     }
     
+    class func notifyStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: Constants.Storyboard.kNotify, bundle: Bundle.main)
+    }
+    
+    
+    class func createNotificaciones() -> UINavigationController {
+        return (notifyStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kNotificaciones) as! UINavigationController)
+    }
     
     class func createServicioGuardado() -> UINavigationController {
         return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kServicioGuardado) as! UINavigationController)

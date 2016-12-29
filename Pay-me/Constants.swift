@@ -13,9 +13,12 @@ struct Constants {
     struct Storyboard {
         
         static let kMessages = "Messages"
+        static let kNotify   = "Notify"
     }
     
     struct ViewController {
+        
+        static let kNotificaciones              = "kNotificaciones"
         
         static let kServicioGuardado            = "kServicioGuardado"
         static let kPagoExitoso                 = "kPagoExitoso"
