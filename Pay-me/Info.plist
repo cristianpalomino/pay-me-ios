@@ -20,6 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SanFranciscoDisplay-Black.ttf</string>
+		<string>SanFranciscoDisplay-Bold.ttf</string>
+		<string>SanFranciscoDisplay-Heavy.ttf</string>
+		<string>SanFranciscoDisplay-Light.ttf</string>
+		<string>SanFranciscoDisplay-Medium.ttf</string>
+		<string>SanFranciscoDisplay-Regular.ttf</string>
+		<string>SanFranciscoDisplay-Semibold.ttf</string>
+		<string>SanFranciscoDisplay-Thin.ttf</string>
+		<string>SanFranciscoDisplay-Ultralight.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -39,17 +51,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>UIAppFonts</key>
-    <array>
-        <string>SanFranciscoDisplay-Black.ttf</string>
-        <string>SanFranciscoDisplay-Bold.ttf</string>
-        <string>SanFranciscoDisplay-Heavy.ttf</string>
-        <string>SanFranciscoDisplay-Light.ttf</string>
-        <string>SanFranciscoDisplay-Medium.ttf</string>
-        <string>SanFranciscoDisplay-Regular.ttf</string>
-        <string>SanFranciscoDisplay-Semibold.ttf</string>
-        <string>SanFranciscoDisplay-Thin.ttf</string>
-        <string>SanFranciscoDisplay-Ultralight.ttf</string>
-    </array>
 </dict>
 </plist>

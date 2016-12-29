@@ -42,6 +42,22 @@ extension PMViewController: PMViewControllerDelegate {
     func initComponents() {
         
     }
+    
+    func showServicioGuardadoVC() {
+        self.present(UIStoryboard.createServicioGuardado(), animated: true, completion: nil)
+    }
+    
+    func showPagoNoAtuorizadoAVC() {
+        self.present(UIStoryboard.createPagoNoAutorizadoA(), animated: true, completion: nil)
+    }
+    
+    func showTarjetaCreditoNoValidaAVC() {
+        self.present(UIStoryboard.createTarjetaCreditoNoValidaA(), animated: true, completion: nil)
+    }
+    
+    func showPagoExitoso() {
+        self.present(UIStoryboard.createPagoExitoso(), animated: true, completion: nil)
+    }
 }
 
 extension PMViewController {

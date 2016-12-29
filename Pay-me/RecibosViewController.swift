@@ -10,6 +10,9 @@ import UIKit
 
 class RecibosViewController: PMViewController {
     
+    var currentMessage :String = "PE"
+    var cardIsBack :Bool = false
+    
     @IBOutlet var ycardViewBottom    :NSLayoutConstraint!
     @IBOutlet var yButtonBottom      :NSLayoutConstraint!
     
@@ -61,7 +64,20 @@ extension RecibosViewController {
         if self.frameCardView.isHidden {
             self.frameCardView.isHidden = false
         } else {
-            print("PAGO")
+            if cardIsBack {
+                if currentMessage == "PNA" {
+                    showPagoNoAtuorizadoAVC()
+                    currentMessage = "TCNV"
+                } else if currentMessage == "TCNV" {
+                    showTarjetaCreditoNoValidaAVC()
+                    currentMessage = "PE"
+                } else if currentMessage == "PE" {
+                    showPagoExitoso()
+                    currentMessage = "PNA"
+                }
+            } else {
+                tapFlip()
+            }
         }
     }
     
@@ -69,6 +85,7 @@ extension RecibosViewController {
         self.frontCardView.isHidden = true
         self.backCardView.isHidden = false
         self.txtCvv.becomeFirstResponder()
+        self.cardIsBack = true
     }
 }
 
@@ -87,13 +104,24 @@ extension RecibosViewController {
             framebutton.origin.y = framebutton.origin.y - keyboardHeigth
             btnPay.frame = framebutton
             btnPay.isUp = true
-            print(framebutton)
             
             UIView.animate(withDuration: 0.25, animations: {
                 self.bannerView.isHidden = true
                 self.dataView.isHidden = true
                 self.frameCardView.layoutIfNeeded()
             })
+        } else {
+            if self.cardIsBack {
+                framebutton.origin.y = framebutton.origin.y + keyboardHeigth
+                btnPay.frame = framebutton
+                btnPay.isUp = false
+                
+                UIView.animate(withDuration: 0.25, animations: {
+                    self.bannerView.isHidden = true
+                    self.dataView.isHidden = true
+                    self.frameCardView.layoutIfNeeded()
+                })
+            }
         }
     }
     

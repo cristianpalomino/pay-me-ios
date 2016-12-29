@@ -17,6 +17,8 @@
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
 		404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DC1E14665700A578EA /* PMMessageViewController.swift */; };
 		404672DF1E14671400A578EA /* PNAAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* PNAAViewController.swift */; };
+		405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
+		405D23121E157CEB006ED043 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
@@ -29,6 +31,9 @@
 		407C036C1E0B308C00CD5D4C /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */; };
 		407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */; };
 		407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036F1E0B530600CD5D4C /* PMLabel.swift */; };
+		4081E91F1E1582F400A44FEC /* SGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081E91E1E1582F400A44FEC /* SGViewController.swift */; };
+		4081E9211E15916000A44FEC /* TCNVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081E9201E15916000A44FEC /* TCNVViewController.swift */; };
+		4081E9231E15927100A44FEC /* PEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081E9221E15927100A44FEC /* PEViewController.swift */; };
 		408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
 		40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
 		40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
@@ -82,6 +87,8 @@
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		404672DC1E14665700A578EA /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
 		404672DE1E14671400A578EA /* PNAAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNAAViewController.swift; sourceTree = "<group>"; };
+		405D230E1E157C94006ED043 /* PMStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStoryboard.swift; sourceTree = "<group>"; };
+		405D23111E157CEB006ED043 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406EEA241DFB0D88005D2E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +107,9 @@
 		407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
+		4081E91E1E1582F400A44FEC /* SGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGViewController.swift; sourceTree = "<group>"; };
+		4081E9201E15916000A44FEC /* TCNVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCNVViewController.swift; sourceTree = "<group>"; };
+		4081E9221E15927100A44FEC /* PEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PEViewController.swift; sourceTree = "<group>"; };
 		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
 		40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosViewController.swift; sourceTree = "<group>"; };
 		40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
@@ -188,8 +198,19 @@
 			children = (
 				404672D91E14608500A578EA /* Messages.storyboard */,
 				404672DE1E14671400A578EA /* PNAAViewController.swift */,
+				4081E91E1E1582F400A44FEC /* SGViewController.swift */,
+				4081E9201E15916000A44FEC /* TCNVViewController.swift */,
+				4081E9221E15927100A44FEC /* PEViewController.swift */,
 			);
 			name = Messages;
+			sourceTree = "<group>";
+		};
+		405D23101E157CDA006ED043 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				405D23111E157CEB006ED043 /* Constants.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		406EEA111DFB0D88005D2E87 = {
@@ -219,6 +240,7 @@
 			children = (
 				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
 				40B2E3EC1E0DDE07003CBAC3 /* Fonts */,
+				405D23101E157CDA006ED043 /* Core */,
 				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				408E501E1DFB7A6D007BEEDE /* Views */,
 				408E501D1DFB6DF0007BEEDE /* Utils */,
@@ -280,6 +302,7 @@
 			children = (
 				40CF1E461E0680090072CB29 /* PMColors.swift */,
 				40B2E4021E0E5386003CBAC3 /* PMImage.swift */,
+				405D230E1E157C94006ED043 /* PMStoryboard.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -648,12 +671,17 @@
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
 				40B2E4011E0E4481003CBAC3 /* Favorito.swift in Sources */,
+				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */,
 				407C03621E0B1C1000CD5D4C /* ListaServiciosViewController.swift in Sources */,
 				407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */,
+				4081E9211E15916000A44FEC /* TCNVViewController.swift in Sources */,
 				407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */,
 				40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */,
 				4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */,
+				4081E91F1E1582F400A44FEC /* SGViewController.swift in Sources */,
+				4081E9231E15927100A44FEC /* PEViewController.swift in Sources */,
+				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				40CF1E431E058D720072CB29 /* PMTitleButton.swift in Sources */,

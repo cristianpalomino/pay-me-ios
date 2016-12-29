@@ -21,3 +21,15 @@ class PMMessageViewController: PMViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+extension PMMessageViewController {
+    
+    func addTouchListener() {
+        let touchG = UITapGestureRecognizer(target: self, action: #selector(self.touchView))
+        self.view.addGestureRecognizer(touchG)
+    }
+    
+    func touchView() {
+        self.dismiss(animated: true, completion: nil)
+    }
+}
