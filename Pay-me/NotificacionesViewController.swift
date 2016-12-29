@@ -14,6 +14,7 @@ class NotificacionesViewController: PMViewController {
 
     @IBOutlet weak var btnPagar: UIButton!
     
+    //tableview.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,18 +49,6 @@ extension NotificacionesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
     }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        
-        let fade = 0
-        
-        if(editingStyle == UITableViewCellEditingStyle.delete){
-            notificaciones.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation(rawValue: fade)!)
-        }else{
-            print("Unhandled editing style! %d",editingStyle)
-        }
-    }
 }
 
 extension NotificacionesViewController: UITableViewDataSource {
@@ -70,8 +59,33 @@ extension NotificacionesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NotificacionTableViewCell.identifier, for: indexPath) as! NotificacionTableViewCell
+        
+        cell.leftUtilityButtons = self.leftButton() as! [Any]
+        cell.rightUtilityButtons = self.rigthButton() as! [Any]
+        
         cell.item = notificaciones[indexPath.row]
+        
         return cell
+    }
+    
+    
+    //MARK : Pay Button
+    func rigthButton() -> NSArray{
+        let rigthUtilityButton : NSMutableArray = NSMutableArray()
+        
+        let payIcon = UIImage(named:"default")
+        rigthUtilityButton.sw_addUtilityButton(with: UIColor.appBlueColor(), icon: payIcon)
+        
+        return rigthUtilityButton
+    }
+    
+    //MARK : Delete Button
+    func leftButton() -> NSArray{
+        let leftUtilityButton : NSMutableArray = NSMutableArray()
+        let deleteIcon = UIImage(named:"default")
+        leftUtilityButton.sw_addUtilityButton(with: UIColor.appRedColor(), icon: deleteIcon)
+        
+        return leftUtilityButton
     }
     
 

@@ -38,7 +38,7 @@ open class Layer: CAShapeLayer {
      allows the dropshadow effect on the backing layer, while clipping
      the image to a desired shape within the visualLayer.
      */
-	open internal(set) var visualLayer = CAShapeLayer()
+	open let visualLayer = CAShapeLayer()
 	
 	/**
      A property that manages an image for the visualLayer's contents
@@ -134,7 +134,7 @@ open class Layer: CAShapeLayer {
      */
 	public override init(layer: Any) {
 		contentsGravityPreset = .resizeAspectFill
-		super.init()
+        super.init(layer: layer)
 		prepareVisualLayer()
 	}
 	
