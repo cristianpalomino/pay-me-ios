@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '367E317BC931D2CEAF6293407D2544D2'
-               BlueprintName = 'Material-io.cosmicmind.material.icons'
+               BlueprintIdentifier = '4E86D12C49AF995FF03E6C003425A628'
+               BlueprintName = 'SWTableViewCell'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'io.cosmicmind.material.icons.bundle'>
+               BuildableName = 'SWTableViewCell.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

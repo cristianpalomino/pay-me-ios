@@ -7,8 +7,6 @@ target 'Pay-me' do
 
   # Pods for Pay-me
   pod 'Material'
-  
-  use_frameworks!
   pod 'SWTableViewCell'
   
 
