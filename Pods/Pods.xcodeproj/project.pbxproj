@@ -36,6 +36,7 @@
 		3B65F22FB8A29700A8DE095ECD4CCD5F /* BottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01F5D3A52819292E1AA2285B7A5EDB /* BottomNavigationController.swift */; };
 		3D1ED88F88F1A91B26811B04B7301BBE /* Material+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D2709CFB41A0482EBD30E6FFFB51FA /* Material+UIView.swift */; };
 		3DFAA36F2765614C116200329B7D36C9 /* SnackbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23795C7BE891335D3DFEEF3A586146C4 /* SnackbarController.swift */; };
+		404D39F11E15AA1C00A4CFD7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 404D39F01E15AA1C00A4CFD7 /* Roboto-Medium.ttf */; };
 		4690219C44818B7AECB1135372C36C5E /* Material+Obj-C.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B62D3880248AC750148B52557BCAE /* Material+Obj-C.swift */; };
 		46CAAA4083D37579D99B74E69D8F3605 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5B8C25F8A58BBCB47DB0D8C4C9587 /* TableViewCell.swift */; };
 		48FE3A2F0C17AD420557F916A627951B /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E3CFDFF5B88FD346A17D1F730FB53D /* FlatButton.swift */; };
@@ -55,7 +56,6 @@
 		6A51CF3C48FBB5A61517614533D1792C /* Pods-Pay-meUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 600243BA247A13543B62740C5316E81C /* Pods-Pay-meUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B2949EB55A9C7F42B8F97C7E77B2DFD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D335293FC4F16C360D5F31DFD933F7B /* CollectionViewCell.swift */; };
 		6FD14E3D6C667F6A14E2487A53E2BCA4 /* FabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E09AF8FF114E9501A7983BC9A2DB248 /* FabButton.swift */; };
-		729CBEE5186E3E1DBD8EE5BB81D28B89 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0067DBD0845ED10D5111F5B5DAAB54C /* Roboto-Medium.ttf */; };
 		7800096178BF3AB9F6742F1FB5B44F4C /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EF59A1258C410C59C1222EEB755AE5 /* NSMutableArray+SWUtilityButtons.m */; };
 		798562C00936E84C884E6B8ACDEE3BAD /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835D147B34F786EFAB190C0942C5935 /* Bar.swift */; };
 		7B0EFADB3A3521A9DB05E970586F86D5 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0201CED5D4DC0BF3C9F87AF9B323CA /* MenuItem.swift */; };
@@ -171,7 +171,7 @@
 		1B0201CED5D4DC0BF3C9F87AF9B323CA /* MenuItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Sources/iOS/MenuItem.swift; sourceTree = "<group>"; };
 		1C4FCE11DB507AA6F8790FA75B2C56F4 /* Pods-Pay-meTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pay-meTests-frameworks.sh"; sourceTree = "<group>"; };
 		1DDE1F349F24A48CEB60314E189E0FE7 /* Material+UIWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIWindow.swift"; path = "Sources/iOS/Material+UIWindow.swift"; sourceTree = "<group>"; };
-		1EE56C3C647719A8FC3B7511196C6930 /* Pods-Pay-meUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pay-meUITests.modulemap"; sourceTree = "<group>"; };
+		1EE56C3C647719A8FC3B7511196C6930 /* Pods-Pay-meUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pay-meUITests.modulemap"; sourceTree = "<group>"; };
 		1FC4DA14663123800ADDC97A04291830 /* RaisedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisedButton.swift; path = Sources/iOS/RaisedButton.swift; sourceTree = "<group>"; };
 		202FA4F7170E53AB595039F46342CB74 /* MotionKeyframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionKeyframe.swift; path = Sources/iOS/MotionKeyframe.swift; sourceTree = "<group>"; };
 		20D2709CFB41A0482EBD30E6FFFB51FA /* Material+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+UIView.swift"; path = "Sources/iOS/Material+UIView.swift"; sourceTree = "<group>"; };
@@ -182,39 +182,40 @@
 		266A1AB02F347F585C39E478AE471B99 /* SWCellScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWCellScrollView.m; path = SWTableViewCell/PodFiles/SWCellScrollView.m; sourceTree = "<group>"; };
 		26FEA9AFC62E7BDBB9EBADAD4E1A7E51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DCCB8EAA99A945C7B3AA864CE3408D /* SWCellScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWCellScrollView.h; path = SWTableViewCell/PodFiles/SWCellScrollView.h; sourceTree = "<group>"; };
-		293DCC1ACC87DCA18AF23BB78C59EC39 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		293DCC1ACC87DCA18AF23BB78C59EC39 /* Roboto-Light.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Sources/Font/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		2EF039FEB03632AAFF9049F0A5066694 /* CollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Sources/iOS/CollectionReusableView.swift; sourceTree = "<group>"; };
 		2F6BA327C3AF525D506E503E3EA70E92 /* MotionPulse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionPulse.swift; path = Sources/iOS/MotionPulse.swift; sourceTree = "<group>"; };
 		324348260FE4A13811108AA7DC6829D3 /* HeightPreset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeightPreset.swift; path = Sources/iOS/HeightPreset.swift; sourceTree = "<group>"; };
 		3A6C0B12F59020CAE47E6062A397F115 /* Pods-Pay-meTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pay-meTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AC3FEBC852C4B0A14E8888881B268EE /* Pods-Pay-me-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pay-me-resources.sh"; sourceTree = "<group>"; };
-		3BE195578B3D6BB22EC1457B0DD59607 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		3BE195578B3D6BB22EC1457B0DD59607 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "Sources/Font/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		3BE4797DB8A2C82976FDF1D37BC669BE /* Pods-Pay-me-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pay-me-dummy.m"; sourceTree = "<group>"; };
 		3C8FD81AE5E7084DDBED06A6E91B32CA /* TabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabBar.swift; path = Sources/iOS/TabBar.swift; sourceTree = "<group>"; };
 		3CD608815A1918C0B2A12A125FDE2202 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWLongPressGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
 		3D6436A6E505A802E4108228FDACE9DC /* Material+Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Array.swift"; path = "Sources/iOS/Material+Array.swift"; sourceTree = "<group>"; };
 		3DE51085ED9B74F9FC5876F2E1690B9A /* SWTableViewCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWTableViewCell-dummy.m"; sourceTree = "<group>"; };
-		3FDD21D312694E76D37F29ACFF126D49 /* Pods-Pay-me.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pay-me.modulemap"; sourceTree = "<group>"; };
+		3FDD21D312694E76D37F29ACFF126D49 /* Pods-Pay-me.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pay-me.modulemap"; sourceTree = "<group>"; };
+		404D39F01E15AA1C00A4CFD7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		454291854859D857C62FC58394D8F7F7 /* Switch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Switch.swift; path = Sources/iOS/Switch.swift; sourceTree = "<group>"; };
-		478DE0B0F94F922D51D365F30371CFBA /* io.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = io.cosmicmind.material.fonts.bundle; path = io.cosmicmind.material.fonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		478DE0B0F94F922D51D365F30371CFBA /* io.cosmicmind.material.fonts.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = io.cosmicmind.material.fonts.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		4835D147B34F786EFAB190C0942C5935 /* Bar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bar.swift; path = Sources/iOS/Bar.swift; sourceTree = "<group>"; };
 		4A78937B6C1DD7784FDC7C9E6CBF53B4 /* Gravity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gravity.swift; path = Sources/iOS/Gravity.swift; sourceTree = "<group>"; };
 		4C923272F4F1313B8735AC0B6E4E18D9 /* Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Sources/iOS/Card.swift; sourceTree = "<group>"; };
 		4CFD5707FD4992ABA2E739F298AC03E9 /* Screen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = Sources/iOS/Screen.swift; sourceTree = "<group>"; };
 		4DA43B7AA84D8F41CA828AE737FE0B86 /* Divider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Divider.swift; path = Sources/iOS/Divider.swift; sourceTree = "<group>"; };
 		4FF8E037C6179B4ECCB36899CB4E4D4C /* Menu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = Sources/iOS/Menu.swift; sourceTree = "<group>"; };
-		51DDF89BF80CEAF608DA682DDE24BD1F /* Pods_Pay_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pay_me.framework; path = "Pods-Pay-me.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DDF89BF80CEAF608DA682DDE24BD1F /* Pods_Pay_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C72915C744CBC35EA884F0528FBE59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5586CEAEEC0CEE9A336BA1C4359ADF76 /* Motion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Motion.swift; path = Sources/iOS/Motion.swift; sourceTree = "<group>"; };
 		5AA1DC7AF8E8A2EFD7050946561F0AA8 /* Editor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Editor.swift; path = Sources/iOS/Editor.swift; sourceTree = "<group>"; };
 		5CC39A5CAFCCE9D9063329FBAD36207B /* MotionBasic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MotionBasic.swift; path = Sources/iOS/MotionBasic.swift; sourceTree = "<group>"; };
 		5D472359B5E87C30B80E8FB3137F8338 /* SWTableViewCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWTableViewCell.xcconfig; sourceTree = "<group>"; };
 		5D6DB6467BDBE3116E5BE33315B9A980 /* SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = Sources/iOS/SearchBar.swift; sourceTree = "<group>"; };
-		5DBEA9C05336CE293040755C9A2A84BA /* io.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = io.cosmicmind.material.icons.bundle; path = io.cosmicmind.material.icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DBEA9C05336CE293040755C9A2A84BA /* io.cosmicmind.material.icons.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = io.cosmicmind.material.icons.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EACEF1F9A3F412CBC0C6C648E820CF4 /* NavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Sources/iOS/NavigationController.swift; sourceTree = "<group>"; };
 		5FC7F383E4B3DB86B0FD35ECA7A23E35 /* BottomTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomTabBar.swift; path = Sources/iOS/BottomTabBar.swift; sourceTree = "<group>"; };
 		600243BA247A13543B62740C5316E81C /* Pods-Pay-meUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pay-meUITests-umbrella.h"; sourceTree = "<group>"; };
-		601D98636C295E895D5B7ACB60FAE9D9 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Material.framework; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		601D98636C295E895D5B7ACB60FAE9D9 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60428B64068C7945C1D45753AAB3AFF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62201EA138661E56B096F9C7DBADD0CF /* Material.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Material.xcconfig; sourceTree = "<group>"; };
 		62EF59A1258C410C59C1222EEB755AE5 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SWUtilityButtons.m"; path = "SWTableViewCell/PodFiles/NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
@@ -224,10 +225,10 @@
 		69E3CFDFF5B88FD346A17D1F730FB53D /* FlatButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlatButton.swift; path = Sources/iOS/FlatButton.swift; sourceTree = "<group>"; };
 		6CDF35A8CF9BF58464A8C3034E530896 /* Grid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = Sources/iOS/Grid.swift; sourceTree = "<group>"; };
 		6E09AF8FF114E9501A7983BC9A2DB248 /* FabButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FabButton.swift; path = Sources/iOS/FabButton.swift; sourceTree = "<group>"; };
-		716E28C40F5FDC1C018C44C97F59D9D2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		74907AE0E6FCEB9294FFA879300B0AB2 /* Pods_Pay_meTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pay_meTests.framework; path = "Pods-Pay-meTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		716E28C40F5FDC1C018C44C97F59D9D2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Sources/Font/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		74907AE0E6FCEB9294FFA879300B0AB2 /* Pods_Pay_meTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A08811BC91769C36C5C76F0DD371C6 /* DataSourceItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataSourceItem.swift; path = Sources/iOS/DataSourceItem.swift; sourceTree = "<group>"; };
-		7C443D9466B035338BB0B6A0C4576082 /* SWTableViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SWTableViewCell.modulemap; sourceTree = "<group>"; };
+		7C443D9466B035338BB0B6A0C4576082 /* SWTableViewCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWTableViewCell.modulemap; sourceTree = "<group>"; };
 		7C5343A1BA7CC251908E5052A0104934 /* InterimSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterimSpace.swift; path = Sources/iOS/InterimSpace.swift; sourceTree = "<group>"; };
 		7D335293FC4F16C360D5F31DFD933F7B /* CollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Sources/iOS/CollectionViewCell.swift; sourceTree = "<group>"; };
 		8035183EDDC99674F7ABA7EEDE3112D6 /* Pods-Pay-me-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pay-me-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -241,14 +242,14 @@
 		89DD1CE23BF1DD674E336608246E3B7A /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Sources/iOS/Icon.swift; sourceTree = "<group>"; };
 		8A5B041FD69FAFC5BB73600B3D147040 /* Material-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Material-dummy.m"; sourceTree = "<group>"; };
 		8C3EC52E9DEC7C8F6991A89DD269B04D /* Pods-Pay-meTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pay-meTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C921541FF6BCC989A7BCF4097972589 /* Pods-Pay-meTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pay-meTests.modulemap"; sourceTree = "<group>"; };
+		8C921541FF6BCC989A7BCF4097972589 /* Pods-Pay-meTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Pay-meTests.modulemap"; sourceTree = "<group>"; };
 		8D00E824C77092361C5E49B85BCE0518 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EE5998A4409E88784DBB12F44243275 /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = Sources/iOS/TextField.swift; sourceTree = "<group>"; };
 		91CAC835AD2F6377372F98ED7973E40C /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonTapGestureRecognizer.h; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
-		926DD92EBDAA92FDD030039FB1C39535 /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Material.modulemap; sourceTree = "<group>"; };
+		926DD92EBDAA92FDD030039FB1C39535 /* Material.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Material.modulemap; sourceTree = "<group>"; };
 		93229FEE383B562748EC0227683F912B /* Toolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toolbar.swift; path = Sources/iOS/Toolbar.swift; sourceTree = "<group>"; };
 		93538FAA3C8E9657A22A7FE0C7638991 /* Pods-Pay-meUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pay-meUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		947CFC5E15E8B81AF36A090CF2325971 /* Material-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Material-prefix.pch"; sourceTree = "<group>"; };
 		980BE0BFD23AC75D6676A29E5DDA7CC4 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/iOS/Device.swift; sourceTree = "<group>"; };
 		993420BD07848F2DFC30D6D1C5288BBE /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWLongPressGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
@@ -260,18 +261,17 @@
 		A7B502905B249ED93CA9444D088D2722 /* Material+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+String.swift"; path = "Sources/iOS/Material+String.swift"; sourceTree = "<group>"; };
 		AFC4E39FFEF5410C020A4BD359D4C5AE /* TextStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextStorage.swift; path = Sources/iOS/TextStorage.swift; sourceTree = "<group>"; };
 		AFEDFB4B4299AE46457A5CFF81008AE1 /* EditorController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditorController.swift; path = Sources/iOS/EditorController.swift; sourceTree = "<group>"; };
-		B0067DBD0845ED10D5111F5B5DAAB54C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Medium.ttf"; path = "Sources/Font/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		B161F6D5E3E40711782EFD5A19AFE8FF /* RobotoFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RobotoFont.swift; path = Sources/iOS/RobotoFont.swift; sourceTree = "<group>"; };
 		B25F02977CBB3918FC8A66388A49C591 /* Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Button.swift; path = Sources/iOS/Button.swift; sourceTree = "<group>"; };
 		B27E95C727BB49A3EEB75415495489A4 /* NavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = Sources/iOS/NavigationItem.swift; sourceTree = "<group>"; };
 		B36B7F3D341C34BBD841E4090C3A833B /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWUtilityButtonTapGestureRecognizer.m; path = SWTableViewCell/PodFiles/SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
 		B3CE3BF5B85C4758D17508D525A50890 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Sources/iOS/Application.swift; sourceTree = "<group>"; };
-		B661A33F48D2B27D12CC710393333754 /* SWTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWTableViewCell.framework; path = SWTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B661A33F48D2B27D12CC710393333754 /* SWTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72B62D3880248AC750148B52557BCAE /* Material+Obj-C.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Material+Obj-C.swift"; path = "Sources/iOS/Material+Obj-C.swift"; sourceTree = "<group>"; };
 		B953381071699CBAE59A082F5C552DE2 /* CornerRadius.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerRadius.swift; path = Sources/iOS/CornerRadius.swift; sourceTree = "<group>"; };
 		BD01F5D3A52819292E1AA2285B7A5EDB /* BottomNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomNavigationController.swift; path = Sources/iOS/BottomNavigationController.swift; sourceTree = "<group>"; };
 		C077D2D995BA674CD6627B712769F1E3 /* PageTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageTabBarController.swift; path = Sources/iOS/PageTabBarController.swift; sourceTree = "<group>"; };
-		C1330F000CA8B79DFA0C3E8E11D08D1C /* Pods_Pay_meUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pay_meUITests.framework; path = "Pods-Pay-meUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1330F000CA8B79DFA0C3E8E11D08D1C /* Pods_Pay_meUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D07A31CCA3F1F7161600EE190D500C /* Offset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Offset.swift; path = Sources/iOS/Offset.swift; sourceTree = "<group>"; };
 		C483A8CCE08562C26E5AD650080670F2 /* SWTableViewCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWTableViewCell-umbrella.h"; sourceTree = "<group>"; };
 		C65E3FFA56708061BEE98F82269D943C /* SWUtilityButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SWUtilityButtonView.h; path = SWTableViewCell/PodFiles/SWUtilityButtonView.h; sourceTree = "<group>"; };
@@ -285,7 +285,7 @@
 		D7A0CCA5204453CC2F3CEEAE6969B20D /* ResourceBundle-io.cosmicmind.material.fonts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-io.cosmicmind.material.fonts-Info.plist"; sourceTree = "<group>"; };
 		D7B96B2A30E9A98A541D7180B27A612F /* Pods-Pay-me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pay-me.debug.xcconfig"; sourceTree = "<group>"; };
 		D97A2391C0C631564D699C637ABF2CBB /* Depth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Depth.swift; path = Sources/iOS/Depth.swift; sourceTree = "<group>"; };
-		DC95D3F4A38CC46DBFD1192B43FE27BC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		DC95D3F4A38CC46DBFD1192B43FE27BC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Sources/Font/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		DDC911CF091AB3CF6A5236512FFB356C /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Sources/iOS/Color.swift; sourceTree = "<group>"; };
 		E02318827E75DF3EA582A6798311273A /* NavigationDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDrawerController.swift; path = Sources/iOS/NavigationDrawerController.swift; sourceTree = "<group>"; };
 		E360BF7F74706ED976DEF44525512A1E /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/iOS/View.swift; sourceTree = "<group>"; };
@@ -542,9 +542,9 @@
 			isa = PBXGroup;
 			children = (
 				F656B57C95CE7A0C682B021D6499D04B /* Assets.xcassets */,
+				404D39F01E15AA1C00A4CFD7 /* Roboto-Medium.ttf */,
 				716E28C40F5FDC1C018C44C97F59D9D2 /* Roboto-Bold.ttf */,
 				293DCC1ACC87DCA18AF23BB78C59EC39 /* Roboto-Light.ttf */,
-				B0067DBD0845ED10D5111F5B5DAAB54C /* Roboto-Medium.ttf */,
 				DC95D3F4A38CC46DBFD1192B43FE27BC /* Roboto-Regular.ttf */,
 				3BE195578B3D6BB22EC1457B0DD59607 /* Roboto-Thin.ttf */,
 			);
@@ -594,7 +594,6 @@
 				0E8A8C036757A9115946760ED212CA71 /* SWUtilityButtonView.m */,
 				18E436B85E27E7D79337F995B7BD5984 /* Support Files */,
 			);
-			name = SWTableViewCell;
 			path = SWTableViewCell;
 			sourceTree = "<group>";
 		};
@@ -631,7 +630,6 @@
 				398F486B373E7540166934FFF92ED07A /* Core */,
 				1315EDDCE2868A48990C635F437391E2 /* Support Files */,
 			);
-			name = Material;
 			path = Material;
 			sourceTree = "<group>";
 		};
@@ -864,6 +862,7 @@
 			files = (
 				E890A9C114A3F69FAD6AECC0E4A97950 /* io.cosmicmind.material.fonts.bundle in Resources */,
 				4BA3917514B5ED2F43E484552A1010C4 /* io.cosmicmind.material.icons.bundle in Resources */,
+				404D39F11E15AA1C00A4CFD7 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,7 +872,6 @@
 			files = (
 				9747015D96B1CD03791DD1E4C1AED615 /* Roboto-Bold.ttf in Resources */,
 				A73378AB8C0CC6ED283FE38F1D7A61A3 /* Roboto-Light.ttf in Resources */,
-				729CBEE5186E3E1DBD8EE5BB81D28B89 /* Roboto-Medium.ttf in Resources */,
 				93FA04E78F1EABCB70F33065325449E1 /* Roboto-Regular.ttf in Resources */,
 				63BE77C67248EED71E6257343ACCCE9D /* Roboto-Thin.ttf in Resources */,
 			);
