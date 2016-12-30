@@ -13,14 +13,10 @@ class NotificacionesViewController: PMViewController, SWTableViewCellDelegate, U
     
     var notificaciones = [Notificacion]()
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var pinView: UIView!
-    @IBOutlet weak var txtPin: UITextField!
-    @IBOutlet weak var pinViewBottomConstraint: NSLayoutConstraint!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.txtPin.delegate = self
+        //self.txtPin.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(NotificacionesViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(NotificacionesViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -44,7 +40,7 @@ class NotificacionesViewController: PMViewController, SWTableViewCellDelegate, U
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.txtPin.resignFirstResponder()
+        //self.txtPin.resignFirstResponder()
         return true
     }
 
@@ -61,8 +57,8 @@ extension NotificacionesViewController {
         
         ]
         
-        self.pinView.isHidden = true
-        pinView.backgroundColor = UIColor.appGrayColor()
+        //self.pinView.isHidden = true
+        //spinView.backgroundColor = UIColor.appGrayColor()
     }
     
     
@@ -70,10 +66,9 @@ extension NotificacionesViewController {
 
 extension NotificacionesViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
-    }
-    
+    }*/
 
 }
 
@@ -88,10 +83,22 @@ extension NotificacionesViewController: UITableViewDataSource {
         
         cell.leftUtilityButtons = self.leftButton() as! [Any]
         cell.rightUtilityButtons = self.rigthButton() as! [Any]
-        adjustingCellHeight(cell: cell)
+        
+        
+        
         cell.delegate = self;
         cell.item = notificaciones[indexPath.row]
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as? NotificacionTableViewCell
+        
+        cell?.isExpanded = !cell!.isExpanded
+        //adjustingCellHeight(cell: cell!)
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
 }
 
@@ -130,9 +137,9 @@ extension NotificacionesViewController{
     func swipeableTableViewCell(_ cell: SWTableViewCell!, didTriggerRightUtilityButtonWith index: Int) {
         switch index {
         case 0:
-            self.pinView.isHidden = false
-            let cellIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
-            self.tableView.reloadRows(at: [cellIndexPath], with: UITableViewRowAnimation.automatic)
+            //self.pinView.isHidden = false
+            //let cellIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
+            //self.tableView.reloadRows(at: [cellIndexPath], with: UITableViewRowAnimation.automatic)
             
             print("accion pagar")
         default:break
@@ -158,7 +165,7 @@ extension NotificacionesViewController{
         let animationDurarion = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
         let changeInHeight = (keyboardFrame.height) * (show ? 1 : -1)
         UIView.animate(withDuration: animationDurarion, animations: { () -> Void in
-            self.pinViewBottomConstraint.constant += changeInHeight
+            //self.pinViewBottomConstraint.constant += changeInHeight
         })
     }
     

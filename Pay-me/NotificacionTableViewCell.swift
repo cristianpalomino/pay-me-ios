@@ -12,6 +12,8 @@ import SWTableViewCell
 class NotificacionTableViewCell: SWTableViewCell {
 
     @IBOutlet weak var myContentViewBottomConstraint: NSLayoutConstraint!
+    var isExpanded : Bool = false
+    
     struct State {
         static let kPendiente   = "pendiente"
         static let kCargo       = "cargo"
