@@ -11,18 +11,7 @@ import SWTableViewCell
 
 class NotificacionTableViewCell: SWTableViewCell {
 
- 
-    
-    var panRecognizer : UIPanGestureRecognizer!
-    var panStartPoint = CGPoint.zero
-    var startingRightLayoutConstraintConstant : CGFloat = 0.0
-    @IBOutlet weak var contentViewRightConstraint : NSLayoutConstraint?
-    @IBOutlet weak var contentViewLeftConstraint : NSLayoutConstraint?
-    
-    let kBounceValue :CGFloat = 20.0
-    
-    
-    
+    @IBOutlet weak var myContentViewBottomConstraint: NSLayoutConstraint!
     struct State {
         static let kPendiente   = "pendiente"
         static let kCargo       = "cargo"
