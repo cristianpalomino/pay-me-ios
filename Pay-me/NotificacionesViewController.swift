@@ -16,7 +16,8 @@ class NotificacionesViewController: PMViewController, SWTableViewCellDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.txtPin.delegate = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 65
         NotificationCenter.default.addObserver(self, selector: #selector(NotificacionesViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(NotificacionesViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -69,7 +70,7 @@ extension NotificacionesViewController: UITableViewDelegate {
     /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
     }*/
-
+    
 }
 
 extension NotificacionesViewController: UITableViewDataSource {
@@ -95,10 +96,10 @@ extension NotificacionesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as? NotificacionTableViewCell
         
-        cell?.isExpanded = !cell!.isExpanded
-        //adjustingCellHeight(cell: cell!)
-        tableView.beginUpdates()
-        tableView.endUpdates()
+        //cell?.isExpanded = !cell!.isExpanded
+        //cell?.pinViewHeightConstraint.constant = 100
+        //tableView.beginUpdates()
+        //tableView.endUpdates()
     }
 }
 
@@ -138,9 +139,11 @@ extension NotificacionesViewController{
         switch index {
         case 0:
             //self.pinView.isHidden = false
-            //let cellIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
-            //self.tableView.reloadRows(at: [cellIndexPath], with: UITableViewRowAnimation.automatic)
-            
+            let cellIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
+            let cell = tableView.cellForRow(at: cellIndexPath) as? NotificacionTableViewCell
+            cell?.pinViewHeightConstraint.constant = 100
+            tableView.beginUpdates()
+            tableView.endUpdates()
             print("accion pagar")
         default:break
         }
@@ -167,12 +170,6 @@ extension NotificacionesViewController{
         UIView.animate(withDuration: animationDurarion, animations: { () -> Void in
             //self.pinViewBottomConstraint.constant += changeInHeight
         })
-    }
-    
-    func adjustingCellHeight(cell: NotificacionTableViewCell){
-        let futureConstraint : CGFloat =  cell.height*2
-        cell.contentView.height = cell.height*3
-        cell.myContentViewBottomConstraint.constant = futureConstraint
     }
 
 }

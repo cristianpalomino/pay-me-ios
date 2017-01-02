@@ -10,8 +10,10 @@ import UIKit
 import SWTableViewCell
 
 class NotificacionTableViewCell: SWTableViewCell {
-
-    @IBOutlet weak var myContentViewBottomConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var pinViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var pinView: UIView!
     var isExpanded : Bool = false
     
     struct State {
@@ -22,13 +24,6 @@ class NotificacionTableViewCell: SWTableViewCell {
     
     static let identifier = "notificacionCell"
     
-    @IBAction func removeNotification(_ sender: Any) {
-        
-    }
-    
-    
-    @IBAction func btnCustomizeAction(_ sender: Any) {
-    }
     
     @IBOutlet weak var icon     : UIImageView!
     @IBOutlet weak var name     : UILabel!
