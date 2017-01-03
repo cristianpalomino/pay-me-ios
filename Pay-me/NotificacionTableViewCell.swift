@@ -10,18 +10,11 @@ import UIKit
 import SWTableViewCell
 
 class NotificacionTableViewCell: SWTableViewCell {
-
- 
     
-    var panRecognizer : UIPanGestureRecognizer!
-    var panStartPoint = CGPoint.zero
-    var startingRightLayoutConstraintConstant : CGFloat = 0.0
-    @IBOutlet weak var contentViewRightConstraint : NSLayoutConstraint?
-    @IBOutlet weak var contentViewLeftConstraint : NSLayoutConstraint?
+    @IBOutlet weak var pinViewHeightConstraint: NSLayoutConstraint!
     
-    let kBounceValue :CGFloat = 20.0
-    
-    
+    @IBOutlet weak var pinView: UIView!
+    var isExpanded : Bool = false
     
     struct State {
         static let kPendiente   = "pendiente"
@@ -31,13 +24,6 @@ class NotificacionTableViewCell: SWTableViewCell {
     
     static let identifier = "notificacionCell"
     
-    @IBAction func removeNotification(_ sender: Any) {
-        
-    }
-    
-    
-    @IBAction func btnCustomizeAction(_ sender: Any) {
-    }
     
     @IBOutlet weak var icon     : UIImageView!
     @IBOutlet weak var name     : UILabel!
