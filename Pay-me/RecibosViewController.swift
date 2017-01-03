@@ -10,7 +10,6 @@ import UIKit
 
 class RecibosViewController: PMViewController {
     
-    var currentMessage :String = "PE"
     var cardIsBack :Bool = false
     
     @IBOutlet var ycardViewBottom    :NSLayoutConstraint!
@@ -65,15 +64,16 @@ extension RecibosViewController {
             self.frameCardView.isHidden = false
         } else {
             if cardIsBack {
-                if currentMessage == "PNA" {
-                    showPagoNoAtuorizadoAVC()
-                    currentMessage = "TCNV"
-                } else if currentMessage == "TCNV" {
-                    showTarjetaCreditoNoValidaAVC()
-                    currentMessage = "PE"
-                } else if currentMessage == "PE" {
-                    showPagoExitoso()
-                    currentMessage = "PNA"
+                let type = Session.sharedInstance.messageType
+                if type == .INVALID_CARD {
+                    showMessage(type: .INVALID_CARD)
+                    Session.sharedInstance.messageType = .NOT_AUTORIZED
+                } else if type == .NOT_AUTORIZED {
+                    showMessage(type: .NOT_AUTORIZED)
+                    Session.sharedInstance.messageType = .SUCCESS_PAY
+                } else if type == .SUCCESS_PAY {
+                    showMessage(type: .SUCCESS_PAY)
+                    Session.sharedInstance.messageType = .INVALID_CARD
                 }
             } else {
                 tapFlip()

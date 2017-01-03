@@ -38,7 +38,7 @@ extension ListaServiciosViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showServicioGuardadoVC()
+        showMessage(type: .SERVICE_SAVED)
     }
 }
 

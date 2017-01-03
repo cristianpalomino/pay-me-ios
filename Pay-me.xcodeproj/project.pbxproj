@@ -14,11 +14,16 @@
 		4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* NivelDosViewController.swift */; };
 		4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* NivelTresViewController.swift */; };
 		4033773E1E03D44800261759 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
+		40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
+		40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
 		404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DC1E14665700A578EA /* PMMessageViewController.swift */; };
-		404672DF1E14671400A578EA /* PNAAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* PNAAViewController.swift */; };
+		404672DF1E14671400A578EA /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* MessageViewController.swift */; };
 		405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
 		405D23121E157CEB006ED043 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
+		405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
+		405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB91E1B04C0008CF767 /* Session.swift */; };
+		405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABB1E1B36A5008CF767 /* Card.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
@@ -31,9 +36,6 @@
 		407C036C1E0B308C00CD5D4C /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */; };
 		407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */; };
 		407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036F1E0B530600CD5D4C /* PMLabel.swift */; };
-		4081E91F1E1582F400A44FEC /* SGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081E91E1E1582F400A44FEC /* SGViewController.swift */; };
-		4081E9211E15916000A44FEC /* TCNVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081E9201E15916000A44FEC /* TCNVViewController.swift */; };
-		4081E9231E15927100A44FEC /* PEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081E9221E15927100A44FEC /* PEViewController.swift */; };
 		408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
 		40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
 		40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
@@ -88,11 +90,16 @@
 		403377391E03D42600261759 /* NivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelDosViewController.swift; sourceTree = "<group>"; };
 		4033773B1E03D43A00261759 /* NivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelTresViewController.swift; sourceTree = "<group>"; };
 		4033773D1E03D44800261759 /* PMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
+		40463D271E19CF8000F663B0 /* PMItemCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCard.swift; sourceTree = "<group>"; };
+		40463D291E19CF9E00F663B0 /* PMItemCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCard.xib; sourceTree = "<group>"; };
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		404672DC1E14665700A578EA /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
-		404672DE1E14671400A578EA /* PNAAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNAAViewController.swift; sourceTree = "<group>"; };
+		404672DE1E14671400A578EA /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		405D230E1E157C94006ED043 /* PMStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStoryboard.swift; sourceTree = "<group>"; };
 		405D23111E157CEB006ED043 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		405E0AB21E1A1D49008CF767 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		405E0AB91E1B04C0008CF767 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		405E0ABB1E1B36A5008CF767 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406EEA241DFB0D88005D2E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,9 +118,6 @@
 		407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
-		4081E91E1E1582F400A44FEC /* SGViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGViewController.swift; sourceTree = "<group>"; };
-		4081E9201E15916000A44FEC /* TCNVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCNVViewController.swift; sourceTree = "<group>"; };
-		4081E9221E15927100A44FEC /* PEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PEViewController.swift; sourceTree = "<group>"; };
 		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
 		40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosViewController.swift; sourceTree = "<group>"; };
 		40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
@@ -206,10 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				404672D91E14608500A578EA /* Messages.storyboard */,
-				404672DE1E14671400A578EA /* PNAAViewController.swift */,
-				4081E91E1E1582F400A44FEC /* SGViewController.swift */,
-				4081E9201E15916000A44FEC /* TCNVViewController.swift */,
-				4081E9221E15927100A44FEC /* PEViewController.swift */,
+				404672DE1E14671400A578EA /* MessageViewController.swift */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -218,8 +219,17 @@
 			isa = PBXGroup;
 			children = (
 				405D23111E157CEB006ED043 /* Constants.swift */,
+				405E0AB91E1B04C0008CF767 /* Session.swift */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		405E0AB11E1A1D32008CF767 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				405E0AB21E1A1D49008CF767 /* Enums.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 		406EEA111DFB0D88005D2E87 = {
@@ -249,6 +259,7 @@
 			children = (
 				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
 				40B2E3EC1E0DDE07003CBAC3 /* Fonts */,
+				405E0AB11E1A1D32008CF767 /* Enums */,
 				405D23101E157CDA006ED043 /* Core */,
 				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				408E501E1DFB7A6D007BEEDE /* Views */,
@@ -324,6 +335,8 @@
 				408E501F1DFB7B13007BEEDE /* PMTextField.swift */,
 				403377351E0334E700261759 /* PMButton.swift */,
 				40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */,
+				40463D271E19CF8000F663B0 /* PMItemCard.swift */,
+				40463D291E19CF9E00F663B0 /* PMItemCard.xib */,
 				40CF1E421E058D720072CB29 /* PMTitleButton.swift */,
 				40CF1E441E058D830072CB29 /* PMTitleButton.xib */,
 				40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */,
@@ -353,6 +366,7 @@
 			children = (
 				40B2E4001E0E4481003CBAC3 /* Favorito.swift */,
 				4F1898481E11BB240060DD41 /* Notificacion.swift */,
+				405E0ABB1E1B36A5008CF767 /* Card.swift */,
 			);
 			name = Beans;
 			sourceTree = "<group>";
@@ -512,6 +526,7 @@
 				40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
 				404672DA1E14608500A578EA /* Messages.storyboard in Resources */,
+				40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */,
 				40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
 				4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */,
 				40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
@@ -686,26 +701,27 @@
 			files = (
 				407C036C1E0B308C00CD5D4C /* FavoritosViewController.swift in Sources */,
 				403377381E03D41900261759 /* NivelUnoViewController.swift in Sources */,
+				405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */,
 				40CF1E491E068AAF0072CB29 /* SuministroViewController.swift in Sources */,
 				403377361E0334E700261759 /* PMButton.swift in Sources */,
-				404672DF1E14671400A578EA /* PNAAViewController.swift in Sources */,
+				404672DF1E14671400A578EA /* MessageViewController.swift in Sources */,
 				40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */,
 				4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
+				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
 				40B2E4011E0E4481003CBAC3 /* Favorito.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */,
 				4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */,
 				407C03621E0B1C1000CD5D4C /* ListaServiciosViewController.swift in Sources */,
 				407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */,
-				4081E9211E15916000A44FEC /* TCNVViewController.swift in Sources */,
 				407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */,
+				405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */,
+				40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */,
 				40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */,
 				4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */,
-				4081E91F1E1582F400A44FEC /* SGViewController.swift in Sources */,
-				4081E9231E15927100A44FEC /* PEViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,

@@ -17,8 +17,12 @@ extension UIStoryboard {
     class func notifyStoryboard() -> UIStoryboard {
         return UIStoryboard(name: Constants.Storyboard.kNotify, bundle: Bundle.main)
     }
+
     
-    
+    class func createMessage() -> UINavigationController {
+        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kMessages) as! UINavigationController)
+    }
+
     class func createNotificaciones() -> UINavigationController {
         return (notifyStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kNotificaciones) as! UINavigationController)
     }

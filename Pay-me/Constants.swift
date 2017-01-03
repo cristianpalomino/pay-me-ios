@@ -17,9 +17,9 @@ struct Constants {
     }
     
     struct ViewController {
+        static let kMessages                    = "kMessages"
         
         static let kNotificaciones              = "kNotificaciones"
-        
         static let kServicioGuardado            = "kServicioGuardado"
         static let kPagoExitoso                 = "kPagoExitoso"
         static let kPagoNoAutorizadoA           = "kPagoNoAutorizadoA"

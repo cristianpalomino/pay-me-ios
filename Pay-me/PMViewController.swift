@@ -29,7 +29,7 @@ class PMViewController: UIViewController {
 extension PMViewController {
     
     @IBAction func tapNotifications() {
-        showNotificaciones()
+        
     }
 }
 
@@ -47,27 +47,13 @@ extension PMViewController {
 extension PMViewController: PMViewControllerDelegate {
     
     func initComponents() {
-        
+
     }
     
-    func showServicioGuardadoVC() {
-        self.present(UIStoryboard.createServicioGuardado(), animated: true, completion: nil)
-    }
-    
-    func showPagoNoAtuorizadoAVC() {
-        self.present(UIStoryboard.createPagoNoAutorizadoA(), animated: true, completion: nil)
-    }
-    
-    func showTarjetaCreditoNoValidaAVC() {
-        self.present(UIStoryboard.createTarjetaCreditoNoValidaA(), animated: true, completion: nil)
-    }
-    
-    func showPagoExitoso() {
-        self.present(UIStoryboard.createPagoExitoso(), animated: true, completion: nil)
-    }
-    
-    func showNotificaciones() {
-        self.present(UIStoryboard.createNotificaciones(), animated: true, completion: nil)
+    func showMessage(type :MessageType) {
+        Session.sharedInstance.messageType = type
+        let message = UIStoryboard.createMessage()
+        self.present(message, animated: true, completion: nil)
     }
 }
 
