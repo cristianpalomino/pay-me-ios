@@ -9,9 +9,11 @@
 import UIKit
 import SWTableViewCell
 
-class NotificacionesViewController: PMViewController, SWTableViewCellDelegate, UITextFieldDelegate {
+class NotificacionesViewController: PMViewController, UITextFieldDelegate {
     
     var notificaciones = [Notificacion]()
+    var cellCurrentlyEditing : NSMutableSet = NSMutableSet()
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,6 +23,8 @@ class NotificacionesViewController: PMViewController, SWTableViewCellDelegate, U
         NotificationCenter.default.addObserver(self, selector: #selector(NotificacionesViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(NotificacionesViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        self.cellCurrentlyEditing = NSMutableSet()
 
     }
 
@@ -36,9 +40,9 @@ class NotificacionesViewController: PMViewController, SWTableViewCellDelegate, U
     }
 
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
-    }
+    }*/
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         //self.txtPin.resignFirstResponder()
@@ -58,8 +62,6 @@ extension NotificacionesViewController {
         
         ]
         
-        //self.pinView.isHidden = true
-        //spinView.backgroundColor = UIColor.appGrayColor()
     }
     
     
@@ -82,12 +84,12 @@ extension NotificacionesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NotificacionTableViewCell.identifier, for: indexPath) as! NotificacionTableViewCell
         
-        cell.leftUtilityButtons = self.leftButton() as! [Any]
-        cell.rightUtilityButtons = self.rigthButton() as! [Any]
+        //cell.leftUtilityButtons = self.leftButton() as! [Any]
+        //cell.rightUtilityButtons = self.rigthButton() as! [Any]
         
         
         
-        cell.delegate = self;
+        //cell.delegate = self;
         cell.item = notificaciones[indexPath.row]
         return cell
     }
@@ -103,53 +105,6 @@ extension NotificacionesViewController: UITableViewDataSource {
     }
 }
 
-//MARK : Extension to SWTableViewCellDelegate methods
-extension NotificacionesViewController{
-    //MARK : Pay Button
-    func rigthButton() -> NSArray{
-        let rigthUtilityButton : NSMutableArray = NSMutableArray()
-        
-        let payIcon = UIImage(named:"payButtonDefault")
-        rigthUtilityButton.sw_addUtilityButton(with: UIColor.appBlueColor(), icon: payIcon)
-        
-        return rigthUtilityButton
-    }
-    
-    //MARK : Delete Button
-    func leftButton() -> NSArray{
-        let leftUtilityButton : NSMutableArray = NSMutableArray()
-        let deleteIcon = UIImage(named:"deleteButtonDefault")
-        leftUtilityButton.sw_addUtilityButton(with: UIColor.appRedColor(), icon: deleteIcon)
-        
-        return leftUtilityButton
-    }
-    
-    func swipeableTableViewCell(_ cell: SWTableViewCell!, didTriggerLeftUtilityButtonWith index: Int) {
-        switch index {
-        case 0:
-            let cellIndexPath : IndexPath =  self.tableView.indexPath(for: cell)!
-            notificaciones.remove(at: (cellIndexPath.row))
-            self.tableView.deleteRows(at: [cellIndexPath], with: UITableViewRowAnimation.automatic)
-            break
-        default:break
-        }
-    }
-    
-    func swipeableTableViewCell(_ cell: SWTableViewCell!, didTriggerRightUtilityButtonWith index: Int) {
-        switch index {
-        case 0:
-            //self.pinView.isHidden = false
-            let cellIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
-            let cell = tableView.cellForRow(at: cellIndexPath) as? NotificacionTableViewCell
-            cell?.pinViewHeightConstraint.constant = 100
-            tableView.beginUpdates()
-            tableView.endUpdates()
-            print("accion pagar")
-        default:break
-        }
-    }
-    
-}
 
 //MARK : Extension to pinView related methods
 extension NotificacionesViewController{
@@ -173,5 +128,69 @@ extension NotificacionesViewController{
     }
 
 }
+
+extension NotificacionesViewController : NotificacionTableViewCellDelegate{
+    
+    func cellDidOpen(_ cell: UITableViewCell) {
+        let currentEditingIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
+        
+        self.cellCurrentlyEditing.add(from: currentEditingIndexPath)
+    }
+    
+    func cellDidClose(_ cell: UITableViewCell) {
+        self.cellCurrentlyEditing.remove(self.tableView.indexPath(for: cell)!)
+    }
+    
+}
+
+/*
+ //MARK : Extension to SWTableViewCellDelegate methods
+ extension NotificacionesViewController{
+ //MARK : Pay Button
+ func rigthButton() -> NSArray{
+ let rigthUtilityButton : NSMutableArray = NSMutableArray()
+ 
+ let payIcon = UIImage(named:"payButtonDefault")
+ rigthUtilityButton.sw_addUtilityButton(with: UIColor.appBlueColor(), icon: payIcon)
+ 
+ return rigthUtilityButton
+ }
+ 
+ //MARK : Delete Button
+ func leftButton() -> NSArray{
+ let leftUtilityButton : NSMutableArray = NSMutableArray()
+ let deleteIcon = UIImage(named:"deleteButtonDefault")
+ leftUtilityButton.sw_addUtilityButton(with: UIColor.appRedColor(), icon: deleteIcon)
+ 
+ return leftUtilityButton
+ }
+ 
+ func swipeableTableViewCell(_ cell: SWTableViewCell!, didTriggerLeftUtilityButtonWith index: Int) {
+ switch index {
+ case 0:
+ let cellIndexPath : IndexPath =  self.tableView.indexPath(for: cell)!
+ notificaciones.remove(at: (cellIndexPath.row))
+ self.tableView.deleteRows(at: [cellIndexPath], with: UITableViewRowAnimation.automatic)
+ break
+ default:break
+ }
+ }
+ 
+ func swipeableTableViewCell(_ cell: SWTableViewCell!, didTriggerRightUtilityButtonWith index: Int) {
+ switch index {
+ case 0:
+ //self.pinView.isHidden = false
+ let cellIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
+ let cell = tableView.cellForRow(at: cellIndexPath) as? NotificacionTableViewCell
+ cell?.pinViewHeightConstraint.constant = 100
+ tableView.beginUpdates()
+ tableView.endUpdates()
+ print("accion pagar")
+ default:break
+ }
+ }
+ 
+ }
+ */
 
 

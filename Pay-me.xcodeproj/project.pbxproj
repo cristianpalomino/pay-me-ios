@@ -51,7 +51,9 @@
 		4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1898461E11BA470060DD41 /* Notify.storyboard */; };
 		4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
 		4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */; };
-		4F18B2B51E1B1161008F62DC /* NotificationContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18B2B41E1B1161008F62DC /* NotificationContentViewCell.swift */; };
+		4FD55A8A1E1DC6BC0058926F /* Prueba.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD55A891E1DC6BC0058926F /* Prueba.storyboard */; };
+		4FD55A8E1E1DC7AC0058926F /* PruebaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55A8D1E1DC7AB0058926F /* PruebaTableViewCell.swift */; };
+		4FD55A901E1DCD500058926F /* PruebaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD55A8F1E1DCD500058926F /* PruebaViewController.swift */; };
 		693C4236FF6A88FBB1834A2A /* Pods_Pay_meUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */; };
 		C058572CDEC34F9F5E697CEC /* Pods_Pay_meTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC645C84DF5D84B5B8A878EB /* Pods_Pay_meTests.framework */; };
 /* End PBXBuildFile section */
@@ -123,8 +125,10 @@
 		4F1898461E11BA470060DD41 /* Notify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify.storyboard; sourceTree = "<group>"; };
 		4F1898481E11BB240060DD41 /* Notificacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacion.swift; sourceTree = "<group>"; };
 		4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionTableViewCell.swift; sourceTree = "<group>"; };
-		4F18B2B41E1B1161008F62DC /* NotificationContentViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationContentViewCell.swift; sourceTree = "<group>"; };
 		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FD55A891E1DC6BC0058926F /* Prueba.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Prueba.storyboard; sourceTree = "<group>"; };
+		4FD55A8D1E1DC7AB0058926F /* PruebaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PruebaTableViewCell.swift; sourceTree = "<group>"; };
+		4FD55A8F1E1DCD500058926F /* PruebaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PruebaViewController.swift; sourceTree = "<group>"; };
 		5488BC2B09210A80F78E15DF /* Pods-Pay-meUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meUITests/Pods-Pay-meUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6826DCD174ACF4A68D5559B7 /* Pods-Pay-me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE6167217B90CD9FA9ECF9C /* Pods-Pay-meTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meTests/Pods-Pay-meTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,11 +326,11 @@
 		40CF1E3B1E04ADDA0072CB29 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4F18B2B11E1B10E0008F62DC /* ContentViews */,
 				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
 				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
 				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
+				4FD55A8D1E1DC7AB0058926F /* PruebaTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -336,16 +340,10 @@
 			children = (
 				4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */,
 				4F1898461E11BA470060DD41 /* Notify.storyboard */,
+				4FD55A891E1DC6BC0058926F /* Prueba.storyboard */,
+				4FD55A8F1E1DCD500058926F /* PruebaViewController.swift */,
 			);
 			name = Notify;
-			sourceTree = "<group>";
-		};
-		4F18B2B11E1B10E0008F62DC /* ContentViews */ = {
-			isa = PBXGroup;
-			children = (
-				4F18B2B41E1B1161008F62DC /* NotificationContentViewCell.swift */,
-			);
-			name = ContentViews;
 			sourceTree = "<group>";
 		};
 		F22665E33AA68B27541E5D52 /* Frameworks */ = {
@@ -492,6 +490,7 @@
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
+				4FD55A8A1E1DC6BC0058926F /* Prueba.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +658,9 @@
 				40CF1E491E068AAF0072CB29 /* SuministroViewController.swift in Sources */,
 				403377361E0334E700261759 /* PMButton.swift in Sources */,
 				40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */,
+				4FD55A8E1E1DC7AC0058926F /* PruebaTableViewCell.swift in Sources */,
 				4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */,
+				4FD55A901E1DCD500058926F /* PruebaViewController.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
@@ -673,7 +674,6 @@
 				4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
-				4F18B2B51E1B1161008F62DC /* NotificationContentViewCell.swift in Sources */,
 				40CF1E431E058D720072CB29 /* PMTitleButton.swift in Sources */,
 				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
