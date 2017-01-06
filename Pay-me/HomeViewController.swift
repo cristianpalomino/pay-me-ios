@@ -20,6 +20,7 @@ class HomeViewController: PMViewController{
     @IBOutlet weak var contentViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var modelViewLeftConstraint: NSLayoutConstraint!
     @IBOutlet weak var modelImageView: UIImageView!
+    @IBOutlet weak var btnBack: UIButton!
     
     
     
@@ -27,7 +28,7 @@ class HomeViewController: PMViewController{
         super.viewDidLoad()
 
         // Do any additional setup after loading the view, typically from a nib.
-        
+        prepareViews()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +43,7 @@ extension HomeViewController{
     
     override func initComponents() {
         prepareData()
-        prepareViews()
+        
     }
     
     func prepareData(){
@@ -65,6 +66,8 @@ extension HomeViewController{
         let modelImageViewWidth : CGFloat = self.modelImageView.frame.width
         
         txtPageTitle.textAlignment = .center
+        txtBody.textAlignment = .center
+        
         txtPageTitle.text = "!Cambia tu tarjeta de credito!"
         
         
@@ -113,6 +116,8 @@ extension HomeViewController{
         self.scrollView.contentSize = CGSize(width:self.scrollView.frame.width * 3, height:self.scrollView.frame.height)
         self.scrollView.delegate = self
         self.pageControl.currentPage = 0
+        
+        self.btnBack.isHidden =  true
     }
     
 }
@@ -120,13 +125,12 @@ extension HomeViewController{
 extension HomeViewController : UIScrollViewDelegate{
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        // Test the offset and calculate the current page after scrolling ends
+
         let pageWidth:CGFloat = scrollView.frame.width
         let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
-        // Change the indicator
+
         self.pageControl.currentPage = Int(currentPage);
-        // Change the text accordingly
-        
+
         let notificionHomeData : NotificacionHome = notificacionesHome[Int(currentPage)]
         let title = notificionHomeData.messageTitle
         let body = notificionHomeData.messageBody
