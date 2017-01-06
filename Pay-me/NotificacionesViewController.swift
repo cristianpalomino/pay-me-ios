@@ -139,26 +139,20 @@ extension NotificacionesViewController{
             self.pinView.isHidden = false
             self.keyboardDidShow =  true
             let cellIndexPath : IndexPath = self.tableView.indexPath(for: cell)!
-            //self.tableView.reloadRows(at: [cellIndexPath], with: UITableViewRowAnimation.automatic)
             self.tableView.scrollToRow(at: cellIndexPath, at: UITableViewScrollPosition.top, animated: true)
-            print("accion pagar")
             break
         default:break
         }
     }
+    
     func swipeableTableViewCellShouldHideUtilityButtons(onSwipe cell: SWTableViewCell!) -> Bool {
         return true
     }
     
-    func swipeableTableViewCellDidEndScrolling(_ cell: SWTableViewCell!) {
-        
-        print("se cerro o abrio")
-    }
     
     func swipeableTableViewCell(_ cell: SWTableViewCell!, scrollingTo state: SWCellState) {
         switch state {
         case SWCellState.cellStateLeft:
-            print("scrolling -left")
             if(!self.pinView.isHidden || (self.keyboardDidShow && !self.pinView.isHidden)){
                 self.txtPin.resignFirstResponder()
                 self.keyboardDidShow = false
@@ -166,7 +160,6 @@ extension NotificacionesViewController{
             }
             break
         case SWCellState.cellStateCenter:
-            print("scrolling -center")
             if(!self.pinView.isHidden || (self.keyboardDidShow && !self.pinView.isHidden)){
                 self.txtPin.resignFirstResponder()
                 self.keyboardDidShow = false
@@ -174,7 +167,6 @@ extension NotificacionesViewController{
             }
             break
         case SWCellState.cellStateRight:
-            print("scrolling -right")
             break
         default:
             break
@@ -194,7 +186,6 @@ extension NotificacionesViewController{
 
     func keyboardWillHide(notification:NSNotification) {
         adjustingHeight(show: false, notification: notification)
-        print("activar scroll y ocultar pin")
         self.tableView.isScrollEnabled =  true
         self.pinView.isHidden =  true
     }
