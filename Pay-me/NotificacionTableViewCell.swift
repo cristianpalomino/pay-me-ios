@@ -10,12 +10,8 @@ import UIKit
 import SWTableViewCell
 
 class NotificacionTableViewCell: SWTableViewCell {
-    
-    @IBOutlet weak var pinViewHeightConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var pinView: UIView!
-    var isExpanded : Bool = false
-    
+
+    @IBOutlet weak var myContentViewBottomConstraint: NSLayoutConstraint!
     struct State {
         static let kPendiente   = "pendiente"
         static let kCargo       = "cargo"
@@ -24,6 +20,13 @@ class NotificacionTableViewCell: SWTableViewCell {
     
     static let identifier = "notificacionCell"
     
+    @IBAction func removeNotification(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func btnCustomizeAction(_ sender: Any) {
+    }
     
     @IBOutlet weak var icon     : UIImageView!
     @IBOutlet weak var name     : UILabel!
