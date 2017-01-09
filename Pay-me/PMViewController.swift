@@ -29,8 +29,13 @@ class PMViewController: UIViewController {
 extension PMViewController {
     
     @IBAction func tapNotifications() {
+        let notis = UIStoryboard.createNotificacionesHome().topViewController!
+        self.navigationController?.show(notis, sender: self)
+    }
+    
+    @IBAction func tapPerfil() {
         let notis = UIStoryboard.createNotificaciones().topViewController!
-        self.navigationController?.pushViewController(notis, animated: true)
+        self.navigationController?.show(notis, sender: self)
     }
 }
 

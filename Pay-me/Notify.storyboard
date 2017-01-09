@@ -243,6 +243,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="7cc-nW-zb4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="tapNotifications" destination="2so-SQ-XPX" id="Per-5u-hHu"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

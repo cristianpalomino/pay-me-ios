@@ -14,11 +14,13 @@ struct Constants {
         
         static let kMessages = "Messages"
         static let kNotify   = "Notify"
+        static let kHome     = "Home"
     }
     
     struct ViewController {
         static let kMessages                    = "kMessages"
         
+        static let kNotificacionesHome          = "kNotificacionesHome"
         static let kNotificaciones              = "kNotificaciones"
         static let kServicioGuardado            = "kServicioGuardado"
         static let kPagoExitoso                 = "kPagoExitoso"

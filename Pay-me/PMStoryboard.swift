@@ -17,14 +17,22 @@ extension UIStoryboard {
     class func notifyStoryboard() -> UIStoryboard {
         return UIStoryboard(name: Constants.Storyboard.kNotify, bundle: Bundle.main)
     }
+    
+    class func homeStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: Constants.Storyboard.kHome, bundle: Bundle.main)
+    }
 
     
     class func createMessage() -> UINavigationController {
         return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kMessages) as! UINavigationController)
     }
-
+    
     class func createNotificaciones() -> UINavigationController {
         return (notifyStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kNotificaciones) as! UINavigationController)
+    }
+    
+    class func createNotificacionesHome() -> UINavigationController {
+        return (homeStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kNotificacionesHome) as! UINavigationController)
     }
     
     class func createServicioGuardado() -> UINavigationController {
@@ -49,13 +57,5 @@ extension UIStoryboard {
     
     class func createAdicionarTarjeta() -> UINavigationController  {
         return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kPagoNoAutorizadoB) as! UINavigationController)
-    }
-}
-
-extension UIStoryboard {
-    
-    class func listNotifications() -> UIViewController {
-        let nc = (notifyStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kNotificaciones) as! UINavigationController)
-        return nc.topViewController!
     }
 }
