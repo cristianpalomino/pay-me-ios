@@ -51,3 +51,11 @@ extension UIStoryboard {
         return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kPagoNoAutorizadoB) as! UINavigationController)
     }
 }
+
+extension UIStoryboard {
+    
+    class func listNotifications() -> UIViewController {
+        let nc = (notifyStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kNotificaciones) as! UINavigationController)
+        return nc.topViewController!
+    }
+}
