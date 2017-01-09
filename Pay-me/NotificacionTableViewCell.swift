@@ -37,6 +37,7 @@ class NotificacionTableViewCell: SWTableViewCell {
     
     
     @IBAction func btnCustomizeAction(_ sender: Any) {
+        
     }
     
     @IBOutlet weak var icon     : UIImageView!

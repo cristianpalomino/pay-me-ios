@@ -37,6 +37,16 @@ extension FavoritosViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            Session.sharedInstance.flowType = .FIRST_TIME
+        } else {
+            Session.sharedInstance.flowType = .SECOND_TIME
+        }
+        
+        self.performSegue(withIdentifier: "kRecibo", sender: nil)
+    }
 }
 
 extension FavoritosViewController: UITableViewDataSource {

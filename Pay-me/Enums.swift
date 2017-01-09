@@ -23,3 +23,15 @@ enum MessageType {
     case INVALID_CARD
     case SERVICE_SAVED
 }
+
+enum FlowType {
+    
+    case FIRST_TIME
+    case SECOND_TIME
+}
+
+enum PayType {
+    
+    case SUCCESS
+    case DENIED
+}

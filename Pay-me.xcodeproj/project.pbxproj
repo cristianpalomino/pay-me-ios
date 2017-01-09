@@ -24,6 +24,7 @@
 		405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
 		405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB91E1B04C0008CF767 /* Session.swift */; };
 		405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABB1E1B36A5008CF767 /* Card.swift */; };
+		405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABD1E1C86AD008CF767 /* PMSizes.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
@@ -37,6 +38,13 @@
 		407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */; };
 		407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036F1E0B530600CD5D4C /* PMLabel.swift */; };
 		408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
+		40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420101E20260D00D74D22 /* RecibosBViewController.swift */; };
+		40A420131E203FF200D74D22 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
+		40A420151E2053D000D74D22 /* PMPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420141E2053D000D74D22 /* PMPin.swift */; };
+		40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420161E234C7D00D74D22 /* RecibosAViewController.swift */; };
+		40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */; };
+		40A4201D1E24046F00D74D22 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201C1E24046F00D74D22 /* Pay.swift */; };
+		40A420201E24073D00D74D22 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */; };
 		40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
 		40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
 		40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */; };
@@ -100,6 +108,7 @@
 		405E0AB21E1A1D49008CF767 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		405E0AB91E1B04C0008CF767 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		405E0ABB1E1B36A5008CF767 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		405E0ABD1E1C86AD008CF767 /* PMSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSizes.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406EEA241DFB0D88005D2E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +128,13 @@
 		407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
+		40A420101E20260D00D74D22 /* RecibosBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosBViewController.swift; sourceTree = "<group>"; };
+		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
+		40A420141E2053D000D74D22 /* PMPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMPin.swift; sourceTree = "<group>"; };
+		40A420161E234C7D00D74D22 /* RecibosAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosAViewController.swift; sourceTree = "<group>"; };
+		40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPagosViewController.swift; sourceTree = "<group>"; };
+		40A4201C1E24046F00D74D22 /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
+		40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
 		40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosViewController.swift; sourceTree = "<group>"; };
 		40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
 		40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Bold.ttf"; sourceTree = "<group>"; };
@@ -264,6 +280,7 @@
 				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				408E501E1DFB7A6D007BEEDE /* Views */,
 				408E501D1DFB6DF0007BEEDE /* Utils */,
+				40A420191E24039A00D74D22 /* Historico */,
 				408E501B1DFB67DF007BEEDE /* Servicios */,
 				406EEA241DFB0D88005D2E87 /* Assets.xcassets */,
 				406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */,
@@ -304,9 +321,10 @@
 		408E501C1DFB67F8007BEEDE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
 				404672DB1E14656800A578EA /* Messages */,
 				4F1898431E11B7E80060DD41 /* Notify */,
-				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
+				40A420181E2358E700D74D22 /* Recibos */,
 				403377371E03D41900261759 /* NivelUnoViewController.swift */,
 				403377391E03D42600261759 /* NivelDosViewController.swift */,
 				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
@@ -314,7 +332,6 @@
 				407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */,
 				407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */,
 				407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */,
-				40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -325,6 +342,8 @@
 				40CF1E461E0680090072CB29 /* PMColors.swift */,
 				40B2E4021E0E5386003CBAC3 /* PMImage.swift */,
 				405D230E1E157C94006ED043 /* PMStoryboard.swift */,
+				405E0ABD1E1C86AD008CF767 /* PMSizes.swift */,
+				40A420121E203FF200D74D22 /* PMString.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -341,8 +360,36 @@
 				40CF1E441E058D830072CB29 /* PMTitleButton.xib */,
 				40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */,
 				407C036F1E0B530600CD5D4C /* PMLabel.swift */,
+				40A420141E2053D000D74D22 /* PMPin.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		40A420181E2358E700D74D22 /* Recibos */ = {
+			isa = PBXGroup;
+			children = (
+				40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */,
+				40A420161E234C7D00D74D22 /* RecibosAViewController.swift */,
+				40A420101E20260D00D74D22 /* RecibosBViewController.swift */,
+			);
+			name = Recibos;
+			sourceTree = "<group>";
+		};
+		40A420191E24039A00D74D22 /* Historico */ = {
+			isa = PBXGroup;
+			children = (
+				40A4201E1E24072D00D74D22 /* Cells */,
+				40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */,
+			);
+			name = Historico;
+			sourceTree = "<group>";
+		};
+		40A4201E1E24072D00D74D22 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		40B2E3EC1E0DDE07003CBAC3 /* Fonts */ = {
@@ -367,6 +414,7 @@
 				40B2E4001E0E4481003CBAC3 /* Favorito.swift */,
 				4F1898481E11BB240060DD41 /* Notificacion.swift */,
 				405E0ABB1E1B36A5008CF767 /* Card.swift */,
+				40A4201C1E24046F00D74D22 /* Pay.swift */,
 			);
 			name = Beans;
 			sourceTree = "<group>";
@@ -385,8 +433,8 @@
 		4F1898431E11B7E80060DD41 /* Notify */ = {
 			isa = PBXGroup;
 			children = (
-				4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */,
 				4F1898461E11BA470060DD41 /* Notify.storyboard */,
+				4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */,
 			);
 			name = Notify;
 			sourceTree = "<group>";
@@ -699,6 +747,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A420201E24073D00D74D22 /* PayTableViewCell.swift in Sources */,
 				407C036C1E0B308C00CD5D4C /* FavoritosViewController.swift in Sources */,
 				403377381E03D41900261759 /* NivelUnoViewController.swift in Sources */,
 				405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */,
@@ -713,7 +762,10 @@
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
 				40B2E4011E0E4481003CBAC3 /* Favorito.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
+				40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */,
+				40A420131E203FF200D74D22 /* PMString.swift in Sources */,
+				40A420151E2053D000D74D22 /* PMPin.swift in Sources */,
 				4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */,
 				407C03621E0B1C1000CD5D4C /* ListaServiciosViewController.swift in Sources */,
 				407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */,
@@ -724,8 +776,12 @@
 				4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
+				40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
+				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
 				40CF1E431E058D720072CB29 /* PMTitleButton.swift in Sources */,
+				405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */,
+				40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */,
 				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,

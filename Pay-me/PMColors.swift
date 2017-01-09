@@ -23,4 +23,13 @@ extension UIColor {
     public class func appGrayColor() -> UIColor {
         return UIColor(red: 170/255, green: 178/255, blue: 189/255, alpha: 1)
     }
+    
+    //Historico
+    public class func appGreenHistoricoColor() -> UIColor {
+        return UIColor(red: 160/255, green: 212/255, blue: 104/255, alpha: 1)
+    }
+    
+    public class func appRedHistoricoColor() -> UIColor {
+        return UIColor(red: 218/255, green: 68/255, blue: 83/255, alpha: 1)
+    }
 }

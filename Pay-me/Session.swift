@@ -10,7 +10,8 @@ import Foundation
 
 class Session {
     
-    var messageType = MessageType.SUCCESS_PAY
+    var flowType    = FlowType.SECOND_TIME
+    var messageType = MessageType.INVALID_CARD
     
     static let sharedInstance = Session()
     fileprivate init() {}

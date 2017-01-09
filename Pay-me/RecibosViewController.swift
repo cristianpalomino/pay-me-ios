@@ -9,30 +9,18 @@
 import UIKit
 
 class RecibosViewController: PMViewController {
+    let cards = [Card(type: .INVALID, image: "master-card-logo"),
+                 Card(type: .VALID  , image: "visa-logo")]
     
-    var cardIsBack :Bool = false
-    
-    @IBOutlet var ycardViewBottom    :NSLayoutConstraint!
-    @IBOutlet var yButtonBottom      :NSLayoutConstraint!
     
     @IBOutlet var btnPay             :PMButton!
     @IBOutlet var bannerView         :UIView!
     @IBOutlet var dataView           :UIView!
     
-    @IBOutlet var frameCardView      :UIView!
-    @IBOutlet var frontCardView      :UIView!
-    @IBOutlet var backCardView       :UIView!
-    
-    @IBOutlet var vEmision          :UIView!
-    @IBOutlet var vVencimiento      :UIView!
-    
     @IBOutlet var txtEmision        :PMTextField!
     @IBOutlet var txtVencimiento    :PMTextField!
     
-    @IBOutlet var txtNumeroTarjeta  :PMTextField!
-    @IBOutlet var txtMes            :PMTextField!
-    @IBOutlet var txtAnio           :PMTextField!
-    @IBOutlet var txtCvv            :UITextField!
+    @IBOutlet var scrollCardView     :UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +28,10 @@ class RecibosViewController: PMViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -51,81 +43,49 @@ extension RecibosViewController {
     override func initComponents() {
         txtEmision.setPMTheme()
         txtVencimiento.setPMTheme()
-        txtNumeroTarjeta.setPMTheme()
-        txtMes.setPMTheme()
-        txtAnio.setPMTheme()
+        initFlow()
+    }
+    
+    func initFlow() {
+        let type = Session.sharedInstance.flowType
+        if type == .FIRST_TIME {
+            scrollCardView.isHidden = true
+        } else {
+            scrollCardView.isHidden = false
+            initCards()
+        }
+    }
+    
+    func initCards() {
+        for i in 0...1 {
+            let x = self.view.frame.width * CGFloat(i)
+            let y = CGFloat(0)
+            let width = self.view.frame.width
+            let heigth = self.view.frame.height * 0.11
+            let frame = CGRect(x: x, y: y, width: width, height: heigth)
+            let card = PMItemCard(frame: frame, card: cards[i])
+            self.scrollCardView.addSubview(card)
+        }
+        self.scrollCardView.contentSize = CGSize(width: Int(self.view.frame.width * 2), height: Int(self.scrollCardView.frame.height))
     }
 }
 
 extension RecibosViewController {
     
     @IBAction func tapPagar() {
-        if self.frameCardView.isHidden {
-            self.frameCardView.isHidden = false
+        let type = Session.sharedInstance.flowType
+        if type == .FIRST_TIME {
+            payFlowFirstTime()
         } else {
-            if cardIsBack {
-                let type = Session.sharedInstance.messageType
-                if type == .INVALID_CARD {
-                    showMessage(type: .INVALID_CARD)
-                    Session.sharedInstance.messageType = .NOT_AUTORIZED
-                } else if type == .NOT_AUTORIZED {
-                    showMessage(type: .NOT_AUTORIZED)
-                    Session.sharedInstance.messageType = .SUCCESS_PAY
-                } else if type == .SUCCESS_PAY {
-                    showMessage(type: .SUCCESS_PAY)
-                    Session.sharedInstance.messageType = .INVALID_CARD
-                }
-            } else {
-                tapFlip()
-            }
+            payFlowSecondTime()
         }
     }
     
-    @IBAction func tapFlip() {
-        self.frontCardView.isHidden = true
-        self.backCardView.isHidden = false
-        self.txtCvv.becomeFirstResponder()
-        self.cardIsBack = true
-    }
-}
-
-extension RecibosViewController {
-    
-    override func keyboardDidShow(notification: NSNotification) {
-        super.keyboardDidShow(notification: notification)
-        
-        var framecard = frameCardView.frame
-        framecard.origin.y = 8
-        frameCardView.frame = framecard
-        
-        var framebutton = btnPay.frame
-        print(framebutton)
-        if !btnPay.isUp {
-            framebutton.origin.y = framebutton.origin.y - keyboardHeigth
-            btnPay.frame = framebutton
-            btnPay.isUp = true
-            
-            UIView.animate(withDuration: 0.25, animations: {
-                self.bannerView.isHidden = true
-                self.dataView.isHidden = true
-                self.frameCardView.layoutIfNeeded()
-            })
-        } else {
-            if self.cardIsBack {
-                framebutton.origin.y = framebutton.origin.y + keyboardHeigth
-                btnPay.frame = framebutton
-                btnPay.isUp = false
-                
-                UIView.animate(withDuration: 0.25, animations: {
-                    self.bannerView.isHidden = true
-                    self.dataView.isHidden = true
-                    self.frameCardView.layoutIfNeeded()
-                })
-            }
-        }
+    func payFlowFirstTime() {
+        self.performSegue(withIdentifier: "kFirstTime", sender: nil)
     }
     
-    override func keyboardDidHide() {
-        
+    func payFlowSecondTime() {
+        self.performSegue(withIdentifier: "kSecondTime", sender: nil)
     }
 }

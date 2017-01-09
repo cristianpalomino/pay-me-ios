@@ -27,9 +27,6 @@ class NotificacionesViewController: PMViewController, SWTableViewCellDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-
 }
 
 
