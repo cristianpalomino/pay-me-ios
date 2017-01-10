@@ -1,0 +1,80 @@
+//
+//  DetalleReciboViewController.swift
+//  Pay-me
+//
+//  Created by Cristian Palomino Rivera on 10/01/17.
+//  Copyright © 2017 Cristian Palomino Rivera. All rights reserved.
+//
+
+import UIKit
+
+class DetalleReciboViewController: PMViewController {
+    var cards :[Card] = []
+
+    @IBOutlet var cTopdetailCardView    :NSLayoutConstraint!
+    @IBOutlet var cTopdetailView        :NSLayoutConstraint!
+    
+    @IBOutlet var headerView        :UIView!
+    @IBOutlet var detailView        :UIView!
+    @IBOutlet var detailCardView    :UIView!
+    @IBOutlet var chartView         :UIView!
+    
+    @IBOutlet var tableCards        :UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
+
+extension DetalleReciboViewController {
+    
+    override func initComponents() {
+        cards = [Card(type: .DEFAULT, image: "logito-visa"),
+                 Card(type: .INVALID, image: "logito-mastercard"),
+                 Card(type: .INVALID, image: "logito-amex")]
+    }
+}
+
+extension DetalleReciboViewController {
+    
+    @IBAction func tapDetail() {
+        self.cTopdetailView.constant = -(self.detailView.frame.origin.y)
+        UIView.animate(withDuration: 0.15, animations: {
+            self.view.layoutIfNeeded()
+            self.detailView.isHidden = true
+        }, completion: {
+            (finished :Bool) -> Void in
+        })
+    }
+}
+
+extension DetalleReciboViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 65
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showMessage(type: .SERVICE_SAVED)
+    }
+}
+
+extension DetalleReciboViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cards.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.identifier, for: indexPath) as! CardTableViewCell
+        cell.item = cards[indexPath.row]
+        return cell
+    }
+}

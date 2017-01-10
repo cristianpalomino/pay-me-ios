@@ -45,6 +45,8 @@
 		40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */; };
 		40A4201D1E24046F00D74D22 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201C1E24046F00D74D22 /* Pay.swift */; };
 		40A420201E24073D00D74D22 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */; };
+		40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420211E25279600D74D22 /* DetalleReciboViewController.swift */; };
+		40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420231E2528F700D74D22 /* CardTableViewCell.swift */; };
 		40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
 		40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
 		40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */; };
@@ -139,6 +141,8 @@
 		40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPagosViewController.swift; sourceTree = "<group>"; };
 		40A4201C1E24046F00D74D22 /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
 		40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
+		40A420211E25279600D74D22 /* DetalleReciboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleReciboViewController.swift; sourceTree = "<group>"; };
+		40A420231E2528F700D74D22 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosViewController.swift; sourceTree = "<group>"; };
 		40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
 		40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Bold.ttf"; sourceTree = "<group>"; };
@@ -388,6 +392,7 @@
 			children = (
 				40A4201E1E24072D00D74D22 /* Cells */,
 				40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */,
+				40A420211E25279600D74D22 /* DetalleReciboViewController.swift */,
 			);
 			name = Historico;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */,
+				40A420231E2528F700D74D22 /* CardTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -762,6 +768,7 @@
 			files = (
 				40A420201E24073D00D74D22 /* PayTableViewCell.swift in Sources */,
 				407C036C1E0B308C00CD5D4C /* FavoritosViewController.swift in Sources */,
+				40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */,
 				4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */,
 				403377381E03D41900261759 /* NivelUnoViewController.swift in Sources */,
 				405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */,
@@ -790,6 +797,7 @@
 				40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */,
 				4033773A1E03D42600261759 /* NivelDosViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
+				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,

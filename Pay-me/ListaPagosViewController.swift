@@ -42,7 +42,7 @@ extension ListaPagosViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showMessage(type: .SERVICE_SAVED)
+        performSegue(withIdentifier: "kDetalleRecibo", sender: nil)
     }
 }
 
