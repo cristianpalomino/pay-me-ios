@@ -18,7 +18,8 @@ class DetalleReciboViewController: PMViewController {
     @IBOutlet var detailView        :UIView!
     @IBOutlet var detailCardView    :UIView!
     @IBOutlet var chartView         :UIView!
-    
+
+    @IBOutlet var imageChart        :UIImageView!
     @IBOutlet var tableCards        :UITableView!
     
     override func viewDidLoad() {
@@ -46,12 +47,46 @@ extension DetalleReciboViewController {
     
     @IBAction func tapDetail() {
         self.cTopdetailView.constant = -(self.detailView.frame.origin.y)
-        UIView.animate(withDuration: 0.15, animations: {
-            self.view.layoutIfNeeded()
+        self.detailView.isHidden = true
+        self.detailCardView.isHidden = false
+        
+//        UIView.animate(withDuration: 0.15, animations: {
+//            self.view.layoutIfNeeded()
+//            self.detailView.isHidden = true
+//            self.detailCardView.isHidden = false
+//        }, completion: {
+//            (finished :Bool) -> Void in
+//        })
+    }
+    
+    @IBAction func tapCards() {
+        self.cTopdetailView.constant = 0
+        self.detailView.isHidden = false
+        self.detailCardView.isHidden = true
+        
+//        UIView.animate(withDuration: 0.15, animations: {
+//            self.view.layoutIfNeeded()
+//            self.detailView.isHidden = false
+//            self.detailCardView.isHidden = true
+//        }, completion: {
+//            (finished :Bool) -> Void in
+//        })
+    }
+    
+    @IBAction func showChart() {
+        if self.imageChart.isHidden {
+            self.cTopdetailView.constant = -(self.detailView.frame.origin.y)
+            self.cTopdetailCardView.constant = -(self.detailCardView.frame.origin.y)
+            self.imageChart.isHidden = false
             self.detailView.isHidden = true
-        }, completion: {
-            (finished :Bool) -> Void in
-        })
+            self.detailCardView.isHidden = true
+        } else {
+            self.cTopdetailView.constant = 0
+            self.cTopdetailCardView.constant = 0
+            self.imageChart.isHidden = true
+            self.detailView.isHidden = false
+            self.detailCardView.isHidden = true
+        }
     }
 }
 

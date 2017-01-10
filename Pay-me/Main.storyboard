@@ -4017,10 +4017,22 @@ Santiago de Surco</string>
                                                     </tableView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZl-9y-Yga">
                                                         <rect key="frame" x="280" y="16" width="16" height="16"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L63-BH-ys8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                                                <connections>
+                                                                    <action selector="tapCards" destination="OVW-Ak-vbc" eventType="touchUpInside" id="oeB-UE-Ah7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="2K7-dd-gpb"/>
+                                                            <constraint firstItem="L63-BH-ys8" firstAttribute="top" secondItem="LZl-9y-Yga" secondAttribute="top" id="36d-3s-2cI"/>
                                                             <constraint firstAttribute="width" constant="16" id="AfQ-dh-TVJ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="L63-BH-ys8" secondAttribute="bottom" id="Jeb-Ms-KqW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="L63-BH-ys8" secondAttribute="trailing" id="o1u-oJ-emo"/>
+                                                            <constraint firstItem="L63-BH-ys8" firstAttribute="leading" secondItem="LZl-9y-Yga" secondAttribute="leading" id="rM4-SK-17A"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -4242,6 +4254,49 @@ Santiago de Surco</string>
                                                 <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YmC-TM-7qE" userLabel="chart">
+                                                <rect key="frame" x="0.0" y="278.5" width="304" height="167.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evolutivo mensual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OT7-NE-PmZ">
+                                                        <rect key="frame" x="16" y="8" width="90" height="14"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="11"/>
+                                                        <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ic-down" translatesAutoresizingMaskIntoConstraints="NO" id="CFt-n6-7IR">
+                                                        <rect key="frame" x="267" y="5" width="21" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="CFt-n6-7IR" secondAttribute="height" id="5Za-Ah-svO"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="axu-ea-I66">
+                                                        <rect key="frame" x="16" y="30" width="272" height="134"/>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-Af-Tfw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="304" height="167.5"/>
+                                                        <connections>
+                                                            <action selector="showChart" destination="OVW-Ak-vbc" eventType="touchUpInside" id="Egb-uJ-KMN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="axu-ea-I66" firstAttribute="leading" secondItem="YmC-TM-7qE" secondAttribute="leading" constant="16" id="GR2-VQ-iIG"/>
+                                                    <constraint firstItem="CFt-n6-7IR" firstAttribute="centerY" secondItem="OT7-NE-PmZ" secondAttribute="centerY" id="K2H-wa-GN1"/>
+                                                    <constraint firstItem="axu-ea-I66" firstAttribute="top" secondItem="OT7-NE-PmZ" secondAttribute="bottom" constant="8" id="QVx-Vg-5iw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="axu-ea-I66" secondAttribute="bottom" constant="4" id="UrC-ft-88A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="axu-ea-I66" secondAttribute="trailing" constant="16" id="aJR-dj-d0a"/>
+                                                    <constraint firstItem="wVu-Af-Tfw" firstAttribute="height" secondItem="YmC-TM-7qE" secondAttribute="height" id="gfZ-YZ-PGs"/>
+                                                    <constraint firstItem="wVu-Af-Tfw" firstAttribute="centerX" secondItem="YmC-TM-7qE" secondAttribute="centerX" id="i0F-Fr-D1T"/>
+                                                    <constraint firstItem="wVu-Af-Tfw" firstAttribute="width" secondItem="YmC-TM-7qE" secondAttribute="width" id="j3h-cp-pCl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="CFt-n6-7IR" secondAttribute="trailing" constant="16" id="jjb-te-HIK"/>
+                                                    <constraint firstItem="OT7-NE-PmZ" firstAttribute="leading" secondItem="YmC-TM-7qE" secondAttribute="leading" constant="16" id="kpk-B3-9AU"/>
+                                                    <constraint firstItem="axu-ea-I66" firstAttribute="top" secondItem="CFt-n6-7IR" secondAttribute="bottom" constant="4" id="lhN-8g-JIk"/>
+                                                    <constraint firstItem="OT7-NE-PmZ" firstAttribute="top" secondItem="YmC-TM-7qE" secondAttribute="top" constant="8" id="qyK-IF-nAh"/>
+                                                    <constraint firstItem="wVu-Af-Tfw" firstAttribute="centerY" secondItem="YmC-TM-7qE" secondAttribute="centerY" id="xb4-fj-TOX"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -4250,6 +4305,8 @@ Santiago de Surco</string>
                                             <constraint firstItem="Wso-JD-yXB" firstAttribute="top" secondItem="FMU-6l-9QW" secondAttribute="bottom" id="73O-VX-OgE" userLabel="topview"/>
                                             <constraint firstItem="Wso-JD-yXB" firstAttribute="height" secondItem="5xY-UC-xg3" secondAttribute="height" multiplier="0.3" id="78K-F4-xWq"/>
                                             <constraint firstItem="xEu-lk-r18" firstAttribute="leading" secondItem="5xY-UC-xg3" secondAttribute="leading" id="9QJ-E1-9aW"/>
+                                            <constraint firstItem="YmC-TM-7qE" firstAttribute="leading" secondItem="5xY-UC-xg3" secondAttribute="leading" id="Iqk-CG-t5J"/>
+                                            <constraint firstItem="YmC-TM-7qE" firstAttribute="top" secondItem="xEu-lk-r18" secondAttribute="bottom" id="MKA-Sd-gLa"/>
                                             <constraint firstItem="B7r-hC-mVs" firstAttribute="centerY" secondItem="FMU-6l-9QW" secondAttribute="centerY" id="QH6-G1-zIV"/>
                                             <constraint firstItem="XYH-HJ-DfS" firstAttribute="height" secondItem="5xY-UC-xg3" secondAttribute="height" multiplier="0.25" id="Rek-AC-tLV"/>
                                             <constraint firstItem="XYH-HJ-DfS" firstAttribute="top" secondItem="5xY-UC-xg3" secondAttribute="top" id="TYL-N0-vnu"/>
@@ -4257,6 +4314,7 @@ Santiago de Surco</string>
                                             <constraint firstItem="B7r-hC-mVs" firstAttribute="leading" secondItem="5xY-UC-xg3" secondAttribute="leading" constant="16" id="co0-ka-FaT"/>
                                             <constraint firstItem="xEu-lk-r18" firstAttribute="top" secondItem="FMU-6l-9QW" secondAttribute="bottom" id="dFK-hA-BR0" userLabel="topcard"/>
                                             <constraint firstAttribute="trailing" secondItem="xEu-lk-r18" secondAttribute="trailing" id="fAG-bZ-up7"/>
+                                            <constraint firstAttribute="trailing" secondItem="YmC-TM-7qE" secondAttribute="trailing" id="gj2-DL-hlE"/>
                                             <constraint firstItem="Wso-JD-yXB" firstAttribute="leading" secondItem="5xY-UC-xg3" secondAttribute="leading" id="iCt-Jf-Tel"/>
                                             <constraint firstItem="FMU-6l-9QW" firstAttribute="top" secondItem="XYH-HJ-DfS" secondAttribute="bottom" constant="8" id="lHS-IT-ZDg"/>
                                             <constraint firstAttribute="trailing" secondItem="FMU-6l-9QW" secondAttribute="trailing" constant="16" id="oc6-3h-62O"/>
@@ -4271,6 +4329,7 @@ Santiago de Surco</string>
                                     <constraint firstAttribute="trailing" secondItem="2vQ-kP-fwl" secondAttribute="trailing" id="QgC-Vo-ihN"/>
                                     <constraint firstItem="2vQ-kP-fwl" firstAttribute="top" secondItem="jem-UI-DNs" secondAttribute="top" id="eQq-3t-ZWj"/>
                                     <constraint firstItem="5xY-UC-xg3" firstAttribute="leading" secondItem="jem-UI-DNs" secondAttribute="leading" constant="8" id="f8T-d2-dzL"/>
+                                    <constraint firstItem="YmC-TM-7qE" firstAttribute="height" secondItem="jem-UI-DNs" secondAttribute="height" multiplier="0.4" id="h9C-gM-sE9"/>
                                     <constraint firstAttribute="trailing" secondItem="8OD-bK-bTj" secondAttribute="trailing" constant="8" id="hBp-eT-U0Z"/>
                                     <constraint firstItem="5xY-UC-xg3" firstAttribute="height" secondItem="8OD-bK-bTj" secondAttribute="height" id="kCD-mN-2yc"/>
                                     <constraint firstItem="8OD-bK-bTj" firstAttribute="top" secondItem="2vQ-kP-fwl" secondAttribute="bottom" constant="8" id="n1d-rd-sDo"/>
@@ -4304,9 +4363,11 @@ Santiago de Surco</string>
                     <connections>
                         <outlet property="cTopdetailCardView" destination="dFK-hA-BR0" id="vjl-nm-Len"/>
                         <outlet property="cTopdetailView" destination="73O-VX-OgE" id="p9m-rV-9zk"/>
+                        <outlet property="chartView" destination="YmC-TM-7qE" id="Qty-hY-S4h"/>
                         <outlet property="detailCardView" destination="xEu-lk-r18" id="Nth-dK-ekH"/>
                         <outlet property="detailView" destination="Wso-JD-yXB" id="pQM-J1-zah"/>
                         <outlet property="headerView" destination="XYH-HJ-DfS" id="zOc-wT-qlJ"/>
+                        <outlet property="imageChart" destination="axu-ea-I66" id="kLw-PY-xDL"/>
                         <outlet property="tableCards" destination="B9I-j2-G5O" id="XCl-T3-XE0"/>
                     </connections>
                 </viewController>
@@ -4323,6 +4384,7 @@ Santiago de Surco</string>
         <image name="center-icon" width="188" height="188"/>
         <image name="ic-atras" width="24" height="24"/>
         <image name="ic-buscar" width="24" height="24"/>
+        <image name="ic-down" width="21" height="21"/>
         <image name="ic-educacion" width="58" height="70"/>
         <image name="ic-graph" width="27" height="22"/>
         <image name="ic-hour" width="11" height="11"/>
