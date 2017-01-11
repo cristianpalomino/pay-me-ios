@@ -11,6 +11,7 @@ import UIKit
 class DetalleReciboViewController: PMViewController {
     var cards :[Card] = []
 
+    @IBOutlet var cTopChartView         :NSLayoutConstraint!
     @IBOutlet var cTopdetailCardView    :NSLayoutConstraint!
     @IBOutlet var cTopdetailView        :NSLayoutConstraint!
     
@@ -19,6 +20,7 @@ class DetalleReciboViewController: PMViewController {
     @IBOutlet var detailCardView    :UIView!
     @IBOutlet var chartView         :UIView!
 
+    @IBOutlet weak var monoTotal    :UILabel!
     @IBOutlet var imageChart        :UIImageView!
     @IBOutlet var tableCards        :UITableView!
     
@@ -77,12 +79,16 @@ extension DetalleReciboViewController {
         if self.imageChart.isHidden {
             self.cTopdetailView.constant = -(self.detailView.frame.origin.y)
             self.cTopdetailCardView.constant = -(self.detailCardView.frame.origin.y)
+            //self.cTopChartView.constant = 0
+            
             self.imageChart.isHidden = false
             self.detailView.isHidden = true
             self.detailCardView.isHidden = true
         } else {
             self.cTopdetailView.constant = 0
             self.cTopdetailCardView.constant = 0
+            //self.cTopChartView.constant = self.monoTotal.frame.origin.y
+            
             self.imageChart.isHidden = true
             self.detailView.isHidden = false
             self.detailCardView.isHidden = true

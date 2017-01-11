@@ -19,6 +19,7 @@
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
 		404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DC1E14665700A578EA /* PMMessageViewController.swift */; };
 		404672DF1E14671400A578EA /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* MessageViewController.swift */; };
+		404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */; };
 		405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
 		405D23121E157CEB006ED043 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
 		405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
@@ -66,6 +67,7 @@
 		40CF1E471E0680090072CB29 /* PMColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E461E0680090072CB29 /* PMColors.swift */; };
 		40CF1E491E068AAF0072CB29 /* SuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */; };
 		40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */; };
+		40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */; };
 		4C36C99C446B1D9859B013C7 /* Pods_Pay_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */; };
 		4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */; };
 		4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1898461E11BA470060DD41 /* Notify.storyboard */; };
@@ -109,6 +111,7 @@
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		404672DC1E14665700A578EA /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
 		404672DE1E14671400A578EA /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		405D230E1E157C94006ED043 /* PMStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStoryboard.swift; sourceTree = "<group>"; };
 		405D23111E157CEB006ED043 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		405E0AB21E1A1D49008CF767 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -162,6 +165,7 @@
 		40CF1E461E0680090072CB29 /* PMColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMColors.swift; sourceTree = "<group>"; };
 		40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuministroViewController.swift; sourceTree = "<group>"; };
 		40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTriangleView.swift; sourceTree = "<group>"; };
+		40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesViewController.swift; sourceTree = "<group>"; };
 		4F1898461E11BA470060DD41 /* Notify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify.storyboard; sourceTree = "<group>"; };
 		4F1898481E11BB240060DD41 /* Notificacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacion.swift; sourceTree = "<group>"; };
@@ -243,6 +247,15 @@
 			name = Messages;
 			sourceTree = "<group>";
 		};
+		404BBFB91E268F5A0050CA30 /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				40F40C631E26A58A0076C145 /* Cells */,
+				404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */,
+			);
+			name = Agenda;
+			sourceTree = "<group>";
+		};
 		405D23101E157CDA006ED043 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +298,7 @@
 		406EEA1C1DFB0D88005D2E87 /* Pay-me */ = {
 			isa = PBXGroup;
 			children = (
+				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
 				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
 				40B2E3EC1E0DDE07003CBAC3 /* Fonts */,
 				405E0AB11E1A1D32008CF767 /* Enums */,
@@ -292,6 +306,7 @@
 				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				408E501E1DFB7A6D007BEEDE /* Views */,
 				408E501D1DFB6DF0007BEEDE /* Utils */,
+				404BBFB91E268F5A0050CA30 /* Agenda */,
 				40A420191E24039A00D74D22 /* Historico */,
 				40180E5E1E021D230098B8C4 /* Controllers */,
 				408E501B1DFB67DF007BEEDE /* Servicios */,
@@ -333,7 +348,6 @@
 		408E501C1DFB67F8007BEEDE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
 				404672DB1E14656800A578EA /* Messages */,
 				4F1898431E11B7E80060DD41 /* Notify */,
 				40A420181E2358E700D74D22 /* Recibos */,
@@ -441,6 +455,14 @@
 				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
 				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		40F40C631E26A58A0076C145 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -799,6 +821,7 @@
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
 				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
+				404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */,
 				40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
@@ -814,6 +837,7 @@
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
 				40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */,
+				40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
