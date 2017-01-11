@@ -10,8 +10,9 @@ import UIKit
 
 class PMViewController: UIViewController {
 
-    var keyboardHeigth :CGFloat = 0.0
-    var pmheader :PMHeaderView!
+    var keyboardHeigth  :CGFloat = 0.0
+    var scroll          :UIScrollView!
+    var titles          :[String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +42,61 @@ extension PMViewController {
 
 extension PMViewController {
     
-    func initHeader(titles :[String]) {
-        let width = Int(self.view.frame.width)
-        let heigth = Int(self.view.frame.height * 0.065)
-        let frame = CGRect(x: 0, y: 50, width: width, height: heigth)
-        pmheader = PMHeaderView(frame: frame, titles: titles)
-        self.view.addSubview(pmheader)
+    func initHeader() {
+        let py      = view.frame.height * 0.07
+        let proph   = view.frame.height * 0.07
+        var lx      :CGFloat = 0
+        var cs      = CGSize(width: 0, height: proph)
+        
+        scroll = UIScrollView(frame: CGRect(x: 0, y: py, width: view.frame.width, height: proph))
+        scroll.bounces = false
+        scroll.backgroundColor = UIColor.white
+        
+        let mview = UIView(frame: CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: proph * 0.8))
+        mview.backgroundColor = UIColor.white
+        
+        for item in titles {
+            let label = PMHeaderButton(frame: .zero, title: item, isFocus: false)
+            label.tag = item.hash
+            label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapHeader(gesture:))))
+            label.sizeToFit()
+            
+            let frame = label.frame
+            label.frame = CGRect(x: lx, y: 0, width: frame.size.width + 50, height: proph * 0.5)
+            //label.layer.cornerRadius = label.frame.size.height * 0.5
+            
+            lx = frame.size.width + lx + 50
+            cs.width = cs.width + label.frame.width
+            
+            label.center.y = mview.center.y
+            mview.addSubview(label)
+        }
+        
+        scroll.contentSize = cs
+        scroll.layer.borderWidth = 1
+        scroll.layer.borderColor = UIColor.darkGray.cgColor
+        
+        if cs.width > view.frame.width {
+            mview.frame = CGRect(x: 0, y: py, width: cs.width, height: proph * 0.8)
+        } else {
+            mview.frame = CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: proph * 0.8)
+        }
+        
+        mview.layer.borderColor = UIColor.lightGray.cgColor
+        mview.layer.borderWidth = 1
+        mview.layer.cornerRadius = mview.frame.height * 0.5
+        mview.center.y = scroll.center.y
+        
+        scroll.addSubview(mview)
+        view.addSubview(scroll)
+    }
+    
+    func tapHeader(gesture :UITapGestureRecognizer) {
+        let button = gesture.view! as! PMHeaderButton
+        button.setFocusStyle()
+        
+        let framecenter = CGRect(x: scroll.center.x, y: scroll.center.y, width: button.frame.width, height: button.frame.height)
+        self.scroll.scrollRectToVisible(framecenter, animated: true)
     }
 }
 

@@ -26,6 +26,7 @@
 		405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB91E1B04C0008CF767 /* Session.swift */; };
 		405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABB1E1B36A5008CF767 /* Card.swift */; };
 		405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABD1E1C86AD008CF767 /* PMSizes.swift */; };
+		406482AE1E2D162800E9C891 /* PMHeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406482AD1E2D162800E9C891 /* PMHeaderButton.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
@@ -118,6 +119,7 @@
 		405E0AB91E1B04C0008CF767 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		405E0ABB1E1B36A5008CF767 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		405E0ABD1E1C86AD008CF767 /* PMSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSizes.swift; sourceTree = "<group>"; };
+		406482AD1E2D162800E9C891 /* PMHeaderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHeaderButton.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		406EEA241DFB0D88005D2E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */,
 				407C036F1E0B530600CD5D4C /* PMLabel.swift */,
 				40A420141E2053D000D74D22 /* PMPin.swift */,
+				406482AD1E2D162800E9C891 /* PMHeaderButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -832,6 +835,7 @@
 				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,
+				406482AE1E2D162800E9C891 /* PMHeaderButton.swift in Sources */,
 				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
 				404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,

@@ -29,6 +29,9 @@ extension FavoritosViewController {
         favoritos = [Favorito(data: ["upc-logo","Universidad Karolina","UPC","WLAN38472 F","pendiente","1,548.70"]),
                      Favorito(data: ["entel-logo","Celular Juan","Entel Celulares","982 366 740 F","cargo","1,548.70"]),
                      Favorito(data: ["zeta-logo","Gas Casa Playa","Zeta Gas","WLAN38472 F","verficacion",""])]
+        
+        super.titles = ["Todos", "Pendientes de pago"]
+        super.initHeader()
     }
 }
 
