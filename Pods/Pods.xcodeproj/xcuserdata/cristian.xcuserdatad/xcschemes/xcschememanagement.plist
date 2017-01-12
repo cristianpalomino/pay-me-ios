@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FSCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,10 +39,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SWTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>274A0A8B028B136E7CE01024F70A9504</key>
+		<key>24085F438788A072884B3FA2E6E02D7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>367E317BC931D2CEAF6293407D2544D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4794B5B830DF741777B583EA826D81AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA287C1DC287EAA4A399B22703554187</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,22 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C85C1F522B2D2FC94513AAE16AB2E7DA</key>
+		<key>C5A2DB7A84B7B78E359870D2E1B24AA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBAEF012D2B0F91FD9CA18A7AE594CE1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E1305E7A925E6B914DEC18323E0628A4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E795CADD3C9E9BC269980E32F76A1908</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F9261FE5CEE49BC5A30B395404B6EFB5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

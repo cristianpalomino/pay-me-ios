@@ -12,7 +12,7 @@ class PMNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addNavigationLogo()
+        addNavigationLogo(isGradient: false)
         
     }
 
@@ -22,14 +22,27 @@ class PMNavigationViewController: UINavigationController {
     }
 }
 
+
+
 extension UIViewController {
 
-    func addNavigationLogo() {
-        self.navigationItem.titleView = UIImageView(image: UIImage(named: "nav-logo"))
+    func addNavigationLogo(isGradient :Bool) {
+        if isGradient {
+            self.navigationItem.titleView = UIImageView(image: UIImage(named: "nav-logo-gradient"))
+        } else {
+            self.navigationItem.titleView = UIImageView(image: UIImage(named: "nav-logo"))
+        }
     }
     
     @IBAction func tapBack() {
         self.navigationController!.popViewController(animated: true)
     }
+    
+    @IBAction func tapClose() {
+        self.resignFirstResponder()
+        self.navigationController!.dismiss(animated: true, completion: nil)
+    }
 }
+
+
 

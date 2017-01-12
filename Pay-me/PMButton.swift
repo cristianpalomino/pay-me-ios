@@ -10,6 +10,8 @@ import UIKit
 
 class PMButton: UIButton {
 
+    var isUp    :Bool = false
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cLV-ak-Xq0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EWD-S5-GfW">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,15 +83,17 @@
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-Oh-lz6">
-                                <rect key="frame" x="60" y="279" width="200" height="77"/>
+                                <rect key="frame" x="60" y="313.5" width="200" height="42.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3q-Ln-v19">
-                                <rect key="frame" x="60" y="246" width="200" height="36"/>
+                                <rect key="frame" x="60" y="246" width="200" height="30.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="16"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="VxK-yN-BD4">
@@ -131,6 +133,9 @@
                     <navigationItem key="navigationItem" id="vtW-kl-iax">
                         <barButtonItem key="leftBarButtonItem" image="ic-perfil" id="TCq-rz-exA">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="tapPerfil" destination="dCL-Ws-Fxv" id="fbb-KB-FyV"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="0R5-Ko-L1h">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -152,42 +157,10 @@
             </objects>
             <point key="canvasLocation" x="2115" y="-942.25352112676057"/>
         </scene>
-        <!--Launch View Controller-->
-        <scene sceneID="ZBL-nx-BmP">
-            <objects>
-                <viewController id="cLV-ak-Xq0" customClass="LaunchViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RFS-o0-fiU"/>
-                        <viewControllerLayoutGuide type="bottom" id="vfP-pF-9Ja"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oso-JL-AjL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="ZM2-9p-PFB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ZM2-9p-PFB" firstAttribute="centerX" secondItem="oso-JL-AjL" secondAttribute="centerX" id="6Dx-0M-seM"/>
-                            <constraint firstItem="ZM2-9p-PFB" firstAttribute="height" secondItem="oso-JL-AjL" secondAttribute="height" id="LAc-RP-CqI"/>
-                            <constraint firstItem="ZM2-9p-PFB" firstAttribute="centerY" secondItem="oso-JL-AjL" secondAttribute="centerY" id="PYm-7E-xUh"/>
-                            <constraint firstItem="ZM2-9p-PFB" firstAttribute="width" secondItem="oso-JL-AjL" secondAttribute="width" id="YPh-1T-bba"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <segue destination="EWD-S5-GfW" kind="show" identifier="fromSplashSegue" id="Jdk-yw-q4Q"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wyU-X2-xyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="428" y="-941"/>
-        </scene>
         <!--Mis Favoritos-->
         <scene sceneID="nua-rm-nVW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWD-S5-GfW" customClass="PMNavigationViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="kNotificacionesHome" storyboardIdentifier="kNotificacionesHome" automaticallyAdjustsScrollViewInsets="NO" id="EWD-S5-GfW" customClass="PMNavigationViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mis Favoritos" id="V6U-qv-ST7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" barStyle="black" translucent="NO" id="TBU-sA-mNQ">
@@ -216,6 +189,5 @@
         <image name="ic-buscar" width="24" height="24"/>
         <image name="ic-notificacion" width="20" height="24"/>
         <image name="ic-perfil" width="18" height="24"/>
-        <image name="launchImage" width="375" height="667"/>
     </resources>
 </document>

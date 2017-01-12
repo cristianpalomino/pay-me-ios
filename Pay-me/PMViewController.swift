@@ -10,11 +10,12 @@ import UIKit
 
 class PMViewController: UIViewController {
 
+    var keyboardHeigth :CGFloat = 0.0
     var pmheader :PMHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addNavigationLogo()
+        addNavigationLogo(isGradient: false)
         initComponents()
         // Do any additional setup after loading the view.
     }
@@ -22,6 +23,19 @@ class PMViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+extension PMViewController {
+    
+    @IBAction func tapNotifications() {
+        let notis = UIStoryboard.createNotificacionesHome().topViewController!
+        self.navigationController?.show(notis, sender: self)
+    }
+    
+    @IBAction func tapPerfil() {
+        let notis = UIStoryboard.createNotificaciones().topViewController!
+        self.navigationController?.show(notis, sender: self)
     }
 }
 
@@ -39,11 +53,24 @@ extension PMViewController {
 extension PMViewController: PMViewControllerDelegate {
     
     func initComponents() {
-        
+        addBottomBorder()
+    }
+    
+    func addBottomBorder() {
+        let border = CALayer()
+        border.backgroundColor = UIColor.appGrayColor().cgColor
+        border.frame = CGRect(x: 0, y: self.view.frame.size.height - 0.5, width: self.view.frame.size.width, height: 0.5)
+        self.view.layer.addSublayer(border)
+    }
+    
+    func showMessage(type :MessageType) {
+        Session.sharedInstance.messageType = type
+        let message = UIStoryboard.createMessage()
+        self.present(message, animated: true, completion: nil)
     }
 }
 
-extension UIViewController {
+extension PMViewController {
     
     func addKeyBoardObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDidShow), name: .UIKeyboardWillShow, object: nil)
@@ -51,7 +78,11 @@ extension UIViewController {
     }
     
     func keyboardDidShow(notification: NSNotification) {
-        
+        if let userInfo = notification.userInfo {
+            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                self.keyboardHeigth = keyboardSize.size.height
+            }
+        }
     }
     
     func keyboardDidHide() {
