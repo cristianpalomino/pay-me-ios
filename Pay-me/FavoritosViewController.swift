@@ -30,8 +30,8 @@ extension FavoritosViewController {
                      Favorito(data: ["entel-logo","Celular Juan","Entel Celulares","982 366 740 F","cargo","1,548.70"]),
                      Favorito(data: ["zeta-logo","Gas Casa Playa","Zeta Gas","WLAN38472 F","verficacion",""])]
         
-        super.titles = ["Todos", "Pendientes de pago"]
-        super.initHeader()
+        //super.titles = ["Todos", "Pendientes de pago"]
+        //super.initHeader()
     }
 }
 
@@ -60,8 +60,17 @@ extension FavoritosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritoTableViewCell.identifier, for: indexPath) as! FavoritoTableViewCell
+        cell.favoriteCellDelegate = self
         cell.item = favoritos[indexPath.row]
         return cell
+    }
+}
+
+extension FavoritosViewController : FavoriteCellDelegate {
+    
+    func tapFavorite() {
+        let notis = UIStoryboard.createSettings().topViewController!
+        self.navigationController?.show(notis, sender: self)
     }
 }
 

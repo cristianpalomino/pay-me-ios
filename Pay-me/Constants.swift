@@ -15,6 +15,7 @@ struct Constants {
         static let kMessages = "Messages"
         static let kNotify   = "Notify"
         static let kHome     = "Home"
+        static let kConfig   = "ServiceConfiguration"
     }
     
     struct ViewController {
@@ -28,5 +29,6 @@ struct Constants {
         static let kPagoNoAutorizadoB           = "kPagoNoAutorizadoB"
         static let kTarjetaCreditoNoValidaA     = "kTarjetaCreditoNoValidaA"
         static let kAdicionarTarjeta            = "kAdicionarTarjeta"
+        static let kSettings                    = "kSettings"
     }
 }

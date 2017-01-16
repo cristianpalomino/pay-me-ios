@@ -21,6 +21,10 @@ extension UIStoryboard {
     class func homeStoryboard() -> UIStoryboard {
         return UIStoryboard(name: Constants.Storyboard.kHome, bundle: Bundle.main)
     }
+    
+    class func settingsStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: Constants.Storyboard.kConfig, bundle: Bundle.main)
+    }
 
     
     class func createMessage() -> UINavigationController {
@@ -57,5 +61,9 @@ extension UIStoryboard {
     
     class func createAdicionarTarjeta() -> UINavigationController  {
         return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kPagoNoAutorizadoB) as! UINavigationController)
+    }
+    
+    class func createSettings() -> UINavigationController  {
+        return (settingsStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kSettings) as! UINavigationController)
     }
 }

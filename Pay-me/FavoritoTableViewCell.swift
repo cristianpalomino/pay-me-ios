@@ -15,6 +15,7 @@ class FavoritoTableViewCell: UITableViewCell {
         static let kVerficacion = "verficacion"
     };
     
+    var favoriteCellDelegate :FavoriteCellDelegate?
     static let identifier = "favoritoCell"
 
     @IBOutlet weak var icon     : UIImageView!
@@ -51,6 +52,13 @@ class FavoritoTableViewCell: UITableViewCell {
 
 extension FavoritoTableViewCell {
     
+    @IBAction func tapSeetings() {
+        favoriteCellDelegate?.tapFavorite()
+    }
+}
+
+extension FavoritoTableViewCell {
+    
     func defineState(state :String) {
         self.estado.text = state
         if state == State.kPendiente {
@@ -78,6 +86,10 @@ extension FavoritoTableViewCell {
         self.estado.layer.masksToBounds = true
         self.estado.layer.cornerRadius = self.estado.frame.height * 0.5
     }
+}
+
+protocol FavoriteCellDelegate {
+    func tapFavorite()
 }
 
 
