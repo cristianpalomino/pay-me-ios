@@ -22,7 +22,7 @@
         <!--Mis Favoritos-->
         <scene sceneID="6Dm-8L-R01">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cep-Yy-cZq" customClass="PMNavigationViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="kNotificaciones" storyboardIdentifier="kNotificaciones" automaticallyAdjustsScrollViewInsets="NO" id="Cep-Yy-cZq" customClass="PMNavigationViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mis Favoritos" id="MhF-Th-zYG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" barStyle="black" translucent="NO" id="lDN-Kb-iT6">
@@ -58,24 +58,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Tf-iU-14i">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notificaciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uze-Ig-b9T">
-                                        <rect key="frame" x="114" y="9" width="93.5" height="17"/>
+                                        <rect key="frame" x="113.5" y="9.5" width="93.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-ho-4hL">
-                                        <rect key="frame" x="286.5" y="9.5" width="17.5" height="17"/>
+                                        <rect key="frame" x="286" y="9" width="18" height="18"/>
                                         <state key="normal" image="ic-buscar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPe-i1-AI4">
-                                        <rect key="frame" x="16" y="9.5" width="17.5" height="17"/>
+                                        <rect key="frame" x="16" y="9" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="PPe-i1-AI4" secondAttribute="height" multiplier="1:1" id="fcz-4n-4RR"/>
                                         </constraints>
                                         <state key="normal" image="ic-atras"/>
+                                        <connections>
+                                            <action selector="tapBack" destination="2so-SQ-XPX" eventType="touchUpInside" id="UTV-1d-4qV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,11 +95,11 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlQ-R9-fMm">
-                                <rect key="frame" x="0.0" y="35.5" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="36" width="320" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5QJ-O9-zcj">
-                                <rect key="frame" x="0.0" y="70.5" width="320" height="433.5"/>
+                                <rect key="frame" x="0.0" y="71" width="320" height="433"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -240,6 +243,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="7cc-nW-zb4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="tapNotifications" destination="2so-SQ-XPX" id="Per-5u-hHu"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

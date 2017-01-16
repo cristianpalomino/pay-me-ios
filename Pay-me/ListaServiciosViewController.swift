@@ -36,6 +36,10 @@ extension ListaServiciosViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showMessage(type: .SERVICE_SAVED)
+    }
 }
 
 extension ListaServiciosViewController: UITableViewDataSource {
@@ -50,4 +54,5 @@ extension ListaServiciosViewController: UITableViewDataSource {
         return cell
     }
 }
+
 

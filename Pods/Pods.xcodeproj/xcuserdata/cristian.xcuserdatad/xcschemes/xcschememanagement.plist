@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FSCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,12 +57,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4E86D12C49AF995FF03E6C003425A628</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>85A3710591AEBB1E71904E1D0FDF62D7</key>
+		<key>4794B5B830DF741777B583EA826D81AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -68,6 +68,16 @@
 			<true/>
 		</dict>
 		<key>C290882F6D2DA44D2FBBDB5690AC27EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5A2DB7A84B7B78E359870D2E1B24AA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBAEF012D2B0F91FD9CA18A7AE594CE1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

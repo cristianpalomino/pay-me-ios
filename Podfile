@@ -8,8 +8,8 @@ target 'Pay-me' do
   # Pods for Pay-me
   pod 'Material'
   pod 'SWTableViewCell'
+  pod 'FSCalendar' , git: 'https://github.com/WenchaoD/FSCalendar.git', branch: 'development'
   
-
   target 'Pay-meTests' do
     inherit! :search_paths
     # Pods for testing

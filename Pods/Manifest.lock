@@ -1,17 +1,30 @@
 PODS:
+  - FSCalendar (2.7.0)
   - Material (2.4.6):
     - Material/Core (= 2.4.6)
   - Material/Core (2.4.6)
   - SWTableViewCell (0.3.7)
 
 DEPENDENCIES:
+  - FSCalendar (from `https://github.com/WenchaoD/FSCalendar.git`, branch `development`)
   - Material
   - SWTableViewCell
 
+EXTERNAL SOURCES:
+  FSCalendar:
+    :branch: development
+    :git: https://github.com/WenchaoD/FSCalendar.git
+
+CHECKOUT OPTIONS:
+  FSCalendar:
+    :commit: bc34593a7cc70830573298ee9f2e23a45a6b29a7
+    :git: https://github.com/WenchaoD/FSCalendar.git
+
 SPEC CHECKSUMS:
+  FSCalendar: 4957703ebd99b4fd0bfd46bf3e3c6465c0a25482
   Material: 43bd91d61e86ae2b6d6574e28fcb1ed48ff813cb
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
 
-PODFILE CHECKSUM: 8ab6ec4ad36b0eb143bde1cf45d06d50432080fd
+PODFILE CHECKSUM: 9cebeece6a5a1d8e0cf3a544d9ba9613c2a87699
 
 COCOAPODS: 1.1.1
