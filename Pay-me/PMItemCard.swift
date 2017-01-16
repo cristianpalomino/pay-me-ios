@@ -36,7 +36,7 @@ class PMItemCard: UIView {
     }
     
     private func commonInit() {
-        Bundle(for: PMTitleButton.self).loadNibNamed("PMItemCard", owner: self, options: nil)
+        Bundle(for: PMItemCard.self).loadNibNamed("PMItemCard", owner: self, options: nil)
         guard let content = mview else { return }
         content.frame = self.bounds
         content.autoresizingMask = [.flexibleHeight, .flexibleWidth]
