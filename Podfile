@@ -6,6 +6,8 @@ target 'Pay-me' do
   use_frameworks!
 
   # Pods for Pay-me
+  pod 'Fabric'
+  pod 'Crashlytics'
   pod 'Material'
   pod 'SWTableViewCell'
   pod 'FSCalendar' , git: 'https://github.com/WenchaoD/FSCalendar.git', branch: 'development'

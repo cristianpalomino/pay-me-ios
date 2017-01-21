@@ -413,7 +413,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuración servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHL-Cs-ebv">
-                                        <rect key="frame" x="87" y="9.5" width="146" height="17"/>
+                                        <rect key="frame" x="87.5" y="9.5" width="146" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>

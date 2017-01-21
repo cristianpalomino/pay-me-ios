@@ -514,6 +514,7 @@
 				406EEA181DFB0D88005D2E87 /* Resources */,
 				C1A3F65B586FE23A59DACE85 /* [CP] Embed Pods Frameworks */,
 				16D224C5F596BCB16A38AFFD /* [CP] Copy Pods Resources */,
+				402C5D8E1E32F4A00072C101 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -702,6 +703,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-meTests/Pods-Pay-meTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		402C5D8E1E32F4A00072C101 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e5a628ced1691289c3511aa4e4a9af85fd108faa 73e2b9df8b8e2cc661357895686ba607040dba4a60df1ab32fc3bd261d2c5090 ";
 		};
 		7DB6FDEBDD27D6F96B93DA36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
