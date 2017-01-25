@@ -10,9 +10,17 @@ import Foundation
 
 class Session {
     
+    var current    = Current()
+    var staticData = Static()
+    
     var flowType    = FlowType.SECOND_TIME
     var messageType = MessageType.INVALID_CARD
     
     static let sharedInstance = Session()
     fileprivate init() {}
+}
+
+struct Current {
+    
+    var servicioGeneral :ServicioGeneral?
 }

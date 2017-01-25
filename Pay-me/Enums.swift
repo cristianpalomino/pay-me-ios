@@ -35,3 +35,11 @@ enum PayType {
     case SUCCESS
     case DENIED
 }
+
+enum Services :String {
+    
+    case BASICOS    = "Básicos"
+    case SEGUROS    = "Seguro"
+    case EDUCACION  = "Educación"
+    case TRIBUTOS   = "Tributos"
+}

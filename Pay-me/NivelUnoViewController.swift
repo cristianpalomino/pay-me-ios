@@ -9,6 +9,7 @@
 import UIKit
 
 class NivelUnoViewController: PMViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +25,27 @@ class NivelUnoViewController: PMViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension NivelUnoViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func tapBasicos() {
+        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[0]
+        performSegue(withIdentifier: "toCategorias", sender: nil)
     }
-    */
-
+    
+    @IBAction func tapEducacion() {
+        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[1]
+        performSegue(withIdentifier: "toCategorias", sender: nil)
+    }
+    
+    @IBAction func tapSeguros() {
+//        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[2]
+//        performSegue(withIdentifier: "toCategorias", sender: nil)
+    }
+    
+    @IBAction func tapTributos() {
+//        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[3]
+//        performSegue(withIdentifier: "toCategorias", sender: nil)
+    }
 }

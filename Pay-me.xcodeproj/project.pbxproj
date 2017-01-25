@@ -26,6 +26,8 @@
 		405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB91E1B04C0008CF767 /* Session.swift */; };
 		405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABB1E1B36A5008CF767 /* Card.swift */; };
 		405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABD1E1C86AD008CF767 /* PMSizes.swift */; };
+		4062C13B1E37B16200617265 /* StaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4062C13A1E37B16200617265 /* StaticData.json */; };
+		4062C1411E380D3500617265 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1401E380D3500617265 /* Logs.swift */; };
 		406482AE1E2D162800E9C891 /* PMHeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406482AD1E2D162800E9C891 /* PMHeaderButton.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
@@ -39,6 +41,7 @@
 		407C036C1E0B308C00CD5D4C /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */; };
 		407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */; };
 		407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036F1E0B530600CD5D4C /* PMLabel.swift */; };
+		4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088F8AA1E36628C00114BEE /* StaticData.swift */; };
 		408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
 		40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420101E20260D00D74D22 /* RecibosBViewController.swift */; };
 		40A420131E203FF200D74D22 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
@@ -122,6 +125,8 @@
 		405E0AB91E1B04C0008CF767 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		405E0ABB1E1B36A5008CF767 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		405E0ABD1E1C86AD008CF767 /* PMSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSizes.swift; sourceTree = "<group>"; };
+		4062C13A1E37B16200617265 /* StaticData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StaticData.json; sourceTree = "<group>"; };
+		4062C1401E380D3500617265 /* Logs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logs.swift; sourceTree = "<group>"; };
 		406482AD1E2D162800E9C891 /* PMHeaderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHeaderButton.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 		407C036B1E0B308C00CD5D4C /* FavoritosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
+		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
 		40A420101E20260D00D74D22 /* RecibosBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosBViewController.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
@@ -267,8 +273,8 @@
 		405D23101E157CDA006ED043 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				405D23111E157CEB006ED043 /* Constants.swift */,
 				405E0AB91E1B04C0008CF767 /* Session.swift */,
+				405D23111E157CEB006ED043 /* Constants.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -279,6 +285,41 @@
 				405E0AB21E1A1D49008CF767 /* Enums.swift */,
 			);
 			name = Enums;
+			sourceTree = "<group>";
+		};
+		4062C1331E37154600617265 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4062C13A1E37B16200617265 /* StaticData.json */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		4062C13D1E37B1B100617265 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
+				4062C1421E380F3600617265 /* Adicionar_Servicio */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4062C13F1E380D2B00617265 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				4062C1401E380D3500617265 /* Logs.swift */,
+			);
+			name = Logs;
+			sourceTree = "<group>";
+		};
+		4062C1421E380F3600617265 /* Adicionar_Servicio */ = {
+			isa = PBXGroup;
+			children = (
+				403377371E03D41900261759 /* NivelUnoViewController.swift */,
+				403377391E03D42600261759 /* NivelDosViewController.swift */,
+				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
+			);
+			name = Adicionar_Servicio;
 			sourceTree = "<group>";
 		};
 		406EEA111DFB0D88005D2E87 = {
@@ -306,9 +347,11 @@
 		406EEA1C1DFB0D88005D2E87 /* Pay-me */ = {
 			isa = PBXGroup;
 			children = (
-				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
-				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
+				4062C13F1E380D2B00617265 /* Logs */,
 				40B2E3EC1E0DDE07003CBAC3 /* Fonts */,
+				4062C1331E37154600617265 /* Files */,
+				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
+				4062C13D1E37B1B100617265 /* UI */,
 				405E0AB11E1A1D32008CF767 /* Enums */,
 				405D23101E157CDA006ED043 /* Core */,
 				40B2E3FF1E0E445A003CBAC3 /* Beans */,
@@ -359,9 +402,6 @@
 				404672DB1E14656800A578EA /* Messages */,
 				4F1898431E11B7E80060DD41 /* Notify */,
 				40A420181E2358E700D74D22 /* Recibos */,
-				403377371E03D41900261759 /* NivelUnoViewController.swift */,
-				403377391E03D42600261759 /* NivelDosViewController.swift */,
-				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
 				40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */,
 				407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */,
 				407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */,
@@ -446,6 +486,7 @@
 		40B2E3FF1E0E445A003CBAC3 /* Beans */ = {
 			isa = PBXGroup;
 			children = (
+				4088F8AA1E36628C00114BEE /* StaticData.swift */,
 				40B2E4001E0E4481003CBAC3 /* Favorito.swift */,
 				4F1898481E11BB240060DD41 /* Notificacion.swift */,
 				405E0ABB1E1B36A5008CF767 /* Card.swift */,
@@ -636,6 +677,7 @@
 				40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
 				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
+				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
@@ -824,7 +866,9 @@
 				4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */,
 				40CF1E491E068AAF0072CB29 /* SuministroViewController.swift in Sources */,
 				403377361E0334E700261759 /* PMButton.swift in Sources */,
+				4062C1411E380D3500617265 /* Logs.swift in Sources */,
 				404672DF1E14671400A578EA /* MessageViewController.swift in Sources */,
+				4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */,
 				40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */,
 				4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */,
 				4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */,
@@ -1017,6 +1061,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Pay-me/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1037,6 +1085,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Pay-me/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

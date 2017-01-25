@@ -39,7 +39,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SWTableViewCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,7 +62,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1BFE24C3DCA375B74275623DCBC13500</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1C51DBECA9E3D7E7168419E1B320E770</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>24085F438788A072884B3FA2E6E02D7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>27184B3617EDE40D47F513AEA6A9E68F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4794B5B830DF741777B583EA826D81AE</key>
+		<key>B1B26D393F707E01DABBC4EDEB15229D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBAEF012D2B0F91FD9CA18A7AE594CE1</key>
+		<key>E1305E7A925E6B914DEC18323E0628A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E1305E7A925E6B914DEC18323E0628A4</key>
+		<key>E159D028023440E7393167369F3A4094</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,6 +6,12 @@ PODS:
   - Material (2.4.6):
     - Material/Core (= 2.4.6)
   - Material/Core (2.4.6)
+  - Realm (2.2.0):
+    - Realm/Headers (= 2.2.0)
+  - Realm/Headers (2.2.0)
+  - RealmSwift (2.2.0):
+    - Realm (= 2.2.0)
+  - SwiftyJSON (3.1.4)
   - SWTableViewCell (0.3.7)
 
 DEPENDENCIES:
@@ -13,6 +19,8 @@ DEPENDENCIES:
   - Fabric
   - FSCalendar (from `https://github.com/WenchaoD/FSCalendar.git`, branch `development`)
   - Material
+  - RealmSwift
+  - SwiftyJSON
   - SWTableViewCell
 
 EXTERNAL SOURCES:
@@ -30,8 +38,11 @@ SPEC CHECKSUMS:
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   FSCalendar: 4957703ebd99b4fd0bfd46bf3e3c6465c0a25482
   Material: 43bd91d61e86ae2b6d6574e28fcb1ed48ff813cb
+  Realm: d95b8fb34c83f1e764b66d319277a62c2b6e4bf5
+  RealmSwift: a4fa52d06e946a32ec746b3388374f742e6b8731
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
 
-PODFILE CHECKSUM: 0630e2ac657782283f57a8bacf74c64b7d57c71f
+PODFILE CHECKSUM: eabc6d082e50980b420707f4352d8202843ad804
 
 COCOAPODS: 1.1.1
