@@ -11,7 +11,9 @@ target 'Pay-me' do
   pod 'Crashlytics'
   pod 'Material'
   pod 'SWTableViewCell'
+  pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SVProgressHUD'
   pod 'FSCalendar' , git: 'https://github.com/WenchaoD/FSCalendar.git', branch: 'development'
   
   target 'Pay-meTests' do

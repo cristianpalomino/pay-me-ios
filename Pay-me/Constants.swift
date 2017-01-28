@@ -8,7 +8,59 @@
 
 import Foundation
 
+
 struct Constants {
+
+    struct Debug {
+        
+        static let ID_CARDHOLDER = "4626"
+        static let MAC_ADDRESS   = "10:0b:95:9d:68:20"
+        static let ID_COMERCIO   = "919"
+    }
+    
+    struct Api {
+        
+        static let kErrorCode    = "999"
+        static let kSuccessCode  = "000"
+        
+        struct Messages {
+            
+            static let kUnknownError        = "Error desconosido ...!"
+        }
+        
+        struct Json {
+            
+            static let kAnswerCode          = "answerCode"
+            static let kAnswerMessage       = "answerMessage"
+            
+            static let kIdCardholder        = "idCardholder"
+            static let kIdCommerce          = "idCommerce"
+            static let kMacAddress          = "macAddress"
+        }
+        
+        struct URLs {
+            
+            #if PROD
+            static let BASE_URL                = ""
+            static let RUNSCOPE_BASE_URL       = ""
+            #elseif TEST
+            static let BASE_URL                = "https://test2.alignetsac.com"
+            static let RUNSCOPE_BASE_URL       = "https://test2-alignetsac-com-yzsfvdohqwc1.runscope.net"
+            #endif
+            
+            struct EndPoints {
+                
+                static let AGREGAR_SERVICIO             = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/addService"
+                static let CONSULTAR_SERVICIOS          = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/txConsult"
+                static let CONSULTAR_AGENDA             = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/calendarConsult"
+                static let CONSULTAR_DEUDAS             = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/debtConsult"
+                static let CONSULTAR_NOTIFICACIONES     = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/notificationConsult"
+                static let CONSULTAR_SERVICIO           = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/getServices"
+                static let ELIMINAR_NOTIFICACION        = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/deleteNotification"
+                static let PAGAR_SERVICIO               = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/pay"
+            }
+        }
+    }
     
     struct Storyboard {
         
@@ -19,8 +71,8 @@ struct Constants {
     }
     
     struct ViewController {
-        static let kMessages                    = "kMessages"
         
+        static let kMessages                    = "kMessages"
         static let kNotificacionesHome          = "kNotificacionesHome"
         static let kNotificaciones              = "kNotificaciones"
         static let kServicioGuardado            = "kServicioGuardado"

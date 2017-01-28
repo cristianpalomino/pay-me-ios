@@ -24,3 +24,5 @@ struct Current {
     
     var servicioGeneral :ServicioGeneral?
 }
+
+

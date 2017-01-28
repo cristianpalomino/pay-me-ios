@@ -43,3 +43,12 @@ enum Services :String {
     case EDUCACION  = "Educación"
     case TRIBUTOS   = "Tributos"
 }
+
+
+//Api
+
+enum Result {
+    
+    case success
+    case failure
+}

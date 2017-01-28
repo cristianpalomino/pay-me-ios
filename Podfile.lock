@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.3.0)
   - Crashlytics (3.8.3):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.11)
@@ -11,15 +12,18 @@ PODS:
   - Realm/Headers (2.2.0)
   - RealmSwift (2.2.0):
     - Realm (= 2.2.0)
+  - SVProgressHUD (2.1.2)
   - SwiftyJSON (3.1.4)
   - SWTableViewCell (0.3.7)
 
 DEPENDENCIES:
+  - Alamofire
   - Crashlytics
   - Fabric
   - FSCalendar (from `https://github.com/WenchaoD/FSCalendar.git`, branch `development`)
   - Material
   - RealmSwift
+  - SVProgressHUD
   - SwiftyJSON
   - SWTableViewCell
 
@@ -34,15 +38,17 @@ CHECKOUT OPTIONS:
     :git: https://github.com/WenchaoD/FSCalendar.git
 
 SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   FSCalendar: 4957703ebd99b4fd0bfd46bf3e3c6465c0a25482
   Material: 43bd91d61e86ae2b6d6574e28fcb1ed48ff813cb
   Realm: d95b8fb34c83f1e764b66d319277a62c2b6e4bf5
   RealmSwift: a4fa52d06e946a32ec746b3388374f742e6b8731
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
 
-PODFILE CHECKSUM: eabc6d082e50980b420707f4352d8202843ad804
+PODFILE CHECKSUM: 9449a053ae539678a78be7a1c120b5cb70570c9a
 
 COCOAPODS: 1.1.1
