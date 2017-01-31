@@ -36,6 +36,14 @@ struct Constants {
             static let kIdCardholder        = "idCardholder"
             static let kIdCommerce          = "idCommerce"
             static let kMacAddress          = "macAddress"
+            
+            static let kServices            = "service"
+            static let kOrder               = "order"
+            static let kCalendar            = "Calendar"
+            static let kServiceIdentifier   = "serviceIdentifier"
+            static let kDebt                = "debt"
+            static let kNotification        = "notification"
+            
         }
         
         struct URLs {
@@ -51,11 +59,11 @@ struct Constants {
             struct EndPoints {
                 
                 static let AGREGAR_SERVICIO             = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/addService"
-                static let CONSULTAR_SERVICIOS          = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/txConsult"
+                static let CONSULTAR_PAGOS              = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/txConsult"
                 static let CONSULTAR_AGENDA             = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/calendarConsult"
                 static let CONSULTAR_DEUDAS             = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/debtConsult"
                 static let CONSULTAR_NOTIFICACIONES     = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/notificationConsult"
-                static let CONSULTAR_SERVICIO           = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/getServices"
+                static let CONSULTAR_SERVICIOS          = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/getServices"
                 static let ELIMINAR_NOTIFICACION        = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/deleteNotification"
                 static let PAGAR_SERVICIO               = "\(URLs.RUNSCOPE_BASE_URL)/WALLETWS/rest/mobile/pay"
             }

@@ -17,7 +17,7 @@ open class PaymeApiResult {
     
     let error   :PaymeError?
     let data    :Any?
-    let result  :Result
+    let result  :ResultType
     
     init(data: Any?, error: PaymeError?) {
         

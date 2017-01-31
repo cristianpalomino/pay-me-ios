@@ -12,39 +12,239 @@ import SwiftyJSON
 
 class ServiciosApi {
     
-    class func requestAgregarServicio(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+    class func apiAgregarServicio(params :[String : Any], completion: @escaping RequestUtil.Completion) {
         Alamofire.request(Constants.Api.URLs.EndPoints.AGREGAR_SERVICIO,
                           method : .post,
                           parameters: params,
                           encoding: JSONEncoding.default).responseJSON {
-            response in
-            switch response.result {
-            case .success:
-                if let value = response.result.value {
-                    
-                    let json = JSON(value)
-                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
-                    
-                    if rc == Constants.Api.kSuccessCode {
-                        
-                        let paymeData = AgregarServicio(json: json)
-                        completion(PaymeApiResult(data: paymeData, error: nil))
-                    } else {
-                        
-                        let paymeError = PaymeError(json: json)
-                        completion(PaymeApiResult(data: nil, error: paymeError))
-                    }
-                }
-                else {
-                    
-                    completion(PaymeApiResult(data: nil, error: PaymeError()))
-                }
-            case .failure(let error):
-                
-                let paymeError = PaymeError(message: error.localizedDescription)
-                completion(PaymeApiResult(data: nil, error: paymeError))
-            }
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = AgregarServicio(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
         }
-
     }
+    
+    class func apiConsultarPagos(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+        Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_PAGOS,
+                          method : .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default).responseJSON {
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = ConsultarPagos(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
+        }
+    }
+    
+    class func apiConsultarAgenda(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+        Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_AGENDA,
+                          method : .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default).responseJSON {
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = ConsultarAgenda(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
+        }
+    }
+    
+    class func apiConsultarDeudas(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+        Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_DEUDAS,
+                          method : .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default).responseJSON {
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = ConsultarDeudas(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
+        }
+    }
+    
+    class func apiConsultarNotificaciones(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+        Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_NOTIFICACIONES,
+                          method : .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default).responseJSON {
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = ConsultarNotificaciones(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
+        }
+    }
+    
+    class func apiConsultarServicios(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+        Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_SERVICIOS,
+                          method : .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default).responseJSON {
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = ConsultarServicios(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
+        }
+    }
+    
+    
+    class func apiEliminarNotificacion(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+        Alamofire.request(Constants.Api.URLs.EndPoints.ELIMINAR_NOTIFICACION,
+                          method : .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default).responseJSON {
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = EliminarNotificacion(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
+        }
+    }
+    
+    
+    class func apiPagarServicio(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+        Alamofire.request(Constants.Api.URLs.EndPoints.PAGAR_SERVICIO,
+                          method : .post,
+                          parameters: params,
+                          encoding: JSONEncoding.default).responseJSON {
+                            response in
+                            switch response.result {
+                            case .success:
+                                if let value = response.result.value {
+                                    let json = JSON(value)
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    if rc == Constants.Api.kSuccessCode {
+                                        let paymeData = PagarServicio(json: json)
+                                        completion(PaymeApiResult(data: paymeData, error: nil))
+                                    } else {
+                                        let paymeError = PaymeError(json: json)
+                                        completion(PaymeApiResult(data: nil, error: paymeError))
+                                    }
+                                }
+                                else {
+                                    completion(PaymeApiResult(data: nil, error: PaymeError()))
+                                }
+                            case .failure(let error):
+                                let paymeError = PaymeError(message: error.localizedDescription)
+                                completion(PaymeApiResult(data: nil, error: paymeError))
+                            }
+        }
+    }
+    
+    
 }

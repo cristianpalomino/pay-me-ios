@@ -54,15 +54,15 @@ extension NivelDosViewController {
     func defineViews() {
         let servicioGeneral = Session.sharedInstance.current.servicioGeneral!
         var views = [topView, rigthTopView, leftTopView, rigthMiddleView, leftMiddleView, rigthBottomView, leftBottomView, bottomView]
-        if servicioGeneral.name == Services.BASICOS.rawValue {
+        if servicioGeneral.name == ServicesType.BASICOS.rawValue {
             views.remove(at: 0)
             views.forEach {  $0?.isHidden = true }
-        } else if servicioGeneral.name == Services.SEGUROS.rawValue {
+        } else if servicioGeneral.name == ServicesType.SEGUROS.rawValue {
             
-        } else if servicioGeneral.name == Services.EDUCACION.rawValue {
+        } else if servicioGeneral.name == ServicesType.EDUCACION.rawValue {
             views.remove(at: 0)
             views.forEach {  $0?.isHidden = true }
-        } else if servicioGeneral.name == Services.TRIBUTOS.rawValue {
+        } else if servicioGeneral.name == ServicesType.TRIBUTOS.rawValue {
             
         }
     }

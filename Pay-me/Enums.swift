@@ -36,7 +36,7 @@ enum PayType {
     case DENIED
 }
 
-enum Services :String {
+enum ServicesType :String {
     
     case BASICOS    = "Básicos"
     case SEGUROS    = "Seguro"
@@ -47,7 +47,7 @@ enum Services :String {
 
 //Api
 
-enum Result {
+enum ResultType {
     
     case success
     case failure
