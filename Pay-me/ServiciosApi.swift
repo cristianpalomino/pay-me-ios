@@ -24,7 +24,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = AgregarServicio(json: json)
+                                        let paymeData = ResponseAgregarServicio(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)
@@ -53,7 +53,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = ConsultarPagos(json: json)
+                                        let paymeData = ResponseConsultarPagos(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)
@@ -82,7 +82,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = ConsultarAgenda(json: json)
+                                        let paymeData = ResponseConsultarAgenda(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)
@@ -99,10 +99,10 @@ class ServiciosApi {
         }
     }
     
-    class func apiConsultarDeudas(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+    class func apiConsultarDeudas(request :RequestConsultarDeudas, completion: @escaping RequestUtil.Completion) {
         Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_DEUDAS,
                           method : .post,
-                          parameters: params,
+                          parameters: request.toParams(),
                           encoding: JSONEncoding.default).responseJSON {
                             response in
                             switch response.result {
@@ -111,7 +111,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = ConsultarDeudas(json: json)
+                                        let paymeData = ResponseConsultarDeudas(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)
@@ -140,7 +140,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = ConsultarNotificaciones(json: json)
+                                        let paymeData = ResponseConsultarNotificaciones(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)
@@ -169,7 +169,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = ConsultarServicios(json: json)
+                                        let paymeData = ResponseConsultarServicios(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)
@@ -199,7 +199,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = EliminarNotificacion(json: json)
+                                        let paymeData = ResponseEliminarNotificacion(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)
@@ -229,7 +229,7 @@ class ServiciosApi {
                                     let json = JSON(value)
                                     let rc = json[Constants.Api.Json.kAnswerCode].stringValue
                                     if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = PagarServicio(json: json)
+                                        let paymeData = ResponsePagarServicio(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
                                     } else {
                                         let paymeError = PaymeError(json: json)

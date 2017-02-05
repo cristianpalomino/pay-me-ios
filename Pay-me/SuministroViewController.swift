@@ -10,6 +10,7 @@ import UIKit
 import Material
 
 class SuministroViewController: PMViewController {
+    
     @IBOutlet weak var bigImageBannerHeigth         :NSLayoutConstraint!
     @IBOutlet weak var bigBannerHeigth              :NSLayoutConstraint!
     @IBOutlet weak var bigImageBannerTopConstraint  :NSLayoutConstraint!
@@ -48,7 +49,12 @@ extension SuministroViewController {
 extension SuministroViewController {
     
     @IBAction func tapConsultar() {
-        
+        let identifier = txtIndentifier.text!.trimmed
+        if identifier != "" {
+            
+        } else {
+            
+        }
     }
     
     @IBAction func tapInfo() {

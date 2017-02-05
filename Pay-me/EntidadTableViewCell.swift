@@ -7,44 +7,58 @@
 //
 
 import UIKit
+import Alamofire
 
 class EntidadTableViewCell: UITableViewCell {
     static let identifier = "EntidadCell"
     
-    @IBOutlet weak var addRigthMargin: NSLayoutConstraint!
+    @IBOutlet weak var addRigthMargin   :NSLayoutConstraint!
     
-    @IBOutlet weak var add: UIImageView!
-    @IBOutlet weak var btnVerServicio: UIButton!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var add              :UIImageView!
+    @IBOutlet weak var btnVerServicio   :UIButton!
     
-    internal var title: String! {
+    @IBOutlet weak var name             :UILabel!
+    @IBOutlet weak var logo             :UIImageView!
+    
+    internal var empresa :Empresa! {
         didSet {
-            self.name.text = title
-            let randomNum:UInt32 = arc4random_uniform(3)
-            if randomNum == 1 {
-                defaultStyle()
-            }
-            else {
-                primaryStyle()
-            }
+            self.name.text = empresa.name
+            self.defineStyle()
+            self.loadLogo()
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         addStyles()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     @IBAction func tapVerServicio() {
         
+    }
+}
+
+extension EntidadTableViewCell {
+    
+    func loadLogo() {
+        //empresa.logo
+        Alamofire.request("https://httpbin.org/image/png").responseData {
+            response in
+            if let data = response.result.value {
+                let image = UIImage(data: data)
+                self.logo.layer.cornerRadius = self.logo.height * 0.5
+                self.logo.clipsToBounds = true
+                self.logo.image = image
+            }
+        }
+    }
+    
+    func defineStyle() {
+        if empresa.servicios.isEmpty {
+            defaultStyle()
+        } else {
+            primaryStyle()
+        }
     }
 }
 

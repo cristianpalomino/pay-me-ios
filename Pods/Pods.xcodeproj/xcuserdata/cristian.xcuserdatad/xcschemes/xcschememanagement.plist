@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FSCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,22 +82,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>098189BE41464E314283C2CC590469B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>181DBEE268BA9B9CDD47B0DFBA82794B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>24085F438788A072884B3FA2E6E02D7C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>27AEEC870C267527D5D9593651E7C8B6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>285AA6A1E5EE93B20EE008614A20FF5B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>35C99C063D8C1C32B8BDCC31076F2B2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +102,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>649A8F202F110D8F864B22B5FC68E095</key>
+		<key>4D98244C90F0C948EAA7AA319E42AEBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74946BA1A6C8AB6D1F53700FBA8B406C</key>
+		<key>4E39264976B8FB1D520E4A87DB4A61FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>644406602D21E34B03B513AC8B12E0E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73A41468CEF9B6728BC4D29BF083108E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,12 +127,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADEEF4ECF9A228022F8287998D7AD075</key>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>BA287C1DC287EAA4A399B22703554187</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BC4FE1CF77FCA3B8C084A04BF1DD0D9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

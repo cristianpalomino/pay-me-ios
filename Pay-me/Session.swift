@@ -23,6 +23,9 @@ class Session {
 struct Current {
     
     var servicioGeneral :ServicioGeneral?
+    var categoria       :Categoria?
+    var empresa         :Empresa?
+    var servicio        :Servicio?
 }
 
 

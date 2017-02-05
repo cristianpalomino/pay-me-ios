@@ -10,7 +10,12 @@ import UIKit
 
 class NivelTresViewController: PMViewController {
     
-    var entidades = [String]()
+    var empresas = [Empresa]() {
+        didSet {
+            self.tableview.reloadData()
+        }
+    }
+    
     @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
@@ -31,18 +36,9 @@ class NivelTresViewController: PMViewController {
 extension NivelTresViewController {
     
     override func initComponents() {
-        entidades = ["UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas",
-                     "UPC Universidad Peruana de Ciencias Aplicadas"]
+        if let categoria = Session.sharedInstance.current.categoria {
+            empresas = categoria.empresas
+        }
     }
 }
 
@@ -58,17 +54,28 @@ extension NivelTresViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let empresa = empresas[indexPath.row]
+        Session.sharedInstance.current.empresa = empresa
+        
+        if empresa.servicios.count == 1 {
+            performSegue(withIdentifier: Constants.Storyboard.Segues.kToValidacionServicio, sender: nil)
+        } else {
+            
+        }
+    }
 }
 
 extension NivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return entidades.count
+        return empresas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
-        cell.title = entidades[indexPath.row]
+        cell.empresa = empresas[indexPath.row]
         return cell
     }
 }

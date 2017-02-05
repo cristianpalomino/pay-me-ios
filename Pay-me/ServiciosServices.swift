@@ -10,7 +10,7 @@ import Foundation
 
 class ServiciosServices {
     
-    func serviceAgregarServicio() {
-            
+    func apiConsultarDeudas() {
+    
     }
 }

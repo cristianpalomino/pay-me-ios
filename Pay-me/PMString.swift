@@ -8,7 +8,15 @@
 
 import Foundation
 
+extension String {
+    
+    func toURL() -> URL {
+        return URL(string: self)!
+    }
+}
+
 extension NSRange {
+ 
     func range(for str: String) -> Range<String.Index>? {
         
         guard location != NSNotFound else { return nil }

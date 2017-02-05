@@ -76,6 +76,12 @@ struct Constants {
         static let kNotify   = "Notify"
         static let kHome     = "Home"
         static let kConfig   = "ServiceConfiguration"
+        
+        struct Segues {
+            
+            static let kToEmpresas              = "kToEmpresas"
+            static let kToValidacionServicio    = "kToValidacionServicio"
+        }
     }
     
     struct ViewController {

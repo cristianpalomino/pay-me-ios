@@ -44,7 +44,7 @@ class PaymeError : Response {
     }
 }
 
-class AgregarServicio : Response {
+class ResponseAgregarServicio : Response {
     
     var idCommerce      :String!
     var idCardholder    :String!
@@ -57,7 +57,7 @@ class AgregarServicio : Response {
     }
 }
 
-class ConsultarServicios : Response {
+class ResponseConsultarServicios : Response {
     
     var idCommerce      :String!
     var idCardholder    :String!
@@ -75,7 +75,7 @@ class ConsultarServicios : Response {
     }
 }
 
-class ConsultarPagos : Response {
+class ResponseConsultarPagos : Response {
     
     var orders  = [Order]()
     
@@ -88,7 +88,7 @@ class ConsultarPagos : Response {
     }
 }
 
-class ConsultarAgenda : Response {
+class ResponseConsultarAgenda : Response {
     
     var idCommerce      :String!
     var idCardholder    :String!
@@ -106,7 +106,7 @@ class ConsultarAgenda : Response {
     }
 }
 
-class ConsultarDeudas : Response {
+class ResponseConsultarDeudas : Response {
     
     var idCommerce          :String!
     var serviceIdentifier   :String!
@@ -124,7 +124,7 @@ class ConsultarDeudas : Response {
     }
 }
 
-class ConsultarNotificaciones : Response {
+class ResponseConsultarNotificaciones : Response {
     
     var idCommerce      :String!
     var idCardholder    :String!
@@ -142,7 +142,7 @@ class ConsultarNotificaciones : Response {
     }
 }
 
-class EliminarNotificacion : Response {
+class ResponseEliminarNotificacion : Response {
     
     var idCommerce      :String!
     
@@ -153,7 +153,7 @@ class EliminarNotificacion : Response {
     }
 }
 
-class PagarServicio : Response {
+class ResponsePagarServicio : Response {
     
     var idCommerce      :String!
     var idCardholder    :String!
