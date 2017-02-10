@@ -10,7 +10,7 @@ import UIKit
 
 class NivelTresViewController: PMViewController {
     
-    var empresas = [Empresa]() {
+    var servicios = [Servicio]() {
         didSet {
             self.tableview.reloadData()
         }
@@ -37,7 +37,7 @@ extension NivelTresViewController {
     
     override func initComponents() {
         if let categoria = Session.sharedInstance.current.categoria {
-            empresas = categoria.empresas
+            servicios = categoria.servicios
         }
     }
 }
@@ -56,26 +56,21 @@ extension NivelTresViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let empresa = empresas[indexPath.row]
-        Session.sharedInstance.current.empresa = empresa
-        
-        if empresa.servicios.count == 1 {
-            performSegue(withIdentifier: Constants.Storyboard.Segues.kToValidacionServicio, sender: nil)
-        } else {
-            
-        }
+        let servicio = servicios[indexPath.row]
+        Session.sharedInstance.current.servicio = servicio
+        performSegue(withIdentifier: Constants.Storyboard.Segues.kToValidacionServicio, sender: nil)
     }
 }
 
 extension NivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return empresas.count
+        return servicios.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
-        cell.empresa = empresas[indexPath.row]
+        cell.servicio = servicios[indexPath.row]
         return cell
     }
 }

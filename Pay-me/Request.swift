@@ -35,10 +35,10 @@ class RequestConsultarDeudas : Request {
     var idService           :String!
     var serviceIdentifier   :String!
     
-    init(params :(idCompany :String, idService :String, serviceIdentifier :String)) {
-        self.idCompany          = params.idCompany
-        self.idService          = params.idService
-        self.serviceIdentifier  = params.serviceIdentifier
+    init(idCompany :String, idService :String, serviceIdentifier :String) {
+        self.idCompany          = idCompany
+        self.idService          = idService
+        self.serviceIdentifier  = serviceIdentifier
     }
     
     override func toParams() -> [String : Any] {

@@ -1,106 +1,147 @@
 {
-  "serviciosGenerales": [
-    {
-      "categorias": [
-        {
-          "name": "Luz",
-          "idCategoria": "1",
-          "empresas": [
-            {
-              "name": "Luz del Sur",
-              "idCompany": "5",
-              "idCommerce": "220",
-              "shortName": "Luz del Sur",
-              "logo": "https://lh4.googleusercontent.com/MqR-AY9vkYitF6Zwvmqn167de1LfY2Q6ARTpCm2ilTtWPV5FKmY6HGrLM3bSiyeoGmugaDAeyMz8jEo=w2880-h1652",
-              "recurrence": "1",
-              "dayIssue": "15",
-              "pais": "PE",
-              "ciudad": "Lima",
-              "departamento": "Lima",
-              "direccion": "Casimiro Ulloa 33",
-              "telefono": "4567891",
-              "correo": "soporte@santamagdalena.com",
-              "servicios": [
-                {
-                  "idService": "7",
-                  "name": "Recibo de Luz",
-                  "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLemg2RGxLZlB0dHM/view",
-                  "logo_2": "https://lh6.googleusercontent.com/Wzdzk5kR_A0cKHBlM4YPpwWax9cOfQJz0oFgVd7j1wLWPagPP7kioBh1yy8LvbLuu6JQkxnt0G8j0J0=w2880-h1652",
-                  "codeDescription": "Nùmero de suministro",
-                  "codeValidation": "O|NUM|MIN9|MAX9"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "name": "Básicos"
-    },
-    {
-      "categorias": [
-        {
-          "name": "Universidades",
-          "idCategoria": "2",
-          "empresas": [
-            {
-              "name": "Universidad Peruana de Ciencias Aplicadas",
-              "idCompany": "50",
-              "idCommerce": "220",
-              "shortName": "UPC",
-              "logo": "https://lh4.googleusercontent.com/4uR9HFUQcWTshEWHbnUe6VedAvPCBocjRZtxl5Vmx_FtB7JCr3piNDQXnyVAfGVMbkDIHncd5KlZGr0=w2880-h1652",
-              "recurrence": "1",
-              "dayIssue": "20",
-              "pais": "PE",
-              "ciudad": "Lima",
-              "departamento": "Lima",
-              "direccion": "Prolongación Primavera 2390",
-              "telefono": "6303333",
-              "correo": "soporte@upc.com.pe",
-              "servicios": [
-                {
-                  "idService": "53",
-                  "name": "Matricula",
-                  "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                  "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
-                  "codeDescription": "Código de alumno",
-                  "codeValidation": "O|AFN|MIN10|MAX10"
-                },
-                {
-                  "idService": "203",
-                  "name": "Examenes sustitutorios",
-                  "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                  "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
-                  "codeDescription": "Código de alumno",
-                  "codeValidation": "O|AFN|MIN10|MAX10"
-                },
-                {
-                  "idService": "204",
-                  "name": "Mensualidad",
-                  "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                  "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
-                  "codeDescription": "Código de alumno",
-                  "codeValidation": "O|AFN|MIN10|MAX10"
-                },
-                {
-                  "idService": "205",
-                  "name": "Biblioteca",
-                  "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                  "logo_2": "https://lh6.googleusercontent.com/Wzdzk5kR_A0cKHBlM4YPpwWax9cOfQJz0oFgVd7j1wLWPagPP7kioBh1yy8LvbLuu6JQkxnt0G8j0J0=w2880-h1652",
-                  "codeDescription": "Código de alumno",
-                  "codeValidation": "O|AFN|MIN10|MAX10"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "name": "Educación"
-    },
-    {
-      "name": "Seguros"
-    },
-    {
-      "name": "Tributos"
-    }
-  ]
+    "serviciosGenerales": [
+                           {
+                           "categorias": [
+                                          {
+                                          "name": "Luz",
+                                          "idCategoria": "1",
+                                          "servicios": [
+                                                        {
+                                                        "idService": "7",
+                                                        "name": "Recibo de Luz",
+                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLemg2RGxLZlB0dHM/view",
+                                                        "logo_2": "https://lh6.googleusercontent.com/Wzdzk5kR_A0cKHBlM4YPpwWax9cOfQJz0oFgVd7j1wLWPagPP7kioBh1yy8LvbLuu6JQkxnt0G8j0J0=w2880-h1652",
+                                                        "codeDescription": "Nùmero de suministro",
+                                                        "codeValidation": "O|NUM|MIN9|MAX9",
+                                                        "empresa": {
+                                                        "name": "Luz del Sur",
+                                                        "idCompany": "5",
+                                                        "idCommerce": "220",
+                                                        "shortName": "Luz del Sur",
+                                                        "logo": "https://lh3.googleusercontent.com/-julFdrm3-LzsRMsHohteKhhvhiIde8UyATIbm7q6-p5flGQOe8RqLx1Qkxi3ZcBP_rH7aGFzSBAYrY=w2880-h1606",
+                                                        "recurrence": "1",
+                                                        "dayIssue": "15",
+                                                        "pais": "PE",
+                                                        "ciudad": "Lima",
+                                                        "departamento": "Lima",
+                                                        "direccion": "Casimiro Ulloa 33",
+                                                        "telefono": "4567891",
+                                                        "correo": "soporte@santamagdalena.com"
+                                                        }
+                                                        }
+                                                        ]
+                                          }
+                                          ],
+                           "name": "Básicos"
+                           },
+                           {
+                           "categorias": [
+                                          {
+                                          "name": "Universidades",
+                                          "idCategoria": "2",
+                                          "servicios": [
+                                                        {
+                                                        "idService": "53",
+                                                        "name": "Matricula",
+                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
+                                                        "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
+                                                        "codeDescription": "Código de alumno",
+                                                        "codeValidation": "O|AFN|MIN10|MAX10",
+                                                        "empresa": {
+                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
+                                                        "idCompany": "50",
+                                                        "idCommerce": "220",
+                                                        "shortName": "UPC",
+                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "recurrence": "1",
+                                                        "dayIssue": "20",
+                                                        "pais": "PE",
+                                                        "ciudad": "Lima",
+                                                        "departamento": "Lima",
+                                                        "direccion": "Prolongación Primavera 2390",
+                                                        "telefono": "6303333",
+                                                        "correo": "soporte@upc.com.pe"
+                                                        }
+                                                        },
+                                                        {
+                                                        "idService": "203",
+                                                        "name": "Examenes sustitutorios",
+                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
+                                                        "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
+                                                        "codeDescription": "Código de alumno",
+                                                        "codeValidation": "O|AFN|MIN10|MAX10",
+                                                        "empresa": {
+                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
+                                                        "idCompany": "50",
+                                                        "idCommerce": "220",
+                                                        "shortName": "UPC",
+                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "recurrence": "1",
+                                                        "dayIssue": "20",
+                                                        "pais": "PE",
+                                                        "ciudad": "Lima",
+                                                        "departamento": "Lima",
+                                                        "direccion": "Prolongación Primavera 2390",
+                                                        "telefono": "6303333",
+                                                        "correo": "soporte@upc.com.pe"
+                                                        }
+                                                        },
+                                                        {
+                                                        "idService": "204",
+                                                        "name": "Mensualidad",
+                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
+                                                        "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
+                                                        "codeDescription": "Código de alumno",
+                                                        "codeValidation": "O|AFN|MIN10|MAX10",
+                                                        "empresa": {
+                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
+                                                        "idCompany": "50",
+                                                        "idCommerce": "220",
+                                                        "shortName": "UPC",
+                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "recurrence": "1",
+                                                        "dayIssue": "20",
+                                                        "pais": "PE",
+                                                        "ciudad": "Lima",
+                                                        "departamento": "Lima",
+                                                        "direccion": "Prolongación Primavera 2390",
+                                                        "telefono": "6303333",
+                                                        "correo": "soporte@upc.com.pe"
+                                                        }
+                                                        },
+                                                        {
+                                                        "idService": "205",
+                                                        "name": "Biblioteca",
+                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
+                                                        "logo_2": "https://lh6.googleusercontent.com/Wzdzk5kR_A0cKHBlM4YPpwWax9cOfQJz0oFgVd7j1wLWPagPP7kioBh1yy8LvbLuu6JQkxnt0G8j0J0=w2880-h1652",
+                                                        "codeDescription": "Código de alumno",
+                                                        "codeValidation": "O|AFN|MIN10|MAX10",
+                                                        "empresa": {
+                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
+                                                        "idCompany": "50",
+                                                        "idCommerce": "220",
+                                                        "shortName": "UPC",
+                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "recurrence": "1",
+                                                        "dayIssue": "20",
+                                                        "pais": "PE",
+                                                        "ciudad": "Lima",
+                                                        "departamento": "Lima",
+                                                        "direccion": "Prolongación Primavera 2390",
+                                                        "telefono": "6303333",
+                                                        "correo": "soporte@upc.com.pe"
+                                                        }
+                                                        }
+                                                        ]
+                                          }
+                                          ],
+                           "name": "Educación"
+                           },
+                           {
+                           "name": "Seguros"
+                           },
+                           {
+                           "name": "Tributos"
+                           }
+                           ]
 }

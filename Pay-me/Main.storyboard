@@ -788,7 +788,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l4T-r3-VIG" id="al0-lY-nfc">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upc-logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Mw-wp-a5d">
@@ -1074,7 +1074,7 @@ Santiago de Surco</string>
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="LJL-Ho-l4M" kind="show" id="sVK-bb-228"/>
+                                            <action selector="tapConsultar" destination="NVx-h2-ogj" eventType="touchUpInside" id="Y00-vg-QaK"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-qb-yAK" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
@@ -1110,7 +1110,7 @@ Santiago de Surco</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cw-0u-Pv2">
-                                        <rect key="frame" x="146.5" y="9" width="27" height="17"/>
+                                        <rect key="frame" x="147" y="9" width="27" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1185,6 +1185,7 @@ Santiago de Surco</string>
                         <outlet property="txtIndentifier" destination="LmE-qb-yAK" id="MWF-uQ-a4Y"/>
                         <outlet property="viewInfo" destination="GkP-0C-yk5" id="tq6-hO-q5p"/>
                         <outlet property="viewOpenInfo" destination="YRW-xy-bq8" id="6fm-Pg-35z"/>
+                        <segue destination="LJL-Ho-l4M" kind="show" id="IqZ-dX-ezV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRY-uP-B5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1231,7 +1232,7 @@ Santiago de Surco</string>
                                         <rect key="frame" x="0.0" y="308.5" width="320" height="60.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apL-QE-BY0">
-                                                <rect key="frame" x="20" y="18" width="25" height="25"/>
+                                                <rect key="frame" x="20" y="18.5" width="25" height="25"/>
                                                 <color key="backgroundColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="FdI-Fw-nSw"/>
@@ -1239,7 +1240,7 @@ Santiago de Surco</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No es mi servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR6-Re-xtx">
-                                                <rect key="frame" x="57" y="23.5" width="82.5" height="13"/>
+                                                <rect key="frame" x="57" y="24" width="82.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="11"/>
                                                 <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1313,7 +1314,7 @@ Santiago de Surco</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVP-A8-0Cm">
-                                        <rect key="frame" x="146.5" y="8.5" width="27" height="17"/>
+                                        <rect key="frame" x="147" y="9" width="27" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1412,13 +1413,13 @@ Santiago de Surco</string>
                                                 <rect key="frame" x="160" y="0.0" width="160" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador de servicio" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-Yj-OH4">
-                                                        <rect key="frame" x="8" y="17.5" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="18" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 34 111 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-8e-vSn">
-                                                        <rect key="frame" x="8" y="33.5" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="34" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -1455,7 +1456,7 @@ Santiago de Surco</string>
                                                 <rect key="frame" x="0.0" y="28" width="320" height="65"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LtK-Fa-itB" id="8bB-mK-Aoz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-gx-hhz">
@@ -1538,7 +1539,7 @@ Santiago de Surco</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicios UPC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHl-gO-fs5">
-                                        <rect key="frame" x="115.5" y="8.5" width="89.5" height="17"/>
+                                        <rect key="frame" x="115.5" y="9" width="89.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1669,7 +1670,7 @@ Santiago de Surco</string>
                                         <rect key="frame" x="0.0" y="28" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKw-Rs-Dr6" id="4HY-UV-JGl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upc-logo" translatesAutoresizingMaskIntoConstraints="NO" id="RrU-4Y-92p">
@@ -2032,7 +2033,7 @@ Santiago de Surco</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I30-UI-plS">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2170,7 +2171,7 @@ Santiago de Surco</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-Mr-xMq">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2632,7 +2633,7 @@ Santiago de Surco</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmU-2g-EJP">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -3171,7 +3172,7 @@ Santiago de Surco</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Bl-ATx">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -3351,7 +3352,7 @@ Santiago de Surco</string>
                                         <rect key="frame" x="0.0" y="28" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zF3-Ns-QD1" id="sGz-7p-u3M">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2S7-ny-i6i">
@@ -3629,7 +3630,7 @@ Santiago de Surco</string>
                                                                 <rect key="frame" x="0.0" y="28" width="256" height="50"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="13P-Gi-eex" id="AJo-bc-sAl">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="49"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="256" height="49.5"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="logito-mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="Wq7-Ow-yD0">
@@ -4145,7 +4146,7 @@ Santiago de Surco</string>
                                                 <rect key="frame" x="0.0" y="28" width="320" height="65"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LaG-7r-MTS" id="f5v-f9-yTU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7e-kK-Puq">

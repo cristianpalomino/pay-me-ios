@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */; };
 		40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
+		401CC6681E4B5FFD001911F2 /* PMHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401CC6671E4B5FFD001911F2 /* PMHud.swift */; };
 		40293EF71E405385007EF98D /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF61E405385007EF98D /* Calendar.swift */; };
 		40293EF91E40D2DE007EF98D /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		40293EFB1E40DFEE007EF98D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFA1E40DFEE007EF98D /* Order.swift */; };
@@ -21,6 +22,7 @@
 		4033773C1E03D43A00261759 /* NivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* NivelTresViewController.swift */; };
 		4033773E1E03D44800261759 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
 		403C4A981E43D64F0004AA6A /* Calls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C4A971E43D64F0004AA6A /* Calls.swift */; };
+		403C4CBC1E46B4E70004AA6A /* PaymeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */; };
 		40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
 		40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
@@ -124,6 +126,7 @@
 /* Begin PBXFileReference section */
 		40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTabBarViewController.swift; sourceTree = "<group>"; };
 		40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationViewController.swift; sourceTree = "<group>"; };
+		401CC6671E4B5FFD001911F2 /* PMHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHud.swift; sourceTree = "<group>"; };
 		40293EF61E405385007EF98D /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		40293EF81E40D2DE007EF98D /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		40293EFA1E40DFEE007EF98D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 		4033773B1E03D43A00261759 /* NivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelTresViewController.swift; sourceTree = "<group>"; };
 		4033773D1E03D44800261759 /* PMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
 		403C4A971E43D64F0004AA6A /* Calls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calls.swift; sourceTree = "<group>"; };
+		403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymeServices.swift; sourceTree = "<group>"; };
 		40463D271E19CF8000F663B0 /* PMItemCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCard.swift; sourceTree = "<group>"; };
 		40463D291E19CF9E00F663B0 /* PMItemCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCard.xib; sourceTree = "<group>"; };
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
@@ -360,6 +364,7 @@
 				403377391E03D42600261759 /* NivelDosViewController.swift */,
 				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
 				40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */,
+				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
 			);
 			name = Adicionar_Servicio;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 		4062C1501E3BC43F00617265 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */,
 				4062C16B1E3D0B6400617265 /* Protocols */,
 				4062C15C1E3BF6D700617265 /* Utils */,
 				4062C1541E3BE63500617265 /* Request.swift */,
@@ -501,6 +507,7 @@
 				405D230E1E157C94006ED043 /* PMStoryboard.swift */,
 				405E0ABD1E1C86AD008CF767 /* PMSizes.swift */,
 				40A420121E203FF200D74D22 /* PMString.swift */,
+				401CC6671E4B5FFD001911F2 /* PMHud.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -592,7 +599,6 @@
 				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
 				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
-				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -975,6 +981,7 @@
 				40293EFF1E415DB5007EF98D /* PMItemCircle.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
 				40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */,
+				401CC6681E4B5FFD001911F2 /* PMHud.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */,
 				40A420131E203FF200D74D22 /* PMString.swift in Sources */,
 				4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */,
@@ -1017,6 +1024,7 @@
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
 				40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */,
+				403C4CBC1E46B4E70004AA6A /* PaymeServices.swift in Sources */,
 				40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

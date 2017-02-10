@@ -41,7 +41,7 @@ class ServicioGeneral {
 
 class Categoria {
     
-    var empresas        = [Empresa]()
+    var servicios       = [Servicio]()
     var idCategoria     :String!
     var name            :String!
     
@@ -49,8 +49,8 @@ class Categoria {
         self.name = json["name"].stringValue
         self.idCategoria = json["idCategoria"].stringValue
         
-        if !json["empresas"].isEmpty {
-            json["empresas"].arrayValue.forEach{self.empresas.append(Empresa(json: $0))}
+        if !json["servicios"].isEmpty {
+            json["servicios"].arrayValue.forEach{self.servicios.append(Servicio(json: $0))}
         }
     }
 }
@@ -70,7 +70,6 @@ class Empresa {
     var direccion       :String!
     var telefono        :String!
     var correo          :String!
-    var servicios       = [Servicio]()
     
     init(json :JSON) {
         
@@ -87,10 +86,6 @@ class Empresa {
         self.direccion = json["direccion"].stringValue
         self.telefono = json["telefono"].stringValue
         self.correo = json["correo"].stringValue
-        
-        if !json["servicios"].isEmpty {
-            json["servicios"].arrayValue.forEach{self.servicios.append(Servicio(json: $0))}
-        }
     }
 }
 
@@ -102,6 +97,7 @@ class Servicio {
     var logo_2          :String!
     var codeDescription :String!
     var codeValidation  :String!
+    var empresa         :Empresa!
     
     init(json :JSON) {
         
@@ -111,5 +107,6 @@ class Servicio {
         self.logo_2 = json["logo_2"].stringValue
         self.codeDescription = json["codeDescription"].stringValue
         self.codeValidation = json["codeValidation"].stringValue
+        self.empresa = Empresa(json: json["empresa"])
     }
 }

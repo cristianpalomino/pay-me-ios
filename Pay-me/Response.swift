@@ -30,7 +30,7 @@ class PaymeError : Response {
     override init() {
         super.init()
         self.answerCode     = Constants.Api.kErrorCode
-        self.answerMessage  = Constants.Api.Messages.kUnknownError
+        self.answerMessage  = Constants.Api.Messages.kUnknownError.decrypt()
     }
     
     init(message: String) {

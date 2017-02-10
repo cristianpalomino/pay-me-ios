@@ -51,7 +51,7 @@ extension SuministroViewController {
     @IBAction func tapConsultar() {
         let identifier = txtIndentifier.text!.trimmed
         if identifier != "" {
-            
+            callServiceConsultarDeudas(identifier: identifier)
         } else {
             
         }
@@ -69,6 +69,28 @@ extension SuministroViewController {
             self.viewOpenInfo.isHidden = true
             self.viewInfo.isHidden = false
         })
+    }
+    
+    func callServiceConsultarDeudas(identifier :String) {
+        showHUD()
+        
+        let current = Session.sharedInstance.current
+        let idCompany = current.servicio!.empresa.idCompany!
+        let idService = current.servicio!.idService!
+        let request = RequestConsultarDeudas(idCompany: idCompany, idService: idService, serviceIdentifier: identifier)
+        PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
+        PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
+    }
+}
+
+extension SuministroViewController : ConsultarDeudasDelegate {
+    
+    func serviceSuccess(response: ResponseConsultarDeudas) {
+        hideHUD()
+    }
+    
+    func serviceFailed(error: PaymeError) {
+        hideHUD()
     }
 }
 

@@ -20,9 +20,9 @@ class EntidadTableViewCell: UITableViewCell {
     @IBOutlet weak var name             :UILabel!
     @IBOutlet weak var logo             :UIImageView!
     
-    internal var empresa :Empresa! {
+    internal var servicio :Servicio! {
         didSet {
-            self.name.text = empresa.name
+            self.name.text = servicio.name
             self.defineStyle()
             self.loadLogo()
         }
@@ -41,8 +41,7 @@ class EntidadTableViewCell: UITableViewCell {
 extension EntidadTableViewCell {
     
     func loadLogo() {
-        //empresa.logo
-        Alamofire.request("https://httpbin.org/image/png").responseData {
+        Alamofire.request(servicio.logo).responseData {
             response in
             if let data = response.result.value {
                 let image = UIImage(data: data)
@@ -54,11 +53,7 @@ extension EntidadTableViewCell {
     }
     
     func defineStyle() {
-        if empresa.servicios.isEmpty {
-            defaultStyle()
-        } else {
-            primaryStyle()
-        }
+        
     }
 }
 

@@ -20,14 +20,12 @@ extension AppDelegate {
             $0.categorias.forEach {
                 print($0.name)
                 
-                print("---Empresas---")
-                $0.empresas.forEach {
+                print("---Servicios---")
+                $0.servicios.forEach {
                     print($0.name)
                     
-                    print("---Servicios---")
-                    $0.servicios.forEach {
-                        print($0.name)
-                    }
+                    print("---Empresa---")
+                    print($0.empresa.shortName)
                 }
             }
             print("--------------")

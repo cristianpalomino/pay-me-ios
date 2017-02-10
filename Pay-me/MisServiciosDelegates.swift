@@ -10,10 +10,16 @@ import Foundation
 
 protocol MisServiciosServiceDelegate {
     
-    func serviceSuccess(response :Response)
-    func serviceFailed(error :PaymeError)
 }
 
 protocol AgregarServicioDelegate : MisServiciosServiceDelegate {
     
+    func serviceSuccess(response :ResponseAgregarServicio)
+    func serviceFailed(error :PaymeError)
+}
+
+protocol ConsultarDeudasDelegate : MisServiciosServiceDelegate {
+    
+    func serviceSuccess(response :ResponseConsultarDeudas)
+    func serviceFailed(error :PaymeError)
 }
