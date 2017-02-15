@@ -20,8 +20,8 @@ class Response {
     
     init(json :JSON) {
         
-        self.answerCode     = json[Constants.Api.Json.kAnswerCode].stringValue
-        self.answerMessage  = json[Constants.Api.Json.kAnswerMessage].stringValue
+        self.answerCode     = json[Constants.Api.Json.kAnswerCode].stringValue.decrypt()
+        self.answerMessage  = json[Constants.Api.Json.kAnswerMessage].stringValue.decrypt()
     }
 }
 
@@ -30,7 +30,7 @@ class PaymeError : Response {
     override init() {
         super.init()
         self.answerCode     = Constants.Api.kErrorCode
-        self.answerMessage  = Constants.Api.Messages.kUnknownError.decrypt()
+        self.answerMessage  = Constants.Api.Messages.kUnknownError
     }
     
     init(message: String) {

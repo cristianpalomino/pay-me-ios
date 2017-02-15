@@ -99,7 +99,7 @@ class ServiciosApi {
         }
     }
     
-    class func apiConsultarDeudas(request :RequestConsultarDeudas, completion: @escaping RequestUtil.Completion) {
+    class func apiConsultarDeudas(request :RequestConsultarDeudas, completion: @escaping RequestUtil.Completion) {        
         Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_DEUDAS,
                           method : .post,
                           parameters: request.toParams(),
@@ -245,6 +245,4 @@ class ServiciosApi {
                             }
         }
     }
-    
-    
 }

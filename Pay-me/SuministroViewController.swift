@@ -11,10 +11,10 @@ import Material
 
 class SuministroViewController: PMViewController {
     
-    @IBOutlet weak var bigImageBannerHeigth         :NSLayoutConstraint!
-    @IBOutlet weak var bigBannerHeigth              :NSLayoutConstraint!
-    @IBOutlet weak var bigImageBannerTopConstraint  :NSLayoutConstraint!
-    @IBOutlet weak var buttonBottomConstraint       :NSLayoutConstraint!
+    //Constraints
+    @IBOutlet weak var mainViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var consultButtonBottomConstraint: NSLayoutConstraint!
+    
     
     @IBOutlet weak var viewOpenInfo         : UIView!
     @IBOutlet weak var viewInfo             : UIView!
@@ -26,16 +26,20 @@ class SuministroViewController: PMViewController {
     @IBOutlet weak var imageBigBannerView   : UIImageView!
     @IBOutlet weak var bannerView           : UIView!
     @IBOutlet weak var imageBannerView      : UIImageView!
+    var errorView :PMErrorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addKeyBoardObservers()
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.initErrorView()
     }
 }
 
@@ -51,6 +55,7 @@ extension SuministroViewController {
     @IBAction func tapConsultar() {
         let identifier = txtIndentifier.text!.trimmed
         if identifier != "" {
+            txtIndentifier.resignFirstResponder()
             callServiceConsultarDeudas(identifier: identifier)
         } else {
             
@@ -72,44 +77,25 @@ extension SuministroViewController {
     }
     
     func callServiceConsultarDeudas(identifier :String) {
-        showHUD()
-        
         let current = Session.sharedInstance.current
         let idCompany = current.servicio!.empresa.idCompany!
         let idService = current.servicio!.idService!
         let request = RequestConsultarDeudas(idCompany: idCompany, idService: idService, serviceIdentifier: identifier)
         PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
         PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
-    }
-}
-
-extension SuministroViewController : ConsultarDeudasDelegate {
-    
-    func serviceSuccess(response: ResponseConsultarDeudas) {
-        hideHUD()
+        showHUD()
     }
     
-    func serviceFailed(error: PaymeError) {
-        hideHUD()
-    }
-}
-
-extension SuministroViewController {
-    
-    override func keyboardDidShow(notification: NSNotification) {
-        if let userInfo = notification.userInfo {
-            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-                self.bigImageBannerTopConstraint.constant = -self.imageBigBannerView.frame.height
-                self.bigImageBannerHeigth.constant = 0
-                self.buttonBottomConstraint.constant = keyboardSize.size.height - self.tabBarController!.tabBar.frame.size.height
-                UIView.animate(withDuration: 0.15, animations: {
-                    self.mainView.layoutIfNeeded()
-                })
-            }
-        }
+    func initErrorView() {
+        let errorViewOrigin = self.txtIndentifier.frame.origin.y + self.txtIndentifier.frame.size.height + 32
+        let frameErrorView = CGRect(x: 20, y: Int(errorViewOrigin), width: Int(self.txtIndentifier.frame.width), height: 100)
+        self.errorView = PMErrorView(frame: frameErrorView)
+        self.errorView.isHidden = true
+        self.mainView.addSubview(errorView)
     }
     
-    override func keyboardDidHide() {
-        
+    func showErrorView(pmError :PaymeError) {
+        self.errorView.pmError = pmError
+        self.errorView.isHidden = false
     }
 }

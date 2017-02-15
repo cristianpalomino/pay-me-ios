@@ -23,6 +23,11 @@ extension String {
     }
     
     func decrypt() -> String {
-        return RSA.decryptString(self, privateKey: Security.Keys.kPrivate)
+        let s = RSA.decryptString(self, privateKey: Security.Keys.kPrivate)
+        if s != "" {
+            return s!
+        } else {
+            return self
+        }
     }
 }
