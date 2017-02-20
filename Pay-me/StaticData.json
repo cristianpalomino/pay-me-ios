@@ -9,8 +9,8 @@
                                                         {
                                                         "idService": "7",
                                                         "name": "Recibo de Luz",
-                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLemg2RGxLZlB0dHM/view",
-                                                        "logo_2": "https://lh6.googleusercontent.com/Wzdzk5kR_A0cKHBlM4YPpwWax9cOfQJz0oFgVd7j1wLWPagPP7kioBh1yy8LvbLuu6JQkxnt0G8j0J0=w2880-h1652",
+                                                        "logo": "http://i.imgur.com/at52Mkg.png",
+                                                        "logo_2": "http://i.imgur.com/at52Mkg.png",
                                                         "codeDescription": "Nùmero de suministro",
                                                         "codeValidation": "O|NUM|MIN9|MAX9",
                                                         "empresa": {
@@ -18,7 +18,7 @@
                                                         "idCompany": "5",
                                                         "idCommerce": "220",
                                                         "shortName": "Luz del Sur",
-                                                        "logo": "https://lh3.googleusercontent.com/-julFdrm3-LzsRMsHohteKhhvhiIde8UyATIbm7q6-p5flGQOe8RqLx1Qkxi3ZcBP_rH7aGFzSBAYrY=w2880-h1606",
+                                                        "logo": "http://i.imgur.com/sDZ7LQr.jpg",
                                                         "recurrence": "1",
                                                         "dayIssue": "15",
                                                         "pais": "PE",
@@ -43,8 +43,8 @@
                                                         {
                                                         "idService": "53",
                                                         "name": "Matricula",
-                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                                                        "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
+                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
+                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
                                                         "codeDescription": "Código de alumno",
                                                         "codeValidation": "O|AFN|MIN10|MAX10",
                                                         "empresa": {
@@ -52,7 +52,7 @@
                                                         "idCompany": "50",
                                                         "idCommerce": "220",
                                                         "shortName": "UPC",
-                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
                                                         "recurrence": "1",
                                                         "dayIssue": "20",
                                                         "pais": "PE",
@@ -66,8 +66,8 @@
                                                         {
                                                         "idService": "203",
                                                         "name": "Examenes sustitutorios",
-                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                                                        "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
+                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
+                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
                                                         "codeDescription": "Código de alumno",
                                                         "codeValidation": "O|AFN|MIN10|MAX10",
                                                         "empresa": {
@@ -75,7 +75,7 @@
                                                         "idCompany": "50",
                                                         "idCommerce": "220",
                                                         "shortName": "UPC",
-                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
                                                         "recurrence": "1",
                                                         "dayIssue": "20",
                                                         "pais": "PE",
@@ -89,8 +89,8 @@
                                                         {
                                                         "idService": "204",
                                                         "name": "Mensualidad",
-                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                                                        "logo_2": "https://lh6.googleusercontent.com/SIOCeGGjYYvufY71M44j4edPTi97D1x5l9SB3o1i_tvBcuZFBwslKMmaittAdzO3fA02OxouJ9bBIWc=w2880-h1652",
+                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
+                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
                                                         "codeDescription": "Código de alumno",
                                                         "codeValidation": "O|AFN|MIN10|MAX10",
                                                         "empresa": {
@@ -98,7 +98,7 @@
                                                         "idCompany": "50",
                                                         "idCommerce": "220",
                                                         "shortName": "UPC",
-                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
                                                         "recurrence": "1",
                                                         "dayIssue": "20",
                                                         "pais": "PE",
@@ -112,8 +112,8 @@
                                                         {
                                                         "idService": "205",
                                                         "name": "Biblioteca",
-                                                        "logo": "https://drive.google.com/file/d/0B3IyIvi2q8JLaXpJMHFQS1FpVlU/view",
-                                                        "logo_2": "https://lh6.googleusercontent.com/Wzdzk5kR_A0cKHBlM4YPpwWax9cOfQJz0oFgVd7j1wLWPagPP7kioBh1yy8LvbLuu6JQkxnt0G8j0J0=w2880-h1652",
+                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
+                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
                                                         "codeDescription": "Código de alumno",
                                                         "codeValidation": "O|AFN|MIN10|MAX10",
                                                         "empresa": {
@@ -121,7 +121,7 @@
                                                         "idCompany": "50",
                                                         "idCommerce": "220",
                                                         "shortName": "UPC",
-                                                        "logo": "https://lh4.googleusercontent.com/22hkDcwXnAQDfPtVtvvDR9ggxupEuqm9LBjcndIqnWN8ezKLMMKY0xn30fYyFAajku4J25rDTkUoTN8=w2880-h1606",
+                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
                                                         "recurrence": "1",
                                                         "dayIssue": "20",
                                                         "pais": "PE",

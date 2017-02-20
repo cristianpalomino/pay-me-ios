@@ -99,7 +99,7 @@ class ServiciosApi {
         }
     }
     
-    class func apiConsultarDeudas(request :RequestConsultarDeudas, completion: @escaping RequestUtil.Completion) {        
+    class func apiConsultarDeudas(request :RequestConsultarDeudas, completion: @escaping RequestUtil.Completion) {
         Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_DEUDAS,
                           method : .post,
                           parameters: request.toParams(),
@@ -109,7 +109,7 @@ class ServiciosApi {
                             case .success:
                                 if let value = response.result.value {
                                     let json = JSON(value)
-                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue.decrypt()
                                     if rc == Constants.Api.kSuccessCode {
                                         let paymeData = ResponseConsultarDeudas(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))

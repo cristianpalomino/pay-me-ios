@@ -110,6 +110,7 @@ class ResponseConsultarDeudas : Response {
     
     var idCommerce          :String!
     var serviceIdentifier   :String!
+    var clientName          :String!
     var debts               = [Debt]()
     
     override init(json :JSON) {
@@ -117,6 +118,7 @@ class ResponseConsultarDeudas : Response {
         
         self.idCommerce         = json[Constants.Api.Json.kIdCommerce].stringValue
         self.serviceIdentifier  = json[Constants.Api.Json.kServiceIdentifier].stringValue
+        self.clientName         = json[Constants.Api.Json.kClientName].stringValue
         
         if let jsona = json[Constants.Api.Json.kDebt].array {
             jsona.forEach{ debts.append(Debt(json: $0)) }

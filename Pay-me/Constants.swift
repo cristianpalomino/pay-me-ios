@@ -41,6 +41,7 @@ struct Constants {
             static let kOrder               = "order"
             static let kCalendar            = "Calendar"
             static let kServiceIdentifier   = "serviceIdentifier"
+            static let kClientName          = "clientName"
             static let kDebt                = "debt"
             static let kNotification        = "notification"
             
@@ -48,10 +49,10 @@ struct Constants {
         
         struct URLs {
             
-            #if PROD
+            #if PRODUCTION
             static let BASE_URL                = ""
             static let RUNSCOPE_BASE_URL       = ""
-            #elseif TEST
+            #elseif DEVELOPMENT
             static let BASE_URL                = "https://test2.alignetsac.com"
             static let RUNSCOPE_BASE_URL       = "https://test2-alignetsac-com-yzsfvdohqwc1.runscope.net"
             #endif
@@ -81,6 +82,7 @@ struct Constants {
             
             static let kToEmpresas              = "kToEmpresas"
             static let kToValidacionServicio    = "kToValidacionServicio"
+            static let kDetailSuministro        = "kToDetailSuministro"
         }
     }
     

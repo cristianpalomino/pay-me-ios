@@ -12,9 +12,11 @@ extension SuministroViewController : ConsultarDeudasDelegate {
     
     func serviceSuccess(response: ResponseConsultarDeudas) {
         hideHUD()
+        performSegue(withIdentifier: Constants.Storyboard.Segues.kDetailSuministro, sender: nil)
     }
     
     func serviceFailed(error: PaymeError) {
+        print(error.answerCode)
         hideHUD()
         showErrorView(pmError: error)
     }

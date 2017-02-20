@@ -99,7 +99,7 @@ extension EntidadTableViewCell {
         self.logo.layer.cornerRadius = self.logo.frame.height * 0.5
         self.logo.layer.borderWidth = 1
         self.logo.layer.borderColor = UIColor.lightGray.cgColor
-        self.logo.image = self.logo.image!.imageWithInsets(insetDimen: 12)
+        //self.logo.image = self.logo.image!.imageWithInsets(insetDimen: 12)
         
         self.add.layer.cornerRadius = self.add.frame.height * 0.5
         self.add.layer.borderWidth = 1

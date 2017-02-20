@@ -39,6 +39,8 @@ extension Debt {
     
     struct Keys {
         
+        static let kCodTrace             = "codTrace"
+        static let kContador             = "contador"
         static let kCodReference         = "codReference"
         static let kAmount               = "amount"
         static let kExpirationDate       = "expirationDate"

@@ -19,7 +19,7 @@ class ServiciosServices {
             case .success:
                 let response = api.data as! ResponseConsultarDeudas
                 self.consultarDeudasDelegate?.serviceSuccess(response: response)
-                
+
             case .failure:
                 self.consultarDeudasDelegate?.serviceFailed(error: api.error!)
             }

@@ -8,6 +8,7 @@
 
 import UIKit
 import Material
+import Alamofire
 
 class SuministroViewController: PMViewController {
     
@@ -47,6 +48,7 @@ extension SuministroViewController {
     
     override func initComponents() {
         self.txtIndentifier.setPMTheme()
+        self.loadImages()
     }
 }
 
@@ -84,6 +86,25 @@ extension SuministroViewController {
         PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
         PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
         showHUD()
+    }
+    
+    func loadImages() {
+        if let currentService = Session.sharedInstance.current.servicio {
+            Alamofire.request(currentService.empresa.logo).responseData {
+                response in
+                if let data = response.result.value {
+                    let image = UIImage(data: data)
+                    self.imageBigBannerView.image = image
+                }
+            }
+            Alamofire.request(currentService.logo_2).responseData {
+                response in
+                if let data = response.result.value {
+                    let image = UIImage(data: data)
+                    self.imageBannerView.image = image
+                }
+            }
+        }
     }
     
     func initErrorView() {
