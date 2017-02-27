@@ -49,3 +49,10 @@ class RequestConsultarDeudas : Request {
         return params
     }
 }
+
+class RequestConsultarServicios : Request {
+    
+    override func toParams() -> [String : Any] {
+        return super.toParams()
+    }
+}

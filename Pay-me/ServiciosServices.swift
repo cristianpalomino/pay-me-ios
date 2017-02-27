@@ -10,7 +10,8 @@ import Foundation
 
 class ServiciosServices {
     
-    var consultarDeudasDelegate :ConsultarDeudasDelegate?
+    var consultarDeudasDelegate     :ConsultarDeudasDelegate?
+    var consultarServiciosDelegate  :ConsultarServiciosDelegate?
     
     func serviceConsultarDeudas(request :RequestConsultarDeudas) {
         ServiciosApi.apiConsultarDeudas(request: request, completion: {
@@ -22,6 +23,19 @@ class ServiciosServices {
 
             case .failure:
                 self.consultarDeudasDelegate?.serviceFailed(error: api.error!)
+            }
+        })
+    }
+    
+    func apiConsultarServicios(request :RequestConsultarServicios) {
+        ServiciosApi.apiConsultarServicios(request: request, completion: {
+            api in
+            switch api.result {
+            case .success:
+                let response = api.data as! ResponseConsultarServicios
+                self.consultarServiciosDelegate?.serviceSuccess(response: response)
+            case .failure:
+                self.consultarServiciosDelegate?.serviceFailed(error: api.error!)
             }
         })
     }

@@ -6,73 +6,81 @@
 //  Copyright © 2016 Cristian Palomino Rivera. All rights reserved.
 //
 
+import AlamofireImage
 import UIKit
 
 class FavoritoTableViewCell: UITableViewCell {
-    struct State {
-        static let kPendiente   = "pendiente"
-        static let kCargo       = "cargo"
-        static let kVerficacion = "verficacion"
-    };
     
     var favoriteCellDelegate :FavoriteCellDelegate?
-    static let identifier = "favoritoCell"
-
+    static let identifier       = "favoritoCell"
+    
     @IBOutlet weak var icon     : UIImageView!
     @IBOutlet weak var name     : UILabel!
     @IBOutlet weak var entidad  : UILabel!
     @IBOutlet weak var code     : UILabel!
     @IBOutlet weak var estado   : UILabel!
     @IBOutlet weak var monto    : UILabel!
-
-    internal var item: Favorito! {
-        didSet {
-            let image = UIImage(named: item.image)
-            self.icon.image = image!.imageWithInsets(insetDimen: 12)
-            self.name.text = item.name
-            self.entidad.text = item.entidad
-            self.code.text = item.code
-            self.monto.text = item.monto
-            
-            self.defineState(state: item.etiqueta)
-        }
+    
+    func updateCellWith(service :Service) {
+        self.updateImage(url: "")
+        self.defineState(state: service.state)
+        
+        self.name.text      = service.alias
+        self.entidad.text   = "NONE"
+        self.code.text      = service.codeService
+        self.monto.text     = service.amount.currency()
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         addStyles()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
 }
 
 extension FavoritoTableViewCell {
     
     @IBAction func tapSeetings() {
+        
         favoriteCellDelegate?.tapFavorite()
     }
 }
 
 extension FavoritoTableViewCell {
     
-    func defineState(state :String) {
-        self.estado.text = state
-        if state == State.kPendiente {
-            self.estado.text = "  PENDIENTE DE PAGO  "
+    func defineState(state : ServiceStateType) {
+        switch state {
+        case .PENDIENTE_VERIFICACION:
+            self.estado.text = "   Pendiente de verificación   ".uppercased()
+            self.estado.backgroundColor = UIColor.appGrayColor()
+            break
+        case .PENDIENTE_PAGO:
+            self.estado.text = "   Pendiente de pago   ".uppercased()
             self.estado.backgroundColor = UIColor.appRedColor()
+            break
+        case .PAGADO:
+            self.estado.text = "   Pagado   ".uppercased()
+            self.estado.backgroundColor = UIColor.appRedColor()
+            break
+        case .ELIMINADO:
+            self.estado.text = "   Eliminado   ".uppercased()
+            self.estado.backgroundColor = UIColor.appRedColor()
+            break
         }
-        else if state == State.kCargo {
-            self.estado.text = "  CARGO AUTOMATICO  "
-            self.estado.backgroundColor = UIColor.appGrayColor()
+    }
+    
+    func updateImage(url :String) {
+        guard let url = URL(string: url) else {
+            return
         }
-        else if state == State.kVerficacion {
-            self.estado.text = "  PENDIENTE DE VERIFICACIÓN  "
-            self.estado.backgroundColor = UIColor.appGrayColor()
-        }
+        
+        let placeholder = UIImage(named: "placeholder-default")
+        
+        let filter = AspectScaledToFillSizeCircleFilter(size: self.icon.frame.size)
+        self.icon.af_setImage(withURL: url, placeholderImage: placeholder, filter: filter, imageTransition: .crossDissolve(0.2))
     }
 }
 
@@ -89,6 +97,7 @@ extension FavoritoTableViewCell {
 }
 
 protocol FavoriteCellDelegate {
+    
     func tapFavorite()
 }
 

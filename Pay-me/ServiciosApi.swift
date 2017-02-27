@@ -157,24 +157,27 @@ class ServiciosApi {
         }
     }
     
-    class func apiConsultarServicios(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+    class func apiConsultarServicios(request :RequestConsultarServicios, completion: @escaping RequestUtil.Completion) {
         Alamofire.request(Constants.Api.URLs.EndPoints.CONSULTAR_SERVICIOS,
                           method : .post,
-                          parameters: params,
+                          parameters: request.toParams(),
                           encoding: JSONEncoding.default).responseJSON {
                             response in
                             switch response.result {
                             case .success:
                                 if let value = response.result.value {
                                     let json = JSON(value)
-                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
-                                    if rc == Constants.Api.kSuccessCode {
-                                        let paymeData = ResponseConsultarServicios(json: json)
-                                        completion(PaymeApiResult(data: paymeData, error: nil))
-                                    } else {
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue.decrypt()
+                                    
+                                    guard rc == Constants.Api.kSuccessCode else {
                                         let paymeError = PaymeError(json: json)
                                         completion(PaymeApiResult(data: nil, error: paymeError))
+                                        return
                                     }
+                                    
+                                    let paymeData = ResponseConsultarServicios(json: json)
+                                    completion(PaymeApiResult(data: paymeData, error: nil))
+                                    
                                 }
                                 else {
                                     completion(PaymeApiResult(data: nil, error: PaymeError()))

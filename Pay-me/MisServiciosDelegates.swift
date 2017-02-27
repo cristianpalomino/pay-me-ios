@@ -23,3 +23,10 @@ protocol ConsultarDeudasDelegate : MisServiciosServiceDelegate {
     func serviceSuccess(response :ResponseConsultarDeudas)
     func serviceFailed(error :PaymeError)
 }
+
+
+protocol ConsultarServiciosDelegate : MisServiciosServiceDelegate {
+    
+    func serviceSuccess(response :ResponseConsultarServicios)
+    func serviceFailed(error :PaymeError)
+}

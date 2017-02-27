@@ -44,6 +44,14 @@ enum ServicesType :String {
     case TRIBUTOS   = "Tributos"
 }
 
+enum ServiceStateType :Int {
+    
+    case PENDIENTE_VERIFICACION = 1
+    case PENDIENTE_PAGO         = 2
+    case PAGADO                 = 3
+    case ELIMINADO              = 4
+}
+
 
 //Api
 
