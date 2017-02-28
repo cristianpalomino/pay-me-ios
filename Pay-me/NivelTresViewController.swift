@@ -10,13 +10,12 @@ import UIKit
 
 class NivelTresViewController: PMViewController {
     
+    @IBOutlet weak var tableview        :UITableView!
     var servicios = [Servicio]() {
         didSet {
             self.tableview.reloadData()
         }
     }
-    
-    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,6 @@ class NivelTresViewController: PMViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
@@ -37,7 +35,8 @@ extension NivelTresViewController {
     
     override func initComponents() {
         if let categoria = Session.sharedInstance.current.categoria {
-            servicios = categoria.servicios
+            self.servicios = categoria.servicios
+            self.titleLabel.text = categoria.name
         }
     }
 }

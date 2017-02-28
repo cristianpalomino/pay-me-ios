@@ -21,7 +21,7 @@ class Session {
 }
 
 struct Current {
-    
+        
     var servicioGeneral :ServicioGeneral?
     var categoria       :Categoria?
     var servicio        :Servicio?

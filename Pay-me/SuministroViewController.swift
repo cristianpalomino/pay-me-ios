@@ -8,18 +8,20 @@
 
 import UIKit
 import Material
-import Alamofire
+import AlamofireImage
 
 class SuministroViewController: PMViewController {
+    
+    //Api
+    weak var apiResponse    :ResponseConsultarDeudas?
     
     //Constraints
     @IBOutlet weak var mainViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var consultButtonBottomConstraint: NSLayoutConstraint!
     
-    
+    //Views
     @IBOutlet weak var viewOpenInfo         : UIView!
     @IBOutlet weak var viewInfo             : UIView!
-    
     @IBOutlet weak var mainView             : UIView!
     @IBOutlet weak var txtIndentifier       : PMTextField!
     @IBOutlet weak var btnInfo              : UIButton!
@@ -42,6 +44,20 @@ class SuministroViewController: PMViewController {
         super.viewDidAppear(animated)
         self.initErrorView()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else {
+            return
+        }
+        
+        if identifier == Constants.Storyboard.Segues.kDetailSuministro {
+            let detalleViewController = segue.destination as! DetalleSuministroViewController
+            if apiResponse != nil {
+                detalleViewController.serviceIdentifier = self.txtIndentifier.text!
+                detalleViewController.apiResponse = self.apiResponse
+            }
+        }
+    }
 }
 
 extension SuministroViewController {
@@ -49,74 +65,5 @@ extension SuministroViewController {
     override func initComponents() {
         self.txtIndentifier.setPMTheme()
         self.loadImages()
-    }
-}
-
-extension SuministroViewController {
-    
-    @IBAction func tapConsultar() {
-        let identifier = txtIndentifier.text!.trimmed
-        if identifier != "" {
-            txtIndentifier.resignFirstResponder()
-            callServiceConsultarDeudas(identifier: identifier)
-        } else {
-            
-        }
-    }
-    
-    @IBAction func tapInfo() {
-        showInformation()
-    }
-}
-
-extension SuministroViewController {
-    
-    func showInformation() {
-        UIView.animate(withDuration: 0.25, animations: {
-            self.viewOpenInfo.isHidden = true
-            self.viewInfo.isHidden = false
-        })
-    }
-    
-    func callServiceConsultarDeudas(identifier :String) {
-        let current = Session.sharedInstance.current
-        let idCompany = current.servicio!.empresa.idCompany!
-        let idService = current.servicio!.idService!
-        let request = RequestConsultarDeudas(idCompany: idCompany, idService: idService, serviceIdentifier: identifier)
-        PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
-        PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
-        showHUD()
-    }
-    
-    func loadImages() {
-        if let currentService = Session.sharedInstance.current.servicio {
-            Alamofire.request(currentService.empresa.logo).responseData {
-                response in
-                if let data = response.result.value {
-                    let image = UIImage(data: data)
-                    self.imageBigBannerView.image = image
-                }
-            }
-            Alamofire.request(currentService.logo_2).responseData {
-                response in
-                if let data = response.result.value {
-                    let image = UIImage(data: data)
-                    self.imageBannerView.image = image
-                }
-            }
-        }
-    }
-    
-    func initErrorView() {
-        let errorViewOrigin = self.txtIndentifier.frame.origin.y + self.txtIndentifier.frame.size.height + 32
-        let frameErrorView = CGRect(x: 20, y: Int(errorViewOrigin), width: Int(self.txtIndentifier.frame.width), height: 100)
-        self.errorView = PMErrorView(frame: frameErrorView)
-        self.errorView.isHidden = true
-        self.mainView.addSubview(errorView)
-    }
-    
-    func showErrorView(pmError :PaymeError) {
-        self.errorView.pmError = pmError
-        self.errorView.isHidden = false
     }
 }

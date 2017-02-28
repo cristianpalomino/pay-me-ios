@@ -9,19 +9,18 @@
 import UIKit
 
 class NivelDosViewController: PMViewController {
-
-    @IBOutlet var topView           :PMItemCircle!
-    @IBOutlet var rigthTopView      :PMItemCircle!
-    @IBOutlet var leftTopView       :PMItemCircle!
-    @IBOutlet var rigthMiddleView   :PMItemCircle!
-    @IBOutlet var leftMiddleView    :PMItemCircle!
-    @IBOutlet var rigthBottomView   :PMItemCircle!
-    @IBOutlet var leftBottomView    :PMItemCircle!
-    @IBOutlet var bottomView        :PMItemCircle!
+    
+    @IBOutlet weak var topView           :PMItemCircle!
+    @IBOutlet weak var rigthTopView      :PMItemCircle!
+    @IBOutlet weak var leftTopView       :PMItemCircle!
+    @IBOutlet weak var rigthMiddleView   :PMItemCircle!
+    @IBOutlet weak var leftMiddleView    :PMItemCircle!
+    @IBOutlet weak var rigthBottomView   :PMItemCircle!
+    @IBOutlet weak var leftBottomView    :PMItemCircle!
+    @IBOutlet weak var bottomView        :PMItemCircle!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,7 +30,6 @@ class NivelDosViewController: PMViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func initComponents() {
@@ -43,6 +41,9 @@ extension NivelDosViewController {
     
     func defineViews() {
         let servicioGeneral = Session.sharedInstance.current.servicioGeneral!
+        
+        self.titleLabel.text = servicioGeneral.name
+        
         var views = [topView,
                      rigthTopView,
                      leftTopView,

@@ -9,7 +9,9 @@
 import UIKit
 
 class PMViewController: UIViewController {
-
+    
+    @IBOutlet weak var titleLabel        :UILabel!
+    
     var keyboardHeigth  :CGFloat = 0.0
     var scroll          :UIScrollView!
     var titles          :[String]!
@@ -141,5 +143,6 @@ extension PMViewController {
 }
 
 protocol PMViewControllerDelegate {
+    
     func initComponents()
 }
