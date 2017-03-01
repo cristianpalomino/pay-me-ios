@@ -15,13 +15,14 @@ extension FavoritosViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let service = self.serviciosFavoritos[indexPath.row]
+        //self.callServiceConsultarRecibos(withService: service)
+        
         if indexPath.row == 0 {
             Session.sharedInstance.flowType = .FIRST_TIME
         } else {
             Session.sharedInstance.flowType = .SECOND_TIME
         }
-        
-        self.performSegue(withIdentifier: "kRecibo", sender: nil)
     }
 }
 

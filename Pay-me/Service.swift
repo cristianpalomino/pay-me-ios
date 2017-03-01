@@ -44,10 +44,10 @@ extension Service {
     
     struct Keys {
 
-        static let kIdCompanySPS        = "IdCompanySPS"
-        static let kIdServiceSPS        = "idServiceSPS"
+        static let kIdCompanySPS        = "idCompanySPS"
+        static let kIdServiceSPS        = "idServiceSps"
         static let kIdService           = "idService"
-        static let kServiceIdentifier   = "serviceIdentifier"
+        static let kServiceIdentifier   = "codeService"
         static let kOwner               = "owner"
         static let kAlias               = "alias"
         static let kAmount              = "amount"

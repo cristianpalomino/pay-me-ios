@@ -20,7 +20,7 @@ class FavoritosViewController: PMViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        callGetServices()
+        self.callServiceFavoritos()
     }
 
     override func didReceiveMemoryWarning() {

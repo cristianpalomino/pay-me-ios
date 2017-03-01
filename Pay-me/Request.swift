@@ -26,6 +26,7 @@ class Request {
 
 class RequestAgregarServicio : Request {
     
+    var verifiedService     :String!
     
 }
 

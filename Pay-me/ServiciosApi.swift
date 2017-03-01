@@ -12,17 +12,17 @@ import SwiftyJSON
 
 class ServiciosApi {
     
-    class func apiAgregarServicio(params :[String : Any], completion: @escaping RequestUtil.Completion) {
+    class func apiAgregarServicio(request :RequestAgregarServicio, completion: @escaping RequestUtil.Completion) {
         Alamofire.request(Constants.Api.URLs.EndPoints.AGREGAR_SERVICIO,
                           method : .post,
-                          parameters: params,
+                          parameters: request.toParams(),
                           encoding: JSONEncoding.default).responseJSON {
                             response in
                             switch response.result {
                             case .success:
                                 if let value = response.result.value {
                                     let json = JSON(value)
-                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue
+                                    let rc = json[Constants.Api.Json.kAnswerCode].stringValue.decrypt()
                                     if rc == Constants.Api.kSuccessCode {
                                         let paymeData = ResponseAgregarServicio(json: json)
                                         completion(PaymeApiResult(data: paymeData, error: nil))
