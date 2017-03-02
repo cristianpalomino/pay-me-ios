@@ -26,8 +26,23 @@ class Request {
 
 class RequestAgregarServicio : Request {
     
-    var verifiedService     :String!
+    var services            = [Service]()
+    var verifiedService     :String = "1"
     
+    init(services :[Service]) {
+        self.services = services
+    }
+    
+    override func toParams() -> [String : Any] {
+        var params = super.toParams()
+        params["verifiedService"]   = verifiedService.encrypt()
+        
+        for service in self.services {
+            params["services"] = service.toParams()
+        }
+        
+        return params
+    }
 }
 
 class RequestConsultarDeudas : Request {

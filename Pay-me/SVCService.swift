@@ -33,7 +33,7 @@ extension SuministroViewController: SuministroViewControllerServicesDelegate {
         
         let identifier  = txtIndentifier.text!
         let current     = Session.sharedInstance.current
-        let idCompany   = current.item!.empresa.idCompany!
+        let idCompany   = current.item!.idCompany!
         let idService   = current.item!.idService!
         
         let request = RequestConsultarDeudas(idCompany: idCompany, idService: idService, serviceIdentifier: identifier)

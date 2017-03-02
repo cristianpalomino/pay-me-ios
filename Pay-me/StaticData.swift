@@ -106,7 +106,7 @@ class Item {
     
     init(json :JSON) {
         
-        self.idService = json["idCompany"].stringValue
+        self.idCompany = json["idCompany"].stringValue
         self.idService = json["idService"].stringValue
         self.name = json["name"].stringValue
         self.logo = json["logo"].stringValue

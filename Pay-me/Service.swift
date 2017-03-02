@@ -47,11 +47,22 @@ extension Service {
         static let kIdCompanySPS        = "idCompanySPS"
         static let kIdServiceSPS        = "idServiceSps"
         static let kIdService           = "idService"
-        static let kServiceIdentifier   = "codeService"
+        static let kServiceIdentifier   = "serviceIdentifier"
         static let kOwner               = "owner"
         static let kAlias               = "alias"
         static let kAmount              = "amount"
         static let kCodeService         = "codeService"
         static let kState               = "state"
+    }
+    
+    func toParams() -> [String : Any] {
+        var params :[String : Any] = [:]
+        params[Keys.kIdCompanySPS] = self.idCompanySPS
+        params[Keys.kIdServiceSPS] = self.idServiceSPS
+        params[Keys.kIdService] = self.idService
+        params[Keys.kServiceIdentifier] = self.serviceIdentifier
+        params[Keys.kOwner] = self.owner
+        params[Keys.kAlias] = self.alias
+        return params
     }
 }

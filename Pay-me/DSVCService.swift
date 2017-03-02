@@ -12,6 +12,9 @@ extension DetalleSuministroViewController: DetalleSuministroViewControllerServic
     
     internal func callAddServices() {
         
+        if let response = self.apiResponse {
+            let request = RequestAgregarServicio(services: )
+        }
     }
 }
 
