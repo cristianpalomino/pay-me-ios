@@ -21,7 +21,7 @@ extension AppDelegate {
                 print($0.name)
                 
                 print("---Servicios---")
-                $0.servicios.forEach {
+                $0.items.forEach {
                     print($0.name)
                     
                     print("---Empresa---")

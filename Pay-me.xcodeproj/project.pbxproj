@@ -23,6 +23,8 @@
 		400190A01E672AEC0080DDA4 /* DSVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */; };
 		400190A21E672C1F0080DDA4 /* DSVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190A11E672C1F0080DDA4 /* DSVCService.swift */; };
 		400190A31E672C1F0080DDA4 /* DSVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190A11E672C1F0080DDA4 /* DSVCService.swift */; };
+		400190A51E6780A10080DDA4 /* NivelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190A41E6780A10080DDA4 /* NivelViewController.swift */; };
+		400190A61E6780A10080DDA4 /* NivelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190A41E6780A10080DDA4 /* NivelViewController.swift */; };
 		40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */; };
 		40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
 		401CC6681E4B5FFD001911F2 /* PMHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401CC6671E4B5FFD001911F2 /* PMHud.swift */; };
@@ -245,6 +247,7 @@
 		400190971E64EC220080DDA4 /* UtilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilViewController.swift; sourceTree = "<group>"; };
 		4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVCExtension.swift; sourceTree = "<group>"; };
 		400190A11E672C1F0080DDA4 /* DSVCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVCService.swift; sourceTree = "<group>"; };
+		400190A41E6780A10080DDA4 /* NivelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelViewController.swift; sourceTree = "<group>"; };
 		40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTabBarViewController.swift; sourceTree = "<group>"; };
 		40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationViewController.swift; sourceTree = "<group>"; };
 		401CC6671E4B5FFD001911F2 /* PMHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHud.swift; sourceTree = "<group>"; };
@@ -445,6 +448,7 @@
 		4001909B1E65EE430080DDA4 /* Niveles */ = {
 			isa = PBXGroup;
 			children = (
+				400190A41E6780A10080DDA4 /* NivelViewController.swift */,
 				403377371E03D41900261759 /* NivelUnoViewController.swift */,
 				403377391E03D42600261759 /* NivelDosViewController.swift */,
 				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
@@ -1300,6 +1304,7 @@
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
 				4062C1551E3BE63500617265 /* Request.swift in Sources */,
 				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
+				400190A51E6780A10080DDA4 /* NivelViewController.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */,
 				4062C1621E3C17FF00617265 /* Response.swift in Sources */,
@@ -1405,6 +1410,7 @@
 				408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */,
 				408CB6C61E54E73D00D308D3 /* Request.swift in Sources */,
 				408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */,
+				400190A61E6780A10080DDA4 /* NivelViewController.swift in Sources */,
 				408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */,
 				408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */,
 				408CB6CA1E54E73D00D308D3 /* Response.swift in Sources */,

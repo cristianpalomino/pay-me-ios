@@ -18,6 +18,7 @@ class PMItemCircle: UIView {
     
     var categoria :Categoria? {
         didSet {
+            self.image.image = UIImage(named: categoria!.imageName)!
             self.title.text = categoria!.name
             addGestureEvent()
         }

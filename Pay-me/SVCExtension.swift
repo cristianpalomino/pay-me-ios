@@ -22,8 +22,8 @@ extension SuministroViewController {
 extension SuministroViewController {
     
     func showInformation() {
-        if let currentService = Session.sharedInstance.current.servicio {
-            self.titleLabel.text = currentService.name
+        if let currentService = Session.sharedInstance.current.item {
+            //self.titleLabel.text = currentService.name
         }
         
         UIView.animate(withDuration: 0.25, animations: {
@@ -33,7 +33,7 @@ extension SuministroViewController {
     }
     
     func loadImages() {
-        if let currentService = Session.sharedInstance.current.servicio {
+        if let currentService = Session.sharedInstance.current.item {
             let urlLogo1 = URL(string: currentService.empresa.logo)!
             let urlLogo2 = URL(string: currentService.logo_2)!
             self.imageBigBannerView.af_setImage(withURL: urlLogo1, placeholderImage: nil, filter: nil, imageTransition: .crossDissolve(0.2))

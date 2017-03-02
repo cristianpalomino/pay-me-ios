@@ -24,7 +24,7 @@ struct Current {
         
     var servicioGeneral :ServicioGeneral?
     var categoria       :Categoria?
-    var servicio        :Servicio?
+    var item            :Item?
 }
 
 

@@ -41,7 +41,7 @@ extension DetalleSuministroViewController {
             self.txtIndentifier.text = identifier
             self.defineButton()
             
-            if let currentService = Session.sharedInstance.current.servicio {
+            if let currentService = Session.sharedInstance.current.item {
                 self.loadBanner(url: currentService.logo_2)
                 self.titleLabel.text = currentService.name
             }

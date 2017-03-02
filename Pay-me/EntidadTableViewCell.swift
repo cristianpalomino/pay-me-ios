@@ -20,7 +20,7 @@ class EntidadTableViewCell: UITableViewCell {
     @IBOutlet weak var name             :UILabel!
     @IBOutlet weak var logo             :UIImageView!
     
-    internal var servicio :Servicio! {
+    internal var servicio :Item! {
         didSet {
             self.name.text = servicio.name
             self.defineStyle()
