@@ -34,12 +34,20 @@ class RequestAgregarServicio : Request {
     }
     
     override func toParams() -> [String : Any] {
-        var params = super.toParams()
-        params["verifiedService"]   = verifiedService.encrypt()
+        var params  :[String : Any] = [:]
+        var array   = [Any]()
+        
+        params["requestService"] = [Any]()
         
         for service in self.services {
-            params["services"] = service.toParams()
+            var servicesparams = super.toParams()
+            servicesparams["verifiedService"] = verifiedService.encrypt()
+            servicesparams["service"] = service.toParams()
+         
+            array.append(servicesparams)
         }
+        
+        params["requestService"] = array
         
         return params
     }

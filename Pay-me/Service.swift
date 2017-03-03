@@ -59,10 +59,8 @@ extension Service {
         var params :[String : Any] = [:]
         params[Keys.kIdCompanySPS] = self.idCompanySPS
         params[Keys.kIdServiceSPS] = self.idServiceSPS
-        params[Keys.kIdService] = self.idService
         params[Keys.kServiceIdentifier] = self.serviceIdentifier
         params[Keys.kOwner] = self.owner
-        params[Keys.kAlias] = self.alias
         return params
     }
 }

@@ -13,7 +13,6 @@
                                                     "imageName": "luz",
                                                     "idService": "7",
                                                     "idCompany": "5",
-                                                    "name": "Recibo de Luz",
                                                     "logo": "http://i.imgur.com/at52Mkg.png",
                                                     "logo_2": "http://i.imgur.com/at52Mkg.png",
                                                     "codeDescription": "Nùmero de suministro",
@@ -50,7 +49,6 @@
                                                     {
                                                     "idService": "0",
                                                     "idCompany": "50",
-                                                    "name": "Matricula",
                                                     "logo": "http://i.imgur.com/YyJ70MH.png",
                                                     "logo_2": "http://i.imgur.com/9x5PNWW.png",
                                                     "codeDescription": "Código de alumno",

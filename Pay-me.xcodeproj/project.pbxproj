@@ -452,6 +452,7 @@
 				403377371E03D41900261759 /* NivelUnoViewController.swift */,
 				403377391E03D42600261759 /* NivelDosViewController.swift */,
 				4033773B1E03D43A00261759 /* NivelTresViewController.swift */,
+				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
 			);
 			name = Niveles;
 			sourceTree = "<group>";
@@ -459,7 +460,6 @@
 		40180E5E1E021D230098B8C4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */,
 				40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */,
 				40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */,
 				4033773D1E03D44800261759 /* PMViewController.swift */,
@@ -550,6 +550,7 @@
 		4062C1421E380F3600617265 /* AdicionarServicio */ = {
 			isa = PBXGroup;
 			children = (
+				40941F441E69ABA2003BFB77 /* ListaServicios */,
 				4001909A1E64EE280080DDA4 /* Detalle */,
 				4001908D1E64DA720080DDA4 /* Suministro */,
 				4001909B1E65EE430080DDA4 /* Niveles */,
@@ -721,6 +722,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		40941F441E69ABA2003BFB77 /* ListaServicios */ = {
+			isa = PBXGroup;
+			children = (
+				407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */,
+			);
+			name = ListaServicios;
+			sourceTree = "<group>";
+		};
 		40A420181E2358E700D74D22 /* Recibos */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,7 +795,6 @@
 		40CF1E3B1E04ADDA0072CB29 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
 				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 			);
 			name = Cells;

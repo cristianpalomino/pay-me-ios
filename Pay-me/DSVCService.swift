@@ -7,13 +7,25 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 extension DetalleSuministroViewController: DetalleSuministroViewControllerServicesDelegate {
     
     internal func callAddServices() {
-        
-        if let response = self.apiResponse {
-            let request = RequestAgregarServicio(services: )
+
+        if let response = self.apiResponse,
+            let item = Session.sharedInstance.current.item,
+            let identifier = self.serviceIdentifier {
+            
+            let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
+                                     Service.Keys.kIdServiceSPS     : item.idService,
+                                     Service.Keys.kServiceIdentifier: identifier,
+                                     Service.Keys.kOwner            : response.clientName]
+            let service = Service(json: JSON(serviceAtributtes))
+            let request = RequestAgregarServicio(services: [service])
+            
+            PaymeServices.sharedInstance.serviciosServices.serviceAgregarServicio(request: request)
+            PaymeServices.sharedInstance.serviciosServices.agregarServicioDelegate = self
         }
     }
 }
@@ -21,7 +33,7 @@ extension DetalleSuministroViewController: DetalleSuministroViewControllerServic
 extension DetalleSuministroViewController: AgregarServicioDelegate {
     
     internal func serviceSuccess(response: ResponseAgregarServicio) {
-        self.toSegue(identifier: "")
+        showMessage(type: .SERVICE_SAVED)
     }
     
     internal func serviceFailed(error: PaymeError) {

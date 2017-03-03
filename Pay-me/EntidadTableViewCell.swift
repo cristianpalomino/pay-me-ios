@@ -22,7 +22,7 @@ class EntidadTableViewCell: UITableViewCell {
     
     internal var servicio :Item! {
         didSet {
-            self.name.text = servicio.name
+            self.name.text = servicio.empresa.name
             self.defineStyle()
             self.loadLogo()
         }
