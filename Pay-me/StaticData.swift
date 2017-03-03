@@ -24,14 +24,14 @@ class Static {
 
 extension Static {
     
-    func getCompanyShortName(idCompanySPS :String, idServiceSPS :String) -> String? {
+    func getItem(idCompanySPS :String, idServiceSPS :String) -> Item? {
         for sg in self.serviciosGenerales {
             for categoria in sg.categorias {
                 for item in categoria.items {
                     guard item.idCompany == idCompanySPS && item.idService == idServiceSPS else {
                         break
                     }
-                    return item.empresa.shortName
+                    return item
                 }
             }
         }

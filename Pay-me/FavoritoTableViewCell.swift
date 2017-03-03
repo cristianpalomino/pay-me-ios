@@ -21,16 +21,24 @@ class FavoritoTableViewCell: UITableViewCell {
     @IBOutlet weak var estado   : UILabel!
     @IBOutlet weak var monto    : UILabel!
     
-    func updateCellWith(service :Service) {
-        self.updateImage(url: "")
-        self.defineState(state: service.state)
-        
-        self.name.text      = service.alias
-        
-        self.entidad.text   = Session.sharedInstance.staticData.getCompanyShortName(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS) ?? "NONE"
-        
-        self.code.text      = service.codeService
-        self.monto.text     = service.amount.currency()
+    var service :Service! {
+        didSet {
+            let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS)
+            
+            self.updateImage(url: item?.logo_2 ?? "NONE")
+            self.defineState(state: service.state)
+            
+            self.name.text      = service.alias
+            self.entidad.text   =  item?.empresa.name ?? "NONE"
+            self.code.text      = service.codeService
+            
+            guard let amount = service.amount else {
+                self.monto.isHidden = true
+                return
+            }
+            self.monto.text     = amount.currency()
+            
+        }
     }
     
     override func awakeFromNib() {
@@ -79,10 +87,17 @@ extension FavoritoTableViewCell {
             return
         }
         
-        let placeholder = UIImage(named: "placeholder-default")
+        //let placeholder = UIImage(named: "placeholder-default")
         
         let filter = AspectScaledToFillSizeCircleFilter(size: self.icon.frame.size)
-        self.icon.af_setImage(withURL: url, placeholderImage: placeholder, filter: filter, imageTransition: .crossDissolve(0.2))
+        self.icon.af_setImage(withURL: url, placeholderImage: nil, filter: filter, imageTransition: .crossDissolve(0.2))
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.icon.af_cancelImageRequest()
+        self.icon.layer.removeAllAnimations()
+        self.icon.image = nil
     }
 }
 
