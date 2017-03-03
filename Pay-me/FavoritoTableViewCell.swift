@@ -26,7 +26,9 @@ class FavoritoTableViewCell: UITableViewCell {
         self.defineState(state: service.state)
         
         self.name.text      = service.alias
-        self.entidad.text   = "NONE"
+        
+        self.entidad.text   = Session.sharedInstance.staticData.getCompanyShortName(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS) ?? "NONE"
+        
         self.code.text      = service.codeService
         self.monto.text     = service.amount.currency()
     }

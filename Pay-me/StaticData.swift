@@ -22,6 +22,23 @@ class Static {
     }
 }
 
+extension Static {
+    
+    func getCompanyShortName(idCompanySPS :String, idServiceSPS :String) -> String? {
+        for sg in self.serviciosGenerales {
+            for categoria in sg.categorias {
+                for item in categoria.items {
+                    guard item.idCompany == idCompanySPS && item.idService == idServiceSPS else {
+                        break
+                    }
+                    return item.empresa.shortName
+                }
+            }
+        }
+        return nil
+    }
+}
+
 class ServicioGeneral {
     
     var categorias      = [Categoria]()
@@ -97,7 +114,6 @@ class Item {
     
     var idCompany       :String!
     var idService       :String!
-    var name            :String!
     var logo            :String!
     var logo_2          :String!
     var codeDescription :String!
@@ -108,7 +124,6 @@ class Item {
         
         self.idCompany = json["idCompany"].stringValue
         self.idService = json["idService"].stringValue
-        self.name = json["name"].stringValue
         self.logo = json["logo"].stringValue
         self.logo_2 = json["logo_2"].stringValue
         self.codeDescription = json["codeDescription"].stringValue

@@ -22,7 +22,7 @@ extension AppDelegate {
                 
                 print("---Servicios---")
                 $0.items.forEach {
-                    print($0.name)
+                    print($0.idCompany)
                     
                     print("---Empresa---")
                     print($0.empresa.shortName)

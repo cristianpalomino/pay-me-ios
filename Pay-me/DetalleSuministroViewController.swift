@@ -43,7 +43,7 @@ extension DetalleSuministroViewController {
             
             if let currentService = Session.sharedInstance.current.item {
                 self.loadBanner(url: currentService.logo_2)
-                self.titleLabel.text = currentService.name
+                self.titleLabel.text = currentService.empresa.name
             }
         }
     }
