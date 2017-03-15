@@ -25,7 +25,7 @@ struct Constants {
         
         struct Messages {
             
-            static let kUnknownError        = "Error desconosido ...!"
+            static let kUnknownError        = "Error desconocido ...!"
         }
         
         struct Json {

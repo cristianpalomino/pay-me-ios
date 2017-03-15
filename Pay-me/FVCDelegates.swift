@@ -36,7 +36,7 @@ extension FavoritosViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritoTableViewCell.identifier, for: indexPath) as! FavoritoTableViewCell
         
         let service = self.serviciosFavoritos[indexPath.row]
-        cell.service = service
+        cell.update(service: service)
         
         return cell
     }

@@ -14,7 +14,7 @@ class PMViewController: UIViewController {
     
     var keyboardHeigth  :CGFloat = 0.0
     var scroll          :UIScrollView!
-    var titles          :[String]!
+    var titles          :[String] = ["One", "Two", "Three", "Four", "Five", "Six"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,15 +46,15 @@ extension PMViewController {
     
     func initHeader() {
         let py      = view.frame.height * 0.07
-        let proph   = view.frame.height * 0.07
+        let prop   = view.frame.height * 0.07
         var lx      :CGFloat = 0
-        var cs      = CGSize(width: 0, height: proph)
+        var cs      = CGSize(width: 0, height: prop)
         
-        scroll = UIScrollView(frame: CGRect(x: 0, y: py, width: view.frame.width, height: proph))
+        scroll = UIScrollView(frame: CGRect(x: 0, y: py, width: view.frame.width, height: prop))
         scroll.bounces = false
         scroll.backgroundColor = UIColor.white
         
-        let mview = UIView(frame: CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: proph * 0.8))
+        let mview = UIView(frame: CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: prop * 0.8))
         mview.backgroundColor = UIColor.white
         
         for item in titles {
@@ -64,7 +64,7 @@ extension PMViewController {
             label.sizeToFit()
             
             let frame = label.frame
-            label.frame = CGRect(x: lx, y: 0, width: frame.size.width + 50, height: proph * 0.5)
+            label.frame = CGRect(x: lx, y: 0, width: frame.size.width + 50, height: prop * 0.5)
             //label.layer.cornerRadius = label.frame.size.height * 0.5
             
             lx = frame.size.width + lx + 50
@@ -79,9 +79,9 @@ extension PMViewController {
         scroll.layer.borderColor = UIColor.darkGray.cgColor
         
         if cs.width > view.frame.width {
-            mview.frame = CGRect(x: 0, y: py, width: cs.width, height: proph * 0.8)
+            mview.frame = CGRect(x: 0, y: py, width: cs.width, height: prop * 0.8)
         } else {
-            mview.frame = CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: proph * 0.8)
+            mview.frame = CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: prop * 0.8)
         }
         
         mview.layer.borderColor = UIColor.lightGray.cgColor
