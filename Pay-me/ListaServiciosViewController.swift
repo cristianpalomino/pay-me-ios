@@ -27,7 +27,7 @@ class ListaServiciosViewController: PMViewController {
     override func initComponents() {
         //txtEmision.setPMTheme()
         //txtVencimiento.setPMTheme()
-        servicios = ["0","1","2","3","5"]
+        //servicios = ["0","1","2","3","5"]
     }
 }
 

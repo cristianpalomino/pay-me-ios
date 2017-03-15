@@ -11,7 +11,7 @@ import UIKit
 class NivelTresViewController: PMViewController {
     
     @IBOutlet weak var tableview        :UITableView!
-    var servicios = [Servicio]() {
+    var items = [Item]() {
         didSet {
             self.tableview.reloadData()
         }
@@ -35,7 +35,7 @@ extension NivelTresViewController {
     
     override func initComponents() {
         if let categoria = Session.sharedInstance.current.categoria {
-            self.servicios = categoria.servicios
+            self.items = categoria.items
             self.titleLabel.text = categoria.name
         }
     }
@@ -55,8 +55,8 @@ extension NivelTresViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let servicio = servicios[indexPath.row]
-        Session.sharedInstance.current.servicio = servicio
+        let item = items[indexPath.row]
+        Session.sharedInstance.current.item = item
         performSegue(withIdentifier: Constants.Storyboard.Segues.kToValidacionServicio, sender: nil)
     }
 }
@@ -64,12 +64,12 @@ extension NivelTresViewController : UITableViewDelegate {
 extension NivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return servicios.count
+        return self.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
-        cell.servicio = servicios[indexPath.row]
+        cell.servicio = self.items[indexPath.row]
         return cell
     }
 }

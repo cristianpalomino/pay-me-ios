@@ -22,6 +22,23 @@ class Static {
     }
 }
 
+extension Static {
+    
+    func getItem(idCompanySPS :String, idServiceSPS :String) -> Item? {
+        for sg in self.serviciosGenerales {
+            for categoria in sg.categorias {
+                for item in categoria.items {
+                    guard item.idCompany == idCompanySPS && item.idService == idServiceSPS else {
+                        break
+                    }
+                    return item
+                }
+            }
+        }
+        return nil
+    }
+}
+
 class ServicioGeneral {
     
     var categorias      = [Categoria]()
@@ -41,16 +58,20 @@ class ServicioGeneral {
 
 class Categoria {
     
-    var servicios       = [Servicio]()
+    var items           = [Item]()
     var idCategoria     :String!
     var name            :String!
+    var position        :String!
+    var imageName       :String!
     
     init(json :JSON) {
+        self.position = json["position"].stringValue
+        self.imageName = json["imageName"].stringValue
         self.name = json["name"].stringValue
         self.idCategoria = json["idCategoria"].stringValue
         
-        if !json["servicios"].isEmpty {
-            json["servicios"].arrayValue.forEach{self.servicios.append(Servicio(json: $0))}
+        if !json["items"].isEmpty {
+            json["items"].arrayValue.forEach{self.items.append(Item(json: $0))}
         }
     }
 }
@@ -89,10 +110,10 @@ class Empresa {
     }
 }
 
-class Servicio {
+class Item {
     
+    var idCompany       :String!
     var idService       :String!
-    var name            :String!
     var logo            :String!
     var logo_2          :String!
     var codeDescription :String!
@@ -101,8 +122,8 @@ class Servicio {
     
     init(json :JSON) {
         
+        self.idCompany = json["idCompany"].stringValue
         self.idService = json["idService"].stringValue
-        self.name = json["name"].stringValue
         self.logo = json["logo"].stringValue
         self.logo_2 = json["logo_2"].stringValue
         self.codeDescription = json["codeDescription"].stringValue

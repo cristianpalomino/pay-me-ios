@@ -21,16 +21,6 @@ class FavoritoTableViewCell: UITableViewCell {
     @IBOutlet weak var estado   : UILabel!
     @IBOutlet weak var monto    : UILabel!
     
-    func updateCellWith(service :Service) {
-        self.updateImage(url: "")
-        self.defineState(state: service.state)
-        
-        self.name.text      = service.alias
-        self.entidad.text   = "NONE"
-        self.code.text      = service.codeService
-        self.monto.text     = service.amount.currency()
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         addStyles()
@@ -51,7 +41,25 @@ extension FavoritoTableViewCell {
 
 extension FavoritoTableViewCell {
     
-    func defineState(state : ServiceStateType) {
+    func update(service :Service) {
+        let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS)
+        
+        self.updateImage(url: item?.logo_2 ?? "NONE")
+        self.defineState(state: service.state)
+        
+        self.name.text      = service.alias
+        self.entidad.text   = item?.empresa.name ?? "NONE"
+        self.code.text      = service.codeService
+        
+        if let amount = service.amount {
+            self.monto.isHidden = false
+            self.monto.text     = amount.currency()
+        } else {
+            self.monto.isHidden = true
+        }
+    }
+    
+    internal func defineState(state : ServiceStateType) {
         switch state {
         case .PENDIENTE_VERIFICACION:
             self.estado.text = "   Pendiente de verificación   ".uppercased()
@@ -72,21 +80,26 @@ extension FavoritoTableViewCell {
         }
     }
     
-    func updateImage(url :String) {
+    internal func updateImage(url :String) {
         guard let url = URL(string: url) else {
             return
         }
-        
-        let placeholder = UIImage(named: "placeholder-default")
-        
+        //let placeholder = UIImage(named: "placeholder-default")
         let filter = AspectScaledToFillSizeCircleFilter(size: self.icon.frame.size)
-        self.icon.af_setImage(withURL: url, placeholderImage: placeholder, filter: filter, imageTransition: .crossDissolve(0.2))
+        self.icon.af_setImage(withURL: url, placeholderImage: nil, filter: filter, imageTransition: .crossDissolve(0.2))
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.icon.af_cancelImageRequest()
+        self.icon.layer.removeAllAnimations()
+        self.icon.image = nil
     }
 }
 
 extension FavoritoTableViewCell {
     
-    func addStyles() {
+    internal func addStyles() {
         self.icon.layer.cornerRadius = self.icon.frame.height * 0.5
         self.icon.layer.borderWidth = 1
         self.icon.layer.borderColor = UIColor.lightGray.cgColor

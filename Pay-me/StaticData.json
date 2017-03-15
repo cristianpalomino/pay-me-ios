@@ -4,32 +4,36 @@
                            "categorias": [
                                           {
                                           "name": "Luz",
+                                          "position": "top",
+                                          "imageName": "universidades",
                                           "idCategoria": "1",
-                                          "servicios": [
-                                                        {
-                                                        "idService": "7",
-                                                        "name": "Recibo de Luz",
-                                                        "logo": "http://i.imgur.com/at52Mkg.png",
-                                                        "logo_2": "http://i.imgur.com/at52Mkg.png",
-                                                        "codeDescription": "Nùmero de suministro",
-                                                        "codeValidation": "O|NUM|MIN9|MAX9",
-                                                        "empresa": {
-                                                        "name": "Luz del Sur",
-                                                        "idCompany": "5",
-                                                        "idCommerce": "220",
-                                                        "shortName": "Luz del Sur",
-                                                        "logo": "http://i.imgur.com/sDZ7LQr.jpg",
-                                                        "recurrence": "1",
-                                                        "dayIssue": "15",
-                                                        "pais": "PE",
-                                                        "ciudad": "Lima",
-                                                        "departamento": "Lima",
-                                                        "direccion": "Casimiro Ulloa 33",
-                                                        "telefono": "4567891",
-                                                        "correo": "soporte@santamagdalena.com"
-                                                        }
-                                                        }
-                                                        ]
+                                          "items": [
+                                                    {
+                                                    "position": "top",
+                                                    "imageName": "luz",
+                                                    "idService": "7",
+                                                    "idCompany": "5",
+                                                    "logo": "http://i.imgur.com/at52Mkg.png",
+                                                    "logo_2": "http://i.imgur.com/at52Mkg.png",
+                                                    "codeDescription": "Nùmero de suministro",
+                                                    "codeValidation": "O|NUM|MIN9|MAX9",
+                                                    "empresa": {
+                                                    "name": "Luz del Sur",
+                                                    "idCompany": "5",
+                                                    "idCommerce": "220",
+                                                    "shortName": "Luz del Sur",
+                                                    "logo": "http://i.imgur.com/sDZ7LQr.jpg",
+                                                    "recurrence": "1",
+                                                    "dayIssue": "15",
+                                                    "pais": "PE",
+                                                    "ciudad": "Lima",
+                                                    "departamento": "Lima",
+                                                    "direccion": "Casimiro Ulloa 33",
+                                                    "telefono": "4567891",
+                                                    "correo": "soporte@santamagdalena.com"
+                                                    }
+                                                    }
+                                                    ]
                                           }
                                           ],
                            "name": "Básicos"
@@ -38,101 +42,34 @@
                            "categorias": [
                                           {
                                           "name": "Universidades",
+                                          "position": "top",
+                                          "imageName": "universidades",
                                           "idCategoria": "2",
-                                          "servicios": [
-                                                        {
-                                                        "idService": "53",
-                                                        "name": "Matricula",
-                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
-                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
-                                                        "codeDescription": "Código de alumno",
-                                                        "codeValidation": "O|AFN|MIN10|MAX10",
-                                                        "empresa": {
-                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
-                                                        "idCompany": "50",
-                                                        "idCommerce": "220",
-                                                        "shortName": "UPC",
-                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
-                                                        "recurrence": "1",
-                                                        "dayIssue": "20",
-                                                        "pais": "PE",
-                                                        "ciudad": "Lima",
-                                                        "departamento": "Lima",
-                                                        "direccion": "Prolongación Primavera 2390",
-                                                        "telefono": "6303333",
-                                                        "correo": "soporte@upc.com.pe"
-                                                        }
-                                                        },
-                                                        {
-                                                        "idService": "203",
-                                                        "name": "Examenes sustitutorios",
-                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
-                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
-                                                        "codeDescription": "Código de alumno",
-                                                        "codeValidation": "O|AFN|MIN10|MAX10",
-                                                        "empresa": {
-                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
-                                                        "idCompany": "50",
-                                                        "idCommerce": "220",
-                                                        "shortName": "UPC",
-                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
-                                                        "recurrence": "1",
-                                                        "dayIssue": "20",
-                                                        "pais": "PE",
-                                                        "ciudad": "Lima",
-                                                        "departamento": "Lima",
-                                                        "direccion": "Prolongación Primavera 2390",
-                                                        "telefono": "6303333",
-                                                        "correo": "soporte@upc.com.pe"
-                                                        }
-                                                        },
-                                                        {
-                                                        "idService": "204",
-                                                        "name": "Mensualidad",
-                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
-                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
-                                                        "codeDescription": "Código de alumno",
-                                                        "codeValidation": "O|AFN|MIN10|MAX10",
-                                                        "empresa": {
-                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
-                                                        "idCompany": "50",
-                                                        "idCommerce": "220",
-                                                        "shortName": "UPC",
-                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
-                                                        "recurrence": "1",
-                                                        "dayIssue": "20",
-                                                        "pais": "PE",
-                                                        "ciudad": "Lima",
-                                                        "departamento": "Lima",
-                                                        "direccion": "Prolongación Primavera 2390",
-                                                        "telefono": "6303333",
-                                                        "correo": "soporte@upc.com.pe"
-                                                        }
-                                                        },
-                                                        {
-                                                        "idService": "205",
-                                                        "name": "Biblioteca",
-                                                        "logo": "http://i.imgur.com/YyJ70MH.png",
-                                                        "logo_2": "http://i.imgur.com/9x5PNWW.png",
-                                                        "codeDescription": "Código de alumno",
-                                                        "codeValidation": "O|AFN|MIN10|MAX10",
-                                                        "empresa": {
-                                                        "name": "Universidad Peruana de Ciencias Aplicadas",
-                                                        "idCompany": "50",
-                                                        "idCommerce": "220",
-                                                        "shortName": "UPC",
-                                                        "logo": "http://i.imgur.com/nnYZIbN.png",
-                                                        "recurrence": "1",
-                                                        "dayIssue": "20",
-                                                        "pais": "PE",
-                                                        "ciudad": "Lima",
-                                                        "departamento": "Lima",
-                                                        "direccion": "Prolongación Primavera 2390",
-                                                        "telefono": "6303333",
-                                                        "correo": "soporte@upc.com.pe"
-                                                        }
-                                                        }
-                                                        ]
+                                          "items": [
+                                                    {
+                                                    "idService": "0",
+                                                    "idCompany": "50",
+                                                    "logo": "http://i.imgur.com/YyJ70MH.png",
+                                                    "logo_2": "http://i.imgur.com/9x5PNWW.png",
+                                                    "codeDescription": "Código de alumno",
+                                                    "codeValidation": "O|AFN|MIN10|MAX10",
+                                                    "empresa": {
+                                                    "name": "Universidad Peruana de Ciencias Aplicadas",
+                                                    "idCompany": "50",
+                                                    "idCommerce": "220",
+                                                    "shortName": "UPC",
+                                                    "logo": "http://i.imgur.com/nnYZIbN.png",
+                                                    "recurrence": "1",
+                                                    "dayIssue": "20",
+                                                    "pais": "PE",
+                                                    "ciudad": "Lima",
+                                                    "departamento": "Lima",
+                                                    "direccion": "Prolongación Primavera 2390",
+                                                    "telefono": "6303333",
+                                                    "correo": "soporte@upc.com.pe"
+                                                    }
+                                                    }
+                                                    ]
                                           }
                                           ],
                            "name": "Educación"

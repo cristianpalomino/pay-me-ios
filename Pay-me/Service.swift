@@ -19,7 +19,7 @@ class Service {
     var owner               :String!
     var alias               :String!
     var codeService         :String!
-    var amount              :String!
+    var amount              :String?
     var state               :ServiceStateType!
     
     init(json :JSON) {
@@ -31,7 +31,7 @@ class Service {
         self.owner              = json[Keys.kOwner].stringValue
         self.alias              = json[Keys.kAlias].stringValue
         self.codeService        = json[Keys.kCodeService].stringValue
-        self.amount             = json[Keys.kAmount].stringValue
+        self.amount             = json[Keys.kAmount].string
      
         guard let istate = Int(json[Keys.kState].stringValue) else {
             return
@@ -44,8 +44,8 @@ extension Service {
     
     struct Keys {
 
-        static let kIdCompanySPS        = "IdCompanySPS"
-        static let kIdServiceSPS        = "idServiceSPS"
+        static let kIdCompanySPS        = "idCompanySPS"
+        static let kIdServiceSPS        = "idServiceSps"
         static let kIdService           = "idService"
         static let kServiceIdentifier   = "serviceIdentifier"
         static let kOwner               = "owner"
@@ -53,5 +53,14 @@ extension Service {
         static let kAmount              = "amount"
         static let kCodeService         = "codeService"
         static let kState               = "state"
+    }
+    
+    func toParams() -> [String : Any] {
+        var params :[String : Any] = [:]
+        params[Keys.kIdCompanySPS] = self.idCompanySPS
+        params[Keys.kIdServiceSPS] = self.idServiceSPS
+        params[Keys.kServiceIdentifier] = self.serviceIdentifier
+        params[Keys.kOwner] = self.owner
+        return params
     }
 }

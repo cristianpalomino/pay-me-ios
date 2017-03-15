@@ -12,6 +12,7 @@ import UIKit
 class DetalleSuministroViewController: PMViewController {
     var apiResponse             :ResponseConsultarDeudas?
     var serviceIdentifier       :String?
+    var hasManyServices         :Bool = false
     
     @IBOutlet weak var bannerView           : UIImageView!
     @IBOutlet weak var buttonView           : UIButton!
@@ -34,12 +35,15 @@ extension DetalleSuministroViewController {
         self.txtName.setPMTheme()
         
         if let response = apiResponse, let identifier = serviceIdentifier {
+            self.hasManyServices = response.debts.count > 1
+            
             self.txtName.text = response.clientName
             self.txtIndentifier.text = identifier
+            self.defineButton()
             
-            if let currentService = Session.sharedInstance.current.servicio {
-                self.loadBanner(url: currentService.logo)
-                self.titleLabel.text = currentService.name
+            if let currentService = Session.sharedInstance.current.item {
+                self.loadBanner(url: currentService.logo_2)
+                self.titleLabel.text = currentService.empresa.name
             }
         }
     }
@@ -50,5 +54,13 @@ extension DetalleSuministroViewController {
     func loadBanner(url :String) {
         let urlLogo = URL(string: url)!
         self.bannerView.af_setImage(withURL: urlLogo, placeholderImage: nil, filter: nil, imageTransition: .crossDissolve(0.2))
+    }
+    
+    func defineButton() {
+        if hasManyServices {
+            self.buttonView.setTitle("Agregar Servicio", for: .normal)
+        } else {
+            self.buttonView.setTitle("Recordar Servicio", for: .normal)
+        }
     }
 }

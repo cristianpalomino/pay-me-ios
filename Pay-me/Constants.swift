@@ -25,7 +25,7 @@ struct Constants {
         
         struct Messages {
             
-            static let kUnknownError        = "Error desconosido ...!"
+            static let kUnknownError        = "Error desconocido ...!"
         }
         
         struct Json {
@@ -42,7 +42,7 @@ struct Constants {
             static let kCalendar            = "Calendar"
             static let kServiceIdentifier   = "serviceIdentifier"
             static let kClientName          = "clientName"
-            static let kDebt                = "debt"
+            static let kDebt                = "debts"
             static let kNotification        = "notification"
             
         }
@@ -81,6 +81,8 @@ struct Constants {
             static let kToEmpresas              = "kToEmpresas"
             static let kToValidacionServicio    = "kToValidacionServicio"
             static let kDetailSuministro        = "kToDetailSuministro"
+            static let kRecibo                  = "kRecibo"
+            static let kListServices            = "kToListServices"
         }
     }
     

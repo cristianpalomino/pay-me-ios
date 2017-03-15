@@ -14,13 +14,14 @@ class FavoritosViewController: PMViewController {
     
     var serviciosFavoritos = [Service]() {
         didSet {
-            self.tableView.reloadData()
+            self.tableView?.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        callGetServices()
+        self.callServiceFavoritos()
+        //self.initHeader()
     }
 
     override func didReceiveMemoryWarning() {

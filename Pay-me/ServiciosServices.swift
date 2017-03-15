@@ -10,8 +10,23 @@ import Foundation
 
 class ServiciosServices {
     
+    var agregarServicioDelegate     :AgregarServicioDelegate?
     var consultarDeudasDelegate     :ConsultarDeudasDelegate?
     var consultarServiciosDelegate  :ConsultarServiciosDelegate?
+    
+    func serviceAgregarServicio(request :RequestAgregarServicio) {
+        ServiciosApi.apiAgregarServicio(request: request, completion: {
+            api in
+            switch api.result {
+            case .success:
+                let response = api.data as! ResponseAgregarServicio
+                self.agregarServicioDelegate?.serviceSuccess(response: response)
+                
+            case .failure:
+                self.agregarServicioDelegate?.serviceFailed(error: api.error!)
+            }
+        })
+    }
     
     func serviceConsultarDeudas(request :RequestConsultarDeudas) {
         ServiciosApi.apiConsultarDeudas(request: request, completion: {
