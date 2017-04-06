@@ -50,10 +50,6 @@
 		404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DC1E14665700A578EA /* PMMessageViewController.swift */; };
 		404672DF1E14671400A578EA /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* MessageViewController.swift */; };
 		404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */; };
-		4059A4AC1E7F32580070099E /* Historico.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059A4AB1E7F32580070099E /* Historico.storyboard */; };
-		4059A4AD1E7F32580070099E /* Historico.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059A4AB1E7F32580070099E /* Historico.storyboard */; };
-		4059A4AE1E7F32580070099E /* Historico.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059A4AB1E7F32580070099E /* Historico.storyboard */; };
-		4059A4AF1E7F32580070099E /* Historico.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4059A4AB1E7F32580070099E /* Historico.storyboard */; };
 		405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
 		405D23121E157CEB006ED043 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
 		405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
@@ -277,7 +273,6 @@
 		404672DC1E14665700A578EA /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
 		404672DE1E14671400A578EA /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
-		4059A4AB1E7F32580070099E /* Historico.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Historico.storyboard; sourceTree = "<group>"; };
 		405D230E1E157C94006ED043 /* PMStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStoryboard.swift; sourceTree = "<group>"; };
 		405D23111E157CEB006ED043 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		405E0AB21E1A1D49008CF767 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -536,7 +531,6 @@
 			isa = PBXGroup;
 			children = (
 				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
-				4059A4AB1E7F32580070099E /* Historico.storyboard */,
 				40A420181E2358E700D74D22 /* Recibos */,
 				400190831E647CA30080DDA4 /* Favoritos */,
 				401CC6691E5379E8001911F2 /* Keyboard */,
@@ -1007,7 +1001,6 @@
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
-				4059A4AC1E7F32580070099E /* Historico.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1015,7 +1008,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4059A4AE1E7F32580070099E /* Historico.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,7 +1015,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4059A4AF1E7F32580070099E /* Historico.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,7 +1042,6 @@
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
-				4059A4AD1E7F32580070099E /* Historico.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
