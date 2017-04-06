@@ -45,7 +45,12 @@ extension FavoritoTableViewCell {
         let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS)
         
         self.updateImage(url: item?.logo_2 ?? "NONE")
-        self.defineState(state: service.state)
+    
+        if service.inSPR == "1" {
+            self.defineState(state: .CARGOS_RECURRENTES)
+        } else {
+            self.defineState(state: service.state)
+        }
         
         self.name.text      = service.alias
         self.entidad.text   = item?.empresa.name ?? "NONE"
@@ -73,8 +78,8 @@ extension FavoritoTableViewCell {
             self.estado.text = "   Pagado   ".uppercased()
             self.estado.backgroundColor = UIColor.appRedColor()
             break
-        case .ELIMINADO:
-            self.estado.text = "   Eliminado   ".uppercased()
+        case .CARGOS_RECURRENTES:
+            self.estado.text = "   Cargo Automático   ".uppercased()
             self.estado.backgroundColor = UIColor.appRedColor()
             break
         }

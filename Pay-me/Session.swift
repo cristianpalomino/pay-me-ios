@@ -10,6 +10,12 @@ import Foundation
 
 class Session {
     
+    var serviciosFavoritos = [Service]() {
+        didSet {
+            NotificationCenter.default.post(Notification(name: Constants.Notifications.Names.kServiciosFavoritos))
+        }
+    }
+    
     var current    = Current()
     var staticData = Static()
     

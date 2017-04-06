@@ -10,7 +10,8 @@ import UIKit
 
 class PMViewController: UIViewController {
     
-    @IBOutlet weak var titleLabel        :UILabel!
+    @IBOutlet weak var titleView            :UIView!
+    @IBOutlet weak var titleLabel           :UILabel!
     
     var keyboardHeigth  :CGFloat = 0.0
     var scroll          :UIScrollView!
@@ -45,60 +46,83 @@ extension PMViewController {
 extension PMViewController {
     
     func initHeader() {
-        let py      = view.frame.height * 0.07
-        let prop   = view.frame.height * 0.07
-        var lx      :CGFloat = 0
-        var cs      = CGSize(width: 0, height: prop)
+        let titles = [
+            ("Pagado", UIColor.gray, true),
+            ("Pasado", UIColor.purple, false),
+            ("Retrasos", UIColor.brown, false),
+            ("No cancelado", UIColor.blue, false),
+            ("Become", UIColor.red, false)
+        ]
         
-        scroll = UIScrollView(frame: CGRect(x: 0, y: py, width: view.frame.width, height: prop))
-        scroll.bounces = false
-        scroll.backgroundColor = UIColor.white
+        let width = self.view.frame.width
+        let heigth = self.view.frame.height
         
-        let mview = UIView(frame: CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: prop * 0.8))
-        mview.backgroundColor = UIColor.white
+        let scroll_frame = CGRect(x: 0, y: heigth * 0.1, width: width, height: heigth * 0.08)
+        self.scroll = UIScrollView(frame: scroll_frame)
+        self.scroll.backgroundColor = UIColor.clear
+        self.view.addSubview(scroll)
         
-        for item in titles {
-            let label = PMHeaderButton(frame: .zero, title: item, isFocus: false)
-            label.tag = item.hash
-            label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.tapHeader(gesture:))))
-            label.sizeToFit()
+        let inside_view = UIView(frame: .zero)
+        inside_view.backgroundColor = UIColor.clear
+        inside_view.layer.borderColor = UIColor.gray.cgColor
+        inside_view.layer.borderWidth = 0.5
+        
+        self.scroll.bounces = false
+        self.scroll.isPagingEnabled = true
+        self.scroll.showsHorizontalScrollIndicator = false
+        self.scroll.addSubview(inside_view)
+        
+        let padding = Int(width * 0.25)
+        var cx :Int = padding
+        
+        for title in titles {
             
-            let frame = label.frame
-            label.frame = CGRect(x: lx, y: 0, width: frame.size.width + 50, height: prop * 0.5)
-            //label.layer.cornerRadius = label.frame.size.height * 0.5
+            let title_view = PMHeaderButton(frame: .zero)
+            title_view.setTitle(title.0, for: .normal)
+            title_view.sizeToFit()
+            title_view.titleLabel?.textAlignment = .center
             
-            lx = frame.size.width + lx + 50
-            cs.width = cs.width + label.frame.width
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(self.tapHeader(gesture:)))
+            title_view.addGestureRecognizer(gesture)
             
-            label.center.y = mview.center.y
-            mview.addSubview(label)
+            if title.2 {
+                title_view.backgroundColor = title.1
+                title_view.setTitleColor(UIColor.white, for: .normal)
+            } else {
+                title_view.backgroundColor = UIColor.white
+                title_view.setTitleColor(UIColor.gray, for: .normal)
+            }
+            
+            let frame_view = CGRect(x: cx, y: 0, width: Int(title_view.frame.width + 100), height: Int(scroll_frame.height * 0.55))
+            title_view.frame = frame_view
+            
+            cx = cx + Int(frame_view.width)
+            
+            let inside_frame = CGRect(x: 16, y: 0, width: cx, height: Int(scroll_frame.height * 0.75))
+            inside_view.layer.cornerRadius = inside_frame.height * 0.5
+            inside_view.frame = inside_frame
+            inside_view.center.y = scroll_frame.height * 0.5
+            
+            inside_view.addSubview(title_view)
+            
+            title_view.center.y = inside_frame.height * 0.5
+            title_view.layer.cornerRadius = frame_view.height * 0.5
         }
         
-        scroll.contentSize = cs
-        scroll.layer.borderWidth = 1
-        scroll.layer.borderColor = UIColor.darkGray.cgColor
+        let endview = UIView(frame: CGRect(x: cx, y: 0, width: padding, height: Int(scroll_frame.height * 0.75)))
+        inside_view.addSubview(endview)
         
-        if cs.width > view.frame.width {
-            mview.frame = CGRect(x: 0, y: py, width: cs.width, height: prop * 0.8)
-        } else {
-            mview.frame = CGRect(x: 0, y: py, width: view.frame.width * 0.95, height: prop * 0.8)
-        }
+        let frame = CGRect(x: inside_view.frame.origin.x,
+                           y: inside_view.frame.origin.y,
+                           width: CGFloat(Int(inside_view.frame.width) + padding),
+                           height: inside_view.frame.height)
+        inside_view.frame = frame
         
-        mview.layer.borderColor = UIColor.lightGray.cgColor
-        mview.layer.borderWidth = 1
-        mview.layer.cornerRadius = mview.frame.height * 0.5
-        mview.center.y = scroll.center.y
-        
-        scroll.addSubview(mview)
-        view.addSubview(scroll)
+        self.scroll.contentSize.width = CGFloat(cx + 32 + padding)
     }
     
     func tapHeader(gesture :UITapGestureRecognizer) {
-        let button = gesture.view! as! PMHeaderButton
-        button.setFocusStyle()
         
-        let framecenter = CGRect(x: scroll.center.x, y: scroll.center.y, width: button.frame.width, height: button.frame.height)
-        self.scroll.scrollRectToVisible(framecenter, animated: true)
     }
 }
 

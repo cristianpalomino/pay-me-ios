@@ -15,3 +15,7 @@ extension UIViewController {
         self.performSegue(withIdentifier: identifier, sender: nil)
     }
 }
+
+extension UITableViewController {
+
+}

@@ -24,6 +24,7 @@ extension FavoritosViewController: FavoritosViewControllerServicesDelegate {
     internal func callServiceFavoritos() {
         
         let request = RequestConsultarServicios()
+        
         PaymeServices.sharedInstance.serviciosServices.apiConsultarServicios(request: request)
         PaymeServices.sharedInstance.serviciosServices.consultarServiciosDelegate = self
     }
@@ -32,7 +33,27 @@ extension FavoritosViewController: FavoritosViewControllerServicesDelegate {
 extension FavoritosViewController: ConsultarServiciosDelegate {
     
     func serviceSuccess(response: ResponseConsultarServicios) {
-        self.serviciosFavoritos = response.services
+        Session.sharedInstance.serviciosFavoritos = response.services
+        
+        let source = Session.sharedInstance.serviciosFavoritos
+        let local  = self.serviciosFavoritos
+        
+        let setSource = Set(source)
+        let newServices = Array(setSource.subtracting(self.serviciosFavoritos))
+        
+        if !newServices.isEmpty {
+            
+            self.serviciosFavoritos.append(contentsOf: newServices)
+            var indexPaths = [IndexPath]()
+            
+            for i in 0...(newServices.count - 1) {
+                indexPaths.append(IndexPath(row: local.count + i , section: 0))
+            }
+            
+            self.tableView.beginUpdates()
+            self.tableView.insertRows(at: indexPaths, with: .automatic)
+            self.tableView.endUpdates()
+        }
     }
 }
 

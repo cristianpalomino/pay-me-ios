@@ -99,4 +99,12 @@ struct Constants {
         static let kAdicionarTarjeta            = "kAdicionarTarjeta"
         static let kSettings                    = "kSettings"
     }
+    
+    struct Notifications {
+        
+        struct Names {
+            
+            static let kServiciosFavoritos = Notification.Name("kUpdateServiciosFavoritos")
+        }
+    }
 }

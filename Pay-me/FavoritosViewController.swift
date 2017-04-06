@@ -12,16 +12,12 @@ class FavoritosViewController: PMViewController {
     
     @IBOutlet weak var tableView :UITableView!
     
-    var serviciosFavoritos = [Service]() {
-        didSet {
-            self.tableView?.reloadData()
-        }
-    }
+    var serviciosFavoritos = Session.sharedInstance.serviciosFavoritos
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.callServiceFavoritos()
-        //self.initHeader()
+        self.initHeader()
     }
 
     override func didReceiveMemoryWarning() {
