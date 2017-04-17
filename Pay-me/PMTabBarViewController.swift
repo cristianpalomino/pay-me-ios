@@ -20,14 +20,3 @@ class PMTabBarViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
 }
-
-extension UIViewController {
-    
-    func blueTheme() {
-        
-    }
-    
-    func whiteTheme() {
-        
-    }
-}

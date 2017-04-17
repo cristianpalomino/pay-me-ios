@@ -63,7 +63,10 @@ class SuministroViewController: PMViewController {
 extension SuministroViewController {
     
     override func initComponents() {
-        self.txtIndentifier.setPMTheme()
-        self.loadImages()
+        if let item = Session.sharedInstance.current.item {
+            //self.titleLabel.text = item.empresa.name
+            self.txtIndentifier.setPMTheme()
+            self.loadImages()
+        }
     }
 }

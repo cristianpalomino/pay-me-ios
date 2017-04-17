@@ -10,14 +10,15 @@ import UIKit
 
 class FavoritosViewController: PMViewController {
     
-    @IBOutlet weak var tableView :UITableView!
+    @IBOutlet weak var titleView:   PMTitleView!
+    @IBOutlet weak var tableView:   UITableView!
     
     var serviciosFavoritos = Session.sharedInstance.serviciosFavoritos
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.callServiceFavoritos()
-        //self.initHeader()
+        self.titleView.titleLabel.text = TitleTriger.favoritos.titleLabelText
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,3 @@ extension FavoritosViewController {
     }
 }
 
-extension FavoritosViewController {
-    
-    
-}

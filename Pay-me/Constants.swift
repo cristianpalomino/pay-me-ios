@@ -11,6 +11,11 @@ import Foundation
 
 struct Constants {
 
+    struct Utils {
+        
+        static let ABECEDARIO = ["A","B","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","#"]
+    }
+    
     struct Debug {
         
         static let ID_CARDHOLDER = "4626"

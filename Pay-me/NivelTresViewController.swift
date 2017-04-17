@@ -10,7 +10,9 @@ import UIKit
 
 class NivelTresViewController: PMViewController {
     
-    @IBOutlet weak var tableview        :UITableView!
+    @IBOutlet weak var titleView: PMTitleView!
+    @IBOutlet weak var tableview: UITableView!
+    
     var items = [Item]() {
         didSet {
             self.tableview.reloadData()
@@ -19,6 +21,7 @@ class NivelTresViewController: PMViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.titleView.titleLabel.text = TitleTriger.tercero.titleLabelText
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -36,7 +39,7 @@ extension NivelTresViewController {
     override func initComponents() {
         if let categoria = Session.sharedInstance.current.categoria {
             self.items = categoria.items
-            self.titleLabel.text = categoria.name
+            //self.titleLabel.text = categoria.name
         }
     }
 }
@@ -65,6 +68,11 @@ extension NivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
+    }
+    
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return Constants.Utils.ABECEDARIO
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

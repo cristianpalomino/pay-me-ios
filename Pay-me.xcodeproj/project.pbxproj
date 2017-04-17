@@ -17,8 +17,8 @@
 		400190901E64DA8D0080DDA4 /* SVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001908E1E64DA8D0080DDA4 /* SVCExtension.swift */; };
 		400190921E64DA970080DDA4 /* SVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190911E64DA970080DDA4 /* SVCService.swift */; };
 		400190931E64DA970080DDA4 /* SVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190911E64DA970080DDA4 /* SVCService.swift */; };
-		400190981E64EC220080DDA4 /* UtilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190971E64EC220080DDA4 /* UtilViewController.swift */; };
-		400190991E64EC220080DDA4 /* UtilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190971E64EC220080DDA4 /* UtilViewController.swift */; };
+		400190981E64EC220080DDA4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190971E64EC220080DDA4 /* UIViewController.swift */; };
+		400190991E64EC220080DDA4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190971E64EC220080DDA4 /* UIViewController.swift */; };
 		4001909F1E672AEC0080DDA4 /* DSVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */; };
 		400190A01E672AEC0080DDA4 /* DSVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */; };
 		400190A21E672C1F0080DDA4 /* DSVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190A11E672C1F0080DDA4 /* DSVCService.swift */; };
@@ -211,6 +211,10 @@
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
 		4FA0E3041EA5308D008F5ED9 /* Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3031EA5308D008F5ED9 /* Development.plist */; };
+		4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
+		4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
+		4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
+		4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
 		4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
 		4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */; };
 		4FCFBE021E2838D90029EE40 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */; };
@@ -244,7 +248,7 @@
 		4001908A1E6495150080DDA4 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		4001908E1E64DA8D0080DDA4 /* SVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVCExtension.swift; sourceTree = "<group>"; };
 		400190911E64DA970080DDA4 /* SVCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVCService.swift; sourceTree = "<group>"; };
-		400190971E64EC220080DDA4 /* UtilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilViewController.swift; sourceTree = "<group>"; };
+		400190971E64EC220080DDA4 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVCExtension.swift; sourceTree = "<group>"; };
 		400190A11E672C1F0080DDA4 /* DSVCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVCService.swift; sourceTree = "<group>"; };
 		400190A41E6780A10080DDA4 /* NivelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NivelViewController.swift; sourceTree = "<group>"; };
@@ -349,6 +353,8 @@
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
 		4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
 		4FA0E3031EA5308D008F5ED9 /* Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Development.plist; sourceTree = "<group>"; };
+		4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleView.swift; sourceTree = "<group>"; };
+		4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMTitleView.xib; sourceTree = "<group>"; };
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationViewController.swift; sourceTree = "<group>"; };
 		4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAutomaticoViewController.swift; sourceTree = "<group>"; };
@@ -632,6 +638,7 @@
 				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				408E501E1DFB7A6D007BEEDE /* Views */,
 				408E501D1DFB6DF0007BEEDE /* Utils */,
+				4FF780421EA58503002D4703 /* ExtendedClass */,
 				404BBFB91E268F5A0050CA30 /* Agenda */,
 				40A420191E24039A00D74D22 /* Historico */,
 				40180E5E1E021D230098B8C4 /* Controllers */,
@@ -691,7 +698,6 @@
 				40A420121E203FF200D74D22 /* PMString.swift */,
 				401CC6671E4B5FFD001911F2 /* PMHud.swift */,
 				4001908A1E6495150080DDA4 /* Currency.swift */,
-				400190971E64EC220080DDA4 /* UtilViewController.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -712,6 +718,8 @@
 				406482AD1E2D162800E9C891 /* PMHeaderButton.swift */,
 				401CC66F1E538290001911F2 /* PMViews.swift */,
 				401CC6711E539740001911F2 /* PMErrorView.xib */,
+				4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */,
+				4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -817,6 +825,14 @@
 				4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */,
 			);
 			name = Notify;
+			sourceTree = "<group>";
+		};
+		4FF780421EA58503002D4703 /* ExtendedClass */ = {
+			isa = PBXGroup;
+			children = (
+				400190971E64EC220080DDA4 /* UIViewController.swift */,
+			);
+			name = ExtendedClass;
 			sourceTree = "<group>";
 		};
 		F22665E33AA68B27541E5D52 /* Frameworks */ = {
@@ -974,6 +990,7 @@
 				406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */,
 				40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
+				4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */,
 				40293F011E415DC5007EF98D /* PMItemCircle.xib in Resources */,
 				404672DA1E14608500A578EA /* Messages.storyboard in Resources */,
 				401CC6721E539740001911F2 /* PMErrorView.xib in Resources */,
@@ -1032,6 +1049,7 @@
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
+				4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,6 +1229,7 @@
 				4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
 				4062C1551E3BE63500617265 /* Request.swift in Sources */,
+				4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
 				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
 				400190A51E6780A10080DDA4 /* NivelViewController.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
@@ -1227,7 +1246,7 @@
 				403C4A981E43D64F0004AA6A /* Calls.swift in Sources */,
 				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
 				4001908F1E64DA8D0080DDA4 /* SVCExtension.swift in Sources */,
-				400190981E64EC220080DDA4 /* UtilViewController.swift in Sources */,
+				400190981E64EC220080DDA4 /* UIViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 				40293EF71E405385007EF98D /* Calendar.swift in Sources */,
 				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,
@@ -1317,6 +1336,7 @@
 				408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */,
 				408CB6C61E54E73D00D308D3 /* Request.swift in Sources */,
+				4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
 				408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */,
 				400190A61E6780A10080DDA4 /* NivelViewController.swift in Sources */,
 				408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */,
@@ -1333,7 +1353,7 @@
 				408CB6D31E54E73D00D308D3 /* Calls.swift in Sources */,
 				408CB6D41E54E73D00D308D3 /* NotificacionesViewController.swift in Sources */,
 				400190901E64DA8D0080DDA4 /* SVCExtension.swift in Sources */,
-				400190991E64EC220080DDA4 /* UtilViewController.swift in Sources */,
+				400190991E64EC220080DDA4 /* UIViewController.swift in Sources */,
 				408CB6D51E54E73D00D308D3 /* PMTabBarViewController.swift in Sources */,
 				408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */,
 				408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */,

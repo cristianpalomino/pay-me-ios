@@ -10,6 +10,8 @@ import UIKit
 
 class NivelDosViewController: PMViewController {
     
+    @IBOutlet weak var titleView: PMTitleView!
+    
     @IBOutlet weak var topView           :PMItemCircle!
     @IBOutlet weak var rigthTopView      :PMItemCircle!
     @IBOutlet weak var leftTopView       :PMItemCircle!
@@ -21,6 +23,7 @@ class NivelDosViewController: PMViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.titleView.titleLabel.text = TitleTriger.segundo.titleLabelText
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,8 +44,7 @@ extension NivelDosViewController {
     
     func defineViews() {
         let servicioGeneral = Session.sharedInstance.current.servicioGeneral!
-        
-        self.titleLabel.text = servicioGeneral.name
+        //self.titleLabel.text = servicioGeneral.name
         
         var views = [topView,
                      rigthTopView,

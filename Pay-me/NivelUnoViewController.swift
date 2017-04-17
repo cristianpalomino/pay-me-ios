@@ -9,11 +9,11 @@
 import UIKit
 
 class NivelUnoViewController: PMViewController {
-    
+    @IBOutlet weak var titleView:   PMTitleView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.titleView.titleLabel.text = TitleTriger.primero.titleLabelText
     }
 
     override func viewDidAppear(_ animated: Bool) {

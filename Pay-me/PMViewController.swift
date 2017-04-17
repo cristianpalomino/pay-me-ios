@@ -9,10 +9,7 @@
 import UIKit
 
 class PMViewController: UIViewController {
-    
-    @IBOutlet weak var titleView            :UIView!
-    @IBOutlet weak var titleLabel           :UILabel!
-    
+        
     var keyboardHeigth  :CGFloat = 0.0
     var scroll          :UIScrollView!
     var titles          :[String] = ["One", "Two", "Three", "Four", "Five", "Six"]
