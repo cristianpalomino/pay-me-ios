@@ -838,13 +838,13 @@
                                                         <rect key="frame" x="4" y="4" width="136" height="142"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2f-gc-Q3o">
-                                                                <rect key="frame" x="41" y="12" width="54" height="12"/>
+                                                                <rect key="frame" x="41.5" y="12" width="53" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-Qa-s9S">
-                                                                <rect key="frame" x="12" y="36" width="112" height="36"/>
+                                                                <rect key="frame" x="12" y="36" width="112" height="35"/>
                                                                 <string key="text">Prolongación Primavera
 2390 Monterrico
 Santiago de Surco</string>
@@ -853,13 +853,13 @@ Santiago de Surco</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lima  01  630 33 33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zV-32-jPi">
-                                                                <rect key="frame" x="12" y="80" width="112" height="12"/>
+                                                                <rect key="frame" x="12" y="79" width="112" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.upc.edu.pe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTx-Op-uym">
-                                                                <rect key="frame" x="12" y="100" width="112" height="12"/>
+                                                                <rect key="frame" x="12" y="99" width="112" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -975,42 +975,9 @@ Santiago de Surco</string>
                                     <constraint firstAttribute="trailing" secondItem="l48-TN-wPL" secondAttribute="trailing" id="xH0-mM-kpp"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nJ-wr-ItB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nJ-wr-ItB" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cw-0u-Pv2">
-                                        <rect key="frame" x="157" y="9.5" width="6" height="17"/>
-                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odl-Ag-U0r">
-                                        <rect key="frame" x="276" y="0.0" width="36" height="36"/>
-                                        <state key="normal" image="ic-buscar"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3o-ix-ZOE">
-                                        <rect key="frame" x="8" y="0.0" width="36" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="C3o-ix-ZOE" secondAttribute="height" multiplier="1:1" id="5fI-CW-fVE"/>
-                                        </constraints>
-                                        <state key="normal" image="ic-atras"/>
-                                        <connections>
-                                            <action selector="tapBack" destination="NVx-h2-ogj" eventType="touchUpInside" id="Qj1-M4-tEN"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Odl-Ag-U0r" firstAttribute="width" secondItem="C3o-ix-ZOE" secondAttribute="width" id="0TG-uu-W59"/>
-                                    <constraint firstItem="5cw-0u-Pv2" firstAttribute="centerY" secondItem="7nJ-wr-ItB" secondAttribute="centerY" id="Bbe-rh-Cvn"/>
-                                    <constraint firstAttribute="trailing" secondItem="Odl-Ag-U0r" secondAttribute="trailing" constant="8" id="KTG-yP-5nb"/>
-                                    <constraint firstItem="Odl-Ag-U0r" firstAttribute="height" secondItem="C3o-ix-ZOE" secondAttribute="height" id="PeA-Km-1n9"/>
-                                    <constraint firstItem="C3o-ix-ZOE" firstAttribute="leading" secondItem="7nJ-wr-ItB" secondAttribute="leading" constant="8" id="Q7y-IH-vnV"/>
-                                    <constraint firstItem="5cw-0u-Pv2" firstAttribute="centerX" secondItem="7nJ-wr-ItB" secondAttribute="centerX" id="hhF-3C-844"/>
-                                    <constraint firstItem="C3o-ix-ZOE" firstAttribute="centerY" secondItem="7nJ-wr-ItB" secondAttribute="centerY" id="k8D-GR-t3d"/>
-                                    <constraint firstItem="Odl-Ag-U0r" firstAttribute="centerY" secondItem="7nJ-wr-ItB" secondAttribute="centerY" id="nne-sA-mjo"/>
-                                    <constraint firstItem="C3o-ix-ZOE" firstAttribute="height" secondItem="7nJ-wr-ItB" secondAttribute="height" id="q6G-6z-RFH"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hep-f0-Svm">
                                 <rect key="frame" x="0.0" y="404" width="320" height="51"/>
@@ -1064,6 +1031,7 @@ Santiago de Surco</string>
                         <outlet property="imageBigBannerView" destination="qbt-qN-pXy" id="gxM-tp-LPs"/>
                         <outlet property="mainView" destination="y6S-wI-0NJ" id="n4D-sp-AYq"/>
                         <outlet property="mainViewTopConstraint" destination="vvr-M0-sei" id="lw4-oZ-vFw"/>
+                        <outlet property="titleView" destination="7nJ-wr-ItB" id="jHJ-Em-E3l"/>
                         <outlet property="txtIndentifier" destination="LmE-qb-yAK" id="MWF-uQ-a4Y"/>
                         <outlet property="viewOpenInfo" destination="YRW-xy-bq8" id="6fm-Pg-35z"/>
                         <segue destination="LJL-Ho-l4M" kind="show" identifier="kToDetailSuministro" id="IqZ-dX-ezV"/>

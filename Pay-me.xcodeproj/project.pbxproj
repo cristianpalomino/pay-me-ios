@@ -697,7 +697,6 @@
 				405E0ABD1E1C86AD008CF767 /* PMSizes.swift */,
 				40A420121E203FF200D74D22 /* PMString.swift */,
 				401CC6671E4B5FFD001911F2 /* PMHud.swift */,
-				4001908A1E6495150080DDA4 /* Currency.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -830,6 +829,7 @@
 		4FF780421EA58503002D4703 /* ExtendedClass */ = {
 			isa = PBXGroup;
 			children = (
+				4001908A1E6495150080DDA4 /* Currency.swift */,
 				400190971E64EC220080DDA4 /* UIViewController.swift */,
 			);
 			name = ExtendedClass;

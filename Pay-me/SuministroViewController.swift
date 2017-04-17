@@ -20,10 +20,11 @@ class SuministroViewController: PMViewController {
     @IBOutlet weak var consultButtonBottomConstraint: NSLayoutConstraint!
     
     //Views
-    @IBOutlet weak var viewOpenInfo         : UIView!
-    @IBOutlet weak var viewInfo             : UIView!
-    @IBOutlet weak var mainView             : UIView!
-    @IBOutlet weak var txtIndentifier       : PMTextField!
+    @IBOutlet weak var titleView:           PMTitleView!
+    @IBOutlet weak var viewOpenInfo:        UIView!
+    @IBOutlet weak var viewInfo:            UIView!
+    @IBOutlet weak var mainView:            UIView!
+    @IBOutlet weak var txtIndentifier:      PMTextField!
     @IBOutlet weak var btnInfo              : UIButton!
     @IBOutlet weak var bigBannerView        : UIView!
     @IBOutlet weak var imageBigBannerView   : UIImageView!
@@ -63,10 +64,8 @@ class SuministroViewController: PMViewController {
 extension SuministroViewController {
     
     override func initComponents() {
-        if let item = Session.sharedInstance.current.item {
-            //self.titleLabel.text = item.empresa.name
-            self.txtIndentifier.setPMTheme()
-            self.loadImages()
-        }
+        self.titleView.titleLabel.text = TitleTriger.cuarto.titleLabelText
+        self.txtIndentifier.setPMTheme()
+        self.loadImages()
     }
 }

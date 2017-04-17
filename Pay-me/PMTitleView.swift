@@ -48,6 +48,7 @@ enum TitleTriger: TitleLabel {
     case primero
     case segundo
     case tercero
+    case cuarto
     
     var titleLabelText: String {
         switch self {
@@ -62,6 +63,11 @@ enum TitleTriger: TitleLabel {
             return title
         case .tercero:
             guard let title = Session.sharedInstance.current.categoria?.name else {
+                return "NONE"
+            }
+            return title
+        case .cuarto:
+            guard let title = Session.sharedInstance.current.item?.empresa.name else {
                 return "NONE"
             }
             return title
