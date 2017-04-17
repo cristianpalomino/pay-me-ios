@@ -217,6 +217,7 @@
 		4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
 		4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
 		4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2BED01E1E996C00A2D16B /* Home.storyboard */; };
+		586E7D5F3623569991AE606E /* Pods_Pay_me_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DAB47D34969A8E3DE24E83 /* Pods_Pay_me_Development.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +238,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25DEDEF0F4F984FA08D07E26 /* Pods-Pay-me Development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me Development.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me Development/Pods-Pay-me Development.debug.xcconfig"; sourceTree = "<group>"; };
 		400190841E647CCF0080DDA4 /* FVCDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FVCDelegates.swift; sourceTree = "<group>"; };
 		400190871E647DBD0080DDA4 /* FVCServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FVCServices.swift; sourceTree = "<group>"; };
 		4001908A1E6495150080DDA4 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
@@ -356,6 +358,8 @@
 		84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.release.xcconfig"; sourceTree = "<group>"; };
 		A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD189234E532E6FC28C0F0D1 /* Pods-Pay-me Development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me Development.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me Development/Pods-Pay-me Development.release.xcconfig"; sourceTree = "<group>"; };
+		E2DAB47D34969A8E3DE24E83 /* Pods_Pay_me_Development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_me_Development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC645C84DF5D84B5B8A878EB /* Pods_Pay_meTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -386,6 +390,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586E7D5F3623569991AE606E /* Pods_Pay_me_Development.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +402,8 @@
 			children = (
 				4B2E4905704C8B9D9F63B120 /* Pods-Pay-me.debug.xcconfig */,
 				95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */,
+				25DEDEF0F4F984FA08D07E26 /* Pods-Pay-me Development.debug.xcconfig */,
+				AD189234E532E6FC28C0F0D1 /* Pods-Pay-me Development.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -818,6 +825,7 @@
 				84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */,
 				FC645C84DF5D84B5B8A878EB /* Pods_Pay_meTests.framework */,
 				A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */,
+				E2DAB47D34969A8E3DE24E83 /* Pods_Pay_me_Development.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -886,10 +894,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408CB6FE1E54E73D00D308D3 /* Build configuration list for PBXNativeTarget "Pay-me Development" */;
 			buildPhases = (
+				4ADD64515A2BDBCAA9FAA69F /* [CP] Check Pods Manifest.lock */,
 				408CB6971E54E73D00D308D3 /* Sources */,
 				408CB6E41E54E73D00D308D3 /* Frameworks */,
 				408CB6E61E54E73D00D308D3 /* Resources */,
 				408CB6FD1E54E73D00D308D3 /* ShellScript */,
+				1387A7680CF23DF2896B969A /* [CP] Embed Pods Frameworks */,
+				BE5BDB29CDE01B73548856A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1027,6 +1038,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1387A7680CF23DF2896B969A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-me Development/Pods-Pay-me Development-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		16D224C5F596BCB16A38AFFD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1082,6 +1108,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" e5a628ced1691289c3511aa4e4a9af85fd108faa 73e2b9df8b8e2cc661357895686ba607040dba4a60df1ab32fc3bd261d2c5090 ";
+		};
+		4ADD64515A2BDBCAA9FAA69F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE5BDB29CDE01B73548856A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-me Development/Pods-Pay-me Development-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		C1A3F65B586FE23A59DACE85 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1529,6 +1585,7 @@
 		};
 		408CB6FF1E54E73D00D308D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25DEDEF0F4F984FA08D07E26 /* Pods-Pay-me Development.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1553,6 +1610,7 @@
 		};
 		408CB7001E54E73D00D308D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD189234E532E6FC28C0F0D1 /* Pods-Pay-me Development.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

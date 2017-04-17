@@ -17,7 +17,7 @@ class FavoritosViewController: PMViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.callServiceFavoritos()
-        self.initHeader()
+        //self.initHeader()
     }
 
     override func didReceiveMemoryWarning() {

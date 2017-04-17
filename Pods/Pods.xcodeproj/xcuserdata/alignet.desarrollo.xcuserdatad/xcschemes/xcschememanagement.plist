@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Pay-me Development.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Pay-me.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -68,6 +73,11 @@
 			<true/>
 		</dict>
 		<key>332B478C46BB85170CF5CAC48F83EC91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39A156A5F113F6560D2AB00C9E31E2BA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

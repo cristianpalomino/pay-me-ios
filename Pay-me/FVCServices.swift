@@ -12,13 +12,15 @@ import Foundation
 extension FavoritosViewController: FavoritosViewControllerServicesDelegate {
     
     internal func callServiceConsultarRecibos(withService service:Service) {
-        
-        let request = RequestConsultarDeudas(idCompany: service.idCompanySPS, idService: service.idServiceSPS, serviceIdentifier: service.codeService)
-        
-        PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
-        PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
-        
-        showHUD()
+        if let codeService = service.serviceIdentifier {
+            let request = RequestConsultarDeudas(idCompany: service.idCompanySPS,
+                                                 idService: service.idServiceSPS,
+                                                 serviceIdentifier: codeService)
+            PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
+            PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
+            
+            showHUD()
+        }
     }
     
     internal func callServiceFavoritos() {

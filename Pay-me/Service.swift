@@ -15,10 +15,9 @@ class Service {
     var idCompanySPS        :String!
     var idServiceSPS        :String!
     var idService           :String!
-    var serviceIdentifier   :String!
+    var serviceIdentifier   :String?
     var owner               :String!
-    var alias               :String!
-    var codeService         :String!
+    var alias               :String?
     var inSPR               :String!
     var amount              :String?
     var state               :ServiceStateType!
@@ -28,10 +27,9 @@ class Service {
         self.idCompanySPS       = json[Keys.kIdCompanySPS].stringValue
         self.idServiceSPS       = json[Keys.kIdServiceSPS].stringValue
         self.idService          = json[Keys.kIdService].stringValue
-        self.serviceIdentifier  = json[Keys.kServiceIdentifier].stringValue
+        self.serviceIdentifier  = json[Keys.kServiceIdentifier].string
         self.owner              = json[Keys.kOwner].stringValue
-        self.alias              = json[Keys.kAlias].stringValue
-        self.codeService        = json[Keys.kCodeService].stringValue
+        self.alias              = json[Keys.kAlias].string
         self.inSPR              = json[Keys.kInSPR].stringValue
         self.amount             = json[Keys.kAmount].string
      
@@ -53,7 +51,6 @@ extension Service {
         static let kOwner               = "owner"
         static let kAlias               = "alias"
         static let kAmount              = "amount"
-        static let kCodeService         = "codeService"
         static let kInSPR               = "inSPR"
         static let kState               = "state"
     }
@@ -71,10 +68,10 @@ extension Service {
 extension Service: Hashable {
     
     var hashValue: Int {
-        return serviceIdentifier.hashValue ^ alias.hashValue
+        return idService.hashValue
     }
     
     static func == (lhs: Service, rhs: Service) -> Bool {
-        return lhs.serviceIdentifier == rhs.serviceIdentifier
+        return lhs.idService == rhs.idService
     }
 }

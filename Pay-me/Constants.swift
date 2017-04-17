@@ -57,14 +57,14 @@ struct Constants {
             
             struct EndPoints {
                 
-                static let AGREGAR_SERVICIO             = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/addService"
-                static let CONSULTAR_PAGOS              = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/txConsult"
-                static let CONSULTAR_AGENDA             = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/calendarConsult"
-                static let CONSULTAR_DEUDAS             = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/debtConsult"
-                static let CONSULTAR_NOTIFICACIONES     = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/notificationConsult"
-                static let CONSULTAR_SERVICIOS          = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/getServices"
-                static let ELIMINAR_NOTIFICACION        = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/deleteNotification"
-                static let PAGAR_SERVICIO               = "\(URLs.BASE_URL)/WALLETWS/rest/mobile/pay"
+                static let AGREGAR_SERVICIO             = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/addService"
+                static let CONSULTAR_PAGOS              = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/txConsult"
+                static let CONSULTAR_AGENDA             = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/calendarConsult"
+                static let CONSULTAR_DEUDAS             = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/debtConsult"
+                static let CONSULTAR_NOTIFICACIONES     = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/notificationConsult"
+                static let CONSULTAR_SERVICIOS          = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/getServices"
+                static let ELIMINAR_NOTIFICACION        = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/deleteNotification"
+                static let PAGAR_SERVICIO               = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/pay"
             }
         }
     }

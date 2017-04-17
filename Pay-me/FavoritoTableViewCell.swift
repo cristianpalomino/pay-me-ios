@@ -52,9 +52,9 @@ extension FavoritoTableViewCell {
             self.defineState(state: service.state)
         }
         
-        self.name.text      = service.alias
+        self.name.text      = service.alias ?? "NONE"
         self.entidad.text   = item?.empresa.name ?? "NONE"
-        self.code.text      = service.codeService
+        self.code.text      = service.serviceIdentifier ?? "NONE"
         
         if let amount = service.amount {
             self.monto.isHidden = false
