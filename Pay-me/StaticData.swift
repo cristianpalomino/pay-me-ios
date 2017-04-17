@@ -14,8 +14,13 @@ class Static {
     var serviciosGenerales = [ServicioGeneral]()
     
     init() {
-        let path = Bundle.main.path(forResource: "StaticData", ofType: ".json")
-        let data = NSData(contentsOfFile: path!) as! Data
+        guard let path = Bundle.main.path(forResource: "StaticData", ofType: ".json") else {
+            return
+        }
+        
+        //let data = NSData(contentsOfFile: path!) as! Data
+        
+        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
         let json = JSON(data: data)
         
         json["serviciosGenerales"].arrayValue.forEach{self.serviciosGenerales.append(ServicioGeneral(json: $0))}

@@ -15,7 +15,7 @@ extension FavoritosViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let service = self.serviciosFavoritos[indexPath.row]
+        //let service = self.serviciosFavoritos[indexPath.row]
         //self.callServiceConsultarRecibos(withService: service)
         
         if indexPath.row == 0 {

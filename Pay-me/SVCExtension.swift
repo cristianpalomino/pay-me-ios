@@ -22,9 +22,9 @@ extension SuministroViewController {
 extension SuministroViewController {
     
     func showInformation() {
-        if let currentService = Session.sharedInstance.current.item {
-            //self.titleLabel.text = currentService.name
-        }
+//        if let currentService = Session.sharedInstance.current.item {
+//            //self.titleLabel.text = currentService.name
+//        }
         
         UIView.animate(withDuration: 0.25, animations: {
             self.viewOpenInfo.isHidden = true

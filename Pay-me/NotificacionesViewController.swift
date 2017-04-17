@@ -168,8 +168,6 @@ extension NotificacionesViewController{
             break
         case SWCellState.cellStateRight:
             break
-        default:
-            break
         }
     }
     

@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      
         //printStaticData()
         
+        print(Constants.Api.URLs.BASE_URL)
+        
         return true
     }
 
