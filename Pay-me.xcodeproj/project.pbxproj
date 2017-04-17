@@ -155,7 +155,6 @@
 		408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */; };
 		408CB6E21E54E73D00D308D3 /* PaymeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */; };
 		408CB6E31E54E73D00D308D3 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */; };
-		408CB6E51E54E73D00D308D3 /* Pods_Pay_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */; };
 		408CB6E71E54E73D00D308D3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
 		408CB6E81E54E73D00D308D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
 		408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F51E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf */; };
@@ -211,14 +210,13 @@
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
+		4FA0E3041EA5308D008F5ED9 /* Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3031EA5308D008F5ED9 /* Development.plist */; };
 		4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
 		4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */; };
 		4FCFBE021E2838D90029EE40 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */; };
 		4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
 		4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
 		4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2BED01E1E996C00A2D16B /* Home.storyboard */; };
-		693C4236FF6A88FBB1834A2A /* Pods_Pay_meUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */; };
-		C058572CDEC34F9F5E697CEC /* Pods_Pay_meTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC645C84DF5D84B5B8A878EB /* Pods_Pay_meTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -312,7 +310,6 @@
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		408CB7021E54E73D00D308D3 /* Development.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Development.plist; path = "/Users/cristian/pay-me-ios/Development.plist"; sourceTree = "<absolute>"; };
 		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
 		40A420101E20260D00D74D22 /* RecibosBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosBViewController.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
@@ -340,6 +337,7 @@
 		40CF1E481E068AAF0072CB29 /* SuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuministroViewController.swift; sourceTree = "<group>"; };
 		40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTriangleView.swift; sourceTree = "<group>"; };
 		40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		4B2E4905704C8B9D9F63B120 /* Pods-Pay-me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.debug.xcconfig"; sourceTree = "<group>"; };
 		4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesViewController.swift; sourceTree = "<group>"; };
 		4F1898461E11BA470060DD41 /* Notify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify.storyboard; sourceTree = "<group>"; };
 		4F1898481E11BB240060DD41 /* Notificacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacion.swift; sourceTree = "<group>"; };
@@ -348,20 +346,16 @@
 		4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
 		4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
+		4FA0E3031EA5308D008F5ED9 /* Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Development.plist; sourceTree = "<group>"; };
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationViewController.swift; sourceTree = "<group>"; };
 		4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAutomaticoViewController.swift; sourceTree = "<group>"; };
 		4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionNotificacionesViewController.swift; sourceTree = "<group>"; };
 		4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostrarAgendaViewController.swift; sourceTree = "<group>"; };
 		4FF2BED01E1E996C00A2D16B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		5488BC2B09210A80F78E15DF /* Pods-Pay-meUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meUITests/Pods-Pay-meUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6826DCD174ACF4A68D5559B7 /* Pods-Pay-me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.debug.xcconfig"; sourceTree = "<group>"; };
-		6DE6167217B90CD9FA9ECF9C /* Pods-Pay-meTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meTests/Pods-Pay-meTests.release.xcconfig"; sourceTree = "<group>"; };
 		84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.release.xcconfig"; sourceTree = "<group>"; };
 		A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBC07C18180705BF77B19030 /* Pods-Pay-me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.release.xcconfig"; sourceTree = "<group>"; };
-		C09CD76AD92075F9CB3BF676 /* Pods-Pay-meUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meUITests/Pods-Pay-meUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D1074892A4DA385B1D4922AD /* Pods-Pay-meTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-meTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-meTests/Pods-Pay-meTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC645C84DF5D84B5B8A878EB /* Pods_Pay_meTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -378,7 +372,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C058572CDEC34F9F5E697CEC /* Pods_Pay_meTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +379,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				693C4236FF6A88FBB1834A2A /* Pods_Pay_meUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +386,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408CB6E51E54E73D00D308D3 /* Pods_Pay_me.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,12 +395,8 @@
 		27B37BCA7420A8B04A8205CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6826DCD174ACF4A68D5559B7 /* Pods-Pay-me.debug.xcconfig */,
-				BBC07C18180705BF77B19030 /* Pods-Pay-me.release.xcconfig */,
-				D1074892A4DA385B1D4922AD /* Pods-Pay-meTests.debug.xcconfig */,
-				6DE6167217B90CD9FA9ECF9C /* Pods-Pay-meTests.release.xcconfig */,
-				5488BC2B09210A80F78E15DF /* Pods-Pay-meUITests.debug.xcconfig */,
-				C09CD76AD92075F9CB3BF676 /* Pods-Pay-meUITests.release.xcconfig */,
+				4B2E4905704C8B9D9F63B120 /* Pods-Pay-me.debug.xcconfig */,
+				95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -645,7 +632,7 @@
 				406EEA241DFB0D88005D2E87 /* Assets.xcassets */,
 				406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */,
 				406EEA291DFB0D88005D2E87 /* Info.plist */,
-				408CB7021E54E73D00D308D3 /* Development.plist */,
+				4FA0E3031EA5308D008F5ED9 /* Development.plist */,
 				4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */,
 			);
 			path = "Pay-me";
@@ -863,12 +850,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 406EEA451DFB0D88005D2E87 /* Build configuration list for PBXNativeTarget "Pay-me Tests" */;
 			buildPhases = (
-				7DB6FDEBDD27D6F96B93DA36 /* [CP] Check Pods Manifest.lock */,
 				406EEA2A1DFB0D88005D2E87 /* Sources */,
 				406EEA2B1DFB0D88005D2E87 /* Frameworks */,
 				406EEA2C1DFB0D88005D2E87 /* Resources */,
-				D175EF59E120502D45DBB546 /* [CP] Embed Pods Frameworks */,
-				38DA744D33D3F0ACB413C3FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -884,12 +868,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 406EEA481DFB0D88005D2E87 /* Build configuration list for PBXNativeTarget "Pay-me UITests" */;
 			buildPhases = (
-				EB60DB4871D435B2CC64332C /* [CP] Check Pods Manifest.lock */,
 				406EEA351DFB0D88005D2E87 /* Sources */,
 				406EEA361DFB0D88005D2E87 /* Frameworks */,
 				406EEA371DFB0D88005D2E87 /* Resources */,
-				A893AB5008A55EC554BABEBD /* [CP] Embed Pods Frameworks */,
-				C8D694ED18797515F09C7F86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -905,12 +886,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408CB6FE1E54E73D00D308D3 /* Build configuration list for PBXNativeTarget "Pay-me Development" */;
 			buildPhases = (
-				408CB6961E54E73D00D308D3 /* [CP] Check Pods Manifest.lock */,
 				408CB6971E54E73D00D308D3 /* Sources */,
 				408CB6E41E54E73D00D308D3 /* Frameworks */,
 				408CB6E61E54E73D00D308D3 /* Resources */,
-				408CB6FB1E54E73D00D308D3 /* [CP] Embed Pods Frameworks */,
-				408CB6FC1E54E73D00D308D3 /* [CP] Copy Pods Resources */,
 				408CB6FD1E54E73D00D308D3 /* ShellScript */,
 			);
 			buildRules = (
@@ -929,12 +907,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Cristian Palomino Rivera";
 				TargetAttributes = {
 					406EEA191DFB0D88005D2E87 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8N9TGFU3ZZ;
+						DevelopmentTeam = 79SAEB56W5;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -951,7 +929,7 @@
 						TestTargetID = 406EEA191DFB0D88005D2E87;
 					};
 					408CB6951E54E73D00D308D3 = {
-						DevelopmentTeam = 8N9TGFU3ZZ;
+						DevelopmentTeam = 79SAEB56W5;
 					};
 				};
 			};
@@ -1001,6 +979,7 @@
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
+				4FA0E3041EA5308D008F5ED9 /* Development.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1078,21 +1057,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		38DA744D33D3F0ACB413C3FE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-meTests/Pods-Pay-meTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		402C5D8E1E32F4A00072C101 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1105,51 +1069,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" e5a628ced1691289c3511aa4e4a9af85fd108faa 73e2b9df8b8e2cc661357895686ba607040dba4a60df1ab32fc3bd261d2c5090 ";
-		};
-		408CB6961E54E73D00D308D3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		408CB6FB1E54E73D00D308D3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		408CB6FC1E54E73D00D308D3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		408CB6FD1E54E73D00D308D3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1164,36 +1083,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" e5a628ced1691289c3511aa4e4a9af85fd108faa 73e2b9df8b8e2cc661357895686ba607040dba4a60df1ab32fc3bd261d2c5090 ";
 		};
-		7DB6FDEBDD27D6F96B93DA36 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A893AB5008A55EC554BABEBD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-meUITests/Pods-Pay-meUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C1A3F65B586FE23A59DACE85 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1207,51 +1096,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8D694ED18797515F09C7F86 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-meUITests/Pods-Pay-meUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D175EF59E120502D45DBB546 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay-meTests/Pods-Pay-meTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB60DB4871D435B2CC64332C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1577,12 +1421,12 @@
 		};
 		406EEA431DFB0D88005D2E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6826DCD174ACF4A68D5559B7 /* Pods-Pay-me.debug.xcconfig */;
+			baseConfigurationReference = 4B2E4905704C8B9D9F63B120 /* Pods-Pay-me.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
+				DEVELOPMENT_TEAM = 79SAEB56W5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1591,7 +1435,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D PRODUCTION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1602,12 +1446,12 @@
 		};
 		406EEA441DFB0D88005D2E87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC07C18180705BF77B19030 /* Pods-Pay-me.release.xcconfig */;
+			baseConfigurationReference = 95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
+				DEVELOPMENT_TEAM = 79SAEB56W5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1616,7 +1460,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D PRODUCTION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
@@ -1627,7 +1471,6 @@
 		};
 		406EEA461DFB0D88005D2E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1074892A4DA385B1D4922AD /* Pods-Pay-meTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1643,7 +1486,6 @@
 		};
 		406EEA471DFB0D88005D2E87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DE6167217B90CD9FA9ECF9C /* Pods-Pay-meTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1659,7 +1501,6 @@
 		};
 		406EEA491DFB0D88005D2E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5488BC2B09210A80F78E15DF /* Pods-Pay-meUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
@@ -1674,7 +1515,6 @@
 		};
 		406EEA4A1DFB0D88005D2E87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C09CD76AD92075F9CB3BF676 /* Pods-Pay-meUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
@@ -1689,21 +1529,20 @@
 		};
 		408CB6FF1E54E73D00D308D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6826DCD174ACF4A68D5559B7 /* Pods-Pay-me.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
+				DEVELOPMENT_TEAM = 79SAEB56W5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Development.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pay-me/Development.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1714,21 +1553,20 @@
 		};
 		408CB7001E54E73D00D308D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC07C18180705BF77B19030 /* Pods-Pay-me.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
+				DEVELOPMENT_TEAM = 79SAEB56W5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Development.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pay-me/Development.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";

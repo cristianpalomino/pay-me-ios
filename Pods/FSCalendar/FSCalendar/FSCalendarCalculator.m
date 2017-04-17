@@ -153,7 +153,7 @@
             break;
         }
     }
-    if (item < 0) {
+    if (item < 0 || section < 0) {
         return nil;
     }
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:item inSection:section];
@@ -268,8 +268,10 @@
 - (FSCalendarMonthPosition)monthPositionForIndexPath:(NSIndexPath *)indexPath
 {
     if (!indexPath) return FSCalendarMonthPositionNotFound;
+    if (self.calendar.transitionCoordinator.representingScope == FSCalendarScopeWeek) {
+        return FSCalendarMonthPositionCurrent;
+    }
     NSDate *date = [self dateForIndexPath:indexPath];
-    
     NSDate *page = [self pageForSection:indexPath.section];
     NSComparisonResult comparison = [self.gregorian compareDate:date toDate:page toUnitGranularity:NSCalendarUnitMonth];
     switch (comparison) {

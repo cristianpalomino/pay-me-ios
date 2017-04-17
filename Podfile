@@ -6,7 +6,6 @@ target 'Pay-me' do
   use_frameworks!
 
   # Pods for Pay-me
-  pod 'RealmSwift'
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'Material'
@@ -18,14 +17,4 @@ target 'Pay-me' do
   pod 'SDWebImage'
   pod 'FSCalendar' , git: 'https://github.com/WenchaoD/FSCalendar.git', branch: 'development'
   
-  target 'Pay-meTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'Pay-meUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
