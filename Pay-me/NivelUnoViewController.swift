@@ -13,7 +13,6 @@ class NivelUnoViewController: PMViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleView.titleLabel.text = TitleTriger.primero.titleLabelText
     }
 
     override func viewDidAppear(_ animated: Bool) {

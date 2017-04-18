@@ -64,7 +64,6 @@ class SuministroViewController: PMViewController {
 extension SuministroViewController {
     
     override func initComponents() {
-        self.titleView.titleLabel.text = TitleTriger.cuarto.titleLabelText
         self.txtIndentifier.setPMTheme()
         self.loadImages()
     }

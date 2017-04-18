@@ -23,7 +23,6 @@ class NivelDosViewController: PMViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleView.titleLabel.text = TitleTriger.segundo.titleLabelText
     }
     
     override func viewDidAppear(_ animated: Bool) {

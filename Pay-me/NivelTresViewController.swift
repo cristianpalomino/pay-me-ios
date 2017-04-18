@@ -21,7 +21,6 @@ class NivelTresViewController: PMViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleView.titleLabel.text = TitleTriger.tercero.titleLabelText
     }
     
     override func viewDidAppear(_ animated: Bool) {

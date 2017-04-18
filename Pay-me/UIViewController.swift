@@ -7,17 +7,25 @@
 //
 
 import Foundation
+import SVProgressHUD
+
+extension UIViewController {
+    
+    func showHUD() {
+        SVProgressHUD.show()
+    }
+    
+    func hideHUD() {
+        SVProgressHUD.dismiss()
+    }
+}
 
 extension UIViewController {
     
     func toSegue(identifier :String) {
-        hideHUD()
+        self.hideHUD()
         self.performSegue(withIdentifier: identifier, sender: nil)
     }
-}
-
-extension UITableViewController {
-
 }
 
 extension UIViewController {
@@ -29,9 +37,16 @@ extension UIViewController {
             self.navigationItem.titleView = UIImageView(image: UIImage(named: "nav-logo"))
         }
     }
+}
+
+extension UIViewController {
     
     @IBAction func tapBack() {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func tapNotifications() {
+        print("tapNotifications")
     }
     
     @IBAction func tapClose() {

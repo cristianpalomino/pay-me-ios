@@ -37,40 +37,4 @@ class PMTitleView: UIView {
     }
 }
 
-protocol TitleLabel {
-    
-    var titleLabelText: String { get }
-}
 
-enum TitleTriger: TitleLabel {
-    
-    case favoritos
-    case primero
-    case segundo
-    case tercero
-    case cuarto
-    
-    var titleLabelText: String {
-        switch self {
-        case .favoritos:
-            return "Mis Favoritos"
-        case .primero:
-            return "Servicios"
-        case .segundo:
-            guard let title = Session.sharedInstance.current.servicioGeneral?.name else {
-                return "NONE"
-            }
-            return title
-        case .tercero:
-            guard let title = Session.sharedInstance.current.categoria?.name else {
-                return "NONE"
-            }
-            return title
-        case .cuarto:
-            guard let title = Session.sharedInstance.current.item?.empresa.name else {
-                return "NONE"
-            }
-            return title
-        }
-    }
-}
