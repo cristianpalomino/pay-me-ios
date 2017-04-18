@@ -9,16 +9,9 @@
 import UIKit
 import Foundation
 
-extension UIViewController where Self:PMViewController {
-    
-    func initComponents() {
-        
-    }
-}
-
 protocol PMViewControllerProtocol {
     
-    var title: String
+    var title: String { get }
     
     func tapPerfil()
     func tapNotifications()
@@ -28,9 +21,9 @@ protocol PMViewControllerProtocol {
 
 protocol MessageViewControllerProtocol {
     
-    var message: String
-    var image: UIImage
-    var description: String
+    var message: String { get }
+    var image: UIImage { get }
+    var description: String { get }
     
     func tapClose()
 }

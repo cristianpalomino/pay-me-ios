@@ -1465,10 +1465,10 @@ Santiago de Surco</string>
             </objects>
             <point key="canvasLocation" x="6669.375" y="-940.14084507042253"/>
         </scene>
-        <!--Favoritos View Controller-->
+        <!--View Controller-->
         <scene sceneID="qRa-LX-hBh">
             <objects>
-                <viewController id="aSg-di-BpN" customClass="FavoritosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aSg-di-BpN" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zYs-VJ-lzu"/>
                         <viewControllerLayoutGuide type="bottom" id="mfM-ih-yKm"/>
@@ -1621,7 +1621,6 @@ Santiago de Surco</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="JTV-F1-lGi" id="sDH-gg-XSS"/>
                         <segue destination="SzV-Of-5zO" kind="presentation" identifier="kRecibo" id="t7I-XV-3ad"/>
                     </connections>
                 </viewController>

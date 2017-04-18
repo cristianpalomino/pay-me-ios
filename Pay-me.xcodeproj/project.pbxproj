@@ -203,10 +203,12 @@
 		4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1898461E11BA470060DD41 /* Notify.storyboard */; };
 		4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
 		4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */; };
+		4F43D88A1EA698F700403292 /* ExtensionPMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF780431EA66389002D4703 /* ExtensionPMViewController.swift */; };
+		4F43D88B1EA699C700403292 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA291DFB0D88005D2E87 /* Info.plist */; };
+		4F43D88E1EA699CE00403292 /* Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3031EA5308D008F5ED9 /* Development.plist */; };
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
-		4FA0E3041EA5308D008F5ED9 /* Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3031EA5308D008F5ED9 /* Development.plist */; };
 		4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
 		4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
 		4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
@@ -910,12 +912,12 @@
 			buildConfigurationList = 408CB6FE1E54E73D00D308D3 /* Build configuration list for PBXNativeTarget "Pay-me Development" */;
 			buildPhases = (
 				4ADD64515A2BDBCAA9FAA69F /* [CP] Check Pods Manifest.lock */,
-				408CB6971E54E73D00D308D3 /* Sources */,
 				408CB6E41E54E73D00D308D3 /* Frameworks */,
 				408CB6E61E54E73D00D308D3 /* Resources */,
 				408CB6FD1E54E73D00D308D3 /* ShellScript */,
 				1387A7680CF23DF2896B969A /* [CP] Embed Pods Frameworks */,
 				BE5BDB29CDE01B73548856A6 /* [CP] Copy Pods Resources */,
+				408CB6971E54E73D00D308D3 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -932,6 +934,7 @@
 		406EEA121DFB0D88005D2E87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Cristian Palomino Rivera";
@@ -995,6 +998,7 @@
 				401CC6721E539740001911F2 /* PMErrorView.xib in Resources */,
 				40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */,
 				40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
+				4F43D88B1EA699C700403292 /* Info.plist in Resources */,
 				4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */,
 				4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */,
 				40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
@@ -1006,7 +1010,6 @@
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
-				4FA0E3041EA5308D008F5ED9 /* Development.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1044,6 +1047,7 @@
 				408CB6F41E54E73D00D308D3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				408CB6F51E54E73D00D308D3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
 				408CB6F61E54E73D00D308D3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
+				4F43D88E1EA699CE00403292 /* Development.plist in Resources */,
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
@@ -1285,6 +1289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F43D88A1EA698F700403292 /* ExtensionPMViewController.swift in Sources */,
 				408CB6981E54E73D00D308D3 /* PayTableViewCell.swift in Sources */,
 				408CB6991E54E73D00D308D3 /* PagoAutomaticoViewController.swift in Sources */,
 				408CB69B1E54E73D00D308D3 /* RSA.m in Sources */,
