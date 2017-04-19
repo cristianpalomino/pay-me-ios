@@ -10,9 +10,16 @@ import UIKit
 
 class PMNivelTresViewController: PMViewController {
     
+    override var headerTitle: String {
+        guard let title = Session.sharedInstance.current.categoria?.name else {
+            return "NONE"
+        }
+        return title
+    }
+    
     @IBOutlet weak var tableview: UITableView!
     
-    var items = [Item]() {
+    var items: [Item]? {
         didSet {
             self.tableview.reloadData()
         }
@@ -27,6 +34,14 @@ class PMNivelTresViewController: PMViewController {
     }
 }
 
+extension PMNivelTresViewController {
+    
+    override func initComponents() {
+        super.initComponents()
+        self.items = Session.sharedInstance.current.categoria?.items
+    }
+}
+
 extension PMNivelTresViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -34,7 +49,7 @@ extension PMNivelTresViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = items[indexPath.row]
+        let item = items?[indexPath.row]
         Session.sharedInstance.current.item = item
         performSegue(withIdentifier: Constants.Storyboard.Segues.kToValidacionServicio, sender: nil)
     }
@@ -43,7 +58,7 @@ extension PMNivelTresViewController : UITableViewDelegate {
 extension PMNivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count
+        return self.items?.count ?? 0
     }
     
     
@@ -53,7 +68,7 @@ extension PMNivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
-        cell.servicio = self.items[indexPath.row]
+        cell.servicio = self.items?[indexPath.row]
         return cell
     }
 }

@@ -813,7 +813,7 @@
         <!--Suministro View Controller-->
         <scene sceneID="VC6-gn-vx8">
             <objects>
-                <viewController id="NVx-h2-ogj" customClass="SuministroViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NVx-h2-ogj" customClass="PMSuministroViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Chq-sV-0cd"/>
                         <viewControllerLayoutGuide type="bottom" id="eLF-nt-d3u"/>
@@ -1026,11 +1026,13 @@ Santiago de Surco</string>
                     <connections>
                         <outlet property="bannerView" destination="l48-TN-wPL" id="erX-68-mHR"/>
                         <outlet property="bigBannerView" destination="AEi-sZ-HCy" id="55k-GH-NNy"/>
+                        <outlet property="btnInfo" destination="kMb-ll-Xpl" id="g6r-xp-WNE"/>
                         <outlet property="consultButtonBottomConstraint" destination="4IY-XJ-rQ0" id="g9c-zQ-nsb"/>
                         <outlet property="imageBannerView" destination="VCv-pD-21t" id="1wY-Ky-pqG"/>
                         <outlet property="imageBigBannerView" destination="qbt-qN-pXy" id="gxM-tp-LPs"/>
                         <outlet property="mainView" destination="y6S-wI-0NJ" id="n4D-sp-AYq"/>
                         <outlet property="mainViewTopConstraint" destination="vvr-M0-sei" id="lw4-oZ-vFw"/>
+                        <outlet property="pmTitleView" destination="7nJ-wr-ItB" id="y6d-s1-WyS"/>
                         <outlet property="titleView" destination="7nJ-wr-ItB" id="jHJ-Em-E3l"/>
                         <outlet property="txtIndentifier" destination="LmE-qb-yAK" id="MWF-uQ-a4Y"/>
                         <outlet property="viewOpenInfo" destination="YRW-xy-bq8" id="6fm-Pg-35z"/>
