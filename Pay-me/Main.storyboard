@@ -834,51 +834,9 @@
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkP-0C-yk5" userLabel="view-info">
                                                 <rect key="frame" x="168" y="8" width="144" height="150"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6t-x7-xKh">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6t-x7-xKh" customClass="PMInfoView" customModule="Pay_me" customModuleProvider="target">
                                                         <rect key="frame" x="4" y="4" width="136" height="142"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2f-gc-Q3o">
-                                                                <rect key="frame" x="41.5" y="12" width="53" height="12"/>
-                                                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="10"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-Qa-s9S">
-                                                                <rect key="frame" x="12" y="36" width="112" height="35"/>
-                                                                <string key="text">Prolongación Primavera
-2390 Monterrico
-Santiago de Surco</string>
-                                                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lima  01  630 33 33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zV-32-jPi">
-                                                                <rect key="frame" x="12" y="79" width="112" height="12"/>
-                                                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.upc.edu.pe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTx-Op-uym">
-                                                                <rect key="frame" x="12" y="99" width="112" height="12"/>
-                                                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="B9e-Qa-s9S" secondAttribute="trailing" constant="12" id="D8S-ze-M8K"/>
-                                                            <constraint firstAttribute="trailing" secondItem="5zV-32-jPi" secondAttribute="trailing" constant="12" id="NWd-3S-pT1"/>
-                                                            <constraint firstItem="5zV-32-jPi" firstAttribute="leading" secondItem="n6t-x7-xKh" secondAttribute="leading" constant="12" id="Rki-H6-ibF"/>
-                                                            <constraint firstItem="NTx-Op-uym" firstAttribute="top" secondItem="5zV-32-jPi" secondAttribute="bottom" constant="8" id="W87-a8-1ko"/>
-                                                            <constraint firstItem="l2f-gc-Q3o" firstAttribute="centerX" secondItem="n6t-x7-xKh" secondAttribute="centerX" id="XJv-RZ-cQ3"/>
-                                                            <constraint firstItem="5zV-32-jPi" firstAttribute="top" secondItem="B9e-Qa-s9S" secondAttribute="bottom" constant="8" id="d0d-VC-gHW"/>
-                                                            <constraint firstItem="l2f-gc-Q3o" firstAttribute="top" secondItem="n6t-x7-xKh" secondAttribute="top" constant="12" id="jVP-V4-vto"/>
-                                                            <constraint firstAttribute="trailing" secondItem="NTx-Op-uym" secondAttribute="trailing" constant="12" id="pQC-9H-DuF"/>
-                                                            <constraint firstItem="B9e-Qa-s9S" firstAttribute="leading" secondItem="n6t-x7-xKh" secondAttribute="leading" constant="12" id="sjk-KC-0GZ"/>
-                                                            <constraint firstItem="B9e-Qa-s9S" firstAttribute="top" secondItem="l2f-gc-Q3o" secondAttribute="bottom" constant="12" id="ud2-1n-HlY"/>
-                                                            <constraint firstItem="NTx-Op-uym" firstAttribute="leading" secondItem="n6t-x7-xKh" secondAttribute="leading" constant="12" id="vlv-Rv-akI"/>
-                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="0.34663955479452052" colorSpace="calibratedWhite"/>
@@ -1032,9 +990,9 @@ Santiago de Surco</string>
                         <outlet property="imageBigBannerView" destination="qbt-qN-pXy" id="gxM-tp-LPs"/>
                         <outlet property="mainView" destination="y6S-wI-0NJ" id="n4D-sp-AYq"/>
                         <outlet property="mainViewTopConstraint" destination="vvr-M0-sei" id="lw4-oZ-vFw"/>
-                        <outlet property="pmTitleView" destination="7nJ-wr-ItB" id="y6d-s1-WyS"/>
-                        <outlet property="titleView" destination="7nJ-wr-ItB" id="jHJ-Em-E3l"/>
+                        <outlet property="pmTitleView" destination="7nJ-wr-ItB" id="30H-TK-oSQ"/>
                         <outlet property="txtIndentifier" destination="LmE-qb-yAK" id="MWF-uQ-a4Y"/>
+                        <outlet property="viewInfo" destination="GkP-0C-yk5" id="hts-ja-OC5"/>
                         <outlet property="viewOpenInfo" destination="YRW-xy-bq8" id="6fm-Pg-35z"/>
                         <segue destination="LJL-Ho-l4M" kind="show" identifier="kToDetailSuministro" id="IqZ-dX-ezV"/>
                     </connections>

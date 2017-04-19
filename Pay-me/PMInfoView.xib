@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PMInfoView" customModule="Pay_me" customModuleProvider="target">
+            <connections>
+                <outlet property="labelDireccion" destination="VnP-Y3-gSS" id="khX-ob-a7U"/>
+                <outlet property="labelInformation" destination="EBH-U8-c1f" id="U1G-4K-M4c"/>
+                <outlet property="labelTelefono" destination="L8f-I1-HjV" id="vAv-dq-Tef"/>
+                <outlet property="labelWeb" destination="u8D-7u-PW5" id="kEl-vW-aQ9"/>
+                <outlet property="mview" destination="iN0-l3-epB" id="cgy-OU-PHF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="151"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-bD-Wvu">
+                    <rect key="frame" x="0.0" y="0.0" width="226" height="151"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-U8-c1f">
+                            <rect key="frame" x="86" y="12" width="54" height="12"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnP-Y3-gSS">
+                            <rect key="frame" x="12" y="36" width="202" height="36"/>
+                            <string key="text">Prolongación Primavera
+2390 Monterrico
+Santiago de Surco</string>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lima  01  630 33 33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8f-I1-HjV">
+                            <rect key="frame" x="12" y="80" width="202" height="12"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.upc.edu.pe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8D-7u-PW5">
+                            <rect key="frame" x="12" y="100" width="202" height="12"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="L8f-I1-HjV" firstAttribute="leading" secondItem="BdT-bD-Wvu" secondAttribute="leading" constant="12" id="D4a-UD-cvW"/>
+                        <constraint firstItem="EBH-U8-c1f" firstAttribute="top" secondItem="BdT-bD-Wvu" secondAttribute="top" constant="12" id="ENA-i2-PPB"/>
+                        <constraint firstItem="VnP-Y3-gSS" firstAttribute="leading" secondItem="BdT-bD-Wvu" secondAttribute="leading" constant="12" id="GS9-Eu-dI7"/>
+                        <constraint firstItem="L8f-I1-HjV" firstAttribute="top" secondItem="VnP-Y3-gSS" secondAttribute="bottom" constant="8" id="GZd-4B-HWo"/>
+                        <constraint firstAttribute="trailing" secondItem="L8f-I1-HjV" secondAttribute="trailing" constant="12" id="HhR-p3-cDO"/>
+                        <constraint firstAttribute="trailing" secondItem="u8D-7u-PW5" secondAttribute="trailing" constant="12" id="JN8-O4-zMj"/>
+                        <constraint firstItem="u8D-7u-PW5" firstAttribute="top" secondItem="L8f-I1-HjV" secondAttribute="bottom" constant="8" id="MAd-5Z-ANL"/>
+                        <constraint firstAttribute="trailing" secondItem="VnP-Y3-gSS" secondAttribute="trailing" constant="12" id="WDg-pq-D1e"/>
+                        <constraint firstItem="VnP-Y3-gSS" firstAttribute="top" secondItem="EBH-U8-c1f" secondAttribute="bottom" constant="12" id="dXu-mD-cPf"/>
+                        <constraint firstItem="u8D-7u-PW5" firstAttribute="leading" secondItem="BdT-bD-Wvu" secondAttribute="leading" constant="12" id="h5C-DO-kfq"/>
+                        <constraint firstItem="EBH-U8-c1f" firstAttribute="centerX" secondItem="BdT-bD-Wvu" secondAttribute="centerX" id="ndZ-dV-jgO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BdT-bD-Wvu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ejc-vQ-n6Z"/>
+                <constraint firstItem="BdT-bD-Wvu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FNE-9B-gIC"/>
+                <constraint firstAttribute="bottom" secondItem="BdT-bD-Wvu" secondAttribute="bottom" id="IW6-4P-xQ7"/>
+                <constraint firstAttribute="trailing" secondItem="BdT-bD-Wvu" secondAttribute="trailing" id="zc1-23-lDP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-41" y="-203.5"/>
+        </view>
+    </objects>
+</document>

@@ -27,16 +27,15 @@ class PMSuministroViewController: PMViewController {
     @IBOutlet weak var consultButtonBottomConstraint: NSLayoutConstraint!
     
     //Views
-    @IBOutlet weak var titleView:           PMTitleView!
     @IBOutlet weak var viewOpenInfo:        UIView!
-    @IBOutlet weak var viewInfo:            UIView!
+    @IBOutlet weak var viewInfo:            PMInfoView!
     @IBOutlet weak var mainView:            UIView!
     @IBOutlet weak var txtIndentifier:      PMTextField!
-    @IBOutlet weak var btnInfo              : UIButton!
-    @IBOutlet weak var bigBannerView        : UIView!
-    @IBOutlet weak var imageBigBannerView   : UIImageView!
-    @IBOutlet weak var bannerView           : UIView!
-    @IBOutlet weak var imageBannerView      : UIImageView!
+    @IBOutlet weak var btnInfo:             UIButton!
+    @IBOutlet weak var bigBannerView:       UIView!
+    @IBOutlet weak var imageBigBannerView:  UIImageView!
+    @IBOutlet weak var bannerView:          UIView!
+    @IBOutlet weak var imageBannerView:     UIImageView!
     var errorView :PMErrorView!
     
     override func viewDidLoad() {
@@ -91,6 +90,7 @@ extension PMSuministroViewController {
 extension PMSuministroViewController {
     
     func showInformation() {
+        self.viewInfo.setInformation(empresa: Session.sharedInstance.current.item?.empresa)
         UIView.animate(withDuration: 0.25, animations: {
             self.viewOpenInfo.isHidden = true
             self.viewInfo.isHidden = false
