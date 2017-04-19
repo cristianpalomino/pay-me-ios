@@ -8,9 +8,14 @@
 
 import UIKit
 
-class NivelDosViewController: PMViewController {
+class PMNivelDosViewController: PMViewController {
     
-    @IBOutlet weak var titleView: PMTitleView!
+    override var headerTitle: String {
+        guard let title = Session.sharedInstance.current.servicioGeneral?.name else {
+            return "NONE"
+        }
+        return title
+    }
     
     @IBOutlet weak var topView           :PMItemCircle!
     @IBOutlet weak var rigthTopView      :PMItemCircle!
@@ -27,7 +32,7 @@ class NivelDosViewController: PMViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        whiteTheme()
+        self.whiteTheme()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,15 +40,15 @@ class NivelDosViewController: PMViewController {
     }
     
     override func initComponents() {
-        defineViews()
+        super.initComponents()
+        self.defineViews()
     }
 }
 
-extension NivelDosViewController {
+extension PMNivelDosViewController {
     
     func defineViews() {
         let servicioGeneral = Session.sharedInstance.current.servicioGeneral!
-        //self.titleLabel.text = servicioGeneral.name
         
         var views = [topView,
                      rigthTopView,
@@ -69,11 +74,26 @@ extension NivelDosViewController {
     }
 }
 
-extension NivelDosViewController : PMItemCircleDelegate {
+extension PMNivelDosViewController : PMItemCircleDelegate {
 
     func tap(view: PMItemCircle) {
         Session.sharedInstance.current.categoria = view.categoria
         performSegue(withIdentifier: Constants.Storyboard.Segues.kToEmpresas, sender: nil)
+    }
+}
+
+extension PMNivelDosViewController {
+    
+    func educacionData() -> [(String, UIImage)] {
+        let educacion = [("Universidades", UIImage(named: "universidades")!),
+                         ("Colegios", UIImage(named: "colegios")!),
+                         ("Postgrado", UIImage(named: "postgrado")!),
+                         ("Institutos", UIImage(named: "institutos")!),
+                         ("Maestrias", UIImage(named: "maestrias")!),
+                         ("Pre-escolar", UIImage(named: "prescolar")!),
+                         ("Idiomas", UIImage(named: "idiomas")!),
+                         ("Academias", UIImage(named: "academias")!)]
+        return educacion
     }
 }
 

@@ -7,9 +7,12 @@
 //
 
 import UIKit
-class PMTitleView: UIView {
-    @IBOutlet private var mview:    UIView?
 
+class PMTitleView: UIView {
+    
+    var pmViewController: PMViewController?
+    @IBOutlet private var mview:    UIView?
+    
     @IBOutlet var backButton:   UIButton!
     @IBOutlet var titleLabel:   UILabel!
     @IBOutlet var searchButton: UIButton!
@@ -17,10 +20,6 @@ class PMTitleView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
-    }
-    
-    override func draw(_ rect: CGRect) {
-        
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -35,6 +34,15 @@ class PMTitleView: UIView {
         content.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         self.addSubview(content)
     }
+    
+    @IBAction func tapBack() {
+        self.pmViewController?.tapBack()
+    }
+    
+    @IBAction func tapSearch() {
+        self.pmViewController?.tapSearch()
+    }
 }
+
 
 

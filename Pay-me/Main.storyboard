@@ -134,7 +134,7 @@
         <!--Nivel Uno View Controller-->
         <scene sceneID="QkT-NC-tbd">
             <objects>
-                <viewController id="Osn-Tx-luz" customClass="NivelUnoViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Osn-Tx-luz" customClass="PMNivelUnoViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jt9-Ma-5Tr"/>
                         <viewControllerLayoutGuide type="bottom" id="5MR-7O-Ix4"/>
@@ -481,7 +481,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="titleView" destination="1lm-hF-zZK" id="p8l-gf-YgM"/>
+                        <outlet property="pmTitleView" destination="1lm-hF-zZK" id="P8b-sR-qTi"/>
                         <segue destination="096-AS-Eae" kind="show" identifier="toCategorias" id="yDt-OI-veN"/>
                     </connections>
                 </viewController>
@@ -492,7 +492,7 @@
         <!--Nivel Dos View Controller-->
         <scene sceneID="gkv-08-RCU">
             <objects>
-                <viewController id="096-AS-Eae" customClass="NivelDosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="096-AS-Eae" customClass="PMNivelDosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D0d-HB-CFg"/>
                         <viewControllerLayoutGuide type="bottom" id="Bjl-Ud-EGQ"/>
@@ -672,10 +672,10 @@
                         <outlet property="leftBottomView" destination="CRD-uD-h8I" id="V8v-q6-xHM"/>
                         <outlet property="leftMiddleView" destination="clW-h5-ldb" id="gOi-aV-DLA"/>
                         <outlet property="leftTopView" destination="hvD-zY-es8" id="PRp-nd-YMZ"/>
+                        <outlet property="pmTitleView" destination="bb1-7m-4mZ" id="acb-jh-Oml"/>
                         <outlet property="rigthBottomView" destination="Fj3-sJ-qu4" id="ebU-3o-rEr"/>
                         <outlet property="rigthMiddleView" destination="8Rl-aY-dyv" id="EkH-HB-2cn"/>
                         <outlet property="rigthTopView" destination="rym-i3-1jC" id="NEb-Bv-ewI"/>
-                        <outlet property="titleView" destination="bb1-7m-4mZ" id="ffa-W3-bJL"/>
                         <outlet property="topView" destination="nyI-iC-GPI" id="CaJ-YD-uBD"/>
                         <segue destination="XOg-HL-QOq" kind="show" identifier="kToEmpresas" id="8iW-XC-Pvq"/>
                     </connections>
@@ -687,7 +687,7 @@
         <!--Nivel Tres View Controller-->
         <scene sceneID="B2T-OO-wPi">
             <objects>
-                <viewController id="XOg-HL-QOq" customClass="NivelTresViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XOg-HL-QOq" customClass="PMNivelTresViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lt3-dD-e2a"/>
                         <viewControllerLayoutGuide type="bottom" id="a2G-O4-Vx9"/>
@@ -801,8 +801,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="pmTitleView" destination="ZhM-tl-wpn" id="cFx-eL-fc0"/>
                         <outlet property="tableview" destination="ade-Pi-HnU" id="07p-YJ-fTS"/>
-                        <outlet property="titleView" destination="ZhM-tl-wpn" id="KpO-ZE-hnz"/>
                         <segue destination="NVx-h2-ogj" kind="show" identifier="kToValidacionServicio" id="IwP-0Q-70L"/>
                     </connections>
                 </viewController>
@@ -838,13 +838,13 @@
                                                         <rect key="frame" x="4" y="4" width="136" height="142"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2f-gc-Q3o">
-                                                                <rect key="frame" x="41" y="12" width="54" height="12"/>
+                                                                <rect key="frame" x="41.5" y="12" width="53" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-Qa-s9S">
-                                                                <rect key="frame" x="12" y="36" width="112" height="36"/>
+                                                                <rect key="frame" x="12" y="36" width="112" height="35"/>
                                                                 <string key="text">Prolongación Primavera
 2390 Monterrico
 Santiago de Surco</string>
@@ -853,13 +853,13 @@ Santiago de Surco</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lima  01  630 33 33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zV-32-jPi">
-                                                                <rect key="frame" x="12" y="80" width="112" height="12"/>
+                                                                <rect key="frame" x="12" y="79" width="112" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.upc.edu.pe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTx-Op-uym">
-                                                                <rect key="frame" x="12" y="100" width="112" height="12"/>
+                                                                <rect key="frame" x="12" y="99" width="112" height="12"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1465,10 +1465,10 @@ Santiago de Surco</string>
             </objects>
             <point key="canvasLocation" x="6669.375" y="-940.14084507042253"/>
         </scene>
-        <!--View Controller-->
+        <!--Listado Favoritos View Controller-->
         <scene sceneID="qRa-LX-hBh">
             <objects>
-                <viewController id="aSg-di-BpN" sceneMemberID="viewController">
+                <viewController id="aSg-di-BpN" customClass="PMListadoFavoritosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zYs-VJ-lzu"/>
                         <viewControllerLayoutGuide type="bottom" id="mfM-ih-yKm"/>
@@ -1615,12 +1615,20 @@ Santiago de Surco</string>
                     <navigationItem key="navigationItem" id="gmV-fy-xFQ">
                         <barButtonItem key="leftBarButtonItem" image="ic-perfil" id="zKj-59-ASJ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="tapPerfil" destination="aSg-di-BpN" id="b7j-8m-2aO"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="B3D-bQ-8Vj">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="tapNotifications" destination="aSg-di-BpN" id="r9J-21-K8w"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="pmTitleView" destination="wW9-bw-YCi" id="7UD-11-NP6"/>
+                        <outlet property="tableView" destination="JTV-F1-lGi" id="kY5-05-KQa"/>
                         <segue destination="SzV-Of-5zO" kind="presentation" identifier="kRecibo" id="t7I-XV-3ad"/>
                     </connections>
                 </viewController>

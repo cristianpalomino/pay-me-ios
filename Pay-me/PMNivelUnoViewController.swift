@@ -8,25 +8,27 @@
 
 import UIKit
 
-class NivelUnoViewController: PMViewController {
-    @IBOutlet weak var titleView:   PMTitleView!
+class PMNivelUnoViewController: PMViewController {
 
+    override var headerTitle: String {
+        return "Servicios"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        blueTheme()
+        self.blueTheme()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
-extension NivelUnoViewController {
+extension PMNivelUnoViewController {
     
     @IBAction func tapBasicos() {
         Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[0]

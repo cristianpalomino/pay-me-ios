@@ -1,15 +1,69 @@
 //
-//  FVCServices.swift
+//  PMListadoFavoritosViewController.swift
 //  Pay-me
 //
-//  Created by Cristian Palomino Rivera on 27/02/17.
+//  Created by Alignet Desarrollo on 19/04/17.
 //  Copyright © 2017 Cristian Palomino Rivera. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
+class PMListadoFavoritosViewController: PMViewController {
+    
+    override var headerTitle: String {
+        return "Mis Favoritos"
+    }
+    
+    @IBOutlet weak var tableView:   UITableView!
+    
+    var serviciosFavoritos = Session.sharedInstance.serviciosFavoritos
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.callServiceFavoritos()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}
 
-extension FavoritosViewController: FavoritosViewControllerServicesDelegate {
+extension PMListadoFavoritosViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 65
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapSelect")
+    }
+}
+
+extension PMListadoFavoritosViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.serviciosFavoritos.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: FavoritoTableViewCell.identifier, for: indexPath) as! FavoritoTableViewCell
+        
+        let service = self.serviciosFavoritos[indexPath.row]
+        cell.update(service: service)
+        
+        return cell
+    }
+}
+
+extension PMListadoFavoritosViewController : FavoriteCellDelegate {
+    
+    func tapFavorite() {
+        let notis = UIStoryboard.createSettings().topViewController!
+        self.navigationController?.show(notis, sender: self)
+    }
+}
+
+extension PMListadoFavoritosViewController: FavoritosViewControllerServicesDelegate {
     
     internal func callServiceConsultarRecibos(withService service:Service) {
         if let codeService = service.serviceIdentifier {
@@ -32,7 +86,7 @@ extension FavoritosViewController: FavoritosViewControllerServicesDelegate {
     }
 }
 
-extension FavoritosViewController: ConsultarServiciosDelegate {
+extension PMListadoFavoritosViewController: ConsultarServiciosDelegate {
     
     func serviceSuccess(response: ResponseConsultarServicios) {
         Session.sharedInstance.serviciosFavoritos = response.services
@@ -59,17 +113,17 @@ extension FavoritosViewController: ConsultarServiciosDelegate {
     }
 }
 
-extension FavoritosViewController: ConsultarDeudasDelegate {
+extension PMListadoFavoritosViewController: ConsultarDeudasDelegate {
     
     func serviceSuccess(response: ResponseConsultarDeudas) {
         self.toSegue(identifier: Constants.Storyboard.Segues.kRecibo)
     }
 }
 
-extension FavoritosViewController {
+extension PMListadoFavoritosViewController {
     
     func serviceFailed(error: PaymeError) {
-        print("\(error.answerCode)\t\(error.answerMessage)")
+        debugPrint(error)
     }
 }
 

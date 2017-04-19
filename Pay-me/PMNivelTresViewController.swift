@@ -8,9 +8,8 @@
 
 import UIKit
 
-class NivelTresViewController: PMViewController {
+class PMNivelTresViewController: PMViewController {
     
-    @IBOutlet weak var titleView: PMTitleView!
     @IBOutlet weak var tableview: UITableView!
     
     var items = [Item]() {
@@ -23,34 +22,12 @@ class NivelTresViewController: PMViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
 
-extension NivelTresViewController {
-    
-    override func initComponents() {
-        if let categoria = Session.sharedInstance.current.categoria {
-            self.items = categoria.items
-            //self.titleLabel.text = categoria.name
-        }
-    }
-}
-
-extension NivelTresViewController {
-
-    @IBAction func tapBuscar() {
-        
-    }
-}
-
-extension NivelTresViewController : UITableViewDelegate {
+extension PMNivelTresViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
@@ -63,7 +40,7 @@ extension NivelTresViewController : UITableViewDelegate {
     }
 }
 
-extension NivelTresViewController : UITableViewDataSource {
+extension PMNivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count

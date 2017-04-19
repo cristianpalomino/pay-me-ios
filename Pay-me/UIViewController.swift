@@ -41,22 +41,6 @@ extension UIViewController {
 
 extension UIViewController {
     
-    @IBAction func tapBack() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func tapNotifications() {
-        print("tapNotifications")
-    }
-    
-    @IBAction func tapClose() {
-        self.resignFirstResponder()
-        self.navigationController!.dismiss(animated: true, completion: nil)
-    }
-}
-
-extension UIViewController {
-    
     func blueTheme() {
         
     }
