@@ -28,7 +28,7 @@ class PMSuministroViewController: PMViewController {
     
     //Views
     @IBOutlet weak var viewOpenInfo:        UIView!
-    @IBOutlet weak var viewInfo:            PMInfoView!
+    @IBOutlet weak var viewInfo:                 PMInfoView!
     @IBOutlet weak var mainView:            UIView!
     @IBOutlet weak var txtIndentifier:      PMTextField!
     @IBOutlet weak var btnInfo:             UIButton!
@@ -83,7 +83,7 @@ extension PMSuministroViewController {
     }
     
     @IBAction func tapInfo() {
-        showInformation()
+        self.showInformation()
     }
 }
 

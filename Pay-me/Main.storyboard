@@ -831,21 +831,9 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qbt-qN-pXy">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
                                             </imageView>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkP-0C-yk5" userLabel="view-info">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkP-0C-yk5" customClass="PMInfoView" customModule="Pay_me" customModuleProvider="target">
                                                 <rect key="frame" x="168" y="8" width="144" height="150"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6t-x7-xKh" customClass="PMInfoView" customModule="Pay_me" customModuleProvider="target">
-                                                        <rect key="frame" x="4" y="4" width="136" height="142"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </view>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="0.34663955479452052" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstItem="n6t-x7-xKh" firstAttribute="top" secondItem="GkP-0C-yk5" secondAttribute="top" constant="4" id="1HA-DA-Gjd"/>
-                                                    <constraint firstItem="n6t-x7-xKh" firstAttribute="leading" secondItem="GkP-0C-yk5" secondAttribute="leading" constant="4" id="Jca-1j-bbz"/>
-                                                    <constraint firstAttribute="bottom" secondItem="n6t-x7-xKh" secondAttribute="bottom" constant="4" id="muy-VR-dye"/>
-                                                    <constraint firstAttribute="trailing" secondItem="n6t-x7-xKh" secondAttribute="trailing" constant="4" id="tDG-jB-7H8"/>
-                                                </constraints>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRW-xy-bq8" userLabel="view-open-info" customClass="PMTriangleView" customModule="Pay_me" customModuleProvider="target">
                                                 <rect key="frame" x="246" y="92" width="66" height="66"/>
@@ -992,7 +980,7 @@
                         <outlet property="mainViewTopConstraint" destination="vvr-M0-sei" id="lw4-oZ-vFw"/>
                         <outlet property="pmTitleView" destination="7nJ-wr-ItB" id="30H-TK-oSQ"/>
                         <outlet property="txtIndentifier" destination="LmE-qb-yAK" id="MWF-uQ-a4Y"/>
-                        <outlet property="viewInfo" destination="GkP-0C-yk5" id="hts-ja-OC5"/>
+                        <outlet property="viewInfo" destination="GkP-0C-yk5" id="Wk4-b6-dh5"/>
                         <outlet property="viewOpenInfo" destination="YRW-xy-bq8" id="6fm-Pg-35z"/>
                         <segue destination="LJL-Ho-l4M" kind="show" identifier="kToDetailSuministro" id="IqZ-dX-ezV"/>
                     </connections>

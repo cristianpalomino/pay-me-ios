@@ -18,7 +18,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
             <connections>
                 <outlet property="backButton" destination="pXS-lb-sdI" id="i8c-Kl-hIX"/>
-                <outlet property="mview" destination="0DI-Ov-YWD" id="8lT-FS-kTJ"/>
                 <outlet property="searchButton" destination="l4V-Il-rLB" id="AfS-zI-iMi"/>
                 <outlet property="titleLabel" destination="3ci-E9-qlf" id="Q1P-Fa-8Qz"/>
             </connections>
