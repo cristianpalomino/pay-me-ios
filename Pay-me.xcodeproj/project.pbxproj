@@ -11,10 +11,6 @@
 		4001908C1E6495150080DDA4 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001908A1E6495150080DDA4 /* Currency.swift */; };
 		400190981E64EC220080DDA4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190971E64EC220080DDA4 /* UIViewController.swift */; };
 		400190991E64EC220080DDA4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190971E64EC220080DDA4 /* UIViewController.swift */; };
-		4001909F1E672AEC0080DDA4 /* DSVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */; };
-		400190A01E672AEC0080DDA4 /* DSVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */; };
-		400190A21E672C1F0080DDA4 /* DSVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190A11E672C1F0080DDA4 /* DSVCService.swift */; };
-		400190A31E672C1F0080DDA4 /* DSVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400190A11E672C1F0080DDA4 /* DSVCService.swift */; };
 		40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */; };
 		40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
 		401CC6701E538290001911F2 /* PMViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401CC66F1E538290001911F2 /* PMViews.swift */; };
@@ -61,7 +57,7 @@
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
 		406EEA331DFB0D88005D2E87 /* Pay_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA321DFB0D88005D2E87 /* Pay_meTests.swift */; };
 		406EEA3E1DFB0D88005D2E87 /* Pay_meUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA3D1DFB0D88005D2E87 /* Pay_meUITests.swift */; };
-		407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */; };
+		407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */; };
 		407C03621E0B1C1000CD5D4C /* ListaServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */; };
 		407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */; };
 		407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407C03651E0B27BA00CD5D4C /* Main.storyboard */; };
@@ -94,7 +90,7 @@
 		408CB6B11E54E73D00D308D3 /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFE1E415DB5007EF98D /* PMItemCircle.swift */; };
 		408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
 		408CB6B31E54E73D00D308D3 /* RecibosAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420161E234C7D00D74D22 /* RecibosAViewController.swift */; };
-		408CB6B51E54E73D00D308D3 /* DetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */; };
+		408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */; };
 		408CB6B71E54E73D00D308D3 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
 		408CB6B81E54E73D00D308D3 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
 		408CB6B91E54E73D00D308D3 /* PMPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420141E2053D000D74D22 /* PMPin.swift */; };
@@ -240,8 +236,6 @@
 		25DEDEF0F4F984FA08D07E26 /* Pods-Pay-me Development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me Development.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me Development/Pods-Pay-me Development.debug.xcconfig"; sourceTree = "<group>"; };
 		4001908A1E6495150080DDA4 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		400190971E64EC220080DDA4 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVCExtension.swift; sourceTree = "<group>"; };
-		400190A11E672C1F0080DDA4 /* DSVCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSVCService.swift; sourceTree = "<group>"; };
 		40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTabBarViewController.swift; sourceTree = "<group>"; };
 		40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationViewController.swift; sourceTree = "<group>"; };
 		401CC66F1E538290001911F2 /* PMViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViews.swift; sourceTree = "<group>"; };
@@ -295,7 +289,7 @@
 		406EEA391DFB0D88005D2E87 /* Pay-me UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pay-me UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA3D1DFB0D88005D2E87 /* Pay_meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay_meUITests.swift; sourceTree = "<group>"; };
 		406EEA3F1DFB0D88005D2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleSuministroViewController.swift; sourceTree = "<group>"; };
+		407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleSuministroViewController.swift; sourceTree = "<group>"; };
 		407C03611E0B1C1000CD5D4C /* ListaServiciosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaServiciosViewController.swift; sourceTree = "<group>"; };
 		407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
 		407C03651E0B27BA00CD5D4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -425,9 +419,6 @@
 		4001909A1E64EE280080DDA4 /* Detalle */ = {
 			isa = PBXGroup;
 			children = (
-				407C035F1E0B189C00CD5D4C /* DetalleSuministroViewController.swift */,
-				4001909E1E672AEC0080DDA4 /* DSVCExtension.swift */,
-				400190A11E672C1F0080DDA4 /* DSVCService.swift */,
 			);
 			name = Detalle;
 			sourceTree = "<group>";
@@ -528,6 +519,7 @@
 				403377391E03D42600261759 /* PMNivelDosViewController.swift */,
 				4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */,
 				40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */,
+				407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */,
 				40941F441E69ABA2003BFB77 /* ListaServicios */,
 				4001909A1E64EE280080DDA4 /* Detalle */,
 				4001908D1E64DA720080DDA4 /* Suministro */,
@@ -1187,13 +1179,12 @@
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
-				4001909F1E672AEC0080DDA4 /* DSVCExtension.swift in Sources */,
 				40293EF91E40D2DE007EF98D /* Debt.swift in Sources */,
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
 				40293EFF1E415DB5007EF98D /* PMItemCircle.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
 				40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */,
-				407C03601E0B189C00CD5D4C /* DetalleSuministroViewController.swift in Sources */,
+				407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */,
 				40A420131E203FF200D74D22 /* PMString.swift in Sources */,
 				4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */,
 				40A420151E2053D000D74D22 /* PMPin.swift in Sources */,
@@ -1231,7 +1222,6 @@
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 				40293EF71E405385007EF98D /* Calendar.swift in Sources */,
 				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,
-				400190A21E672C1F0080DDA4 /* DSVCService.swift in Sources */,
 				406482AE1E2D162800E9C891 /* PMHeaderButton.swift in Sources */,
 				4062C16F1E3D0FBB00617265 /* ServiciosApi.swift in Sources */,
 				401CC6701E538290001911F2 /* PMViews.swift in Sources */,
@@ -1291,13 +1281,12 @@
 				408CB6AB1E54E73D00D308D3 /* AppDelegate.swift in Sources */,
 				408CB6AC1E54E73D00D308D3 /* PMTextField.swift in Sources */,
 				408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */,
-				400190A01E672AEC0080DDA4 /* DSVCExtension.swift in Sources */,
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
 				408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */,
 				408CB6B11E54E73D00D308D3 /* PMItemCircle.swift in Sources */,
 				408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */,
 				408CB6B31E54E73D00D308D3 /* RecibosAViewController.swift in Sources */,
-				408CB6B51E54E73D00D308D3 /* DetalleSuministroViewController.swift in Sources */,
+				408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */,
 				408CB6B71E54E73D00D308D3 /* PMString.swift in Sources */,
 				408CB6B81E54E73D00D308D3 /* MostrarAgendaViewController.swift in Sources */,
 				408CB6B91E54E73D00D308D3 /* PMPin.swift in Sources */,
@@ -1335,7 +1324,6 @@
 				408CB6D51E54E73D00D308D3 /* PMTabBarViewController.swift in Sources */,
 				408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */,
 				408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */,
-				400190A31E672C1F0080DDA4 /* DSVCService.swift in Sources */,
 				408CB6D91E54E73D00D308D3 /* PMHeaderButton.swift in Sources */,
 				408CB6DA1E54E73D00D308D3 /* ServiciosApi.swift in Sources */,
 				408CB6DB1E54E73D00D308D3 /* PMViews.swift in Sources */,

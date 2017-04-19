@@ -58,7 +58,7 @@ class PMSuministroViewController: PMViewController {
         }
         
         if identifier == Constants.Storyboard.Segues.kDetailSuministro {
-            let detalleViewController = segue.destination as! DetalleSuministroViewController
+            let detalleViewController = segue.destination as! PMDetalleSuministroViewController
             if apiResponse != nil {
                 detalleViewController.serviceIdentifier = self.txtIndentifier.text!
                 detalleViewController.apiResponse = self.apiResponse
@@ -96,7 +96,7 @@ extension PMSuministroViewController {
             self.viewInfo.isHidden = false
         })
     }
-    
+     
     func loadImages() {
         if let currentService = Session.sharedInstance.current.item {
             let urlLogo1 = URL(string: currentService.empresa.logo)!
