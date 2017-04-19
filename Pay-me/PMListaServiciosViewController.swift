@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListaServiciosViewController: PMViewController {
+class PMListaServiciosViewController: PMViewController {
 
     var servicios = [String]()
     @IBOutlet weak var tableview: UITableView!
@@ -31,7 +31,7 @@ class ListaServiciosViewController: PMViewController {
     }
 }
 
-extension ListaServiciosViewController: UITableViewDelegate {
+extension PMListaServiciosViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 65
@@ -42,7 +42,7 @@ extension ListaServiciosViewController: UITableViewDelegate {
     }
 }
 
-extension ListaServiciosViewController: UITableViewDataSource {
+extension PMListaServiciosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return servicios.count

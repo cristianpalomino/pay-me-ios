@@ -891,13 +891,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p97-0Q-tCj">
-                                        <rect key="frame" x="32" y="278.5" width="268" height="17"/>
+                                        <rect key="frame" x="32" y="274.5" width="268" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-qb-yAK" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="327.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="319.5" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done"/>
@@ -910,10 +910,10 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="AEi-sZ-HCy" secondAttribute="trailing" id="2Cd-WM-jUP"/>
                                     <constraint firstItem="LmE-qb-yAK" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" constant="32" id="6QH-Kg-F5a"/>
-                                    <constraint firstItem="LmE-qb-yAK" firstAttribute="top" secondItem="p97-0Q-tCj" secondAttribute="bottom" constant="32" id="AZT-TV-BOX"/>
+                                    <constraint firstItem="LmE-qb-yAK" firstAttribute="top" secondItem="p97-0Q-tCj" secondAttribute="bottom" constant="28" id="AZT-TV-BOX"/>
                                     <constraint firstAttribute="trailing" secondItem="LmE-qb-yAK" secondAttribute="trailing" constant="20" id="D2A-J1-KKE"/>
                                     <constraint firstItem="l48-TN-wPL" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" id="DSX-8S-b7a"/>
-                                    <constraint firstItem="p97-0Q-tCj" firstAttribute="top" secondItem="l48-TN-wPL" secondAttribute="bottom" constant="48" id="Glo-Ad-79M"/>
+                                    <constraint firstItem="p97-0Q-tCj" firstAttribute="top" secondItem="l48-TN-wPL" secondAttribute="bottom" constant="44" id="Glo-Ad-79M"/>
                                     <constraint firstItem="AEi-sZ-HCy" firstAttribute="top" secondItem="y6S-wI-0NJ" secondAttribute="top" id="Nth-Qs-HPT"/>
                                     <constraint firstItem="p97-0Q-tCj" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" constant="32" id="YTB-Nn-YIB"/>
                                     <constraint firstItem="AEi-sZ-HCy" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" id="gyf-VZ-L9b"/>
@@ -1022,7 +1022,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxr-gX-Bwu">
-                                        <rect key="frame" x="32" y="108.5" width="268" height="18"/>
+                                        <rect key="frame" x="32" y="104.5" width="268" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1054,7 +1054,7 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WLAN 34 572 C" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-UZ-AMa" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="158.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="150.5" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1063,7 +1063,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Karolina Briceño del Norte" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilb-sR-EOo" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="220.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="208.5" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1091,9 +1091,9 @@
                                     <constraint firstAttribute="bottom" secondItem="wBW-b8-AAo" secondAttribute="bottom" id="IYZ-U4-Gn3"/>
                                     <constraint firstAttribute="trailing" secondItem="zL7-QE-QZd" secondAttribute="trailing" id="JN2-my-yaF"/>
                                     <constraint firstItem="wBW-b8-AAo" firstAttribute="top" secondItem="zL7-QE-QZd" secondAttribute="bottom" id="JYJ-m7-oxl"/>
-                                    <constraint firstItem="ilb-sR-EOo" firstAttribute="top" secondItem="Unn-UZ-AMa" secondAttribute="bottom" constant="32" id="Pk6-dG-NPh"/>
+                                    <constraint firstItem="ilb-sR-EOo" firstAttribute="top" secondItem="Unn-UZ-AMa" secondAttribute="bottom" constant="28" id="Pk6-dG-NPh"/>
                                     <constraint firstItem="wBW-b8-AAo" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" id="ROJ-4Y-mCB"/>
-                                    <constraint firstItem="qxr-gX-Bwu" firstAttribute="top" secondItem="Esk-77-40F" secondAttribute="bottom" constant="48" id="Sg6-J8-x8H"/>
+                                    <constraint firstItem="qxr-gX-Bwu" firstAttribute="top" secondItem="Esk-77-40F" secondAttribute="bottom" constant="44" id="Sg6-J8-x8H"/>
                                     <constraint firstAttribute="trailing" secondItem="zL7-QE-QZd" secondAttribute="trailing" id="Y2s-ud-wUs"/>
                                     <constraint firstAttribute="trailing" secondItem="Esk-77-40F" secondAttribute="trailing" id="bNX-Vw-amw"/>
                                     <constraint firstItem="zL7-QE-QZd" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" id="biJ-Gi-F5t"/>
@@ -1104,7 +1104,7 @@
                                     <constraint firstAttribute="trailing" secondItem="ilb-sR-EOo" secondAttribute="trailing" constant="20" id="jZJ-cj-7yb"/>
                                     <constraint firstAttribute="trailing" secondItem="wBW-b8-AAo" secondAttribute="trailing" id="kC6-6n-l5z"/>
                                     <constraint firstAttribute="trailing" secondItem="qxr-gX-Bwu" secondAttribute="trailing" constant="20" id="ksV-iv-WPm"/>
-                                    <constraint firstItem="Unn-UZ-AMa" firstAttribute="top" secondItem="qxr-gX-Bwu" secondAttribute="bottom" constant="32" id="l7G-gu-v7U"/>
+                                    <constraint firstItem="Unn-UZ-AMa" firstAttribute="top" secondItem="qxr-gX-Bwu" secondAttribute="bottom" constant="28" id="l7G-gu-v7U"/>
                                     <constraint firstAttribute="trailing" secondItem="Unn-UZ-AMa" secondAttribute="trailing" constant="20" id="lPJ-b7-93C"/>
                                     <constraint firstItem="ilb-sR-EOo" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" constant="32" id="qya-jt-1wb"/>
                                 </constraints>
@@ -1151,6 +1151,7 @@
                         <outlet property="pmTitleView" destination="Qfb-r2-f94" id="pxC-Xm-JVh"/>
                         <outlet property="txtIndentifier" destination="Unn-UZ-AMa" id="vzE-Hq-xuJ"/>
                         <outlet property="txtName" destination="ilb-sR-EOo" id="UBk-Lf-1hL"/>
+                        <segue destination="HG1-22-eLe" kind="show" id="I7y-ZO-PJ8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ1-pI-KUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1160,35 +1161,36 @@
         <!--Lista Servicios View Controller-->
         <scene sceneID="Plh-nX-hmK">
             <objects>
-                <viewController id="HG1-22-eLe" customClass="ListaServiciosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HG1-22-eLe" customClass="PMListaServiciosViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bIQ-XP-gT4"/>
                         <viewControllerLayoutGuide type="bottom" id="ITn-PJ-jkO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2MJ-eN-LOr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKa-Zl-fSp">
-                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                                <rect key="frame" x="0.0" y="35.5" width="320" height="419.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9e-gX-RgZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="urc-As-UDa">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4j-53-yMV">
-                                                <rect key="frame" x="160" y="0.0" width="160" height="68"/>
+                                                <rect key="frame" x="160" y="0.0" width="160" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador de servicio" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-Yj-OH4">
-                                                        <rect key="frame" x="8" y="22" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="18" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 34 111 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-8e-vSn">
-                                                        <rect key="frame" x="8" y="38" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="34" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -1205,7 +1207,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="O4j-53-yMV" secondAttribute="trailing" id="7CC-Nh-YeW"/>
                                             <constraint firstItem="urc-As-UDa" firstAttribute="top" secondItem="E9e-gX-RgZ" secondAttribute="top" id="E5y-YK-iOF"/>
@@ -1218,7 +1220,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wgQ-MK-UzM">
-                                        <rect key="frame" x="0.0" y="68" width="320" height="383"/>
+                                        <rect key="frame" x="0.0" y="60.5" width="320" height="308.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServicioCell" rowHeight="65" id="LtK-Fa-itB" customClass="ServiceTableViewCell" customModule="Pay_me" customModuleProvider="target">
@@ -1281,7 +1283,7 @@
                                         </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82t-wQ-qXx">
-                                        <rect key="frame" x="0.0" y="451" width="320" height="57"/>
+                                        <rect key="frame" x="0.0" y="369" width="320" height="50.5"/>
                                         <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <state key="normal" title="Recordar servicio">
@@ -1305,20 +1307,20 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bn-8g-WNR">
-                                <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHl-gO-fs5">
-                                        <rect key="frame" x="157" y="11" width="6" height="18"/>
+                                        <rect key="frame" x="157" y="8.5" width="6" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNk-tc-8VZ">
-                                        <rect key="frame" x="272" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="276.5" y="0.0" width="35.5" height="35.5"/>
                                         <state key="normal" image="ic-buscar"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0O-tK-fw9">
-                                        <rect key="frame" x="8" y="0.0" width="40" height="40"/>
+                                        <rect key="frame" x="8" y="0.0" width="35.5" height="35.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="t0O-tK-fw9" secondAttribute="height" multiplier="1:1" id="Efe-pb-FTM"/>
                                         </constraints>
