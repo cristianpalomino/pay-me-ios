@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Material
 import AlamofireImage
 
 class PMSuministroViewController: PMViewController {
@@ -28,7 +27,7 @@ class PMSuministroViewController: PMViewController {
     
     //Views
     @IBOutlet weak var viewOpenInfo:        UIView!
-    @IBOutlet weak var viewInfo:                 PMInfoView!
+    @IBOutlet weak var viewInfo:            PMInfoView!
     @IBOutlet weak var mainView:            UIView!
     @IBOutlet weak var txtIndentifier:      PMTextField!
     @IBOutlet weak var btnInfo:             UIButton!
@@ -107,8 +106,8 @@ extension PMSuministroViewController {
     }
     
     func initErrorView() {
-        let errorViewOrigin = self.txtIndentifier.frame.origin.y + self.txtIndentifier.frame.size.height + 32
-        let frameErrorView = CGRect(x: 20, y: Int(errorViewOrigin), width: Int(self.txtIndentifier.frame.width), height: 100)
+        let errorViewOrigin = self.txtIndentifier.frame.origin.y + self.txtIndentifier.frame.size.height + 20
+        let frameErrorView = CGRect(x: 32, y: Int(errorViewOrigin), width: Int(self.txtIndentifier.frame.width), height: 100)
         self.errorView = PMErrorView(frame: frameErrorView)
         self.errorView.isHidden = true
         self.mainView.addSubview(errorView)

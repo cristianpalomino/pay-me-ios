@@ -162,17 +162,17 @@
                                 <rect key="frame" x="0.0" y="35.5" width="320" height="419.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fr-Jq-LdT">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="161.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNX-PB-cPC">
-                                                <rect key="frame" x="106.5" y="0.0" width="107" height="161.5"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="107" height="162"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oA-vx-vTo">
-                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="161.5"/>
+                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="162"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tU2-Tz-8T4">
-                                                        <rect key="frame" x="0.0" y="81" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="0.0" y="81.5" width="80.5" height="80.5"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seguros" translatesAutoresizingMaskIntoConstraints="NO" id="raO-tJ-kfi">
                                                                 <rect key="frame" x="20" y="24.5" width="40" height="40"/>
@@ -199,7 +199,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oE-i5-Kl7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="162"/>
                                                         <connections>
                                                             <action selector="tapSeguros" destination="Osn-Tx-luz" eventType="touchUpInside" id="Xde-WT-CNd"/>
                                                         </connections>
@@ -216,10 +216,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lsb-3S-FO3">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="162"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OW-1E-xGu">
-                                                        <rect key="frame" x="26" y="81" width="80.5" height="80.5"/>
+                                                        <rect key="frame" x="26" y="81.5" width="80.5" height="80.5"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basicos" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-jg-HIR">
                                                                 <rect key="frame" x="20.5" y="24.5" width="40" height="40"/>
@@ -246,7 +246,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giB-an-wdD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="162"/>
                                                         <connections>
                                                             <action selector="tapBasicos" destination="Osn-Tx-luz" eventType="touchUpInside" id="xpQ-sa-Dgj"/>
                                                         </connections>
@@ -283,14 +283,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QW0-cy-EvJ">
-                                        <rect key="frame" x="0.0" y="258.5" width="320" height="161"/>
+                                        <rect key="frame" x="0.0" y="258" width="320" height="161.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yal-64-ujK">
-                                                <rect key="frame" x="106.5" y="0.0" width="107" height="161"/>
+                                                <rect key="frame" x="106.5" y="0.0" width="107" height="161.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVG-sz-5xd">
-                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="161"/>
+                                                <rect key="frame" x="213.5" y="0.0" width="106.5" height="161.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0AI-2L-OV7">
                                                         <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
@@ -320,7 +320,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygd-JH-FKz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="161"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="tapTributos" destination="Osn-Tx-luz" eventType="touchUpInside" id="ANF-Vv-DcD"/>
@@ -338,7 +338,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9o7-MW-W39">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="161"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTA-te-fp4">
                                                         <rect key="frame" x="26" y="0.0" width="80.5" height="80.5"/>
@@ -368,7 +368,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9j-Xe-rAw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="161"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="161.5"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="tapEducacion" destination="Osn-Tx-luz" eventType="touchUpInside" id="lvz-es-L3L"/>
@@ -405,10 +405,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYy-Tb-wUW" userLabel="center">
-                                        <rect key="frame" x="112" y="161.5" width="97" height="97"/>
+                                        <rect key="frame" x="112.5" y="162" width="96" height="96"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-dN-qfy">
-                                                <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -505,35 +505,35 @@
                                 <rect key="frame" x="0.0" y="35.5" width="320" height="419.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-aY-dyv" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="225" y="158" width="103" height="103"/>
+                                        <rect key="frame" x="224.5" y="158" width="103.5" height="103"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8Rl-aY-dyv" secondAttribute="height" id="ZEi-BU-DOT"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clW-h5-ldb" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="-7" y="158" width="103" height="103"/>
+                                        <rect key="frame" x="-7" y="158" width="103.5" height="103"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="clW-h5-ldb" secondAttribute="height" id="g4P-lg-gOT"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-xc-0zg">
-                                        <rect key="frame" x="0.0" y="24" width="320" height="137.5"/>
+                                        <rect key="frame" x="0.0" y="24" width="320" height="138"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-iC-GPI" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="109" y="17" width="103" height="102.5"/>
+                                                <rect key="frame" x="109" y="17" width="103" height="103"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="nyI-iC-GPI" secondAttribute="height" id="kNg-PA-S0T"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rym-i3-1jC" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="212" y="35" width="103" height="102.5"/>
+                                                <rect key="frame" x="212" y="35" width="103.5" height="103"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvD-zY-es8" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="6" y="35" width="103" height="102.5"/>
+                                                <rect key="frame" x="5.5" y="35" width="103.5" height="103"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -553,21 +553,21 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdD-7S-Lu4">
-                                        <rect key="frame" x="0.0" y="258.5" width="320" height="137"/>
+                                        <rect key="frame" x="0.0" y="258" width="320" height="137.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-1I-SSP" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="109.5" y="18" width="102" height="102"/>
+                                                <rect key="frame" x="109.5" y="18" width="102" height="102.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Pvb-1I-SSP" secondAttribute="height" id="1yZ-Kn-a01"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-sJ-qu4" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="211.5" y="0.0" width="102" height="102"/>
+                                                <rect key="frame" x="211.5" y="0.0" width="102.5" height="102.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRD-uD-h8I" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="7.5" y="0.0" width="102" height="102"/>
+                                                <rect key="frame" x="7" y="0.0" width="102.5" height="102.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -587,13 +587,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvz-PE-p5h" userLabel="center">
-                                        <rect key="frame" x="112" y="161.5" width="97" height="97"/>
+                                        <rect key="frame" x="112.5" y="162" width="96" height="96"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="servicio-mid" translatesAutoresizingMaskIntoConstraints="NO" id="OoZ-do-jEo">
-                                                <rect key="frame" x="0.0" y="0.0" width="97" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="zx4-y3-CBq">
-                                                <rect key="frame" x="29.5" y="30" width="39" height="38.5"/>
+                                                <rect key="frame" x="29" y="29.5" width="39" height="38.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zx4-y3-CBq" secondAttribute="height" multiplier="1:1" id="X6X-u2-T9Q"/>
                                                 </constraints>
@@ -715,20 +715,20 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPC Universidad Peruana de Ciencias Aplicadas" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmV-gG-Vuk">
-                                                    <rect key="frame" x="70" y="14" width="299" height="16"/>
+                                                    <rect key="frame" x="70" y="6.5" width="205" height="31.5"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="13"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l1t-1q-yKa">
-                                                    <rect key="frame" x="377" y="22" width="21" height="21"/>
+                                                    <rect key="frame" x="283" y="22" width="21" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="21" id="Lws-ES-q79"/>
                                                         <constraint firstAttribute="height" constant="21" id="s6U-qU-ucB"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGC-Tb-AP2">
-                                                    <rect key="frame" x="70" y="34" width="55" height="14"/>
+                                                    <rect key="frame" x="70" y="42" width="55" height="14"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1238,13 +1238,13 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AV-te-Hyf">
-                                                            <rect key="frame" x="70" y="15" width="299" height="17"/>
+                                                            <rect key="frame" x="70" y="15" width="205" height="17"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="13.5"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-oD-NF6">
-                                                            <rect key="frame" x="377" y="22" width="21" height="21"/>
+                                                            <rect key="frame" x="283" y="22" width="21" height="21"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="4S9-bu-b4U"/>
@@ -1252,7 +1252,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitar recibos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0db-pT-gzx">
-                                                            <rect key="frame" x="70" y="36" width="299" height="14"/>
+                                                            <rect key="frame" x="70" y="36" width="205" height="14"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                                                             <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -1441,13 +1441,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s/ 1,000.70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-tj-qTr">
-                                                    <rect key="frame" x="329" y="10" width="73" height="20"/>
+                                                    <rect key="frame" x="235" y="10" width="73" height="20"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="16.5"/>
                                                     <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Estado   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnC-EW-HX6">
-                                                    <rect key="frame" x="374" y="42" width="28" height="12"/>
+                                                    <rect key="frame" x="280" y="42" width="28" height="12"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="12" id="dOD-3v-aZJ"/>
@@ -2027,14 +2027,14 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZtG-Nh-phh">
-                                                        <rect key="frame" x="16" y="136" width="136" height="46"/>
+                                                        <rect key="frame" x="16" y="136" width="136" height="47"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-uc-MDb">
-                                                                <rect key="frame" x="8" y="12" width="23" height="23"/>
+                                                                <rect key="frame" x="8" y="12.5" width="23.5" height="23.5"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="master-card-gray" translatesAutoresizingMaskIntoConstraints="NO" id="KyU-tM-frp">
-                                                                <rect key="frame" x="47" y="5" width="62" height="36"/>
+                                                                <rect key="frame" x="47.5" y="5.5" width="62" height="36"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2048,7 +2048,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha de emisión" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvq-jc-30N">
-                                                        <rect key="frame" x="16" y="190" width="84" height="14"/>
+                                                        <rect key="frame" x="16" y="191" width="84" height="14"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="11"/>
                                                         <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2123,16 +2123,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwT-T9-gXD">
-                                                        <rect key="frame" x="16" y="136" width="134" height="46"/>
+                                                        <rect key="frame" x="16" y="136" width="134" height="47"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarjeta Mastercard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDr-tL-BjL">
-                                                                <rect key="frame" x="0.0" y="9" width="90" height="14"/>
+                                                                <rect key="frame" x="0.0" y="9.5" width="90" height="14"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="11"/>
                                                                 <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2345 **** **** 3485" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poQ-pv-eN8">
-                                                                <rect key="frame" x="0.0" y="27" width="89" height="14"/>
+                                                                <rect key="frame" x="0.0" y="27.5" width="89" height="14"/>
                                                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="11"/>
                                                                 <color key="textColor" red="0.39607843139999999" green="0.42745098040000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2147,7 +2147,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 de Octubre 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXa-GE-cE4">
-                                                        <rect key="frame" x="16" y="190" width="87" height="14"/>
+                                                        <rect key="frame" x="16" y="191" width="87" height="14"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="11"/>
                                                         <color key="textColor" red="0.39607843139999999" green="0.42745098040000001" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3117,28 +3117,28 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7e-kK-Puq">
-                                                            <rect key="frame" x="70" y="8" width="5" height="15"/>
+                                                            <rect key="frame" x="56" y="8" width="5" height="15"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="12.5"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgZ-JW-GP5">
-                                                            <rect key="frame" x="70" y="42" width="52" height="11"/>
+                                                            <rect key="frame" x="56" y="42" width="52" height="11"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="9"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s/ 1,000.70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqt-Ba-QaF">
-                                                            <rect key="frame" x="333" y="6" width="73" height="20"/>
+                                                            <rect key="frame" x="239" y="6" width="73" height="20"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="16.5"/>
                                                             <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfi-4d-s7h">
-                                                            <rect key="frame" x="0.0" y="0.0" width="62" height="64"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="64"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mot-Tx-9XJ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="62" height="64"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="64"/>
                                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -3154,7 +3154,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Estado   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDo-n8-1xO">
-                                                            <rect key="frame" x="370" y="42" width="28" height="12"/>
+                                                            <rect key="frame" x="276" y="42" width="28" height="12"/>
                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="OGO-GE-yT0"/>
@@ -3165,7 +3165,7 @@
                                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVp-i5-Emt">
-                                                            <rect key="frame" x="70" y="27" width="31" height="11"/>
+                                                            <rect key="frame" x="56" y="27" width="31" height="11"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="9"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -3367,46 +3367,46 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlg-8j-oQH">
-                                                    <rect key="frame" x="74" y="10" width="26" height="15"/>
+                                                    <rect key="frame" x="60" y="10" width="26" height="15"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="12.5"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDd-ZG-DfU">
-                                                    <rect key="frame" x="74" y="43" width="52" height="11"/>
+                                                    <rect key="frame" x="60" y="43" width="52" height="11"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="9"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s/ 1,000.70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5S-Ph-kbJ">
-                                                    <rect key="frame" x="329" y="22" width="73" height="20"/>
+                                                    <rect key="frame" x="235" y="22" width="73" height="20"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="16.5"/>
                                                     <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gf-ld-ikp">
-                                                    <rect key="frame" x="74" y="28" width="31" height="11"/>
+                                                    <rect key="frame" x="60" y="28" width="31" height="11"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="9"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRE-1A-gS3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="62" height="64"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="48" height="64"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvN-4w-TfF">
-                                                            <rect key="frame" x="0.0" y="0.0" width="62" height="45"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="48" height="45"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMr-Mt-5rM">
-                                                            <rect key="frame" x="20.5" y="45" width="41.5" height="19"/>
+                                                            <rect key="frame" x="16" y="45" width="32" height="19"/>
                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="imageView:5c1-R7-W3C:image" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-R7-W3C">
-                                                            <rect key="frame" x="0.0" y="45" width="20.5" height="19"/>
+                                                            <rect key="frame" x="0.0" y="45" width="16" height="19"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -3662,13 +3662,13 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 nov 2016 - 14:08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CJ-DQ-WEJ">
-                                                                            <rect key="frame" x="266" y="11" width="84" height="12"/>
+                                                                            <rect key="frame" x="172" y="11" width="84" height="12"/>
                                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                                             <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exitoso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJo-Pa-FqK">
-                                                                            <rect key="frame" x="266" y="29" width="84" height="9"/>
+                                                                            <rect key="frame" x="172" y="29" width="84" height="9"/>
                                                                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="7"/>
                                                                             <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>

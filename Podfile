@@ -8,7 +8,6 @@ target 'Pay-me' do
   # Pods for Pay-me
   pod 'Fabric'
   pod 'Crashlytics'
-  pod 'Material'
   pod 'SWTableViewCell'
   pod 'Alamofire'
   pod 'AlamofireImage'
@@ -26,7 +25,6 @@ target 'Pay-me Development' do
     # Pods for Pay-me
     pod 'Fabric'
     pod 'Crashlytics'
-    pod 'Material'
     pod 'SWTableViewCell'
     pod 'Alamofire'
     pod 'AlamofireImage'
