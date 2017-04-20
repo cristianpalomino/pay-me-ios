@@ -6,6 +6,9 @@ PODS:
     - Fabric (~> 1.6.3)
   - Fabric (1.6.11)
   - FSCalendar (2.7.4)
+  - Material (2.6.3):
+    - Material/Core (= 2.6.3)
+  - Material/Core (2.6.3)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -19,6 +22,7 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - FSCalendar (from `https://github.com/WenchaoD/FSCalendar.git`, branch `development`)
+  - Material (from `https://github.com/Gaantz/Material.git`, branch `master`)
   - SDWebImage
   - SVProgressHUD
   - SwiftyJSON
@@ -28,11 +32,17 @@ EXTERNAL SOURCES:
   FSCalendar:
     :branch: development
     :git: https://github.com/WenchaoD/FSCalendar.git
+  Material:
+    :branch: master
+    :git: https://github.com/Gaantz/Material.git
 
 CHECKOUT OPTIONS:
   FSCalendar:
-    :commit: abb6f7065e422c8098653879a1591cc78607ded6
+    :commit: ec6e23cec681b1382075a73cbfa7e7d7da614dac
     :git: https://github.com/WenchaoD/FSCalendar.git
+  Material:
+    :commit: 86558906f0f85a68d16776af17ecb636ec77aaae
+    :git: https://github.com/Gaantz/Material.git
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -40,11 +50,12 @@ SPEC CHECKSUMS:
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   FSCalendar: e95995a746acae531c4a7dd636b8393233125ec5
+  Material: 68440da8f2564c19344d5da2ee5dde5618be5f95
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
 
-PODFILE CHECKSUM: 268c6a0832ed49726336fa0175ae3f0661237908
+PODFILE CHECKSUM: 71759460c957cc08068db58374eb5bf8365934d9
 
 COCOAPODS: 1.2.0

@@ -14,6 +14,7 @@ target 'Pay-me' do
   pod 'SwiftyJSON'
   pod 'SVProgressHUD'
   pod 'SDWebImage'
+  pod 'Material' , git: 'https://github.com/Gaantz/Material.git', branch: 'master'
   pod 'FSCalendar' , git: 'https://github.com/WenchaoD/FSCalendar.git', branch: 'development'
   
 end
@@ -31,6 +32,7 @@ target 'Pay-me Development' do
     pod 'SwiftyJSON'
     pod 'SVProgressHUD'
     pod 'SDWebImage'
+    pod 'Material' , git: 'https://github.com/Gaantz/Material.git', branch: 'master'
     pod 'FSCalendar' , git: 'https://github.com/WenchaoD/FSCalendar.git', branch: 'development'
     
 end

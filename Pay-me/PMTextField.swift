@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Material
 
 class PMTextField: TextField {
 
@@ -19,8 +20,8 @@ extension PMTextField {
         self.placeholderNormalColor = UIColor.lightGray
         self.dividerActiveColor = UIColor.appGrayColor()
         self.dividerNormalColor = UIColor.appGrayColor()
-        self.dividerNormalHeight = 1
-        self.placeholderVerticalOffset = 10
+        //self.dividerNormalHeight = 1
+        //self.placeholderVerticalOffset = 10
     }
     
     func setPMThemeServiceConfiguration() {
@@ -29,6 +30,6 @@ extension PMTextField {
         //self.dividerActiveColor = UIColor.appGrayColor()
         //self.dividerNormalColor = UIColor.appGrayColor()
         //self.dividerNormalHeight = 1
-        self.placeholderVerticalOffset = 5
+        //self.placeholderVerticalOffset = 5
     }
 }

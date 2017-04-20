@@ -891,13 +891,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p97-0Q-tCj">
-                                        <rect key="frame" x="32" y="274.5" width="268" height="17"/>
+                                        <rect key="frame" x="32" y="266.5" width="268" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-qb-yAK" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="319.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="315.5" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done"/>
@@ -910,10 +910,10 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="AEi-sZ-HCy" secondAttribute="trailing" id="2Cd-WM-jUP"/>
                                     <constraint firstItem="LmE-qb-yAK" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" constant="32" id="6QH-Kg-F5a"/>
-                                    <constraint firstItem="LmE-qb-yAK" firstAttribute="top" secondItem="p97-0Q-tCj" secondAttribute="bottom" constant="28" id="AZT-TV-BOX"/>
+                                    <constraint firstItem="LmE-qb-yAK" firstAttribute="top" secondItem="p97-0Q-tCj" secondAttribute="bottom" constant="32" id="AZT-TV-BOX"/>
                                     <constraint firstAttribute="trailing" secondItem="LmE-qb-yAK" secondAttribute="trailing" constant="20" id="D2A-J1-KKE"/>
                                     <constraint firstItem="l48-TN-wPL" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" id="DSX-8S-b7a"/>
-                                    <constraint firstItem="p97-0Q-tCj" firstAttribute="top" secondItem="l48-TN-wPL" secondAttribute="bottom" constant="44" id="Glo-Ad-79M"/>
+                                    <constraint firstItem="p97-0Q-tCj" firstAttribute="top" secondItem="l48-TN-wPL" secondAttribute="bottom" constant="36" id="Glo-Ad-79M"/>
                                     <constraint firstItem="AEi-sZ-HCy" firstAttribute="top" secondItem="y6S-wI-0NJ" secondAttribute="top" id="Nth-Qs-HPT"/>
                                     <constraint firstItem="p97-0Q-tCj" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" constant="32" id="YTB-Nn-YIB"/>
                                     <constraint firstItem="AEi-sZ-HCy" firstAttribute="leading" secondItem="y6S-wI-0NJ" secondAttribute="leading" id="gyf-VZ-L9b"/>
@@ -1022,7 +1022,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxr-gX-Bwu">
-                                        <rect key="frame" x="32" y="104.5" width="268" height="18"/>
+                                        <rect key="frame" x="32" y="96.5" width="268" height="18"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1054,7 +1054,7 @@
                                         </constraints>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WLAN 34 572 C" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-UZ-AMa" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="150.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="146.5" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -1091,9 +1091,9 @@
                                     <constraint firstAttribute="bottom" secondItem="wBW-b8-AAo" secondAttribute="bottom" id="IYZ-U4-Gn3"/>
                                     <constraint firstAttribute="trailing" secondItem="zL7-QE-QZd" secondAttribute="trailing" id="JN2-my-yaF"/>
                                     <constraint firstItem="wBW-b8-AAo" firstAttribute="top" secondItem="zL7-QE-QZd" secondAttribute="bottom" id="JYJ-m7-oxl"/>
-                                    <constraint firstItem="ilb-sR-EOo" firstAttribute="top" secondItem="Unn-UZ-AMa" secondAttribute="bottom" constant="28" id="Pk6-dG-NPh"/>
+                                    <constraint firstItem="ilb-sR-EOo" firstAttribute="top" secondItem="Unn-UZ-AMa" secondAttribute="bottom" constant="32" id="Pk6-dG-NPh"/>
                                     <constraint firstItem="wBW-b8-AAo" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" id="ROJ-4Y-mCB"/>
-                                    <constraint firstItem="qxr-gX-Bwu" firstAttribute="top" secondItem="Esk-77-40F" secondAttribute="bottom" constant="44" id="Sg6-J8-x8H"/>
+                                    <constraint firstItem="qxr-gX-Bwu" firstAttribute="top" secondItem="Esk-77-40F" secondAttribute="bottom" constant="36" id="Sg6-J8-x8H"/>
                                     <constraint firstAttribute="trailing" secondItem="zL7-QE-QZd" secondAttribute="trailing" id="Y2s-ud-wUs"/>
                                     <constraint firstAttribute="trailing" secondItem="Esk-77-40F" secondAttribute="trailing" id="bNX-Vw-amw"/>
                                     <constraint firstItem="zL7-QE-QZd" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" id="biJ-Gi-F5t"/>
@@ -1104,7 +1104,7 @@
                                     <constraint firstAttribute="trailing" secondItem="ilb-sR-EOo" secondAttribute="trailing" constant="20" id="jZJ-cj-7yb"/>
                                     <constraint firstAttribute="trailing" secondItem="wBW-b8-AAo" secondAttribute="trailing" id="kC6-6n-l5z"/>
                                     <constraint firstAttribute="trailing" secondItem="qxr-gX-Bwu" secondAttribute="trailing" constant="20" id="ksV-iv-WPm"/>
-                                    <constraint firstItem="Unn-UZ-AMa" firstAttribute="top" secondItem="qxr-gX-Bwu" secondAttribute="bottom" constant="28" id="l7G-gu-v7U"/>
+                                    <constraint firstItem="Unn-UZ-AMa" firstAttribute="top" secondItem="qxr-gX-Bwu" secondAttribute="bottom" constant="32" id="l7G-gu-v7U"/>
                                     <constraint firstAttribute="trailing" secondItem="Unn-UZ-AMa" secondAttribute="trailing" constant="20" id="lPJ-b7-93C"/>
                                     <constraint firstItem="ilb-sR-EOo" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" constant="32" id="qya-jt-1wb"/>
                                 </constraints>
