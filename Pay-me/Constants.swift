@@ -86,6 +86,7 @@ struct Constants {
             static let kToEmpresas              = "kToEmpresas"
             static let kToValidacionServicio    = "kToValidacionServicio"
             static let kDetailSuministro        = "kToDetailSuministro"
+            static let kToListDetailSuministro  = "kToListDetailSuministro"
             static let kRecibo                  = "kRecibo"
             static let kListServices            = "kToListServices"
         }

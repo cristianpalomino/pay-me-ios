@@ -10,24 +10,36 @@ import UIKit
 
 class PMListaServiciosViewController: PMViewController {
 
-    var servicios = [String]()
-    @IBOutlet weak var tableview: UITableView!
+    override var headerTitle: String {
+        guard let title = Session.sharedInstance.current.item?.empresa.shortName else {
+            return "NONE"
+        }
+        return title
+    }
+    
+    var apiResponse:        ResponseConsultarDeudas?
+    var serviceIdentifier:  String?
+    
+    @IBOutlet weak var tableview:               UITableView!
+    @IBOutlet weak var imageViewBanner:         UIImageView!
+    @IBOutlet weak var labelNameIdentifier:     UILabel!
+    @IBOutlet weak var labelIdentifier:         UILabel!
+    @IBOutlet weak var buttonRecordadServicio:  UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+}
+
+extension PMListaServiciosViewController {
     
     override func initComponents() {
-        //txtEmision.setPMTheme()
-        //txtVencimiento.setPMTheme()
-        //servicios = ["0","1","2","3","5"]
+        super.initComponents()
+        self.tableview.reloadData()
     }
 }
 
@@ -45,12 +57,12 @@ extension PMListaServiciosViewController: UITableViewDelegate {
 extension PMListaServiciosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return servicios.count
+        return self.apiResponse?.debts.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ServiceTableViewCell.identifier, for: indexPath) as! ServiceTableViewCell
-        cell.title = servicios[indexPath.row]
+        cell.title = self.apiResponse!.debts[indexPath.row]
         return cell
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -27,17 +27,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No se ha encontrado recibos asociados a este servicio, al  guardarlo se le revisará el próximo pago" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9R-gO-yzF">
-                    <rect key="frame" x="67" y="16" width="248" height="143"/>
+                    <rect key="frame" x="53" y="16" width="498" height="143"/>
                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="12"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZQ-y4-hk0">
-                    <rect key="frame" x="16" y="70" width="35" height="35"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="35" id="Mit-Nj-ILl"/>
-                        <constraint firstAttribute="height" constant="35" id="ZuK-vS-htp"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icono_no_asociado" translatesAutoresizingMaskIntoConstraints="NO" id="bZQ-y4-hk0">
+                    <rect key="frame" x="16" y="77" width="21" height="21"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -48,7 +44,6 @@
                 <constraint firstItem="bZQ-y4-hk0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PqW-g3-TS8"/>
                 <constraint firstItem="bZQ-y4-hk0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="VRd-rT-dgN"/>
                 <constraint firstAttribute="bottom" secondItem="Q9R-gO-yzF" secondAttribute="bottom" constant="16" id="bfJ-y3-F5K"/>
-                <constraint firstAttribute="trailing" secondItem="Q9R-gO-yzF" secondAttribute="trailing" constant="16" id="s8R-a5-yTw"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
@@ -56,4 +51,7 @@
             <point key="canvasLocation" x="11.5" y="-191.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icono_no_asociado" width="21" height="21"/>
+    </resources>
 </document>

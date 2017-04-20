@@ -11,10 +11,11 @@ import UIKit
 class ServiceTableViewCell: UITableViewCell {
     static let identifier = "ServicioCell"
 
-    @IBOutlet weak var add: UIView!
-    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var imageViewService:    UIImageView!
+    @IBOutlet weak var labelNameService:    UILabel!
+    @IBOutlet weak var labelSolicitar:      UILabel!
     
-    internal var title: String! {
+    internal var debt: Debt! {
         didSet {
             if title == "0" || title == "2" {
                 defaultStyle()

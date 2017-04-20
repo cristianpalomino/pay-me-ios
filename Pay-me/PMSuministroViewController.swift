@@ -58,9 +58,15 @@ class PMSuministroViewController: PMViewController {
         
         if identifier == Constants.Storyboard.Segues.kDetailSuministro {
             let detalleViewController = segue.destination as! PMDetalleSuministroViewController
-            if apiResponse != nil {
+            if self.apiResponse != nil {
                 detalleViewController.serviceIdentifier = self.txtIndentifier.text!
                 detalleViewController.apiResponse = self.apiResponse
+            }
+        } else if identifier == Constants.Storyboard.Segues.kDetailSuministro {
+            let listaServiciosController = segue.destination as! PMListaServiciosViewController
+            if self.apiResponse != nil {
+                listaServiciosController.serviceIdentifier = self.txtIndentifier.text!
+                listaServiciosController.servicios = self.apiResponse
             }
         }
     }
@@ -147,7 +153,13 @@ extension PMSuministroViewController: ConsultarDeudasDelegate {
     
     func serviceSuccess(response: ResponseConsultarDeudas) {
         self.apiResponse = response
-        self.toSegue(identifier: Constants.Storyboard.Segues.kDetailSuministro)
+        
+        if response.debts.count > 1 {
+            self.toSegue(identifier: Constants.Storyboard.Segues.kToListDetailSuministro)
+        }
+        else {
+            self.toSegue(identifier: Constants.Storyboard.Segues.kDetailSuministro)
+        }
     }
     
     func serviceFailed(error: PaymeError) {
