@@ -1364,7 +1364,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKw-Rs-Dr6" id="4HY-UV-JGl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RrU-4Y-92p">
@@ -1381,58 +1381,74 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ext-MD-MVM">
-                                                    <rect key="frame" x="66" y="7" width="28.5" height="17"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14"/>
+                                                    <rect key="frame" x="66" y="10" width="134" height="16"/>
+                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="13"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yll-3I-eMu">
-                                                    <rect key="frame" x="66" y="41" width="57.5" height="12"/>
+                                                    <rect key="frame" x="66" y="44.5" width="134" height="12"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s/ 1,000.70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-tj-qTr">
-                                                    <rect key="frame" x="228.5" y="10" width="79.5" height="21"/>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="18"/>
-                                                    <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Estado   " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnC-EW-HX6">
-                                                    <rect key="frame" x="274" y="42" width="34" height="12"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WS-dd-EiZ">
+                                                    <rect key="frame" x="208" y="0.0" width="112" height="64.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s/ 1,000.70" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plE-tj-qTr">
+                                                            <rect key="frame" x="8" y="8" width="96" height="21"/>
+                                                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="18"/>
+                                                            <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Estado   " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnC-EW-HX6">
+                                                            <rect key="frame" x="70" y="44.5" width="34" height="12"/>
+                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="12" id="dOD-3v-aZJ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="8"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="12" id="dOD-3v-aZJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="plE-tj-qTr" secondAttribute="trailing" constant="8" id="52H-qb-KuA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hnC-EW-HX6" secondAttribute="trailing" constant="8" id="JGZ-0W-WiO"/>
+                                                        <constraint firstItem="plE-tj-qTr" firstAttribute="leading" secondItem="4WS-dd-EiZ" secondAttribute="leading" constant="8" id="Y70-ap-0KS"/>
+                                                        <constraint firstAttribute="bottom" secondItem="hnC-EW-HX6" secondAttribute="bottom" constant="8" id="hrw-n5-wPQ"/>
+                                                        <constraint firstItem="plE-tj-qTr" firstAttribute="top" secondItem="4WS-dd-EiZ" secondAttribute="top" constant="8" id="jVf-lg-d5u"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="8"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                </label>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90m-WB-pks">
-                                                    <rect key="frame" x="66" y="26" width="37.5" height="13"/>
+                                                    <rect key="frame" x="66" y="26" width="134" height="13"/>
                                                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="11"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="90m-WB-pks" firstAttribute="top" secondItem="Ext-MD-MVM" secondAttribute="bottom" constant="2" id="AyE-dG-sEt"/>
-                                                <constraint firstItem="Ext-MD-MVM" firstAttribute="leading" secondItem="APQ-Tk-PEq" secondAttribute="trailing" constant="8" id="C9s-An-Ncn"/>
-                                                <constraint firstItem="90m-WB-pks" firstAttribute="leading" secondItem="APQ-Tk-PEq" secondAttribute="trailing" constant="8" id="CVR-Tz-bPy"/>
-                                                <constraint firstAttribute="trailing" secondItem="plE-tj-qTr" secondAttribute="trailing" constant="12" id="ITS-DM-KaV"/>
+                                                <constraint firstItem="4WS-dd-EiZ" firstAttribute="width" secondItem="4HY-UV-JGl" secondAttribute="width" multiplier="0.35" id="2Qm-ac-qba"/>
+                                                <constraint firstItem="4WS-dd-EiZ" firstAttribute="leading" secondItem="yll-3I-eMu" secondAttribute="trailing" constant="8" id="5K2-0H-31x"/>
+                                                <constraint firstAttribute="bottom" secondItem="yll-3I-eMu" secondAttribute="bottom" constant="8" id="5PK-b4-kG6"/>
+                                                <constraint firstItem="90m-WB-pks" firstAttribute="centerY" secondItem="APQ-Tk-PEq" secondAttribute="centerY" id="6Xi-xB-kPG"/>
+                                                <constraint firstItem="4WS-dd-EiZ" firstAttribute="top" secondItem="4HY-UV-JGl" secondAttribute="top" id="PmC-Ui-RIm"/>
                                                 <constraint firstItem="APQ-Tk-PEq" firstAttribute="height" secondItem="RrU-4Y-92p" secondAttribute="height" id="Sdh-Nu-XnF"/>
-                                                <constraint firstAttribute="bottom" secondItem="hnC-EW-HX6" secondAttribute="bottom" constant="10" id="Te4-yr-xv9"/>
-                                                <constraint firstItem="plE-tj-qTr" firstAttribute="top" secondItem="4HY-UV-JGl" secondAttribute="top" constant="10" id="X59-yX-nyL"/>
                                                 <constraint firstItem="APQ-Tk-PEq" firstAttribute="centerX" secondItem="RrU-4Y-92p" secondAttribute="centerX" id="Z0I-96-0Y8"/>
-                                                <constraint firstItem="90m-WB-pks" firstAttribute="centerY" secondItem="APQ-Tk-PEq" secondAttribute="centerY" id="ZEG-UT-qAG"/>
+                                                <constraint firstAttribute="bottom" secondItem="4WS-dd-EiZ" secondAttribute="bottom" id="akv-8f-yF1"/>
+                                                <constraint firstItem="yll-3I-eMu" firstAttribute="leading" secondItem="APQ-Tk-PEq" secondAttribute="trailing" constant="8" id="dz3-GG-eDX"/>
                                                 <constraint firstItem="APQ-Tk-PEq" firstAttribute="width" secondItem="RrU-4Y-92p" secondAttribute="width" id="faq-b2-fdF"/>
                                                 <constraint firstItem="APQ-Tk-PEq" firstAttribute="centerY" secondItem="RrU-4Y-92p" secondAttribute="centerY" id="fmS-Mb-UTr"/>
-                                                <constraint firstItem="yll-3I-eMu" firstAttribute="leading" secondItem="APQ-Tk-PEq" secondAttribute="trailing" constant="8" id="hoy-VZ-IT5"/>
+                                                <constraint firstItem="90m-WB-pks" firstAttribute="leading" secondItem="APQ-Tk-PEq" secondAttribute="trailing" constant="8" id="i2v-YP-sPg"/>
+                                                <constraint firstItem="4WS-dd-EiZ" firstAttribute="leading" secondItem="Ext-MD-MVM" secondAttribute="trailing" constant="8" id="l7s-aj-SNY"/>
+                                                <constraint firstAttribute="trailing" secondItem="4WS-dd-EiZ" secondAttribute="trailing" id="lkh-8L-w2x"/>
                                                 <constraint firstItem="RrU-4Y-92p" firstAttribute="centerY" secondItem="4HY-UV-JGl" secondAttribute="centerY" id="pId-QO-Ioe"/>
-                                                <constraint firstAttribute="trailing" secondItem="hnC-EW-HX6" secondAttribute="trailing" constant="12" id="sDN-Oj-cDs"/>
+                                                <constraint firstItem="4WS-dd-EiZ" firstAttribute="leading" secondItem="90m-WB-pks" secondAttribute="trailing" constant="8" id="pe4-cI-AbC"/>
+                                                <constraint firstItem="Ext-MD-MVM" firstAttribute="top" secondItem="4HY-UV-JGl" secondAttribute="top" constant="10" id="snc-dS-Dh3"/>
                                                 <constraint firstItem="RrU-4Y-92p" firstAttribute="leading" secondItem="4HY-UV-JGl" secondAttribute="leading" constant="12" id="srv-kK-6gk"/>
-                                                <constraint firstItem="yll-3I-eMu" firstAttribute="top" secondItem="90m-WB-pks" secondAttribute="bottom" constant="2" id="uWA-dT-1YN"/>
+                                                <constraint firstItem="Ext-MD-MVM" firstAttribute="leading" secondItem="APQ-Tk-PEq" secondAttribute="trailing" constant="8" id="yJK-S9-3Hv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

@@ -65,6 +65,7 @@ extension PMListaServiciosViewController {
 extension PMListaServiciosViewController {
     
     @IBAction func tapRecordarServicios() {
+        self.showHUD()
         self.callAddServices()
     }
 }
@@ -129,6 +130,7 @@ extension PMListaServiciosViewController: PMListaServiciosViewControllerServices
 extension PMListaServiciosViewController: AgregarServicioDelegate {
     
     internal func serviceSuccess(response: ResponseAgregarServicio) {
+        self.hideHUD()
         self.showMessage()
     }
     

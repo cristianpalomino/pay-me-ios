@@ -12,10 +12,12 @@ import SVProgressHUD
 extension UIViewController {
     
     func showHUD() {
+        self.view.isUserInteractionEnabled = false
         SVProgressHUD.show()
     }
     
     func hideHUD() {
+        self.view.isUserInteractionEnabled = true
         SVProgressHUD.dismiss()
     }
 }

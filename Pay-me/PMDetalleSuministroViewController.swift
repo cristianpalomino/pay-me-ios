@@ -79,7 +79,7 @@ extension PMDetalleSuministroViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             message.touchView()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-                self.tabBarController!.selectedIndex = 0
+                self.navigationController?.popToRootViewController(animated: true)
             }
         }
     }
@@ -109,17 +109,15 @@ extension PMDetalleSuministroViewController: DetalleSuministroViewControllerServ
 extension PMDetalleSuministroViewController {
     
     @IBAction func tapButton() {
-        if hasManyServices {
-            self.toSegue(identifier: Constants.Storyboard.Segues.kListServices)
-        } else {
-            self.callAddServices()
-        }
+        self.showHUD()
+        self.callAddServices()
     }
 }
 
 extension PMDetalleSuministroViewController: AgregarServicioDelegate {
     
     internal func serviceSuccess(response: ResponseAgregarServicio) {
+        self.hideHUD()
         self.showMessage()
     }
     
