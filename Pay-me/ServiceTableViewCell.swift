@@ -10,10 +10,9 @@ import UIKit
 
 class ServiceTableViewCell: UITableViewCell {
     static let identifier = "ServicioCell"
-
-    var state: Bool = false
     
     @IBOutlet weak var imageViewService:    UIImageView!
+    @IBOutlet weak var imageViewState:      UIImageView!
     @IBOutlet weak var labelNameService:    UILabel!
     @IBOutlet weak var labelSolicitar:      UILabel!
     
@@ -24,13 +23,15 @@ class ServiceTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        self.imageViewState.image = selected ? UIImage(named: "icono_check") : UIImage(named: "icono_agregar")
     }
 }
 
 extension ServiceTableViewCell {
     
     func set(debt: Debt) {
-        self.labelNameService.text = debt.nameService
+        self.labelNameService.text = debt.nameService.capitalized
+        self.imageViewState.image = isSelected ? UIImage(named: "icono_check") : UIImage(named: "icono_agregar")
     }
 }
 

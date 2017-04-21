@@ -20,7 +20,7 @@ extension PMTextField {
         self.placeholderNormalColor = UIColor.lightGray
         self.dividerActiveColor = UIColor.appGrayColor()
         self.dividerNormalColor = UIColor.appGrayColor()
-        //self.dividerNormalHeight = 1
+        self.dividerNormalHeight = 1
         //self.placeholderVerticalOffset = 10
     }
     
@@ -29,7 +29,7 @@ extension PMTextField {
         self.placeholderNormalColor = UIColor.lightGray
         //self.dividerActiveColor = UIColor.appGrayColor()
         //self.dividerNormalColor = UIColor.appGrayColor()
-        //self.dividerNormalHeight = 1
+        self.dividerNormalHeight = 1
         //self.placeholderVerticalOffset = 5
     }
 }

@@ -17,6 +17,7 @@ class PMListaServiciosViewController: PMViewController {
         return title
     }
     
+    var bebtsSelecteds =    [Debt]()
     var apiResponse:        ResponseConsultarDeudas?
     var serviceIdentifier:  String?
     var imageBanner:        UIImage?
@@ -40,8 +41,17 @@ extension PMListaServiciosViewController {
     
     override func initComponents() {
         super.initComponents()
+        self.labelIdentifier.text = self.serviceIdentifier
         self.imageViewBanner.image = self.imageBanner
+        self.tableview.allowsMultipleSelection = true
         self.tableview.reloadData()
+    }
+}
+
+extension PMListaServiciosViewController {
+    
+    @IBAction func tapRecordarServicios() {
+        
     }
 }
 
@@ -51,9 +61,9 @@ extension PMListaServiciosViewController: UITableViewDelegate {
         return 65
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showMessage(type: .SERVICE_SAVED)
-    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) { }
 }
 
 extension PMListaServiciosViewController: UITableViewDataSource {

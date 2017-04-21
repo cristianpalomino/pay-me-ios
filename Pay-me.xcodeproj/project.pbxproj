@@ -198,6 +198,8 @@
 		4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89E1EA7C34000403292 /* PMInfoView.swift */; };
 		4F43D8A21EA7C34F00403292 /* PMInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F43D8A11EA7C34F00403292 /* PMInfoView.xib */; };
 		4F43D8A31EA7C34F00403292 /* PMInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F43D8A11EA7C34F00403292 /* PMInfoView.xib */; };
+		4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
+		4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
@@ -333,6 +335,7 @@
 		4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUITableViewController.swift; sourceTree = "<group>"; };
 		4F43D89E1EA7C34000403292 /* PMInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMInfoView.swift; sourceTree = "<group>"; };
 		4F43D8A11EA7C34F00403292 /* PMInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMInfoView.xib; sourceTree = "<group>"; };
+		4F43D8BD1EAA52F500403292 /* EProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EProtocols.swift; sourceTree = "<group>"; };
 		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
@@ -780,6 +783,7 @@
 				400190971E64EC220080DDA4 /* UIViewController.swift */,
 				4FF780431EA66389002D4703 /* EPMViewController.swift */,
 				4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */,
+				4F43D8BD1EAA52F500403292 /* EProtocols.swift */,
 			);
 			name = ExtendedClass;
 			sourceTree = "<group>";
@@ -1202,6 +1206,7 @@
 				4062C16F1E3D0FBB00617265 /* ServiciosApi.swift in Sources */,
 				401CC6701E538290001911F2 /* PMViews.swift in Sources */,
 				4062C15E1E3BF7EB00617265 /* ApiUtil.swift in Sources */,
+				4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */,
 				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
 				404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
@@ -1303,6 +1308,7 @@
 				408CB6D91E54E73D00D308D3 /* PMHeaderButton.swift in Sources */,
 				408CB6DA1E54E73D00D308D3 /* ServiciosApi.swift in Sources */,
 				408CB6DB1E54E73D00D308D3 /* PMViews.swift in Sources */,
+				4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */,
 				408CB6DC1E54E73D00D308D3 /* ApiUtil.swift in Sources */,
 				408CB6DD1E54E73D00D308D3 /* RecibosViewController.swift in Sources */,
 				408CB6DE1E54E73D00D308D3 /* PMMessageViewController.swift in Sources */,

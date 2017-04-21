@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import UIKit
 
 class Debt {
     
@@ -53,5 +54,17 @@ extension Debt {
         static let kCurrencyName         = "currencyName"
         static let kEmissionDate         = "emissionDate"
         static let kNameService          = "nameService"
+    }
+}
+
+extension Debt: Selectable {
+    
+    var isSelected: Bool {
+        get {
+            return false
+        }
+        set(newValue) {
+        
+        }
     }
 }
