@@ -20,6 +20,7 @@ class Debt {
     var totalAmount     :String!
     var currencyName    :String!
     var emissionDate    :String!
+    var nameService     :String!
     
     init(json :JSON) {
         
@@ -32,6 +33,7 @@ class Debt {
         self.totalAmount        = json[Keys.kTotalAmount].stringValue
         self.currencyName       = json[Keys.kCurrencyName].stringValue
         self.emissionDate       = json[Keys.kEmissionDate].stringValue
+        self.nameService        = json[Keys.kNameService].stringValue
     }
 }
 
@@ -50,5 +52,6 @@ extension Debt {
         static let kTotalAmount          = "totalAmount"
         static let kCurrencyName         = "currencyName"
         static let kEmissionDate         = "emissionDate"
+        static let kNameService          = "nameService"
     }
 }

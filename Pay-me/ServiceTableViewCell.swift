@@ -11,70 +11,42 @@ import UIKit
 class ServiceTableViewCell: UITableViewCell {
     static let identifier = "ServicioCell"
 
+    var state: Bool = false
+    
     @IBOutlet weak var imageViewService:    UIImageView!
     @IBOutlet weak var labelNameService:    UILabel!
     @IBOutlet weak var labelSolicitar:      UILabel!
     
-    internal var debt: Debt! {
-        didSet {
-            if title == "0" || title == "2" {
-                defaultStyle()
-            }
-            else {
-                primaryStyle()
-            }
-        }
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         addStyles()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+}
 
+extension ServiceTableViewCell {
+    
+    func set(debt: Debt) {
+        self.labelNameService.text = debt.nameService
+    }
 }
 
 extension ServiceTableViewCell {
     
     func primaryStyle() {
-        //let side = self.add.frame.width
-        self.add.backgroundColor = UIColor.lightGray
-    }
-    
-    func defaultStyle() {
-        let side = self.add.frame.width
-        
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: side * 0.2, y: side * 0.5))
-        path.addLine(to: CGPoint(x: side * 0.8, y: side * 0.5))
-        path.move(to: CGPoint(x: side * 0.5, y: side * 0.2))
-        path.addLine(to: CGPoint(x: side * 0.5, y: side * 0.8))
-        path.close()
-        
-        let shape = CAShapeLayer()
-        shape.lineWidth = 1
-        shape.strokeColor = UIColor.lightGray.cgColor
-        shape.path = path.cgPath
-        
-        self.add.layer.addSublayer(shape)
+//        let side = self.add.frame.width
+//        self.add.backgroundColor = UIColor.lightGray
     }
 
     func addStyles() {
-        self.icon.layer.cornerRadius = self.icon.frame.height * 0.5
-        self.icon.layer.borderWidth = 1
-        self.icon.layer.borderColor = UIColor.lightGray.cgColor
-        self.add.layer.cornerRadius = self.add.frame.height * 0.5
-        self.add.layer.borderWidth = 1
-        self.add.layer.borderColor = UIColor.lightGray.cgColor
-        
-        self.icon.image = self.icon.image!.imageWithInsets(insetDimen: 20)
-        self.icon.image = icon.image!.withRenderingMode(.alwaysTemplate)
-        self.icon.tintColor = UIColor.appBlueColor()
+        self.imageViewService.layer.cornerRadius = self.imageViewService.frame.height * 0.5
+        self.imageViewService.layer.borderWidth = 1
+        self.imageViewService.layer.borderColor = UIColor.lightGray.cgColor
+        self.imageViewService.image = self.imageViewService.image!.imageWithInsets(insetDimen: 20)
+        self.imageViewService.image = imageViewService.image!.withRenderingMode(.alwaysTemplate)
+        self.imageViewService.tintColor = UIColor.appBlueColor()
     }
 }

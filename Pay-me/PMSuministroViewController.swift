@@ -62,11 +62,12 @@ class PMSuministroViewController: PMViewController {
                 detalleViewController.serviceIdentifier = self.txtIndentifier.text!
                 detalleViewController.apiResponse = self.apiResponse
             }
-        } else if identifier == Constants.Storyboard.Segues.kDetailSuministro {
+        } else if identifier == Constants.Storyboard.Segues.kToListDetailSuministro {
             let listaServiciosController = segue.destination as! PMListaServiciosViewController
             if self.apiResponse != nil {
                 listaServiciosController.serviceIdentifier = self.txtIndentifier.text!
-                listaServiciosController.servicios = self.apiResponse
+                listaServiciosController.apiResponse = self.apiResponse
+                listaServiciosController.imageBanner = self.imageBannerView.image
             }
         }
     }

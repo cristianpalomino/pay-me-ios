@@ -19,6 +19,7 @@ class PMListaServiciosViewController: PMViewController {
     
     var apiResponse:        ResponseConsultarDeudas?
     var serviceIdentifier:  String?
+    var imageBanner:        UIImage?
     
     @IBOutlet weak var tableview:               UITableView!
     @IBOutlet weak var imageViewBanner:         UIImageView!
@@ -39,6 +40,7 @@ extension PMListaServiciosViewController {
     
     override func initComponents() {
         super.initComponents()
+        self.imageViewBanner.image = self.imageBanner
         self.tableview.reloadData()
     }
 }
@@ -62,7 +64,10 @@ extension PMListaServiciosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ServiceTableViewCell.identifier, for: indexPath) as! ServiceTableViewCell
-        cell.title = self.apiResponse!.debts[indexPath.row]
+        
+        let debt = self.apiResponse!.debts[indexPath.row]
+        cell.set(debt: debt)
+        
         return cell
     }
 }

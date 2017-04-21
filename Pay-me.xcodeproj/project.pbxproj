@@ -734,7 +734,6 @@
 		40CF1E3B1E04ADDA0072CB29 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -769,6 +768,7 @@
 			children = (
 				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
 				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
+				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
