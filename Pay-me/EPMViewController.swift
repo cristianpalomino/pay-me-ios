@@ -52,10 +52,11 @@ extension PMViewController {
         self.view.layer.addSublayer(border)
     }
     
-    func showMessage(type :MessageType) {
+    func showMessage(type :MessageType) -> UINavigationController {
         Session.sharedInstance.messageType = type
         let message = UIStoryboard.createMessage()
         self.present(message, animated: true, completion: nil)
+        return message
     }
 }
 

@@ -481,6 +481,7 @@
 				40A420181E2358E700D74D22 /* Recibos */,
 				400190831E647CA30080DDA4 /* Favoritos */,
 				4062C1421E380F3600617265 /* AdicionarServicio */,
+				404672DB1E14656800A578EA /* Messages */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -630,7 +631,6 @@
 		408E501C1DFB67F8007BEEDE /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				404672DB1E14656800A578EA /* Messages */,
 				4F1898431E11B7E80060DD41 /* Notify */,
 			);
 			name = UI;

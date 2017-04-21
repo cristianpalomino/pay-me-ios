@@ -44,7 +44,7 @@ extension FavoritoTableViewCell {
     func update(service :Service) {
         let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS)
         
-        self.updateImage(url: item?.logo_2 ?? "NONE")
+        self.updateImage(url: item?.logo ?? "NONE")
     
         if service.inSPR == "1" {
             self.defineState(state: .CARGOS_RECURRENTES)
@@ -52,7 +52,13 @@ extension FavoritoTableViewCell {
             self.defineState(state: service.state)
         }
         
-        self.name.text      = service.alias ?? "NONE"
+        if let name = service.alias {
+            self.name.text = name
+        } else {
+            self.name.text = item?.empresa.name ?? "NONE"
+            self.entidad.isHidden = true
+        }
+        
         self.entidad.text   = item?.empresa.name ?? "NONE"
         self.code.text      = service.serviceIdentifier ?? "NONE"
         

@@ -22,6 +22,7 @@ class Debt {
     var currencyName    :String!
     var emissionDate    :String!
     var nameService     :String!
+    var idService       :String!
     
     init(json :JSON) {
         
@@ -35,6 +36,7 @@ class Debt {
         self.currencyName       = json[Keys.kCurrencyName].stringValue
         self.emissionDate       = json[Keys.kEmissionDate].stringValue
         self.nameService        = json[Keys.kNameService].stringValue
+        self.idService          = json[Keys.kIdService].stringValue
     }
 }
 
@@ -54,17 +56,6 @@ extension Debt {
         static let kCurrencyName         = "currencyName"
         static let kEmissionDate         = "emissionDate"
         static let kNameService          = "nameService"
-    }
-}
-
-extension Debt: Selectable {
-    
-    var isSelected: Bool {
-        get {
-            return false
-        }
-        set(newValue) {
-        
-        }
+        static let kIdService            = "idService"
     }
 }

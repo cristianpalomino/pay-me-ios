@@ -73,6 +73,16 @@ extension PMDetalleSuministroViewController {
             self.buttonView.setTitle("Recordar Servicio", for: .normal)
         }
     }
+    
+    func showMessage() {
+        let message = showMessage(type: .SERVICE_SAVED)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            message.touchView()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                self.tabBarController!.selectedIndex = 0
+            }
+        }
+    }
 }
 
 extension PMDetalleSuministroViewController: DetalleSuministroViewControllerServicesDelegate {
@@ -110,7 +120,7 @@ extension PMDetalleSuministroViewController {
 extension PMDetalleSuministroViewController: AgregarServicioDelegate {
     
     internal func serviceSuccess(response: ResponseAgregarServicio) {
-        showMessage(type: .SERVICE_SAVED)
+        self.showMessage()
     }
     
     internal func serviceFailed(error: PaymeError) {

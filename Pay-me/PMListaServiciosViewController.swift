@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import SwiftyJSON
 
 class PMListaServiciosViewController: PMViewController {
 
@@ -16,8 +18,7 @@ class PMListaServiciosViewController: PMViewController {
         }
         return title
     }
-    
-    var bebtsSelecteds =    [Debt]()
+
     var apiResponse:        ResponseConsultarDeudas?
     var serviceIdentifier:  String?
     var imageBanner:        UIImage?
@@ -50,8 +51,21 @@ extension PMListaServiciosViewController {
 
 extension PMListaServiciosViewController {
     
+    func showMessage() {
+        let message = showMessage(type: .SERVICE_SAVED)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            message.touchView()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                self.tabBarController!.selectedIndex = 0
+            }
+        }
+    }
+}
+
+extension PMListaServiciosViewController {
+    
     @IBAction func tapRecordarServicios() {
-        
+        self.callAddServices()
     }
 }
 
@@ -82,4 +96,50 @@ extension PMListaServiciosViewController: UITableViewDataSource {
     }
 }
 
+extension PMListaServiciosViewController: PMListaServiciosViewControllerServicesDelegate {
+    
+    internal func callAddServices() {
+        
+        if let response = self.apiResponse,
+            let item = Session.sharedInstance.current.item,
+            let identifier = self.serviceIdentifier {
+
+            let indexs = self.tableview.indexPathsForSelectedRows?.map({ $0.row })
+            var services = [Service]()
+            
+            indexs?.forEach {
+                i in
+                let debt = response.debts[i]
+                let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
+                                         Service.Keys.kIdServiceSPS     : debt.idService,
+                                         Service.Keys.kServiceIdentifier: identifier,
+                                         Service.Keys.kOwner            : response.clientName]
+                let service = Service(json: JSON(serviceAtributtes))
+                services.append(service)
+            }
+            
+            let request = RequestAgregarServicio(services: services)
+
+            PaymeServices.sharedInstance.serviciosServices.serviceAgregarServicio(request: request)
+            PaymeServices.sharedInstance.serviciosServices.agregarServicioDelegate = self
+        }
+    }
+}
+
+extension PMListaServiciosViewController: AgregarServicioDelegate {
+    
+    internal func serviceSuccess(response: ResponseAgregarServicio) {
+        self.showMessage()
+    }
+    
+    internal func serviceFailed(error: PaymeError) {
+        print("\(error.answerCode)\t\(error.answerMessage)")
+    }
+}
+
+
+protocol PMListaServiciosViewControllerServicesDelegate {
+    
+    func callAddServices()
+}
 

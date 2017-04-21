@@ -49,3 +49,10 @@ extension UIViewController {
         
     }
 }
+
+extension UIViewController {
+    
+    func touchView() {
+        self.dismiss(animated: true, completion: nil)
+    }
+}
