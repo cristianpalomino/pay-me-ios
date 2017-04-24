@@ -53,9 +53,9 @@ extension PMListaServiciosViewController {
     
     func showMessage() {
         let message = showMessage(type: .SERVICE_SAVED)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeA) {
             message.touchView()
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeB) {
                 self.navigationController?.popToRootViewController(animated: true)
             }
         }

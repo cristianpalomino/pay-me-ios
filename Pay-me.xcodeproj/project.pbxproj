@@ -208,6 +208,10 @@
 		4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
 		4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
 		4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
+		4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
+		4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
+		4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */; };
+		4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */; };
 		4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */; };
 		4FCFBE021E2838D90029EE40 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */; };
 		4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
@@ -344,6 +348,8 @@
 		4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleView.swift; sourceTree = "<group>"; };
 		4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMTitleView.xib; sourceTree = "<group>"; };
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationViewController.swift; sourceTree = "<group>"; };
 		4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAutomaticoViewController.swift; sourceTree = "<group>"; };
 		4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionNotificacionesViewController.swift; sourceTree = "<group>"; };
@@ -478,10 +484,12 @@
 			isa = PBXGroup;
 			children = (
 				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
-				40A420181E2358E700D74D22 /* Recibos */,
+				4FCC14A51EAE4C6E00D6E7BC /* Servicio */,
 				400190831E647CA30080DDA4 /* Favoritos */,
-				4062C1421E380F3600617265 /* AdicionarServicio */,
 				404672DB1E14656800A578EA /* Messages */,
+				404BBFB91E268F5A0050CA30 /* Agenda */,
+				40A420191E24039A00D74D22 /* Historico */,
+				4F1898431E11B7E80060DD41 /* Notify */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -494,7 +502,7 @@
 			name = Logs;
 			sourceTree = "<group>";
 		};
-		4062C1421E380F3600617265 /* AdicionarServicio */ = {
+		4062C1421E380F3600617265 /* Adicionar */ = {
 			isa = PBXGroup;
 			children = (
 				4F43D8A41EA8235500403292 /* Cells */,
@@ -505,7 +513,7 @@
 				407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */,
 				407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */,
 			);
-			name = AdicionarServicio;
+			name = Adicionar;
 			sourceTree = "<group>";
 		};
 		4062C1431E3B987E00617265 /* Security */ = {
@@ -581,17 +589,14 @@
 				405E0AB11E1A1D32008CF767 /* Enums */,
 				4062C1431E3B987E00617265 /* Security */,
 				405D23101E157CDA006ED043 /* Core */,
+				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				4062C1501E3BC43F00617265 /* Services */,
 				403C4A961E43D6420004AA6A /* Calls */,
 				4062C13D1E37B1B100617265 /* UI */,
-				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				408E501E1DFB7A6D007BEEDE /* Views */,
+				40180E5E1E021D230098B8C4 /* Controllers */,
 				408E501D1DFB6DF0007BEEDE /* Utils */,
 				4FF780421EA58503002D4703 /* ExtendedClass */,
-				404BBFB91E268F5A0050CA30 /* Agenda */,
-				40A420191E24039A00D74D22 /* Historico */,
-				40180E5E1E021D230098B8C4 /* Controllers */,
-				408E501B1DFB67DF007BEEDE /* Servicios */,
 				406EEA241DFB0D88005D2E87 /* Assets.xcassets */,
 				406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */,
 				406EEA291DFB0D88005D2E87 /* Info.plist */,
@@ -617,23 +622,6 @@
 				406EEA3F1DFB0D88005D2E87 /* Info.plist */,
 			);
 			path = "Pay-meUITests";
-			sourceTree = "<group>";
-		};
-		408E501B1DFB67DF007BEEDE /* Servicios */ = {
-			isa = PBXGroup;
-			children = (
-				40CF1E3B1E04ADDA0072CB29 /* Cells */,
-				408E501C1DFB67F8007BEEDE /* UI */,
-			);
-			name = Servicios;
-			sourceTree = "<group>";
-		};
-		408E501C1DFB67F8007BEEDE /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				4F1898431E11B7E80060DD41 /* Notify */,
-			);
-			name = UI;
 			sourceTree = "<group>";
 		};
 		408E501D1DFB6DF0007BEEDE /* Utils */ = {
@@ -670,16 +658,6 @@
 				4F43D8A11EA7C34F00403292 /* PMInfoView.xib */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		40A420181E2358E700D74D22 /* Recibos */ = {
-			isa = PBXGroup;
-			children = (
-				40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */,
-				40A420161E234C7D00D74D22 /* RecibosAViewController.swift */,
-				40A420101E20260D00D74D22 /* RecibosBViewController.swift */,
-			);
-			name = Recibos;
 			sourceTree = "<group>";
 		};
 		40A420191E24039A00D74D22 /* Historico */ = {
@@ -734,13 +712,6 @@
 			name = Beans;
 			sourceTree = "<group>";
 		};
-		40CF1E3B1E04ADDA0072CB29 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
 		40F40C631E26A58A0076C145 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,14 +747,35 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		4FCC14A41EAE4C6200D6E7BC /* Pagar */ = {
+			isa = PBXGroup;
+			children = (
+				40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */,
+				40A420161E234C7D00D74D22 /* RecibosAViewController.swift */,
+				40A420101E20260D00D74D22 /* RecibosBViewController.swift */,
+			);
+			name = Pagar;
+			sourceTree = "<group>";
+		};
+		4FCC14A51EAE4C6E00D6E7BC /* Servicio */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
+				4062C1421E380F3600617265 /* Adicionar */,
+			);
+			name = Servicio;
+			sourceTree = "<group>";
+		};
 		4FF780421EA58503002D4703 /* ExtendedClass */ = {
 			isa = PBXGroup;
 			children = (
 				4001908A1E6495150080DDA4 /* Currency.swift */,
+				4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */,
 				400190971E64EC220080DDA4 /* UIViewController.swift */,
 				4FF780431EA66389002D4703 /* EPMViewController.swift */,
 				4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */,
 				4F43D8BD1EAA52F500403292 /* EProtocols.swift */,
+				4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */,
 			);
 			name = ExtendedClass;
 			sourceTree = "<group>";
@@ -1158,6 +1150,7 @@
 				4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
+				4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */,
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
 				40293EF91E40D2DE007EF98D /* Debt.swift in Sources */,
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
@@ -1171,6 +1164,7 @@
 				4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */,
 				407C03621E0B1C1000CD5D4C /* PMListaServiciosViewController.swift in Sources */,
 				407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */,
+				4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */,
 				407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */,
 				40293EFD1E40E2E3007EF98D /* Product.swift in Sources */,
 				405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */,
@@ -1260,6 +1254,7 @@
 				408CB6A91E54E73D00D308D3 /* ServiceConfigurationViewController.swift in Sources */,
 				408CB6AA1E54E73D00D308D3 /* PMNivelTresViewController.swift in Sources */,
 				408CB6AB1E54E73D00D308D3 /* AppDelegate.swift in Sources */,
+				4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */,
 				408CB6AC1E54E73D00D308D3 /* PMTextField.swift in Sources */,
 				408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */,
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
@@ -1273,6 +1268,7 @@
 				408CB6B91E54E73D00D308D3 /* PMPin.swift in Sources */,
 				408CB6BA1E54E73D00D308D3 /* NotificacionTableViewCell.swift in Sources */,
 				408CB6BB1E54E73D00D308D3 /* PMListaServiciosViewController.swift in Sources */,
+				4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */,
 				408CB6BC1E54E73D00D308D3 /* FavoritoTableViewCell.swift in Sources */,
 				408CB6BD1E54E73D00D308D3 /* PMLabel.swift in Sources */,
 				408CB6BE1E54E73D00D308D3 /* Product.swift in Sources */,
@@ -1566,7 +1562,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1591,7 +1587,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.temp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";

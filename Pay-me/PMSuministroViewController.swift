@@ -26,6 +26,7 @@ class PMSuministroViewController: PMViewController {
     @IBOutlet weak var consultButtonBottomConstraint: NSLayoutConstraint!
     
     //Views
+    @IBOutlet weak var buttonConsultar:     UIButton!
     @IBOutlet weak var viewOpenInfo:        UIView!
     @IBOutlet weak var viewInfo:            PMInfoView!
     @IBOutlet weak var mainView:            UIView!
@@ -62,13 +63,6 @@ class PMSuministroViewController: PMViewController {
                 detalleViewController.serviceIdentifier = self.txtIndentifier.text!
                 detalleViewController.apiResponse = self.apiResponse
             }
-        } else if identifier == Constants.Storyboard.Segues.kToListDetailSuministro {
-            let listaServiciosController = segue.destination as! PMListaServiciosViewController
-            if self.apiResponse != nil {
-                listaServiciosController.serviceIdentifier = self.txtIndentifier.text!
-                listaServiciosController.apiResponse = self.apiResponse
-                listaServiciosController.imageBanner = self.imageBannerView.image
-            }
         }
     }
 }
@@ -77,6 +71,7 @@ extension PMSuministroViewController {
     
     override func initComponents() {
         super.initComponents()
+        self.buttonConsultar.setGradientBackground()
         self.txtIndentifier.setPMTheme()
         self.loadImages()
     }
@@ -154,13 +149,7 @@ extension PMSuministroViewController: ConsultarDeudasDelegate {
     
     func serviceSuccess(response: ResponseConsultarDeudas) {
         self.apiResponse = response
-        
-        if response.debts.count > 1 {
-            self.toSegue(identifier: Constants.Storyboard.Segues.kToListDetailSuministro)
-        }
-        else {
-            self.toSegue(identifier: Constants.Storyboard.Segues.kDetailSuministro)
-        }
+        self.toSegue(identifier: Constants.Storyboard.Segues.kDetailSuministro)
     }
     
     func serviceFailed(error: PaymeError) {

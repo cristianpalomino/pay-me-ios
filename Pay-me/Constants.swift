@@ -113,4 +113,10 @@ struct Constants {
             static let kServiciosFavoritos = Notification.Name("kUpdateServiciosFavoritos")
         }
     }
+    
+    struct Times {
+        
+        static let TimeA = 1.5
+        static let TimeB = 0.5
+    }
 }

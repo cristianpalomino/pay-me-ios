@@ -14,7 +14,8 @@ class PMListadoFavoritosViewController: PMViewController {
         return "Mis Favoritos"
     }
     
-    @IBOutlet weak var tableView:   UITableView!
+    @IBOutlet weak var buttonAgregarServicios: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     
     var serviciosFavoritos = Session.sharedInstance.serviciosFavoritos
     
@@ -29,6 +30,14 @@ class PMListadoFavoritosViewController: PMViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+}
+
+extension PMListadoFavoritosViewController {
+    
+    override func initComponents() {
+        super.initComponents()
+        self.buttonAgregarServicios.setGradientBackground()
     }
 }
 

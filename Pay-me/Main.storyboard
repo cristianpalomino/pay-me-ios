@@ -974,6 +974,7 @@
                         <outlet property="bannerView" destination="l48-TN-wPL" id="erX-68-mHR"/>
                         <outlet property="bigBannerView" destination="AEi-sZ-HCy" id="55k-GH-NNy"/>
                         <outlet property="btnInfo" destination="kMb-ll-Xpl" id="g6r-xp-WNE"/>
+                        <outlet property="buttonConsultar" destination="hep-f0-Svm" id="HTa-S0-0QW"/>
                         <outlet property="consultButtonBottomConstraint" destination="4IY-XJ-rQ0" id="g9c-zQ-nsb"/>
                         <outlet property="imageBannerView" destination="VCv-pD-21t" id="1wY-Ky-pqG"/>
                         <outlet property="imageBigBannerView" destination="qbt-qN-pXy" id="gxM-tp-LPs"/>
@@ -984,7 +985,6 @@
                         <outlet property="viewInfo" destination="GkP-0C-yk5" id="Wk4-b6-dh5"/>
                         <outlet property="viewOpenInfo" destination="YRW-xy-bq8" id="6fm-Pg-35z"/>
                         <segue destination="LJL-Ho-l4M" kind="show" identifier="kToDetailSuministro" id="IqZ-dX-ezV"/>
-                        <segue destination="HG1-22-eLe" kind="show" identifier="kToListDetailSuministro" id="ym4-rV-gyD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRY-uP-B5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1055,7 +1055,7 @@
                                             <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="tapButton" destination="LJL-Ho-l4M" eventType="touchUpInside" id="Gp4-aN-3S3"/>
+                                            <action selector="tapAgregarServicio" destination="LJL-Ho-l4M" eventType="touchUpInside" id="RCu-nA-jvD"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No es mi servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUq-Xe-eIw">
@@ -1067,9 +1067,16 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icono_no_es_mi_servicio" translatesAutoresizingMaskIntoConstraints="NO" id="FkQ-Dm-oJj">
                                         <rect key="frame" x="32" y="268" width="21" height="21"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBp-EB-lMB">
+                                        <rect key="frame" x="32" y="263" width="268" height="30"/>
+                                        <connections>
+                                            <action selector="tapNoEsMiServicio" destination="LJL-Ho-l4M" eventType="touchUpInside" id="OhQ-QQ-1pB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="SBp-EB-lMB" firstAttribute="width" secondItem="ilb-sR-EOo" secondAttribute="width" id="6eP-oQ-WhT"/>
                                     <constraint firstItem="qxr-gX-Bwu" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" constant="32" id="8cK-aJ-sjV"/>
                                     <constraint firstItem="Esk-77-40F" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" id="Eue-d0-mPt"/>
                                     <constraint firstAttribute="bottom" secondItem="wBW-b8-AAo" secondAttribute="bottom" id="IYZ-U4-Gn3"/>
@@ -1078,9 +1085,11 @@
                                     <constraint firstItem="FkQ-Dm-oJj" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" constant="32" id="Q5T-Ac-9v2"/>
                                     <constraint firstItem="wBW-b8-AAo" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" id="ROJ-4Y-mCB"/>
                                     <constraint firstItem="qxr-gX-Bwu" firstAttribute="top" secondItem="Esk-77-40F" secondAttribute="bottom" constant="36" id="Sg6-J8-x8H"/>
+                                    <constraint firstItem="SBp-EB-lMB" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" constant="32" id="bMG-BB-75h"/>
                                     <constraint firstAttribute="trailing" secondItem="Esk-77-40F" secondAttribute="trailing" id="bNX-Vw-amw"/>
                                     <constraint firstItem="Unn-UZ-AMa" firstAttribute="leading" secondItem="skx-3e-y9q" secondAttribute="leading" constant="32" id="ble-yN-bGz"/>
                                     <constraint firstItem="Esk-77-40F" firstAttribute="top" secondItem="skx-3e-y9q" secondAttribute="top" id="ds9-8f-t6f"/>
+                                    <constraint firstItem="SBp-EB-lMB" firstAttribute="centerY" secondItem="FkQ-Dm-oJj" secondAttribute="centerY" id="gci-AM-YmA"/>
                                     <constraint firstAttribute="trailing" secondItem="ilb-sR-EOo" secondAttribute="trailing" constant="20" id="jZJ-cj-7yb"/>
                                     <constraint firstAttribute="trailing" secondItem="wBW-b8-AAo" secondAttribute="trailing" id="kC6-6n-l5z"/>
                                     <constraint firstAttribute="trailing" secondItem="qxr-gX-Bwu" secondAttribute="trailing" constant="20" id="ksV-iv-WPm"/>
@@ -1129,15 +1138,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="bannerView" destination="IlY-Jo-EEN" id="kAj-rW-SVD"/>
+                        <outlet property="buttonAgregarServicio" destination="wBW-b8-AAo" id="1Pj-o7-M6B"/>
                         <outlet property="buttonView" destination="wBW-b8-AAo" id="Pea-SJ-MyZ"/>
                         <outlet property="pmTitleView" destination="Qfb-r2-f94" id="pxC-Xm-JVh"/>
                         <outlet property="txtIndentifier" destination="Unn-UZ-AMa" id="vzE-Hq-xuJ"/>
                         <outlet property="txtName" destination="ilb-sR-EOo" id="UBk-Lf-1hL"/>
+                        <segue destination="HG1-22-eLe" kind="show" id="qFD-3U-zoz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ1-pI-KUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5996" y="-1265"/>
+            <point key="canvasLocation" x="6015" y="-940"/>
         </scene>
         <!--Lista Servicios View Controller-->
         <scene sceneID="Plh-nX-hmK">
@@ -1165,14 +1176,14 @@
                                                 <rect key="frame" x="160" y="0.0" width="160" height="60.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador de servicio" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-Yj-OH4">
-                                                        <rect key="frame" x="8" y="16" width="144" height="13"/>
-                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                                                        <rect key="frame" x="8" y="14.5" width="144" height="16"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 34 111 C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-8e-vSn">
-                                                        <rect key="frame" x="8" y="33" width="144" height="12"/>
-                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
+                                                        <rect key="frame" x="8" y="34.5" width="144" height="14.5"/>
+                                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="12"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1334,7 +1345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NQG-5W-tGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5992.5" y="-573.5915492957746"/>
+            <point key="canvasLocation" x="6803" y="-941"/>
         </scene>
         <!--Listado Favoritos View Controller-->
         <scene sceneID="qRa-LX-hBh">
@@ -1364,7 +1375,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iKw-Rs-Dr6" id="4HY-UV-JGl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RrU-4Y-92p">
@@ -1514,6 +1525,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonAgregarServicios" destination="L8X-9X-aud" id="Yhj-OA-jXe"/>
                         <outlet property="pmTitleView" destination="wW9-bw-YCi" id="7UD-11-NP6"/>
                         <outlet property="tableView" destination="JTV-F1-lGi" id="kY5-05-KQa"/>
                         <segue destination="SzV-Of-5zO" kind="presentation" identifier="kRecibo" id="t7I-XV-3ad"/>
@@ -1745,7 +1757,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I30-UI-plS">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1883,7 +1895,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvR-Mr-xMq">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2345,7 +2357,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmU-2g-EJP">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2884,7 +2896,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="35.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recibos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Bl-ATx">
-                                        <rect key="frame" x="134.5" y="9.5" width="51.5" height="17"/>
+                                        <rect key="frame" x="135" y="9.5" width="51.5" height="17"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="14.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>

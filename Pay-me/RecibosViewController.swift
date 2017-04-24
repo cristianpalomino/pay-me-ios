@@ -62,7 +62,8 @@ extension RecibosViewController {
             let card = PMItemCard(frame: frame, card: cards[i])
             self.scrollCardView.addSubview(card)
         }
-        self.scrollCardView.contentSize = CGSize(width: Int(self.view.frame.width * 2), height: Int(self.scrollCardView.frame.height))
+        self.scrollCardView.contentSize = CGSize(width: Int(self.view.frame.width * 2),
+                                                 height: Int(self.scrollCardView.frame.height))
     }
 }
 
