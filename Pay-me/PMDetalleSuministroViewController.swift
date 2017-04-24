@@ -19,6 +19,13 @@ class PMDetalleSuministroViewController: PMViewController {
         return title
     }
     
+    var labels: [String] {
+        guard let strings  = Session.sharedInstance.current.item?.label else {
+            return ["NONE"]
+        }
+        return strings.components(separatedBy: ",")
+    }
+    
     var apiResponse             :ResponseConsultarDeudas?
     var serviceIdentifier       :String?
     var hasManyServices         :Bool = false
@@ -47,7 +54,7 @@ class PMDetalleSuministroViewController: PMViewController {
             if self.apiResponse != nil {
                 listaServiciosController.serviceIdentifier = self.txtIndentifier.text!
                 listaServiciosController.apiResponse = self.apiResponse
-                listaServiciosController.imageBanner = self.imageBannerView.image
+                listaServiciosController.imageBanner = self.bannerView.image
             }
         }
     }
@@ -57,6 +64,8 @@ extension PMDetalleSuministroViewController {
     
     override func initComponents() {
         super.initComponents()
+        self.txtIndentifier.placeholder = labels[1]
+        self.txtName.placeholder = labels[2]
         self.buttonAgregarServicio.setGradientBackground()
         self.txtIndentifier.setPMTheme()
         self.txtName.setPMTheme()

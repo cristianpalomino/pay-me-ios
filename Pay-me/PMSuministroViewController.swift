@@ -18,6 +18,14 @@ class PMSuministroViewController: PMViewController {
         return title
     }
     
+    var labels: [String] {
+        guard let strings  = Session.sharedInstance.current.item?.label else {
+            return ["NONE"]
+        }
+        return strings.components(separatedBy: ",")
+    }
+    
+    
     //Api
     weak var apiResponse    :ResponseConsultarDeudas?
     
@@ -49,6 +57,7 @@ class PMSuministroViewController: PMViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.imageBannerView.addBorder(toSide: .bottom, withColor: UIColor.appLigthGrayBorderColor(), andThickness: 1)
         self.initErrorView()
     }
     
@@ -71,6 +80,7 @@ extension PMSuministroViewController {
     
     override func initComponents() {
         super.initComponents()
+        self.txtIndentifier.placeholder = labels[0]
         self.buttonConsultar.setGradientBackground()
         self.txtIndentifier.setPMTheme()
         self.loadImages()

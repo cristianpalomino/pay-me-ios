@@ -123,6 +123,7 @@ class Item {
     var logo_2          :String!
     var codeDescription :String!
     var codeValidation  :String!
+    var label           :String!
     var empresa         :Empresa!
     
     init(json :JSON) {
@@ -133,6 +134,7 @@ class Item {
         self.logo_2 = json["logo_2"].stringValue
         self.codeDescription = json["codeDescription"].stringValue
         self.codeValidation = json["codeValidation"].stringValue
+        self.label  = json["label"].string
         self.empresa = Empresa(json: json["empresa"])
     }
 }

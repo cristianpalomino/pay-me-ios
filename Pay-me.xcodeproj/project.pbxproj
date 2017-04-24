@@ -212,6 +212,8 @@
 		4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
 		4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */; };
 		4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */; };
+		4FCC14CB1EAEB39300D6E7BC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14CA1EAEB39300D6E7BC /* UIView.swift */; };
+		4FCC14CC1EAEB39300D6E7BC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14CA1EAEB39300D6E7BC /* UIView.swift */; };
 		4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */; };
 		4FCFBE021E2838D90029EE40 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */; };
 		4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
@@ -350,6 +352,7 @@
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4FCC14CA1EAEB39300D6E7BC /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationViewController.swift; sourceTree = "<group>"; };
 		4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAutomaticoViewController.swift; sourceTree = "<group>"; };
 		4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionNotificacionesViewController.swift; sourceTree = "<group>"; };
@@ -776,6 +779,7 @@
 				4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */,
 				4F43D8BD1EAA52F500403292 /* EProtocols.swift */,
 				4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */,
+				4FCC14CA1EAEB39300D6E7BC /* UIView.swift */,
 			);
 			name = ExtendedClass;
 			sourceTree = "<group>";
@@ -1180,6 +1184,7 @@
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */,
 				4062C1621E3C17FF00617265 /* Response.swift in Sources */,
+				4FCC14CB1EAEB39300D6E7BC /* UIView.swift in Sources */,
 				40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				4062C1581E3BE9A800617265 /* Service.swift in Sources */,
@@ -1284,6 +1289,7 @@
 				408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */,
 				408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */,
 				408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */,
+				4FCC14CC1EAEB39300D6E7BC /* UIView.swift in Sources */,
 				408CB6CA1E54E73D00D308D3 /* Response.swift in Sources */,
 				408CB6CB1E54E73D00D308D3 /* RecibosBViewController.swift in Sources */,
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,

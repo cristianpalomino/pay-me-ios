@@ -15,6 +15,14 @@ extension UIColor {
         return UIColor(red: 0/255, green: 131/255, blue: 255/255, alpha: 1)
     }
     
+    public class func appLigthGrayBorderColor() -> UIColor {
+        return UIColor(red: 230/255, green: 233/255, blue: 237/255, alpha: 1)
+    }
+    
+    public class func appGrayBorderColor() -> UIColor {
+        return UIColor(red: 204/255, green: 209/255, blue: 217/255, alpha: 1)
+    }
+    
     //Etiquetas
     public class func appRedColor() -> UIColor {
         return UIColor(red: 218/255, green: 68/255, blue: 83/255, alpha: 1)

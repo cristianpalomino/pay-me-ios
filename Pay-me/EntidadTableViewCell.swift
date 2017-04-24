@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+import AlamofireImage
 
 class EntidadTableViewCell: UITableViewCell {
     static let identifier = "EntidadCell"
@@ -24,7 +24,7 @@ class EntidadTableViewCell: UITableViewCell {
         didSet {
             self.name.text = servicio.empresa.name
             self.defineStyle()
-            self.loadLogo()
+            self.updateImage(url: servicio.logo)
         }
     }
     
@@ -40,16 +40,13 @@ class EntidadTableViewCell: UITableViewCell {
 
 extension EntidadTableViewCell {
     
-    func loadLogo() {
-        Alamofire.request(servicio.logo).responseData {
-            response in
-            if let data = response.result.value {
-                let image = UIImage(data: data)
-                self.logo.layer.cornerRadius = self.logo.height * 0.5
-                self.logo.clipsToBounds = true
-                self.logo.image = image
-            }
+    internal func updateImage(url :String) {
+        guard let url = URL(string: url) else {
+            return
         }
+        //let placeholder = UIImage(named: "placeholder-default")
+        let filter = AspectScaledToFillSizeCircleFilter(size: self.logo.frame.size)
+        self.logo.af_setImage(withURL: url, placeholderImage: nil, filter: filter, imageTransition: .crossDissolve(0.2))
     }
     
     func defineStyle() {

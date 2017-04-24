@@ -29,6 +29,11 @@ class PMNivelTresViewController: PMViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.view.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

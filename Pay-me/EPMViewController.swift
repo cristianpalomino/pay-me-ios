@@ -37,19 +37,12 @@ extension PMViewController {
     func initComponents() {
         self.pmTitleView.pmViewController = self
         self.addNavigationLogo(isGradient: false)
-        self.addBottomBorder()
+        self.view.addBorder(toSide: .bottom, withColor: UIColor.darkGray, andThickness: 1)
         self.setTitle()
     }
     
     func setTitle() {
         self.pmTitleView.titleLabel.text = self.headerTitle
-    }
-    
-    func addBottomBorder() {
-        let border = CALayer()
-        border.backgroundColor = UIColor.appGrayColor().cgColor
-        border.frame = CGRect(x: 0, y: self.view.frame.size.height - 0.5, width: self.view.frame.size.width, height: 0.5)
-        self.view.layer.addSublayer(border)
     }
     
     func showMessage(type :MessageType) -> UINavigationController {

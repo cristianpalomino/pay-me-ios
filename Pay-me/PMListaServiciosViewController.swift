@@ -19,6 +19,13 @@ class PMListaServiciosViewController: PMViewController {
         return title
     }
 
+    var labels: [String] {
+        guard let strings  = Session.sharedInstance.current.item?.label else {
+            return ["NONE"]
+        }
+        return strings.components(separatedBy: ",")
+    }
+    
     var apiResponse:        ResponseConsultarDeudas?
     var serviceIdentifier:  String?
     var imageBanner:        UIImage?
@@ -27,7 +34,7 @@ class PMListaServiciosViewController: PMViewController {
     @IBOutlet weak var imageViewBanner:         UIImageView!
     @IBOutlet weak var labelNameIdentifier:     UILabel!
     @IBOutlet weak var labelIdentifier:         UILabel!
-    @IBOutlet weak var buttonRecordadServicio:  UIButton!
+    @IBOutlet weak var buttonRecordarServicio:  UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +49,8 @@ extension PMListaServiciosViewController {
     
     override func initComponents() {
         super.initComponents()
+        self.buttonRecordarServicio.setGradientBackground()
+        self.labelNameIdentifier.text = labels[1]
         self.labelIdentifier.text = self.serviceIdentifier
         self.imageViewBanner.image = self.imageBanner
         self.tableview.allowsMultipleSelection = true
