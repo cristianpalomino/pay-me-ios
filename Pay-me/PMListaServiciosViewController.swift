@@ -56,7 +56,7 @@ extension PMListaServiciosViewController {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             message.touchView()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-                self.tabBarController!.selectedIndex = 0
+                self.navigationController?.popToRootViewController(animated: true)
             }
         }
     }

@@ -62,13 +62,13 @@ extension RecibosAViewController {
     @IBAction func tapPagar() {
         let type = Session.sharedInstance.messageType
         if type == .INVALID_CARD {
-            showMessage(type: .INVALID_CARD)
+//            showMessage(type: .INVALID_CARD)
             Session.sharedInstance.messageType = .NOT_AUTORIZED
         } else if type == .NOT_AUTORIZED {
-            showMessage(type: .NOT_AUTORIZED)
+//            showMessage(type: .NOT_AUTORIZED)
             Session.sharedInstance.messageType = .SUCCESS_PAY
         } else if type == .SUCCESS_PAY {
-            showMessage(type: .SUCCESS_PAY)
+//            showMessage(type: .SUCCESS_PAY)
             Session.sharedInstance.messageType = .INVALID_CARD
         }
     }

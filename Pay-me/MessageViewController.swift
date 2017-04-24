@@ -55,7 +55,7 @@ extension MessageViewController {
         if currentCard.type == .ADD {
             if withCard {
                 self.dismiss(animated: true, completion: {
-                    self.showMessage(type: .SUCCESS_PAY)
+                    
                 })
             } else {
                 self.titleMessage.text = "!Adiciona una nueva tarjeta!"
@@ -68,7 +68,7 @@ extension MessageViewController {
         } else if currentCard.type == .VALID ||
             currentCard.type == .DEFAULT {
             self.dismiss(animated: true, completion: {
-                self.showMessage(type: .SUCCESS_PAY)
+//                self.showMessage(type: .SUCCESS_PAY)
             })
         }
     }
