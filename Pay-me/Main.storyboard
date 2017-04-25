@@ -369,7 +369,6 @@
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9j-Xe-rAw">
                                                         <rect key="frame" x="0.0" y="0.0" width="106.5" height="162"/>
-                                                        <state key="normal" title="Button"/>
                                                         <connections>
                                                             <action selector="tapEducacion" destination="Osn-Tx-luz" eventType="touchUpInside" id="lvz-es-L3L"/>
                                                         </connections>

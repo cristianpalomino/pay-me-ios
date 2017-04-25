@@ -31,7 +31,7 @@ class PMNivelTresViewController: PMViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.view.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
+        self.tableview.backgroundView!.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
     }
     
     override func didReceiveMemoryWarning() {
