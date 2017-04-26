@@ -14,7 +14,16 @@ class PMListadoFavoritosViewController: PMViewController {
         return "Mis Favoritos"
     }
     
+    var titles: [(title: String,color: UIColor)] {
+        return [("Todos",color: UIColor.appBlueColor()),
+                ("Pendientes de Pago",color: UIColor.appBlueColor()),
+                ("Pagado",color: UIColor.appBlueColor()),
+                ("Pendiente de verficación",color: UIColor.appBlueColor()),
+                ("Cargo automático",color: UIColor.appBlueColor())]
+    }
+    
     @IBOutlet weak var buttonAgregarServicios: UIButton!
+    @IBOutlet weak var viewTitleStrip: PMTitleStrip!
     @IBOutlet weak var tableView: UITableView!
     
     var serviciosFavoritos = Session.sharedInstance.serviciosFavoritos
@@ -37,7 +46,14 @@ extension PMListadoFavoritosViewController {
     
     override func initComponents() {
         super.initComponents()
+        
+        let nib = UINib(nibName: "FavoritoCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: FavoritoTableViewCell.identifier)
         self.buttonAgregarServicios.setGradientBackground()
+    }
+    
+    override func addBorders() {
+        self.viewTitleStrip.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
     }
 }
 

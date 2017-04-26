@@ -10,9 +10,9 @@ import AlamofireImage
 import UIKit
 
 class FavoritoTableViewCell: UITableViewCell {
+    static let identifier       = "favoritoCell"
     
     var favoriteCellDelegate :FavoriteCellDelegate?
-    static let identifier       = "favoritoCell"
     
     @IBOutlet weak var icon     : UIImageView!
     @IBOutlet weak var name     : UILabel!
@@ -42,7 +42,7 @@ extension FavoritoTableViewCell {
 extension FavoritoTableViewCell {
     
     func update(service :Service) {
-        let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS)
+        let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS)
         
         self.updateImage(url: item?.logo ?? "NONE")
     

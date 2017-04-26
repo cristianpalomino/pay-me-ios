@@ -123,6 +123,7 @@ extension PMListaServiciosViewController: PMListaServiciosViewControllerServices
                 let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
                                          Service.Keys.kIdServiceSPS     : debt.idService,
                                          Service.Keys.kServiceIdentifier: identifier,
+                                         Service.Keys.kNameService      : response.debts[i].nameService,
                                          Service.Keys.kOwner            : response.clientName]
                 let service = Service(json: JSON(serviceAtributtes))
                 services.append(service)

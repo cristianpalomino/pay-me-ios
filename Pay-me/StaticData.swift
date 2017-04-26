@@ -29,11 +29,11 @@ class Static {
 
 extension Static {
     
-    func getItem(idCompanySPS :String, idServiceSPS :String) -> Item? {
+    func getItem(idCompanySPS :String) -> Item? {
         for sg in self.serviciosGenerales {
             for categoria in sg.categorias {
                 for item in categoria.items {
-                    guard item.idCompany == idCompanySPS && item.idService == idServiceSPS else {
+                    guard item.idCompany == idCompanySPS else {
                         break
                     }
                     return item

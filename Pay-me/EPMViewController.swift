@@ -37,8 +37,11 @@ extension PMViewController {
     func initComponents() {
         self.pmTitleView.pmViewController = self
         self.addNavigationLogo(isGradient: false)
-        self.view.addBorder(toSide: .bottom, withColor: UIColor.darkGray, andThickness: 1)
         self.setTitle()
+    }
+    
+    func addBorders() {
+        
     }
     
     func setTitle() {

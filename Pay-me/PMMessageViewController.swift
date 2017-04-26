@@ -23,7 +23,7 @@ class PMMessageViewController: PMViewController {
 extension PMMessageViewController {
     
     func addTouchListener() {
-        let touchG = UITapGestureRecognizer(target: self, action: #selector(self.touchView))
-        self.view.addGestureRecognizer(touchG)
+//        let touchG = UITapGestureRecognizer(target: self, action: #selector(self.touchView))
+//        self.view.addGestureRecognizer(touchG)
     }
 }

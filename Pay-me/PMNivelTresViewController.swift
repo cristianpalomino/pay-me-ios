@@ -18,6 +18,7 @@ class PMNivelTresViewController: PMViewController {
     }
     
     @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var viewTableView: UIView!
     
     var items: [Item]? {
         didSet {
@@ -27,11 +28,6 @@ class PMNivelTresViewController: PMViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.tableview.backgroundView!.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,6 +40,10 @@ extension PMNivelTresViewController {
     override func initComponents() {
         super.initComponents()
         self.items = Session.sharedInstance.current.categoria?.items
+    }
+    
+    override func addBorders() {
+        self.viewTableView.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
     }
 }
 

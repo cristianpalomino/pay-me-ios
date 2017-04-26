@@ -121,6 +121,7 @@ extension PMDetalleSuministroViewController: DetalleSuministroViewControllerServ
             let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
                                      Service.Keys.kIdServiceSPS     : item.idService,
                                      Service.Keys.kServiceIdentifier: identifier,
+                                     Service.Keys.kNameService      : response.debts[0].nameService,
                                      Service.Keys.kOwner            : response.clientName]
             let service = Service(json: JSON(serviceAtributtes))
             let request = RequestAgregarServicio(services: [service])

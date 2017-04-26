@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 extension UIStoryboard {
+    
+    class func agregarServicioStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "AgregarServicio", bundle: Bundle.main)
+    }
+    
     class func messagesStoryboard() -> UIStoryboard {
         return UIStoryboard(name: Constants.Storyboard.kMessages, bundle: Bundle.main)
     }
@@ -25,7 +30,10 @@ extension UIStoryboard {
     class func settingsStoryboard() -> UIStoryboard {
         return UIStoryboard(name: Constants.Storyboard.kConfig, bundle: Bundle.main)
     }
-
+    
+    class func flowAgregarServicio() -> UIViewController {
+        return agregarServicioStoryboard().instantiateViewController(withIdentifier: "AgregarServicioID")
+    }
     
     class func createMessage() -> UINavigationController {
         return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kMessages) as! UINavigationController)

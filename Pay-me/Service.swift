@@ -49,6 +49,7 @@ extension Service {
         static let kIdService           = "idService"
         static let kServiceIdentifier   = "serviceIdentifier"
         static let kOwner               = "owner"
+        static let kNameService         = "nameService"
         static let kAlias               = "alias"
         static let kAmount              = "amount"
         static let kInSPR               = "inSPR"
