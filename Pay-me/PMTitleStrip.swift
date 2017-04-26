@@ -19,11 +19,11 @@ class PMTitleStrip: UIView {
     var titles = [(title: String,color: UIColor)]()
     var buttons = [PMTitle]()
     
-    init(frame: CGRect, titles: [(title: String,color: UIColor)]) {
-        super.init(frame: frame)
-        self.titles = titles
-        self.prepare()
-//        
+//    init(frame: CGRect, titles: [(title: String,color: UIColor)]) {
+//        super.init(frame: frame)
+//        self.titles = titles
+//        self.prepare()
+//
 //        //
 //        self.addBorder(toSide: .bottom, withColor: UIColor.lightGray, andThickness: 1)
 //        
@@ -74,18 +74,7 @@ class PMTitleStrip: UIView {
 //        self.viewStrip.layer.borderColor = UIColor.lightGray.cgColor
 //        self.viewStrip.layer.borderWidth = 1
 //        self.viewStrip.layer.cornerRadius = viewStripHeigth * 0.5
-    }
-    
-    func focusDefault() {
-        buttons[0].isFocus(focus: true)
-    }
-    
-    func action(sender: PMTitle) {
-        sender.isFocus(focus: true)
-        let notFocus = buttons.filter { $0 != sender }
-        notFocus.forEach { $0.isFocus(focus: false) }
-        delegate?.selectTitle()
-    }
+//    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -102,14 +91,33 @@ class PMTitleStrip: UIView {
     }
     
     private func prepare() {
-        scrollView = UIScrollView(frame: self.frame)
-        
         backgroundColor = UIColor.white
+
+        let borderBottom = CALayer()
+        let borderWidth = CGFloat(2.0)
+        borderBottom.borderColor = UIColor.gray.cgColor
+        borderBottom.frame = CGRect(x: 0, y: self.frame.height - 1.0, width: self.frame.width , height: self.frame.height - 1.0)
+        borderBottom.borderWidth = borderWidth
+        self.layer.addSublayer(borderBottom)
+        self.layer.masksToBounds = true
+
         
-        let bottomBorder = CALayer()
-        layer.backgroundColor = UIColor.appGrayBorderColor().cgColor
-        layer.frame = CGRect(x: frame.minX, y: frame.maxY, width: frame.width, height: 1)
-        layer.addSublayer(bottomBorder)
+//        scrollView = UIScrollView(frame: self.frame)
+//        scrollView.backgroundColor = UIColor.white
+//        
+//
+//        addSubview(scrollView)
+    }
+    
+    func focusDefault() {
+        buttons[0].isFocus(focus: true)
+    }
+    
+    func action(sender: PMTitle) {
+        sender.isFocus(focus: true)
+        let notFocus = buttons.filter { $0 != sender }
+        notFocus.forEach { $0.isFocus(focus: false) }
+        delegate?.selectTitle()
     }
 }
 

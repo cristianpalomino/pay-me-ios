@@ -53,7 +53,7 @@ extension PMListadoFavoritosViewController {
     }
     
     override func addBorders() {
-        self.viewTitleStrip.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
+        //self.viewTitleStrip.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
     }
 }
 
