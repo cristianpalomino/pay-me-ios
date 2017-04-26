@@ -93,14 +93,6 @@ class PMTitleStrip: UIView {
     private func prepare() {
         backgroundColor = UIColor.white
 
-        let borderBottom = CALayer()
-        let borderWidth = CGFloat(2.0)
-        borderBottom.borderColor = UIColor.gray.cgColor
-        borderBottom.frame = CGRect(x: 0, y: self.frame.height - 1.0, width: self.frame.width , height: self.frame.height - 1.0)
-        borderBottom.borderWidth = borderWidth
-        self.layer.addSublayer(borderBottom)
-        self.layer.masksToBounds = true
-
         
 //        scrollView = UIScrollView(frame: self.frame)
 //        scrollView.backgroundColor = UIColor.white
