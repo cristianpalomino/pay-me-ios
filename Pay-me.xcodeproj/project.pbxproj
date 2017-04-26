@@ -19,8 +19,6 @@
 		40293EF91E40D2DE007EF98D /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		40293EFB1E40DFEE007EF98D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFA1E40DFEE007EF98D /* Order.swift */; };
 		40293EFD1E40E2E3007EF98D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFC1E40E2E3007EF98D /* Product.swift */; };
-		40293EFF1E415DB5007EF98D /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFE1E415DB5007EF98D /* PMItemCircle.swift */; };
-		40293F011E415DC5007EF98D /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40293F001E415DC5007EF98D /* PMItemCircle.xib */; };
 		403377361E0334E700261759 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377351E0334E700261759 /* PMButton.swift */; };
 		403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377371E03D41900261759 /* PMNivelUnoViewController.swift */; };
 		4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
@@ -87,7 +85,6 @@
 		408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */; };
 		408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
-		408CB6B11E54E73D00D308D3 /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFE1E415DB5007EF98D /* PMItemCircle.swift */; };
 		408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
 		408CB6B31E54E73D00D308D3 /* RecibosAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420161E234C7D00D74D22 /* RecibosAViewController.swift */; };
 		408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */; };
@@ -139,7 +136,6 @@
 		408CB6E81E54E73D00D308D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
 		408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F51E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf */; };
 		408CB6EA1E54E73D00D308D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407C03651E0B27BA00CD5D4C /* Main.storyboard */; };
-		408CB6EB1E54E73D00D308D3 /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40293F001E415DC5007EF98D /* PMItemCircle.xib */; };
 		408CB6EC1E54E73D00D308D3 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
 		408CB6ED1E54E73D00D308D3 /* PMErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 401CC6711E539740001911F2 /* PMErrorView.xib */; };
 		408CB6EE1E54E73D00D308D3 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
@@ -202,6 +198,10 @@
 		4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
+		4F8220631EB13AF6001351FE /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8220611EB13AF6001351FE /* PMItemCircle.swift */; };
+		4F8220641EB13AF6001351FE /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8220621EB13AF6001351FE /* PMItemCircle.xib */; };
+		4F8220651EB13B02001351FE /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8220611EB13AF6001351FE /* PMItemCircle.swift */; };
+		4F8220661EB13B02001351FE /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8220621EB13AF6001351FE /* PMItemCircle.xib */; };
 		4F9C3B9C1EB131A90076EAA5 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */; };
 		4F9C3B9D1EB131B60076EAA5 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */; };
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
@@ -262,8 +262,6 @@
 		40293EF81E40D2DE007EF98D /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		40293EFA1E40DFEE007EF98D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		40293EFC1E40E2E3007EF98D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		40293EFE1E415DB5007EF98D /* PMItemCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCircle.swift; sourceTree = "<group>"; };
-		40293F001E415DC5007EF98D /* PMItemCircle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCircle.xib; sourceTree = "<group>"; };
 		403377351E0334E700261759 /* PMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
 		403377371E03D41900261759 /* PMNivelUnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelUnoViewController.swift; sourceTree = "<group>"; };
 		403377391E03D42600261759 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
@@ -355,6 +353,8 @@
 		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
+		4F8220611EB13AF6001351FE /* PMItemCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCircle.swift; sourceTree = "<group>"; };
+		4F8220621EB13AF6001351FE /* PMItemCircle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCircle.xib; sourceTree = "<group>"; };
 		4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
 		4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
 		4FA0E3031EA5308D008F5ED9 /* Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Development.plist; sourceTree = "<group>"; };
@@ -659,14 +659,14 @@
 		408E501E1DFB7A6D007BEEDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4F8220611EB13AF6001351FE /* PMItemCircle.swift */,
+				4F8220621EB13AF6001351FE /* PMItemCircle.xib */,
 				4FA8EFAF1EB0FBF200A596EA /* TitleStrip */,
 				408E501F1DFB7B13007BEEDE /* PMTextField.swift */,
 				403377351E0334E700261759 /* PMButton.swift */,
 				40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */,
 				40463D271E19CF8000F663B0 /* PMItemCard.swift */,
 				40463D291E19CF9E00F663B0 /* PMItemCard.xib */,
-				40293EFE1E415DB5007EF98D /* PMItemCircle.swift */,
-				40293F001E415DC5007EF98D /* PMItemCircle.xib */,
 				40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */,
 				407C036F1E0B530600CD5D4C /* PMLabel.swift */,
 				40A420141E2053D000D74D22 /* PMPin.swift */,
@@ -970,7 +970,6 @@
 				40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
 				4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */,
-				40293F011E415DC5007EF98D /* PMItemCircle.xib in Resources */,
 				404672DA1E14608500A578EA /* Messages.storyboard in Resources */,
 				4FA8EFAA1EB0F7B700A596EA /* PMTitleStrip.xib in Resources */,
 				401CC6721E539740001911F2 /* PMErrorView.xib in Resources */,
@@ -988,6 +987,7 @@
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				4FA8EF9E1EAF982D00A596EA /* FavoritoCell.xib in Resources */,
+				4F8220641EB13AF6001351FE /* PMItemCircle.xib in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
 			);
@@ -1016,7 +1016,6 @@
 				4F9C3B9D1EB131B60076EAA5 /* AgregarServicio.storyboard in Resources */,
 				408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				408CB6EA1E54E73D00D308D3 /* Main.storyboard in Resources */,
-				408CB6EB1E54E73D00D308D3 /* PMItemCircle.xib in Resources */,
 				408CB6EC1E54E73D00D308D3 /* Messages.storyboard in Resources */,
 				408CB6ED1E54E73D00D308D3 /* PMErrorView.xib in Resources */,
 				4FA8EFAB1EB0F7B700A596EA /* PMTitleStrip.xib in Resources */,
@@ -1035,6 +1034,7 @@
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				4FA8EF9F1EAF982D00A596EA /* FavoritoCell.xib in Resources */,
+				4F8220661EB13B02001351FE /* PMItemCircle.xib in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
 				4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */,
 			);
@@ -1177,6 +1177,7 @@
 				4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */,
 				40CF1E491E068AAF0072CB29 /* PMSuministroViewController.swift in Sources */,
 				403377361E0334E700261759 /* PMButton.swift in Sources */,
+				4F8220631EB13AF6001351FE /* PMItemCircle.swift in Sources */,
 				4062C1411E380D3500617265 /* Logs.swift in Sources */,
 				4062C1681E3D090800617265 /* ServiciosServices.swift in Sources */,
 				404672DF1E14671400A578EA /* MessageViewController.swift in Sources */,
@@ -1193,7 +1194,6 @@
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
 				40293EF91E40D2DE007EF98D /* Debt.swift in Sources */,
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
-				40293EFF1E415DB5007EF98D /* PMItemCircle.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
 				40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */,
@@ -1284,6 +1284,7 @@
 				408CB6A01E54E73D00D308D3 /* Card.swift in Sources */,
 				408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */,
 				408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */,
+				4F8220651EB13B02001351FE /* PMItemCircle.swift in Sources */,
 				408CB6A31E54E73D00D308D3 /* PMButton.swift in Sources */,
 				408CB6A41E54E73D00D308D3 /* Logs.swift in Sources */,
 				408CB6A51E54E73D00D308D3 /* ServiciosServices.swift in Sources */,
@@ -1301,7 +1302,6 @@
 				408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */,
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
 				408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */,
-				408CB6B11E54E73D00D308D3 /* PMItemCircle.swift in Sources */,
 				408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */,
 				408CB6B31E54E73D00D308D3 /* RecibosAViewController.swift in Sources */,
 				408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */,

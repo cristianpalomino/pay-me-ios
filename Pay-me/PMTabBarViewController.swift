@@ -42,7 +42,8 @@ class PMTabBarController: UITabBarController {
         ////////////////////     1     ///////////////////////
         let navVC1 = PMNavigationViewController()
         navVC1.navigationBar.barTintColor = UIColor(hexColor: "#0083ff")
-        navVC1.navigationBar.tintColor = UIColor.appBlueColor()
+        //navVC1.navigationBar.tintColor = UIColor.appBlueColor()
+
         navVC1.viewControllers = [controlerIniTab1]
         navVC1.tabBarItem = UITabBarItem(title: "Favoritos", image: tabIco1_off, selectedImage: tabIco1_on) //VIVO
         navVC1.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "SanFranciscoDisplay-Regular", size: 11)!], for: .normal)
@@ -75,11 +76,17 @@ class PMTabBarController: UITabBarController {
         navVC5.tabBarItem = UITabBarItem(title: "Histórico", image: tabIco5_off, selectedImage: tabIco5_on) //7 DIAS
         navVC5.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "SanFranciscoDisplay-Regular", size: 11)!], for: .normal)
         navVC5.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -1)
+        
         ///////////////////////////////////////////////////////////////////////////////////
         //conexicon al control principal,
         //Navigation bar appearance (background and title)
         self.viewControllers =  [navVC1,navVC2,navVC3,navVC4,navVC5,]
         self.selectedIndex = 0
+        
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().isTranslucent = false
+        
         UITabBar.appearance().isTranslucent = false
         //  UITabBar.appearance().barTintColor = .blackColor()
         //  tabBarController.tabBar.barTintColor =   UIColor.black

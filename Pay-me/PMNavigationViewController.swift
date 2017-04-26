@@ -12,17 +12,16 @@ class PMNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationBar.tintColor = UIColor.appBlueColor()
-        self.navigationBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        self.navigationBar.shadowImage = UIImage()
-        
         addNavigationLogo(isGradient: false)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 
