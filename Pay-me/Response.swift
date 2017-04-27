@@ -70,7 +70,11 @@ class ResponseConsultarServicios : Response {
         self.idCardholder   = json[Constants.Api.Json.kIdCardholder].stringValue
         
         if let jsona = json[Constants.Api.Json.kServices].array {
-            jsona.forEach{ services.append(Service(json: $0)) }
+            jsona.forEach {
+                services.append(Service(json: $0))
+            }
+        } else {
+            services.append(Service(json: json[Constants.Api.Json.kServices]))
         }
     }
 }

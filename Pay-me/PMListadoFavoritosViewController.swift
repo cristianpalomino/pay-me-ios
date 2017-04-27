@@ -47,13 +47,9 @@ extension PMListadoFavoritosViewController {
     override func initComponents() {
         super.initComponents()
         self.viewTitleStrip.titles = self.titles
-        let nib = UINib(nibName: "FavoritoCell", bundle: nil)
+        let nib = UINib(nibName: "FavoritoTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: FavoritoTableViewCell.identifier)
         self.buttonAgregarServicios.setGradientBackground()
-    }
-    
-    override func addBorders() {
-        //self.viewTitleStrip.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
     }
 }
 
@@ -92,7 +88,7 @@ extension PMListadoFavoritosViewController : FavoriteCellDelegate {
     }
 }
 
-extension PMListadoFavoritosViewController: FavoritosViewControllerServicesDelegate {
+extension PMListadoFavoritosViewController {
     
     internal func callServiceConsultarRecibos(withService service:Service) {
         if let codeService = service.serviceIdentifier {
@@ -101,15 +97,12 @@ extension PMListadoFavoritosViewController: FavoritosViewControllerServicesDeleg
                                                  serviceIdentifier: codeService)
             PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
             PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
-            
             showHUD()
         }
     }
     
     internal func callServiceFavoritos() {
-        
         let request = RequestConsultarServicios()
-        
         PaymeServices.sharedInstance.serviciosServices.apiConsultarServicios(request: request)
         PaymeServices.sharedInstance.serviciosServices.consultarServiciosDelegate = self
     }
@@ -154,10 +147,4 @@ extension PMListadoFavoritosViewController {
     func serviceFailed(error: PaymeError) {
         debugPrint(error)
     }
-}
-
-protocol FavoritosViewControllerServicesDelegate {
-    
-    func callServiceFavoritos()
-    func callServiceConsultarRecibos(withService service:Service)
 }

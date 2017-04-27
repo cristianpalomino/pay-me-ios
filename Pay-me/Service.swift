@@ -10,28 +10,38 @@
 import Foundation
 import SwiftyJSON
 
+//"alias": "Pension",
+//"amount": "000000012170",
+//"idCompanySPS": "50",
+//"idService": "281",
+//"idServiceSps": "53",
+//"inSPR": "null",
+//"owner": "Juan Diego",
+//"serviceIdentifier": "123",
+//"state": "2"
+
 class Service {
     
-    var idCompanySPS        :String!
-    var idServiceSPS        :String!
-    var idService           :String!
-    var serviceIdentifier   :String?
-    var owner               :String!
-    var alias               :String?
-    var inSPR               :String!
-    var amount              :String?
-    var state               :ServiceStateType!
+    var alias: String!
+    var amount: String!
+    var idCompanySPS: String!
+    var idService: String!
+    var idServiceSPS: String!
+    var inSPR: String!
+    var owner: String!
+    var serviceIdentifier: String!
+    var state: ServiceStateType!
     
     init(json :JSON) {
         
         self.idCompanySPS       = json[Keys.kIdCompanySPS].stringValue
         self.idServiceSPS       = json[Keys.kIdServiceSPS].stringValue
         self.idService          = json[Keys.kIdService].stringValue
-        self.serviceIdentifier  = json[Keys.kServiceIdentifier].string
+        self.serviceIdentifier  = json[Keys.kServiceIdentifier].stringValue
         self.owner              = json[Keys.kOwner].stringValue
-        self.alias              = json[Keys.kAlias].string
+        self.alias              = json[Keys.kAlias].stringValue
         self.inSPR              = json[Keys.kInSPR].stringValue
-        self.amount             = json[Keys.kAmount].string
+        self.amount             = json[Keys.kAmount].stringValue
      
         guard let istate = Int(json[Keys.kState].stringValue) else {
             return

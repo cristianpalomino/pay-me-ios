@@ -14,12 +14,13 @@ class FavoritoTableViewCell: UITableViewCell {
     
     var favoriteCellDelegate :FavoriteCellDelegate?
     
-    @IBOutlet weak var icon     : UIImageView!
-    @IBOutlet weak var name     : UILabel!
-    @IBOutlet weak var entidad  : UILabel!
-    @IBOutlet weak var code     : UILabel!
-    @IBOutlet weak var estado   : UILabel!
-    @IBOutlet weak var monto    : UILabel!
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var buttonIcon: UIButton!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var entidad: UILabel!
+    @IBOutlet weak var code : UILabel!
+    @IBOutlet weak var estado: UILabel!
+    @IBOutlet weak var monto : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,8 +44,10 @@ extension FavoritoTableViewCell {
     
     func update(service :Service) {
         let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS)
+        self.updateImage(url: item!.logo)
         
-        self.updateImage(url: item?.logo ?? "NONE")
+        self.entidad.text   = item!.entidad
+        self.code.text      = service.serviceIdentifier
     
         if service.inSPR == "1" {
             self.defineState(state: .CARGOS_RECURRENTES)
@@ -55,12 +58,9 @@ extension FavoritoTableViewCell {
         if let name = service.alias {
             self.name.text = name
         } else {
-            self.name.text = item?.empresa.name ?? "NONE"
+            self.name.text = item?.empresa.name
             self.entidad.isHidden = true
         }
-        
-        self.entidad.text   = item?.empresa.name ?? "NONE"
-        self.code.text      = service.serviceIdentifier ?? "NONE"
         
         if let amount = service.amount {
             self.monto.isHidden = false
@@ -111,12 +111,11 @@ extension FavoritoTableViewCell {
 extension FavoritoTableViewCell {
     
     internal func addStyles() {
-        self.icon.layer.cornerRadius = self.icon.frame.height * 0.5
-        self.icon.layer.borderWidth = 1
-        self.icon.layer.borderColor = UIColor.lightGray.cgColor
+        buttonIcon.addCircleBorder()
+        customSelection()
         
-        self.estado.layer.masksToBounds = true
-        self.estado.layer.cornerRadius = self.estado.frame.height * 0.5
+        estado.layer.masksToBounds = true
+        estado.layer.cornerRadius = self.estado.frame.height * 0.5
     }
 }
 
@@ -125,5 +124,15 @@ protocol FavoriteCellDelegate {
     func tapFavorite()
 }
 
+extension Item {
+    
+    var entidad: String {
+        if empresa.name.characters.count > 30 {
+            return empresa.shortName
+        } else {
+            return empresa.name
+        }
+    }
+}
 
 

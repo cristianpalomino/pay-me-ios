@@ -202,6 +202,10 @@
 		4F8220641EB13AF6001351FE /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8220621EB13AF6001351FE /* PMItemCircle.xib */; };
 		4F8220651EB13B02001351FE /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8220611EB13AF6001351FE /* PMItemCircle.swift */; };
 		4F8220661EB13B02001351FE /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8220621EB13AF6001351FE /* PMItemCircle.xib */; };
+		4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
+		4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
+		4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */; };
+		4F983A4E1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */; };
 		4F9C3B9C1EB131A90076EAA5 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */; };
 		4F9C3B9D1EB131B60076EAA5 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */; };
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
@@ -209,8 +213,8 @@
 		4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
 		4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
 		4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
-		4FA8EF9E1EAF982D00A596EA /* FavoritoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoCell.xib */; };
-		4FA8EF9F1EAF982D00A596EA /* FavoritoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoCell.xib */; };
+		4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */; };
+		4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */; };
 		4FA8EFA81EB0F7B700A596EA /* PMTitleStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */; };
 		4FA8EFA91EB0F7B700A596EA /* PMTitleStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */; };
 		4FA8EFAD1EB0F8AC00A596EA /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */; };
@@ -353,12 +357,14 @@
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
 		4F8220611EB13AF6001351FE /* PMItemCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCircle.swift; sourceTree = "<group>"; };
 		4F8220621EB13AF6001351FE /* PMItemCircle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCircle.xib; sourceTree = "<group>"; };
+		4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntidadTableViewCell.xib; sourceTree = "<group>"; };
+		4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
 		4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
 		4FA0E3031EA5308D008F5ED9 /* Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Development.plist; sourceTree = "<group>"; };
 		4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleView.swift; sourceTree = "<group>"; };
 		4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMTitleView.xib; sourceTree = "<group>"; };
-		4FA8EF9D1EAF982D00A596EA /* FavoritoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritoCell.xib; sourceTree = "<group>"; };
+		4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritoTableViewCell.xib; sourceTree = "<group>"; };
 		4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleStrip.swift; sourceTree = "<group>"; };
 		4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -429,7 +435,7 @@
 			children = (
 				4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
-				4FA8EF9D1EAF982D00A596EA /* FavoritoCell.xib */,
+				4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */,
 			);
 			name = Favoritos;
 			sourceTree = "<group>";
@@ -760,6 +766,7 @@
 			children = (
 				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
 				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
+				4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */,
 				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
 			);
 			name = Cells;
@@ -796,6 +803,7 @@
 				4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */,
 				4FCC14CA1EAEB39300D6E7BC /* UIView.swift */,
 				4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */,
+				4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */,
 			);
 			name = ExtendedClass;
 			sourceTree = "<group>";
@@ -967,13 +975,14 @@
 				4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */,
 				40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
 				4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */,
+				4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
 				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4F43D8A21EA7C34F00403292 /* PMInfoView.xib in Resources */,
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
-				4FA8EF9E1EAF982D00A596EA /* FavoritoCell.xib in Resources */,
+				4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				4F8220641EB13AF6001351FE /* PMItemCircle.xib in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
@@ -1013,13 +1022,14 @@
 				408CB6F31E54E73D00D308D3 /* ServiceConfiguration.storyboard in Resources */,
 				408CB6F41E54E73D00D308D3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				408CB6F51E54E73D00D308D3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
+				4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				408CB6F61E54E73D00D308D3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4F43D88E1EA699CE00403292 /* Development.plist in Resources */,
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
 				4F43D8A31EA7C34F00403292 /* PMInfoView.xib in Resources */,
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
-				4FA8EF9F1EAF982D00A596EA /* FavoritoCell.xib in Resources */,
+				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				4F8220661EB13B02001351FE /* PMItemCircle.xib in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
 				4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */,
@@ -1202,6 +1212,7 @@
 				4062C1551E3BE63500617265 /* Request.swift in Sources */,
 				4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
 				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
+				4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */,
 				4062C1621E3C17FF00617265 /* Response.swift in Sources */,
@@ -1309,6 +1320,7 @@
 				408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */,
 				408CB6C61E54E73D00D308D3 /* Request.swift in Sources */,
 				4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
+				4F983A4E1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
 				408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */,
 				408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */,
 				408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */,

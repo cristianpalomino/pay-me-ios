@@ -101,7 +101,7 @@ class PMTitleStrip: UIView {
     var originTitles: CGFloat = 0
     
     var midFrame: CGFloat {
-        return self.frame.width * 0.5
+        return self.frame.width * 0.3
     }
     
     var contentSize: CGFloat {

@@ -40,6 +40,8 @@ extension PMNivelTresViewController {
     override func initComponents() {
         super.initComponents()
         self.items = Session.sharedInstance.current.categoria?.items
+        let nib = UINib(nibName: "EntidadTableViewCell", bundle: nil)
+        self.tableview.register(nib, forCellReuseIdentifier: EntidadTableViewCell.identifier)
     }
 }
 
