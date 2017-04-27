@@ -16,7 +16,7 @@ extension UIColor {
     }
     
     public class func appLigthGrayBorderColor() -> UIColor {
-        return UIColor(red: 230/255, green: 233/255, blue: 237/255, alpha: 1)
+        return UIColor(red: 215/255, green: 223/255, blue: 229/255, alpha: 1)
     }
     
     public class func appGrayBorderColor() -> UIColor {

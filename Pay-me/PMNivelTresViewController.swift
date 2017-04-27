@@ -41,10 +41,6 @@ extension PMNivelTresViewController {
         super.initComponents()
         self.items = Session.sharedInstance.current.categoria?.items
     }
-    
-    override func addBorders() {
-        self.viewTableView.addBorder(toSide: .bottom, withColor: UIColor.appGrayBorderColor(), andThickness: 1)
-    }
 }
 
 extension PMNivelTresViewController : UITableViewDelegate {

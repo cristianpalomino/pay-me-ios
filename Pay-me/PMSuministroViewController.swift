@@ -84,10 +84,6 @@ extension PMSuministroViewController {
         self.txtIndentifier.setPMTheme()
         self.loadImages()
     }
-    
-    override func addBorders() {
-        self.imageBannerView.addBorder(toSide: .bottom, withColor: UIColor.appLigthGrayBorderColor(), andThickness: 1)
-    }
 }
 
 extension PMSuministroViewController {
@@ -118,6 +114,7 @@ extension PMSuministroViewController {
             self.imageBigBannerView.af_setImage(withURL: urlLogo1, placeholderImage: nil, filter: nil, imageTransition: .crossDissolve(0.2))
             self.imageBannerView.af_setImage(withURL: urlLogo2, placeholderImage: nil, filter: nil, imageTransition: .crossDissolve(0.2))
         }
+        self.imageBannerView.addBottomBorder()
     }
     
     func initErrorView() {

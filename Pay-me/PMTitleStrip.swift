@@ -17,65 +17,9 @@ class PMTitleStrip: UIView {
     var viewStrip: UIView!
     
     var titles = [(title: String,color: UIColor)]()
+    
     var buttons = [PMTitle]()
-    
-//    init(frame: CGRect, titles: [(title: String,color: UIColor)]) {
-//        super.init(frame: frame)
-//        self.titles = titles
-//        self.prepare()
-//
-//        //
-//        self.addBorder(toSide: .bottom, withColor: UIColor.lightGray, andThickness: 1)
-//        
-//        //
-//        let viewStripHeigth = self.frame.height * 0.75
-//        
-//        //
-//        let frameViewStrip = CGRect(x: 10, y: 0, width: 0, height: 0)
-//        self.viewStrip = UIView(frame: frameViewStrip)
-//        self.scrollView.addSubview(self.viewStrip)
-//        
-//        //
-//        let widthMiddleSize = self.frame.width * 0.5
-//        var origin = widthMiddleSize
-//        
-//        //
-//        for item in self.titles {
-//            
-//            let button = PMTitle(frame: .zero, title: item.title, color: item.color, focus: false)
-//            button.sizeToFit()
-//            
-//            button.addTarget(self, action: #selector(self.action(sender:)), for: .touchUpInside)
-//            
-//            button.frame.origin.x = origin
-//            button.frame.size = CGSize(width: button.frame.width + 50, height: viewStripHeigth * 0.8)
-//            button.center.y = self.center.y
-//            
-//            button.layer.cornerRadius = button.frame.height * 0.5
-//            
-//            debugPrint(button.frame)
-//            
-//            self.scrollView.addSubview(button)
-//            self.buttons.append(button)
-//            
-//            origin = origin + button.frame.width
-//        }
-//        
-//        focusDefault()
-//        
-//        let size = origin + widthMiddleSize
-//        
-//        self.viewStrip.frame.size = CGSize(width: size, height: viewStripHeigth)
-//        self.viewStrip.center.y = self.center.y
-//        
-//        self.scrollView.contentSize = CGSize(width: size + 20, height: viewStripHeigth)
-//        
-//        //
-//        self.viewStrip.layer.borderColor = UIColor.lightGray.cgColor
-//        self.viewStrip.layer.borderWidth = 1
-//        self.viewStrip.layer.cornerRadius = viewStripHeigth * 0.5
-//    }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         prepare()
@@ -88,21 +32,105 @@ class PMTitleStrip: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        update()
     }
     
     private func prepare() {
         backgroundColor = UIColor.white
 
+        scrollView = UIScrollView(frame: .zero)
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.isPagingEnabled = true
+        scrollView.backgroundColor = UIColor.clear
+        addSubview(scrollView)
         
-//        scrollView = UIScrollView(frame: self.frame)
-//        scrollView.backgroundColor = UIColor.white
-//        
-//
-//        addSubview(scrollView)
+        viewStrip = UIView(frame: .zero)
+        viewStrip.backgroundColor = UIColor.clear
+        scrollView.addSubview(viewStrip)
+        stripBorders()
     }
     
-    func focusDefault() {
+    private func update() {
+        scrollView.frame = scrollRect
+        createTitles()
+
+        viewStrip.frame = stripRect
+        viewStrip.center.y = self.scrollView.center.y
+        viewStrip.layer.cornerRadius = self.viewStrip.frame.height * 0.5
+    }
+    
+    func createTitles() {
+        origin = midFrame
+        
+        for item in self.titles {
+    
+            let button = PMTitle(frame: .zero,
+                                 title: item.title,
+                                 color: item.color,
+                                 focus: false)
+            button.sizeToFit()
+        
+            button.addTarget(self, action: #selector(self.action(sender:)), for: .touchUpInside)
+
+            button.frame.origin.x = originTitles
+            button.frame.size = CGSize(width: button.frame.width + titleSpacing,
+                                       height: stripRect.height * 0.8)
+            button.center.y = scrollView.center.y
+        
+            button.layer.cornerRadius = button.frame.height * 0.5
+        
+            scrollView.addSubview(button)
+            buttons.append(button)
+                    
+            origin = button.frame.width
+        }
+        
         buttons[0].isFocus(focus: true)
+        
+        origin = midFrame
+        scrollView.contentSize = CGSize(width: contentSize, height: stripRect.height)
+    }
+    
+    func stripBorders() {
+        viewStrip.layer.borderColor = borderColor.cgColor
+        viewStrip.layer.borderWidth = 1
+    }
+    
+    var titleSpacing: CGFloat = 50
+    
+    var originTitles: CGFloat = 0
+    
+    var midFrame: CGFloat {
+        return self.frame.width * 0.5
+    }
+    
+    var contentSize: CGFloat {
+        return self.originTitles + (stripRect.origin.x * 2)
+    }
+    
+    var origin: CGFloat {
+        set (nv) {
+            originTitles = originTitles + nv
+        }
+        get {
+            return originTitles
+        }
+    }
+    
+    var stripRect: CGRect {
+        let h = self.bounds.height * 0.75
+        let x = self.bounds.width * (10 / self.bounds.width)
+        return CGRect(x: x,
+                      y: self.bounds.origin.y,
+                      width: originTitles,
+                      height: h)
+    }
+    
+    var scrollRect: CGRect {
+        return CGRect(x: self.bounds.origin.x,
+                      y: self.bounds.origin.y,
+                      width: self.bounds.width,
+                      height: self.bounds.height - 1)
     }
     
     func action(sender: PMTitle) {
@@ -116,7 +144,7 @@ class PMTitleStrip: UIView {
 class PMTitle: UIButton {
     
     open var textColor: UIColor {
-        return UIColor(hexColor: "#AAB2BD")
+        return borderColor
     }
     
     var isFocus: Bool = false
@@ -151,6 +179,10 @@ class PMTitle: UIButton {
             backgroundColor = UIColor.white
             setTitleColor(textColor, for: .normal)
         }
+    }
+    
+    var midSize: CGFloat {
+        return self.frame.width * 0.5
     }
 }
 

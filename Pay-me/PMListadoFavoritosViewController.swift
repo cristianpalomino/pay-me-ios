@@ -46,7 +46,7 @@ extension PMListadoFavoritosViewController {
     
     override func initComponents() {
         super.initComponents()
-        
+        self.viewTitleStrip.titles = self.titles
         let nib = UINib(nibName: "FavoritoCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: FavoritoTableViewCell.identifier)
         self.buttonAgregarServicios.setGradientBackground()

@@ -35,4 +35,18 @@ extension UIView {
         layer.masksToBounds = true
         layer.addSublayer(border)
     }
+    
+    open var borderColor: UIColor {
+        return UIColor(hexColor: "#AAB2BD")
+    }
+    
+    func addBottomBorder() {
+        let borderLayer = CALayer()
+        borderLayer.frame = CGRect(x: frame.origin.x,
+                              y: frame.height - 1,
+                              width: UIScreen.main.bounds.width,
+                              height: 1)
+        borderLayer.backgroundColor = borderColor.cgColor
+        layer.addSublayer(borderLayer)
+    }
 }

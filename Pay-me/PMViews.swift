@@ -54,7 +54,6 @@ class PMErrorView : PMView {
     }
     
     override func draw(_ rect: CGRect) {
-        self.borderColor = UIColor.appGrayColor()
         self.borderWidth = 1
     }
     
