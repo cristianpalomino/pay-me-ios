@@ -33,7 +33,7 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8sE-6M-sVa">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icono_agregar-gray" translatesAutoresizingMaskIntoConstraints="NO" id="8sE-6M-sVa">
                         <rect key="frame" x="284" y="22" width="21" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="ak3-pi-3yp"/>
@@ -70,7 +70,7 @@
                     <constraint firstItem="H2Q-rA-2hL" firstAttribute="centerX" secondItem="26J-cc-2NU" secondAttribute="centerX" id="Dgb-Y7-RUC"/>
                     <constraint firstItem="26J-cc-2NU" firstAttribute="leading" secondItem="DLO-si-wf8" secondAttribute="leading" constant="15" id="HHU-LT-Fqm"/>
                     <constraint firstItem="8sE-6M-sVa" firstAttribute="leading" secondItem="NEf-oO-Ixu" secondAttribute="trailing" constant="25" id="IFd-sU-4kg"/>
-                    <constraint firstItem="y1V-jJ-F14" firstAttribute="top" secondItem="NEf-oO-Ixu" secondAttribute="bottom" constant="13" id="LuI-pe-w1B"/>
+                    <constraint firstItem="y1V-jJ-F14" firstAttribute="top" secondItem="NEf-oO-Ixu" secondAttribute="bottom" constant="13" id="LuI-pe-w1B" userLabel="bottom"/>
                     <constraint firstItem="H2Q-rA-2hL" firstAttribute="width" secondItem="H2Q-rA-2hL" secondAttribute="height" multiplier="1:1" id="Nlf-1q-L9d"/>
                     <constraint firstAttribute="bottom" secondItem="y1V-jJ-F14" secondAttribute="bottom" constant="9" id="SJ0-by-3Ys"/>
                     <constraint firstItem="H2Q-rA-2hL" firstAttribute="top" secondItem="DLO-si-wf8" secondAttribute="top" constant="14.5" id="but-52-j8s"/>
@@ -84,9 +84,13 @@
             <connections>
                 <outlet property="logo" destination="H2Q-rA-2hL" id="5Yc-Li-6Zr"/>
                 <outlet property="name" destination="NEf-oO-Ixu" id="QHO-Z4-LZh"/>
+                <outlet property="nameBottomConstraint" destination="LuI-pe-w1B" id="L7H-vm-IBb"/>
                 <outlet property="topViewImageView" destination="26J-cc-2NU" id="ixT-JY-MSn"/>
             </connections>
             <point key="canvasLocation" x="33" y="148.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icono_agregar-gray" width="21" height="21"/>
+    </resources>
 </document>
