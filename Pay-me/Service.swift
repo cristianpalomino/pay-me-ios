@@ -10,6 +10,7 @@
 import Foundation
 import SwiftyJSON
 
+// Favorito
 //"alias": "Pension",
 //"amount": "000000012170",
 //"idCompanySPS": "50",
@@ -20,7 +21,24 @@ import SwiftyJSON
 //"serviceIdentifier": "123",
 //"state": "2"
 
-class Service {
+// Service
+//"debts": {
+//    "contador": "0",
+//    "currency": "604",
+//    "deudaTotal": "000000012500",
+//    "fechaEmision": "19122017",
+//    "fechaOrden": "0",
+//    "fechaVencimiento": "19112017",
+//    "idD": "183893",
+//    "idService": "53",
+//    "monto": "000000012500",
+//    "nameService": "MATRICULA           ",
+//    "recibo": "12345678        "
+//},
+//"idService": "53",
+//"nameService": "MATRICULA           "
+
+class Favorito {
     
     var alias: String!
     var amount: String!
@@ -34,55 +52,51 @@ class Service {
     
     init(json :JSON) {
         
-        self.idCompanySPS       = json[Keys.kIdCompanySPS].stringValue
-        self.idServiceSPS       = json[Keys.kIdServiceSPS].stringValue
-        self.idService          = json[Keys.kIdService].stringValue
-        self.serviceIdentifier  = json[Keys.kServiceIdentifier].stringValue
-        self.owner              = json[Keys.kOwner].stringValue
-        self.alias              = json[Keys.kAlias].stringValue
-        self.inSPR              = json[Keys.kInSPR].stringValue
-        self.amount             = json[Keys.kAmount].stringValue
-     
-        guard let istate = Int(json[Keys.kState].stringValue) else {
-            return
-        }
-        self.state  = ServiceStateType(rawValue: istate)
+        alias = json["alias"].stringValue
+        amount = json["amount"].stringValue
+        idCompanySPS = json["idCompanySPS"].stringValue
+        idService = json["idService"].stringValue
+        idServiceSPS = json["idServiceSPS"].stringValue
+        inSPR = json["inSPR"].stringValue
+        owner = json["owner"].stringValue
+        serviceIdentifier = json["serviceIdentifier"].stringValue
+        state = ServiceStateType(rawValue: json["state"].stringValue)
     }
 }
 
-extension Service {
-    
-    struct Keys {
-
-        static let kIdCompanySPS        = "idCompanySPS"
-        static let kIdServiceSPS        = "idServiceSps"
-        static let kIdService           = "idService"
-        static let kServiceIdentifier   = "serviceIdentifier"
-        static let kOwner               = "owner"
-        static let kNameService         = "nameService"
-        static let kAlias               = "alias"
-        static let kAmount              = "amount"
-        static let kInSPR               = "inSPR"
-        static let kState               = "state"
-    }
+extension Favorito {
     
     func toParams() -> [String : Any] {
         var params :[String : Any] = [:]
-        params[Keys.kIdCompanySPS] = self.idCompanySPS
-        params[Keys.kIdServiceSPS] = self.idServiceSPS
-        params[Keys.kServiceIdentifier] = self.serviceIdentifier
-        params[Keys.kOwner] = self.owner
+        params["idCompanySPS"] = self.idCompanySPS
+        params["idServiceSPS"] = self.idServiceSPS
+        params["serviceIdentifier"] = self.serviceIdentifier
+        params["owner"] = self.owner
         return params
     }
 }
 
-extension Service: Hashable {
+extension Favorito: Hashable {
     
     var hashValue: Int {
         return idService.hashValue
     }
     
-    static func == (lhs: Service, rhs: Service) -> Bool {
+    static func == (lhs: Favorito, rhs: Favorito) -> Bool {
         return lhs.idService == rhs.idService
+    }
+}
+
+class Service {
+
+    var nameService: String
+    var idService: String
+    var debts = [Debt]()
+    
+    init(json :JSON) {
+        
+        nameService = json["nameService"].stringValue
+        idService = json["idService"].stringValue
+        json["debts"].arrayValue.map{ debts.append(Debt(json: $0)) }
     }
 }

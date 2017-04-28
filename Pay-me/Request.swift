@@ -55,21 +55,30 @@ class RequestAgregarServicio : Request {
 
 class RequestConsultarDeudas : Request {
     
-    var idCompany           :String!
-    var idService           :String!
-    var serviceIdentifier   :String!
+    enum TypeOperation: String {
+        
+        case registro_servicios = "1"
+        case actualizacion_informacion_servicios = "2"
+    }
     
-    init(idCompany :String, idService :String, serviceIdentifier :String) {
-        self.idCompany          = idCompany
-        self.idService          = idService
-        self.serviceIdentifier  = serviceIdentifier
+    var idCompany: String!
+    var idServiceSPS: String!
+    var serviceIdentifier: String!
+    var typeOperation: TypeOperation!
+    
+    init(idCompany: String, idServiceSPS: String, serviceIdentifier: String, typeOperation: TypeOperation) {
+        self.idCompany = idCompany
+        self.idServiceSPS = idServiceSPS
+        self.serviceIdentifier = serviceIdentifier
+        self.typeOperation = typeOperation
     }
     
     override func toParams() -> [String : Any] {
         var params = super.toParams()
-        params["idCompany"]         = idCompany.encrypt()
-        params["idService"]         = idService.encrypt()
+        params["idCompany"] = idCompany.encrypt()
+        params["idServiceSPS"] = idServiceSPS.encrypt()
         params["serviceIdentifier"] = serviceIdentifier.encrypt()
+        params["typeOperation"] = typeOperation.rawValue
         return params
     }
 }

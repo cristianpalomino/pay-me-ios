@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class PMTriangleView: UIView {
 
     override init(frame: CGRect) {

@@ -119,6 +119,7 @@ class Item {
     
     var idCompany       :String!
     var idService       :String!
+    var idServiceSPS    :String!
     var logo            :String!
     var logo_2          :String!
     var codeDescription :String!
@@ -130,6 +131,7 @@ class Item {
         
         self.idCompany = json["idCompany"].stringValue
         self.idService = json["idService"].stringValue
+        self.idServiceSPS = json["idServiceSPS"].stringValue
         self.logo = json["logo"].stringValue
         self.logo_2 = json["logo_2"].stringValue
         self.codeDescription = json["codeDescription"].stringValue

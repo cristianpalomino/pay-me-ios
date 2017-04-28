@@ -64,11 +64,12 @@ extension PMDetalleSuministroViewController {
     
     override func initComponents() {
         super.initComponents()
-        self.txtIndentifier.placeholder = labels[1]
-        self.txtName.placeholder = labels[2]
-        self.buttonAgregarServicio.setGradientBackground()
-        self.txtIndentifier.setPMTheme()
-        self.txtName.setPMTheme()
+        bannerView.addBottomBorder()
+        txtIndentifier.placeholder = labels[1]
+        txtName.placeholder = labels[2]
+        buttonAgregarServicio.setGradientBackground()
+        txtIndentifier.setPMTheme()
+        txtName.setPMTheme()
         
         if let response = apiResponse, let identifier = serviceIdentifier {
             self.hasManyServices = response.debts.count > 1
@@ -93,9 +94,11 @@ extension PMDetalleSuministroViewController {
     
     func defineButton() {
         if self.hasManyServices {
-            self.buttonAgregarServicio.setTitle("Agregar Servicio", for: .normal)
+            buttonAgregarServicio.setImage(UIImage(named: "icono_agregar-white"), for: .normal)
+            buttonAgregarServicio.setTitle("  Agregar Servicio", for: .normal)
         } else {
-            self.buttonAgregarServicio.setTitle("Recordar Servicio", for: .normal)
+            buttonAgregarServicio.setImage(UIImage(named: "icono_recordar_servicio"), for: .normal)
+            self.buttonAgregarServicio.setTitle("  Recordar Servicio", for: .normal)
         }
     }
     

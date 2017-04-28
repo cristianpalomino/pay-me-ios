@@ -25,7 +25,6 @@ class PMSuministroViewController: PMViewController {
         return strings.components(separatedBy: ",")
     }
     
-    
     //Api
     weak var apiResponse    :ResponseConsultarDeudas?
     
@@ -44,6 +43,7 @@ class PMSuministroViewController: PMViewController {
     @IBOutlet weak var imageBigBannerView:  UIImageView!
     @IBOutlet weak var bannerView:          UIView!
     @IBOutlet weak var imageBannerView:     UIImageView!
+
     var errorView :PMErrorView!
     
     override func viewDidLoad() {
@@ -57,7 +57,7 @@ class PMSuministroViewController: PMViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.initErrorView()
+        initErrorView()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -67,7 +67,7 @@ class PMSuministroViewController: PMViewController {
         
         if identifier == Constants.Storyboard.Segues.kDetailSuministro {
             let detalleViewController = segue.destination as! PMDetalleSuministroViewController
-            if self.apiResponse != nil {
+            if apiResponse != nil {
                 detalleViewController.serviceIdentifier = self.txtIndentifier.text!
                 detalleViewController.apiResponse = self.apiResponse
             }
@@ -79,10 +79,11 @@ extension PMSuministroViewController {
     
     override func initComponents() {
         super.initComponents()
-        self.txtIndentifier.placeholder = labels[0]
-        self.buttonConsultar.setGradientBackground()
-        self.txtIndentifier.setPMTheme()
-        self.loadImages()
+        bannerView.addBottomBorder()
+        txtIndentifier.placeholder = labels[0]
+        buttonConsultar.setGradientBackground()
+        txtIndentifier.setPMTheme()
+        loadImages()
     }
 }
 
@@ -114,7 +115,6 @@ extension PMSuministroViewController {
             self.imageBigBannerView.af_setImage(withURL: urlLogo1, placeholderImage: nil, filter: nil, imageTransition: .crossDissolve(0.2))
             self.imageBannerView.af_setImage(withURL: urlLogo2, placeholderImage: nil, filter: nil, imageTransition: .crossDissolve(0.2))
         }
-        self.imageBannerView.addBottomBorder()
     }
     
     func initErrorView() {
@@ -177,13 +177,17 @@ extension PMSuministroViewController: SuministroViewControllerServicesDelegate {
         }
         
         txtIndentifier.resignFirstResponder()
+        let current = Session.sharedInstance.current
         
-        let identifier  = txtIndentifier.text!
-        let current     = Session.sharedInstance.current
-        let idCompany   = current.item!.idCompany!
-        let idService   = current.item!.idService!
+        let identifier = txtIndentifier.text!
+        let idCompany = current.item!.idCompany!
+        let idServiceSPS = current.item!.idServiceSPS!
+        let type = RequestConsultarDeudas.TypeOperation.registro_servicios
         
-        let request = RequestConsultarDeudas(idCompany: idCompany, idService: idService, serviceIdentifier: identifier)
+        let request = RequestConsultarDeudas(idCompany: idCompany,
+                                             idServiceSPS: idServiceSPS,
+                                             serviceIdentifier: identifier,
+                                             typeOperation: type)
         
         PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
         PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self

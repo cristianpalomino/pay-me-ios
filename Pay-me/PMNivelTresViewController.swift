@@ -17,12 +17,17 @@ class PMNivelTresViewController: PMViewController {
         return title
     }
     
+    var titles: [(title: String,color: UIColor)] {
+        return [("Publicas",color: UIColor.appBlueColor()),
+                ("Privadas",color: UIColor.appBlueColor())]
+    }
+    
+    @IBOutlet weak var viewTitleStrip: PMTitleStrip!
     @IBOutlet weak var tableview: UITableView!
-    @IBOutlet weak var viewTableView: UIView!
     
     var items: [Item]? {
         didSet {
-            self.tableview.reloadData()
+            tableview.reloadData()
         }
     }
     
@@ -39,9 +44,11 @@ extension PMNivelTresViewController {
     
     override func initComponents() {
         super.initComponents()
-        self.items = Session.sharedInstance.current.categoria?.items
+        viewTitleStrip.titles = self.titles
+        viewTitleStrip.addBottomBorder()
+        items = Session.sharedInstance.current.categoria?.items
         let nib = UINib(nibName: "EntidadTableViewCell", bundle: nil)
-        self.tableview.register(nib, forCellReuseIdentifier: EntidadTableViewCell.identifier)
+        tableview.register(nib, forCellReuseIdentifier: EntidadTableViewCell.identifier)
     }
 }
 
@@ -61,7 +68,7 @@ extension PMNivelTresViewController : UITableViewDelegate {
 extension PMNivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items?.count ?? 0
+        return items!.count
     }
     
     
@@ -71,7 +78,7 @@ extension PMNivelTresViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
-        cell.servicio = self.items?[indexPath.row]
+        cell.servicio = items![indexPath.row]
         return cell
     }
 }

@@ -54,7 +54,8 @@ class PMErrorView : PMView {
     }
     
     override func draw(_ rect: CGRect) {
-        self.borderWidth = 1
+        layer.borderWidth = 1
+        layer.borderColor = borderColor.cgColor
     }
     
     public override func commonInit() {

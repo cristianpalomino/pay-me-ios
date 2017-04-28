@@ -10,52 +10,41 @@ import Foundation
 import SwiftyJSON
 import UIKit
 
+//"contador": "0",
+//"currency": "604",
+//"deudaTotal": "000000012500",
+//"fechaEmision": "19122017",
+//"fechaOrden": "0",
+//"fechaVencimiento": "19112017",
+//"idD": "183893",
+//"idService": "53",
+//"monto": "000000012500",
+//"nameService": "MATRICULA           ",
+//"recibo": "12345678        "
+
 class Debt {
     
-    var codReference    :String!
-    var amount          :String!
-    var expirationDate  :String!
-    var currency        :String!
-    var location        :String!
-    var payDocument     :String!
-    var totalAmount     :String!
-    var currencyName    :String!
-    var emissionDate    :String!
-    var nameService     :String!
-    var idService       :String!
+    var contador: String!
+    var currency: String!
+    var deudaTotal: String!
+    var fechaEmision: String!
+    var fechaOrden: String!
+    var fechaVencimiento: String!
+    var idD: String!
+    var monto: String!
+    var nameService: String!
+    var recibo: String!
     
     init(json :JSON) {
-        
-        self.codReference       = json[Keys.kCodReference].stringValue
-        self.amount             = json[Keys.kAmount].stringValue
-        self.expirationDate     = json[Keys.kExpirationDate].stringValue
-        self.currency           = json[Keys.kCurrency].stringValue
-        self.location           = json[Keys.kLocation].stringValue
-        self.payDocument        = json[Keys.kPayDocument].stringValue
-        self.totalAmount        = json[Keys.kTotalAmount].stringValue
-        self.currencyName       = json[Keys.kCurrencyName].stringValue
-        self.emissionDate       = json[Keys.kEmissionDate].stringValue
-        self.nameService        = json[Keys.kNameService].stringValue
-        self.idService          = json[Keys.kIdService].stringValue
-    }
-}
-
-extension Debt {
-    
-    struct Keys {
-        
-        static let kCodTrace             = "codTrace"
-        static let kContador             = "contador"
-        static let kCodReference         = "codReference"
-        static let kAmount               = "amount"
-        static let kExpirationDate       = "expirationDate"
-        static let kCurrency             = "currency"
-        static let kLocation             = "location"
-        static let kPayDocument          = "payDocument"
-        static let kTotalAmount          = "totalAmount"
-        static let kCurrencyName         = "currencyName"
-        static let kEmissionDate         = "emissionDate"
-        static let kNameService          = "nameService"
-        static let kIdService            = "idService"
+        contador = json["contador"].stringValue
+        currency = json["currency"].stringValue
+        deudaTotal = json["deudaTotal"].stringValue
+        fechaEmision = json["fechaEmision"].stringValue
+        fechaOrden = json["fechaOrden"].stringValue
+        fechaVencimiento = json["fechaVencimiento"].stringValue
+        idD = json["idD"].stringValue
+        monto = json["monto"].stringValue
+        nameService = json["nameService"].stringValue
+        recibo = json["contador"].stringValue
     }
 }

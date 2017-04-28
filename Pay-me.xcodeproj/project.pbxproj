@@ -209,6 +209,8 @@
 		4F9C3B9C1EB131A90076EAA5 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */; };
 		4F9C3B9D1EB131B60076EAA5 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */; };
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
+		4FA0AF741EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */; };
+		4FA0AF751EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */; };
 		4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
 		4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
 		4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
@@ -361,6 +363,7 @@
 		4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
 		4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
+		4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		4FA0E3031EA5308D008F5ED9 /* Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Development.plist; sourceTree = "<group>"; };
 		4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleView.swift; sourceTree = "<group>"; };
 		4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMTitleView.xib; sourceTree = "<group>"; };
@@ -768,6 +771,7 @@
 				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
 				4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */,
 				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
+				4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -963,6 +967,7 @@
 				40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */,
 				406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */,
 				4F9C3B9C1EB131A90076EAA5 /* AgregarServicio.storyboard in Resources */,
+				4FA0AF741EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */,
 				40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
 				4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */,
@@ -1010,6 +1015,7 @@
 				408CB6E71E54E73D00D308D3 /* SanFranciscoDisplay-Black.ttf in Resources */,
 				408CB6E81E54E73D00D308D3 /* LaunchScreen.storyboard in Resources */,
 				4F9C3B9D1EB131B60076EAA5 /* AgregarServicio.storyboard in Resources */,
+				4FA0AF751EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */,
 				408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				408CB6EA1E54E73D00D308D3 /* Main.storyboard in Resources */,
 				408CB6EC1E54E73D00D308D3 /* Messages.storyboard in Resources */,

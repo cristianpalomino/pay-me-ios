@@ -30,11 +30,12 @@ class PMListaServiciosViewController: PMViewController {
     var serviceIdentifier:  String?
     var imageBanner:        UIImage?
     
-    @IBOutlet weak var tableview:               UITableView!
-    @IBOutlet weak var imageViewBanner:         UIImageView!
-    @IBOutlet weak var labelNameIdentifier:     UILabel!
-    @IBOutlet weak var labelIdentifier:         UILabel!
-    @IBOutlet weak var buttonRecordarServicio:  UIButton!
+    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var imageViewBanner: UIImageView!
+    @IBOutlet weak var labelNameIdentifier: UILabel!
+    @IBOutlet weak var labelIdentifier: UILabel!
+    @IBOutlet weak var buttonRecordarServicio: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,12 +50,16 @@ extension PMListaServiciosViewController {
     
     override func initComponents() {
         super.initComponents()
-        self.buttonRecordarServicio.setGradientBackground()
-        self.labelNameIdentifier.text = labels[1]
-        self.labelIdentifier.text = self.serviceIdentifier
-        self.imageViewBanner.image = self.imageBanner
-        self.tableview.allowsMultipleSelection = true
-        self.tableview.reloadData()
+        topView.addBottomBorder()
+        buttonRecordarServicio.setGradientBackground()
+        labelNameIdentifier.text = labels[1]
+        labelIdentifier.text = self.serviceIdentifier
+        imageViewBanner.image = self.imageBanner
+        tableview.allowsMultipleSelection = true
+        
+        let nib = UINib(nibName: "ServiceTableViewCell", bundle: nil)
+        tableview.register(nib, forCellReuseIdentifier: ServiceTableViewCell.identifier)
+        tableview.reloadData()
     }
 }
 
@@ -110,29 +115,29 @@ extension PMListaServiciosViewController: PMListaServiciosViewControllerServices
     
     internal func callAddServices() {
         
-        if let response = self.apiResponse,
-            let item = Session.sharedInstance.current.item,
-            let identifier = self.serviceIdentifier {
-
-            let indexs = self.tableview.indexPathsForSelectedRows?.map({ $0.row })
-            var services = [Service]()
-            
-            indexs?.forEach {
-                i in
-                let debt = response.debts[i]
-                let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
-                                         Service.Keys.kIdServiceSPS     : debt.idService,
-                                         Service.Keys.kServiceIdentifier: identifier,
-                                         Service.Keys.kNameService      : response.debts[i].nameService,
-                                         Service.Keys.kOwner            : response.clientName]
-                let service = Service(json: JSON(serviceAtributtes))
-                services.append(service)
-            }
-            
-            let request = RequestAgregarServicio(services: services)
-
-            PaymeServices.sharedInstance.serviciosServices.serviceAgregarServicio(request: request)
-            PaymeServices.sharedInstance.serviciosServices.agregarServicioDelegate = self
+//        if let response = self.apiResponse,
+//            let item = Session.sharedInstance.current.item,
+//            let identifier = self.serviceIdentifier {
+//
+//            let indexs = self.tableview.indexPathsForSelectedRows?.map({ $0.row })
+//            var services = [Service]()
+//            
+//            indexs?.forEach {
+//                i in
+//                let debt = response.debts[i]
+//                let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
+//                                         Service.Keys.kIdServiceSPS     : debt.idService,
+//                                         Service.Keys.kServiceIdentifier: identifier,
+//                                         Service.Keys.kNameService      : response.debts[i].nameService,
+//                                         Service.Keys.kOwner            : response.clientName]
+//                let service = Service(json: JSON(serviceAtributtes))
+//                services.append(service)
+//            }
+//            
+//            let request = RequestAgregarServicio(services: services)
+//
+//            PaymeServices.sharedInstance.serviciosServices.serviceAgregarServicio(request: request)
+//            PaymeServices.sharedInstance.serviciosServices.agregarServicioDelegate = self
         }
     }
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Medium.ttf">
+            <string>SanFranciscoDisplay-Medium</string>
+        </array>
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServicioCell" rowHeight="65" id="ywS-VG-ZZ7" customClass="ServiceTableViewCell" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ywS-VG-ZZ7" id="Lbw-rU-ZIf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="zAH-0d-eqM">
+                        <rect key="frame" x="16" y="10" width="46" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45.5" id="K0n-yl-ydQ"/>
+                            <constraint firstAttribute="height" constant="45.5" id="PN9-lW-zdQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeA-py-7eP">
+                        <rect key="frame" x="70" y="15" width="48" height="16"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="13.5"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solicitar recibos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79h-ra-X3X">
+                        <rect key="frame" x="70" y="35" width="76" height="13"/>
+                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                        <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icono_agregar" translatesAutoresizingMaskIntoConstraints="NO" id="R75-cV-IOt">
+                        <rect key="frame" x="288" y="24.5" width="16" height="16"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="79h-ra-X3X" firstAttribute="leading" secondItem="zAH-0d-eqM" secondAttribute="trailing" constant="8" id="1OB-v2-2SP"/>
+                    <constraint firstItem="jeA-py-7eP" firstAttribute="leading" secondItem="zAH-0d-eqM" secondAttribute="trailing" constant="8" id="GCm-k7-rvz"/>
+                    <constraint firstItem="zAH-0d-eqM" firstAttribute="leading" secondItem="Lbw-rU-ZIf" secondAttribute="leading" constant="16" id="JNf-w4-Z0h"/>
+                    <constraint firstItem="zAH-0d-eqM" firstAttribute="centerY" secondItem="Lbw-rU-ZIf" secondAttribute="centerY" id="Lr4-Bz-aad"/>
+                    <constraint firstItem="R75-cV-IOt" firstAttribute="centerY" secondItem="Lbw-rU-ZIf" secondAttribute="centerY" id="Q0S-4Z-D3O"/>
+                    <constraint firstItem="79h-ra-X3X" firstAttribute="top" secondItem="jeA-py-7eP" secondAttribute="bottom" constant="4" id="S3R-rA-Jty"/>
+                    <constraint firstItem="jeA-py-7eP" firstAttribute="top" secondItem="Lbw-rU-ZIf" secondAttribute="top" constant="15" id="fp1-a0-ZIB"/>
+                    <constraint firstAttribute="trailing" secondItem="R75-cV-IOt" secondAttribute="trailing" constant="16" id="qxf-hx-ixN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewService" destination="zAH-0d-eqM" id="Lzm-Tc-OtB"/>
+                <outlet property="imageViewState" destination="R75-cV-IOt" id="QLA-IM-QAM"/>
+                <outlet property="labelNameService" destination="jeA-py-7eP" id="cPT-iJ-xTp"/>
+                <outlet property="labelSolicitar" destination="79h-ra-X3X" id="RNu-OC-fQe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-educacion" width="58" height="70"/>
+        <image name="icono_agregar" width="16" height="16"/>
+    </resources>
+</document>

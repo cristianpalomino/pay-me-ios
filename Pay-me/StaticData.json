@@ -13,6 +13,7 @@
                                                     "position": "top",
                                                     "imageName": "luz",
                                                     "idService": "7",
+                                                    "idServiceSPS": "7",
                                                     "idCompany": "5",
                                                     "logo": "http://i.imgur.com/akAvFCT.png",
                                                     "logo_2": "http://i.imgur.com/at52Mkg.png",
@@ -50,6 +51,7 @@
                                                     {
                                                     "label": "Ingrese código de alumno, Código de alumno, Nombre de alumno",
                                                     "idService": "208",
+                                                    "idServiceSPS": "208",
                                                     "idCompany": "50",
                                                     "logo": "http://i.imgur.com/YyJ70MH.png",
                                                     "logo_2": "http://i.imgur.com/ApRjyXe.png",

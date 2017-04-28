@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class PMTitleStrip: UIView {
     
     var delegate: PMTitleStripDelegate?
@@ -40,7 +39,7 @@ class PMTitleStrip: UIView {
 
         scrollView = UIScrollView(frame: .zero)
         scrollView.showsHorizontalScrollIndicator = false
-        scrollView.isPagingEnabled = true
+        //scrollView.isPagingEnabled = true
         scrollView.backgroundColor = UIColor.clear
         addSubview(scrollView)
         
@@ -101,7 +100,7 @@ class PMTitleStrip: UIView {
     var originTitles: CGFloat = 0
     
     var midFrame: CGFloat {
-        return self.frame.width * 0.3
+        return self.frame.width * 0.25
     }
     
     var contentSize: CGFloat {

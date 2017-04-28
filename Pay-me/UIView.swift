@@ -12,7 +12,7 @@ import UIKit
 extension UIView {
     
     open var borderColor: UIColor {
-        return UIColor(hexColor: "#AAB2BD")
+        return UIColor(hexColor: "#ccd1d9")
     }
     
     func addBottomBorder() {

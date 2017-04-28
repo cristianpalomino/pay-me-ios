@@ -34,11 +34,11 @@ class PMListadoFavoritosViewController: PMViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.callServiceFavoritos()
+        callServiceFavoritos()
     }
     
     override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        didReceiveMemoryWarning()
     }
 }
 
@@ -46,10 +46,10 @@ extension PMListadoFavoritosViewController {
     
     override func initComponents() {
         super.initComponents()
-        self.viewTitleStrip.titles = self.titles
+        viewTitleStrip.titles = self.titles
         let nib = UINib(nibName: "FavoritoTableViewCell", bundle: nil)
-        self.tableView.register(nib, forCellReuseIdentifier: FavoritoTableViewCell.identifier)
-        self.buttonAgregarServicios.setGradientBackground()
+        tableView.register(nib, forCellReuseIdentifier: FavoritoTableViewCell.identifier)
+        buttonAgregarServicios.setGradientBackground()
     }
 }
 
@@ -91,14 +91,14 @@ extension PMListadoFavoritosViewController : FavoriteCellDelegate {
 extension PMListadoFavoritosViewController {
     
     internal func callServiceConsultarRecibos(withService service:Service) {
-        if let codeService = service.serviceIdentifier {
-            let request = RequestConsultarDeudas(idCompany: service.idCompanySPS,
-                                                 idService: service.idServiceSPS,
-                                                 serviceIdentifier: codeService)
-            PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
-            PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
-            showHUD()
-        }
+//        if let codeService = service.serviceIdentifier {
+//            let request = RequestConsultarDeudas(idCompany: service.idCompanySPS,
+//                                                 idService: service.idServiceSPS,
+//                                                 serviceIdentifier: codeService)
+//            PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
+//            PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
+//            showHUD()
+//        }
     }
     
     internal func callServiceFavoritos() {
