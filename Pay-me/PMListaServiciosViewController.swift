@@ -138,7 +138,7 @@ extension PMListaServiciosViewController: PMListaServiciosViewControllerServices
 //
 //            PaymeServices.sharedInstance.serviciosServices.serviceAgregarServicio(request: request)
 //            PaymeServices.sharedInstance.serviciosServices.agregarServicioDelegate = self
-        }
+//        }
     }
 }
 

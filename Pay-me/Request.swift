@@ -42,7 +42,7 @@ class RequestAgregarServicio : Request {
         for service in self.services {
             var servicesparams = super.toParams()
             servicesparams["verifiedService"] = verifiedService.encrypt()
-            servicesparams["service"] = service.toParams()
+//            servicesparams["service"] = service.toParams()
          
             array.append(servicesparams)
         }
