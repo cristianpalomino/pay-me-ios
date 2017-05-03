@@ -26,7 +26,7 @@ class PMDetalleSuministroViewController: PMViewController {
         return strings.components(separatedBy: ",")
     }
     
-    var apiResponse             :ResponseConsultarDeudas?
+//    var apiResponse             :ResponseConsultarDeudas?
     var serviceIdentifier       :String?
     var hasManyServices         :Bool = false
     
@@ -49,14 +49,14 @@ class PMDetalleSuministroViewController: PMViewController {
             return
         }
         
-        if identifier == Constants.Storyboard.Segues.kToListDetailSuministro {
-            let listaServiciosController = segue.destination as! PMListaServiciosViewController
-            if self.apiResponse != nil {
-                listaServiciosController.serviceIdentifier = self.txtIndentifier.text!
-                listaServiciosController.apiResponse = self.apiResponse
-                listaServiciosController.imageBanner = self.bannerView.image
-            }
-        }
+//        if identifier == Constants.Storyboard.Segues.kToListDetailSuministro {
+//            let listaServiciosController = segue.destination as! PMListaServiciosViewController
+//            if self.apiResponse != nil {
+//                listaServiciosController.serviceIdentifier = self.txtIndentifier.text!
+////                listaServiciosController.apiResponse = self.apiResponse
+//                listaServiciosController.imageBanner = self.bannerView.image
+//            }
+//        }
     }
 }
 
@@ -71,17 +71,17 @@ extension PMDetalleSuministroViewController {
         txtIndentifier.setPMTheme()
         txtName.setPMTheme()
         
-        if let response = apiResponse, let identifier = serviceIdentifier {
-            self.hasManyServices = response.debts.count > 1
-
-            self.txtName.text = response.clientName
-            self.txtIndentifier.text = identifier
-            self.defineButton()
-            
-            if let currentService = Session.sharedInstance.current.item {
-                self.loadBanner(url: currentService.logo_2)
-            }
-        }
+//        if let response = apiResponse, let identifier = serviceIdentifier {
+//            self.hasManyServices = response.debts.count > 1
+//
+//            self.txtName.text = response.clientName
+//            self.txtIndentifier.text = identifier
+//            self.defineButton()
+//            
+//            if let currentService = Session.sharedInstance.current.item {
+//                self.loadBanner(url: currentService.logo_2)
+//            }
+//        }
     }
 }
 
@@ -113,28 +113,6 @@ extension PMDetalleSuministroViewController {
     }
 }
 
-extension PMDetalleSuministroViewController: DetalleSuministroViewControllerServicesDelegate {
-    
-    internal func callAddServices() {
-        
-//        if let response = self.apiResponse,
-//            let item = Session.sharedInstance.current.item,
-//            let identifier = self.serviceIdentifier {
-//            
-//            let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
-//                                     Service.Keys.kIdServiceSPS     : item.idService,
-//                                     Service.Keys.kServiceIdentifier: identifier,
-//                                     Service.Keys.kNameService      : response.debts[0].nameService,
-//                                     Service.Keys.kOwner            : response.clientName]
-//            let service = Service(json: JSON(serviceAtributtes))
-//            let request = RequestAgregarServicio(services: [service])
-//            
-//            PaymeServices.sharedInstance.serviciosServices.serviceAgregarServicio(request: request)
-//            PaymeServices.sharedInstance.serviciosServices.agregarServicioDelegate = self
-//        }
-    }
-}
-
 extension PMDetalleSuministroViewController {
     
     @IBAction func tapAgregarServicio() {
@@ -142,7 +120,7 @@ extension PMDetalleSuministroViewController {
             self.toSegue(identifier: Constants.Storyboard.Segues.kToListDetailSuministro)
         } else {
             self.showHUD()
-            self.callAddServices()
+//            self.callAddServices()
         }
     }
     
@@ -150,21 +128,3 @@ extension PMDetalleSuministroViewController {
         self.tapBack()
     }
 }
-
-extension PMDetalleSuministroViewController: AgregarServicioDelegate {
-    
-    internal func serviceSuccess(response: ResponseAgregarServicio) {
-        self.hideHUD()
-        self.showMessage()
-    }
-    
-    internal func serviceFailed(error: PaymeError) {
-        print("\(error.answerCode)\t\(error.answerMessage)")
-    }
-}
-
-protocol DetalleSuministroViewControllerServicesDelegate {
-    
-    func callAddServices()
-}
-

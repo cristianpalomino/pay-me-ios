@@ -42,53 +42,53 @@ extension FavoritoTableViewCell {
 
 extension FavoritoTableViewCell {
     
-    func update(service :Service) {
-//        let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS)
-//        self.updateImage(url: item!.logo)
-//        
-//        self.entidad.text   = item!.entidad
-//        self.code.text      = service.serviceIdentifier
-//    
-//        if service.inSPR == "1" {
-//            self.defineState(state: .CARGOS_RECURRENTES)
-//        } else {
-//            self.defineState(state: service.state)
-//        }
-//        
-//        if let name = service.alias {
-//            self.name.text = name
-//        } else {
-//            self.name.text = item?.empresa.name
-//            self.entidad.isHidden = true
-//        }
-//        
-//        if let amount = service.amount {
-//            self.monto.isHidden = false
-//            self.monto.text     = amount.currency()
-//        } else {
-//            self.monto.isHidden = true
-//        }
+    func update(favorito :Favorito) {
+        let item = Session.sharedInstance.staticData.getItem(idCompanySPS: favorito.idCompanySPS)
+        self.updateImage(url: item!.logo)
+        
+        self.entidad.text   = item!.entidad
+        self.code.text      = favorito.serviceIdentifier
+    
+        if favorito.inSPR == "1" {
+            self.defineState(state: .cargos_recurrentes)
+        } else {
+            self.defineState(state: favorito.state)
+        }
+        
+        if let alias = favorito.alias {
+            self.name.text = alias
+        } else {
+            self.name.text = item?.empresa.name
+            self.entidad.isHidden = true
+        }
+        
+        if let amount = favorito.amount {
+            self.monto.isHidden = false
+            self.monto.text     = amount.currency()
+        } else {
+            self.monto.isHidden = true
+        }
     }
     
     internal func defineState(state : ServiceStateType) {
-//        switch state {
-//        case .PENDIENTE_VERIFICACION:
-//            self.estado.text = "   Pendiente de verificación   ".uppercased()
-//            self.estado.backgroundColor = UIColor.appGrayColor()
-//            break
-//        case .PENDIENTE_PAGO:
-//            self.estado.text = "   Pendiente de pago   ".uppercased()
-//            self.estado.backgroundColor = UIColor.appRedColor()
-//            break
-//        case .PAGADO:
-//            self.estado.text = "   Pagado   ".uppercased()
-//            self.estado.backgroundColor = UIColor.appRedColor()
-//            break
-//        case .CARGOS_RECURRENTES:
-//            self.estado.text = "   Cargo Automático   ".uppercased()
-//            self.estado.backgroundColor = UIColor.appRedColor()
-//            break
-//        }
+        switch state {
+        case .pendiente_verificacion:
+            self.estado.text = "   Pendiente de verificación   ".uppercased()
+            self.estado.backgroundColor = UIColor.appGrayColor()
+            break
+        case .pendiente_pago:
+            self.estado.text = "   Pendiente de pago   ".uppercased()
+            self.estado.backgroundColor = UIColor.appRedColor()
+            break
+        case .pagado:
+            self.estado.text = "   Pagado   ".uppercased()
+            self.estado.backgroundColor = UIColor.appRedColor()
+            break
+        case .cargos_recurrentes:
+            self.estado.text = "   Cargo Automático   ".uppercased()
+            self.estado.backgroundColor = UIColor.appRedColor()
+            break
+        }
     }
     
     internal func updateImage(url :String) {

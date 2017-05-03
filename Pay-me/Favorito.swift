@@ -20,21 +20,19 @@ import SwiftyJSON
 //"serviceIdentifier": "123",
 //"state": "2"
 
-class Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
+struct Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
     
     var alias: String?
     var amount: String?
-    var idCompanySPS: String?
-    var idService: String?
-    var idServiceSPS: String?
-    var inSPR: String?
-    var owner: String?
-    var serviceIdentifier: String?
-    var state: ServiceStateType?
+    var idCompanySPS: String
+    var idService: String
+    var idServiceSPS: String
+    var inSPR: String
+    var owner: String
+    var serviceIdentifier: String
+    var state: ServiceStateType
     
-    required init?(response: HTTPURLResponse, representation: Any) {
-        
-        let json = JSON(representation)
+    init?(response: HTTPURLResponse, json: JSON) {
         
         guard
             let alias = json["alias"].string,
@@ -45,7 +43,7 @@ class Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
             let inSPR = json["inSPR"].string,
             let owner = json["owner"].string,
             let serviceIdentifier = json["serviceIdentifier"].string,
-            let state = ServiceStateType(rawValue: json["state"].string ?? "")
+            let state = ServiceStateType(rawValue: json["state"].string ?? "1")
             else { return nil }
         
         self.alias = alias
@@ -57,18 +55,6 @@ class Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
         self.owner = owner
         self.serviceIdentifier = serviceIdentifier
         self.state = state
-    }
-}
-
-extension Favorito {
-    
-    func toParams() -> [String : Any] {
-        var params :[String : Any] = [:]
-        params["idCompanySPS"] = self.idCompanySPS
-        params["idServiceSPS"] = self.idServiceSPS
-        params["serviceIdentifier"] = self.serviceIdentifier
-        params["owner"] = self.owner
-        return params
     }
 }
 

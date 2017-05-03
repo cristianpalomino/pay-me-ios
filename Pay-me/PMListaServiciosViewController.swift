@@ -26,7 +26,6 @@ class PMListaServiciosViewController: PMViewController {
         return strings.components(separatedBy: ",")
     }
     
-    var apiResponse:        ResponseConsultarDeudas?
     var serviceIdentifier:  String?
     var imageBanner:        UIImage?
     
@@ -80,7 +79,6 @@ extension PMListaServiciosViewController {
     
     @IBAction func tapRecordarServicios() {
         self.showHUD()
-        self.callAddServices()
     }
 }
 
@@ -98,65 +96,16 @@ extension PMListaServiciosViewController: UITableViewDelegate {
 extension PMListaServiciosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.apiResponse?.debts.count ?? 0
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ServiceTableViewCell.identifier, for: indexPath) as! ServiceTableViewCell
-        
-        let debt = self.apiResponse!.debts[indexPath.row]
-        cell.set(debt: debt)
+//        
+//        let debt = self.apiResponse!.debts[indexPath.row]
+//        cell.set(debt: debt)
         
         return cell
     }
-}
-
-extension PMListaServiciosViewController: PMListaServiciosViewControllerServicesDelegate {
-    
-    internal func callAddServices() {
-        
-//        if let response = self.apiResponse,
-//            let item = Session.sharedInstance.current.item,
-//            let identifier = self.serviceIdentifier {
-//
-//            let indexs = self.tableview.indexPathsForSelectedRows?.map({ $0.row })
-//            var services = [Service]()
-//            
-//            indexs?.forEach {
-//                i in
-//                let debt = response.debts[i]
-//                let serviceAtributtes = [Service.Keys.kIdCompanySPS     : item.idCompany,
-//                                         Service.Keys.kIdServiceSPS     : debt.idService,
-//                                         Service.Keys.kServiceIdentifier: identifier,
-//                                         Service.Keys.kNameService      : response.debts[i].nameService,
-//                                         Service.Keys.kOwner            : response.clientName]
-//                let service = Service(json: JSON(serviceAtributtes))
-//                services.append(service)
-//            }
-//            
-//            let request = RequestAgregarServicio(services: services)
-//
-//            PaymeServices.sharedInstance.serviciosServices.serviceAgregarServicio(request: request)
-//            PaymeServices.sharedInstance.serviciosServices.agregarServicioDelegate = self
-//        }
-    }
-}
-
-extension PMListaServiciosViewController: AgregarServicioDelegate {
-    
-    internal func serviceSuccess(response: ResponseAgregarServicio) {
-        self.hideHUD()
-        self.showMessage()
-    }
-    
-    internal func serviceFailed(error: PaymeError) {
-        print("\(error.answerCode)\t\(error.answerMessage)")
-    }
-}
-
-
-protocol PMListaServiciosViewControllerServicesDelegate {
-    
-    func callAddServices()
 }
 

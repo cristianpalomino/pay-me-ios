@@ -36,11 +36,11 @@ class PMView : UIView {
 
 class PMErrorView : PMView {
     
-    public var pmError :PaymeError? {
-        didSet {
-            self.labelMessage.text = pmError?.answerMessage
-        }
-    }
+//    public var pmError :PaymeError? {
+//        didSet {
+//            self.labelMessage.text = pmError?.answerMessage
+//        }
+//    }
     
     @IBOutlet weak var labelMessage: UILabel!
     @IBOutlet weak var imageMessage: UIImageView!

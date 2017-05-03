@@ -26,7 +26,7 @@ class PMListadoFavoritosViewController: PMViewController {
     @IBOutlet weak var viewTitleStrip: PMTitleStrip!
     @IBOutlet weak var tableView: UITableView!
     
-    var serviciosFavoritos = Session.sharedInstance.serviciosFavoritos
+    var favoritos = [Favorito]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class PMListadoFavoritosViewController: PMViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        callServiceFavoritos()
+        request()
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,6 +43,18 @@ class PMListadoFavoritosViewController: PMViewController {
 }
 
 extension PMListadoFavoritosViewController {
+    
+    func request() {
+        Request.getFavoritos {
+            response in
+            if let favoritos = response.value {
+                self.favoritos = favoritos
+                self.tableView.reloadData()
+            } else {
+                
+            }
+        }
+    }
     
     override func initComponents() {
         super.initComponents()
@@ -67,84 +79,13 @@ extension PMListadoFavoritosViewController: UITableViewDelegate {
 extension PMListadoFavoritosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.serviciosFavoritos.count
+        return self.favoritos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FavoritoTableViewCell.identifier, for: indexPath) as! FavoritoTableViewCell
-        
-        let service = self.serviciosFavoritos[indexPath.row]
-        cell.update(service: service)
-        
+        let favorito = favoritos[indexPath.row]
+        cell.update(favorito: favorito)
         return cell
-    }
-}
-
-extension PMListadoFavoritosViewController : FavoriteCellDelegate {
-    
-    func tapFavorite() {
-        let notis = UIStoryboard.createSettings().topViewController!
-        self.navigationController?.show(notis, sender: self)
-    }
-}
-
-extension PMListadoFavoritosViewController {
-    
-    internal func callServiceConsultarRecibos(withService service:Service) {
-//        if let codeService = service.serviceIdentifier {
-//            let request = RequestConsultarDeudas(idCompany: service.idCompanySPS,
-//                                                 idService: service.idServiceSPS,
-//                                                 serviceIdentifier: codeService)
-//            PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
-//            PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
-//            showHUD()
-//        }
-    }
-    
-    internal func callServiceFavoritos() {
-        let request = RequestConsultarServicios()
-        PaymeServices.sharedInstance.serviciosServices.apiConsultarServicios(request: request)
-        PaymeServices.sharedInstance.serviciosServices.consultarServiciosDelegate = self
-    }
-}
-
-extension PMListadoFavoritosViewController: ConsultarServiciosDelegate {
-    
-    func serviceSuccess(response: ResponseConsultarServicios) {
-//        Session.sharedInstance.serviciosFavoritos = response.services
-//        
-//        let source = Session.sharedInstance.serviciosFavoritos
-//        let local  = self.serviciosFavoritos
-//        
-//        let setSource = Set(source)
-//        let newServices = Array(setSource.subtracting(self.serviciosFavoritos))
-//        
-//        if !newServices.isEmpty {
-//            
-//            self.serviciosFavoritos.append(contentsOf: newServices)
-//            var indexPaths = [IndexPath]()
-//            
-//            for i in 0...(newServices.count - 1) {
-//                indexPaths.append(IndexPath(row: local.count + i , section: 0))
-//            }
-//            
-//            self.tableView.beginUpdates()
-//            self.tableView.insertRows(at: indexPaths, with: .automatic)
-//            self.tableView.endUpdates()
-//        }
-    }
-}
-
-extension PMListadoFavoritosViewController: ConsultarDeudasDelegate {
-    
-    func serviceSuccess(response: ResponseConsultarDeudas) {
-        self.toSegue(identifier: Constants.Storyboard.Segues.kRecibo)
-    }
-}
-
-extension PMListadoFavoritosViewController {
-    
-    func serviceFailed(error: PaymeError) {
-        debugPrint(error)
     }
 }

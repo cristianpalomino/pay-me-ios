@@ -24,7 +24,6 @@
 		4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
 		4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
 		4033773E1E03D44800261759 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
-		403C4CBC1E46B4E70004AA6A /* PaymeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */; };
 		40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
 		40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
@@ -41,13 +40,7 @@
 		4062C1411E380D3500617265 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1401E380D3500617265 /* Logs.swift */; };
 		4062C1461E3B98D500617265 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1451E3B98D500617265 /* RSA.m */; };
 		4062C1481E3B994200617265 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1471E3B994200617265 /* Security.swift */; };
-		4062C1551E3BE63500617265 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1541E3BE63500617265 /* Request.swift */; };
 		4062C1581E3BE9A800617265 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1571E3BE9A800617265 /* Service.swift */; };
-		4062C15E1E3BF7EB00617265 /* ApiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C15D1E3BF7EB00617265 /* ApiUtil.swift */; };
-		4062C1621E3C17FF00617265 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1611E3C17FF00617265 /* Response.swift */; };
-		4062C1681E3D090800617265 /* ServiciosServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1671E3D090800617265 /* ServiciosServices.swift */; };
-		4062C16D1E3D0BFF00617265 /* MisServiciosDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C16C1E3D0BFF00617265 /* MisServiciosDelegates.swift */; };
-		4062C16F1E3D0FBB00617265 /* ServiciosApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C16E1E3D0FBB00617265 /* ServiciosApi.swift */; };
 		406482AE1E2D162800E9C891 /* PMHeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406482AD1E2D162800E9C891 /* PMHeaderButton.swift */; };
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
@@ -73,7 +66,6 @@
 		408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */; };
 		408CB6A31E54E73D00D308D3 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377351E0334E700261759 /* PMButton.swift */; };
 		408CB6A41E54E73D00D308D3 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1401E380D3500617265 /* Logs.swift */; };
-		408CB6A51E54E73D00D308D3 /* ServiciosServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1671E3D090800617265 /* ServiciosServices.swift */; };
 		408CB6A61E54E73D00D308D3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* MessageViewController.swift */; };
 		408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088F8AA1E36628C00114BEE /* StaticData.swift */; };
 		408CB6A81E54E73D00D308D3 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
@@ -102,16 +94,13 @@
 		408CB6C31E54E73D00D308D3 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
 		408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
 		408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
-		408CB6C61E54E73D00D308D3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1541E3BE63500617265 /* Request.swift */; };
 		408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420231E2528F700D74D22 /* CardTableViewCell.swift */; };
 		408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */; };
 		408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */; };
-		408CB6CA1E54E73D00D308D3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1611E3C17FF00617265 /* Response.swift */; };
 		408CB6CB1E54E73D00D308D3 /* RecibosBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420101E20260D00D74D22 /* RecibosBViewController.swift */; };
 		408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2E4021E0E5386003CBAC3 /* PMImage.swift */; };
 		408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1571E3BE9A800617265 /* Service.swift */; };
 		408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201C1E24046F00D74D22 /* Pay.swift */; };
-		408CB6CF1E54E73D00D308D3 /* MisServiciosDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C16C1E3D0BFF00617265 /* MisServiciosDelegates.swift */; };
 		408CB6D01E54E73D00D308D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		408CB6D11E54E73D00D308D3 /* PMSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABD1E1C86AD008CF767 /* PMSizes.swift */; };
 		408CB6D21E54E73D00D308D3 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */; };
@@ -120,15 +109,12 @@
 		408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF61E405385007EF98D /* Calendar.swift */; };
 		408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
 		408CB6D91E54E73D00D308D3 /* PMHeaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406482AD1E2D162800E9C891 /* PMHeaderButton.swift */; };
-		408CB6DA1E54E73D00D308D3 /* ServiciosApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C16E1E3D0FBB00617265 /* ServiciosApi.swift */; };
 		408CB6DB1E54E73D00D308D3 /* PMViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401CC66F1E538290001911F2 /* PMViews.swift */; };
-		408CB6DC1E54E73D00D308D3 /* ApiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C15D1E3BF7EB00617265 /* ApiUtil.swift */; };
 		408CB6DD1E54E73D00D308D3 /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
 		408CB6DE1E54E73D00D308D3 /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DC1E14665700A578EA /* PMMessageViewController.swift */; };
 		408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
 		408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E461E0680090072CB29 /* PMColors.swift */; };
 		408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */; };
-		408CB6E21E54E73D00D308D3 /* PaymeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */; };
 		408CB6E31E54E73D00D308D3 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */; };
 		408CB6E71E54E73D00D308D3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
 		408CB6E81E54E73D00D308D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
@@ -273,7 +259,6 @@
 		403377391E03D42600261759 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
 		4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelTresViewController.swift; sourceTree = "<group>"; };
 		4033773D1E03D44800261759 /* PMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
-		403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymeServices.swift; sourceTree = "<group>"; };
 		40463D271E19CF8000F663B0 /* PMItemCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCard.swift; sourceTree = "<group>"; };
 		40463D291E19CF9E00F663B0 /* PMItemCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCard.xib; sourceTree = "<group>"; };
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
@@ -291,13 +276,8 @@
 		4062C1441E3B98D500617265 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
 		4062C1451E3B98D500617265 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		4062C1471E3B994200617265 /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
-		4062C1541E3BE63500617265 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4062C1571E3BE9A800617265 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		4062C15D1E3BF7EB00617265 /* ApiUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtil.swift; sourceTree = "<group>"; };
-		4062C1611E3C17FF00617265 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		4062C1671E3D090800617265 /* ServiciosServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosServices.swift; sourceTree = "<group>"; };
-		4062C16C1E3D0BFF00617265 /* MisServiciosDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MisServiciosDelegates.swift; sourceTree = "<group>"; };
-		4062C16E1E3D0FBB00617265 /* ServiciosApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosApi.swift; sourceTree = "<group>"; };
 		406482AD1E2D162800E9C891 /* PMHeaderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHeaderButton.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -550,32 +530,10 @@
 		4062C1501E3BC43F00617265 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4F28D7AD1EB8EBE700703CB4 /* Service */,
-				403C4CBB1E46B4E70004AA6A /* PaymeServices.swift */,
-				4062C15C1E3BF6D700617265 /* Utils */,
-				4062C16B1E3D0B6400617265 /* Protocols */,
-				4062C1541E3BE63500617265 /* Request.swift */,
-				4062C1611E3C17FF00617265 /* Response.swift */,
-				4062C1671E3D090800617265 /* ServiciosServices.swift */,
-				4062C16E1E3D0FBB00617265 /* ServiciosApi.swift */,
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
-		4062C15C1E3BF6D700617265 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
+				4F28D7AE1EB8EC5500703CB4 /* Api.swift */,
 				4062C15D1E3BF7EB00617265 /* ApiUtil.swift */,
 			);
-			name = Utils;
-			sourceTree = "<group>";
-		};
-		4062C16B1E3D0B6400617265 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				4062C16C1E3D0BFF00617265 /* MisServiciosDelegates.swift */,
-			);
-			name = Protocols;
+			name = Services;
 			sourceTree = "<group>";
 		};
 		406EEA111DFB0D88005D2E87 = {
@@ -758,14 +716,6 @@
 				4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */,
 			);
 			name = Notify;
-			sourceTree = "<group>";
-		};
-		4F28D7AD1EB8EBE700703CB4 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				4F28D7AE1EB8EC5500703CB4 /* Api.swift */,
-			);
-			name = Service;
 			sourceTree = "<group>";
 		};
 		4F43D8A41EA8235500403292 /* Cells */ = {
@@ -1185,7 +1135,6 @@
 				403377361E0334E700261759 /* PMButton.swift in Sources */,
 				4F8220631EB13AF6001351FE /* PMItemCircle.swift in Sources */,
 				4062C1411E380D3500617265 /* Logs.swift in Sources */,
-				4062C1681E3D090800617265 /* ServiciosServices.swift in Sources */,
 				4F28D7AF1EB8EC5500703CB4 /* Api.swift in Sources */,
 				404672DF1E14671400A578EA /* MessageViewController.swift in Sources */,
 				4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */,
@@ -1220,13 +1169,11 @@
 				4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */,
 				4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
-				4062C1551E3BE63500617265 /* Request.swift in Sources */,
 				4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
 				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
 				4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */,
-				4062C1621E3C17FF00617265 /* Response.swift in Sources */,
 				4F28D7B21EB9271400703CB4 /* Favorito.swift in Sources */,
 				4FCC14CB1EAEB39300D6E7BC /* UIView.swift in Sources */,
 				40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */,
@@ -1235,7 +1182,6 @@
 				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
 				4FA8EFAD1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D8991EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
-				4062C16D1E3D0BFF00617265 /* MisServiciosDelegates.swift in Sources */,
 				4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */,
 				405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */,
 				40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */,
@@ -1246,9 +1192,7 @@
 				40293EF71E405385007EF98D /* Calendar.swift in Sources */,
 				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,
 				406482AE1E2D162800E9C891 /* PMHeaderButton.swift in Sources */,
-				4062C16F1E3D0FBB00617265 /* ServiciosApi.swift in Sources */,
 				401CC6701E538290001911F2 /* PMViews.swift in Sources */,
-				4062C15E1E3BF7EB00617265 /* ApiUtil.swift in Sources */,
 				4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */,
 				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
 				404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */,
@@ -1256,7 +1200,6 @@
 				4FF780441EA66389002D4703 /* EPMViewController.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
 				40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */,
-				403C4CBC1E46B4E70004AA6A /* PaymeServices.swift in Sources */,
 				40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1296,7 +1239,6 @@
 				408CB6A31E54E73D00D308D3 /* PMButton.swift in Sources */,
 				408CB6A41E54E73D00D308D3 /* Logs.swift in Sources */,
 				4F28D7B01EB8EC5500703CB4 /* Api.swift in Sources */,
-				408CB6A51E54E73D00D308D3 /* ServiciosServices.swift in Sources */,
 				408CB6A61E54E73D00D308D3 /* MessageViewController.swift in Sources */,
 				4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */,
 				408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */,
@@ -1330,7 +1272,6 @@
 				408CB6C31E54E73D00D308D3 /* PMNivelDosViewController.swift in Sources */,
 				408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */,
-				408CB6C61E54E73D00D308D3 /* Request.swift in Sources */,
 				4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
 				4F983A4E1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
 				408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */,
@@ -1338,14 +1279,12 @@
 				408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */,
 				4F28D7B31EB9271400703CB4 /* Favorito.swift in Sources */,
 				4FCC14CC1EAEB39300D6E7BC /* UIView.swift in Sources */,
-				408CB6CA1E54E73D00D308D3 /* Response.swift in Sources */,
 				408CB6CB1E54E73D00D308D3 /* RecibosBViewController.swift in Sources */,
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,
 				408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */,
 				4FA8EFAE1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D89A1EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
 				408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */,
-				408CB6CF1E54E73D00D308D3 /* MisServiciosDelegates.swift in Sources */,
 				408CB6D01E54E73D00D308D3 /* HomeViewController.swift in Sources */,
 				408CB6D11E54E73D00D308D3 /* PMSizes.swift in Sources */,
 				408CB6D21E54E73D00D308D3 /* ListaPagosViewController.swift in Sources */,
@@ -1356,16 +1295,13 @@
 				408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */,
 				408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */,
 				408CB6D91E54E73D00D308D3 /* PMHeaderButton.swift in Sources */,
-				408CB6DA1E54E73D00D308D3 /* ServiciosApi.swift in Sources */,
 				408CB6DB1E54E73D00D308D3 /* PMViews.swift in Sources */,
 				4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */,
-				408CB6DC1E54E73D00D308D3 /* ApiUtil.swift in Sources */,
 				408CB6DD1E54E73D00D308D3 /* RecibosViewController.swift in Sources */,
 				408CB6DE1E54E73D00D308D3 /* PMMessageViewController.swift in Sources */,
 				408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */,
 				408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */,
 				408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */,
-				408CB6E21E54E73D00D308D3 /* PaymeServices.swift in Sources */,
 				408CB6E31E54E73D00D308D3 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

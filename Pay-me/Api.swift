@@ -10,8 +10,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-var staticParams: Parameters = ["macAddress" : Constants.Debug.ID_CARDHOLDER.encrypt(),
-                                "idCommerce" : Constants.Debug.ID_COMERCIO.encrypt(),
+var staticParams: Parameters = ["idCardholder" : Constants.Debug.ID_CARDHOLDER.encrypt(),
+                                "idCommerce" : Constants.Debug.ID_COMERCIO,
                                 "macAddress" : Constants.Debug.MAC_ADDRESS.encrypt()]
 
 enum BackendError: Error {
@@ -23,23 +23,20 @@ enum BackendError: Error {
 }
 
 protocol ResponseObjectSerializable {
-    init?(response: HTTPURLResponse, representation: Any)
+    init?(response: HTTPURLResponse, json: JSON)
 }
 
 protocol ResponseCollectionSerializable {
-    static func collection(from response: HTTPURLResponse, withRepresentation representation: Any) -> [Self]
+    static func collection(from response: HTTPURLResponse, withRepresentation json: [JSON]) -> [Self]
 }
 
 extension ResponseCollectionSerializable where Self: ResponseObjectSerializable {
-    
-    static func collection(from response: HTTPURLResponse, withRepresentation representation: Any) -> [Self] {
+    static func collection(from response: HTTPURLResponse, withRepresentation json: [JSON]) -> [Self] {
         var collection: [Self] = []
         
-        if let representation = representation as? [[String: Any]] {
-            for itemRepresentation in representation {
-                if let item = Self(response: response, representation: itemRepresentation) {
-                    collection.append(item)
-                }
+        for itemRepresentation in json {
+            if let item = Self(response: response, json: itemRepresentation) {
+                collection.append(item)
             }
         }
         return collection
@@ -51,6 +48,7 @@ extension DataRequest {
     @discardableResult
     func responseCollection<T: ResponseCollectionSerializable>(
         queue: DispatchQueue? = nil,
+        key: String? = nil,
         completionHandler: @escaping (DataResponse<[T]>) -> Void) -> Self
     {
         let responseSerializer = DataResponseSerializer<[T]> { request, response, data, error in
@@ -68,24 +66,45 @@ extension DataRequest {
                 return .failure(BackendError.objectSerialization(reason: reason))
             }
             
-            return .success(T.collection(from: response, withRepresentation: jsonObject))
+            let json = JSON(jsonObject)
+            
+            guard let key = key else {
+                return .success(T.collection(from: response, withRepresentation: json.arrayValue))
+            }
+            
+            guard let jsonArray = json[key].array else {
+                let reason = "JsonArray not found"
+                return .failure(BackendError.objectSerialization(reason: reason))
+            }
+            
+            return .success(T.collection(from: response, withRepresentation: jsonArray))
         }
         
         return response(responseSerializer: responseSerializer, completionHandler: completionHandler)
     }
 }
 
-class PaymeApi {
+struct PaymeApi {
     
-    static var sessionManager: SessionManager {
-    
+    public static let sessionManager: SessionManager = {
         let configuration = URLSessionConfiguration.default
-        return Alamofire.SessionManager(configuration: configuration)
-    }
+        configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
+        configuration.timeoutIntervalForRequest = 40
+        configuration.timeoutIntervalForResource = 40
+
+        let manager = Alamofire.SessionManager(configuration: configuration)
+        return manager
+    }()
 }
 
-struct mRequest {
+struct Request {
     
+    static func getFavoritos(completionHandler: @escaping (DataResponse<[Favorito]>) -> Void) {
+        PaymeApi.sessionManager.request(FavoritosRouter.list).responseCollection(key: "services") {
+            (response: DataResponse<[Favorito]>) in
+            completionHandler(response)
+        }
+    }
 }
 
 enum FavoritosRouter: URLRequestConvertible {
@@ -115,7 +134,7 @@ enum FavoritosRouter: URLRequestConvertible {
         
         switch self {
         case .list:
-            urlRequest = try URLEncoding.httpBody.encode(urlRequest, with: staticParams)
+            urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)
         }
         
         return urlRequest

@@ -26,7 +26,7 @@ class PMSuministroViewController: PMViewController {
     }
     
     //Api
-    weak var apiResponse    :ResponseConsultarDeudas?
+//    weak var apiResponse    :ResponseConsultarDeudas?
     
     //Constraints
     @IBOutlet weak var mainViewTopConstraint: NSLayoutConstraint!
@@ -61,17 +61,17 @@ class PMSuministroViewController: PMViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let identifier = segue.identifier else {
-            return
-        }
-        
-        if identifier == Constants.Storyboard.Segues.kDetailSuministro {
-            let detalleViewController = segue.destination as! PMDetalleSuministroViewController
-            if apiResponse != nil {
-                detalleViewController.serviceIdentifier = self.txtIndentifier.text!
-                detalleViewController.apiResponse = self.apiResponse
-            }
-        }
+//        guard let identifier = segue.identifier else {
+//            return
+//        }
+//        
+//        if identifier == Constants.Storyboard.Segues.kDetailSuministro {
+//            let detalleViewController = segue.destination as! PMDetalleSuministroViewController
+//            if apiResponse != nil {
+//                detalleViewController.serviceIdentifier = self.txtIndentifier.text!
+////                detalleViewController.apiResponse = self.apiResponse
+//            }
+//        }
     }
 }
 
@@ -90,7 +90,7 @@ extension PMSuministroViewController {
 extension PMSuministroViewController {
     
     @IBAction func tapConsultar() {
-        self.callGetServices()
+//        self.callGetServices()
     }
     
     @IBAction func tapInfo() {
@@ -125,11 +125,11 @@ extension PMSuministroViewController {
         self.mainView.addSubview(errorView)
     }
     
-    func showErrorView(pmError :PaymeError) {
-        self.hideHUD()
-        self.errorView.pmError = pmError
-        self.errorView.isHidden = false
-    }
+//    func showErrorView(pmError :PaymeError) {
+//        self.hideHUD()
+//        self.errorView.pmError = pmError
+//        self.errorView.isHidden = false
+//    }
 }
 
 extension PMSuministroViewController {
@@ -153,50 +153,4 @@ extension PMSuministroViewController {
             self.view.layoutIfNeeded()
         })
     }
-}
-
-extension PMSuministroViewController: ConsultarDeudasDelegate {
-    
-    func serviceSuccess(response: ResponseConsultarDeudas) {
-        self.apiResponse = response
-        self.toSegue(identifier: Constants.Storyboard.Segues.kDetailSuministro)
-    }
-    
-    func serviceFailed(error: PaymeError) {
-        print(error.answerCode)
-        showErrorView(pmError: error)
-    }
-}
-
-extension PMSuministroViewController: SuministroViewControllerServicesDelegate {
-    
-    func callGetServices() {
-        guard txtIndentifier.text?.trimmed != "" else {
-            print("Add Identifier")
-            return
-        }
-        
-        txtIndentifier.resignFirstResponder()
-        let current = Session.sharedInstance.current
-        
-        let identifier = txtIndentifier.text!
-        let idCompany = current.item!.idCompany!
-        let idServiceSPS = current.item!.idServiceSPS!
-        let type = RequestConsultarDeudas.TypeOperation.registro_servicios
-        
-        let request = RequestConsultarDeudas(idCompany: idCompany,
-                                             idServiceSPS: idServiceSPS,
-                                             serviceIdentifier: identifier,
-                                             typeOperation: type)
-        
-        PaymeServices.sharedInstance.serviciosServices.serviceConsultarDeudas(request: request)
-        PaymeServices.sharedInstance.serviciosServices.consultarDeudasDelegate = self
-        
-        showHUD()
-    }
-}
-
-protocol SuministroViewControllerServicesDelegate {
-    
-    func callGetServices()
 }
