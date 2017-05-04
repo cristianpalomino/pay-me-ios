@@ -19,7 +19,7 @@ class FavoritoTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var entidad: UILabel!
     @IBOutlet weak var code : UILabel!
-    @IBOutlet weak var estado: UILabel!
+    @IBOutlet weak var estado: PMStateView!
     @IBOutlet weak var monto : UILabel!
     
     override func awakeFromNib() {
@@ -35,7 +35,6 @@ class FavoritoTableViewCell: UITableViewCell {
 extension FavoritoTableViewCell {
     
     @IBAction func tapSeetings() {
-        
         favoriteCellDelegate?.tapFavorite()
     }
 }
@@ -43,52 +42,35 @@ extension FavoritoTableViewCell {
 extension FavoritoTableViewCell {
     
     func update(favorito :Favorito) {
-        let item = Session.sharedInstance.staticData.getItem(idCompanySPS: favorito.idCompanySPS)
-        self.updateImage(url: item!.logo)
-        
-        self.entidad.text   = item!.entidad
-        self.code.text      = favorito.serviceIdentifier
+        guard let item = Session.sharedInstance.staticData.getItem(idCompanySPS: favorito.idCompanySPS)  else {
+            return
+        }
     
-        if favorito.inSPR == "1" {
-            self.defineState(state: .cargos_recurrentes)
+        // INSPR
+        if favorito.inSPR != "1" {
+            estado.state = .cargos_recurrentes
         } else {
-            self.defineState(state: favorito.state)
+            estado.state = favorito.state
         }
         
+        // ALIAS
         if let alias = favorito.alias {
-            self.name.text = alias
+            name.text = alias
         } else {
-            self.name.text = item?.empresa.name
-            self.entidad.isHidden = true
+            name.text = item.entidad
         }
         
+        // AMOUNT
         if let amount = favorito.amount {
-            self.monto.isHidden = false
-            self.monto.text     = amount.currency()
+            monto.isHidden = false
+            monto.text = amount.currency()
         } else {
-            self.monto.isHidden = true
+            monto.isHidden = true
         }
-    }
-    
-    internal func defineState(state : ServiceStateType) {
-        switch state {
-        case .pendiente_verificacion:
-            self.estado.text = "   Pendiente de verificación   ".uppercased()
-            self.estado.backgroundColor = UIColor.appGrayColor()
-            break
-        case .pendiente_pago:
-            self.estado.text = "   Pendiente de pago   ".uppercased()
-            self.estado.backgroundColor = UIColor.appRedColor()
-            break
-        case .pagado:
-            self.estado.text = "   Pagado   ".uppercased()
-            self.estado.backgroundColor = UIColor.appRedColor()
-            break
-        case .cargos_recurrentes:
-            self.estado.text = "   Cargo Automático   ".uppercased()
-            self.estado.backgroundColor = UIColor.appRedColor()
-            break
-        }
+        
+        entidad.text = item.entidad
+        code.text = favorito.serviceIdentifier
+        updateImage(url: item.logo)
     }
     
     internal func updateImage(url :String) {

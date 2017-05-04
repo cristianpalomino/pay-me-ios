@@ -35,8 +35,6 @@ struct Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
     init?(response: HTTPURLResponse, json: JSON) {
         
         guard
-            let alias = json["alias"].string,
-            let amount = json["amount"].string,
             let idCompanySPS = json["idCompanySPS"].string,
             let idService = json["idService"].string,
             let idServiceSPS = json["idServiceSPS"].string,
@@ -46,8 +44,8 @@ struct Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
             let state = ServiceStateType(rawValue: json["state"].string ?? "1")
             else { return nil }
         
-        self.alias = alias
-        self.amount = amount
+        self.alias = json["alias"].string
+        self.amount = json["amount"].string
         self.idCompanySPS = idCompanySPS
         self.idService = idService
         self.idServiceSPS = idServiceSPS

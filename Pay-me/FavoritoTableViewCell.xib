@@ -46,7 +46,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1B3-bQ-aeH">
-                        <rect key="frame" x="74.5" y="7" width="142" height="15"/>
+                        <rect key="frame" x="74.5" y="8" width="142" height="15"/>
                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="12.5"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJd-0F-Tew">
-                        <rect key="frame" x="74.5" y="29" width="142" height="14"/>
+                        <rect key="frame" x="74.5" y="30" width="142" height="13"/>
                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="11"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -67,26 +67,29 @@
                         <rect key="frame" x="224" y="0.0" width="96" height="64.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAn-ZG-M4L">
-                                <rect key="frame" x="74" y="10.5" width="7" height="22"/>
+                                <rect key="frame" x="74" y="19" width="7" height="21"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="18"/>
                                 <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2q-Vt-KT5">
-                                <rect key="frame" x="77" y="47.5" width="4" height="10"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="8"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94o-Dl-qKJ" customClass="PMStateView" customModule="Pay_me" customModuleProvider="target">
+                                <rect key="frame" x="69" y="45.5" width="12" height="12"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="45e-cJ-LHN" userLabel="stateWidth"/>
+                                    <constraint firstAttribute="height" constant="12" id="SNz-Nf-siU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="stateWidth" destination="45e-cJ-LHN" id="dVF-Bn-BJN"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v2q-Vt-KT5" firstAttribute="top" secondItem="DAn-ZG-M4L" secondAttribute="bottom" constant="15" id="6mT-cW-mNh"/>
                             <constraint firstAttribute="trailing" secondItem="DAn-ZG-M4L" secondAttribute="trailing" constant="15" id="B5D-Kj-r0T"/>
-                            <constraint firstAttribute="trailing" secondItem="v2q-Vt-KT5" secondAttribute="trailing" constant="15" id="ERA-iJ-RhF"/>
-                            <constraint firstAttribute="bottom" secondItem="v2q-Vt-KT5" secondAttribute="bottom" constant="7" id="XjD-h0-wb7"/>
+                            <constraint firstAttribute="bottom" secondItem="94o-Dl-qKJ" secondAttribute="bottom" constant="7" id="MZG-g9-7aR"/>
+                            <constraint firstAttribute="trailing" secondItem="94o-Dl-qKJ" secondAttribute="trailing" constant="15" id="sjJ-9M-ti9"/>
+                            <constraint firstItem="DAn-ZG-M4L" firstAttribute="top" secondItem="8SK-UC-AHB" secondAttribute="top" constant="19" id="tOR-Dk-M8I"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -118,11 +121,12 @@
                 <outlet property="buttonIcon" destination="esh-W1-7ep" id="6QK-YS-jaH"/>
                 <outlet property="code" destination="nt1-av-qN7" id="Rfd-yP-dJY"/>
                 <outlet property="entidad" destination="UJd-0F-Tew" id="WHw-oA-Xe2"/>
-                <outlet property="estado" destination="v2q-Vt-KT5" id="kXB-Gb-esi"/>
+                <outlet property="estado" destination="94o-Dl-qKJ" id="yHT-wP-VRg"/>
                 <outlet property="icon" destination="lYv-Fp-jFj" id="ker-62-yZS"/>
                 <outlet property="monto" destination="DAn-ZG-M4L" id="4hD-Yy-Rwe"/>
                 <outlet property="name" destination="1B3-bQ-aeH" id="vWi-ua-CJa"/>
             </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
         </tableViewCell>
     </objects>
 </document>
