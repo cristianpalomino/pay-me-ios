@@ -24,7 +24,8 @@ class FavoritoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        addStyles()
+        customSelection()
+        buttonIcon.addCircleBorder()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -87,17 +88,6 @@ extension FavoritoTableViewCell {
         self.icon.af_cancelImageRequest()
         self.icon.layer.removeAllAnimations()
         self.icon.image = nil
-    }
-}
-
-extension FavoritoTableViewCell {
-    
-    internal func addStyles() {
-        buttonIcon.addCircleBorder()
-        customSelection()
-        
-        estado.layer.masksToBounds = true
-        estado.layer.cornerRadius = self.estado.frame.height * 0.5
     }
 }
 

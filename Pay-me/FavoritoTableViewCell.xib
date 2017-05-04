@@ -21,7 +21,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoritoCell" rowHeight="65" id="P64-s4-lNO" customClass="FavoritoTableViewCell" customModule="Pay_me" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="favoritoCell" rowHeight="65" id="P64-s4-lNO" customClass="FavoritoTableViewCell" customModule="Pay_me" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P64-s4-lNO" id="Hou-Lc-72D">
@@ -67,7 +67,7 @@
                         <rect key="frame" x="224" y="0.0" width="96" height="64.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAn-ZG-M4L">
-                                <rect key="frame" x="74" y="19" width="7" height="21"/>
+                                <rect key="frame" x="74" y="9" width="7" height="21.5"/>
                                 <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="18"/>
                                 <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,9 +87,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="DAn-ZG-M4L" secondAttribute="trailing" constant="15" id="B5D-Kj-r0T"/>
+                            <constraint firstItem="94o-Dl-qKJ" firstAttribute="top" secondItem="DAn-ZG-M4L" secondAttribute="bottom" constant="15" id="BOj-L6-LAZ"/>
                             <constraint firstAttribute="bottom" secondItem="94o-Dl-qKJ" secondAttribute="bottom" constant="7" id="MZG-g9-7aR"/>
                             <constraint firstAttribute="trailing" secondItem="94o-Dl-qKJ" secondAttribute="trailing" constant="15" id="sjJ-9M-ti9"/>
-                            <constraint firstItem="DAn-ZG-M4L" firstAttribute="top" secondItem="8SK-UC-AHB" secondAttribute="top" constant="19" id="tOR-Dk-M8I"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -117,6 +117,7 @@
                     <constraint firstItem="1B3-bQ-aeH" firstAttribute="leading" secondItem="esh-W1-7ep" secondAttribute="trailing" constant="15" id="zlA-hV-1UB"/>
                 </constraints>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
             <connections>
                 <outlet property="buttonIcon" destination="esh-W1-7ep" id="6QK-YS-jaH"/>
                 <outlet property="code" destination="nt1-av-qN7" id="Rfd-yP-dJY"/>
@@ -126,7 +127,7 @@
                 <outlet property="monto" destination="DAn-ZG-M4L" id="4hD-Yy-Rwe"/>
                 <outlet property="name" destination="1B3-bQ-aeH" id="vWi-ua-CJa"/>
             </connections>
-            <point key="canvasLocation" x="34" y="53.5"/>
+            <point key="canvasLocation" x="41" y="56"/>
         </tableViewCell>
     </objects>
 </document>

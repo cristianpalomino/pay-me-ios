@@ -10,6 +10,7 @@ import UIKit
 
 class PMTitleStrip: UIView {
     
+    var shouldSetupFrame = true
     var delegate: PMTitleStripDelegate?
     
     var scrollView: UIScrollView!
@@ -46,16 +47,22 @@ class PMTitleStrip: UIView {
         viewStrip = UIView(frame: .zero)
         viewStrip.backgroundColor = UIColor.clear
         scrollView.addSubview(viewStrip)
-        stripBorders()
     }
     
     private func update() {
-        scrollView.frame = scrollRect
-        createTitles()
-
-        viewStrip.frame = stripRect
-        viewStrip.center.y = self.scrollView.center.y
-        viewStrip.layer.cornerRadius = self.viewStrip.frame.height * 0.5
+        if shouldSetupFrame {
+            
+            scrollView.frame = scrollRect
+            createTitles()
+            
+            viewStrip.frame = stripRect
+            viewStrip.center.y = self.scrollView.center.y
+            
+            stripBorders()
+            addBottomBorder()
+            
+            shouldSetupFrame = false
+        }
     }
     
     func createTitles() {
@@ -91,7 +98,8 @@ class PMTitleStrip: UIView {
     }
     
     func stripBorders() {
-        viewStrip.layer.borderColor = borderColor.cgColor
+        viewStrip.layer.cornerRadius = self.viewStrip.frame.height * 0.5
+        viewStrip.layer.borderColor = UIColor(hexColor: "#e6e9ed").cgColor
         viewStrip.layer.borderWidth = 1
     }
     
@@ -143,7 +151,7 @@ class PMTitleStrip: UIView {
 class PMTitle: UIButton {
     
     open var textColor: UIColor {
-        return borderColor
+        return UIColor(hexColor: "#aab2bd")
     }
     
     var isFocus: Bool = false

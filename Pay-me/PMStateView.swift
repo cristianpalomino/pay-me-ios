@@ -10,12 +10,13 @@ import UIKit
 
 class PMStateView: UIView {
 
+    var shouldSetupFrame = true
     var state: ServiceStateType = .pendiente_verificacion
     
     @IBOutlet weak var stateWidth: NSLayoutConstraint!
     
     var labelState: UILabel!
-    var imageState: UIView!
+    var imageState: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,8 +35,8 @@ class PMStateView: UIView {
     
     func prepare() {
     
-        imageState = UIView(frame: .zero)
-        imageState.backgroundColor = UIColor.white
+        imageState = UIImageView(frame: .zero)
+        imageState.backgroundColor = UIColor.clear
         addSubview(imageState)
     
         labelState = UILabel(frame: .zero)
@@ -53,37 +54,44 @@ class PMStateView: UIView {
     }
     
     func update() {
-        switch state {
-        case .pendiente_verificacion:
-            labelState.text = "Pendiente de verificación".uppercased()
-            backgroundColor = UIColor.appGrayColor()
-            break
-        case .pendiente_pago:
-            labelState.text = "Pendiente de pago".uppercased()
-            backgroundColor = UIColor.appRedColor()
-            break
-        case .pagado:
-            labelState.text = "Pagado".uppercased()
-            backgroundColor = UIColor.appRedColor()
-            break
-        case .cargos_recurrentes:
-            labelState.text = "Cargo Automático".uppercased()
-            backgroundColor = UIColor.appRedColor()
-            break
+        if shouldSetupFrame {
+            switch state {
+            case .pendiente_verificacion:
+                labelState.text = "Pendiente de verificación".uppercased()
+                backgroundColor = UIColor.appGrayColor()
+                imageState.image = UIImage(named: "icono-triangulo")
+                break
+            case .pendiente_pago:
+                labelState.text = "Pendiente de pago".uppercased()
+                backgroundColor = UIColor.appRedColor()
+                imageState.image = UIImage(named: "icono-triangulo")
+                break
+            case .pagado:
+                labelState.text = "Pagado".uppercased()
+                backgroundColor = UIColor.appRedColor()
+                imageState.image = UIImage(named: "icono-triangulo")
+                break
+            case .cargos_recurrentes:
+                labelState.text = "Cargo Automático".uppercased()
+                backgroundColor = UIColor.appRedColor()
+                imageState.image = UIImage(named: "cargo-automatico")
+                break
+            }
+            
+            imageState.frame = frameImage
+            imageState.layer.cornerRadius = frameImage.height * 0.5
+            imageState.center.y = 6
+            
+            labelState.sizeToFit()
+            labelState.frame = labelState.frame
+            labelState.frame.origin = CGPoint(x: 16, y: 0)
+            labelState.center.y = 6
+            
+            let totalWidthFrame = labelState.frame.width + labelState.frame.origin.x + 9
+            stateWidth.constant = totalWidthFrame
+            
+            shouldSetupFrame = false
         }
-        
-        imageState.frame = frameImage
-        imageState.layer.cornerRadius = frameImage.height * 0.5
-        imageState.center.y = 6
-        
-        labelState.sizeToFit()
-        labelState.frame = labelState.frame
-        labelState.frame.origin = CGPoint(x: 16, y: 0)
-        labelState.center.y = 6
-
-    
-        let totalWidthFrame = labelState.frame.width + labelState.frame.origin.x + 10
-        stateWidth.constant = totalWidthFrame
     }
     
     /*

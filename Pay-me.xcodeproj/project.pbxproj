@@ -211,6 +211,8 @@
 		4FA8EFAE1EB0F8AC00A596EA /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */; };
 		4FB51BD01EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
 		4FB51BD11EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
+		4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD21EBBD31200712249 /* PMItemView.swift */; };
+		4FB51BD41EBBD31200712249 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD21EBBD31200712249 /* PMItemView.swift */; };
 		4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
 		4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
 		4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
@@ -356,6 +358,7 @@
 		4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleStrip.swift; sourceTree = "<group>"; };
 		4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
 		4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStateView.swift; sourceTree = "<group>"; };
+		4FB51BD21EBBD31200712249 /* PMItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemView.swift; sourceTree = "<group>"; };
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -621,6 +624,7 @@
 		408E501E1DFB7A6D007BEEDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FB51BD21EBBD31200712249 /* PMItemView.swift */,
 				4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */,
 				4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */,
 				4F8220611EB13AF6001351FE /* PMItemCircle.swift */,
@@ -1151,6 +1155,7 @@
 				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
 				4FA8EFA81EB0F7B700A596EA /* PMTitleStrip.swift in Sources */,
 				4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */,
+				4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */,
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
 				40293EF91E40D2DE007EF98D /* Debt.swift in Sources */,
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
@@ -1254,6 +1259,7 @@
 				408CB6AB1E54E73D00D308D3 /* AppDelegate.swift in Sources */,
 				4FA8EFA91EB0F7B700A596EA /* PMTitleStrip.swift in Sources */,
 				4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */,
+				4FB51BD41EBBD31200712249 /* PMItemView.swift in Sources */,
 				408CB6AC1E54E73D00D308D3 /* PMTextField.swift in Sources */,
 				408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */,
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
