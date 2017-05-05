@@ -34,36 +34,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7e-8q-SKF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hva-LG-dSf" customClass="PMSpinnerView" customModule="Pay_me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="yK0-kL-z6x">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="yK0-kL-z6x" firstAttribute="leading" secondItem="K7e-8q-SKF" secondAttribute="leading" id="KZV-x3-lY5"/>
-                                    <constraint firstAttribute="trailing" secondItem="yK0-kL-z6x" secondAttribute="trailing" id="c3g-Rx-FxH"/>
-                                    <constraint firstItem="yK0-kL-z6x" firstAttribute="top" secondItem="K7e-8q-SKF" secondAttribute="top" id="jBm-F6-pJm"/>
-                                    <constraint firstAttribute="bottom" secondItem="yK0-kL-z6x" secondAttribute="bottom" id="qLy-Xd-Vgv"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hva-LG-dSf">
-                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center-icon" translatesAutoresizingMaskIntoConstraints="NO" id="3Ej-dN-qfy">
-                                        <rect key="frame" x="113" y="207" width="94" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="3Ej-dN-qfy" secondAttribute="height" multiplier="1:1" id="BAE-Bi-rxG"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="3Ej-dN-qfy" firstAttribute="centerY" secondItem="Hva-LG-dSf" secondAttribute="centerY" id="4yc-Db-bEY"/>
-                                    <constraint firstItem="3Ej-dN-qfy" firstAttribute="centerX" secondItem="Hva-LG-dSf" secondAttribute="centerX" id="QWU-uZ-4Xw"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lm-hF-zZK" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="320" height="40"/>
@@ -73,19 +46,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Hva-LG-dSf" secondAttribute="trailing" id="0NJ-6e-owp"/>
-                            <constraint firstItem="K7e-8q-SKF" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="1So-DR-bDH"/>
-                            <constraint firstItem="K7e-8q-SKF" firstAttribute="top" secondItem="1lm-hF-zZK" secondAttribute="bottom" id="5Tp-Re-Kbv"/>
-                            <constraint firstAttribute="trailing" secondItem="K7e-8q-SKF" secondAttribute="trailing" id="99r-Ti-xfZ"/>
                             <constraint firstAttribute="trailing" secondItem="1lm-hF-zZK" secondAttribute="trailing" id="B0t-aR-Wqs"/>
                             <constraint firstItem="Hva-LG-dSf" firstAttribute="top" secondItem="1lm-hF-zZK" secondAttribute="bottom" id="G2R-0a-i0B"/>
-                            <constraint firstAttribute="trailing" secondItem="K7e-8q-SKF" secondAttribute="trailing" id="INd-Pd-rLO"/>
-                            <constraint firstItem="K7e-8q-SKF" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="Lib-4h-xqs"/>
                             <constraint firstItem="1lm-hF-zZK" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="PhN-3O-hP6"/>
                             <constraint firstItem="5MR-7O-Ix4" firstAttribute="top" secondItem="Hva-LG-dSf" secondAttribute="bottom" id="TxH-r5-WHA"/>
                             <constraint firstItem="Hva-LG-dSf" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="Wxj-Iv-fZW"/>
                             <constraint firstItem="Hva-LG-dSf" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="YMQ-mr-vl4"/>
-                            <constraint firstAttribute="bottom" secondItem="K7e-8q-SKF" secondAttribute="bottom" id="cDo-Uw-Waf"/>
-                            <constraint firstAttribute="bottom" secondItem="K7e-8q-SKF" secondAttribute="bottom" id="iNC-ez-w6b"/>
                             <constraint firstItem="1lm-hF-zZK" firstAttribute="height" secondItem="EW6-ut-6Ne" secondAttribute="height" multiplier="0.07" id="kQF-HF-gO8"/>
                             <constraint firstItem="1lm-hF-zZK" firstAttribute="top" secondItem="Jt9-Ma-5Tr" secondAttribute="bottom" id="sR6-i4-QBN"/>
                             <constraint firstItem="5MR-7O-Ix4" firstAttribute="top" secondItem="Hva-LG-dSf" secondAttribute="bottom" id="vuM-LL-ZBs"/>
@@ -131,35 +97,35 @@
                                 <rect key="frame" x="0.0" y="60" width="320" height="508"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-aY-dyv" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="224.5" y="185" width="136.5" height="137"/>
+                                        <rect key="frame" x="224" y="186" width="136.5" height="136"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8Rl-aY-dyv" secondAttribute="height" id="ZEi-BU-DOT"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clW-h5-ldb" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="-41" y="185" width="137.5" height="137"/>
+                                        <rect key="frame" x="-40.5" y="186" width="136.5" height="136"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="clW-h5-ldb" secondAttribute="height" id="g4P-lg-gOT"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-xc-0zg">
-                                        <rect key="frame" x="0.0" y="24" width="320" height="182"/>
+                                        <rect key="frame" x="0.0" y="24" width="320" height="181.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-iC-GPI" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="91.5" y="22" width="137" height="137"/>
+                                                <rect key="frame" x="92" y="22" width="136" height="136.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="nyI-iC-GPI" secondAttribute="height" id="kNg-PA-S0T"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rym-i3-1jC" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="228.5" y="45" width="137" height="137"/>
+                                                <rect key="frame" x="228" y="45" width="136.5" height="136.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvD-zY-es8" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="-45.5" y="45" width="137" height="137"/>
+                                                <rect key="frame" x="-44.5" y="45" width="136.5" height="136.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -179,21 +145,21 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdD-7S-Lu4">
-                                        <rect key="frame" x="0.0" y="302" width="320" height="182"/>
+                                        <rect key="frame" x="0.0" y="301.5" width="320" height="182.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-1I-SSP" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="91.5" y="23" width="137" height="137"/>
+                                                <rect key="frame" x="92" y="23" width="136" height="136.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Pvb-1I-SSP" secondAttribute="height" id="1yZ-Kn-a01"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-sJ-qu4" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="228.5" y="0.0" width="137" height="137"/>
+                                                <rect key="frame" x="228" y="0.0" width="136.5" height="136.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRD-uD-h8I" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="-45.5" y="0.0" width="137" height="137"/>
+                                                <rect key="frame" x="-44.5" y="0.0" width="136.5" height="136.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
@@ -213,13 +179,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvz-PE-p5h" userLabel="center">
-                                        <rect key="frame" x="112.5" y="206" width="96" height="96"/>
+                                        <rect key="frame" x="112" y="205.5" width="96" height="96"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="servicio-mid" translatesAutoresizingMaskIntoConstraints="NO" id="OoZ-do-jEo">
-                                                <rect key="frame" x="1" y="0.0" width="96" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="zx4-y3-CBq">
-                                                <rect key="frame" x="29.5" y="28.5" width="38" height="38.5"/>
+                                                <rect key="frame" x="28.5" y="29" width="39" height="38.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zx4-y3-CBq" secondAttribute="height" multiplier="1:1" id="X6X-u2-T9Q"/>
                                                 </constraints>
@@ -327,14 +293,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-ND-wAp" customClass="PMTitleStrip" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="60" width="320" height="34.5"/>
+                                <rect key="frame" x="0.0" y="60" width="320" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xsb-ND-wAp" secondAttribute="height" multiplier="64:7" id="hoY-eJ-XDH"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PPz-S0-aBx">
-                                <rect key="frame" x="0.0" y="94.5" width="320" height="473.5"/>
+                                <rect key="frame" x="0.0" y="95" width="320" height="473"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="XOg-HL-QOq" id="LDB-mW-F4S"/>
@@ -404,7 +370,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
                                             </imageView>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkP-0C-yk5" customClass="PMInfoView" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="169" y="8" width="143" height="154"/>
+                                                <rect key="frame" x="168.5" y="8" width="143.5" height="154"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRW-xy-bq8" userLabel="view-open-info" customClass="PMTriangleView" customModule="Pay_me" customModuleProvider="target">
@@ -875,14 +841,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYh-aY-7oP" customClass="PMTitleStrip" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="60" width="320" height="34.5"/>
+                                <rect key="frame" x="0.0" y="60" width="320" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qYh-aY-7oP" secondAttribute="height" multiplier="64:7" id="ueM-5M-0hE"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JTV-F1-lGi">
-                                <rect key="frame" x="0.0" y="94.5" width="320" height="423.5"/>
+                                <rect key="frame" x="0.0" y="95" width="320" height="423"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="aSg-di-BpN" id="GC0-Kk-dps"/>
@@ -950,8 +916,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blue-background" width="639" height="1136"/>
-        <image name="center-icon" width="94" height="94"/>
         <image name="ic-educacion" width="58" height="70"/>
         <image name="ic-info" width="30" height="30"/>
         <image name="ic-notificacion" width="20" height="21"/>
