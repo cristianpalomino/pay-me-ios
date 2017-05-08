@@ -14,13 +14,13 @@ extension PMViewController {
     var headerTitle: String { return "NONE" }
     
     @IBAction func tapPerfil() {
-        let notis = UIStoryboard.createNotificaciones().topViewController!
-        self.navigationController?.show(notis, sender: self)
+//        let notis = UIStoryboard.createNotificaciones().topViewController!
+//        self.navigationController?.show(notis, sender: self)
     }
     
     @IBAction func tapNotifications() {
-        let notis = UIStoryboard.createNotificacionesHome().topViewController!
-        self.navigationController?.show(notis, sender: self)
+//        let notis = UIStoryboard.createNotificacionesHome().topViewController!
+//        self.navigationController?.show(notis, sender: self)
     }
     
     func tapBack() {

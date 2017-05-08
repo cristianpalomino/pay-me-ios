@@ -73,8 +73,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="pmSpinnerView" destination="Hva-LG-dSf" id="RH5-Ym-ERK"/>
                         <outlet property="pmTitleView" destination="1lm-hF-zZK" id="P8b-sR-qTi"/>
-                        <segue destination="096-AS-Eae" kind="show" identifier="toCategorias" id="yDt-OI-veN"/>
+                        <segue destination="096-AS-Eae" kind="show" identifier="kToCategorias" id="yDt-OI-veN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPO-KT-Mis" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,137 +94,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmC-aZ-LcR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmC-aZ-LcR" customClass="PMSpinnerView" customModule="Pay_me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rl-aY-dyv" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="224" y="186" width="136.5" height="136"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="8Rl-aY-dyv" secondAttribute="height" id="ZEi-BU-DOT"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clW-h5-ldb" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="-40.5" y="186" width="136.5" height="136"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="clW-h5-ldb" secondAttribute="height" id="g4P-lg-gOT"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-xc-0zg">
-                                        <rect key="frame" x="0.0" y="24" width="320" height="181.5"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-iC-GPI" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="92" y="22" width="136" height="136.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="nyI-iC-GPI" secondAttribute="height" id="kNg-PA-S0T"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rym-i3-1jC" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="228" y="45" width="136.5" height="136.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvD-zY-es8" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="-44.5" y="45" width="136.5" height="136.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="nyI-iC-GPI" firstAttribute="leading" secondItem="hvD-zY-es8" secondAttribute="trailing" id="0o9-C0-eMU"/>
-                                            <constraint firstItem="nyI-iC-GPI" firstAttribute="height" secondItem="lvd-xc-0zg" secondAttribute="height" multiplier="0.75" id="3u4-RM-SaU"/>
-                                            <constraint firstItem="rym-i3-1jC" firstAttribute="leading" secondItem="nyI-iC-GPI" secondAttribute="trailing" id="4L5-Cb-2kk"/>
-                                            <constraint firstAttribute="bottom" secondItem="hvD-zY-es8" secondAttribute="bottom" id="5b4-pl-7dQ"/>
-                                            <constraint firstItem="nyI-iC-GPI" firstAttribute="width" secondItem="hvD-zY-es8" secondAttribute="width" id="5kf-LL-jGg"/>
-                                            <constraint firstItem="nyI-iC-GPI" firstAttribute="height" secondItem="hvD-zY-es8" secondAttribute="height" id="Eqa-tD-Jaa"/>
-                                            <constraint firstItem="rym-i3-1jC" firstAttribute="height" secondItem="hvD-zY-es8" secondAttribute="height" id="P6T-h7-8pI"/>
-                                            <constraint firstAttribute="bottom" secondItem="rym-i3-1jC" secondAttribute="bottom" id="Pn7-DI-q63"/>
-                                            <constraint firstItem="rym-i3-1jC" firstAttribute="width" secondItem="hvD-zY-es8" secondAttribute="width" id="Rey-r9-FRF"/>
-                                            <constraint firstItem="nyI-iC-GPI" firstAttribute="centerX" secondItem="lvd-xc-0zg" secondAttribute="centerX" id="efg-hT-fD0"/>
-                                            <constraint firstItem="nyI-iC-GPI" firstAttribute="centerY" secondItem="lvd-xc-0zg" secondAttribute="centerY" id="paa-7Z-Y3Y"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdD-7S-Lu4">
-                                        <rect key="frame" x="0.0" y="301.5" width="320" height="182.5"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvb-1I-SSP" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="92" y="23" width="136" height="136.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Pvb-1I-SSP" secondAttribute="height" id="1yZ-Kn-a01"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj3-sJ-qu4" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="228" y="0.0" width="136.5" height="136.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRD-uD-h8I" customClass="PMItemCircle" customModule="Pay_me" customModuleProvider="target">
-                                                <rect key="frame" x="-44.5" y="0.0" width="136.5" height="136.5"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="Pvb-1I-SSP" firstAttribute="centerX" secondItem="DdD-7S-Lu4" secondAttribute="centerX" id="69B-lV-hXR"/>
-                                            <constraint firstItem="Fj3-sJ-qu4" firstAttribute="height" secondItem="CRD-uD-h8I" secondAttribute="height" id="Fv3-wI-GuO"/>
-                                            <constraint firstItem="Pvb-1I-SSP" firstAttribute="height" secondItem="CRD-uD-h8I" secondAttribute="height" id="GdM-Xx-ALF"/>
-                                            <constraint firstItem="CRD-uD-h8I" firstAttribute="top" secondItem="DdD-7S-Lu4" secondAttribute="top" id="TY9-9E-32D"/>
-                                            <constraint firstItem="Pvb-1I-SSP" firstAttribute="centerY" secondItem="DdD-7S-Lu4" secondAttribute="centerY" id="ayV-bn-Y0P"/>
-                                            <constraint firstItem="Fj3-sJ-qu4" firstAttribute="top" secondItem="DdD-7S-Lu4" secondAttribute="top" id="duF-5J-vFZ"/>
-                                            <constraint firstItem="Fj3-sJ-qu4" firstAttribute="width" secondItem="CRD-uD-h8I" secondAttribute="width" id="gM0-wx-wLP"/>
-                                            <constraint firstItem="Pvb-1I-SSP" firstAttribute="width" secondItem="CRD-uD-h8I" secondAttribute="width" id="igI-Q3-M87"/>
-                                            <constraint firstItem="Pvb-1I-SSP" firstAttribute="height" secondItem="DdD-7S-Lu4" secondAttribute="height" multiplier="0.75" id="uuM-65-Jmj"/>
-                                            <constraint firstItem="Pvb-1I-SSP" firstAttribute="leading" secondItem="CRD-uD-h8I" secondAttribute="trailing" id="xDS-l8-o0J"/>
-                                            <constraint firstItem="Fj3-sJ-qu4" firstAttribute="leading" secondItem="Pvb-1I-SSP" secondAttribute="trailing" id="zFh-ng-tsg"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvz-PE-p5h" userLabel="center">
-                                        <rect key="frame" x="112" y="205.5" width="96" height="96"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="servicio-mid" translatesAutoresizingMaskIntoConstraints="NO" id="OoZ-do-jEo">
-                                                <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-educacion" translatesAutoresizingMaskIntoConstraints="NO" id="zx4-y3-CBq">
-                                                <rect key="frame" x="28.5" y="29" width="39" height="38.5"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="zx4-y3-CBq" secondAttribute="height" multiplier="1:1" id="X6X-u2-T9Q"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="zx4-y3-CBq" firstAttribute="centerX" secondItem="Dvz-PE-p5h" secondAttribute="centerX" id="Qz6-k6-7rU"/>
-                                            <constraint firstItem="OoZ-do-jEo" firstAttribute="leading" secondItem="Dvz-PE-p5h" secondAttribute="leading" id="Tka-ko-1Za"/>
-                                            <constraint firstAttribute="trailing" secondItem="OoZ-do-jEo" secondAttribute="trailing" id="Y5W-t1-7mF"/>
-                                            <constraint firstItem="zx4-y3-CBq" firstAttribute="height" secondItem="Dvz-PE-p5h" secondAttribute="height" multiplier="0.4" id="gbb-6B-yDn"/>
-                                            <constraint firstItem="OoZ-do-jEo" firstAttribute="top" secondItem="Dvz-PE-p5h" secondAttribute="top" id="grI-KY-MnW"/>
-                                            <constraint firstAttribute="bottom" secondItem="OoZ-do-jEo" secondAttribute="bottom" id="jcR-9r-JpW"/>
-                                            <constraint firstItem="zx4-y3-CBq" firstAttribute="centerY" secondItem="Dvz-PE-p5h" secondAttribute="centerY" id="rSb-pG-uDC"/>
-                                            <constraint firstAttribute="width" secondItem="Dvz-PE-p5h" secondAttribute="height" multiplier="1:1" id="uPL-jm-BYV"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="DdD-7S-Lu4" secondAttribute="trailing" id="5C6-8u-XM1"/>
-                                    <constraint firstItem="8Rl-aY-dyv" firstAttribute="leading" secondItem="Dvz-PE-p5h" secondAttribute="trailing" constant="16" id="Gtm-pQ-5Lr"/>
-                                    <constraint firstItem="Dvz-PE-p5h" firstAttribute="leading" secondItem="clW-h5-ldb" secondAttribute="trailing" constant="16" id="K4z-Bt-KeY"/>
-                                    <constraint firstItem="Dvz-PE-p5h" firstAttribute="centerX" secondItem="DmC-aZ-LcR" secondAttribute="centerX" id="Nvu-CG-a3g"/>
-                                    <constraint firstItem="lvd-xc-0zg" firstAttribute="top" secondItem="DmC-aZ-LcR" secondAttribute="top" constant="24" id="WxN-0m-dGE"/>
-                                    <constraint firstAttribute="bottom" secondItem="DdD-7S-Lu4" secondAttribute="bottom" constant="24" id="YJf-o5-8dT"/>
-                                    <constraint firstItem="clW-h5-ldb" firstAttribute="width" secondItem="nyI-iC-GPI" secondAttribute="width" id="aNs-cy-XWE"/>
-                                    <constraint firstItem="Dvz-PE-p5h" firstAttribute="width" secondItem="DmC-aZ-LcR" secondAttribute="width" multiplier="0.3" id="dgN-Ee-AZX"/>
-                                    <constraint firstItem="Dvz-PE-p5h" firstAttribute="top" secondItem="lvd-xc-0zg" secondAttribute="bottom" id="doH-EZ-eNV"/>
-                                    <constraint firstItem="8Rl-aY-dyv" firstAttribute="width" secondItem="clW-h5-ldb" secondAttribute="width" id="er1-6K-siP"/>
-                                    <constraint firstItem="DdD-7S-Lu4" firstAttribute="top" secondItem="Dvz-PE-p5h" secondAttribute="bottom" id="fHq-a0-0Pf"/>
-                                    <constraint firstItem="lvd-xc-0zg" firstAttribute="leading" secondItem="DmC-aZ-LcR" secondAttribute="leading" id="jty-uq-nUp"/>
-                                    <constraint firstItem="Dvz-PE-p5h" firstAttribute="centerY" secondItem="DmC-aZ-LcR" secondAttribute="centerY" id="pcd-JP-ER9"/>
-                                    <constraint firstItem="8Rl-aY-dyv" firstAttribute="centerY" secondItem="DmC-aZ-LcR" secondAttribute="centerY" id="rav-8Z-UuM"/>
-                                    <constraint firstItem="clW-h5-ldb" firstAttribute="centerY" secondItem="DmC-aZ-LcR" secondAttribute="centerY" id="sWN-KL-zvR"/>
-                                    <constraint firstAttribute="trailing" secondItem="lvd-xc-0zg" secondAttribute="trailing" id="yb7-r2-okK"/>
-                                    <constraint firstItem="DdD-7S-Lu4" firstAttribute="leading" secondItem="DmC-aZ-LcR" secondAttribute="leading" id="zKy-iR-mCl"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bb1-7m-4mZ" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="20" width="320" height="40"/>
@@ -260,15 +133,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="bottomView" destination="Pvb-1I-SSP" id="Y2I-p9-WOD"/>
-                        <outlet property="leftBottomView" destination="CRD-uD-h8I" id="V8v-q6-xHM"/>
-                        <outlet property="leftMiddleView" destination="clW-h5-ldb" id="gOi-aV-DLA"/>
-                        <outlet property="leftTopView" destination="hvD-zY-es8" id="PRp-nd-YMZ"/>
+                        <outlet property="pmSpinnerView" destination="DmC-aZ-LcR" id="kxb-Ee-75q"/>
                         <outlet property="pmTitleView" destination="bb1-7m-4mZ" id="acb-jh-Oml"/>
-                        <outlet property="rigthBottomView" destination="Fj3-sJ-qu4" id="ebU-3o-rEr"/>
-                        <outlet property="rigthMiddleView" destination="8Rl-aY-dyv" id="EkH-HB-2cn"/>
-                        <outlet property="rigthTopView" destination="rym-i3-1jC" id="NEb-Bv-ewI"/>
-                        <outlet property="topView" destination="nyI-iC-GPI" id="CaJ-YD-uBD"/>
                         <segue destination="XOg-HL-QOq" kind="show" identifier="kToEmpresas" id="8iW-XC-Pvq"/>
                     </connections>
                 </viewController>
@@ -424,13 +290,13 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p97-0Q-tCj">
-                                        <rect key="frame" x="32" y="274" width="268" height="20"/>
+                                        <rect key="frame" x="32" y="274" width="268" height="19"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-qb-yAK" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="322" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="321" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done"/>
@@ -539,20 +405,20 @@
                                 <rect key="frame" x="0.0" y="60" width="320" height="508"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IlY-Jo-EEN">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IlY-Jo-EEN" secondAttribute="height" multiplier="316:61" id="Uoa-az-Cvb"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxr-gX-Bwu">
-                                        <rect key="frame" x="32" y="101.5" width="268" height="20"/>
+                                        <rect key="frame" x="32" y="102" width="268" height="19"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="16"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WLAN 34 572 C" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Unn-UZ-AMa" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="149.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="149" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -561,7 +427,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Karolina Briceño del Norte" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilb-sR-EOo" customClass="PMTextField" customModule="Pay_me" customModuleProvider="target">
-                                        <rect key="frame" x="32" y="207.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="207" width="268" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -570,16 +436,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No es mi servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUq-Xe-eIw">
-                                        <rect key="frame" x="69" y="276.5" width="90" height="15"/>
+                                        <rect key="frame" x="69" y="276.5" width="90" height="14"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="12"/>
                                         <color key="textColor" red="0.035294117649999998" green="0.47058823529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icono_no_es_mi_servicio" translatesAutoresizingMaskIntoConstraints="NO" id="FkQ-Dm-oJj">
-                                        <rect key="frame" x="32" y="273.5" width="21" height="21"/>
+                                        <rect key="frame" x="32" y="273" width="21" height="21"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBp-EB-lMB">
-                                        <rect key="frame" x="32" y="268.5" width="268" height="30"/>
+                                        <rect key="frame" x="32" y="268" width="268" height="30"/>
                                         <connections>
                                             <action selector="tapNoEsMiServicio" destination="LJL-Ho-l4M" eventType="touchUpInside" id="OhQ-QQ-1pB"/>
                                         </connections>
@@ -700,13 +566,13 @@
                                                 <rect key="frame" x="160" y="0.0" width="160" height="61"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificador de servicio" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-Yj-OH4">
-                                                        <rect key="frame" x="8" y="17" width="144" height="14"/>
+                                                        <rect key="frame" x="8" y="17" width="144" height="13"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 34 111 C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGV-8e-vSn">
-                                                        <rect key="frame" x="8" y="35" width="144" height="12"/>
+                                                        <rect key="frame" x="8" y="34" width="144" height="12"/>
                                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="10"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -916,7 +782,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic-educacion" width="58" height="70"/>
         <image name="ic-info" width="30" height="30"/>
         <image name="ic-notificacion" width="20" height="21"/>
         <image name="ic-perfil" width="22" height="22"/>
@@ -924,6 +789,5 @@
         <image name="icono_consultar_activo" width="21" height="21"/>
         <image name="icono_no_es_mi_servicio" width="21" height="21"/>
         <image name="icono_recordar_servicio" width="21" height="21"/>
-        <image name="servicio-mid" width="188" height="188"/>
     </resources>
 </document>

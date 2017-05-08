@@ -8,13 +8,20 @@
 
 import UIKit
 
-// 69px
-class PMItemView: UIView {
+class PMItemView: UIButton {
     var shouldSetupFrame = true
 
     var circleView: UIView!
     var labelItem: UILabel!
     var imageItem: UIImageView!
+    
+    var item: (title: String, image: UIImage)!
+    
+    init(item: (title: String, image: UIImage)) {
+        super.init(frame: .zero)
+        self.item = item
+        prepare()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,34 +39,70 @@ class PMItemView: UIView {
     }
     
     func prepare() {
-        labelItem = UILabel(frame: .zero)
+        initLabel()
+        initCircle()
+        initImage()
+    }
+    
+    override func updateConstraints() {
+        super.updateConstraints()
+    }
+    
+    func initImage() {
+        imageItem = UIImageView()
+        imageItem.image = item.image.withRenderingMode(.alwaysTemplate)
+        imageItem.tintColor = UIColor.appBlueColor()
+        imageItem.contentMode = .scaleAspectFit
+        imageItem.translatesAutoresizingMaskIntoConstraints = false
+        circleView.addSubview(imageItem)
+        
+        imageItem.centerXAnchor.constraint(equalTo: circleView.centerXAnchor).isActive = true
+        imageItem.centerYAnchor.constraint(equalTo: circleView.centerYAnchor).isActive = true
+    }
+    
+    func initCircle() {
+        circleView = UIView()
+        circleView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(circleView)
+        
+        circleView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        circleView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        circleView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        circleView.bottomAnchor.constraint(equalTo: labelItem.topAnchor).isActive = true
+    }
+    
+    func initLabel() {
+        labelItem = UILabel()
+        labelItem.text = item.title
+        labelItem.textAlignment = .center
+        labelItem.textColor = UIColor(hexColor: "#434a54")
+        labelItem.font = UIFont.SFMedium(size: 10)
+        labelItem.translatesAutoresizingMaskIntoConstraints = false
         addSubview(labelItem)
         
-        circleView = UIView(frame: .zero)
-        addSubview(imageItem)
-        
-        imageItem = UIImageView(frame: .zero)
-        circleView.addSubview(imageItem)
+        labelItem.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        labelItem.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        labelItem.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     
     func update() {
         if shouldSetupFrame {
-            
-            
-            
-            addCircleBorder()
-            
+            //addCircleBorder()
             shouldSetupFrame = false
         }
     }
     
     override func addCircleBorder() {
-        circleView.layer.borderWidth = 3
-        circleView.layer.borderColor = UIColor.white.cgColor
-        circleView.cornerRadius = frameImage.height * 0.5
+        layer.borderColor = borderColor.cgColor
+        layer.borderWidth = 1
+        layer.cornerRadius = bounds.height * 0.5
     }
     
     var frameImage: CGRect {
         return CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height)
+    }
+    
+    var servicio: String? {
+        return labelItem.text
     }
 }

@@ -12,3 +12,8 @@ struct Titles {
     
     
 }
+
+protocol Touchable {
+    
+    func touch(params: Any)
+}

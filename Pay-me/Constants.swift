@@ -81,7 +81,8 @@ struct Constants {
         static let kConfig   = "ServiceConfiguration"
         
         struct Segues {
-            
+        
+            static let kToCategorias            = "kToCategorias"
             static let kToEmpresas              = "kToEmpresas"
             static let kToValidacionServicio    = "kToValidacionServicio"
             static let kDetailSuministro        = "kToDetailSuministro"

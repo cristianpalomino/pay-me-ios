@@ -10,21 +10,14 @@ import UIKit
 
 class PMNivelDosViewController: PMViewController {
     
+    @IBOutlet weak var pmSpinnerView: PMSpinnerView!
+    
     override var headerTitle: String {
         guard let title = Session.sharedInstance.current.servicioGeneral?.name else {
             return "NONE"
         }
         return title
     }
-    
-    @IBOutlet weak var topView           :PMItemCircle!
-    @IBOutlet weak var rigthTopView      :PMItemCircle!
-    @IBOutlet weak var leftTopView       :PMItemCircle!
-    @IBOutlet weak var rigthMiddleView   :PMItemCircle!
-    @IBOutlet weak var leftMiddleView    :PMItemCircle!
-    @IBOutlet weak var rigthBottomView   :PMItemCircle!
-    @IBOutlet weak var leftBottomView    :PMItemCircle!
-    @IBOutlet weak var bottomView        :PMItemCircle!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,59 +34,14 @@ class PMNivelDosViewController: PMViewController {
     
     override func initComponents() {
         super.initComponents()
-        self.defineViews()
+        prepare()
     }
-}
-
-extension PMNivelDosViewController {
     
-    func defineViews() {
-        let servicioGeneral = Session.sharedInstance.current.servicioGeneral!
-        
-        var views = [topView,
-                     rigthTopView,
-                     leftTopView,
-                     rigthMiddleView,
-                     leftMiddleView,
-                     rigthBottomView,
-                     leftBottomView,
-                     bottomView]
-        views.forEach{ $0?.pmItemCircleDelegate = self }
-        
-        if servicioGeneral.name == ServicesType.BASICOS.rawValue {
-            views.remove(at: 0)?.categoria = servicioGeneral.categorias[0]
-            views.forEach {  $0?.isHidden = true }
-        } else if servicioGeneral.name == ServicesType.SEGUROS.rawValue {
-            
-        } else if servicioGeneral.name == ServicesType.EDUCACION.rawValue {
-            views.remove(at: 0)?.categoria = servicioGeneral.categorias[0]
-            views.forEach {  $0?.isHidden = true }
-        } else if servicioGeneral.name == ServicesType.TRIBUTOS.rawValue {
-            
+    func prepare() {
+        if let servicioGeneral = Session.sharedInstance.current.servicioGeneral {
+            pmSpinnerView.centerView.centerType = .white
+            pmSpinnerView.items = servicioGeneral.items
+            pmSpinnerView.spinnerType = SpinnerType(rawValue: servicioGeneral.items.count) ?? .point
         }
     }
 }
-
-extension PMNivelDosViewController : PMItemCircleDelegate {
-
-    func tap(view: PMItemCircle) {
-        Session.sharedInstance.current.categoria = view.categoria
-        performSegue(withIdentifier: Constants.Storyboard.Segues.kToEmpresas, sender: nil)
-    }
-}
-
-extension PMNivelDosViewController {
-    
-    func educacionData() -> [(String, UIImage)] {
-        let educacion = [("Universidades", UIImage(named: "universidades")!),
-                         ("Colegios", UIImage(named: "colegios")!),
-                         ("Postgrado", UIImage(named: "postgrado")!),
-                         ("Institutos", UIImage(named: "institutos")!),
-                         ("Maestrias", UIImage(named: "maestrias")!),
-                         ("Pre-escolar", UIImage(named: "prescolar")!),
-                         ("Idiomas", UIImage(named: "idiomas")!),
-                         ("Academias", UIImage(named: "academias")!)]
-        return educacion
-    }
-}
-

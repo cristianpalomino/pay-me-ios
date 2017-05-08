@@ -56,7 +56,7 @@ extension PMListadoFavoritosViewController {
         }
     }
     
-    override func initComponents() {
+    override func initComponents() {        
         super.initComponents()
         viewTitleStrip.titles = self.titles
         let nib = UINib(nibName: "FavoritoTableViewCell", bundle: nil)

@@ -10,6 +10,15 @@ import UIKit
 
 class PMNivelUnoViewController: PMViewController {
 
+    @IBOutlet weak var pmSpinnerView: PMSpinnerView!
+    
+    var items: Items {
+        return [("Basicos", UIImage(named: "basicos")!),
+                ("Seguros", UIImage(named: "seguros")!),
+                ("Educación", UIImage(named: "educacion")!),
+                ("Tributos", UIImage(named: "tributos")!)]
+    }
+    
     override var headerTitle: String {
         return "Servicios"
     }
@@ -26,27 +35,29 @@ class PMNivelUnoViewController: PMViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func initComponents() {
+        super.initComponents()
+        prepare()
+    }
+    
+    func prepare() {
+        pmSpinnerView.delegate = self
+        pmSpinnerView.items = items
+        pmSpinnerView.spinnerType = .square
+    }
 }
 
-extension PMNivelUnoViewController {
+extension PMNivelUnoViewController: Touchable {
     
-    @IBAction func tapBasicos() {
-        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[0]
-        performSegue(withIdentifier: "toCategorias", sender: nil)
-    }
-    
-    @IBAction func tapEducacion() {
-        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[1]
-        performSegue(withIdentifier: "toCategorias", sender: nil)
-    }
-    
-    @IBAction func tapSeguros() {
-//        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[2]
-//        performSegue(withIdentifier: "toCategorias", sender: nil)
-    }
-    
-    @IBAction func tapTributos() {
-//        Session.sharedInstance.current.servicioGeneral = Session.sharedInstance.staticData.serviciosGenerales[3]
-//        performSegue(withIdentifier: "toCategorias", sender: nil)
+    func touch(params: Any) {
+        if let view = params as? PMItemView {
+            let index = view.tag
+            let sg = Session.sharedInstance.staticData.serviciosGenerales[index]
+            if !sg.categorias.isEmpty {
+                Session.sharedInstance.current.servicioGeneral = sg
+                toSegue(identifier: Constants.Storyboard.Segues.kToCategorias)
+            }
+        }
     }
 }

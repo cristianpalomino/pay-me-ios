@@ -38,7 +38,12 @@
                                                     ]
                                           }
                                           ],
-                           "name": "Básicos"
+                           "name": "Básicos",
+                           "logo": "basicos"
+                           },
+                           {
+                           "name": "Seguros",
+                           "logo": "seguros"
                            },
                            {
                            "categorias": [
@@ -76,13 +81,12 @@
                                                     ]
                                           }
                                           ],
-                           "name": "Educación"
+                           "name": "Educación",
+                           "logo": "educacion"
                            },
                            {
-                           "name": "Seguros"
-                           },
-                           {
-                           "name": "Tributos"
+                           "name": "Tributos",
+                           "logo": "tributos"
                            }
                            ]
 }

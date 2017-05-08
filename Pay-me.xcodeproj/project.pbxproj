@@ -37,7 +37,6 @@
 		405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABB1E1B36A5008CF767 /* Card.swift */; };
 		405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABD1E1C86AD008CF767 /* PMSizes.swift */; };
 		4062C13B1E37B16200617265 /* StaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4062C13A1E37B16200617265 /* StaticData.json */; };
-		4062C1411E380D3500617265 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1401E380D3500617265 /* Logs.swift */; };
 		4062C1461E3B98D500617265 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1451E3B98D500617265 /* RSA.m */; };
 		4062C1481E3B994200617265 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1471E3B994200617265 /* Security.swift */; };
 		4062C1581E3BE9A800617265 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1571E3BE9A800617265 /* Service.swift */; };
@@ -65,7 +64,6 @@
 		408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
 		408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */; };
 		408CB6A31E54E73D00D308D3 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377351E0334E700261759 /* PMButton.swift */; };
-		408CB6A41E54E73D00D308D3 /* Logs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1401E380D3500617265 /* Logs.swift */; };
 		408CB6A61E54E73D00D308D3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* MessageViewController.swift */; };
 		408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088F8AA1E36628C00114BEE /* StaticData.swift */; };
 		408CB6A81E54E73D00D308D3 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
@@ -186,10 +184,6 @@
 		4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
-		4F8220631EB13AF6001351FE /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8220611EB13AF6001351FE /* PMItemCircle.swift */; };
-		4F8220641EB13AF6001351FE /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8220621EB13AF6001351FE /* PMItemCircle.xib */; };
-		4F8220651EB13B02001351FE /* PMItemCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8220611EB13AF6001351FE /* PMItemCircle.swift */; };
-		4F8220661EB13B02001351FE /* PMItemCircle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F8220621EB13AF6001351FE /* PMItemCircle.xib */; };
 		4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
 		4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
 		4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */; };
@@ -215,8 +209,10 @@
 		4FB51BD41EBBD31200712249 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD21EBBD31200712249 /* PMItemView.swift */; };
 		4FB51BD71EBBE51200712249 /* PMCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD61EBBE51200712249 /* PMCenterView.swift */; };
 		4FB51BD81EBBE51200712249 /* PMCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD61EBBE51200712249 /* PMCenterView.swift */; };
-		4FB51BDA1EBBE64D00712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD91EBBE64D00712249 /* PMSpinnerView.swift */; };
-		4FB51BDB1EBBE64D00712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD91EBBE64D00712249 /* PMSpinnerView.swift */; };
+		4FB51BDF1EC0C49400712249 /* PMFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BDE1EC0C49400712249 /* PMFont.swift */; };
+		4FB51BE01EC0C49400712249 /* PMFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BDE1EC0C49400712249 /* PMFont.swift */; };
+		4FB51BE21EC1112200712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BE11EC1112200712249 /* PMSpinnerView.swift */; };
+		4FB51BE31EC1112200712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BE11EC1112200712249 /* PMSpinnerView.swift */; };
 		4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
 		4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
 		4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
@@ -280,7 +276,6 @@
 		405E0ABB1E1B36A5008CF767 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		405E0ABD1E1C86AD008CF767 /* PMSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSizes.swift; sourceTree = "<group>"; };
 		4062C13A1E37B16200617265 /* StaticData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StaticData.json; sourceTree = "<group>"; };
-		4062C1401E380D3500617265 /* Logs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logs.swift; sourceTree = "<group>"; };
 		4062C1441E3B98D500617265 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
 		4062C1451E3B98D500617265 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		4062C1471E3B994200617265 /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
@@ -348,8 +343,6 @@
 		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
-		4F8220611EB13AF6001351FE /* PMItemCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCircle.swift; sourceTree = "<group>"; };
-		4F8220621EB13AF6001351FE /* PMItemCircle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCircle.xib; sourceTree = "<group>"; };
 		4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntidadTableViewCell.xib; sourceTree = "<group>"; };
 		4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
@@ -364,7 +357,8 @@
 		4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStateView.swift; sourceTree = "<group>"; };
 		4FB51BD21EBBD31200712249 /* PMItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemView.swift; sourceTree = "<group>"; };
 		4FB51BD61EBBE51200712249 /* PMCenterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCenterView.swift; sourceTree = "<group>"; };
-		4FB51BD91EBBE64D00712249 /* PMSpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSpinnerView.swift; sourceTree = "<group>"; };
+		4FB51BDE1EC0C49400712249 /* PMFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMFont.swift; sourceTree = "<group>"; };
+		4FB51BE11EC1112200712249 /* PMSpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSpinnerView.swift; sourceTree = "<group>"; };
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -507,14 +501,6 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		4062C13F1E380D2B00617265 /* Logs */ = {
-			isa = PBXGroup;
-			children = (
-				4062C1401E380D3500617265 /* Logs.swift */,
-			);
-			name = Logs;
-			sourceTree = "<group>";
-		};
 		4062C1421E380F3600617265 /* Adicionar */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,7 +561,6 @@
 			isa = PBXGroup;
 			children = (
 				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
-				4062C13F1E380D2B00617265 /* Logs */,
 				40B2E3EC1E0DDE07003CBAC3 /* Fonts */,
 				4062C1331E37154600617265 /* Files */,
 				405E0AB11E1A1D32008CF767 /* Enums */,
@@ -623,6 +608,7 @@
 				405D230E1E157C94006ED043 /* PMStoryboard.swift */,
 				405E0ABD1E1C86AD008CF767 /* PMSizes.swift */,
 				40A420121E203FF200D74D22 /* PMString.swift */,
+				4FB51BDE1EC0C49400712249 /* PMFont.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -630,11 +616,9 @@
 		408E501E1DFB7A6D007BEEDE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4FB51BD51EBBE4EC00712249 /* Circle */,
+				4FB51BD51EBBE4EC00712249 /* Spinner */,
 				4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */,
 				4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */,
-				4F8220611EB13AF6001351FE /* PMItemCircle.swift */,
-				4F8220621EB13AF6001351FE /* PMItemCircle.xib */,
 				408E501F1DFB7B13007BEEDE /* PMTextField.swift */,
 				403377351E0334E700261759 /* PMButton.swift */,
 				40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */,
@@ -744,14 +728,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
-		4FB51BD51EBBE4EC00712249 /* Circle */ = {
+		4FB51BD51EBBE4EC00712249 /* Spinner */ = {
 			isa = PBXGroup;
 			children = (
-				4FB51BD91EBBE64D00712249 /* PMSpinnerView.swift */,
+				4FB51BE11EC1112200712249 /* PMSpinnerView.swift */,
 				4FB51BD61EBBE51200712249 /* PMCenterView.swift */,
 				4FB51BD21EBBD31200712249 /* PMItemView.swift */,
 			);
-			name = Circle;
+			name = Spinner;
 			sourceTree = "<group>";
 		};
 		4FCC14A41EAE4C6200D6E7BC /* Pagar */ = {
@@ -966,7 +950,6 @@
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
-				4F8220641EB13AF6001351FE /* PMItemCircle.xib in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
 			);
@@ -1014,7 +997,6 @@
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
-				4F8220661EB13B02001351FE /* PMItemCircle.xib in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
 				4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */,
 			);
@@ -1157,8 +1139,6 @@
 				4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */,
 				40CF1E491E068AAF0072CB29 /* PMSuministroViewController.swift in Sources */,
 				403377361E0334E700261759 /* PMButton.swift in Sources */,
-				4F8220631EB13AF6001351FE /* PMItemCircle.swift in Sources */,
-				4062C1411E380D3500617265 /* Logs.swift in Sources */,
 				4F28D7AF1EB8EC5500703CB4 /* Api.swift in Sources */,
 				404672DF1E14671400A578EA /* MessageViewController.swift in Sources */,
 				4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */,
@@ -1177,7 +1157,6 @@
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
 				40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */,
-				4FB51BDA1EBBE64D00712249 /* PMSpinnerView.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */,
 				40A420131E203FF200D74D22 /* PMString.swift in Sources */,
 				4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */,
@@ -1192,6 +1171,7 @@
 				4062C1481E3B994200617265 /* Security.swift in Sources */,
 				40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */,
 				40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */,
+				4FB51BE21EC1112200712249 /* PMSpinnerView.swift in Sources */,
 				4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */,
 				4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
@@ -1221,6 +1201,7 @@
 				4FB51BD01EBB7F4D00712249 /* PMStateView.swift in Sources */,
 				406482AE1E2D162800E9C891 /* PMHeaderButton.swift in Sources */,
 				401CC6701E538290001911F2 /* PMViews.swift in Sources */,
+				4FB51BDF1EC0C49400712249 /* PMFont.swift in Sources */,
 				4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */,
 				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
 				404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */,
@@ -1263,9 +1244,7 @@
 				408CB6A01E54E73D00D308D3 /* Card.swift in Sources */,
 				408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */,
 				408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */,
-				4F8220651EB13B02001351FE /* PMItemCircle.swift in Sources */,
 				408CB6A31E54E73D00D308D3 /* PMButton.swift in Sources */,
-				408CB6A41E54E73D00D308D3 /* Logs.swift in Sources */,
 				4F28D7B01EB8EC5500703CB4 /* Api.swift in Sources */,
 				408CB6A61E54E73D00D308D3 /* MessageViewController.swift in Sources */,
 				4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */,
@@ -1283,7 +1262,6 @@
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
 				408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */,
 				408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */,
-				4FB51BDB1EBBE64D00712249 /* PMSpinnerView.swift in Sources */,
 				408CB6B31E54E73D00D308D3 /* RecibosAViewController.swift in Sources */,
 				408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */,
 				408CB6B71E54E73D00D308D3 /* PMString.swift in Sources */,
@@ -1298,6 +1276,7 @@
 				408CB6BF1E54E73D00D308D3 /* Session.swift in Sources */,
 				408CB6C01E54E73D00D308D3 /* Security.swift in Sources */,
 				408CB6C11E54E73D00D308D3 /* PMItemCard.swift in Sources */,
+				4FB51BE31EC1112200712249 /* PMSpinnerView.swift in Sources */,
 				408CB6C21E54E73D00D308D3 /* PMHeaderView.swift in Sources */,
 				408CB6C31E54E73D00D308D3 /* PMNivelDosViewController.swift in Sources */,
 				408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */,
@@ -1327,6 +1306,7 @@
 				4FB51BD11EBB7F4D00712249 /* PMStateView.swift in Sources */,
 				408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */,
 				408CB6D91E54E73D00D308D3 /* PMHeaderButton.swift in Sources */,
+				4FB51BE01EC0C49400712249 /* PMFont.swift in Sources */,
 				408CB6DB1E54E73D00D308D3 /* PMViews.swift in Sources */,
 				4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */,
 				408CB6DD1E54E73D00D308D3 /* RecibosViewController.swift in Sources */,
