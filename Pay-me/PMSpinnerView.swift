@@ -117,7 +117,7 @@ class PMSpinnerView: UIView {
     
     var pPoint: Points {
         let centerFrame = centerView.frame
-        return [CGPoint(x: 0, y: centerFrame.origin.y - centerFrame.width)]
+        return [CGPoint(x: 0, y: centerFrame.origin.y - (centerFrame.width + margin))]
     }
     
     var frameCenterView: CGRect {

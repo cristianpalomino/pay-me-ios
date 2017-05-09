@@ -43,7 +43,7 @@ class PMCenterView: UIView {
         if shouldSetupFrame {
             centerImageBackground()
             centerImage()
-            //addCircleBorder()
+            addCircleBorder()
             shouldSetupFrame = false
         }
     }
@@ -82,9 +82,29 @@ class PMCenterView: UIView {
     }
     
     override func addCircleBorder() {
-        layer.borderColor = borderColor.cgColor
-        layer.borderWidth = 1
-        layer.cornerRadius = bounds.height * 0.5
+        switch centerType {
+        case .white:
+            layer.addSublayer(circleLayer(multiplier: 1.1, color: UIColor(hexColor: "#eff2f5")))
+            layer.addSublayer(circleLayer(multiplier: 1.25, color: UIColor(hexColor: "#f1f3f6")))
+            break
+        case .blue:
+            layer.addSublayer(circleLayer(multiplier: 1.1, color: UIColor(hexColor: "#0377f2")))
+            layer.addSublayer(circleLayer(multiplier: 1.25, color: UIColor(hexColor: "#0471ec")))
+            break
+        }
+    }
+    
+    func circleLayer(multiplier: CGFloat, color: UIColor) -> CAShapeLayer {
+        let clayer = CAShapeLayer()
+        clayer.frame = CGRect(x: imageBackground.frame.origin.x,
+                              y: imageBackground.frame.origin.y,
+                              width: imageBackground.width * multiplier,
+                              height: imageBackground.height * multiplier)
+        clayer.position = imageBackground.center
+        clayer.borderColor = color.cgColor
+        clayer.borderWidth = 1
+        clayer.cornerRadius = (imageBackground.width * multiplier) * 0.5
+        return clayer
     }
     
     var frameImage: CGRect {
