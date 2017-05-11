@@ -15,5 +15,5 @@ struct Titles {
 
 protocol Touchable {
     
-    func touch(params: Any)
+    func touch(params: Any?)
 }

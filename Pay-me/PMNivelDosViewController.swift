@@ -10,8 +10,6 @@ import UIKit
 
 class PMNivelDosViewController: PMViewController {
     
-    @IBOutlet weak var pmSpinnerView: PMSpinnerView!
-    
     override var headerTitle: String {
         guard let title = Session.sharedInstance.current.servicioGeneral?.name else {
             return "NONE"
@@ -23,15 +21,6 @@ class PMNivelDosViewController: PMViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.whiteTheme()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override func initComponents() {
         super.initComponents()
         prepare()
@@ -39,24 +28,26 @@ class PMNivelDosViewController: PMViewController {
     
     func prepare() {
         if let servicioGeneral = Session.sharedInstance.current.servicioGeneral {
+            let pmSpinnerView = PMSpinnerView(frame: container.bounds)
             pmSpinnerView.centerView.centerType = .white
             pmSpinnerView.items = servicioGeneral.items
             pmSpinnerView.delegate = self
             pmSpinnerView.spinnerType = SpinnerType(rawValue: servicioGeneral.items.count) ?? .point
+            add(mainView: pmSpinnerView)
         }
     }
 }
 
 extension PMNivelDosViewController: Touchable {
     
-    func touch(params: Any) {
+    func touch(params: Any?) {
         if let view = params as? PMItemView {
             let index = view.tag
             if let sg = Session.sharedInstance.current.servicioGeneral {
                 let categoria = sg.categorias[index]
                 if !categoria.items.isEmpty {
                     Session.sharedInstance.current.categoria = categoria
-                    toSegue(identifier: Constants.Storyboard.Segues.kToEmpresas)
+                    toSegue(identifier: "toTercero")
                 }
             }
         }

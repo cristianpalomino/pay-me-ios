@@ -31,57 +31,26 @@
                         <viewControllerLayoutGuide type="bottom" id="5MR-7O-Ix4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EW6-ut-6Ne">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hva-LG-dSf" customClass="PMSpinnerView" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99" width="320" height="420"/>
-                                <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lm-hF-zZK" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="320" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="aBX-2z-4ag"/>
-                                    <constraint firstAttribute="height" constant="35" id="fI3-DJ-S01"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQU-vf-3SG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5MR-7O-Ix4" firstAttribute="top" secondItem="Hva-LG-dSf" secondAttribute="bottom" id="04T-hO-LMu"/>
-                            <constraint firstAttribute="trailing" secondItem="Hva-LG-dSf" secondAttribute="trailing" id="0NJ-6e-owp"/>
-                            <constraint firstItem="Hva-LG-dSf" firstAttribute="top" secondItem="1lm-hF-zZK" secondAttribute="bottom" id="1xv-Bv-XwL"/>
-                            <constraint firstItem="Hva-LG-dSf" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="8Wa-ig-YaG"/>
-                            <constraint firstAttribute="trailing" secondItem="Hva-LG-dSf" secondAttribute="trailing" id="Azi-76-JBr"/>
-                            <constraint firstAttribute="trailing" secondItem="1lm-hF-zZK" secondAttribute="trailing" id="Lyq-5r-FXM"/>
-                            <constraint firstItem="5MR-7O-Ix4" firstAttribute="top" secondItem="Hva-LG-dSf" secondAttribute="bottom" id="TxH-r5-WHA"/>
-                            <constraint firstItem="1lm-hF-zZK" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="U1F-AA-Beg"/>
-                            <constraint firstItem="Hva-LG-dSf" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="Wxj-Iv-fZW"/>
-                            <constraint firstItem="Hva-LG-dSf" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="YMQ-mr-vl4"/>
-                            <constraint firstItem="5MR-7O-Ix4" firstAttribute="top" secondItem="Hva-LG-dSf" secondAttribute="bottom" id="vuM-LL-ZBs"/>
-                            <constraint firstItem="1lm-hF-zZK" firstAttribute="top" secondItem="Jt9-Ma-5Tr" secondAttribute="bottom" id="w52-a7-ifl"/>
-                            <constraint firstAttribute="trailing" secondItem="Hva-LG-dSf" secondAttribute="trailing" id="wwa-Mr-qP4"/>
+                            <constraint firstItem="5MR-7O-Ix4" firstAttribute="top" secondItem="KQU-vf-3SG" secondAttribute="bottom" id="OB3-bK-4ZR"/>
+                            <constraint firstItem="KQU-vf-3SG" firstAttribute="top" secondItem="Jt9-Ma-5Tr" secondAttribute="bottom" id="Y0m-9t-Wcj"/>
+                            <constraint firstItem="KQU-vf-3SG" firstAttribute="leading" secondItem="EW6-ut-6Ne" secondAttribute="leading" id="dn8-AV-Qcj"/>
+                            <constraint firstAttribute="trailing" secondItem="KQU-vf-3SG" secondAttribute="trailing" id="e8z-nz-IAv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="y4B-Vy-e84">
-                        <barButtonItem key="leftBarButtonItem" image="ic-perfil" id="FMM-wh-Iei">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapPerfil" destination="Osn-Tx-luz" id="74X-Oa-EsN"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="UWN-rs-a7N">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapNotifications" destination="Osn-Tx-luz" id="gZZ-at-Fmi"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
-                        <outlet property="pmSpinnerView" destination="Hva-LG-dSf" id="RH5-Ym-ERK"/>
-                        <outlet property="pmTitleView" destination="1lm-hF-zZK" id="P8b-sR-qTi"/>
-                        <segue destination="096-AS-Eae" kind="show" identifier="kToCategorias" id="yDt-OI-veN"/>
+                        <outlet property="container" destination="KQU-vf-3SG" id="XcJ-Pf-hwk"/>
+                        <segue destination="096-AS-Eae" kind="show" identifier="toSegundo" id="yDt-OI-veN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPO-KT-Mis" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,56 +66,31 @@
                         <viewControllerLayoutGuide type="bottom" id="Bjl-Ud-EGQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WZ7-vu-srw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmC-aZ-LcR" customClass="PMSpinnerView" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99" width="320" height="420"/>
-                                <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bb1-7m-4mZ" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="320" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="V8J-TD-aqv"/>
-                                    <constraint firstAttribute="width" constant="320" id="a0Z-c8-xSL"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bV-BE-Sa8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bb1-7m-4mZ" firstAttribute="leading" secondItem="WZ7-vu-srw" secondAttribute="leading" id="0HG-5R-imC"/>
-                            <constraint firstItem="DmC-aZ-LcR" firstAttribute="top" secondItem="bb1-7m-4mZ" secondAttribute="bottom" id="3fR-u5-ebE"/>
-                            <constraint firstItem="Bjl-Ud-EGQ" firstAttribute="top" secondItem="DmC-aZ-LcR" secondAttribute="bottom" id="6o2-ov-5SS"/>
-                            <constraint firstAttribute="trailing" secondItem="DmC-aZ-LcR" secondAttribute="trailing" id="7nn-c1-zBk"/>
-                            <constraint firstItem="DmC-aZ-LcR" firstAttribute="leading" secondItem="WZ7-vu-srw" secondAttribute="leading" id="Ahg-ie-3L5"/>
-                            <constraint firstItem="bb1-7m-4mZ" firstAttribute="top" secondItem="D0d-HB-CFg" secondAttribute="bottom" id="EIU-Es-I0U"/>
-                            <constraint firstAttribute="trailing" secondItem="bb1-7m-4mZ" secondAttribute="trailing" id="gsB-AS-zAi"/>
+                            <constraint firstAttribute="trailing" secondItem="6bV-BE-Sa8" secondAttribute="trailing" id="Chm-0K-N5F"/>
+                            <constraint firstItem="6bV-BE-Sa8" firstAttribute="top" secondItem="D0d-HB-CFg" secondAttribute="bottom" id="aqo-Qk-B8B"/>
+                            <constraint firstAttribute="bottom" secondItem="6bV-BE-Sa8" secondAttribute="bottom" id="mCo-0J-ndV"/>
+                            <constraint firstItem="6bV-BE-Sa8" firstAttribute="leading" secondItem="WZ7-vu-srw" secondAttribute="leading" id="pxi-bm-cT2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hwn-Wb-XxR">
-                        <barButtonItem key="leftBarButtonItem" image="ic-perfil" id="Avz-dm-iwp">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapPerfil" destination="096-AS-Eae" id="a7D-Gu-73f"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="qTc-gW-G5v">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapNotifications" destination="096-AS-Eae" id="bPu-rO-vFt"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
-                        <outlet property="pmSpinnerView" destination="DmC-aZ-LcR" id="kxb-Ee-75q"/>
-                        <outlet property="pmTitleView" destination="bb1-7m-4mZ" id="acb-jh-Oml"/>
-                        <segue destination="XOg-HL-QOq" kind="show" identifier="kToEmpresas" id="8iW-XC-Pvq"/>
+                        <outlet property="container" destination="6bV-BE-Sa8" id="dLN-tk-CwK"/>
+                        <segue destination="XOg-HL-QOq" kind="show" identifier="toTercero" id="8iW-XC-Pvq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfA-u2-5o5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3647" y="-940"/>
+            <point key="canvasLocation" x="3621" y="-940"/>
         </scene>
         <!--Nivel Tres View Controller-->
         <scene sceneID="B2T-OO-wPi">
@@ -157,67 +101,26 @@
                         <viewControllerLayoutGuide type="bottom" id="a2G-O4-Vx9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Wu8-64-zIh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhM-tl-wpn" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="320" height="35"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIu-jw-mlC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="SGz-CY-wav"/>
-                                    <constraint firstAttribute="height" constant="35" id="ozo-ad-fiZ"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-ND-wAp" customClass="PMTitleStrip" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="99" width="320" height="35"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="lRa-Za-jEu"/>
-                                    <constraint firstAttribute="height" constant="35" id="ya5-Ov-Z0d"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PPz-S0-aBx">
-                                <rect key="frame" x="0.0" y="134" width="320" height="385"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="XOg-HL-QOq" id="LDB-mW-F4S"/>
-                                    <outlet property="delegate" destination="XOg-HL-QOq" id="5uO-rf-hZP"/>
-                                </connections>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="xsb-ND-wAp" secondAttribute="trailing" id="1oW-SC-caM"/>
-                            <constraint firstItem="PPz-S0-aBx" firstAttribute="leading" secondItem="Wu8-64-zIh" secondAttribute="leading" id="8xG-Vw-85n"/>
-                            <constraint firstItem="a2G-O4-Vx9" firstAttribute="top" secondItem="PPz-S0-aBx" secondAttribute="bottom" id="PkC-q3-DJX"/>
-                            <constraint firstAttribute="trailing" secondItem="PPz-S0-aBx" secondAttribute="trailing" id="R1a-7U-IcW"/>
-                            <constraint firstItem="xsb-ND-wAp" firstAttribute="top" secondItem="ZhM-tl-wpn" secondAttribute="bottom" id="WBN-Ql-M7Q"/>
-                            <constraint firstItem="xsb-ND-wAp" firstAttribute="leading" secondItem="Wu8-64-zIh" secondAttribute="leading" id="Zr3-cZ-Dh8"/>
-                            <constraint firstItem="PPz-S0-aBx" firstAttribute="top" secondItem="xsb-ND-wAp" secondAttribute="bottom" id="ewd-ah-ULZ"/>
-                            <constraint firstAttribute="trailing" secondItem="ZhM-tl-wpn" secondAttribute="trailing" id="fHp-bG-Ugs"/>
-                            <constraint firstItem="ZhM-tl-wpn" firstAttribute="top" secondItem="Lt3-dD-e2a" secondAttribute="bottom" id="m2A-Je-j32"/>
-                            <constraint firstItem="ZhM-tl-wpn" firstAttribute="leading" secondItem="Wu8-64-zIh" secondAttribute="leading" id="ovY-Va-JYo"/>
+                            <constraint firstItem="a2G-O4-Vx9" firstAttribute="top" secondItem="uIu-jw-mlC" secondAttribute="bottom" id="PX9-49-hUU"/>
+                            <constraint firstItem="uIu-jw-mlC" firstAttribute="leading" secondItem="Wu8-64-zIh" secondAttribute="leading" id="QyD-4X-9JX"/>
+                            <constraint firstItem="uIu-jw-mlC" firstAttribute="top" secondItem="Lt3-dD-e2a" secondAttribute="bottom" id="o26-VJ-qDZ"/>
+                            <constraint firstAttribute="trailing" secondItem="uIu-jw-mlC" secondAttribute="trailing" id="rRH-ov-OJA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="f2K-rz-lEG">
-                        <barButtonItem key="leftBarButtonItem" image="ic-perfil" id="gfa-JK-QuB">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapPerfil" destination="XOg-HL-QOq" id="JgL-b3-STg"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="E98-kt-o7e">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapNotifications" destination="XOg-HL-QOq" id="tph-KS-4T0"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
-                        <outlet property="pmTitleView" destination="ZhM-tl-wpn" id="cFx-eL-fc0"/>
-                        <outlet property="tableview" destination="PPz-S0-aBx" id="2gc-hh-6l5"/>
-                        <outlet property="viewTitleStrip" destination="xsb-ND-wAp" id="kvL-0O-TCL"/>
-                        <segue destination="NVx-h2-ogj" kind="show" identifier="kToValidacionServicio" id="IwP-0Q-70L"/>
+                        <outlet property="container" destination="uIu-jw-mlC" id="ZMU-eO-pke"/>
+                        <segue destination="NVx-h2-ogj" kind="show" identifier="toSuministro" id="IwP-0Q-70L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wd-5a-29N" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -233,41 +136,25 @@
                         <viewControllerLayoutGuide type="bottom" id="eLF-nt-d3u"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wPJ-7n-BVv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7nJ-wr-ItB" customClass="PMTitleView" customModule="Pay_me" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="320" height="35"/>
-                                <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="2Ej-E9-Eo2"/>
-                                    <constraint firstAttribute="height" constant="35" id="Mud-Kr-3ba"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sto-Md-9bs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="7nJ-wr-ItB" secondAttribute="trailing" id="VJF-0J-cKK"/>
-                            <constraint firstItem="7nJ-wr-ItB" firstAttribute="leading" secondItem="wPJ-7n-BVv" secondAttribute="leading" id="bLE-60-Iqk"/>
-                            <constraint firstItem="7nJ-wr-ItB" firstAttribute="top" secondItem="Chq-sV-0cd" secondAttribute="bottom" id="hwU-i3-PeC"/>
+                            <constraint firstAttribute="trailing" secondItem="sto-Md-9bs" secondAttribute="trailing" id="3n3-2j-ywK"/>
+                            <constraint firstItem="sto-Md-9bs" firstAttribute="leading" secondItem="wPJ-7n-BVv" secondAttribute="leading" id="Olz-9H-mi2"/>
+                            <constraint firstItem="sto-Md-9bs" firstAttribute="top" secondItem="Chq-sV-0cd" secondAttribute="bottom" id="OmC-Ux-ijk"/>
+                            <constraint firstAttribute="bottom" secondItem="sto-Md-9bs" secondAttribute="bottom" id="o4p-ec-Wen"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QNR-T8-1a6">
-                        <barButtonItem key="leftBarButtonItem" image="ic-perfil" id="gwd-At-Noe">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapPerfil" destination="NVx-h2-ogj" id="fbN-dk-jD3"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="ic-notificacion" id="RP3-T7-9zA">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <action selector="tapNotifications" destination="NVx-h2-ogj" id="9ky-kz-pKb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
-                        <outlet property="pmTitleView" destination="7nJ-wr-ItB" id="30H-TK-oSQ"/>
+                        <outlet property="container" destination="sto-Md-9bs" id="UMt-39-2s3"/>
                         <segue destination="LJL-Ho-l4M" kind="show" identifier="kToDetailSuministro" id="IqZ-dX-ezV"/>
                     </connections>
                 </viewController>
@@ -607,7 +494,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="container" destination="Jsm-dG-6a3" id="Dah-A4-jc2"/>
-                        <segue destination="Osn-Tx-luz" kind="show" id="WgW-6v-lgj"/>
+                        <segue destination="Osn-Tx-luz" kind="show" identifier="toPrimero" id="WgW-6v-lgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMs-Fa-c62" userLabel="First Responder" sceneMemberID="firstResponder"/>

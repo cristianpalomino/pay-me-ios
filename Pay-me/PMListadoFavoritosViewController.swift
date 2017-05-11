@@ -42,10 +42,22 @@ class PMListadoFavoritosViewController: PMViewController {
     
     override func initComponents() {        
         super.initComponents()
+        prepare()
+    }
+    
+    func prepare() {
         listadoView = PMListadoView.instanceFromNib()
         listadoView?.initUI()
+        listadoView?.touchDelegate = self
         if let lv = listadoView {
             add(mainView: lv)
         }
+    }
+}
+
+extension PMListadoFavoritosViewController: Touchable {
+    
+    func touch(params: Any?) {
+        toSegue(identifier: "toPrimero")
     }
 }

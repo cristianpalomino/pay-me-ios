@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PMTerceroView" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OdQ-te-FS0" customClass="PMTitleStrip" customModule="Pay_me" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="BRN-HB-UYz"/>
+                        <constraint firstAttribute="width" constant="320" id="jBD-Sy-YPt"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UI7-06-taW">
+                    <rect key="frame" x="0.0" y="35" width="320" height="533"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="p41-li-uOS"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="2PU-2z-FJ0"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UI7-06-taW" firstAttribute="top" secondItem="OdQ-te-FS0" secondAttribute="bottom" id="5or-EG-VPV"/>
+                <constraint firstItem="OdQ-te-FS0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="80y-dU-66m"/>
+                <constraint firstItem="OdQ-te-FS0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KEL-kK-bny"/>
+                <constraint firstAttribute="trailing" secondItem="UI7-06-taW" secondAttribute="trailing" id="N60-I1-Ytc"/>
+                <constraint firstItem="UI7-06-taW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TG3-DS-Pl9"/>
+                <constraint firstAttribute="bottom" secondItem="UI7-06-taW" secondAttribute="bottom" id="fP1-6k-2zr"/>
+                <constraint firstAttribute="trailing" secondItem="OdQ-te-FS0" secondAttribute="trailing" id="x1P-I3-QOh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="UI7-06-taW" id="FDv-W2-sAw"/>
+                <outlet property="titleStrip" destination="OdQ-te-FS0" id="vUq-0h-Ly2"/>
+            </connections>
+        </view>
+    </objects>
+</document>

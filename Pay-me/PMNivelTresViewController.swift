@@ -10,6 +10,8 @@ import UIKit
 
 class PMNivelTresViewController: PMViewController {
     
+    var terceroView: PMTerceroView?
+    
     override var headerTitle: String {
         guard let title = Session.sharedInstance.current.categoria?.name else {
             return "NONE"
@@ -17,68 +19,28 @@ class PMNivelTresViewController: PMViewController {
         return title
     }
     
-    var titles: [(title: String,color: UIColor)] {
-        return [("Publicas",color: UIColor.appBlueColor()),
-                ("Privadas",color: UIColor.appBlueColor())]
-    }
-    
-    @IBOutlet weak var viewTitleStrip: PMTitleStrip!
-    @IBOutlet weak var tableview: UITableView!
-    
-    var items: [Item]? {
-        didSet {
-            tableview.reloadData()
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-}
-
-extension PMNivelTresViewController {
-    
     override func initComponents() {
         super.initComponents()
-        viewTitleStrip.titles = self.titles
-        viewTitleStrip.addBottomBorder()
-        items = Session.sharedInstance.current.categoria?.items
-        let nib = UINib(nibName: "EntidadTableViewCell", bundle: nil)
-        tableview.register(nib, forCellReuseIdentifier: EntidadTableViewCell.identifier)
+        prepare()
+    }
+    
+    func prepare() {
+        terceroView = PMTerceroView.instanceFromNib()
+        terceroView?.initUI()
+        terceroView?.touchDelegate = self
+        if let lv = terceroView {
+            add(mainView: lv)
+        }
     }
 }
 
-extension PMNivelTresViewController : UITableViewDelegate {
+extension PMNivelTresViewController: Touchable {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 65
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = items?[indexPath.row]
-        Session.sharedInstance.current.item = item
-        performSegue(withIdentifier: Constants.Storyboard.Segues.kToValidacionServicio, sender: nil)
-    }
-}
-
-extension PMNivelTresViewController : UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items!.count
-    }
-    
-    
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return Constants.Utils.ABECEDARIO
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
-        cell.servicio = items![indexPath.row]
-        return cell
+    func touch(params: Any?) {
+        toSegue(identifier: "toSuministro")
     }
 }

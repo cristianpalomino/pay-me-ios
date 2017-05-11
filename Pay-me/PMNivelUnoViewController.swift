@@ -9,8 +9,6 @@
 import UIKit
 
 class PMNivelUnoViewController: PMViewController {
-
-    @IBOutlet weak var pmSpinnerView: PMSpinnerView!
     
     var items: Items {
         return [("Basicos", UIImage(named: "basicos")!),
@@ -26,15 +24,6 @@ class PMNivelUnoViewController: PMViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.blueTheme()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     override func initComponents() {
         super.initComponents()
@@ -42,21 +31,23 @@ class PMNivelUnoViewController: PMViewController {
     }
     
     func prepare() {
+        let pmSpinnerView = PMSpinnerView(frame: container.bounds)
         pmSpinnerView.delegate = self
         pmSpinnerView.items = items
         pmSpinnerView.spinnerType = .square
+        add(mainView: pmSpinnerView)
     }
 }
 
 extension PMNivelUnoViewController: Touchable {
     
-    func touch(params: Any) {
+    func touch(params: Any?) {
         if let view = params as? PMItemView {
             let index = view.tag
             let sg = Session.sharedInstance.staticData.serviciosGenerales[index]
             if !sg.categorias.isEmpty {
                 Session.sharedInstance.current.servicioGeneral = sg
-                toSegue(identifier: Constants.Storyboard.Segues.kToCategorias)
+                toSegue(identifier: "toSegundo")
             }
         }
     }
