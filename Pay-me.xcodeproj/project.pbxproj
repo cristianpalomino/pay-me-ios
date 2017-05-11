@@ -19,7 +19,6 @@
 		40293EF91E40D2DE007EF98D /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		40293EFB1E40DFEE007EF98D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFA1E40DFEE007EF98D /* Order.swift */; };
 		40293EFD1E40E2E3007EF98D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFC1E40E2E3007EF98D /* Product.swift */; };
-		403377361E0334E700261759 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377351E0334E700261759 /* PMButton.swift */; };
 		403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377371E03D41900261759 /* PMNivelUnoViewController.swift */; };
 		4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
 		4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
@@ -44,8 +43,6 @@
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
-		406EEA331DFB0D88005D2E87 /* Pay_meTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA321DFB0D88005D2E87 /* Pay_meTests.swift */; };
-		406EEA3E1DFB0D88005D2E87 /* Pay_meUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA3D1DFB0D88005D2E87 /* Pay_meUITests.swift */; };
 		407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */; };
 		407C03621E0B1C1000CD5D4C /* PMListaServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */; };
 		407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */; };
@@ -63,7 +60,6 @@
 		408CB6A01E54E73D00D308D3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABB1E1B36A5008CF767 /* Card.swift */; };
 		408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
 		408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */; };
-		408CB6A31E54E73D00D308D3 /* PMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377351E0334E700261759 /* PMButton.swift */; };
 		408CB6A61E54E73D00D308D3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DE1E14671400A578EA /* MessageViewController.swift */; };
 		408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088F8AA1E36628C00114BEE /* StaticData.swift */; };
 		408CB6A81E54E73D00D308D3 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
@@ -169,7 +165,6 @@
 		4F28D7B01EB8EC5500703CB4 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7AE1EB8EC5500703CB4 /* Api.swift */; };
 		4F28D7B21EB9271400703CB4 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7B11EB9271400703CB4 /* Favorito.swift */; };
 		4F28D7B31EB9271400703CB4 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7B11EB9271400703CB4 /* Favorito.swift */; };
-		4F43D88A1EA698F700403292 /* EPMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF780431EA66389002D4703 /* EPMViewController.swift */; };
 		4F43D88B1EA699C700403292 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA291DFB0D88005D2E87 /* Info.plist */; };
 		4F43D88E1EA699CE00403292 /* Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3031EA5308D008F5ED9 /* Development.plist */; };
 		4F43D8991EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */; };
@@ -184,6 +179,10 @@
 		4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
+		4F83292A1EC231240011267B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
+		4F83292B1EC231240011267B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
+		4F83292C1EC235880011267B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
+		4F83292D1EC2358C0011267B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
 		4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
 		4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
 		4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */; };
@@ -193,10 +192,10 @@
 		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
 		4FA0AF741EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */; };
 		4FA0AF751EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */; };
-		4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
-		4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */; };
-		4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
-		4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */; };
+		4FA0E3061EA5674C008F5ED9 /* PMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */; };
+		4FA0E3071EA5674C008F5ED9 /* PMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */; };
+		4FA0E3091EA56828008F5ED9 /* BarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* BarView.xib */; };
+		4FA0E30A1EA56828008F5ED9 /* BarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* BarView.xib */; };
 		4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */; };
 		4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */; };
 		4FA8EFA81EB0F7B700A596EA /* PMTitleStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */; };
@@ -214,6 +213,14 @@
 		4FB51BE21EC1112200712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BE11EC1112200712249 /* PMSpinnerView.swift */; };
 		4FB51BE31EC1112200712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BE11EC1112200712249 /* PMSpinnerView.swift */; };
 		4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
+		4FC0426E1EC3AA9500B93031 /* PMSuministroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */; };
+		4FC0426F1EC3AA9500B93031 /* PMSuministroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */; };
+		4FC042721EC3D37800B93031 /* PMListadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC042711EC3D37800B93031 /* PMListadoView.swift */; };
+		4FC042731EC3D37800B93031 /* PMListadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC042711EC3D37800B93031 /* PMListadoView.swift */; };
+		4FC042751EC3D38700B93031 /* ListadoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC042741EC3D38700B93031 /* ListadoView.xib */; };
+		4FC042761EC3D38700B93031 /* ListadoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC042741EC3D38700B93031 /* ListadoView.xib */; };
+		4FC3E4101EC2830A0039C696 /* PMSuministro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3E40F1EC2830A0039C696 /* PMSuministro.swift */; };
+		4FC3E4111EC2830A0039C696 /* PMSuministro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC3E40F1EC2830A0039C696 /* PMSuministro.swift */; };
 		4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
 		4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
 		4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */; };
@@ -224,27 +231,11 @@
 		4FCFBE021E2838D90029EE40 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */; };
 		4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
 		4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
+		4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
+		4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
 		4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2BED01E1E996C00A2D16B /* Home.storyboard */; };
-		4FF780441EA66389002D4703 /* EPMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF780431EA66389002D4703 /* EPMViewController.swift */; };
 		586E7D5F3623569991AE606E /* Pods_Pay_me_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DAB47D34969A8E3DE24E83 /* Pods_Pay_me_Development.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		406EEA2F1DFB0D88005D2E87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 406EEA121DFB0D88005D2E87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 406EEA191DFB0D88005D2E87;
-			remoteInfo = "Pay-me";
-		};
-		406EEA3A1DFB0D88005D2E87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 406EEA121DFB0D88005D2E87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 406EEA191DFB0D88005D2E87;
-			remoteInfo = "Pay-me";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		25DEDEF0F4F984FA08D07E26 /* Pods-Pay-me Development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me Development.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me Development/Pods-Pay-me Development.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,7 +249,6 @@
 		40293EF81E40D2DE007EF98D /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		40293EFA1E40DFEE007EF98D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		40293EFC1E40E2E3007EF98D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		403377351E0334E700261759 /* PMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMButton.swift; sourceTree = "<group>"; };
 		403377371E03D41900261759 /* PMNivelUnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelUnoViewController.swift; sourceTree = "<group>"; };
 		403377391E03D42600261759 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
 		4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelTresViewController.swift; sourceTree = "<group>"; };
@@ -287,10 +277,8 @@
 		406EEA241DFB0D88005D2E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		406EEA271DFB0D88005D2E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406EEA291DFB0D88005D2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		406EEA2E1DFB0D88005D2E87 /* Pay-me Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pay-me Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA321DFB0D88005D2E87 /* Pay_meTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay_meTests.swift; sourceTree = "<group>"; };
 		406EEA341DFB0D88005D2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		406EEA391DFB0D88005D2E87 /* Pay-me UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pay-me UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA3D1DFB0D88005D2E87 /* Pay_meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay_meUITests.swift; sourceTree = "<group>"; };
 		406EEA3F1DFB0D88005D2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleSuministroViewController.swift; sourceTree = "<group>"; };
@@ -343,14 +331,16 @@
 		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
+		4F8329281EC231240011267B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4F8329291EC231240011267B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntidadTableViewCell.xib; sourceTree = "<group>"; };
 		4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
 		4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
 		4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		4FA0E3031EA5308D008F5ED9 /* Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Development.plist; sourceTree = "<group>"; };
-		4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleView.swift; sourceTree = "<group>"; };
-		4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMTitleView.xib; sourceTree = "<group>"; };
+		4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMBarView.swift; sourceTree = "<group>"; };
+		4FA0E3081EA56828008F5ED9 /* BarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarView.xib; sourceTree = "<group>"; };
 		4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritoTableViewCell.xib; sourceTree = "<group>"; };
 		4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleStrip.swift; sourceTree = "<group>"; };
 		4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
@@ -360,6 +350,10 @@
 		4FB51BDE1EC0C49400712249 /* PMFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMFont.swift; sourceTree = "<group>"; };
 		4FB51BE11EC1112200712249 /* PMSpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSpinnerView.swift; sourceTree = "<group>"; };
 		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuministroView.swift; sourceTree = "<group>"; };
+		4FC042711EC3D37800B93031 /* PMListadoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListadoView.swift; sourceTree = "<group>"; };
+		4FC042741EC3D38700B93031 /* ListadoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListadoView.xib; sourceTree = "<group>"; };
+		4FC3E40F1EC2830A0039C696 /* PMSuministro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuministro.swift; sourceTree = "<group>"; };
 		4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4FCC14CA1EAEB39300D6E7BC /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -367,8 +361,8 @@
 		4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAutomaticoViewController.swift; sourceTree = "<group>"; };
 		4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionNotificacionesViewController.swift; sourceTree = "<group>"; };
 		4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostrarAgendaViewController.swift; sourceTree = "<group>"; };
+		4FD00CDA1EC3862700B37A09 /* SuministroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuministroView.xib; sourceTree = "<group>"; };
 		4FF2BED01E1E996C00A2D16B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		4FF780431EA66389002D4703 /* EPMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPMViewController.swift; sourceTree = "<group>"; };
 		84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.release.xcconfig"; sourceTree = "<group>"; };
 		A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -383,20 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C36C99C446B1D9859B013C7 /* Pods_Pay_me.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		406EEA2B1DFB0D88005D2E87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		406EEA361DFB0D88005D2E87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +406,8 @@
 			isa = PBXGroup;
 			children = (
 				4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */,
+				4FC042711EC3D37800B93031 /* PMListadoView.swift */,
+				4FC042741EC3D38700B93031 /* ListadoView.xib */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
 				4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */,
 			);
@@ -489,6 +471,7 @@
 		4062C13D1E37B1B100617265 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4FC042771EC3D7B300B93031 /* Reutilizables */,
 				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
 				4F9C3B9B1EB131A90076EAA5 /* AgregarServicio.storyboard */,
 				4FCC14A51EAE4C6E00D6E7BC /* Servicio */,
@@ -504,11 +487,12 @@
 		4062C1421E380F3600617265 /* Adicionar */ = {
 			isa = PBXGroup;
 			children = (
+				4FD00CDD1EC388C700B37A09 /* Suministro */,
 				4F43D8A41EA8235500403292 /* Cells */,
 				403377371E03D41900261759 /* PMNivelUnoViewController.swift */,
 				403377391E03D42600261759 /* PMNivelDosViewController.swift */,
 				4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */,
-				40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */,
+				4FC3E40F1EC2830A0039C696 /* PMSuministro.swift */,
 				407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */,
 				407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */,
 			);
@@ -550,8 +534,6 @@
 			isa = PBXGroup;
 			children = (
 				406EEA1A1DFB0D88005D2E87 /* Pay-me.app */,
-				406EEA2E1DFB0D88005D2E87 /* Pay-me Tests.xctest */,
-				406EEA391DFB0D88005D2E87 /* Pay-me UITests.xctest */,
 				408CB7011E54E73D00D308D3 /* Pay-me Development.app */,
 			);
 			name = Products;
@@ -560,6 +542,8 @@
 		406EEA1C1DFB0D88005D2E87 /* Pay-me */ = {
 			isa = PBXGroup;
 			children = (
+				4F8329281EC231240011267B /* Default-568h@2x.png */,
+				4F8329291EC231240011267B /* Default@2x.png */,
 				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
 				40B2E3EC1E0DDE07003CBAC3 /* Fonts */,
 				4062C1331E37154600617265 /* Files */,
@@ -618,9 +602,7 @@
 			children = (
 				4FB51BD51EBBE4EC00712249 /* Spinner */,
 				4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */,
-				4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */,
 				408E501F1DFB7B13007BEEDE /* PMTextField.swift */,
-				403377351E0334E700261759 /* PMButton.swift */,
 				40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */,
 				40463D271E19CF8000F663B0 /* PMItemCard.swift */,
 				40463D291E19CF9E00F663B0 /* PMItemCard.xib */,
@@ -630,8 +612,6 @@
 				406482AD1E2D162800E9C891 /* PMHeaderButton.swift */,
 				401CC66F1E538290001911F2 /* PMViews.swift */,
 				401CC6711E539740001911F2 /* PMErrorView.xib */,
-				4FA0E3051EA5674C008F5ED9 /* PMTitleView.swift */,
-				4FA0E3081EA56828008F5ED9 /* PMTitleView.xib */,
 				4F43D89E1EA7C34000403292 /* PMInfoView.swift */,
 				4F43D8A11EA7C34F00403292 /* PMInfoView.xib */,
 			);
@@ -738,6 +718,32 @@
 			name = Spinner;
 			sourceTree = "<group>";
 		};
+		4FC042701EC3D1A700B93031 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */,
+				4FA0E3081EA56828008F5ED9 /* BarView.xib */,
+			);
+			name = Bar;
+			sourceTree = "<group>";
+		};
+		4FC042771EC3D7B300B93031 /* Reutilizables */ = {
+			isa = PBXGroup;
+			children = (
+				4FC042781EC3D7BF00B93031 /* Title */,
+				4FC042701EC3D1A700B93031 /* Bar */,
+			);
+			name = Reutilizables;
+			sourceTree = "<group>";
+		};
+		4FC042781EC3D7BF00B93031 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */,
+			);
+			name = Title;
+			sourceTree = "<group>";
+		};
 		4FCC14A41EAE4C6200D6E7BC /* Pagar */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,10 +757,20 @@
 		4FCC14A51EAE4C6E00D6E7BC /* Servicio */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
 				4062C1421E380F3600617265 /* Adicionar */,
+				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
 			);
 			name = Servicio;
+			sourceTree = "<group>";
+		};
+		4FD00CDD1EC388C700B37A09 /* Suministro */ = {
+			isa = PBXGroup;
+			children = (
+				40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */,
+				4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */,
+				4FD00CDA1EC3862700B37A09 /* SuministroView.xib */,
+			);
+			name = Suministro;
 			sourceTree = "<group>";
 		};
 		4FF780421EA58503002D4703 /* ExtendedClass */ = {
@@ -763,7 +779,6 @@
 				4001908A1E6495150080DDA4 /* Currency.swift */,
 				4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */,
 				400190971E64EC220080DDA4 /* UIViewController.swift */,
-				4FF780431EA66389002D4703 /* EPMViewController.swift */,
 				4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */,
 				4F43D8BD1EAA52F500403292 /* EProtocols.swift */,
 				4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */,
@@ -809,42 +824,6 @@
 			productReference = 406EEA1A1DFB0D88005D2E87 /* Pay-me.app */;
 			productType = "com.apple.product-type.application";
 		};
-		406EEA2D1DFB0D88005D2E87 /* Pay-me Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 406EEA451DFB0D88005D2E87 /* Build configuration list for PBXNativeTarget "Pay-me Tests" */;
-			buildPhases = (
-				406EEA2A1DFB0D88005D2E87 /* Sources */,
-				406EEA2B1DFB0D88005D2E87 /* Frameworks */,
-				406EEA2C1DFB0D88005D2E87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				406EEA301DFB0D88005D2E87 /* PBXTargetDependency */,
-			);
-			name = "Pay-me Tests";
-			productName = "Pay-meTests";
-			productReference = 406EEA2E1DFB0D88005D2E87 /* Pay-me Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		406EEA381DFB0D88005D2E87 /* Pay-me UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 406EEA481DFB0D88005D2E87 /* Build configuration list for PBXNativeTarget "Pay-me UITests" */;
-			buildPhases = (
-				406EEA351DFB0D88005D2E87 /* Sources */,
-				406EEA361DFB0D88005D2E87 /* Frameworks */,
-				406EEA371DFB0D88005D2E87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				406EEA3B1DFB0D88005D2E87 /* PBXTargetDependency */,
-			);
-			name = "Pay-me UITests";
-			productName = "Pay-meUITests";
-			productReference = 406EEA391DFB0D88005D2E87 /* Pay-me UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		408CB6951E54E73D00D308D3 /* Pay-me Development */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408CB6FE1E54E73D00D308D3 /* Build configuration list for PBXNativeTarget "Pay-me Development" */;
@@ -883,18 +862,6 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					406EEA2D1DFB0D88005D2E87 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8N9TGFU3ZZ;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 406EEA191DFB0D88005D2E87;
-					};
-					406EEA381DFB0D88005D2E87 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8N9TGFU3ZZ;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 406EEA191DFB0D88005D2E87;
-					};
 					408CB6951E54E73D00D308D3 = {
 						DevelopmentTeam = 79SAEB56W5;
 					};
@@ -915,8 +882,6 @@
 			targets = (
 				406EEA191DFB0D88005D2E87 /* Pay-me */,
 				408CB6951E54E73D00D308D3 /* Pay-me Development */,
-				406EEA2D1DFB0D88005D2E87 /* Pay-me Tests */,
-				406EEA381DFB0D88005D2E87 /* Pay-me UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -929,14 +894,18 @@
 				40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */,
 				406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */,
 				4F9C3B9C1EB131A90076EAA5 /* AgregarServicio.storyboard in Resources */,
+				4FC042751EC3D38700B93031 /* ListadoView.xib in Resources */,
 				4FA0AF741EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */,
 				40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
-				4FA0E3091EA56828008F5ED9 /* PMTitleView.xib in Resources */,
+				4FA0E3091EA56828008F5ED9 /* BarView.xib in Resources */,
 				404672DA1E14608500A578EA /* Messages.storyboard in Resources */,
 				401CC6721E539740001911F2 /* PMErrorView.xib in Resources */,
 				40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */,
 				40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
+				4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */,
+				4F83292A1EC231240011267B /* Default-568h@2x.png in Resources */,
+				4F83292B1EC231240011267B /* Default@2x.png in Resources */,
 				4F43D88B1EA699C700403292 /* Info.plist in Resources */,
 				4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */,
 				4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */,
@@ -955,20 +924,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		406EEA2C1DFB0D88005D2E87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		406EEA371DFB0D88005D2E87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		408CB6E61E54E73D00D308D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -976,6 +931,7 @@
 				408CB6E71E54E73D00D308D3 /* SanFranciscoDisplay-Black.ttf in Resources */,
 				408CB6E81E54E73D00D308D3 /* LaunchScreen.storyboard in Resources */,
 				4F9C3B9D1EB131B60076EAA5 /* AgregarServicio.storyboard in Resources */,
+				4FC042761EC3D38700B93031 /* ListadoView.xib in Resources */,
 				4FA0AF751EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */,
 				408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				408CB6EA1E54E73D00D308D3 /* Main.storyboard in Resources */,
@@ -984,6 +940,9 @@
 				408CB6EE1E54E73D00D308D3 /* PMItemCard.xib in Resources */,
 				408CB6EF1E54E73D00D308D3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
 				408CB6F01E54E73D00D308D3 /* Notify.storyboard in Resources */,
+				4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */,
+				4F83292C1EC235880011267B /* Default-568h@2x.png in Resources */,
+				4F83292D1EC2358C0011267B /* Default@2x.png in Resources */,
 				408CB6F11E54E73D00D308D3 /* Home.storyboard in Resources */,
 				408CB6F21E54E73D00D308D3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
 				408CB6F31E54E73D00D308D3 /* ServiceConfiguration.storyboard in Resources */,
@@ -998,7 +957,7 @@
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
-				4FA0E30A1EA56828008F5ED9 /* PMTitleView.xib in Resources */,
+				4FA0E30A1EA56828008F5ED9 /* BarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1138,7 +1097,6 @@
 				405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */,
 				4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */,
 				40CF1E491E068AAF0072CB29 /* PMSuministroViewController.swift in Sources */,
-				403377361E0334E700261759 /* PMButton.swift in Sources */,
 				4F28D7AF1EB8EC5500703CB4 /* Api.swift in Sources */,
 				404672DF1E14671400A578EA /* MessageViewController.swift in Sources */,
 				4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */,
@@ -1153,6 +1111,7 @@
 				4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */,
 				4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */,
 				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
+				4FC3E4101EC2830A0039C696 /* PMSuministro.swift in Sources */,
 				40293EF91E40D2DE007EF98D /* Debt.swift in Sources */,
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
@@ -1175,7 +1134,7 @@
 				4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */,
 				4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
-				4FA0E3061EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
+				4FA0E3061EA5674C008F5ED9 /* PMBarView.swift in Sources */,
 				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
 				4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
@@ -1186,6 +1145,7 @@
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				4062C1581E3BE9A800617265 /* Service.swift in Sources */,
 				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
+				4FC042721EC3D37800B93031 /* PMListadoView.swift in Sources */,
 				4FA8EFAD1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D8991EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
 				4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */,
@@ -1205,27 +1165,11 @@
 				4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */,
 				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
 				404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */,
+				4FC0426E1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
-				4FF780441EA66389002D4703 /* EPMViewController.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
 				40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */,
 				40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		406EEA2A1DFB0D88005D2E87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				406EEA331DFB0D88005D2E87 /* Pay_meTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		406EEA351DFB0D88005D2E87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				406EEA3E1DFB0D88005D2E87 /* Pay_meUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1233,7 +1177,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F43D88A1EA698F700403292 /* EPMViewController.swift in Sources */,
 				408CB6981E54E73D00D308D3 /* PayTableViewCell.swift in Sources */,
 				408CB6991E54E73D00D308D3 /* PagoAutomaticoViewController.swift in Sources */,
 				408CB69B1E54E73D00D308D3 /* RSA.m in Sources */,
@@ -1244,7 +1187,6 @@
 				408CB6A01E54E73D00D308D3 /* Card.swift in Sources */,
 				408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */,
 				408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */,
-				408CB6A31E54E73D00D308D3 /* PMButton.swift in Sources */,
 				4F28D7B01EB8EC5500703CB4 /* Api.swift in Sources */,
 				408CB6A61E54E73D00D308D3 /* MessageViewController.swift in Sources */,
 				4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */,
@@ -1258,6 +1200,7 @@
 				4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */,
 				4FB51BD41EBBD31200712249 /* PMItemView.swift in Sources */,
 				408CB6AC1E54E73D00D308D3 /* PMTextField.swift in Sources */,
+				4FC3E4111EC2830A0039C696 /* PMSuministro.swift in Sources */,
 				408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */,
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
 				408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */,
@@ -1281,7 +1224,7 @@
 				408CB6C31E54E73D00D308D3 /* PMNivelDosViewController.swift in Sources */,
 				408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */,
-				4FA0E3071EA5674C008F5ED9 /* PMTitleView.swift in Sources */,
+				4FA0E3071EA5674C008F5ED9 /* PMBarView.swift in Sources */,
 				4F983A4E1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
 				408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */,
 				408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */,
@@ -1291,6 +1234,7 @@
 				408CB6CB1E54E73D00D308D3 /* RecibosBViewController.swift in Sources */,
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,
 				408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */,
+				4FC042731EC3D37800B93031 /* PMListadoView.swift in Sources */,
 				4FA8EFAE1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D89A1EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
 				408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */,
@@ -1310,6 +1254,7 @@
 				408CB6DB1E54E73D00D308D3 /* PMViews.swift in Sources */,
 				4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */,
 				408CB6DD1E54E73D00D308D3 /* RecibosViewController.swift in Sources */,
+				4FC0426F1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
 				408CB6DE1E54E73D00D308D3 /* PMMessageViewController.swift in Sources */,
 				408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */,
 				408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */,
@@ -1319,19 +1264,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		406EEA301DFB0D88005D2E87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 406EEA191DFB0D88005D2E87 /* Pay-me */;
-			targetProxy = 406EEA2F1DFB0D88005D2E87 /* PBXContainerItemProxy */;
-		};
-		406EEA3B1DFB0D88005D2E87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 406EEA191DFB0D88005D2E87 /* Pay-me */;
-			targetProxy = 406EEA3A1DFB0D88005D2E87 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */ = {
@@ -1490,70 +1422,13 @@
 			};
 			name = Release;
 		};
-		406EEA461DFB0D88005D2E87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
-				INFOPLIST_FILE = "Pay-meTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pay.me.Pay-meTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pay-me.app/Pay-me";
-			};
-			name = Debug;
-		};
-		406EEA471DFB0D88005D2E87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
-				INFOPLIST_FILE = "Pay-meTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pay.me.Pay-meTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pay-me.app/Pay-me";
-			};
-			name = Release;
-		};
-		406EEA491DFB0D88005D2E87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
-				INFOPLIST_FILE = "Pay-meUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pay.me.Pay-meUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Pay-me";
-			};
-			name = Debug;
-		};
-		406EEA4A1DFB0D88005D2E87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 8N9TGFU3ZZ;
-				INFOPLIST_FILE = "Pay-meUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pay.me.Pay-meUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Pay-me";
-			};
-			name = Release;
-		};
 		408CB6FF1E54E73D00D308D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 25DEDEF0F4F984FA08D07E26 /* Pods-Pay-me Development.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1579,6 +1454,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 79SAEB56W5;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1615,24 +1491,6 @@
 			buildConfigurations = (
 				406EEA431DFB0D88005D2E87 /* Debug */,
 				406EEA441DFB0D88005D2E87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		406EEA451DFB0D88005D2E87 /* Build configuration list for PBXNativeTarget "Pay-me Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				406EEA461DFB0D88005D2E87 /* Debug */,
-				406EEA471DFB0D88005D2E87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		406EEA481DFB0D88005D2E87 /* Build configuration list for PBXNativeTarget "Pay-me UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				406EEA491DFB0D88005D2E87 /* Debug */,
-				406EEA4A1DFB0D88005D2E87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

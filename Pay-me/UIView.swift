@@ -18,9 +18,19 @@ extension UIView {
     func addBottomBorder() {
         let borderLayer = CALayer()
         borderLayer.frame = CGRect(x: frame.origin.x,
-                              y: frame.height - 1,
-                              width: UIScreen.main.bounds.width,
-                              height: 1)
+                                   y: frame.height - 1,
+                                   width: UIScreen.main.bounds.width,
+                                   height: 1)
+        borderLayer.backgroundColor = borderColor.cgColor
+        layer.addSublayer(borderLayer)
+    }
+    
+    func addBottomBorderInsets() {
+        let borderLayer = CALayer()
+        borderLayer.frame = CGRect(x: frame.origin.x,
+                                   y: frame.height - 10,
+                                   width: UIScreen.main.bounds.width,
+                                   height: 1)
         borderLayer.backgroundColor = borderColor.cgColor
         layer.addSublayer(borderLayer)
     }

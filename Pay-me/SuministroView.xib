@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PMSuministroView" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWy-rF-ZZh">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="20p-LD-R9n"/>
+                        <constraint firstAttribute="height" constant="49" id="po7-cz-N3h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                    <state key="normal" title="    Consultar" image="icono_consultar_activo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oOX-1w-LeI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="166" id="982-5I-4vl"/>
+                        <constraint firstAttribute="width" constant="320" id="Zgt-Wd-kla"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="aZl-Cf-pLM"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="166" id="hSE-FW-cWJ"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ck7-s1-5KL">
+                    <rect key="frame" x="0.0" y="166" width="320" height="61"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zl5-HB-JiS">
+                            <rect key="frame" x="8" y="8" width="304" height="45"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="1kx-1R-fgu"/>
+                        <constraint firstAttribute="bottom" secondItem="Zl5-HB-JiS" secondAttribute="bottom" constant="8" id="6Je-c5-kT7"/>
+                        <constraint firstItem="Zl5-HB-JiS" firstAttribute="top" secondItem="ck7-s1-5KL" secondAttribute="top" constant="8" id="ZgJ-ty-ygw"/>
+                        <constraint firstAttribute="height" constant="61" id="d4s-r4-V9s"/>
+                        <constraint firstItem="Zl5-HB-JiS" firstAttribute="leading" secondItem="ck7-s1-5KL" secondAttribute="leading" constant="8" id="mqI-p9-JEk"/>
+                        <constraint firstAttribute="trailing" secondItem="Zl5-HB-JiS" secondAttribute="trailing" constant="8" id="xru-xp-e0i"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-QQ-rua">
+                    <rect key="frame" x="30" y="267" width="164.5" height="18"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b5p-QQ-rua" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="1Xi-cR-vrR"/>
+                <constraint firstAttribute="trailing" secondItem="HWy-rF-ZZh" secondAttribute="trailing" id="4aW-bG-iTz"/>
+                <constraint firstItem="HWy-rF-ZZh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="52V-C4-DnT"/>
+                <constraint firstItem="b5p-QQ-rua" firstAttribute="top" secondItem="ck7-s1-5KL" secondAttribute="bottom" constant="40" id="5db-4c-Jj9"/>
+                <constraint firstItem="ck7-s1-5KL" firstAttribute="top" secondItem="oOX-1w-LeI" secondAttribute="bottom" id="P0T-7J-jla"/>
+                <constraint firstAttribute="trailing" secondItem="oOX-1w-LeI" secondAttribute="trailing" id="cVp-jU-lCW"/>
+                <constraint firstItem="oOX-1w-LeI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="doa-tt-06W"/>
+                <constraint firstAttribute="trailing" secondItem="ck7-s1-5KL" secondAttribute="trailing" id="evw-yU-DON"/>
+                <constraint firstItem="ck7-s1-5KL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="n4k-Hz-TCC"/>
+                <constraint firstItem="oOX-1w-LeI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="phW-k3-5Yr"/>
+                <constraint firstAttribute="bottom" secondItem="HWy-rF-ZZh" secondAttribute="bottom" id="xpY-lm-9NT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="frameBanner" destination="ck7-s1-5KL" id="P5o-om-MMs"/>
+                <outlet property="imgBanner" destination="Zl5-HB-JiS" id="taI-x2-FqL"/>
+                <outlet property="imgBigBanner" destination="oOX-1w-LeI" id="5mv-9W-Oky"/>
+            </connections>
+            <point key="canvasLocation" x="-69" y="57"/>
+        </view>
+        <view contentMode="scaleToFill" id="Msf-bT-Zjn">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KI4-K6-nrj">
+                    <rect key="frame" x="5" y="5" width="145" height="145"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpZ-RY-lw6">
+                            <rect key="frame" x="43" y="12" width="59.5" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFR-Lb-UGT">
+                            <rect key="frame" x="12" y="37" width="121" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-GS-1ZS">
+                            <rect key="frame" x="12" y="58" width="121" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d52-UW-nMn">
+                            <rect key="frame" x="12" y="79" width="121" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="YpZ-RY-lw6" firstAttribute="centerX" secondItem="KI4-K6-nrj" secondAttribute="centerX" id="28B-Lc-E4O"/>
+                        <constraint firstItem="XFR-Lb-UGT" firstAttribute="top" secondItem="YpZ-RY-lw6" secondAttribute="bottom" constant="12" id="47c-n7-9lp"/>
+                        <constraint firstItem="XFR-Lb-UGT" firstAttribute="leading" secondItem="KI4-K6-nrj" secondAttribute="leading" constant="12" id="CaF-19-hea"/>
+                        <constraint firstAttribute="trailing" secondItem="d52-UW-nMn" secondAttribute="trailing" constant="12" id="FdC-Fm-Rql"/>
+                        <constraint firstItem="d52-UW-nMn" firstAttribute="top" secondItem="TAh-GS-1ZS" secondAttribute="bottom" constant="8" id="WVu-ZF-HHR"/>
+                        <constraint firstAttribute="trailing" secondItem="TAh-GS-1ZS" secondAttribute="trailing" constant="12" id="aWu-7I-Tsi"/>
+                        <constraint firstItem="TAh-GS-1ZS" firstAttribute="top" secondItem="XFR-Lb-UGT" secondAttribute="bottom" constant="8" id="dGU-Dd-Avj"/>
+                        <constraint firstAttribute="trailing" secondItem="XFR-Lb-UGT" secondAttribute="trailing" constant="12" id="l8L-9g-GII"/>
+                        <constraint firstItem="YpZ-RY-lw6" firstAttribute="top" secondItem="KI4-K6-nrj" secondAttribute="top" constant="12" id="lUn-Zw-ifS"/>
+                        <constraint firstItem="TAh-GS-1ZS" firstAttribute="leading" secondItem="KI4-K6-nrj" secondAttribute="leading" constant="12" id="rbU-vd-GOM"/>
+                        <constraint firstItem="d52-UW-nMn" firstAttribute="leading" secondItem="KI4-K6-nrj" secondAttribute="leading" constant="12" id="ygt-FB-d65"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.34663955480000003" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KI4-K6-nrj" secondAttribute="bottom" constant="5" id="aSr-vy-B8t"/>
+                <constraint firstItem="KI4-K6-nrj" firstAttribute="leading" secondItem="Msf-bT-Zjn" secondAttribute="leading" constant="5" id="ne5-m7-HUX"/>
+                <constraint firstAttribute="trailing" secondItem="KI4-K6-nrj" secondAttribute="trailing" constant="5" id="o1N-cx-m73"/>
+                <constraint firstItem="KI4-K6-nrj" firstAttribute="top" secondItem="Msf-bT-Zjn" secondAttribute="top" constant="5" id="yWr-3K-GLK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="229" y="-150"/>
+        </view>
+        <view contentMode="scaleToFill" id="2Py-oB-Z1o">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Genero" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IpN-6K-TTY" userLabel="txt_name">
+                    <rect key="frame" x="30" y="20" width="232" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Pms-2d-ds4"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icono_favorito_off" translatesAutoresizingMaskIntoConstraints="NO" id="aw6-ig-4fb">
+                    <rect key="frame" x="0.0" y="20" width="27" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qzt-LT-nOX">
+                    <rect key="frame" x="0.0" y="47" width="290" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.85882352939999995" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlightedImage="ico-check-green" translatesAutoresizingMaskIntoConstraints="NO" id="kWy-iL-kBk">
+                    <rect key="frame" x="270" y="25" width="15" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="311.5" y="1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-check-green" width="16" height="16"/>
+        <image name="icono_consultar_activo" width="21" height="21"/>
+        <image name="icono_favorito_off" width="16" height="16"/>
+    </resources>
+</document>

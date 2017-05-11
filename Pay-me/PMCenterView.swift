@@ -84,12 +84,12 @@ class PMCenterView: UIView {
     override func addCircleBorder() {
         switch centerType {
         case .white:
-            layer.addSublayer(circleLayer(multiplier: 1.1, color: UIColor(hexColor: "#eff2f5")))
-            layer.addSublayer(circleLayer(multiplier: 1.25, color: UIColor(hexColor: "#f1f3f6")))
+            layer.addSublayer(circleLayer(multiplier: 1.15, color: UIColor(hexColor: "#eff2f5")))
+            layer.addSublayer(circleLayer(multiplier: 1.3, color: UIColor(hexColor: "#f1f3f6")))
             break
         case .blue:
-            layer.addSublayer(circleLayer(multiplier: 1.1, color: UIColor(hexColor: "#0377f2")))
-            layer.addSublayer(circleLayer(multiplier: 1.25, color: UIColor(hexColor: "#0471ec")))
+            layer.addSublayer(circleLayer(multiplier: 1.15, color: UIColor(hexColor: "#0377f2")))
+            layer.addSublayer(circleLayer(multiplier: 1.3, color: UIColor(hexColor: "#0471ec")))
             break
         }
     }

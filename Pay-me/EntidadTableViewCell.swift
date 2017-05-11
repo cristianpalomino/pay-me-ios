@@ -38,7 +38,7 @@ extension EntidadTableViewCell {
     
     func setName() {
         if servicio.empresa.name.characters.count > 30 {
-            nameBottomConstraint.constant = 4
+            nameBottomConstraint.constant = 2
         }
         self.name.text = servicio.empresa.name
     }

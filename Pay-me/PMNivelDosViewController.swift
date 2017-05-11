@@ -41,7 +41,24 @@ class PMNivelDosViewController: PMViewController {
         if let servicioGeneral = Session.sharedInstance.current.servicioGeneral {
             pmSpinnerView.centerView.centerType = .white
             pmSpinnerView.items = servicioGeneral.items
+            pmSpinnerView.delegate = self
             pmSpinnerView.spinnerType = SpinnerType(rawValue: servicioGeneral.items.count) ?? .point
+        }
+    }
+}
+
+extension PMNivelDosViewController: Touchable {
+    
+    func touch(params: Any) {
+        if let view = params as? PMItemView {
+            let index = view.tag
+            if let sg = Session.sharedInstance.current.servicioGeneral {
+                let categoria = sg.categorias[index]
+                if !categoria.items.isEmpty {
+                    Session.sharedInstance.current.categoria = categoria
+                    toSegue(identifier: Constants.Storyboard.Segues.kToEmpresas)
+                }
+            }
         }
     }
 }

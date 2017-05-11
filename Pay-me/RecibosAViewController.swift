@@ -13,7 +13,6 @@ class RecibosAViewController: PMViewController {
     @IBOutlet var cBotButtom        :NSLayoutConstraint!
     @IBOutlet var cTopView          :NSLayoutConstraint!
     
-    @IBOutlet var btnPay             :PMButton!
     @IBOutlet var bannerView         :UIView!
     @IBOutlet var dataView           :UIView!
     
@@ -87,7 +86,7 @@ extension RecibosAViewController {
         
         if self.cBotButtom.constant == 0 {
             self.cTopView.constant = -(self.frameCardView.frame.origin.y - 8)
-            self.cBotButtom.constant = keyboardHeigth
+//            self.cBotButtom.constant = keyboardHeigth
             UIView.animate(withDuration: 0.15, animations: {
                 self.view.layoutIfNeeded()
             }, completion: {

@@ -35,7 +35,7 @@ class MessageViewController: PMMessageViewController {
     @IBOutlet var titleMessage          :UILabel!
     @IBOutlet var descriptionMessage    :UILabel!
     @IBOutlet var instructionMessage    :UILabel!
-    @IBOutlet var btnPay                :PMButton!
+//    @IBOutlet var btnPay                :PMButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ extension MessageViewController {
                 self.instructionMessage.isHidden = true
                 self.scrollCards.isHidden = true
                 self.cardView.isHidden = false
-                self.btnPay.setTitle("Pagar Recibo", for: .normal)
+//                self.btnPay.setTitle("Pagar Recibo", for: .normal)
                 self.withCard = true
             }
         } else if currentCard.type == .VALID ||
@@ -111,14 +111,14 @@ extension MessageViewController : UIScrollViewDelegate {
         self.currentCard = cards[index]
         
         if cards[index].type == .ADD {
-            self.btnPay.setTitle("Siguiente", for: .normal)
-            self.btnPay.isHidden = false
+//            self.btnPay.setTitle("Siguiente", for: .normal)
+//            self.btnPay.isHidden = false
         } else if cards[index].type == .VALID ||
             cards[index].type == .DEFAULT {
-            self.btnPay.setTitle("Pagar Recibo", for: .normal)
-            self.btnPay.isHidden = false
+//            self.btnPay.setTitle("Pagar Recibo", for: .normal)
+//            self.btnPay.isHidden = false
         } else if cards[index].type == .INVALID {
-            self.btnPay.isHidden = true
+//            self.btnPay.isHidden = true
         }
     }
 }
@@ -150,13 +150,13 @@ extension MessageViewController {
     func defineNotAutorized() {
         self.iconMessage.image = UIImage(named: "icon-center-gradient")
         self.titleMessage.text = "!Pago no autorizado!"
-        self.btnPay.isHidden = true
+//        self.btnPay.isHidden = true
     }
     
     func defineNotValid() {
         self.iconMessage.image = UIImage(named: "icon-center-gradient")
         self.titleMessage.text = "!Tarjeta de crédito no válida!"
-        self.btnPay.isHidden = true
+//        self.btnPay.isHidden = true
     }
     
     func defineSavedService() {
@@ -164,7 +164,7 @@ extension MessageViewController {
         self.titleMessage.text = "!Servicio guardado!"
         self.scrollCards.isHidden = true
         self.instructionMessage.isHidden = true
-        self.btnPay.isHidden = true
+//        self.btnPay.isHidden = true
     }
     
     func defineSuccessPay() {
@@ -172,7 +172,7 @@ extension MessageViewController {
         self.titleMessage.text = "!Pago éxitoso!"
         self.scrollCards.isHidden = true
         self.instructionMessage.isHidden = true
-        self.btnPay.isHidden = true
+//        self.btnPay.isHidden = true
     }
 }
 
@@ -181,35 +181,35 @@ extension MessageViewController {
     override func keyboardDidShow(notification: NSNotification) {
         super.keyboardDidShow(notification: notification)
         
-        if self.cBotButtom.constant == 0 {
-            self.cTopView.constant = -(self.cardView.frame.origin.y - SizesUtil.statusNavHeight(self) - 8)
-            self.cBotButtom.constant = keyboardHeigth
-            UIView.animate(withDuration: 0.15, animations: {
-                self.iconView.isHidden = true
-                self.titleMessage.isHidden = true
-                self.descriptionMessage.isHidden = true
-                self.instructionMessage.isHidden = true
-                self.view.layoutIfNeeded()
-            }, completion: {
-                (finished :Bool) -> Void in
-            })
-        }
+//        if self.cBotButtom.constant == 0 {
+//            self.cTopView.constant = -(self.cardView.frame.origin.y - SizesUtil.statusNavHeight(self) - 8)
+//            self.cBotButtom.constant = keyboardHeigth
+//            UIView.animate(withDuration: 0.15, animations: {
+//                self.iconView.isHidden = true
+//                self.titleMessage.isHidden = true
+//                self.descriptionMessage.isHidden = true
+//                self.instructionMessage.isHidden = true
+//                self.view.layoutIfNeeded()
+//            }, completion: {
+//                (finished :Bool) -> Void in
+//            })
+//        }
     }
     
     override func keyboardDidHide() {
         
-        if self.cBotButtom.constant == 0 {
-            self.cTopView.constant = 0
-            self.cBotButtom.constant = 0
-            UIView.animate(withDuration: 0.15, animations: {
-                self.iconView.isHidden = false
-                self.titleMessage.isHidden = false
-                self.descriptionMessage.isHidden = false
-                self.instructionMessage.isHidden = false
-                self.view.layoutIfNeeded()
-            }, completion: {
-                (finished :Bool) -> Void in
-            })
-        }
+//        if self.cBotButtom.constant == 0 {
+//            self.cTopView.constant = 0
+//            self.cBotButtom.constant = 0
+//            UIView.animate(withDuration: 0.15, animations: {
+//                self.iconView.isHidden = false
+//                self.titleMessage.isHidden = false
+//                self.descriptionMessage.isHidden = false
+//                self.instructionMessage.isHidden = false
+//                self.view.layoutIfNeeded()
+//            }, completion: {
+//                (finished :Bool) -> Void in
+//            })
+//        }
     }
 }

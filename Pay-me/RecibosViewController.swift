@@ -13,7 +13,6 @@ class RecibosViewController: PMViewController {
                  Card(type: .VALID  , image: "visa-logo")]
     
     
-    @IBOutlet var btnPay                :PMButton!
     @IBOutlet var bannerView            :UIView!
     @IBOutlet var dataView              :UIView!
     @IBOutlet var txtEmision            :PMTextField!

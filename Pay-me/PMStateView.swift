@@ -41,16 +41,14 @@ class PMStateView: UIView {
     
         labelState = UILabel(frame: .zero)
         labelState.textColor = UIColor.white
-        labelState.font = UIFont(name: "SanFranciscoDisplay-SemiBold", size: 7)
+        labelState.font = UIFont.SFSemibold(size: 8)
         addSubview(labelState)
         
         layer.cornerRadius = frame.height * 0.5
     }
     
     var frameImage: CGRect {
-        let x = self.bounds.width * (1 / self.bounds.width)
-        let side = self.bounds.width * (10 / self.bounds.width)
-        return CGRect(x: x, y: 0, width: side, height: side)
+        return CGRect(x: 1, y: 0, width: 10, height: 10)
     }
     
     func update() {
@@ -79,7 +77,7 @@ class PMStateView: UIView {
             }
             
             imageState.frame = frameImage
-            imageState.layer.cornerRadius = frameImage.height * 0.5
+            imageState.layer.cornerRadius = 5
             imageState.center.y = 6
             
             labelState.sizeToFit()
@@ -87,7 +85,7 @@ class PMStateView: UIView {
             labelState.frame.origin = CGPoint(x: 16, y: 0)
             labelState.center.y = 6
             
-            let totalWidthFrame = labelState.frame.width + labelState.frame.origin.x + 9
+            let totalWidthFrame = labelState.frame.width + labelState.frame.origin.x + 8
             stateWidth.constant = totalWidthFrame
             
             shouldSetupFrame = false

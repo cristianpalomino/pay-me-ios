@@ -66,7 +66,7 @@ class PMSpinnerView: UIView {
             let item = PMItemView(item: item)
             item.tag = index
             item.position = pSquare[index]
-            item.frame.size = CGSize(width: itemSizeSide, height: itemSizeSide)
+            item.frame.size = itemSize
             addSubview(item)
             
             let touch = UITapGestureRecognizer(target: self, action: #selector(self.touchItem(sender:)))
@@ -79,7 +79,7 @@ class PMSpinnerView: UIView {
             let item = PMItemView(item: item)
             item.tag = index
             item.position = pPoint[index]
-            item.frame.size = CGSize(width: itemSizeSide, height: itemSizeSide)
+            item.frame.size = itemSize
             addSubview(item)
             item.center.x = center.x
             
@@ -98,20 +98,20 @@ class PMSpinnerView: UIView {
     
     let margin: CGFloat = 15
     
-    var itemSizeSide: CGFloat {
-        return bounds.width * (70 / bounds.width)
+    var itemSize: CGSize {
+        return CGSize(width: 67, height: 70)
     }
     
     var totalMarginAndSide: CGFloat {
-        return margin + itemSizeSide
+        return margin + itemSize.width
     }
     
     typealias Points = [CGPoint]
     var pSquare: Points {
         let centerFrame = centerView.frame
-        return [CGPoint(x: centerFrame.origin.x - itemSizeSide, y: centerFrame.origin.y - itemSizeSide),
-                CGPoint(x: centerFrame.width + centerFrame.origin.x, y: centerFrame.origin.y - itemSizeSide),
-                CGPoint(x: centerFrame.origin.x - itemSizeSide, y: centerFrame.height + centerFrame.origin.y),
+        return [CGPoint(x: centerFrame.origin.x - itemSize.width, y: centerFrame.origin.y - itemSize.width),
+                CGPoint(x: centerFrame.width + centerFrame.origin.x, y: centerFrame.origin.y - itemSize.width),
+                CGPoint(x: centerFrame.origin.x - itemSize.width, y: centerFrame.height + centerFrame.origin.y),
                 CGPoint(x: centerFrame.width + centerFrame.origin.x, y: centerFrame.height + centerFrame.origin.y)]
     }
     
@@ -121,8 +121,7 @@ class PMSpinnerView: UIView {
     }
     
     var frameCenterView: CGRect {
-        let side = bounds.width * (94 / bounds.width)
-        return CGRect(x: 0, y: 0, width: side, height: side)
+        return CGRect(x: 0, y: 0, width: 94, height: 94)
     }
 }
 

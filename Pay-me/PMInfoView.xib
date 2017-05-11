@@ -31,28 +31,28 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdT-bD-Wvu">
-                    <rect key="frame" x="4" y="4" width="131" height="115"/>
+                    <rect key="frame" x="5" y="5" width="129" height="113"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBH-U8-c1f">
-                            <rect key="frame" x="38.5" y="12" width="54" height="12"/>
+                            <rect key="frame" x="37.5" y="12" width="54" height="12"/>
                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="10"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnP-Y3-gSS">
-                            <rect key="frame" x="12" y="36" width="107" height="12"/>
+                            <rect key="frame" x="12" y="36" width="105" height="12"/>
                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8f-I1-HjV">
-                            <rect key="frame" x="12" y="56" width="107" height="12"/>
+                            <rect key="frame" x="12" y="56" width="105" height="12"/>
                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8D-7u-PW5">
-                            <rect key="frame" x="12" y="76" width="107" height="12"/>
+                            <rect key="frame" x="12" y="76" width="105" height="12"/>
                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="10"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -76,10 +76,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="0.34663955480000003" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="BdT-bD-Wvu" firstAttribute="top" secondItem="stD-PN-mCU" secondAttribute="top" constant="4" id="6PS-xa-NIa"/>
-                <constraint firstAttribute="trailing" secondItem="BdT-bD-Wvu" secondAttribute="trailing" constant="4" id="DO5-l6-9UX"/>
-                <constraint firstItem="BdT-bD-Wvu" firstAttribute="leading" secondItem="stD-PN-mCU" secondAttribute="leading" constant="4" id="G2M-5w-th4"/>
-                <constraint firstAttribute="bottom" secondItem="BdT-bD-Wvu" secondAttribute="bottom" constant="4" id="Gan-2I-xue"/>
+                <constraint firstItem="BdT-bD-Wvu" firstAttribute="top" secondItem="stD-PN-mCU" secondAttribute="top" constant="5" id="6PS-xa-NIa"/>
+                <constraint firstAttribute="trailing" secondItem="BdT-bD-Wvu" secondAttribute="trailing" constant="5" id="DO5-l6-9UX"/>
+                <constraint firstItem="BdT-bD-Wvu" firstAttribute="leading" secondItem="stD-PN-mCU" secondAttribute="leading" constant="5" id="G2M-5w-th4"/>
+                <constraint firstAttribute="bottom" secondItem="BdT-bD-Wvu" secondAttribute="bottom" constant="5" id="Gan-2I-xue"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

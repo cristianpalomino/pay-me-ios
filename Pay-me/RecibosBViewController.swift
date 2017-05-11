@@ -51,7 +51,7 @@ extension RecibosBViewController {
         super.keyboardDidShow(notification: notification)
         
         if self.cBotPin.constant == 0 {
-            self.cBotPin.constant = keyboardHeigth
+//            self.cBotPin.constant = keyboardHeigth
             UIView.animate(withDuration: 0.15, animations: {
                 self.view.layoutIfNeeded()
             }, completion: {

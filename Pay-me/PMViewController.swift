@@ -10,25 +10,93 @@ import UIKit
 
 class PMViewController: UIViewController {
     
-    var keyboardHeigth  :CGFloat = 0.0
-    @IBOutlet weak var pmTitleView: PMTitleView!
+    @IBOutlet weak var container: UIView!
+    
+    internal var startPoint: CGPoint {
+        return CGPoint(x: 0, y: 35)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.initComponents()
+        addBar()
+        initComponents()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.addBorders()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
 }
 
+extension PMViewController {
+    
+    var headerTitle: String { return "NONE" }
+    
+    @IBAction func tapPerfil() {
+        //let notis = UIStoryboard.createNotificaciones().topViewController!
+        //self.navigationController?.show(notis, sender: self)
+    }
+    
+    @IBAction func tapNotifications() {
+        //let notis = UIStoryboard.createNotificacionesHome().topViewController!
+        //self.navigationController?.show(notis, sender: self)
+    }
+    
+    func tapBack() {
+        self.navigationController!.popViewController(animated: true)
+    }
+    
+    func tapSearch() {
+        print("tapSearch")
+    }
+}
+
+extension PMViewController {
+    
+    func initComponents() {
+        addNavigationLogo(isGradient: false)
+    }
+    
+    func addBar() {
+        let bar = PMBarView.instanceFromNib()
+        bar.title(headerTitle)
+        view.addSubview(bar)
+    }
+    
+    func add(mainView: UIView) {
+        mainView.frame.size = container.frame.size
+        container.addSubview(mainView)
+    }
+    
+    func showMessage(type :MessageType) -> UINavigationController {
+        Session.sharedInstance.messageType = type
+        let message = UIStoryboard.createMessage()
+        self.present(message, animated: true, completion: nil)
+        return message
+    }
+}
+
+extension PMViewController {
+    
+    func addKeyBoardObservers() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.keyboardDidShow),
+                                               name: .UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.keyboardDidHide),
+                                               name: .UIKeyboardDidHide,
+                                               object: nil)
+    }
+    
+    func keyboardDidShow(notification: NSNotification) {
+        if let userInfo = notification.userInfo {
+            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+                //self.keyboardHeigth = keyboardSize.size.height
+            }
+        }
+    }
+    
+    func keyboardDidHide() {
+        
+    }
+}
