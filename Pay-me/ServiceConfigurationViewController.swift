@@ -36,10 +36,6 @@ class ServiceConfigurationViewController: PMViewController {
 extension ServiceConfigurationViewController{
     
     override func initComponents() {
-        txtIdentificador.setPMThemeServiceConfiguration()
-        txtTitular.setPMThemeServiceConfiguration()
-        txtNombreEmpresa.setPMThemeServiceConfiguration()
-        
         addStyle()
         
     }

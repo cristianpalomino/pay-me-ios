@@ -66,7 +66,6 @@
 		408CB6A91E54E73D00D308D3 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */; };
 		408CB6AA1E54E73D00D308D3 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
 		408CB6AB1E54E73D00D308D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
-		408CB6AC1E54E73D00D308D3 /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
 		408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */; };
 		408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
@@ -129,7 +128,6 @@
 		408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */; };
 		408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
-		408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E501F1DFB7B13007BEEDE /* PMTextField.swift */; };
 		40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420101E20260D00D74D22 /* RecibosBViewController.swift */; };
 		40A420131E203FF200D74D22 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
 		40A420151E2053D000D74D22 /* PMPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420141E2053D000D74D22 /* PMPin.swift */; };
@@ -206,6 +204,8 @@
 		4FB03A401EC5040A00AF82AE /* TerceroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */; };
 		4FB03A421EC5048C00AF82AE /* PMTerceroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */; };
 		4FB03A431EC5048C00AF82AE /* PMTerceroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */; };
+		4FB03A491EC5FF7400AF82AE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A481EC5FF7400AF82AE /* PMTextField.swift */; };
+		4FB03A4A1EC5FF7400AF82AE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A481EC5FF7400AF82AE /* PMTextField.swift */; };
 		4FB51BD01EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
 		4FB51BD11EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
 		4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD21EBBD31200712249 /* PMItemView.swift */; };
@@ -291,7 +291,6 @@
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		408E501F1DFB7B13007BEEDE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
 		40A420101E20260D00D74D22 /* RecibosBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosBViewController.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
 		40A420141E2053D000D74D22 /* PMPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMPin.swift; sourceTree = "<group>"; };
@@ -348,6 +347,7 @@
 		4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
 		4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TerceroView.xib; sourceTree = "<group>"; };
 		4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTerceroView.swift; sourceTree = "<group>"; };
+		4FB03A481EC5FF7400AF82AE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
 		4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStateView.swift; sourceTree = "<group>"; };
 		4FB51BD21EBBD31200712249 /* PMItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemView.swift; sourceTree = "<group>"; };
 		4FB51BD61EBBE51200712249 /* PMCenterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCenterView.swift; sourceTree = "<group>"; };
@@ -602,7 +602,6 @@
 			isa = PBXGroup;
 			children = (
 				4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */,
-				408E501F1DFB7B13007BEEDE /* PMTextField.swift */,
 				40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */,
 				40463D271E19CF8000F663B0 /* PMItemCard.swift */,
 				40463D291E19CF9E00F663B0 /* PMItemCard.xib */,
@@ -706,6 +705,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		4FB03A441EC5FF4200AF82AE /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				4FB03A481EC5FF7400AF82AE /* PMTextField.swift */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
 		4FB51BD51EBBE4EC00712249 /* Spinner */ = {
 			isa = PBXGroup;
 			children = (
@@ -728,6 +735,7 @@
 		4FC042771EC3D7B300B93031 /* Reutilizables */ = {
 			isa = PBXGroup;
 			children = (
+				4FB03A441EC5FF4200AF82AE /* TextField */,
 				4FB51BD51EBBE4EC00712249 /* Spinner */,
 				4FC042781EC3D7BF00B93031 /* Title */,
 				4FC042701EC3D1A700B93031 /* Bar */,
@@ -1153,7 +1161,6 @@
 				4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */,
 				4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
-				408E50201DFB7B13007BEEDE /* PMTextField.swift in Sources */,
 				4FA8EFA81EB0F7B700A596EA /* PMTitleStrip.swift in Sources */,
 				4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */,
 				4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */,
@@ -1186,6 +1193,7 @@
 				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
 				404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */,
 				4F28D7B21EB9271400703CB4 /* Favorito.swift in Sources */,
+				4FB03A491EC5FF7400AF82AE /* PMTextField.swift in Sources */,
 				4FCC14CB1EAEB39300D6E7BC /* UIView.swift in Sources */,
 				40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
@@ -1246,7 +1254,6 @@
 				4FA8EFA91EB0F7B700A596EA /* PMTitleStrip.swift in Sources */,
 				4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */,
 				4FB51BD41EBBD31200712249 /* PMItemView.swift in Sources */,
-				408CB6AC1E54E73D00D308D3 /* PMTextField.swift in Sources */,
 				408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */,
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
 				408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */,
@@ -1276,6 +1283,7 @@
 				408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */,
 				408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */,
 				4F28D7B31EB9271400703CB4 /* Favorito.swift in Sources */,
+				4FB03A4A1EC5FF7400AF82AE /* PMTextField.swift in Sources */,
 				4FCC14CC1EAEB39300D6E7BC /* UIView.swift in Sources */,
 				408CB6CB1E54E73D00D308D3 /* RecibosBViewController.swift in Sources */,
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,

@@ -83,9 +83,6 @@ extension MessageViewController {
 extension MessageViewController {
     
     override func initComponents() {
-        txtNumeroTarjeta.setPMTheme()
-        txtMes.setPMTheme()
-        txtAnio.setPMTheme()
         
         addTouchListener()
         addBorder()

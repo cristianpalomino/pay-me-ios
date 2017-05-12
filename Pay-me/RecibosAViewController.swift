@@ -48,11 +48,7 @@ class RecibosAViewController: PMViewController {
 extension RecibosAViewController {
     
     override func initComponents() {
-        txtEmision.setPMTheme()
-        txtVencimiento.setPMTheme()
-        txtNumeroTarjeta.setPMTheme()
-        txtMes.setPMTheme()
-        txtAnio.setPMTheme()
+        
     }
 }
 

@@ -65,11 +65,8 @@ extension PMDetalleSuministroViewController {
     override func initComponents() {
         super.initComponents()
         bannerView.addBottomBorder()
-        txtIndentifier.placeholder = labels[1]
-        txtName.placeholder = labels[2]
         buttonAgregarServicio.setGradientBackground()
-        txtIndentifier.setPMTheme()
-        txtName.setPMTheme()
+
         
 //        if let response = apiResponse, let identifier = serviceIdentifier {
 //            self.hasManyServices = response.debts.count > 1

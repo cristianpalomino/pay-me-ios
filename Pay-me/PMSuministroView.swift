@@ -13,6 +13,7 @@ class PMSuministroView: UIView {
     @IBOutlet weak var frameBanner: UIView!
     @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet weak var imgBigBanner: UIImageView!
+    @IBOutlet weak var labelInfo: UILabel!
     
     func initUI() {
         loadBanners()

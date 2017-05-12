@@ -36,8 +36,6 @@ class RecibosViewController: PMViewController {
 extension RecibosViewController {
     
     override func initComponents() {
-        txtEmision.setPMTheme()
-        txtVencimiento.setPMTheme()
         initFlow()
     }
     
