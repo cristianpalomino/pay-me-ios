@@ -63,7 +63,8 @@ extension PMViewController {
     }
     
     func add(mainView: UIView) {
-        mainView.frame.size = container.frame.size
+        mainView.frame.origin = startPoint
+        mainView.frame.size = CGSize(width: container.frame.size.width, height: container.frame.size.height - 35)
         container.addSubview(mainView)
     }
     

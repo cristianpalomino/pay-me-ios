@@ -29,6 +29,10 @@ class PMSuministroViewController: PMViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     override func initComponents() {
         super.initComponents()
         prepare()
@@ -37,6 +41,7 @@ class PMSuministroViewController: PMViewController {
     func prepare() {
         let suministroView = PMSuministroView.instanceFromNib()
         suministroView.initUI()
+        suministroView.placeholder = labels[0]
         add(mainView: suministroView)
     }
 }

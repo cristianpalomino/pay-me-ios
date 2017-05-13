@@ -171,8 +171,6 @@
 		4F43D89D1EA7AB9900403292 /* EUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */; };
 		4F43D89F1EA7C34000403292 /* PMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89E1EA7C34000403292 /* PMInfoView.swift */; };
 		4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89E1EA7C34000403292 /* PMInfoView.swift */; };
-		4F43D8A21EA7C34F00403292 /* PMInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F43D8A11EA7C34F00403292 /* PMInfoView.xib */; };
-		4F43D8A31EA7C34F00403292 /* PMInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F43D8A11EA7C34F00403292 /* PMInfoView.xib */; };
 		4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
@@ -206,6 +204,8 @@
 		4FB03A431EC5048C00AF82AE /* PMTerceroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */; };
 		4FB03A491EC5FF7400AF82AE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A481EC5FF7400AF82AE /* PMTextField.swift */; };
 		4FB03A4A1EC5FF7400AF82AE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A481EC5FF7400AF82AE /* PMTextField.swift */; };
+		4FB03A4C1EC603E600AF82AE /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A4B1EC603E600AF82AE /* TextField.xib */; };
+		4FB03A4D1EC6126C00AF82AE /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A4B1EC603E600AF82AE /* TextField.xib */; };
 		4FB51BD01EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
 		4FB51BD11EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
 		4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD21EBBD31200712249 /* PMItemView.swift */; };
@@ -236,6 +236,10 @@
 		4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
 		4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
 		4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2BED01E1E996C00A2D16B /* Home.storyboard */; };
+		4FF4309C1EC6915500E4E16D /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF4309B1EC6915500E4E16D /* DetalleView.xib */; };
+		4FF4309D1EC6915500E4E16D /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF4309B1EC6915500E4E16D /* DetalleView.xib */; };
+		4FF4309F1EC6916100E4E16D /* PMDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */; };
+		4FF430A01EC6916100E4E16D /* PMDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */; };
 		586E7D5F3623569991AE606E /* Pods_Pay_me_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DAB47D34969A8E3DE24E83 /* Pods_Pay_me_Development.framework */; };
 /* End PBXBuildFile section */
 
@@ -327,7 +331,6 @@
 		4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListadoFavoritosViewController.swift; sourceTree = "<group>"; };
 		4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUITableViewController.swift; sourceTree = "<group>"; };
 		4F43D89E1EA7C34000403292 /* PMInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMInfoView.swift; sourceTree = "<group>"; };
-		4F43D8A11EA7C34F00403292 /* PMInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMInfoView.xib; sourceTree = "<group>"; };
 		4F43D8BD1EAA52F500403292 /* EProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EProtocols.swift; sourceTree = "<group>"; };
 		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -348,6 +351,7 @@
 		4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TerceroView.xib; sourceTree = "<group>"; };
 		4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTerceroView.swift; sourceTree = "<group>"; };
 		4FB03A481EC5FF7400AF82AE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
+		4FB03A4B1EC603E600AF82AE /* TextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextField.xib; sourceTree = "<group>"; };
 		4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStateView.swift; sourceTree = "<group>"; };
 		4FB51BD21EBBD31200712249 /* PMItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemView.swift; sourceTree = "<group>"; };
 		4FB51BD61EBBE51200712249 /* PMCenterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCenterView.swift; sourceTree = "<group>"; };
@@ -366,6 +370,8 @@
 		4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostrarAgendaViewController.swift; sourceTree = "<group>"; };
 		4FD00CDA1EC3862700B37A09 /* SuministroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuministroView.xib; sourceTree = "<group>"; };
 		4FF2BED01E1E996C00A2D16B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		4FF4309B1EC6915500E4E16D /* DetalleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleView.xib; sourceTree = "<group>"; };
+		4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleView.swift; sourceTree = "<group>"; };
 		84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.release.xcconfig"; sourceTree = "<group>"; };
 		A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -611,8 +617,6 @@
 				406482AD1E2D162800E9C891 /* PMHeaderButton.swift */,
 				401CC66F1E538290001911F2 /* PMViews.swift */,
 				401CC6711E539740001911F2 /* PMErrorView.xib */,
-				4F43D89E1EA7C34000403292 /* PMInfoView.swift */,
-				4F43D8A11EA7C34F00403292 /* PMInfoView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -709,6 +713,7 @@
 			isa = PBXGroup;
 			children = (
 				4FB03A481EC5FF7400AF82AE /* PMTextField.swift */,
+				4FB03A4B1EC603E600AF82AE /* TextField.xib */,
 			);
 			name = TextField;
 			sourceTree = "<group>";
@@ -783,6 +788,8 @@
 			isa = PBXGroup;
 			children = (
 				407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */,
+				4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */,
+				4FF4309B1EC6915500E4E16D /* DetalleView.xib */,
 			);
 			name = Detalle;
 			sourceTree = "<group>";
@@ -821,6 +828,7 @@
 				40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */,
 				4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */,
 				4FD00CDA1EC3862700B37A09 /* SuministroView.xib */,
+				4F43D89E1EA7C34000403292 /* PMInfoView.swift */,
 			);
 			name = Suministro;
 			sourceTree = "<group>";
@@ -950,6 +958,7 @@
 				40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
 				4FA0E3091EA56828008F5ED9 /* BarView.xib in Resources */,
+				4FB03A4C1EC603E600AF82AE /* TextField.xib in Resources */,
 				404672DA1E14608500A578EA /* Messages.storyboard in Resources */,
 				401CC6721E539740001911F2 /* PMErrorView.xib in Resources */,
 				40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */,
@@ -964,9 +973,9 @@
 				4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */,
 				4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
+				4FF4309C1EC6915500E4E16D /* DetalleView.xib in Resources */,
 				40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
 				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
-				4F43D8A21EA7C34F00403292 /* PMInfoView.xib in Resources */,
 				4FB03A3B1EC4F85900AF82AE /* AgregarServicio.storyboard in Resources */,
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
@@ -988,6 +997,7 @@
 				408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
 				408CB6EA1E54E73D00D308D3 /* Main.storyboard in Resources */,
 				408CB6EC1E54E73D00D308D3 /* Messages.storyboard in Resources */,
+				4FB03A4D1EC6126C00AF82AE /* TextField.xib in Resources */,
 				408CB6ED1E54E73D00D308D3 /* PMErrorView.xib in Resources */,
 				408CB6EE1E54E73D00D308D3 /* PMItemCard.xib in Resources */,
 				408CB6EF1E54E73D00D308D3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
@@ -1002,9 +1012,9 @@
 				408CB6F51E54E73D00D308D3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
 				4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				408CB6F61E54E73D00D308D3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
+				4FF4309D1EC6915500E4E16D /* DetalleView.xib in Resources */,
 				4F43D88E1EA699CE00403292 /* Development.plist in Resources */,
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
-				4F43D8A31EA7C34F00403292 /* PMInfoView.xib in Resources */,
 				4FB03A3C1EC4F8E700AF82AE /* AgregarServicio.storyboard in Resources */,
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
@@ -1154,6 +1164,7 @@
 				40CF1E491E068AAF0072CB29 /* PMSuministroViewController.swift in Sources */,
 				4F28D7AF1EB8EC5500703CB4 /* Api.swift in Sources */,
 				404672DF1E14671400A578EA /* MessageViewController.swift in Sources */,
+				4FF4309F1EC6916100E4E16D /* PMDetalleView.swift in Sources */,
 				4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */,
 				4F43D89F1EA7C34000403292 /* PMInfoView.swift in Sources */,
 				4001908B1E6495150080DDA4 /* Currency.swift in Sources */,
@@ -1244,6 +1255,7 @@
 				408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */,
 				4F28D7B01EB8EC5500703CB4 /* Api.swift in Sources */,
 				408CB6A61E54E73D00D308D3 /* MessageViewController.swift in Sources */,
+				4FF430A01EC6916100E4E16D /* PMDetalleView.swift in Sources */,
 				4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */,
 				408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */,
 				4001908C1E6495150080DDA4 /* Currency.swift in Sources */,

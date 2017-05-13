@@ -65,7 +65,7 @@ class PMSpinnerView: UIView {
         for (index, item) in items.enumerated() {
             let item = PMItemView(item: item)
             item.tag = index
-            item.position = pSquare[index]
+            item.frame.origin = pSquare[index]
             item.frame.size = itemSize
             addSubview(item)
             
@@ -78,7 +78,7 @@ class PMSpinnerView: UIView {
         for (index, item) in items.enumerated() {
             let item = PMItemView(item: item)
             item.tag = index
-            item.position = pPoint[index]
+            item.frame.origin = pPoint[index]
             item.frame.size = itemSize
             addSubview(item)
             item.center.x = center.x

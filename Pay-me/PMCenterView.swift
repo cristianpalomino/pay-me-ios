@@ -98,12 +98,12 @@ class PMCenterView: UIView {
         let clayer = CAShapeLayer()
         clayer.frame = CGRect(x: imageBackground.frame.origin.x,
                               y: imageBackground.frame.origin.y,
-                              width: imageBackground.width * multiplier,
-                              height: imageBackground.height * multiplier)
+                              width: imageBackground.frame.width * multiplier,
+                              height: imageBackground.frame.width * multiplier)
         clayer.position = imageBackground.center
         clayer.borderColor = color.cgColor
         clayer.borderWidth = 1
-        clayer.cornerRadius = (imageBackground.width * multiplier) * 0.5
+        clayer.cornerRadius = (imageBackground.frame.width * multiplier) * 0.5
         return clayer
     }
     
