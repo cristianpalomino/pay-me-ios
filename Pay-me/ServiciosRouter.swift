@@ -16,7 +16,7 @@ enum ServiciosRouter: URLRequestConvertible {
     //        case actualizacion_informacion_servicios = "2"
     //    }
     
-    case consult(identifier: String)
+    case consult(String)
     case add
     
     var path: String {
@@ -48,7 +48,7 @@ enum ServiciosRouter: URLRequestConvertible {
             staticParams["idCompany"] = current.item!.idCompany.encrypt()
             staticParams["idServiceSPS"] = current.item!.idServiceSPS.encrypt()
             staticParams["serviceIdentifier"] = identifier.encrypt()
-            staticParams["typeOperation"] = "1".encrypt()
+            staticParams["typeOperation"] = "1"
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)
         case .add:
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)

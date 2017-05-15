@@ -10,6 +10,8 @@ import UIKit
 
 class PMSuministroView: UIView {
     
+    var touchDelegate: Touchable?
+    
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
@@ -21,6 +23,22 @@ class PMSuministroView: UIView {
     @IBOutlet weak var btnVerMas: UIButton!
     @IBOutlet weak var mainButton: UIButton!
     weak var field: PMTextField!
+    
+    var labels: [String] {
+        guard let strings  = Session.sharedInstance.current.item?.label else {
+            return ["NONE"]
+        }
+        return strings.components(separatedBy: ",")
+    }
+    
+    var identifier: String {
+        get {
+            return self.identifier
+        }
+        set (newValue) {
+            self.identifier = newValue
+        }
+    }
     
     func initUI() {
         keyBoardObservers()
@@ -39,13 +57,7 @@ class PMSuministroView: UIView {
     func borders() {
         frameBanner.addBottomBorder()
     }
-    
-    var placeholder: String? {
-        didSet {
-            field.textField.placeholder = placeholder
-        }
-    }
-    
+
     func keyBoardObservers() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.showsKeyBoard(notification:)),
@@ -60,6 +72,7 @@ class PMSuministroView: UIView {
     func addTextField() {
         field = PMTextField.instanceFromNib()
         field.initUI()
+        field.textField.placeholder = labels[0]
         field.translatesAutoresizingMaskIntoConstraints = false
         addSubview(field)
         
@@ -121,6 +134,11 @@ class PMSuministroView: UIView {
     
     @IBAction func tapInfo() {
         showInfo()
+    }
+    
+    @IBAction func tapMain() {
+        let identifier = field.textField.text
+        touchDelegate?.touch(params: identifier)
     }
     
     func showsKeyBoard(notification: NSNotification) {

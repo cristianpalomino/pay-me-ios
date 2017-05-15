@@ -73,7 +73,8 @@ extension PMTerceroView : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier, for: indexPath) as! EntidadTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: EntidadTableViewCell.identifier,
+                                                 for: indexPath) as! EntidadTableViewCell
         cell.servicio = items![indexPath.row]
         return cell
     }

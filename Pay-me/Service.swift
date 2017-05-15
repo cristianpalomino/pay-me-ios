@@ -27,16 +27,26 @@ import SwiftyJSON
 //"idService": "53",
 //"nameService": "MATRICULA           "
 
-class Service {
+class Service: JSONObjectSerializable {
 
     var nameService: String
     var idService: String
     var debts = [Debt]()
     
-    init(json :JSON) {
+    required init?(json: JSON) {
         
-        nameService = json["nameService"].stringValue
-        idService = json["idService"].stringValue
-        json["debts"].arrayValue.map{ debts.append(Debt(json: $0)) }
+        guard
+            let nameService = json["nameService"].string,
+            let idService = json["idService"].string,
+            let array = json["debts"].array
+            else { return nil }
+        
+        self.nameService = nameService
+        self.idService = idService
+        array.forEach {
+            if let debt = Debt(json: $0) {
+                debts.append(debt)
+            }
+        }
     }
 }

@@ -22,7 +22,7 @@ import UIKit
 //"nameService": "MATRICULA           ",
 //"recibo": "12345678        "
 
-class Debt {
+struct Debt: JSONObjectSerializable {
     
     var contador: String!
     var currency: String!
@@ -35,16 +35,29 @@ class Debt {
     var nameService: String!
     var recibo: String!
     
-    init(json :JSON) {
-        contador = json["contador"].stringValue
-        currency = json["currency"].stringValue
-        deudaTotal = json["deudaTotal"].stringValue
-        fechaEmision = json["fechaEmision"].stringValue
-        fechaOrden = json["fechaOrden"].stringValue
-        fechaVencimiento = json["fechaVencimiento"].stringValue
-        idD = json["idD"].stringValue
-        monto = json["monto"].stringValue
-        nameService = json["nameService"].stringValue
-        recibo = json["contador"].stringValue
+    init?(json: JSON) {
+        guard
+            let contador = json["contador"].string,
+            let currency = json["currency"].string,
+            let deudaTotal = json["deudaTotal"].string,
+            let fechaEmision = json["fechaEmision"].string,
+            let fechaOrden = json["fechaOrden"].string,
+            let fechaVencimiento = json["fechaVencimiento"].string,
+            let idD = json["idD"].string,
+            let monto = json["monto"].string,
+            let nameService = json["nameService"].string,
+            let recibo = json["contador"].string
+            else { return nil }
+        
+        self.contador = contador
+        self.currency = currency
+        self.deudaTotal = deudaTotal
+        self.fechaEmision = fechaEmision
+        self.fechaOrden = fechaOrden
+        self.fechaVencimiento = fechaVencimiento
+        self.idD = idD
+        self.monto = monto
+        self.nameService = nameService
+        self.recibo = recibo
     }
 }

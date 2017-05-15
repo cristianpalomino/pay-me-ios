@@ -36,6 +36,16 @@ class PMDetalleSuministroViewController: PMViewController {
     }
     
     func prepare() {
-        
+        let detalleView = PMDetalleView.instanceFromNib()
+        detalleView.initUI()
+        detalleView.touchDelegate = self
+        add(mainView: detalleView)
+    }
+}
+
+extension PMDetalleSuministroViewController: Touchable {
+    
+    func touch(params: Any?) {
+        toSegue(identifier: "toListDetailSuministro")
     }
 }

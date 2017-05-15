@@ -238,6 +238,13 @@
 		4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
 		4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
 		4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
+		4FD3CA051EC9F731003DABAC /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
+		4FD3CA071EC9FFEF003DABAC /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */; };
+		4FD3CA081EC9FFEF003DABAC /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */; };
+		4FD3CA0A1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */; };
+		4FD3CA0B1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */; };
+		4FD3CA0E1ECA6E16003DABAC /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */; };
+		4FD3CA0F1ECA6E16003DABAC /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */; };
 		4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2BED01E1E996C00A2D16B /* Home.storyboard */; };
 		4FF4309C1EC6915500E4E16D /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF4309B1EC6915500E4E16D /* DetalleView.xib */; };
 		4FF4309D1EC6915500E4E16D /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF4309B1EC6915500E4E16D /* DetalleView.xib */; };
@@ -373,6 +380,9 @@
 		4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionNotificacionesViewController.swift; sourceTree = "<group>"; };
 		4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostrarAgendaViewController.swift; sourceTree = "<group>"; };
 		4FD00CDA1EC3862700B37A09 /* SuministroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuministroView.xib; sourceTree = "<group>"; };
+		4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListaServicios.xib; sourceTree = "<group>"; };
+		4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaServiciosView.swift; sourceTree = "<group>"; };
+		4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		4FF2BED01E1E996C00A2D16B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4FF4309B1EC6915500E4E16D /* DetalleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleView.xib; sourceTree = "<group>"; };
 		4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleView.swift; sourceTree = "<group>"; };
@@ -505,7 +515,6 @@
 				4FC0427C1EC4F02600B93031 /* Detalle */,
 				4FC0427D1EC4F03800B93031 /* Servicios */,
 				4F43D8A41EA8235500403292 /* Cells */,
-				407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */,
 			);
 			name = Adicionar;
 			sourceTree = "<group>";
@@ -674,6 +683,7 @@
 			children = (
 				4088F8AA1E36628C00114BEE /* StaticData.swift */,
 				4062C1571E3BE9A800617265 /* Service.swift */,
+				4F28D7B11EB9271400703CB4 /* Favorito.swift */,
 				40293EF61E405385007EF98D /* Calendar.swift */,
 				40293EF81E40D2DE007EF98D /* Debt.swift */,
 				4F1898481E11BB240060DD41 /* Notificacion.swift */,
@@ -682,7 +692,6 @@
 				4F638D721E1FF48400ECE514 /* NotificacionHome.swift */,
 				405E0ABB1E1B36A5008CF767 /* Card.swift */,
 				40A4201C1E24046F00D74D22 /* Pay.swift */,
-				4F28D7B11EB9271400703CB4 /* Favorito.swift */,
 			);
 			name = Beans;
 			sourceTree = "<group>";
@@ -753,6 +762,7 @@
 		4FC042771EC3D7B300B93031 /* Reutilizables */ = {
 			isa = PBXGroup;
 			children = (
+				4FD3CA0C1ECA6E06003DABAC /* Error */,
 				4FB03A441EC5FF4200AF82AE /* TextField */,
 				4FB51BD51EBBE4EC00712249 /* Spinner */,
 				4FC042781EC3D7BF00B93031 /* Title */,
@@ -810,7 +820,9 @@
 		4FC0427D1EC4F03800B93031 /* Servicios */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
+				407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */,
+				4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */,
+				4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */,
 			);
 			name = Servicios;
 			sourceTree = "<group>";
@@ -831,6 +843,7 @@
 				4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */,
 				400190831E647CA30080DDA4 /* Favoritos */,
 				4062C1421E380F3600617265 /* Adicionar */,
+				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
 			);
 			name = Servicio;
 			sourceTree = "<group>";
@@ -844,6 +857,14 @@
 				4F43D89E1EA7C34000403292 /* PMInfoView.swift */,
 			);
 			name = Suministro;
+			sourceTree = "<group>";
+		};
+		4FD3CA0C1ECA6E06003DABAC /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 		4FF780421EA58503002D4703 /* ExtendedClass */ = {
@@ -981,9 +1002,11 @@
 				4F83292B1EC231240011267B /* Default@2x.png in Resources */,
 				4F43D88B1EA699C700403292 /* Info.plist in Resources */,
 				4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */,
+				4FD3CA071EC9FFEF003DABAC /* ListaServicios.xib in Resources */,
 				4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */,
 				40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
 				4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */,
+				4FD3CA0E1ECA6E16003DABAC /* ErrorView.xib in Resources */,
 				4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				4FF4309C1EC6915500E4E16D /* DetalleView.xib in Resources */,
@@ -1020,9 +1043,11 @@
 				4F83292D1EC2358C0011267B /* Default@2x.png in Resources */,
 				408CB6F11E54E73D00D308D3 /* Home.storyboard in Resources */,
 				408CB6F21E54E73D00D308D3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
+				4FD3CA081EC9FFEF003DABAC /* ListaServicios.xib in Resources */,
 				408CB6F31E54E73D00D308D3 /* ServiceConfiguration.storyboard in Resources */,
 				408CB6F41E54E73D00D308D3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				408CB6F51E54E73D00D308D3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
+				4FD3CA0F1ECA6E16003DABAC /* ErrorView.xib in Resources */,
 				4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				408CB6F61E54E73D00D308D3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4FF4309D1EC6915500E4E16D /* DetalleView.xib in Resources */,
@@ -1233,6 +1258,7 @@
 				40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */,
 				4FB51BD71EBBE51200712249 /* PMCenterView.swift in Sources */,
 				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
+				4FD3CA0A1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
 				4F43D89C1EA7AB9900403292 /* EUITableViewController.swift in Sources */,
 				400190981E64EC220080DDA4 /* UIViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
@@ -1263,6 +1289,7 @@
 				408CB69B1E54E73D00D308D3 /* RSA.m in Sources */,
 				408CB69C1E54E73D00D308D3 /* DetalleReciboViewController.swift in Sources */,
 				408CB69D1E54E73D00D308D3 /* LaunchViewController.swift in Sources */,
+				4FD3CA051EC9F731003DABAC /* ServiciosRouter.swift in Sources */,
 				408CB69E1E54E73D00D308D3 /* Order.swift in Sources */,
 				408CB69F1E54E73D00D308D3 /* PMNivelUnoViewController.swift in Sources */,
 				408CB6A01E54E73D00D308D3 /* Card.swift in Sources */,
@@ -1325,6 +1352,7 @@
 				4FB51BD81EBBE51200712249 /* PMCenterView.swift in Sources */,
 				408CB6D21E54E73D00D308D3 /* ListaPagosViewController.swift in Sources */,
 				408CB6D41E54E73D00D308D3 /* NotificacionesViewController.swift in Sources */,
+				4FD3CA0B1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
 				4F43D89D1EA7AB9900403292 /* EUITableViewController.swift in Sources */,
 				400190991E64EC220080DDA4 /* UIViewController.swift in Sources */,
 				408CB6D51E54E73D00D308D3 /* PMTabBarViewController.swift in Sources */,
@@ -1521,7 +1549,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.temp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.mep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1547,7 +1575,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.temp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pay.mep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";

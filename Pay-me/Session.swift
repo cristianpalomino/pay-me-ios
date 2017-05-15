@@ -28,9 +28,11 @@ class Session {
 
 struct Current {
         
-    var servicioGeneral :ServicioGeneral?
-    var categoria       :Categoria?
-    var item            :Item?
+    var servicioGeneral: ServicioGeneral?
+    var categoria: Categoria?
+    var item: Item?
+    
+    var addService: (identifier: String?, userName: String?, services: [Service]) = (nil, nil, [Service]())
 }
 
 

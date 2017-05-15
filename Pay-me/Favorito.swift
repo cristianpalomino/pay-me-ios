@@ -20,7 +20,7 @@ import SwiftyJSON
 //"serviceIdentifier": "123",
 //"state": "2"
 
-struct Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
+struct Favorito: JSONObjectSerializable {
     
     var alias: String?
     var amount: String?
@@ -32,7 +32,7 @@ struct Favorito: ResponseObjectSerializable, ResponseCollectionSerializable {
     var serviceIdentifier: String
     var state: ServiceStateType
     
-    init?(response: HTTPURLResponse, json: JSON) {
+    init?(json: JSON) {
         
         guard
             let idCompanySPS = json["idCompanySPS"].string,

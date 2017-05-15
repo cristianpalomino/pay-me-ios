@@ -11,18 +11,13 @@ import AlamofireImage
 
 class PMSuministroViewController: PMViewController {
     
+    var suministroView: PMSuministroView!
+    
     override var headerTitle: String {
         guard let title = Session.sharedInstance.current.item?.empresa.shortName else {
             return "NONE"
         }
         return title
-    }
-    
-    var labels: [String] {
-        guard let strings  = Session.sharedInstance.current.item?.label else {
-            return ["NONE"]
-        }
-        return strings.components(separatedBy: ",")
     }
     
     override func viewDidLoad() {
@@ -39,10 +34,28 @@ class PMSuministroViewController: PMViewController {
     }
     
     func prepare() {
-        let suministroView = PMSuministroView.instanceFromNib()
+        suministroView = PMSuministroView.instanceFromNib()
         suministroView.initUI()
-        suministroView.placeholder = labels[0]
+        suministroView.touchDelegate = self
         add(mainView: suministroView)
+    }
+}
+
+extension PMSuministroViewController: Touchable {
+    
+    func touch(params: Any?) {
+        if let identifier = params as? String {
+            Session.sharedInstance.current.addService.identifier = identifier
+            Request.debtConsult(completionHandler: {
+                (response: ResponseHandlerDebtConsult) in
+                Session.sharedInstance.current.addService.userName = response.name
+                Session.sharedInstance.current.addService.services = response.services
+                self.toSegue(identifier: "toDetalleSuministro")
+            }, errorHandler: {
+                error in
+                self.toSegue(identifier: "toDetalleSuministro")
+            })
+        }
     }
 }
 

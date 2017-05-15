@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Fabric.with([Crashlytics .self])
         print(Constants.Api.URLs.BASE_URL)
-        
+                
         return true
     }
 
