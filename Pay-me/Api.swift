@@ -27,20 +27,22 @@ protocol ResponseObjectSerializable {
 }
 
 protocol ResponseCollectionSerializable {
+    
     static func collection(from response: HTTPURLResponse, withRepresentation json: [JSON]) -> [Self]
 }
 
 extension ResponseCollectionSerializable where Self: ResponseObjectSerializable {
+    
     static func collection(from response: HTTPURLResponse, withRepresentation json: [JSON]) -> [Self] {
         var collection: [Self] = []
-        
-        for itemRepresentation in json {
-            if let item = Self(response: response, json: itemRepresentation) {
+        json.forEach {
+            if let item = Self(response: response, json: $0) {
                 collection.append(item)
             }
         }
         return collection
     }
+    
 }
 
 extension DataRequest {
@@ -91,7 +93,6 @@ struct PaymeApi {
         configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
         configuration.timeoutIntervalForRequest = 40
         configuration.timeoutIntervalForResource = 40
-
         let manager = Alamofire.SessionManager(configuration: configuration)
         return manager
     }()
@@ -107,36 +108,3 @@ struct Request {
     }
 }
 
-enum FavoritosRouter: URLRequestConvertible {
-    
-    case list
-    
-    var path: String {
-        switch self {
-        case .list:
-            return Constants.Api.URLs.EndPoints.CONSULTAR_SERVICIOS
-        }
-    }
-    
-    var method: HTTPMethod {
-        switch self {
-        case .list:
-            return .post
-        }
-    }
-    
-    func asURLRequest() throws -> URLRequest {
-        
-        let url = try Constants.Api.URLs.BASE_URL.asURL()
-        
-        var urlRequest = URLRequest(url: url.appendingPathComponent(path))
-        urlRequest.httpMethod = method.rawValue
-        
-        switch self {
-        case .list:
-            urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)
-        }
-        
-        return urlRequest
-    }
-}

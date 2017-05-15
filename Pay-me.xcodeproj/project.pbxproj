@@ -128,6 +128,9 @@
 		408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */; };
 		408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
+		409889E51EC939CC0028FC67 /* FavoritosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E41EC939CC0028FC67 /* FavoritosRouter.swift */; };
+		409889E61EC939CF0028FC67 /* FavoritosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E41EC939CC0028FC67 /* FavoritosRouter.swift */; };
+		409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
 		40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420101E20260D00D74D22 /* RecibosBViewController.swift */; };
 		40A420131E203FF200D74D22 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
 		40A420151E2053D000D74D22 /* PMPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420141E2053D000D74D22 /* PMPin.swift */; };
@@ -276,7 +279,6 @@
 		4062C1451E3B98D500617265 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
 		4062C1471E3B994200617265 /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
 		4062C1571E3BE9A800617265 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		4062C15D1E3BF7EB00617265 /* ApiUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtil.swift; sourceTree = "<group>"; };
 		406482AD1E2D162800E9C891 /* PMHeaderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHeaderButton.swift; sourceTree = "<group>"; };
 		406EEA1A1DFB0D88005D2E87 /* Pay-me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -295,6 +297,8 @@
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		409889E41EC939CC0028FC67 /* FavoritosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosRouter.swift; sourceTree = "<group>"; };
+		409889E71EC939E50028FC67 /* ServiciosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosRouter.swift; sourceTree = "<group>"; };
 		40A420101E20260D00D74D22 /* RecibosBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosBViewController.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
 		40A420141E2053D000D74D22 /* PMPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMPin.swift; sourceTree = "<group>"; };
@@ -519,8 +523,8 @@
 		4062C1501E3BC43F00617265 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				409889E31EC939BC0028FC67 /* Routers */,
 				4F28D7AE1EB8EC5500703CB4 /* Api.swift */,
-				4062C15D1E3BF7EB00617265 /* ApiUtil.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -619,6 +623,15 @@
 				401CC6711E539740001911F2 /* PMErrorView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		409889E31EC939BC0028FC67 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				409889E41EC939CC0028FC67 /* FavoritosRouter.swift */,
+				409889E71EC939E50028FC67 /* ServiciosRouter.swift */,
+			);
+			name = Routers;
 			sourceTree = "<group>";
 		};
 		40A420191E24039A00D74D22 /* Historico */ = {
@@ -1157,6 +1170,7 @@
 				4062C1461E3B98D500617265 /* RSA.m in Sources */,
 				40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */,
 				4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */,
+				409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */,
 				40293EFB1E40DFEE007EF98D /* Order.swift in Sources */,
 				403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */,
 				405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */,
@@ -1190,6 +1204,7 @@
 				4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */,
 				407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */,
 				40293EFD1E40E2E3007EF98D /* Product.swift in Sources */,
+				409889E51EC939CC0028FC67 /* FavoritosRouter.swift in Sources */,
 				405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */,
 				4062C1481E3B994200617265 /* Security.swift in Sources */,
 				40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */,
@@ -1281,6 +1296,7 @@
 				408CB6BC1E54E73D00D308D3 /* FavoritoTableViewCell.swift in Sources */,
 				408CB6BD1E54E73D00D308D3 /* PMLabel.swift in Sources */,
 				408CB6BE1E54E73D00D308D3 /* Product.swift in Sources */,
+				409889E61EC939CF0028FC67 /* FavoritosRouter.swift in Sources */,
 				408CB6BF1E54E73D00D308D3 /* Session.swift in Sources */,
 				408CB6C01E54E73D00D308D3 /* Security.swift in Sources */,
 				408CB6C11E54E73D00D308D3 /* PMItemCard.swift in Sources */,
@@ -1454,7 +1470,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D PRODUCTION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.capr.pay.me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1479,7 +1495,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D PRODUCTION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pay.me.tmp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.capr.pay.me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
