@@ -30,14 +30,15 @@ class PMListadoFavoritosViewController: PMViewController {
     }
     
     func request() {
-        Request.getFavoritos {
-            response in
-            if let favoritos = response.value {
-                self.listadoView?.favoritos = favoritos
-            } else {
-                
-            }
-        }
+        Request.getFavoritos(completionHandler: {
+            (response: ResponseHandlerFavoritos) in
+            self.listadoView!.favoritos = response
+        }, errorHandler: {
+            error in
+            
+        }, finishHandler: {
+            self.listadoView!.reloadTableView()
+        })
     }
     
     override func initComponents() {        

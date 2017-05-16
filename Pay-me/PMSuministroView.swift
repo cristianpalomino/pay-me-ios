@@ -127,6 +127,19 @@ class PMSuministroView: UIView {
         infoView.heightAnchor.constraint(equalToConstant: 155).isActive = true
     }
     
+    func showLoadIndicator() {
+        field.textField.endEditing(true)
+        field.rigthView.isHidden = true
+        field.indicator.isHidden = false
+        field.indicator.startAnimating()
+    }
+    
+    func hideLoadIndicator() {
+        field.rigthView.isHidden = false
+        field.indicator.isHidden = true
+        field.indicator.stopAnimating()
+    }
+    
     @IBAction func verMas() {
         field.endEditing(true)
         hideKeyBoard()

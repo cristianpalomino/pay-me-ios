@@ -27,6 +27,7 @@ protocol JSONObjectSerializable {
     init?(json: JSON)
 }
 
+typealias FinishHandler = Void
 typealias ErrorHandler = Error
 typealias ResponseHandlerFavoritos = [Favorito]
 typealias ResponseHandlerDebtConsult = (name: String, services: [Service])
@@ -67,6 +68,9 @@ extension DataRequest {
             } else {
                 return .success(json)
             }
+            
+            let reason = "NO RESPONSE"
+            return .failure(BackendError.objectSerialization(reason: reason))
         }
         
         return response(responseSerializer: responseSerializer, completionHandler: completionHandler)
@@ -87,18 +91,49 @@ struct PaymeApi {
 
 struct Request {
     
-    static func getFavoritos(completionHandler: @escaping (DataResponse<ResponseHandlerFavoritos>) -> Void) {
-//        PaymeApi.sessionManager.request(FavoritosRouter.list).responseCollection(key: "services") {
-//            (response: DataResponse<[Favorito]>) in
-//            completionHandler(response)
-//        }
+    static func getFavoritos(completionHandler: @escaping (ResponseHandlerFavoritos) -> Void,
+                             errorHandler: @escaping (ErrorHandler) -> Void,
+                             finishHandler: @escaping (FinishHandler) -> Void) {
+        PaymeApi.sessionManager.request(FavoritosRouter.list).responsePMJSON(completionHandler: {
+            response in
+            
+            finishHandler()
+            
+            guard let json = response.result.value else {
+                if let error = response.error {
+                    errorHandler(error)
+                }
+                return
+            }
+            
+            guard let array = json["services"].array else {
+                if let favorito = Favorito(json: json["services"]) {
+                    completionHandler([favorito])
+                }
+                return
+            }
+            
+            var favoritos = [Favorito]()
+            array.forEach {
+                if let favorito = Favorito(json: $0) {
+                    favoritos.append(favorito)
+                }
+            }
+            
+            completionHandler(favoritos)
+        })
     }
     
     static func debtConsult(completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void,
-                            errorHandler: @escaping (ErrorHandler) -> Void) {
+                            errorHandler: @escaping (ErrorHandler) -> Void,
+                            finishHandler: @escaping (FinishHandler) -> Void) {
+        
         if let identifier = Session.sharedInstance.current.addService.identifier {
             PaymeApi.sessionManager.request(ServiciosRouter.consult(identifier)).responsePMJSON {
                 response in
+                
+                finishHandler()
+                
                 guard let json = response.result.value else {
                     if let error = response.error {
                         errorHandler(error)
@@ -106,32 +141,25 @@ struct Request {
                     return
                 }
                 
-                var servicios = [Service]()
-                
-                if json.array != nil {
-                    
-                    guard
-                        let name = json["clientName"].string,
-                        let array = json["services"].array
-                        else { return }
-                    
-                    array.forEach {
-                        if let servicio = Service(json: $0) {
-                            servicios.append(servicio)
-                        }
-                    }
-                    
-                    completionHandler(ResponseHandlerDebtConsult(name, servicios))
-                } else {
-                    
-                    guard
-                        let name = json["clientName"].string,
-                        let servicio = Service(json: json["services"])
-                        else { return }
-                    
-                    servicios.append(servicio)
-                    completionHandler(ResponseHandlerDebtConsult(name, servicios))
+                guard let name = json["clientName"].string else {
+                    return
                 }
+                
+                guard let array = json["services"].array else {
+                    if let service = Service(json: json["services"]) {
+                        completionHandler(ResponseHandlerDebtConsult(name, [service]))
+                    }
+                    return
+                }
+                
+                var servicios = [Service]()
+                array.forEach {
+                    if let servicio = Service(json: $0) {
+                        servicios.append(servicio)
+                    }
+                }
+                
+                completionHandler(ResponseHandlerDebtConsult(name, servicios))
             }
         }
     }

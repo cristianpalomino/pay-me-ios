@@ -24,10 +24,6 @@ class PMSuministroViewController: PMViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
     override func initComponents() {
         super.initComponents()
         prepare()
@@ -39,6 +35,21 @@ class PMSuministroViewController: PMViewController {
         suministroView.touchDelegate = self
         add(mainView: suministroView)
     }
+    
+    func callDebtConsult() {
+        Request.debtConsult(completionHandler: {
+            (response: ResponseHandlerDebtConsult) in
+            
+            Session.sharedInstance.current.addService.userName = response.name
+            Session.sharedInstance.current.addService.services = response.services
+        }, errorHandler: {
+            error in
+            print(error.localizedDescription.description.uppercased())
+        }, finishHandler: {
+            self.suministroView.hideLoadIndicator()
+            self.toSegue(identifier: "toDetalleSuministro")
+        })
+    }
 }
 
 extension PMSuministroViewController: Touchable {
@@ -46,15 +57,8 @@ extension PMSuministroViewController: Touchable {
     func touch(params: Any?) {
         if let identifier = params as? String {
             Session.sharedInstance.current.addService.identifier = identifier
-            Request.debtConsult(completionHandler: {
-                (response: ResponseHandlerDebtConsult) in
-                Session.sharedInstance.current.addService.userName = response.name
-                Session.sharedInstance.current.addService.services = response.services
-                self.toSegue(identifier: "toDetalleSuministro")
-            }, errorHandler: {
-                error in
-                self.toSegue(identifier: "toDetalleSuministro")
-            })
+            suministroView.showLoadIndicator()
+            callDebtConsult()
         }
     }
 }

@@ -24,7 +24,7 @@ import SwiftyJSON
 //    "nameService": "MATRICULA           ",
 //    "recibo": "12345678        "
 //},
-//"idService": "53",
+//"idServiceSPS": "53",
 //"nameService": "MATRICULA           "
 
 class Service: JSONObjectSerializable {
@@ -37,12 +37,21 @@ class Service: JSONObjectSerializable {
         
         guard
             let nameService = json["nameService"].string,
-            let idService = json["idService"].string,
-            let array = json["debts"].array
+            let idService = json["idServiceSPS"].string
             else { return nil }
         
         self.nameService = nameService
         self.idService = idService
+        
+        guard let array = json["debts"].array else {
+            if let debt = Debt(json: json["debts"]) {
+                debts.append(debt)
+            } else {
+                return nil
+            }
+            return
+        }
+        
         array.forEach {
             if let debt = Debt(json: $0) {
                 debts.append(debt)

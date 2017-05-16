@@ -21,13 +21,23 @@ class PMDetalleView: UIView {
     
     func initUI() {
         prepare()
-        loadBanners()
-        borders()
-        addStaticFields()
+        define()
+    }
+    
+    func define() {
+        let services = Session.sharedInstance.current.addService.services
+        if services.count > 1 {
+            mainButton.setTitle("Recordar servicio", for: .normal)
+        } else {
+            mainButton.setTitle("Agregar servicio", for: .normal)
+        }
     }
     
     func prepare() {
         mainButton.setGradientBackground()
+        loadBanners()
+        borders()
+        addStaticFields()
     }
     
     func borders() {
@@ -38,35 +48,35 @@ class PMDetalleView: UIView {
         codeField = PMTextField.instanceFromNib()
         codeField.initUI()
         codeField.leftView.isHidden = false
-        codeField.isUserInteractionEnabled = true
+        codeField.isUserInteractionEnabled = false
         codeField.translatesAutoresizingMaskIntoConstraints = false
         addSubview(codeField)
 
-        codeField.topAnchor.constraint(equalTo: frameBanner.bottomAnchor, constant: 72).isActive = true
+        codeField.topAnchor.constraint(equalTo: frameBanner.bottomAnchor, constant: 80).isActive = true
         codeField.leadingAnchor.constraint(equalTo:  leadingAnchor).isActive = true
         codeField.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
         nameField = PMTextField.instanceFromNib()
         nameField.initUI()
         nameField.leftView.isHidden = false
-        nameField.isUserInteractionEnabled = true
+        nameField.isUserInteractionEnabled = false
         nameField.translatesAutoresizingMaskIntoConstraints = false
         addSubview(nameField)
         
-        nameField.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 20).isActive = true
+        nameField.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 25).isActive = true
         nameField.leadingAnchor.constraint(equalTo:  leadingAnchor).isActive = true
         nameField.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
+        if let identifier = Session.sharedInstance.current.addService.identifier {
+            codeField.textField.text = identifier
+        }
         
-        if let name = Session.sharedInstance.current.addService.userName,
-            let id = Session.sharedInstance.current.addService.identifier {
-            codeField.textField.text = id
-            nameField.textField.text = name
-        }
-        else if let id = Session.sharedInstance.current.addService.identifier {
-            codeField.textField.text = id
+        guard let name = Session.sharedInstance.current.addService.userName else {
             nameField.isHidden = true
+            return
         }
+        
+        nameField.textField.text = name
     }
     
     func loadBanners() {
