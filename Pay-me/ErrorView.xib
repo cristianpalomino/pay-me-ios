@@ -1,20 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PMErrorView" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="68"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="border-gradiante" translatesAutoresizingMaskIntoConstraints="NO" id="hED-1V-YAo">
+                    <rect key="frame" x="0.0" y="0.0" width="275" height="68"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-recibos-asociados" translatesAutoresizingMaskIntoConstraints="NO" id="PDN-gT-3GX">
+                    <rect key="frame" x="15" y="23.5" width="21" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WQh-0D-a11"/>
+                        <constraint firstAttribute="width" constant="21" id="Zqv-aD-gjk"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIr-Be-0ah">
+                    <rect key="frame" x="51" y="10" width="209" height="48"/>
+                    <string key="text">No se ha encontrado recibos asociadosa este servicio, al guardarlo se lerevisará el próximo pago.</string>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hED-1V-YAo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6MY-sk-Ouy"/>
+                <constraint firstAttribute="bottom" secondItem="hED-1V-YAo" secondAttribute="bottom" id="9W9-NX-AyW"/>
+                <constraint firstAttribute="trailing" secondItem="tIr-Be-0ah" secondAttribute="trailing" constant="15" id="AHy-gU-1My"/>
+                <constraint firstItem="tIr-Be-0ah" firstAttribute="leading" secondItem="PDN-gT-3GX" secondAttribute="trailing" constant="15" id="GDu-es-JwC"/>
+                <constraint firstAttribute="bottom" secondItem="tIr-Be-0ah" secondAttribute="bottom" constant="10" id="Mot-x6-SIl"/>
+                <constraint firstItem="tIr-Be-0ah" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Nbx-0A-vqC"/>
+                <constraint firstItem="tIr-Be-0ah" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Y9c-S9-pKR"/>
+                <constraint firstAttribute="trailing" secondItem="hED-1V-YAo" secondAttribute="trailing" id="cHF-nM-8u7"/>
+                <constraint firstItem="PDN-gT-3GX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ePg-5v-J0w"/>
+                <constraint firstItem="PDN-gT-3GX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="lhx-mf-xFV"/>
+                <constraint firstItem="hED-1V-YAo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vX2-QT-ysR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelMessage" destination="tIr-Be-0ah" id="rKp-sf-qQh"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="-99"/>
+        </view>
+        <view contentMode="scaleToFill" id="zBg-nF-2UA" customClass="PMExtraView" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nY-mO-tKD">
+                    <rect key="frame" x="0.0" y="0.0" width="275" height="21"/>
+                    <connections>
+                        <action selector="tapNoEsMiServicio" destination="zBg-nF-2UA" eventType="touchUpInside" id="Lna-4b-INL"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-no-servicio" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-42-Ikt">
+                    <rect key="frame" x="0.0" y="0.0" width="21" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="P2b-7n-CoZ"/>
+                        <constraint firstAttribute="height" constant="21" id="jAX-aq-0aP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No es mi servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rji-xO-vff">
+                    <rect key="frame" x="30" y="4.5" width="237" height="13"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.51372549019607838" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1nY-mO-tKD" secondAttribute="trailing" id="286-NU-4QO"/>
+                <constraint firstItem="1nY-mO-tKD" firstAttribute="top" secondItem="zBg-nF-2UA" secondAttribute="top" id="3ne-ja-Lok"/>
+                <constraint firstItem="rhd-42-Ikt" firstAttribute="top" secondItem="zBg-nF-2UA" secondAttribute="top" id="90A-tq-FyR"/>
+                <constraint firstAttribute="bottom" secondItem="1nY-mO-tKD" secondAttribute="bottom" id="MZq-Xd-CPy"/>
+                <constraint firstItem="1nY-mO-tKD" firstAttribute="leading" secondItem="zBg-nF-2UA" secondAttribute="leading" id="R5Q-GJ-FXh"/>
+                <constraint firstItem="rji-xO-vff" firstAttribute="centerY" secondItem="rhd-42-Ikt" secondAttribute="centerY" id="SJv-cg-2dn"/>
+                <constraint firstItem="rji-xO-vff" firstAttribute="leading" secondItem="rhd-42-Ikt" secondAttribute="trailing" constant="9" id="gVn-m2-nv6"/>
+                <constraint firstAttribute="trailing" secondItem="rji-xO-vff" secondAttribute="trailing" constant="8" id="mdG-Cy-Qvg"/>
+                <constraint firstAttribute="bottom" secondItem="rhd-42-Ikt" secondAttribute="bottom" id="p2v-Nn-VNg"/>
+                <constraint firstItem="rhd-42-Ikt" firstAttribute="leading" secondItem="zBg-nF-2UA" secondAttribute="leading" id="xgb-gX-SJ1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-75" y="-5"/>
         </view>
     </objects>
+    <resources>
+        <image name="border-gradiante" width="275" height="68"/>
+        <image name="ic-no-servicio" width="21" height="21"/>
+        <image name="ic-recibos-asociados" width="21" height="21"/>
+    </resources>
 </document>

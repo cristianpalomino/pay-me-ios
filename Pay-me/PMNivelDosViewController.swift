@@ -28,8 +28,10 @@ class PMNivelDosViewController: PMViewController {
     
     func prepare() {
         if let servicioGeneral = Session.sharedInstance.current.servicioGeneral {
+            
             let pmSpinnerView = PMSpinnerView(frame: container.bounds)
             pmSpinnerView.centerView.centerType = .white
+            pmSpinnerView.backgroundColor = UIColor(red: 245/255, green: 247/255, blue: 250/255, alpha: 1)
             pmSpinnerView.items = servicioGeneral.items
             pmSpinnerView.delegate = self
             pmSpinnerView.spinnerType = SpinnerType(rawValue: servicioGeneral.items.count) ?? .point
@@ -41,6 +43,7 @@ class PMNivelDosViewController: PMViewController {
 extension PMNivelDosViewController: Touchable {
     
     func touch(params: Any?) {
+        
         if let view = params as? PMItemView {
             let index = view.tag
             if let sg = Session.sharedInstance.current.servicioGeneral {

@@ -30,6 +30,11 @@ class PMDetalleSuministroViewController: PMViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        Session.sharedInstance.clearAddService()
+    }
+    
     override func initComponents() {
         super.initComponents()
         prepare()

@@ -16,7 +16,7 @@ class PMDetalleView: UIView {
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var frameBanner: UIView!
     
-    weak var nameField: PMTextField!
+    weak var nameField: PMTextField?
     weak var codeField: PMTextField!
     
     func initUI() {
@@ -37,46 +37,78 @@ class PMDetalleView: UIView {
         mainButton.setGradientBackground()
         loadBanners()
         borders()
-        addStaticFields()
+        fields()
+        createExtraView()
     }
     
     func borders() {
         frameBanner.addBottomBorder()
     }
     
-    func addStaticFields() {
-        codeField = PMTextField.instanceFromNib()
-        codeField.initUI()
-        codeField.leftView.isHidden = false
-        codeField.isUserInteractionEnabled = false
-        codeField.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(codeField)
-
-        codeField.topAnchor.constraint(equalTo: frameBanner.bottomAnchor, constant: 80).isActive = true
-        codeField.leadingAnchor.constraint(equalTo:  leadingAnchor).isActive = true
-        codeField.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        
-        nameField = PMTextField.instanceFromNib()
-        nameField.initUI()
-        nameField.leftView.isHidden = false
-        nameField.isUserInteractionEnabled = false
-        nameField.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(nameField)
-        
-        nameField.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 25).isActive = true
-        nameField.leadingAnchor.constraint(equalTo:  leadingAnchor).isActive = true
-        nameField.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+    func fields() {
+        createCodeField()
         
         if let identifier = Session.sharedInstance.current.addService.identifier {
             codeField.textField.text = identifier
         }
         
         guard let name = Session.sharedInstance.current.addService.userName else {
-            nameField.isHidden = true
+            createErrorView()
             return
         }
         
-        nameField.textField.text = name
+        createNameField()
+        nameField?.textField.text = name
+    }
+    
+    func createCodeField() {
+        codeField = PMTextField.instanceFromNib()
+        codeField.initUI()
+        codeField.leftView.isHidden = false
+        codeField.isUserInteractionEnabled = false
+        codeField.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(codeField)
+        
+        codeField.topAnchor.constraint(equalTo: frameBanner.bottomAnchor, constant: 80).isActive = true
+        codeField.leadingAnchor.constraint(equalTo:  leadingAnchor).isActive = true
+        codeField.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+    }
+    
+    func createNameField() {
+        nameField = PMTextField.instanceFromNib()
+        nameField!.initUI()
+        nameField!.leftView.isHidden = false
+        nameField!.isUserInteractionEnabled = false
+        nameField!.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(nameField!)
+        
+        nameField!.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 25).isActive = true
+        nameField!.leadingAnchor.constraint(equalTo:  leadingAnchor).isActive = true
+        nameField!.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+    }
+    
+    func createErrorView() {
+        let errorView = PMErrorView.instanceFromNib()
+        errorView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(errorView)
+
+        errorView.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 30).isActive = true
+        errorView.leadingAnchor.constraint(equalTo:  leadingAnchor, constant: 30).isActive = true
+        errorView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
+    }
+    
+    func createExtraView() {
+        let extraView = PMExtraView.instanceFromNib()
+        extraView.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(extraView)
+        
+        if nameField != nil {
+            extraView.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 90).isActive = true
+        } else {
+            extraView.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 129).isActive = true
+        }
+        extraView.leadingAnchor.constraint(equalTo:  leadingAnchor, constant: 30).isActive = true
+        extraView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
     }
     
     func loadBanners() {
