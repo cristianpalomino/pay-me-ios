@@ -27,9 +27,9 @@ class PMDetalleView: UIView {
     func define() {
         let services = Session.sharedInstance.current.addService.services
         if services.count > 1 {
-            mainButton.setTitle("Recordar servicio", for: .normal)
+            mainButton.setTitle("    Recordar servicio", for: .normal)
         } else {
-            mainButton.setTitle("Agregar servicio", for: .normal)
+            mainButton.setTitle("    Agregar servicio", for: .normal)
         }
     }
     

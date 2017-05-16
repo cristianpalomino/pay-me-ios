@@ -35,4 +35,12 @@ struct Current {
     var addService: (identifier: String?, userName: String?, services: [Service]) = (nil, nil, [Service]())
 }
 
+extension Session {
+    
+    
+    func clearAddService() {
+        
+        current.addService = (nil, nil, [Service]())
+    }
+}
 
