@@ -33,18 +33,7 @@ class PMListaServiciosViewController: PMViewController {
     func prepare() {
         let listaServicios = PMListaServiciosView.instanceFromNib()
         listaServicios.initUI()
-        listaServicios.touchDelegate = self
         add(mainView: listaServicios)
-    }
-    
-    func showMessage() {
-        let message = showMessage(type: .SERVICE_SAVED)
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeA) {
-            message.touchView()
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeB) {
-                self.navigationController?.popToRootViewController(animated: true)
-            }
-        }
     }
 }
 

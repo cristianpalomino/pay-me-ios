@@ -10,8 +10,6 @@ import UIKit
 
 class PMListaServiciosView: UIView {
 
-    var touchDelegate: Touchable?
-
     @IBOutlet weak var frameTop: UIView!
     @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet weak var labelIdentifier: UILabel!
@@ -25,6 +23,10 @@ class PMListaServiciosView: UIView {
         return strings.components(separatedBy: ",")
     }
     
+    var servicios: [Service] {
+        return Session.sharedInstance.current.addService.services
+    }
+    
     func initUI() {
         prepare()
         loadBanners()
@@ -33,6 +35,14 @@ class PMListaServiciosView: UIView {
     
     func prepare() {
         mainButton.setGradientBackground()
+        loadBanners()
+        borders()
+        registerCell()
+    }
+    
+    func registerCell() {
+        let nib = UINib(nibName: "ServiceTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: ServiceTableViewCell.identifier)
     }
     
     func borders() {
@@ -51,11 +61,44 @@ class PMListaServiciosView: UIView {
 
     @IBAction func tapMain() {
         
+        let indexs = tableView.indexPathsForSelectedRows?.map({ $0.row })
+        var servicios = [Service]()
+        indexs?.forEach {
+            i in
+            servicios.append(self.servicios[i])
+        }
+        
     }
     
     class func instanceFromNib() -> PMListaServiciosView {
         return UINib(nibName: "ListaServicios",
                      bundle: nil).instantiate(withOwner:
                         nil, options: nil).first as! PMListaServiciosView
+    }
+}
+
+extension PMListaServiciosView: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 65
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) { }
+}
+
+extension PMListaServiciosView: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return servicios.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ServiceTableViewCell.identifier,
+                                                 for: indexPath) as! ServiceTableViewCell
+        let service = servicios[indexPath.row]
+        cell.set(service: service)
+        return cell
     }
 }

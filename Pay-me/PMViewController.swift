@@ -67,13 +67,6 @@ extension PMViewController {
         mainView.frame.size = CGSize(width: container.frame.size.width, height: container.frame.size.height - 35)
         container.addSubview(mainView)
     }
-    
-    func showMessage(type :MessageType) -> UINavigationController {
-        Session.sharedInstance.messageType = type
-        let message = UIStoryboard.createMessage()
-        self.present(message, animated: true, completion: nil)
-        return message
-    }
 }
 
 extension PMViewController {

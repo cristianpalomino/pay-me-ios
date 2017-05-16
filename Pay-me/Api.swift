@@ -127,7 +127,6 @@ struct Request {
     static func debtConsult(completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void,
                             errorHandler: @escaping (ErrorHandler) -> Void,
                             finishHandler: @escaping (FinishHandler) -> Void) {
-        
         if let identifier = Session.sharedInstance.current.addService.identifier {
             PaymeApi.sessionManager.request(ServiciosRouter.consult(identifier)).responsePMJSON {
                 response in
@@ -149,6 +148,8 @@ struct Request {
                     if let service = Service(json: json["services"]) {
                         completionHandler(ResponseHandlerDebtConsult(name, [service]))
                     }
+                    
+                    completionHandler(ResponseHandlerDebtConsult(name, []))
                     return
                 }
                 
@@ -160,6 +161,27 @@ struct Request {
                 }
                 
                 completionHandler(ResponseHandlerDebtConsult(name, servicios))
+            }
+        }
+    }
+    
+    static func addServices(completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void,
+                            errorHandler: @escaping (ErrorHandler) -> Void,
+                            finishHandler: @escaping (FinishHandler) -> Void) {
+        if let services = Session.sharedInstance.params.services {
+            PaymeApi.sessionManager.request(ServiciosRouter.add(services)).responsePMJSON {
+                response in
+                
+                finishHandler()
+                
+                guard let json = response.result.value else {
+                    if let error = response.error {
+                        errorHandler(error)
+                    }
+                    return
+                }
+                
+                print(json)
             }
         }
     }

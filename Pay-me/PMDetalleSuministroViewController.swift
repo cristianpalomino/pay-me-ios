@@ -32,7 +32,6 @@ class PMDetalleSuministroViewController: PMViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        Session.sharedInstance.clearAddService()
     }
     
     override func initComponents() {
@@ -43,14 +42,18 @@ class PMDetalleSuministroViewController: PMViewController {
     func prepare() {
         let detalleView = PMDetalleView.instanceFromNib()
         detalleView.initUI()
-        detalleView.touchDelegate = self
         add(mainView: detalleView)
     }
-}
-
-extension PMDetalleSuministroViewController: Touchable {
     
-    func touch(params: Any?) {
-        toSegue(identifier: "toListDetailSuministro")
+    func showMessage() {
+        
+        let message = UIStoryboard.createMessage()
+        present(message, animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeA) {
+            message.touchView()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeB) {
+                //self.navigationController?.popToRootViewController(animated: true)
+            }
+        }
     }
 }

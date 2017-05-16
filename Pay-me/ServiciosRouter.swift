@@ -9,15 +9,11 @@
 import Foundation
 import Alamofire
 
+
 enum ServiciosRouter: URLRequestConvertible {
     
-    //    enum TypeOperation: String {
-    //        case registro_servicios = "1"
-    //        case actualizacion_informacion_servicios = "2"
-    //    }
-    
     case consult(String)
-    case add
+    case add([Service])
     
     var path: String {
         switch self {
@@ -44,13 +40,33 @@ enum ServiciosRouter: URLRequestConvertible {
         
         switch self {
         case .consult(let identifier):
+            
             let current = Session.sharedInstance.current
             staticParams["idCompany"] = current.item!.idCompany.encrypt()
             staticParams["idServiceSPS"] = current.item!.idServiceSPS.encrypt()
             staticParams["serviceIdentifier"] = identifier.encrypt()
             staticParams["typeOperation"] = "1"
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)
-        case .add:
+            
+        case .add(let services):
+            
+            var params = ["requestService": [Any]()]
+            services.forEach {
+                i in
+                let service = ["owner": Session.sharedInstance.current.addService.userName,
+                            "idCompanySPS": Session.sharedInstance.current.item!.idCompany,
+                            "idServiceSPS": i.idServiceSPS,
+                            "alias": i.nameService,
+                            "serviceIdentifier": Session.sharedInstance.current.addService.identifier]
+                let item = ["service": service,
+                            "idCardholder": Constants.Debug.ID_CARDHOLDER.encrypt(),
+                            "idCommerce": Constants.Debug.ID_COMERCIO,
+                            "macAddress": Constants.Debug.MAC_ADDRESS.encrypt()] as [String : Any]
+                params["requestService"]!.append(item)
+            }
+            
+            print(params)
+            
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)
         }
         

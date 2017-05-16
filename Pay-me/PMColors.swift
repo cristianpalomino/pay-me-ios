@@ -10,7 +10,35 @@ import UIKit
 import Foundation
 
 extension UIColor {
-
+    
+    class var pmPaleGrey80: UIColor {
+        return UIColor(red: 230.0 / 255.0, green: 233.0 / 255.0, blue: 237.0 / 255.0, alpha: 0.8)
+    }
+    
+    class var pmWhite50: UIColor {
+        return UIColor(white: 255.0 / 255.0, alpha: 0.5)
+    }
+    
+    class var pmWhite20: UIColor {
+        return UIColor(white: 255.0 / 255.0, alpha: 0.2)
+    }
+    
+    class var pmSlateGrey: UIColor {
+        return UIColor(red: 101.0 / 255.0, green: 109.0 / 255.0, blue: 120.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var pmPaleGreyTwo: UIColor {
+        return UIColor(red: 230.0 / 255.0, green: 233.0 / 255.0, blue: 237.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var pmCharcoalGrey: UIColor {
+        return UIColor(red: 67.0 / 255.0, green: 74.0 / 255.0, blue: 84.0 / 255.0, alpha: 1.0)
+    }
+    
+    class var pmDeepSkyBlue: UIColor {
+        return UIColor(red: 0.0, green: 131.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
+    }
+    
     public class func appBlueColor() -> UIColor {
         return UIColor(red: 0/255, green: 131/255, blue: 255/255, alpha: 1)
     }

@@ -23,24 +23,20 @@ class ServiceTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        self.imageViewState.image = selected ? UIImage(named: "icono_check") : UIImage(named: "icono_agregar")
+        self.imageViewState.image = selected ? UIImage(named: "icono-agregado") : UIImage(named: "icono-agregar")
+        self.imageViewService.image = selected ? UIImage(named: "icono-servicio-degradado") : UIImage(named: "icono-servicio")
     }
 }
 
 extension ServiceTableViewCell {
     
-    func set(debt: Debt) {
-        self.labelNameService.text = debt.nameService.capitalized
-        self.imageViewState.image = isSelected ? UIImage(named: "icono_check") : UIImage(named: "icono_agregar")
+    func set(service: Service) {
+        self.labelNameService.text = service.nameService
+        self.imageViewState.image = isSelected ? UIImage(named: "icono-agregado") : UIImage(named: "icono-agregar")
     }
 }
 
 extension ServiceTableViewCell {
-    
-    func primaryStyle() {
-//        let side = self.add.frame.width
-//        self.add.backgroundColor = UIColor.lightGray
-    }
 
     func addStyles() {
         self.imageViewService.layer.cornerRadius = self.imageViewService.frame.height * 0.5

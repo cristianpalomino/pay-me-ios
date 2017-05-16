@@ -30,8 +30,7 @@ class PMNivelDosViewController: PMViewController {
         if let servicioGeneral = Session.sharedInstance.current.servicioGeneral {
             
             let pmSpinnerView = PMSpinnerView(frame: container.bounds)
-            pmSpinnerView.centerView.centerType = .white
-            pmSpinnerView.backgroundColor = UIColor(red: 245/255, green: 247/255, blue: 250/255, alpha: 1)
+            pmSpinnerView.backgroundColor = UIColor.pmPaleGrey80
             pmSpinnerView.items = servicioGeneral.items
             pmSpinnerView.delegate = self
             pmSpinnerView.spinnerType = SpinnerType(rawValue: servicioGeneral.items.count) ?? .point

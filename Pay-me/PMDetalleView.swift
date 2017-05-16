@@ -10,14 +10,18 @@ import UIKit
 
 class PMDetalleView: UIView {
 
-    var touchDelegate: Touchable?
-    
     @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var frameBanner: UIView!
+    @IBOutlet weak var labelService: UILabel!
     
     weak var nameField: PMTextField?
     weak var codeField: PMTextField!
+    
+    var hasServices: Bool {
+        let services = Session.sharedInstance.current.addService.services
+        return services.count > 1
+    }
     
     func initUI() {
         prepare()
@@ -25,11 +29,10 @@ class PMDetalleView: UIView {
     }
     
     func define() {
-        let services = Session.sharedInstance.current.addService.services
-        if services.count > 1 {
-            mainButton.setTitle("    Recordar servicio", for: .normal)
-        } else {
+        if hasServices {
             mainButton.setTitle("    Agregar servicio", for: .normal)
+        } else {
+            mainButton.setTitle("    Recordar servicio", for: .normal)
         }
     }
     
@@ -94,7 +97,7 @@ class PMDetalleView: UIView {
 
         errorView.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 30).isActive = true
         errorView.leadingAnchor.constraint(equalTo:  leadingAnchor, constant: 30).isActive = true
-        errorView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
+        errorView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30).isActive = true
     }
     
     func createExtraView() {
@@ -108,7 +111,7 @@ class PMDetalleView: UIView {
             extraView.topAnchor.constraint(equalTo: codeField.bottomAnchor, constant: 129).isActive = true
         }
         extraView.leadingAnchor.constraint(equalTo:  leadingAnchor, constant: 30).isActive = true
-        extraView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
+        extraView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30).isActive = true
     }
     
     func loadBanners() {
@@ -122,12 +125,20 @@ class PMDetalleView: UIView {
     }
     
     @IBAction func tapMain() {
-        touchDelegate?.touch(params: nil)
+        if hasServices {
+            parentViewController.toSegue(identifier: "toListDetailSuministro")
+        } else {
+            
+        }
     }
     
     class func instanceFromNib() -> PMDetalleView {
         return UINib(nibName: "DetalleView",
                      bundle: nil).instantiate(withOwner:
                         nil, options: nil).first as! PMDetalleView
+    }
+    
+    var parentViewController: PMDetalleSuministroViewController {
+        return parentUIViewController as! PMDetalleSuministroViewController
     }
 }

@@ -30,18 +30,18 @@ import SwiftyJSON
 class Service: JSONObjectSerializable {
 
     var nameService: String
-    var idService: String
+    var idServiceSPS: String
     var debts = [Debt]()
     
     required init?(json: JSON) {
         
         guard
             let nameService = json["nameService"].string,
-            let idService = json["idServiceSPS"].string
+            let idServiceSPS = json["idServiceSPS"].string
             else { return nil }
         
         self.nameService = nameService
-        self.idService = idService
+        self.idServiceSPS = idServiceSPS
         
         guard let array = json["debts"].array else {
             if let debt = Debt(json: json["debts"]) {

@@ -12,7 +12,7 @@ import UIKit
 extension UIView {
     
     open var borderColor: UIColor {
-        return UIColor(hexColor: "#ccd1d9")
+        return UIColor.pmPaleGreyTwo
     }
     
     func addBottomBorder() {
@@ -43,6 +43,17 @@ extension UIView {
     
     func circle() {
         layer.cornerRadius = frame.height * 0.5
+    }
+    
+    var parentUIViewController: UIViewController? {
+        var parentResponder: UIResponder? = self
+        while parentResponder != nil {
+            parentResponder = parentResponder!.next
+            if let viewController = parentResponder as? UIViewController {
+                return viewController
+            }
+        }
+        return nil
     }
 }
 

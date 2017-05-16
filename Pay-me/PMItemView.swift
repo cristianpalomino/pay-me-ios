@@ -51,7 +51,7 @@ class PMItemView: UIButton {
     func initImage() {
         imageItem = UIImageView()
         imageItem.image = item.image.withRenderingMode(.alwaysTemplate)
-        imageItem.tintColor = UIColor.appBlueColor()
+        imageItem.tintColor = UIColor.pmDeepSkyBlue
         imageItem.contentMode = .scaleAspectFit
         imageItem.translatesAutoresizingMaskIntoConstraints = false
         circleView.addSubview(imageItem)
@@ -75,7 +75,7 @@ class PMItemView: UIButton {
         labelItem = UILabel()
         labelItem.text = item.title
         labelItem.textAlignment = .center
-        labelItem.textColor = UIColor(hexColor: "#434a54")
+        labelItem.textColor = UIColor.pmCharcoalGrey
         labelItem.font = UIFont.SFMedium(size: 10)
         labelItem.translatesAutoresizingMaskIntoConstraints = false
         addSubview(labelItem)

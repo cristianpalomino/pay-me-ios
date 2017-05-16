@@ -10,7 +10,6 @@ import UIKit
 
 class PMCenterView: UIView {
     
-    var centerType: CenterType = .blue
     var shouldSetupFrame = true
     
     var imageBackground: UIImageView!
@@ -49,16 +48,17 @@ class PMCenterView: UIView {
     }
     
     func centerImage() {
-        switch centerType {
-        case .white:
-            if let sg = Session.sharedInstance.current.servicioGeneral {
-                imageCenter.image = UIImage(named: sg.logo)!.withRenderingMode(.alwaysTemplate)
-                imageCenter.tintColor = UIColor(hexColor: "#656774")
-            }
-            break
-        case .blue:
-            break
+        guard let sg = Session.sharedInstance.current.servicioGeneral else {
+            prepareImageCenter(named: "isotipo-pay-me")
+            return
         }
+        
+        prepareImageCenter(named: sg.logo)
+    }
+    
+    func prepareImageCenter(named: String) {
+        imageCenter.image = UIImage(named: named)!.withRenderingMode(.alwaysTemplate)
+        imageCenter.tintColor = UIColor.pmSlateGrey
         
         imageCenter.contentMode = .scaleAspectFit
         imageCenter.translatesAutoresizingMaskIntoConstraints = false
@@ -69,29 +69,13 @@ class PMCenterView: UIView {
     }
     
     func centerImageBackground() {
-        switch centerType {
-        case .white:
-            imageBackground.frame = frameImage
-            imageBackground.image = UIImage(named: "center-icon-dos")
-            break
-        case .blue:
-            imageBackground.frame = frameImage
-            imageBackground.image = UIImage(named: "center-icon")
-            break
-        }
+        imageBackground.frame = frameImage
+        imageBackground.image = UIImage(named: "center-icon-dos")
     }
     
     override func addCircleBorder() {
-        switch centerType {
-        case .white:
-            layer.addSublayer(circleLayer(multiplier: 1.15, color: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 50)))
-            layer.addSublayer(circleLayer(multiplier: 1.3, color: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 20)))
-            break
-        case .blue:
-            layer.addSublayer(circleLayer(multiplier: 1.15, color: UIColor(hexColor: "#0377f2")))
-            layer.addSublayer(circleLayer(multiplier: 1.3, color: UIColor(hexColor: "#0471ec")))
-            break
-        }
+        layer.addSublayer(circleLayer(multiplier: 1.15, color: UIColor.pmWhite50))
+        layer.addSublayer(circleLayer(multiplier: 1.4, color: UIColor.pmWhite20))
     }
     
     func circleLayer(multiplier: CGFloat, color: UIColor) -> CAShapeLayer {
@@ -110,10 +94,4 @@ class PMCenterView: UIView {
     var frameImage: CGRect {
         return CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height)
     }
-}
-
-enum CenterType {
-    
-    case blue
-    case white
 }

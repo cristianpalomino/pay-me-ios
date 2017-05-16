@@ -32,6 +32,7 @@ class PMNivelUnoViewController: PMViewController {
     
     func prepare() {
         let pmSpinnerView = PMSpinnerView(frame: container.bounds)
+        pmSpinnerView.backgroundColor = UIColor.pmPaleGrey80
         pmSpinnerView.delegate = self
         pmSpinnerView.items = items
         pmSpinnerView.spinnerType = .square

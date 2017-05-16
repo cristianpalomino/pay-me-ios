@@ -25,10 +25,8 @@ class PMErrorView: UIView {
 
 class PMExtraView: UIView {
     
-    var touchDelegate: Touchable?
-    
-    @IBAction func tapNoEsMiServicio() {
-        touchDelegate?.touch(params: nil)
+    @IBAction func tapButton() {
+        parentUIViewController?.navigationController?.popViewController(animated: true)
     }
     
     class func instanceFromNib() -> PMExtraView {
