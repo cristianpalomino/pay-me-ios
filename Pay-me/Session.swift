@@ -10,7 +10,6 @@ import Foundation
 
 class Session {
     
-    var params = Params()
     var current = Current()
     var staticData = Static()
     
@@ -19,19 +18,11 @@ class Session {
     
     static let sharedInstance = Session()
     fileprivate init() {}
+}
+
+struct Current {
     
-    
-    struct Current {
-        
-        var servicioGeneral: ServicioGeneral?
-        var categoria: Categoria?
-        var item: Item?
-        
-        var addService: (identifier: String?, userName: String?, services: [Service]) = (nil, nil, [Service]())
-    }
-    
-    struct Params {
-        
-        var services: [Service]?
-    }
+    var servicioGeneral: ServicioGeneral?
+    var categoria: Categoria?
+    var item: Item?
 }

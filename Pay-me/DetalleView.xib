@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -48,7 +48,7 @@
                     </constraints>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmH-wO-WRh">
-                    <rect key="frame" x="30" y="101" width="164.5" height="18"/>
+                    <rect key="frame" x="30" y="101" width="169.5" height="18"/>
                     <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
                     <color key="textColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -82,6 +82,7 @@
             <connections>
                 <outlet property="frameBanner" destination="D6c-g8-aDT" id="yG1-LF-dqq"/>
                 <outlet property="imgBanner" destination="Vw6-uH-yGR" id="Ytq-ap-YU7"/>
+                <outlet property="labelService" destination="hmH-wO-WRh" id="pNc-Fe-mJ4"/>
                 <outlet property="mainButton" destination="1cf-f9-9oz" id="a4q-NO-ou7"/>
             </connections>
         </view>

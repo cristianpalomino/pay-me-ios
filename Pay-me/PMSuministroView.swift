@@ -10,8 +10,6 @@ import UIKit
 
 class PMSuministroView: UIView {
     
-    var touchDelegate: Touchable?
-    
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
@@ -31,14 +29,7 @@ class PMSuministroView: UIView {
         return strings.components(separatedBy: ",")
     }
     
-    var identifier: String {
-        get {
-            return self.identifier
-        }
-        set (newValue) {
-            self.identifier = newValue
-        }
-    }
+    var identifier: String?
     
     func initUI() {
         keyBoardObservers()
@@ -150,8 +141,12 @@ class PMSuministroView: UIView {
     }
     
     @IBAction func tapMain() {
-        let identifier = field.textField.text
-        touchDelegate?.touch(params: identifier)
+        guard let text = field.textField.text else {
+            return
+        }
+        
+        identifier = text
+        parentViewController.consultService()
     }
     
     func showsKeyBoard(notification: NSNotification) {
@@ -166,5 +161,9 @@ class PMSuministroView: UIView {
         return UINib(nibName: "SuministroView",
                      bundle: nil).instantiate(withOwner:
                         nil, options: nil).first as! PMSuministroView
+    }
+    
+    var parentViewController: PMSuministroViewController {
+        return parentUIViewController as! PMSuministroViewController
     }
 }

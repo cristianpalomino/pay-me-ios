@@ -13,6 +13,7 @@ class PMSuministroViewController: PMViewController {
     
     var suministroView: PMSuministroView!
     
+    
     override var headerTitle: String {
         guard let title = Session.sharedInstance.current.item?.empresa.shortName else {
             return "NONE"
@@ -32,35 +33,42 @@ class PMSuministroViewController: PMViewController {
     func prepare() {
         suministroView = PMSuministroView.instanceFromNib()
         suministroView.initUI()
-        suministroView.touchDelegate = self
         add(mainView: suministroView)
     }
     
     func callDebtConsult() {
-        Request.debtConsult(completionHandler: {
-            (response: ResponseHandlerDebtConsult) in
-            
-            Session.sharedInstance.current.addService.userName = response.name
-            Session.sharedInstance.current.addService.services = response.services
-        }, errorHandler: {
-            error in
-            print(error.localizedDescription.description.uppercased())
-        }, finishHandler: {
-            self.suministroView.hideLoadIndicator()
-            self.toSegue(identifier: "toDetalleSuministro")
-        })
+        if let identifier = suministroView.identifier {
+            Request.debtConsult(identifier: identifier, completionHandler: { response in
+                
+                self.responseConsult = response
+                self.hideIndicator()
+            }, errorHandler: { error in
+                
+                print(error.localizedDescription)
+                self.hideIndicator()
+            })
+        }
     }
-}
-
-extension PMSuministroViewController: Touchable {
     
-    func touch(params: Any?) {
-        if let identifier = params as? String {
-            Session.sharedInstance.current.addService.identifier = identifier
-            suministroView.showLoadIndicator()
-            callDebtConsult()
+    func consultService() {
+        suministroView.showLoadIndicator()
+        callDebtConsult()
+    }
+    
+    func hideIndicator() {
+        suministroView.hideLoadIndicator()
+        toSegue(identifier: "toDetalleSuministro")
+    }
+    
+    var responseConsult: ResponseHandlerDebtConsult?
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dvc = segue.destination as? PMDetalleSuministroViewController {
+            dvc.identifier = suministroView.identifier
+            dvc.responseConsult = responseConsult
         }
     }
 }
+
 
 

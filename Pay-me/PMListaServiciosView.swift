@@ -23,10 +23,6 @@ class PMListaServiciosView: UIView {
         return strings.components(separatedBy: ",")
     }
     
-    var servicios: [Service] {
-        return Session.sharedInstance.current.addService.services
-    }
-    
     func initUI() {
         prepare()
         loadBanners()
@@ -61,12 +57,12 @@ class PMListaServiciosView: UIView {
 
     @IBAction func tapMain() {
         
-        let indexs = tableView.indexPathsForSelectedRows?.map({ $0.row })
-        var servicios = [Service]()
-        indexs?.forEach {
-            i in
-            servicios.append(self.servicios[i])
-        }
+//        let indexs = tableView.indexPathsForSelectedRows?.map({ $0.row })
+//        var servicios = [Service]()
+//        indexs?.forEach {
+//            i in
+//            servicios.append(self.servicios[i])
+//        }
         
     }
     
@@ -77,28 +73,4 @@ class PMListaServiciosView: UIView {
     }
 }
 
-extension PMListaServiciosView: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 65
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) { }
-}
 
-extension PMListaServiciosView: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return servicios.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ServiceTableViewCell.identifier,
-                                                 for: indexPath) as! ServiceTableViewCell
-        let service = servicios[indexPath.row]
-        cell.set(service: service)
-        return cell
-    }
-}

@@ -424,8 +424,8 @@
 			children = (
 				4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */,
 				4FC042711EC3D37800B93031 /* PMListadoView.swift */,
-				4FC042741EC3D38700B93031 /* ListadoView.xib */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
+				4FC042741EC3D38700B93031 /* ListadoView.xib */,
 				4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */,
 			);
 			name = Favoritos;

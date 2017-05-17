@@ -30,23 +30,33 @@ class PMDetalleSuministroViewController: PMViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-    }
-    
     override func initComponents() {
         super.initComponents()
         prepare()
     }
     
+    var detalleView: PMDetalleView!
+    
     func prepare() {
-        let detalleView = PMDetalleView.instanceFromNib()
-        detalleView.initUI()
+        detalleView = PMDetalleView.instanceFromNib()
+        detalleView.initUI(viewController: self)
         add(mainView: detalleView)
     }
     
-    func showMessage() {
+    func callAddService() {
+        guard
+            let service = detalleView.selectedService,
+            let owner = responseConsult?.name,
+            let identifier = self.identifier else { return }
         
+        Request.addServices(services: [service], owner: owner, identifier: identifier, completionHandler: { response in
+            self.showMessage()
+        }, errorHandler: { error in
+            
+        })
+    }
+    
+    func showMessage() {
         let message = UIStoryboard.createMessage()
         present(message, animated: true, completion: nil)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeA) {
@@ -56,4 +66,7 @@ class PMDetalleSuministroViewController: PMViewController {
             }
         }
     }
+    
+    var responseConsult: ResponseHandlerDebtConsult?
+    var identifier: String?
 }

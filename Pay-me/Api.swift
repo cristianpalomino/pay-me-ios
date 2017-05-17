@@ -27,7 +27,6 @@ protocol JSONObjectSerializable {
     init?(json: JSON)
 }
 
-typealias FinishHandler = Void
 typealias ErrorHandler = Error
 typealias ResponseHandlerFavoritos = [Favorito]
 typealias ResponseHandlerDebtConsult = (name: String, services: [Service])
@@ -91,13 +90,9 @@ struct PaymeApi {
 
 struct Request {
     
-    static func getFavoritos(completionHandler: @escaping (ResponseHandlerFavoritos) -> Void,
-                             errorHandler: @escaping (ErrorHandler) -> Void,
-                             finishHandler: @escaping (FinishHandler) -> Void) {
+    static func getFavoritos(completionHandler: @escaping (ResponseHandlerFavoritos) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
         PaymeApi.sessionManager.request(FavoritosRouter.list).responsePMJSON(completionHandler: {
             response in
-            
-            finishHandler()
             
             guard let json = response.result.value else {
                 if let error = response.error {
@@ -124,21 +119,14 @@ struct Request {
         })
     }
     
-    static func debtConsult(completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void,
-                            errorHandler: @escaping (ErrorHandler) -> Void,
-                            finishHandler: @escaping (FinishHandler) -> Void) {
-        if let identifier = Session.sharedInstance.current.addService.identifier {
-            PaymeApi.sessionManager.request(ServiciosRouter.consult(identifier)).responsePMJSON {
-                response in
+    static func debtConsult(identifier: String, completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
+        PaymeApi.sessionManager.request(ServiciosRouter.consult(identifier: identifier)).responseJSON {
+            response in
+            
+            switch response.result {
+            case .success(let value):
                 
-                finishHandler()
-                
-                guard let json = response.result.value else {
-                    if let error = response.error {
-                        errorHandler(error)
-                    }
-                    return
-                }
+                let json = JSON(value)
                 
                 guard let name = json["clientName"].string else {
                     return
@@ -147,6 +135,7 @@ struct Request {
                 guard let array = json["services"].array else {
                     if let service = Service(json: json["services"]) {
                         completionHandler(ResponseHandlerDebtConsult(name, [service]))
+                        return
                     }
                     
                     completionHandler(ResponseHandlerDebtConsult(name, []))
@@ -161,27 +150,30 @@ struct Request {
                 }
                 
                 completionHandler(ResponseHandlerDebtConsult(name, servicios))
+                
+                break
+            case .failure(let error):
+                errorHandler(error)
+                break
             }
         }
     }
     
-    static func addServices(completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void,
-                            errorHandler: @escaping (ErrorHandler) -> Void,
-                            finishHandler: @escaping (FinishHandler) -> Void) {
-        if let services = Session.sharedInstance.params.services {
-            PaymeApi.sessionManager.request(ServiciosRouter.add(services)).responsePMJSON {
-                response in
+    static func addServices(services: [Service], owner: String, identifier: String, completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
+        PaymeApi.sessionManager.request(ServiciosRouter.add(services: services, owner: owner, identifier: identifier)).responseJSON {
+            response in
+           
+            switch response.result {
+            case .success(let value):
                 
-                finishHandler()
-                
-                guard let json = response.result.value else {
-                    if let error = response.error {
-                        errorHandler(error)
-                    }
-                    return
-                }
+                let json = JSON(value)
                 
                 print(json)
+                
+                break
+            case .failure(let error):
+                errorHandler(error)
+                break
             }
         }
     }

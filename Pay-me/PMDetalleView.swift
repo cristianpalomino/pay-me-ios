@@ -9,7 +9,9 @@
 import UIKit
 
 class PMDetalleView: UIView {
-
+    
+    var viewController: PMDetalleSuministroViewController!
+    
     @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet weak var mainButton: UIButton!
     @IBOutlet weak var frameBanner: UIView!
@@ -18,21 +20,23 @@ class PMDetalleView: UIView {
     weak var nameField: PMTextField?
     weak var codeField: PMTextField!
     
-    var hasServices: Bool {
-        let services = Session.sharedInstance.current.addService.services
-        return services.count > 1
-    }
-    
-    func initUI() {
+    func initUI(viewController: PMDetalleSuministroViewController!) {
+        self.viewController = viewController
         prepare()
         define()
     }
     
     func define() {
-        if hasServices {
-            mainButton.setTitle("    Agregar servicio", for: .normal)
-        } else {
+        guard let response = viewController.responseConsult else { return }
+        let services = response.services
+        
+        if services.isEmpty {
             mainButton.setTitle("    Recordar servicio", for: .normal)
+        } else if services.count == 1 {
+            labelService.text = services.first!.nameService
+            mainButton.setTitle("    Recordar servicio", for: .normal)
+        } else {
+            mainButton.setTitle("    Agregar servicio", for: .normal)
         }
     }
     
@@ -51,17 +55,19 @@ class PMDetalleView: UIView {
     func fields() {
         createCodeField()
         
-        if let identifier = Session.sharedInstance.current.addService.identifier {
+        if let identifier = viewController.identifier {
             codeField.textField.text = identifier
         }
         
-        guard let name = Session.sharedInstance.current.addService.userName else {
+        guard
+            let response = viewController.responseConsult
+        else {
             createErrorView()
             return
         }
         
         createNameField()
-        nameField?.textField.text = name
+        nameField?.textField.text = response.name
     }
     
     func createCodeField() {
@@ -124,11 +130,20 @@ class PMDetalleView: UIView {
         }
     }
     
+    var selectedService: Service? {
+        return viewController.responseConsult!.services.first!
+    }
+    
     @IBAction func tapMain() {
-        if hasServices {
-            parentViewController.toSegue(identifier: "toListDetailSuministro")
+        guard let response = viewController.responseConsult else { return }
+        let services = response.services
+        
+        if services.isEmpty {
+            viewController.showMessage()
+        } else if services.count == 1 {
+            viewController.callAddService()
         } else {
-            
+            viewController.toSegue(identifier: "toListDetailSuministro")
         }
     }
     
@@ -136,9 +151,5 @@ class PMDetalleView: UIView {
         return UINib(nibName: "DetalleView",
                      bundle: nil).instantiate(withOwner:
                         nil, options: nil).first as! PMDetalleView
-    }
-    
-    var parentViewController: PMDetalleSuministroViewController {
-        return parentUIViewController as! PMDetalleSuministroViewController
     }
 }

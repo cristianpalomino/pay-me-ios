@@ -32,12 +32,12 @@ class PMListadoFavoritosViewController: PMViewController {
     func request() {
         Request.getFavoritos(completionHandler: {
             (response: ResponseHandlerFavoritos) in
+            
             self.listadoView!.favoritos = response
+            self.listadoView!.reloadTableView()
         }, errorHandler: {
             error in
             
-        }, finishHandler: {
-            self.listadoView!.reloadTableView()
         })
     }
     

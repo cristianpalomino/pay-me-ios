@@ -12,8 +12,8 @@ import Alamofire
 
 enum ServiciosRouter: URLRequestConvertible {
     
-    case consult(String)
-    case add([Service])
+    case consult(identifier: String)
+    case add(services: [Service], owner: String, identifier: String)
     
     var path: String {
         switch self {
@@ -39,37 +39,54 @@ enum ServiciosRouter: URLRequestConvertible {
         urlRequest.httpMethod = method.rawValue
         
         switch self {
-        case .consult(let identifier):
-            
-            let current = Session.sharedInstance.current
-            staticParams["idCompany"] = current.item!.idCompany.encrypt()
-            staticParams["idServiceSPS"] = current.item!.idServiceSPS.encrypt()
-            staticParams["serviceIdentifier"] = identifier.encrypt()
-            staticParams["typeOperation"] = "1"
-            urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)
-            
-        case .add(let services):
-            
-            var params = ["requestService": [Any]()]
-            services.forEach {
-                i in
-                let service = ["owner": Session.sharedInstance.current.addService.userName,
-                            "idCompanySPS": Session.sharedInstance.current.item!.idCompany,
-                            "idServiceSPS": i.idServiceSPS,
-                            "alias": i.nameService,
-                            "serviceIdentifier": Session.sharedInstance.current.addService.identifier]
-                let item = ["service": service,
-                            "idCardholder": Constants.Debug.ID_CARDHOLDER.encrypt(),
-                            "idCommerce": Constants.Debug.ID_COMERCIO,
-                            "macAddress": Constants.Debug.MAC_ADDRESS.encrypt()] as [String : Any]
-                params["requestService"]!.append(item)
-            }
-            
-            print(params)
-            
-            urlRequest = try JSONEncoding.default.encode(urlRequest, with: staticParams)
+        case .consult:
+            urlRequest = try JSONEncoding.default.encode(urlRequest, with: params)
+        case .add:
+            urlRequest = try JSONEncoding.default.encode(urlRequest, with: params)
         }
         
         return urlRequest
+    }
+    
+    var params: Parameters {
+        let current = Session.sharedInstance.current
+        switch self {
+        case .consult(let identifier):
+            let localparams = [
+                            "idCardholder" : Constants.Debug.ID_CARDHOLDER.encrypt(),
+                            "idCommerce" : Constants.Debug.ID_COMERCIO,
+                            "macAddress" : Constants.Debug.MAC_ADDRESS.encrypt(),
+                            "idCompany" : current.item!.idCompany.encrypt(),
+                            "idServiceSPS" : current.item!.idServiceSPS.encrypt(),
+                            "serviceIdentifier" : identifier.encrypt(),
+                            "typeOperation" : "1"
+                            ]
+            return localparams
+        case .add(let services, let owner, let identifier):
+            
+                var localparams = ["requestService" : [Any]()]
+
+                services.forEach {
+                i in
+                    
+                    let service = [
+                                "owner" : owner,
+                                "idCompanySPS" : current.item!.idCompany,
+                                "idServiceSPS" : i.idServiceSPS,
+                                "alias" : i.nameService,
+                                "serviceIdentifier" : identifier
+                                ]
+            
+                    let item = [
+                            "service" : service,
+                            "idCardholder" : Constants.Debug.ID_CARDHOLDER.encrypt(),
+                            "idCommerce" : Constants.Debug.ID_COMERCIO,
+                            "macAddress" : Constants.Debug.MAC_ADDRESS.encrypt()
+                            ] as [String : Any]
+                    
+                    localparams["requestService"]!.append(item)
+                }
+            return localparams
+        }
     }
 }
