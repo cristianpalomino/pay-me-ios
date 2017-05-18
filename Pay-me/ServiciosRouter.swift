@@ -12,11 +12,14 @@ import Alamofire
 
 enum ServiciosRouter: URLRequestConvertible {
     
+    case list
     case consult(identifier: String)
     case add(services: [Service], owner: String, identifier: String)
     
     var path: String {
         switch self {
+        case .list:
+            return Constants.Api.URLs.EndPoints.CONSULTAR_SERVICIOS
         case .consult:
             return Constants.Api.URLs.EndPoints.CONSULTAR_DEUDAS
         case .add:
@@ -26,7 +29,7 @@ enum ServiciosRouter: URLRequestConvertible {
     
     var method: HTTPMethod {
         switch self {
-        case .consult, .add:
+        case .consult, .add, .list:
             return .post
         }
     }
@@ -39,6 +42,8 @@ enum ServiciosRouter: URLRequestConvertible {
         urlRequest.httpMethod = method.rawValue
         
         switch self {
+        case .list:
+            urlRequest = try JSONEncoding.default.encode(urlRequest, with: params)
         case .consult:
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: params)
         case .add:
@@ -51,6 +56,14 @@ enum ServiciosRouter: URLRequestConvertible {
     var params: Parameters {
         let current = Session.sharedInstance.current
         switch self {
+        case .list:
+            let localparams = [
+                            "idCardholder" : Constants.Debug.ID_CARDHOLDER.encrypt(),
+                            "idCommerce" : Constants.Debug.ID_COMERCIO,
+                            "macAddress" : Constants.Debug.MAC_ADDRESS.encrypt(),
+                            ]
+            return localparams
+            
         case .consult(let identifier):
             let localparams = [
                             "idCardholder" : Constants.Debug.ID_CARDHOLDER.encrypt(),
@@ -62,10 +75,9 @@ enum ServiciosRouter: URLRequestConvertible {
                             "typeOperation" : "1"
                             ]
             return localparams
-        case .add(let services, let owner, let identifier):
             
+        case .add(let services, let owner, let identifier):
                 var localparams = ["requestService" : [Any]()]
-
                 services.forEach {
                 i in
                     
@@ -78,14 +90,15 @@ enum ServiciosRouter: URLRequestConvertible {
                                 ]
             
                     let item = [
-                            "service" : service,
-                            "idCardholder" : Constants.Debug.ID_CARDHOLDER.encrypt(),
-                            "idCommerce" : Constants.Debug.ID_COMERCIO,
-                            "macAddress" : Constants.Debug.MAC_ADDRESS.encrypt()
-                            ] as [String : Any]
-                    
+                                "service" : service,
+                                "idCardholder" : Constants.Debug.ID_CARDHOLDER.encrypt(),
+                                "idCommerce" : Constants.Debug.ID_COMERCIO,
+                                "macAddress" : Constants.Debug.MAC_ADDRESS.encrypt()
+                                ] as [String : Any]
                     localparams["requestService"]!.append(item)
+                    
                 }
+                
             return localparams
         }
     }

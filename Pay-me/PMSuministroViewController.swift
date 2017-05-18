@@ -44,7 +44,6 @@ class PMSuministroViewController: PMViewController {
                 self.hideIndicator()
             }, errorHandler: { error in
                 
-                print(error.localizedDescription)
                 self.hideIndicator()
             })
         }

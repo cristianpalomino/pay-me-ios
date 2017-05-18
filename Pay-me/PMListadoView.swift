@@ -10,8 +10,6 @@ import UIKit
 
 class PMListadoView: UIView {
     
-    var touchDelegate: Touchable?
-    
     var titles: [(title: String,color: UIColor)] {
         return [("Todos",color: UIColor.appBlueColor()),
                 ("Pendientes de Pago",color: UIColor.appBlueColor()),
@@ -50,10 +48,6 @@ class PMListadoView: UIView {
     func reloadTableView() {
         tableView.reloadData()
     }
-    
-    @IBAction func tapMainButton() {
-        touchDelegate?.touch(params: nil)
-    }
 }
 
 extension PMListadoView: UITableViewDelegate {
@@ -62,9 +56,7 @@ extension PMListadoView: UITableViewDelegate {
         return 65
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapSelect")
-    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { }
 }
 
 extension PMListadoView: UITableViewDataSource {

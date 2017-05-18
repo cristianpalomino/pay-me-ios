@@ -114,8 +114,10 @@
 		408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */; };
 		408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
-		409889E51EC939CC0028FC67 /* FavoritosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E41EC939CC0028FC67 /* FavoritosRouter.swift */; };
-		409889E61EC939CF0028FC67 /* FavoritosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E41EC939CC0028FC67 /* FavoritosRouter.swift */; };
+		408D901C1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */; };
+		408D901D1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */; };
+		408D901E1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */; };
+		408D901F1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */; };
 		409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
 		409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
 		409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
@@ -287,7 +289,8 @@
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		409889E41EC939CC0028FC67 /* FavoritosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosRouter.swift; sourceTree = "<group>"; };
+		408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaRecibosViewController.swift; sourceTree = "<group>"; };
+		408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMListaRecibosViewController.xib; sourceTree = "<group>"; };
 		409889E71EC939E50028FC67 /* ServiciosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosRouter.swift; sourceTree = "<group>"; };
 		409889EA1ECABCBD0028FC67 /* PMErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMErrorView.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
@@ -479,6 +482,7 @@
 		4062C1421E380F3600617265 /* Adicionar */ = {
 			isa = PBXGroup;
 			children = (
+				4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */,
 				400190831E647CA30080DDA4 /* Favoritos */,
 				4FC042791EC4DE3800B93031 /* Primero */,
 				4FC0427A1EC4DE4200B93031 /* Segundo */,
@@ -504,8 +508,8 @@
 		4062C1501E3BC43F00617265 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				409889E31EC939BC0028FC67 /* Routers */,
 				4F28D7AE1EB8EC5500703CB4 /* Api.swift */,
+				409889E71EC939E50028FC67 /* ServiciosRouter.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -576,6 +580,15 @@
 			path = "Pay-meUITests";
 			sourceTree = "<group>";
 		};
+		408D90201ECE5985006CA163 /* Recibos */ = {
+			isa = PBXGroup;
+			children = (
+				408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */,
+				408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */,
+			);
+			name = Recibos;
+			sourceTree = "<group>";
+		};
 		408E501D1DFB6DF0007BEEDE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,15 +612,6 @@
 				407C036F1E0B530600CD5D4C /* PMLabel.swift */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		409889E31EC939BC0028FC67 /* Routers */ = {
-			isa = PBXGroup;
-			children = (
-				409889E41EC939CC0028FC67 /* FavoritosRouter.swift */,
-				409889E71EC939E50028FC67 /* ServiciosRouter.swift */,
-			);
-			name = Routers;
 			sourceTree = "<group>";
 		};
 		40A420191E24039A00D74D22 /* Historico */ = {
@@ -808,6 +812,7 @@
 		4FCC14A41EAE4C6200D6E7BC /* Pagar */ = {
 			isa = PBXGroup;
 			children = (
+				408D90201ECE5985006CA163 /* Recibos */,
 			);
 			name = Pagar;
 			sourceTree = "<group>";
@@ -815,7 +820,6 @@
 		4FCC14A51EAE4C6E00D6E7BC /* Servicio */ = {
 			isa = PBXGroup;
 			children = (
-				4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */,
 				4062C1421E380F3600617265 /* Adicionar */,
 				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
 			);
@@ -989,6 +993,7 @@
 				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4FB03A3B1EC4F85900AF82AE /* AgregarServicio.storyboard in Resources */,
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
+				408D901E1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
@@ -1029,6 +1034,7 @@
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
 				4FB03A3C1EC4F8E700AF82AE /* AgregarServicio.storyboard in Resources */,
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
+				408D901F1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
@@ -1201,7 +1207,6 @@
 				4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */,
 				407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */,
 				40293EFD1E40E2E3007EF98D /* Product.swift in Sources */,
-				409889E51EC939CC0028FC67 /* FavoritosRouter.swift in Sources */,
 				405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */,
 				4062C1481E3B994200617265 /* Security.swift in Sources */,
 				40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */,
@@ -1221,6 +1226,7 @@
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				4062C1581E3BE9A800617265 /* Service.swift in Sources */,
 				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
+				408D901C1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */,
 				4FC042721EC3D37800B93031 /* PMListadoView.swift in Sources */,
 				4FA8EFAD1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D8991EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
@@ -1290,7 +1296,6 @@
 				408CB6BC1E54E73D00D308D3 /* FavoritoTableViewCell.swift in Sources */,
 				408CB6BD1E54E73D00D308D3 /* PMLabel.swift in Sources */,
 				408CB6BE1E54E73D00D308D3 /* Product.swift in Sources */,
-				409889E61EC939CF0028FC67 /* FavoritosRouter.swift in Sources */,
 				408CB6BF1E54E73D00D308D3 /* Session.swift in Sources */,
 				408CB6C01E54E73D00D308D3 /* Security.swift in Sources */,
 				408CB6C11E54E73D00D308D3 /* PMItemCard.swift in Sources */,
@@ -1310,6 +1315,7 @@
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,
 				408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */,
 				4FC042731EC3D37800B93031 /* PMListadoView.swift in Sources */,
+				408D901D1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */,
 				4FA8EFAE1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D89A1EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
 				408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */,

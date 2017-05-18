@@ -10,7 +10,7 @@ import UIKit
 
 class PMListadoFavoritosViewController: PMViewController {    
     
-    var listadoView: PMListadoView?
+    var listadoView: PMListadoView!
     
     override var headerTitle: String {
         return "Mis Favoritos"
@@ -48,17 +48,12 @@ class PMListadoFavoritosViewController: PMViewController {
     
     func prepare() {
         listadoView = PMListadoView.instanceFromNib()
-        listadoView?.initUI()
-        listadoView?.touchDelegate = self
-        if let lv = listadoView {
-            add(mainView: lv)
-        }
+        listadoView.initUI()
+        add(mainView: listadoView)
+        listadoView.mainButton.addTarget(self, action: #selector(push), for: .touchUpInside)
     }
-}
-
-extension PMListadoFavoritosViewController: Touchable {
     
-    func touch(params: Any?) {
+    func push() {
         toSegue(identifier: "toPrimero")
     }
 }
