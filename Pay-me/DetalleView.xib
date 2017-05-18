@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PMDetalleView" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-f9-9oz">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="TUo-ZB-nwl"/>
+                        <constraint firstAttribute="height" constant="49" id="ixf-LA-JrZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                    <state key="normal" title="    Agregar otros servicios" image="icono_agregar-white">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapMain" destination="iN0-l3-epB" eventType="touchDown" id="uGB-rz-NpU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6c-g8-aDT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="Qio-3a-Bs4"/>
+                        <constraint firstAttribute="width" constant="320" id="cJD-bV-stY"/>
+                    </constraints>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación del servicio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmH-wO-WRh">
+                    <rect key="frame" x="30" y="101" width="164.5" height="18"/>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vw6-uH-yGR">
+                    <rect key="frame" x="10" y="10" width="300" height="41"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="jdV-DO-cGE"/>
+                        <constraint firstAttribute="height" constant="41" id="oGG-06-0w3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vw6-uH-yGR" firstAttribute="centerY" secondItem="D6c-g8-aDT" secondAttribute="centerY" id="7UO-3i-TI7"/>
+                <constraint firstItem="hmH-wO-WRh" firstAttribute="top" secondItem="D6c-g8-aDT" secondAttribute="bottom" constant="40" id="FTH-kF-Hhg"/>
+                <constraint firstItem="hmH-wO-WRh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="KLS-km-7b2"/>
+                <constraint firstItem="Vw6-uH-yGR" firstAttribute="centerX" secondItem="D6c-g8-aDT" secondAttribute="centerX" id="Ynd-mL-PdJ"/>
+                <constraint firstItem="D6c-g8-aDT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZlM-nE-9Qd"/>
+                <constraint firstAttribute="trailing" secondItem="1cf-f9-9oz" secondAttribute="trailing" id="bVC-vW-jOG"/>
+                <constraint firstItem="1cf-f9-9oz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="goe-U5-w4z"/>
+                <constraint firstAttribute="bottom" secondItem="1cf-f9-9oz" secondAttribute="bottom" id="vaG-Z1-SxT"/>
+                <constraint firstAttribute="trailing" secondItem="D6c-g8-aDT" secondAttribute="trailing" id="yhN-QX-c8H"/>
+                <constraint firstItem="D6c-g8-aDT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zyY-uW-Yti"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="frameBanner" destination="D6c-g8-aDT" id="yG1-LF-dqq"/>
+                <outlet property="imgBanner" destination="Vw6-uH-yGR" id="Ytq-ap-YU7"/>
+                <outlet property="labelService" destination="hmH-wO-WRh" id="pNc-Fe-mJ4"/>
+                <outlet property="mainButton" destination="1cf-f9-9oz" id="a4q-NO-ou7"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icono_agregar-white" width="21" height="21"/>
+    </resources>
+</document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+
 class PMLabel: UILabel {
     
     override func drawText(in rect: CGRect) {

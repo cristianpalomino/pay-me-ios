@@ -29,11 +29,11 @@ class Static {
 
 extension Static {
     
-    func getItem(idCompanySPS :String, idServiceSPS :String) -> Item? {
+    func getItem(idCompanySPS :String) -> Item? {
         for sg in self.serviciosGenerales {
             for categoria in sg.categorias {
                 for item in categoria.items {
-                    guard item.idCompany == idCompanySPS && item.idService == idServiceSPS else {
+                    guard item.idCompany == idCompanySPS else {
                         break
                     }
                     return item
@@ -46,22 +46,28 @@ extension Static {
 
 class ServicioGeneral {
     
-    var categorias      = [Categoria]()
-    var name            :String!
-    var logo            :String!
+    var categorias = [Categoria]()
+    var items = Items()
+    var name: String!
+    var logo: String!
     
     init(json :JSON) {
         self.name = json["name"].stringValue
+        self.logo = json["logo"].stringValue
         
         if let ja = json["categorias"].array {
             if !ja.isEmpty {
-                json["categorias"].arrayValue.forEach{self.categorias.append(Categoria(json: $0))}
+                json["categorias"].arrayValue.forEach {
+                    items.append(($0["name"].stringValue,
+                                  UIImage(named: $0["imageName"].stringValue)!))
+                    categorias.append(Categoria(json: $0))
+                }
             }
         }
     }
 }
 
-class Categoria {
+struct Categoria {
     
     var items           = [Item]()
     var idCategoria     :String!
@@ -119,20 +125,24 @@ class Item {
     
     var idCompany       :String!
     var idService       :String!
+    var idServiceSPS    :String!
     var logo            :String!
     var logo_2          :String!
     var codeDescription :String!
     var codeValidation  :String!
+    var label           :String!
     var empresa         :Empresa!
     
     init(json :JSON) {
         
         self.idCompany = json["idCompany"].stringValue
         self.idService = json["idService"].stringValue
+        self.idServiceSPS = json["idServiceSPS"].stringValue
         self.logo = json["logo"].stringValue
         self.logo_2 = json["logo_2"].stringValue
         self.codeDescription = json["codeDescription"].stringValue
         self.codeValidation = json["codeValidation"].stringValue
+        self.label  = json["label"].string
         self.empresa = Empresa(json: json["empresa"])
     }
 }

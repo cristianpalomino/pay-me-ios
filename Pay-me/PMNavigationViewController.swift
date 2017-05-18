@@ -13,36 +13,18 @@ class PMNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavigationLogo(isGradient: false)
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
-
-
-extension UIViewController {
-
-    func addNavigationLogo(isGradient :Bool) {
-        if isGradient {
-            self.navigationItem.titleView = UIImageView(image: UIImage(named: "nav-logo-gradient"))
-        } else {
-            self.navigationItem.titleView = UIImageView(image: UIImage(named: "nav-logo"))
-        }
-    }
-    
-    @IBAction func tapBack() {
-        self.navigationController!.popViewController(animated: true)
-    }
-    
-    @IBAction func tapClose() {
-        self.resignFirstResponder()
-        self.navigationController!.dismiss(animated: true, completion: nil)
-    }
-}
 
 
 

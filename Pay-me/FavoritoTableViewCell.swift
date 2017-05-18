@@ -10,20 +10,22 @@ import AlamofireImage
 import UIKit
 
 class FavoritoTableViewCell: UITableViewCell {
-    
-    var favoriteCellDelegate :FavoriteCellDelegate?
     static let identifier       = "favoritoCell"
     
-    @IBOutlet weak var icon     : UIImageView!
-    @IBOutlet weak var name     : UILabel!
-    @IBOutlet weak var entidad  : UILabel!
-    @IBOutlet weak var code     : UILabel!
-    @IBOutlet weak var estado   : UILabel!
-    @IBOutlet weak var monto    : UILabel!
+    var favoriteCellDelegate :FavoriteCellDelegate?
+    
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var buttonIcon: UIButton!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var entidad: UILabel!
+    @IBOutlet weak var code : UILabel!
+    @IBOutlet weak var estado: PMStateView!
+    @IBOutlet weak var monto : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        addStyles()
+        customSelection()
+        buttonIcon.addCircleBorder()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -34,55 +36,42 @@ class FavoritoTableViewCell: UITableViewCell {
 extension FavoritoTableViewCell {
     
     @IBAction func tapSeetings() {
-        
         favoriteCellDelegate?.tapFavorite()
     }
 }
 
 extension FavoritoTableViewCell {
     
-    func update(service :Service) {
-        let item = Session.sharedInstance.staticData.getItem(idCompanySPS: service.idCompanySPS, idServiceSPS: service.idServiceSPS)
-        
-        self.updateImage(url: item?.logo_2 ?? "NONE")
+    func update(favorito :Favorito) {
+        guard let item = Session.sharedInstance.staticData.getItem(idCompanySPS: favorito.idCompanySPS)  else {
+            return
+        }
     
-        if service.inSPR == "1" {
-            self.defineState(state: .CARGOS_RECURRENTES)
+        // INSPR
+        if favorito.inSPR != "1" {
+            estado.state = .cargos_recurrentes
         } else {
-            self.defineState(state: service.state)
+            estado.state = favorito.state
         }
         
-        self.name.text      = service.alias ?? "NONE"
-        self.entidad.text   = item?.empresa.name ?? "NONE"
-        self.code.text      = service.serviceIdentifier ?? "NONE"
-        
-        if let amount = service.amount {
-            self.monto.isHidden = false
-            self.monto.text     = amount.currency()
+        // ALIAS
+        if let alias = favorito.alias {
+            name.text = alias
         } else {
-            self.monto.isHidden = true
+            name.text = item.entidad
         }
-    }
-    
-    internal func defineState(state : ServiceStateType) {
-        switch state {
-        case .PENDIENTE_VERIFICACION:
-            self.estado.text = "   Pendiente de verificación   ".uppercased()
-            self.estado.backgroundColor = UIColor.appGrayColor()
-            break
-        case .PENDIENTE_PAGO:
-            self.estado.text = "   Pendiente de pago   ".uppercased()
-            self.estado.backgroundColor = UIColor.appRedColor()
-            break
-        case .PAGADO:
-            self.estado.text = "   Pagado   ".uppercased()
-            self.estado.backgroundColor = UIColor.appRedColor()
-            break
-        case .CARGOS_RECURRENTES:
-            self.estado.text = "   Cargo Automático   ".uppercased()
-            self.estado.backgroundColor = UIColor.appRedColor()
-            break
+        
+        // AMOUNT
+        if let amount = favorito.amount {
+            monto.isHidden = false
+            monto.text = amount.currency()
+        } else {
+            monto.isHidden = true
         }
+        
+        entidad.text = item.entidad
+        code.text = favorito.serviceIdentifier
+        updateImage(url: item.logo)
     }
     
     internal func updateImage(url :String) {
@@ -102,22 +91,20 @@ extension FavoritoTableViewCell {
     }
 }
 
-extension FavoritoTableViewCell {
-    
-    internal func addStyles() {
-        self.icon.layer.cornerRadius = self.icon.frame.height * 0.5
-        self.icon.layer.borderWidth = 1
-        self.icon.layer.borderColor = UIColor.lightGray.cgColor
-        
-        self.estado.layer.masksToBounds = true
-        self.estado.layer.cornerRadius = self.estado.frame.height * 0.5
-    }
-}
-
 protocol FavoriteCellDelegate {
     
     func tapFavorite()
 }
 
+extension Item {
+    
+    var entidad: String {
+        if empresa.name.characters.count > 30 {
+            return empresa.shortName
+        } else {
+            return empresa.name
+        }
+    }
+}
 
 

@@ -103,7 +103,7 @@ extension DetalleReciboViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showMessage(type: .SERVICE_SAVED)
+        
     }
 }
 

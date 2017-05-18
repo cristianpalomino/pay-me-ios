@@ -8,9 +8,13 @@
 
 import Foundation
 
-
 struct Constants {
 
+    struct Utils {
+        
+        static let ABECEDARIO = ["A","B","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","#"]
+    }
+    
     struct Debug {
         
         static let ID_CARDHOLDER = "4626"
@@ -57,14 +61,14 @@ struct Constants {
             
             struct EndPoints {
                 
-                static let AGREGAR_SERVICIO             = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/addService"
-                static let CONSULTAR_PAGOS              = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/txConsult"
-                static let CONSULTAR_AGENDA             = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/calendarConsult"
-                static let CONSULTAR_DEUDAS             = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/debtConsult"
-                static let CONSULTAR_NOTIFICACIONES     = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/notificationConsult"
-                static let CONSULTAR_SERVICIOS          = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/getServices"
-                static let ELIMINAR_NOTIFICACION        = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/deleteNotification"
-                static let PAGAR_SERVICIO               = "\(URLs.BASE_URL)/WALLETWS/3/rest/mobile/pay"
+                static let AGREGAR_SERVICIO             = "/WALLETWS/3/rest/mobile/addService"
+                static let CONSULTAR_PAGOS              = "/WALLETWS/3/rest/mobile/txConsult"
+                static let CONSULTAR_AGENDA             = "/WALLETWS/3/rest/mobile/calendarConsult"
+                static let CONSULTAR_DEUDAS             = "/WALLETWS/3/rest/mobile/debtConsult"
+                static let CONSULTAR_NOTIFICACIONES     = "/WALLETWS/3/rest/mobile/notificationConsult"
+                static let CONSULTAR_SERVICIOS          = "/WALLETWS/3/rest/mobile/getServices"
+                static let ELIMINAR_NOTIFICACION        = "/WALLETWS/3/rest/mobile/deleteNotification"
+                static let PAGAR_SERVICIO               = "/WALLETWS/3/rest/mobile/pay"
             }
         }
     }
@@ -77,10 +81,12 @@ struct Constants {
         static let kConfig   = "ServiceConfiguration"
         
         struct Segues {
-            
+        
+            static let kToCategorias            = "kToCategorias"
             static let kToEmpresas              = "kToEmpresas"
             static let kToValidacionServicio    = "kToValidacionServicio"
             static let kDetailSuministro        = "kToDetailSuministro"
+            static let kToListDetailSuministro  = "kToListDetailSuministro"
             static let kRecibo                  = "kRecibo"
             static let kListServices            = "kToListServices"
         }
@@ -106,5 +112,11 @@ struct Constants {
             
             static let kServiciosFavoritos = Notification.Name("kUpdateServiciosFavoritos")
         }
+    }
+    
+    struct Times {
+        
+        static let TimeA = 1.5
+        static let TimeB = 0.5
     }
 }

@@ -16,23 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+            
+        if window != nil {
+            self.window?.rootViewController = PMTabBarController()
+        }
+        self.window?.makeKeyAndVisible()
         
         Fabric.with([Crashlytics .self])
-        
-        //Remove NavigationBar 1pt Line  
-        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        UINavigationBar.appearance().shadowImage = UIImage()
-        
-        let tabBar = UITabBar.appearance()
-        tabBar.barTintColor = UIColor.clear
-        tabBar.backgroundImage = UIImage()
-        tabBar.shadowImage = UIImage()
-     
-        //printStaticData()
-        
         print(Constants.Api.URLs.BASE_URL)
-        
+                
         return true
     }
 

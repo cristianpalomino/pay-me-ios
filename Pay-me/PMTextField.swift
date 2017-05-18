@@ -2,34 +2,38 @@
 //  PMTextField.swift
 //  Pay-me
 //
-//  Created by Cristian Palomino Rivera on 9/12/16.
-//  Copyright © 2016 Cristian Palomino Rivera. All rights reserved.
+//  Created by Alignet Desarrollo on 12/05/17.
+//  Copyright © 2017 Cristian Palomino Rivera. All rights reserved.
 //
 
 import UIKit
-import Material
 
-class PMTextField: TextField {
+class PMTextField: UIView {
 
-}
-
-extension PMTextField {
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var rigthView: UIImageView!
+    @IBOutlet weak var leftView: UIImageView!
     
-    func setPMTheme() {
-        self.placeholderActiveColor = UIColor.lightGray
-        self.placeholderNormalColor = UIColor.lightGray
-        self.dividerActiveColor = UIColor.appGrayColor()
-        self.dividerNormalColor = UIColor.appGrayColor()
-        self.dividerNormalHeight = 1
-        self.placeholderVerticalOffset = 10
+    func initUI() {
+        hiddens()
+        defaultRigth()
     }
     
-    func setPMThemeServiceConfiguration() {
-        self.placeholderActiveColor = UIColor.lightGray
-        self.placeholderNormalColor = UIColor.lightGray
-        //self.dividerActiveColor = UIColor.appGrayColor()
-        //self.dividerNormalColor = UIColor.appGrayColor()
-        //self.dividerNormalHeight = 1
-        self.placeholderVerticalOffset = 5
+    func hiddens() {
+        indicator.isHidden = true
+        rigthView.isHidden = false
+        leftView.isHidden = true
+    }
+    
+    func defaultRigth() {
+        rigthView.layer.cornerRadius = rigthView.frame.height * 0.5
+        rigthView.backgroundColor = UIColor(hexColor: "#3da4fe")
+    }
+    
+    class func instanceFromNib() -> PMTextField {
+        return UINib(nibName: "TextField",
+                     bundle: nil).instantiate(withOwner:
+                        nil, options: nil).first as! PMTextField
     }
 }

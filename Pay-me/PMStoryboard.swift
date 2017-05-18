@@ -10,8 +10,9 @@ import Foundation
 import UIKit
 
 extension UIStoryboard {
-    class func messagesStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: Constants.Storyboard.kMessages, bundle: Bundle.main)
+    
+    class func agregarServicioStoryboard() -> UIStoryboard {
+        return UIStoryboard(name: "AgregarServicio", bundle: Bundle.main)
     }
     
     class func notifyStoryboard() -> UIStoryboard {
@@ -25,10 +26,9 @@ extension UIStoryboard {
     class func settingsStoryboard() -> UIStoryboard {
         return UIStoryboard(name: Constants.Storyboard.kConfig, bundle: Bundle.main)
     }
-
     
-    class func createMessage() -> UINavigationController {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kMessages) as! UINavigationController)
+    class func flowAgregarServicio() -> UIViewController {
+        return agregarServicioStoryboard().instantiateViewController(withIdentifier: "AgregarServicioID")
     }
     
     class func createNotificaciones() -> UINavigationController {
@@ -37,30 +37,6 @@ extension UIStoryboard {
     
     class func createNotificacionesHome() -> UINavigationController {
         return (homeStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kNotificacionesHome) as! UINavigationController)
-    }
-    
-    class func createServicioGuardado() -> UINavigationController {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kServicioGuardado) as! UINavigationController)
-    }
-    
-    class func createPagoExitoso() -> UINavigationController  {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kPagoExitoso) as! UINavigationController)
-    }
-    
-    class func createPagoNoAutorizadoA() -> UINavigationController  {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kPagoNoAutorizadoA) as! UINavigationController)
-    }
-    
-    class func createPagoNoAutorizadoB() -> UINavigationController  {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kPagoNoAutorizadoB) as! UINavigationController)
-    }
-    
-    class func createTarjetaCreditoNoValidaA() -> UINavigationController  {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kTarjetaCreditoNoValidaA) as! UINavigationController)
-    }
-    
-    class func createAdicionarTarjeta() -> UINavigationController  {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: Constants.ViewController.kPagoNoAutorizadoB) as! UINavigationController)
     }
     
     class func createSettings() -> UINavigationController  {

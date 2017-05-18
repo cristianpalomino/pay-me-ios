@@ -8,47 +8,56 @@
 
 import Foundation
 import SwiftyJSON
+import UIKit
 
-class Debt {
-    
-    var codReference    :String!
-    var amount          :String!
-    var expirationDate  :String!
-    var currency        :String!
-    var location        :String!
-    var payDocument     :String!
-    var totalAmount     :String!
-    var currencyName    :String!
-    var emissionDate    :String!
-    
-    init(json :JSON) {
-        
-        self.codReference       = json[Keys.kCodReference].stringValue
-        self.amount             = json[Keys.kAmount].stringValue
-        self.expirationDate     = json[Keys.kExpirationDate].stringValue
-        self.currency           = json[Keys.kCurrency].stringValue
-        self.location           = json[Keys.kLocation].stringValue
-        self.payDocument        = json[Keys.kPayDocument].stringValue
-        self.totalAmount        = json[Keys.kTotalAmount].stringValue
-        self.currencyName       = json[Keys.kCurrencyName].stringValue
-        self.emissionDate       = json[Keys.kEmissionDate].stringValue
-    }
-}
+//"contador": "0",
+//"currency": "604",
+//"deudaTotal": "000000012500",
+//"fechaEmision": "19122017",
+//"fechaOrden": "0",
+//"fechaVencimiento": "19112017",
+//"idD": "183893",
+//"idService": "53",
+//"monto": "000000012500",
+//"nameService": "MATRICULA           ",
+//"recibo": "12345678        "
 
-extension Debt {
+struct Debt: JSONObjectSerializable {
     
-    struct Keys {
+    var contador: String!
+    var currency: String!
+    var deudaTotal: String!
+    var fechaEmision: String!
+    var fechaOrden: String!
+    var fechaVencimiento: String!
+    var idD: String!
+    var monto: String!
+    var nameService: String!
+    var recibo: String!
+    
+    init?(json: JSON) {
+        guard
+            let contador = json["contador"].string,
+            let currency = json["currency"].string,
+            let deudaTotal = json["deudaTotal"].string,
+            let fechaEmision = json["fechaEmision"].string,
+            let fechaOrden = json["fechaOrden"].string,
+            let fechaVencimiento = json["fechaVencimiento"].string,
+            let idD = json["idD"].string,
+            let monto = json["monto"].string,
+            let nameService = json["nameService"].string,
+            let recibo = json["contador"].string
+            else { return nil }
         
-        static let kCodTrace             = "codTrace"
-        static let kContador             = "contador"
-        static let kCodReference         = "codReference"
-        static let kAmount               = "amount"
-        static let kExpirationDate       = "expirationDate"
-        static let kCurrency             = "currency"
-        static let kLocation             = "location"
-        static let kPayDocument          = "payDocument"
-        static let kTotalAmount          = "totalAmount"
-        static let kCurrencyName         = "currencyName"
-        static let kEmissionDate         = "emissionDate"
+        self.contador = contador
+        self.currency = currency
+        self.deudaTotal = deudaTotal
+        self.fechaEmision = fechaEmision
+        self.fechaOrden = fechaOrden
+        self.fechaVencimiento = fechaVencimiento
+        self.idD = idD
+        self.monto = monto
+        self.nameService = nameService
+        self.recibo = recibo
     }
 }

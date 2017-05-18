@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Medium.ttf">
+            <string>SanFranciscoDisplay-Medium</string>
+        </array>
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PMListaServiciosView" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOR-vo-7YK">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="MCd-sh-l8e"/>
+                        <constraint firstAttribute="height" constant="49" id="ulf-bA-gPV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                    <state key="normal" title="    Recordar servicio" image="icono_agregar-white">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapMain" destination="iN0-l3-epB" eventType="touchDown" id="8aj-Dw-P1D"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrt-Oq-Dzg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jx6-Bl-WOF">
+                            <rect key="frame" x="10" y="10" width="150" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="UiM-Ql-FOR"/>
+                                <constraint firstAttribute="height" constant="41" id="yYG-VM-vTc"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Código de alumno" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKS-iI-9be">
+                            <rect key="frame" x="177" y="15" width="85.5" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                            <color key="textColor" red="0.66666666666666663" green="0.69803921568627447" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 38476 F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2n-4T-5Yd">
+                            <rect key="frame" x="177" y="33" width="69.5" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="11"/>
+                            <color key="textColor" red="0.2627450980392157" green="0.29019607843137252" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jx6-Bl-WOF" firstAttribute="leading" secondItem="Mrt-Oq-Dzg" secondAttribute="leading" constant="10" id="898-iN-SOh"/>
+                        <constraint firstItem="Jx6-Bl-WOF" firstAttribute="top" secondItem="Mrt-Oq-Dzg" secondAttribute="top" constant="10" id="DwV-oC-DtN"/>
+                        <constraint firstItem="H2n-4T-5Yd" firstAttribute="leading" secondItem="Jx6-Bl-WOF" secondAttribute="trailing" constant="17" id="KiM-Dg-pOt"/>
+                        <constraint firstAttribute="bottom" secondItem="Jx6-Bl-WOF" secondAttribute="bottom" constant="10" id="O3L-gv-8jz"/>
+                        <constraint firstAttribute="height" constant="61" id="WXg-n3-V1C"/>
+                        <constraint firstAttribute="bottom" secondItem="H2n-4T-5Yd" secondAttribute="bottom" constant="15" id="aqz-RD-2E4"/>
+                        <constraint firstItem="wKS-iI-9be" firstAttribute="top" secondItem="Mrt-Oq-Dzg" secondAttribute="top" constant="15" id="do9-FY-34F"/>
+                        <constraint firstItem="wKS-iI-9be" firstAttribute="leading" secondItem="Jx6-Bl-WOF" secondAttribute="trailing" constant="17" id="pvO-NL-gii"/>
+                        <constraint firstAttribute="width" constant="320" id="rbj-B1-qXU"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8n0-Uf-T9I">
+                    <rect key="frame" x="0.0" y="67" width="320" height="452"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Uq5-03-ARM"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="ADJ-rw-ZE9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UOR-vo-7YK" firstAttribute="top" secondItem="8n0-Uf-T9I" secondAttribute="bottom" id="2DP-g3-Zqk"/>
+                <constraint firstAttribute="trailing" secondItem="UOR-vo-7YK" secondAttribute="trailing" id="8We-dy-7kx"/>
+                <constraint firstItem="Mrt-Oq-Dzg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8i0-Ai-Dna"/>
+                <constraint firstItem="8n0-Uf-T9I" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FOF-cd-QA9"/>
+                <constraint firstItem="8n0-Uf-T9I" firstAttribute="top" secondItem="Mrt-Oq-Dzg" secondAttribute="bottom" constant="6" id="Ph9-Uc-IDG"/>
+                <constraint firstAttribute="bottom" secondItem="UOR-vo-7YK" secondAttribute="bottom" id="Rp4-8B-f4r"/>
+                <constraint firstAttribute="trailing" secondItem="Mrt-Oq-Dzg" secondAttribute="trailing" id="WIf-D8-Rwn"/>
+                <constraint firstAttribute="trailing" secondItem="8n0-Uf-T9I" secondAttribute="trailing" id="YE4-xj-0lm"/>
+                <constraint firstItem="UOR-vo-7YK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="j39-bE-PNP"/>
+                <constraint firstItem="Mrt-Oq-Dzg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ws5-wO-ytM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="frameTop" destination="Mrt-Oq-Dzg" id="mb3-ox-qJs"/>
+                <outlet property="imgBanner" destination="Jx6-Bl-WOF" id="lKk-Nr-0q9"/>
+                <outlet property="labelIdentifier" destination="H2n-4T-5Yd" id="4Ks-Vw-VwD"/>
+                <outlet property="mainButton" destination="UOR-vo-7YK" id="Nfj-hh-1q3"/>
+                <outlet property="tableView" destination="8n0-Uf-T9I" id="qQv-rw-aiS"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icono_agregar-white" width="21" height="21"/>
+    </resources>
+</document>

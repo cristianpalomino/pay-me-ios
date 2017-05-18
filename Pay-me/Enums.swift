@@ -16,14 +16,6 @@ enum CardType {
     case DEFAULT
 }
 
-enum MessageType {
-    
-    case SUCCESS_PAY
-    case NOT_AUTORIZED
-    case INVALID_CARD
-    case SERVICE_SAVED
-}
-
 enum FlowType {
     
     case FIRST_TIME
@@ -44,12 +36,12 @@ enum ServicesType :String {
     case TRIBUTOS   = "Tributos"
 }
 
-enum ServiceStateType :Int {
+enum ServiceStateType :String {
     
-    case PENDIENTE_VERIFICACION = 1
-    case PENDIENTE_PAGO         = 2
-    case PAGADO                 = 3
-    case CARGOS_RECURRENTES     = 4
+    case pendiente_verificacion = "1"
+    case pendiente_pago         = "2"
+    case pagado                 = "3"
+    case cargos_recurrentes     = "4"
 }
 
 

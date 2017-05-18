@@ -10,68 +10,52 @@
 import Foundation
 import SwiftyJSON
 
-class Service {
+// Service
+//"debts": {
+//    "contador": "0",
+//    "currency": "604",
+//    "deudaTotal": "000000012500",
+//    "fechaEmision": "19122017",
+//    "fechaOrden": "0",
+//    "fechaVencimiento": "19112017",
+//    "idD": "183893",
+//    "idService": "53",
+//    "monto": "000000012500",
+//    "nameService": "MATRICULA           ",
+//    "recibo": "12345678        "
+//},
+//"idServiceSPS": "53",
+//"nameService": "MATRICULA           "
+
+class Service: JSONObjectSerializable {
+
+    var nameService: String
+    var idServiceSPS: String
+    var debts = [Debt]()
     
-    var idCompanySPS        :String!
-    var idServiceSPS        :String!
-    var idService           :String!
-    var serviceIdentifier   :String?
-    var owner               :String!
-    var alias               :String?
-    var inSPR               :String!
-    var amount              :String?
-    var state               :ServiceStateType!
-    
-    init(json :JSON) {
+    required init?(json: JSON) {
         
-        self.idCompanySPS       = json[Keys.kIdCompanySPS].stringValue
-        self.idServiceSPS       = json[Keys.kIdServiceSPS].stringValue
-        self.idService          = json[Keys.kIdService].stringValue
-        self.serviceIdentifier  = json[Keys.kServiceIdentifier].string
-        self.owner              = json[Keys.kOwner].stringValue
-        self.alias              = json[Keys.kAlias].string
-        self.inSPR              = json[Keys.kInSPR].stringValue
-        self.amount             = json[Keys.kAmount].string
-     
-        guard let istate = Int(json[Keys.kState].stringValue) else {
+        guard
+            let nameService = json["nameService"].string,
+            let idServiceSPS = json["idServiceSPS"].string
+            else { return nil }
+        
+        self.nameService = nameService
+        self.idServiceSPS = idServiceSPS
+        
+        guard let array = json["debts"].array else {
+            if let debt = Debt(json: json["debts"]) {
+                debts.append(debt)
+            } else {
+                return nil
+            }
             return
         }
-        self.state  = ServiceStateType(rawValue: istate)
-    }
-}
-
-extension Service {
-    
-    struct Keys {
-
-        static let kIdCompanySPS        = "idCompanySPS"
-        static let kIdServiceSPS        = "idServiceSps"
-        static let kIdService           = "idService"
-        static let kServiceIdentifier   = "serviceIdentifier"
-        static let kOwner               = "owner"
-        static let kAlias               = "alias"
-        static let kAmount              = "amount"
-        static let kInSPR               = "inSPR"
-        static let kState               = "state"
-    }
-    
-    func toParams() -> [String : Any] {
-        var params :[String : Any] = [:]
-        params[Keys.kIdCompanySPS] = self.idCompanySPS
-        params[Keys.kIdServiceSPS] = self.idServiceSPS
-        params[Keys.kServiceIdentifier] = self.serviceIdentifier
-        params[Keys.kOwner] = self.owner
-        return params
-    }
-}
-
-extension Service: Hashable {
-    
-    var hashValue: Int {
-        return idService.hashValue
-    }
-    
-    static func == (lhs: Service, rhs: Service) -> Bool {
-        return lhs.idService == rhs.idService
+        
+        array.forEach {
+            if let debt = Debt(json: $0) {
+                debts.append(debt)
+            }
+        }
     }
 }
