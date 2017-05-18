@@ -20,6 +20,8 @@ enum BackendError: Error {
     case dataSerialization(error: Error)
     case jsonSerialization(error: Error)
     case objectSerialization(reason: String)
+    case notAnswerCode(reason: String)
+    case errorCode(reaseon: String)
 }
 
 protocol JSONObjectSerializable {
@@ -28,6 +30,7 @@ protocol JSONObjectSerializable {
 }
 
 typealias ErrorHandler = Error
+typealias SuccessHandler = ()
 typealias ResponseHandlerFavoritos = [Favorito]
 typealias ResponseHandlerDebtConsult = (name: String, services: [Service])
 
@@ -159,7 +162,7 @@ struct Request {
         }
     }
     
-    static func addServices(services: [Service], owner: String, identifier: String, completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
+    static func addServices(services: [Service], owner: String, identifier: String, completionHandler: @escaping (SuccessHandler) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
         PaymeApi.sessionManager.request(ServiciosRouter.add(services: services, owner: owner, identifier: identifier)).responseJSON {
             response in
            
@@ -168,12 +171,25 @@ struct Request {
                 
                 let json = JSON(value)
                 
-                print(json)
+                guard let answerCode = json["answerCode"].string else {
+                    let reason = "No 'answerCode'"
+                    errorHandler(BackendError.notAnswerCode(reason: reason))
+                    return
+                }
+                
+                guard answerCode.decrypt() == "000" else {
+                    let reason = json["answerMessage"].stringValue.decrypt()
+                    errorHandler(BackendError.errorCode(reaseon: reason))
+                    return
+                }
+                
+                print(answerCode.decrypt())
+                print(json["answerMessage"].stringValue.decrypt())
+                completionHandler()
                 
                 break
             case .failure(let error):
                 errorHandler(error)
-                break
             }
         }
     }

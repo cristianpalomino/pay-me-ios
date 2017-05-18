@@ -14,7 +14,10 @@ extension UIStoryboard {
         return UIStoryboard(name: "Messages", bundle: Bundle.main)
     }
     
-    class func createMessage() -> UINavigationController {
-        return (messagesStoryboard().instantiateViewController(withIdentifier: "navMessages") as! UINavigationController)
+    class func createMessage(information: PMMessageViewController.Information) -> UINavigationController {
+        let nav = messagesStoryboard().instantiateViewController(withIdentifier: "navDefaultMessage") as! UINavigationController
+        let mvc = nav.topViewController as! PMMessageViewController
+        mvc.information = information
+        return nav
     }
 }

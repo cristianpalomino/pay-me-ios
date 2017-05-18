@@ -24,7 +24,6 @@
 		40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
 		40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
-		404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DC1E14665700A578EA /* PMMessageViewController.swift */; };
 		404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */; };
 		405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
 		405D23121E157CEB006ED043 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
@@ -65,7 +64,6 @@
 		408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
 		408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
-		408CB6B31E54E73D00D308D3 /* RecibosAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420161E234C7D00D74D22 /* RecibosAViewController.swift */; };
 		408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */; };
 		408CB6B71E54E73D00D308D3 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
 		408CB6B81E54E73D00D308D3 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
@@ -84,7 +82,6 @@
 		408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420231E2528F700D74D22 /* CardTableViewCell.swift */; };
 		408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */; };
 		408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */; };
-		408CB6CB1E54E73D00D308D3 /* RecibosBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420101E20260D00D74D22 /* RecibosBViewController.swift */; };
 		408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2E4021E0E5386003CBAC3 /* PMImage.swift */; };
 		408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1571E3BE9A800617265 /* Service.swift */; };
 		408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201C1E24046F00D74D22 /* Pay.swift */; };
@@ -95,8 +92,6 @@
 		408CB6D51E54E73D00D308D3 /* PMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */; };
 		408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF61E405385007EF98D /* Calendar.swift */; };
 		408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
-		408CB6DD1E54E73D00D308D3 /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
-		408CB6DE1E54E73D00D308D3 /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404672DC1E14665700A578EA /* PMMessageViewController.swift */; };
 		408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
 		408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E461E0680090072CB29 /* PMColors.swift */; };
 		408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */; };
@@ -124,15 +119,12 @@
 		409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
 		409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
 		409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
-		40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420101E20260D00D74D22 /* RecibosBViewController.swift */; };
 		40A420131E203FF200D74D22 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
-		40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420161E234C7D00D74D22 /* RecibosAViewController.swift */; };
 		40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */; };
 		40A4201D1E24046F00D74D22 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201C1E24046F00D74D22 /* Pay.swift */; };
 		40A420201E24073D00D74D22 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */; };
 		40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420211E25279600D74D22 /* DetalleReciboViewController.swift */; };
 		40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420231E2528F700D74D22 /* CardTableViewCell.swift */; };
-		40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */; };
 		40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
 		40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */; };
 		40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */; };
@@ -174,8 +166,8 @@
 		4F83292B1EC231240011267B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
 		4F83292C1EC235880011267B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
 		4F83292D1EC2358C0011267B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
-		4F973ED81ECB66D6003D3CAF /* PMMessageServiceSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageServiceSaved.swift */; };
-		4F973ED91ECB66D6003D3CAF /* PMMessageServiceSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageServiceSaved.swift */; };
+		4F973ED81ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */; };
+		4F973ED91ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */; };
 		4F973EDB1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */; };
 		4F973EDC1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */; };
 		4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
@@ -266,7 +258,6 @@
 		40463D271E19CF8000F663B0 /* PMItemCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCard.swift; sourceTree = "<group>"; };
 		40463D291E19CF9E00F663B0 /* PMItemCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCard.xib; sourceTree = "<group>"; };
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
-		404672DC1E14665700A578EA /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
 		404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		405D230E1E157C94006ED043 /* PMStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStoryboard.swift; sourceTree = "<group>"; };
 		405D23111E157CEB006ED043 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -299,15 +290,12 @@
 		409889E41EC939CC0028FC67 /* FavoritosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosRouter.swift; sourceTree = "<group>"; };
 		409889E71EC939E50028FC67 /* ServiciosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosRouter.swift; sourceTree = "<group>"; };
 		409889EA1ECABCBD0028FC67 /* PMErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMErrorView.swift; sourceTree = "<group>"; };
-		40A420101E20260D00D74D22 /* RecibosBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosBViewController.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
-		40A420161E234C7D00D74D22 /* RecibosAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosAViewController.swift; sourceTree = "<group>"; };
 		40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPagosViewController.swift; sourceTree = "<group>"; };
 		40A4201C1E24046F00D74D22 /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
 		40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
 		40A420211E25279600D74D22 /* DetalleReciboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleReciboViewController.swift; sourceTree = "<group>"; };
 		40A420231E2528F700D74D22 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
-		40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecibosViewController.swift; sourceTree = "<group>"; };
 		40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
 		40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Heavy.ttf"; sourceTree = "<group>"; };
@@ -340,7 +328,7 @@
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
 		4F8329281EC231240011267B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4F8329291EC231240011267B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		4F973ED71ECB66D6003D3CAF /* PMMessageServiceSaved.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageServiceSaved.swift; sourceTree = "<group>"; };
+		4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
 		4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardMessages.swift; sourceTree = "<group>"; };
 		4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntidadTableViewCell.xib; sourceTree = "<group>"; };
 		4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
@@ -425,8 +413,8 @@
 				4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */,
 				4FC042711EC3D37800B93031 /* PMListadoView.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
-				4FC042741EC3D38700B93031 /* ListadoView.xib */,
 				4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */,
+				4FC042741EC3D38700B93031 /* ListadoView.xib */,
 			);
 			name = Favoritos;
 			sourceTree = "<group>";
@@ -437,7 +425,6 @@
 				40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */,
 				40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */,
 				4033773D1E03D44800261759 /* PMViewController.swift */,
-				404672DC1E14665700A578EA /* PMMessageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -492,6 +479,7 @@
 		4062C1421E380F3600617265 /* Adicionar */ = {
 			isa = PBXGroup;
 			children = (
+				400190831E647CA30080DDA4 /* Favoritos */,
 				4FC042791EC4DE3800B93031 /* Primero */,
 				4FC0427A1EC4DE4200B93031 /* Segundo */,
 				4FC0427B1EC4DE4C00B93031 /* Tercero */,
@@ -712,7 +700,7 @@
 			isa = PBXGroup;
 			children = (
 				4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */,
-				4F973ED71ECB66D6003D3CAF /* PMMessageServiceSaved.swift */,
+				4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */,
 				404672D91E14608500A578EA /* Messages.storyboard */,
 			);
 			name = Messages;
@@ -789,8 +777,8 @@
 				4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */,
 				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
 				4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */,
-				4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */,
 				4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */,
+				4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */,
 			);
 			name = Tercero;
 			sourceTree = "<group>";
@@ -820,9 +808,6 @@
 		4FCC14A41EAE4C6200D6E7BC /* Pagar */ = {
 			isa = PBXGroup;
 			children = (
-				40AF1CF81E11812C00A2D95F /* RecibosViewController.swift */,
-				40A420161E234C7D00D74D22 /* RecibosAViewController.swift */,
-				40A420101E20260D00D74D22 /* RecibosBViewController.swift */,
 			);
 			name = Pagar;
 			sourceTree = "<group>";
@@ -831,7 +816,6 @@
 			isa = PBXGroup;
 			children = (
 				4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */,
-				400190831E647CA30080DDA4 /* Favoritos */,
 				4062C1421E380F3600617265 /* Adicionar */,
 				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
 			);
@@ -1184,7 +1168,7 @@
 				4FB03A421EC5048C00AF82AE /* PMTerceroView.swift in Sources */,
 				4062C1461E3B98D500617265 /* RSA.m in Sources */,
 				40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */,
-				4F973ED81ECB66D6003D3CAF /* PMMessageServiceSaved.swift in Sources */,
+				4F973ED81ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */,
 				4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */,
 				409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */,
 				40293EFB1E40DFEE007EF98D /* Order.swift in Sources */,
@@ -1208,7 +1192,6 @@
 				40293EF91E40D2DE007EF98D /* Debt.swift in Sources */,
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
-				40A420171E234C7D00D74D22 /* RecibosAViewController.swift in Sources */,
 				407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */,
 				40A420131E203FF200D74D22 /* PMString.swift in Sources */,
 				4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */,
@@ -1235,7 +1218,6 @@
 				4F28D7B21EB9271400703CB4 /* Favorito.swift in Sources */,
 				4FB03A491EC5FF7400AF82AE /* PMTextField.swift in Sources */,
 				4FCC14CB1EAEB39300D6E7BC /* UIView.swift in Sources */,
-				40A420111E20260D00D74D22 /* RecibosBViewController.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				4062C1581E3BE9A800617265 /* Service.swift in Sources */,
 				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
@@ -1258,8 +1240,6 @@
 				4F973EDB1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */,
 				4FB51BDF1EC0C49400712249 /* PMFont.swift in Sources */,
 				4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */,
-				40AF1CF91E11812C00A2D95F /* RecibosViewController.swift in Sources */,
-				404672DD1E14665700A578EA /* PMMessageViewController.swift in Sources */,
 				4FC0426E1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
@@ -1277,7 +1257,7 @@
 				4FB03A431EC5048C00AF82AE /* PMTerceroView.swift in Sources */,
 				408CB69B1E54E73D00D308D3 /* RSA.m in Sources */,
 				408CB69C1E54E73D00D308D3 /* DetalleReciboViewController.swift in Sources */,
-				4F973ED91ECB66D6003D3CAF /* PMMessageServiceSaved.swift in Sources */,
+				4F973ED91ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */,
 				408CB69D1E54E73D00D308D3 /* LaunchViewController.swift in Sources */,
 				4FD3CA051EC9F731003DABAC /* ServiciosRouter.swift in Sources */,
 				408CB69E1E54E73D00D308D3 /* Order.swift in Sources */,
@@ -1301,7 +1281,6 @@
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
 				408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */,
 				408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */,
-				408CB6B31E54E73D00D308D3 /* RecibosAViewController.swift in Sources */,
 				408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */,
 				408CB6B71E54E73D00D308D3 /* PMString.swift in Sources */,
 				408CB6B81E54E73D00D308D3 /* MostrarAgendaViewController.swift in Sources */,
@@ -1328,7 +1307,6 @@
 				4F28D7B31EB9271400703CB4 /* Favorito.swift in Sources */,
 				4FB03A4A1EC5FF7400AF82AE /* PMTextField.swift in Sources */,
 				4FCC14CC1EAEB39300D6E7BC /* UIView.swift in Sources */,
-				408CB6CB1E54E73D00D308D3 /* RecibosBViewController.swift in Sources */,
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,
 				408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */,
 				4FC042731EC3D37800B93031 /* PMListadoView.swift in Sources */,
@@ -1351,9 +1329,7 @@
 				4F973EDC1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */,
 				4FB51BE01EC0C49400712249 /* PMFont.swift in Sources */,
 				4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */,
-				408CB6DD1E54E73D00D308D3 /* RecibosViewController.swift in Sources */,
 				4FC0426F1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
-				408CB6DE1E54E73D00D308D3 /* PMMessageViewController.swift in Sources */,
 				408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */,
 				408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */,
 				408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */,

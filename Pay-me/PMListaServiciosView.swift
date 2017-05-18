@@ -9,6 +9,24 @@
 import UIKit
 
 class PMListaServiciosView: UIView {
+    
+    var services = [Service]()
+    var selectedServices = [Service]()
+    var pmListaViewController: PMListaServiciosViewController!
+    
+    var viewController: UIViewController {
+        get {
+           return pmListaViewController
+        }
+        set (newValue) {
+            pmListaViewController = newValue as! PMListaServiciosViewController
+            if let services = pmListaViewController.responseConsult?.services {
+                self.services = services
+                tableView.reloadData()
+                labelIdentifier.text = pmListaViewController.identifier
+            }
+        }
+    }
 
     @IBOutlet weak var frameTop: UIView!
     @IBOutlet weak var imgBanner: UIImageView!
@@ -23,7 +41,8 @@ class PMListaServiciosView: UIView {
         return strings.components(separatedBy: ",")
     }
     
-    func initUI() {
+    func initUI(viewController: PMListaServiciosViewController) {
+        self.viewController = viewController
         prepare()
         loadBanners()
         borders()
@@ -56,14 +75,15 @@ class PMListaServiciosView: UIView {
     }
 
     @IBAction func tapMain() {
+        let indexs = tableView.indexPathsForSelectedRows?.map({ $0.row })
+        indexs?.forEach {
+            i in
+            selectedServices.append(services[i])
+        }
         
-//        let indexs = tableView.indexPathsForSelectedRows?.map({ $0.row })
-//        var servicios = [Service]()
-//        indexs?.forEach {
-//            i in
-//            servicios.append(self.servicios[i])
-//        }
-        
+        if !services.isEmpty {
+            pmListaViewController.callAddService()
+        }
     }
     
     class func instanceFromNib() -> PMListaServiciosView {
@@ -73,4 +93,28 @@ class PMListaServiciosView: UIView {
     }
 }
 
+extension PMListaServiciosView: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 65
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) { }
+}
 
+extension PMListaServiciosView: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return services.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ServiceTableViewCell.identifier,
+                                                 for: indexPath) as! ServiceTableViewCell
+        let service = services[indexPath.row]
+        cell.set(service: service)
+        return cell
+    }
+}

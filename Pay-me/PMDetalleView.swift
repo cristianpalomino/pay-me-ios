@@ -33,7 +33,7 @@ class PMDetalleView: UIView {
         if services.isEmpty {
             mainButton.setTitle("    Recordar servicio", for: .normal)
         } else if services.count == 1 {
-            labelService.text = services.first!.nameService
+            labelService.text = services.first!.nameService.capitalized
             mainButton.setTitle("    Recordar servicio", for: .normal)
         } else {
             mainButton.setTitle("    Agregar servicio", for: .normal)
@@ -139,7 +139,8 @@ class PMDetalleView: UIView {
         let services = response.services
         
         if services.isEmpty {
-            viewController.showMessage()
+            let information = ("!No hay servicios!", "To you how all this mistaken idea of denouncing pleasure and praising pain.")
+            viewController.showMessage(information: information)
         } else if services.count == 1 {
             viewController.callAddService()
         } else {

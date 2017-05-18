@@ -1,29 +1,31 @@
 //
-//  PMMessageViewController.swift
+//  PMServiceSavedViewController.swift
 //  Pay-me
 //
-//  Created by Cristian Palomino Rivera on 28/12/16.
-//  Copyright © 2016 Cristian Palomino Rivera. All rights reserved.
+//  Created by Alignet Desarrollo on 16/05/17.
+//  Copyright © 2017 Cristian Palomino Rivera. All rights reserved.
 //
 
 import UIKit
 
-class PMMessageViewController: PMViewController {
+class PMMessageViewController: UIViewController {
 
+    typealias Information = (title: String, description: String)
+    
+    var information: Information?
+    
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelDescripcion: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        addNavigationLogo(isGradient: true)
+        prepare()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-}
-
-extension PMMessageViewController {
     
-    func addTouchListener() {
-//        let touchG = UITapGestureRecognizer(target: self, action: #selector(self.touchView))
-//        self.view.addGestureRecognizer(touchG)
+    func prepare() {
+        if let information = information {
+            labelTitle.text = information.title
+            labelDescripcion.text = information.description
+        }
     }
 }

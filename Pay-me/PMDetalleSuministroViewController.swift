@@ -50,23 +50,32 @@ class PMDetalleSuministroViewController: PMViewController {
             let identifier = self.identifier else { return }
         
         Request.addServices(services: [service], owner: owner, identifier: identifier, completionHandler: { response in
-            self.showMessage()
+            let information = ("!Servicio guardado!", "To you how all this mistaken idea of denouncing pleasure and praising pain.")
+            self.showMessage(information: information)
         }, errorHandler: { error in
-            
+            let information = ("!Error!", error.localizedDescription)
+            self.showMessage(information: information)
         })
     }
     
-    func showMessage() {
-        let message = UIStoryboard.createMessage()
+    func showMessage(information: PMMessageViewController.Information) {
+        let message = UIStoryboard.createMessage(information: information)
         present(message, animated: true, completion: nil)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeA) {
             message.touchView()
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Constants.Times.TimeB) {
-                //self.navigationController?.popToRootViewController(animated: true)
+                self.navigationController?.popToRootViewController(animated: true)
             }
         }
     }
     
     var responseConsult: ResponseHandlerDebtConsult?
     var identifier: String?
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dvc = segue.destination as? PMListaServiciosViewController {
+            dvc.identifier = identifier
+            dvc.responseConsult = responseConsult
+        }
+    }
 }

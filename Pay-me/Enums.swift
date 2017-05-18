@@ -16,14 +16,6 @@ enum CardType {
     case DEFAULT
 }
 
-enum MessageType {
-    
-    case SUCCESS_PAY
-    case NOT_AUTORIZED
-    case INVALID_CARD
-    case SERVICE_SAVED
-}
-
 enum FlowType {
     
     case FIRST_TIME

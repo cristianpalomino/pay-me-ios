@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EsC-EH-TvK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -17,7 +17,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="Hoc-7t-Ea8">
             <objects>
-                <navigationController storyboardIdentifier="navMessages" navigationBarHidden="YES" id="EsC-EH-TvK" customClass="PMNavigationViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navDefaultMessage" navigationBarHidden="YES" id="EsC-EH-TvK" customClass="PMNavigationViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kov-gd-BbK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -32,10 +32,10 @@
             </objects>
             <point key="canvasLocation" x="-720" y="-692"/>
         </scene>
-        <!--Message Service Saved-->
+        <!--Message View Controller-->
         <scene sceneID="r0k-HP-FYd">
             <objects>
-                <viewController id="RMt-aK-6yZ" customClass="PMMessageServiceSaved" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RMt-aK-6yZ" customClass="PMMessageViewController" customModule="Pay_me" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vmq-Sh-EdP"/>
                         <viewControllerLayoutGuide type="bottom" id="ED9-kB-u60"/>
@@ -54,7 +54,7 @@
                                             <constraint firstAttribute="width" constant="114.5" id="n4B-pT-4eV"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Servicio guardado!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ky-e2-3MV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Servicio guardado!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ky-e2-3MV">
                                         <rect key="frame" x="8" y="242" width="304" height="26"/>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="22"/>
                                         <color key="textColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,7 +62,8 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWk-zx-AVf">
                                         <rect key="frame" x="8" y="280.5" width="304" height="26"/>
-                                        <string key="text">To you how all this mistaken idea ofdenouncing pleasure and praising pain.</string>
+                                        <string key="text">To you how all this mistaken idea of
+denouncing pleasure and praising pain.</string>
                                         <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                                         <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -111,6 +112,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cMd-ev-wPr"/>
+                    <connections>
+                        <outlet property="labelDescripcion" destination="EWk-zx-AVf" id="jPe-Hw-cnb"/>
+                        <outlet property="labelTitle" destination="8ky-e2-3MV" id="z62-iF-RwG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VQ-hp-aD1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
