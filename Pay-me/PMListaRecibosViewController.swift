@@ -10,13 +10,29 @@ import UIKit
 
 class PMListaRecibosViewController: PMViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func initComponents() {
         super.initComponents()
+        prepare()
+    }
+    
+    func prepare() {
+        
+        let view = ReciboView.instanceFromNib()
+        scrollView.addSubview(view)
+    }
+}
+
+class ReciboView: UIView {
+    
+    class func instanceFromNib() -> ReciboView {
+        return UINib(nibName: "PMListaRecibosView",
+                     bundle: nil).instantiate(withOwner:
+                        nil, options: nil)[1] as! ReciboView
     }
 }

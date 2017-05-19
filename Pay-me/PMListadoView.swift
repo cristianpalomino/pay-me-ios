@@ -10,6 +10,9 @@ import UIKit
 
 class PMListadoView: UIView {
     
+    var onTouchAdd: (() -> Void)?
+    var onTouchPay: ((_ favorito: Favorito) -> Void)?
+    
     var titles: [(title: String,color: UIColor)] {
         return [("Todos",color: UIColor.appBlueColor()),
                 ("Pendientes de Pago",color: UIColor.appBlueColor()),
@@ -32,6 +35,7 @@ class PMListadoView: UIView {
         registerCell()
         mainButton.setGradientBackground()
         titleStrip.titles = titles
+        tableView.setEditing(false, animated: true)
     }
     
     class func instanceFromNib() -> PMListadoView {
@@ -48,6 +52,10 @@ class PMListadoView: UIView {
     func reloadTableView() {
         tableView.reloadData()
     }
+    
+    @IBAction func tapAdd() {
+        onTouchAdd?()
+    }
 }
 
 extension PMListadoView: UITableViewDelegate {
@@ -60,6 +68,34 @@ extension PMListadoView: UITableViewDelegate {
 }
 
 extension PMListadoView: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let img: UIImage = UIImage(named: "ic-card-white")!
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 100, height: 100), false, UIScreen.main.scale)
+        let context = UIGraphicsGetCurrentContext()
+        context!.setFillColor(UIColor.pmDeepSkyBlue.cgColor)
+        context!.fill(CGRect(x: 0, y: 0, width: 100, height: 100))
+        img.draw(in: CGRect(x:24, y:22, width:21, height:21))
+        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        let deleteRowAction = UITableViewRowAction(style: .normal, title: "        ") { rowAction, indexPath in
+            self.tableView.setEditing(false, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5,
+                                          execute: {
+                self.onTouchPay?(self.favoritos[indexPath.row])
+            })
+        }
+        
+        deleteRowAction.backgroundColor = UIColor(patternImage: newImage)
+        
+        return  [deleteRowAction]
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favoritos.count

@@ -116,8 +116,8 @@
 		408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
 		408D901C1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */; };
 		408D901D1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */; };
-		408D901E1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */; };
-		408D901F1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */; };
+		408D901E1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */; };
+		408D901F1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */; };
 		409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
 		409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
 		409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
@@ -290,7 +290,7 @@
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaRecibosViewController.swift; sourceTree = "<group>"; };
-		408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMListaRecibosViewController.xib; sourceTree = "<group>"; };
+		408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMListaRecibosView.xib; sourceTree = "<group>"; };
 		409889E71EC939E50028FC67 /* ServiciosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosRouter.swift; sourceTree = "<group>"; };
 		409889EA1ECABCBD0028FC67 /* PMErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMErrorView.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
@@ -584,7 +584,7 @@
 			isa = PBXGroup;
 			children = (
 				408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */,
-				408D901B1ECE5957006CA163 /* PMListaRecibosViewController.xib */,
+				408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */,
 			);
 			name = Recibos;
 			sourceTree = "<group>";
@@ -993,7 +993,7 @@
 				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4FB03A3B1EC4F85900AF82AE /* AgregarServicio.storyboard in Resources */,
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
-				408D901E1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */,
+				408D901E1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
@@ -1034,7 +1034,7 @@
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
 				4FB03A3C1EC4F8E700AF82AE /* AgregarServicio.storyboard in Resources */,
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
-				408D901F1ECE5957006CA163 /* PMListaRecibosViewController.xib in Resources */,
+				408D901F1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,

@@ -10,7 +10,7 @@ import UIKit
 
 class PMListadoFavoritosViewController: PMViewController {    
     
-    var listadoView: PMListadoView!
+    var listadoView = PMListadoView.instanceFromNib()
     
     override var headerTitle: String {
         return "Mis Favoritos"
@@ -32,9 +32,9 @@ class PMListadoFavoritosViewController: PMViewController {
     func request() {
         Request.getFavoritos(completionHandler: {
             (response: ResponseHandlerFavoritos) in
-            
-            self.listadoView!.favoritos = response
-            self.listadoView!.reloadTableView()
+
+            self.listadoView.favoritos = response
+            self.listadoView.reloadTableView()
         }, errorHandler: {
             error in
             
@@ -47,13 +47,20 @@ class PMListadoFavoritosViewController: PMViewController {
     }
     
     func prepare() {
-        listadoView = PMListadoView.instanceFromNib()
+        
+        let onTouchAdd: (() -> Void)? = {
+            self.toSegue(identifier: "toPrimero")
+        }
+        
+        let onTouchPay: ((_ favorito: Favorito) -> Void)?  = { favorito in
+            let vc = PMListaRecibosViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
         listadoView.initUI()
+        listadoView.onTouchAdd = onTouchAdd
+        listadoView.onTouchPay = onTouchPay
         add(mainView: listadoView)
-        listadoView.mainButton.addTarget(self, action: #selector(push), for: .touchUpInside)
-    }
-    
-    func push() {
-        toSegue(identifier: "toPrimero")
     }
 }
