@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Medium.ttf">
+            <string>SanFranciscoDisplay-Medium</string>
+        </array>
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PMRecibosView" customModule="Pay_me" customModuleProvider="target">
+            <connections>
+                <outlet property="btnPagar" destination="PoH-cX-BWJ" id="zqU-jZ-Ag8"/>
+                <outlet property="collectionView" destination="f3C-cd-lVN" id="RG7-4e-NxW"/>
+                <outlet property="lblIdentifier" destination="WEY-GM-Fsi" id="NWz-Vi-g38"/>
+                <outlet property="lblIdentifierTitle" destination="qaP-cu-txq" id="5Jl-BB-Ddo"/>
+                <outlet property="view" destination="nRH-fX-d8U" id="d1b-cD-VAi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="nRH-fX-d8U">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yfs-yB-GUF">
+                    <rect key="frame" x="0.0" y="35" width="320" height="61"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gnw-JO-lE9">
+                            <rect key="frame" x="10" y="10" width="150" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="qQ0-tw-nEj"/>
+                                <constraint firstAttribute="height" constant="41" id="viZ-Sw-nCx"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Código de alumno" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaP-cu-txq">
+                            <rect key="frame" x="177" y="15" width="91" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
+                            <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 38476 F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEY-GM-Fsi">
+                            <rect key="frame" x="177" y="33" width="74.5" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="11"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="7R2-Wz-zWa"/>
+                        <constraint firstItem="WEY-GM-Fsi" firstAttribute="leading" secondItem="Gnw-JO-lE9" secondAttribute="trailing" constant="17" id="G9z-d9-0kn"/>
+                        <constraint firstItem="Gnw-JO-lE9" firstAttribute="leading" secondItem="Yfs-yB-GUF" secondAttribute="leading" constant="10" id="HUW-Wz-vtw"/>
+                        <constraint firstItem="qaP-cu-txq" firstAttribute="top" secondItem="Yfs-yB-GUF" secondAttribute="top" constant="15" id="L0b-Sa-eoQ"/>
+                        <constraint firstAttribute="bottom" secondItem="WEY-GM-Fsi" secondAttribute="bottom" constant="15" id="UjY-YP-bMu"/>
+                        <constraint firstAttribute="bottom" secondItem="Gnw-JO-lE9" secondAttribute="bottom" constant="10" id="Ujn-Ub-vzs"/>
+                        <constraint firstItem="qaP-cu-txq" firstAttribute="leading" secondItem="Gnw-JO-lE9" secondAttribute="trailing" constant="17" id="ZPm-kN-tre"/>
+                        <constraint firstAttribute="height" constant="61" id="gEk-vp-C7g"/>
+                        <constraint firstItem="Gnw-JO-lE9" firstAttribute="top" secondItem="Yfs-yB-GUF" secondAttribute="top" constant="10" id="v2s-ZH-Bay"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-recibo-background" translatesAutoresizingMaskIntoConstraints="NO" id="EK4-cK-m5O">
+                    <rect key="frame" x="5" y="161" width="310" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="RBo-S9-2wZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoH-cX-BWJ">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="BCm-9J-3Vg"/>
+                        <constraint firstAttribute="width" constant="320" id="xfv-lj-khK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                    <state key="normal" title="    Pagar recibo" image="ic-card-button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcC-o0-oYU">
+                    <rect key="frame" x="0.0" y="291" width="320" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="KVS-Sx-F96"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="f3C-cd-lVN">
+                    <rect key="frame" x="5" y="101" width="310" height="61"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="qvk-nY-A68"/>
+                        <constraint firstAttribute="width" constant="310" id="zSP-ln-812"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f4i-Tw-bNw">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BRg-ao-f4n"/>
+                        <outlet property="delegate" destination="-1" id="1QL-Mj-GsL"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="f3C-cd-lVN" firstAttribute="top" secondItem="Yfs-yB-GUF" secondAttribute="bottom" constant="5" id="02j-Sp-NV7"/>
+                <constraint firstAttribute="bottom" secondItem="PoH-cX-BWJ" secondAttribute="bottom" id="1xV-8W-Qjj"/>
+                <constraint firstAttribute="trailing" secondItem="EK4-cK-m5O" secondAttribute="trailing" constant="5" id="25l-6O-0Wf"/>
+                <constraint firstAttribute="trailing" secondItem="XcC-o0-oYU" secondAttribute="trailing" id="CPM-9E-lpz"/>
+                <constraint firstAttribute="trailing" secondItem="f3C-cd-lVN" secondAttribute="trailing" constant="5" id="Hcz-ek-G72"/>
+                <constraint firstItem="XcC-o0-oYU" firstAttribute="leading" secondItem="nRH-fX-d8U" secondAttribute="leading" id="PQx-3r-pO0"/>
+                <constraint firstItem="XcC-o0-oYU" firstAttribute="top" secondItem="EK4-cK-m5O" secondAttribute="bottom" constant="5" id="biy-Jr-P8Z"/>
+                <constraint firstItem="f3C-cd-lVN" firstAttribute="leading" secondItem="nRH-fX-d8U" secondAttribute="leading" constant="5" id="eCR-E1-bLh"/>
+                <constraint firstItem="EK4-cK-m5O" firstAttribute="top" secondItem="f3C-cd-lVN" secondAttribute="bottom" constant="-1" id="kQ2-IR-MsQ"/>
+                <constraint firstItem="EK4-cK-m5O" firstAttribute="leading" secondItem="nRH-fX-d8U" secondAttribute="leading" constant="5" id="lei-VD-fW6"/>
+                <constraint firstItem="Yfs-yB-GUF" firstAttribute="top" secondItem="nRH-fX-d8U" secondAttribute="top" constant="35" id="tSl-vE-434"/>
+                <constraint firstItem="Yfs-yB-GUF" firstAttribute="leading" secondItem="nRH-fX-d8U" secondAttribute="leading" id="wYI-Ss-4f0"/>
+                <constraint firstItem="PoH-cX-BWJ" firstAttribute="leading" secondItem="nRH-fX-d8U" secondAttribute="leading" id="wm3-Ai-fao"/>
+                <constraint firstAttribute="trailing" secondItem="PoH-cX-BWJ" secondAttribute="trailing" id="yeI-rQ-yEl"/>
+                <constraint firstAttribute="trailing" secondItem="Yfs-yB-GUF" secondAttribute="trailing" id="zmE-fS-h5C"/>
+            </constraints>
+            <point key="canvasLocation" x="193" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-card-button" width="21" height="21"/>
+        <image name="ic-recibo-background" width="310" height="125"/>
+    </resources>
+</document>

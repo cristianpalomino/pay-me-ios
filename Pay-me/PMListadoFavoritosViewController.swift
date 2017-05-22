@@ -53,7 +53,7 @@ class PMListadoFavoritosViewController: PMViewController {
         }
         
         let onTouchPay: ((_ favorito: Favorito) -> Void)?  = { favorito in
-            let vc = PMListaRecibosViewController()
+            let vc = PMRecibosView(with: favorito)
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         }

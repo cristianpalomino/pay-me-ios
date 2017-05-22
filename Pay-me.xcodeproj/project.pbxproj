@@ -21,6 +21,14 @@
 		4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
 		4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
 		4033773E1E03D44800261759 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
+		403589621ED3595200B8B692 /* PMRecibosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589601ED3595200B8B692 /* PMRecibosView.swift */; };
+		403589631ED3595200B8B692 /* PMRecibosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589601ED3595200B8B692 /* PMRecibosView.swift */; };
+		403589641ED3595200B8B692 /* PMRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589611ED3595200B8B692 /* PMRecibosView.xib */; };
+		403589651ED3595200B8B692 /* PMRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589611ED3595200B8B692 /* PMRecibosView.xib */; };
+		403589681ED396D400B8B692 /* PMReciboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589661ED396D400B8B692 /* PMReciboCell.swift */; };
+		403589691ED396D400B8B692 /* PMReciboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589661ED396D400B8B692 /* PMReciboCell.swift */; };
+		4035896A1ED396D400B8B692 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589671ED396D400B8B692 /* PMReciboCell.xib */; };
+		4035896B1ED396D400B8B692 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589671ED396D400B8B692 /* PMReciboCell.xib */; };
 		40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
 		40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
@@ -114,10 +122,6 @@
 		408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */; };
 		408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
-		408D901C1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */; };
-		408D901D1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */; };
-		408D901E1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */; };
-		408D901F1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */; };
 		409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
 		409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
 		409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
@@ -257,6 +261,10 @@
 		403377391E03D42600261759 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
 		4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelTresViewController.swift; sourceTree = "<group>"; };
 		4033773D1E03D44800261759 /* PMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
+		403589601ED3595200B8B692 /* PMRecibosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMRecibosView.swift; sourceTree = "<group>"; };
+		403589611ED3595200B8B692 /* PMRecibosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMRecibosView.xib; sourceTree = "<group>"; };
+		403589661ED396D400B8B692 /* PMReciboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMReciboCell.swift; sourceTree = "<group>"; };
+		403589671ED396D400B8B692 /* PMReciboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMReciboCell.xib; sourceTree = "<group>"; };
 		40463D271E19CF8000F663B0 /* PMItemCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCard.swift; sourceTree = "<group>"; };
 		40463D291E19CF9E00F663B0 /* PMItemCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCard.xib; sourceTree = "<group>"; };
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
@@ -289,8 +297,6 @@
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaRecibosViewController.swift; sourceTree = "<group>"; };
-		408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMListaRecibosView.xib; sourceTree = "<group>"; };
 		409889E71EC939E50028FC67 /* ServiciosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosRouter.swift; sourceTree = "<group>"; };
 		409889EA1ECABCBD0028FC67 /* PMErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMErrorView.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
@@ -583,8 +589,10 @@
 		408D90201ECE5985006CA163 /* Recibos */ = {
 			isa = PBXGroup;
 			children = (
-				408D901A1ECE5957006CA163 /* PMListaRecibosViewController.swift */,
-				408D901B1ECE5957006CA163 /* PMListaRecibosView.xib */,
+				403589601ED3595200B8B692 /* PMRecibosView.swift */,
+				403589611ED3595200B8B692 /* PMRecibosView.xib */,
+				403589661ED396D400B8B692 /* PMReciboCell.swift */,
+				403589671ED396D400B8B692 /* PMReciboCell.xib */,
 			);
 			name = Recibos;
 			sourceTree = "<group>";
@@ -993,10 +1001,11 @@
 				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4FB03A3B1EC4F85900AF82AE /* AgregarServicio.storyboard in Resources */,
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
-				408D901E1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
+				4035896A1ED396D400B8B692 /* PMReciboCell.xib in Resources */,
+				403589641ED3595200B8B692 /* PMRecibosView.xib in Resources */,
 				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
 				4FB03A3F1EC5040A00AF82AE /* TerceroView.xib in Resources */,
 			);
@@ -1034,10 +1043,11 @@
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
 				4FB03A3C1EC4F8E700AF82AE /* AgregarServicio.storyboard in Resources */,
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
-				408D901F1ECE5957006CA163 /* PMListaRecibosView.xib in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
 				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
+				4035896B1ED396D400B8B692 /* PMReciboCell.xib in Resources */,
+				403589651ED3595200B8B692 /* PMRecibosView.xib in Resources */,
 				4FA0E30A1EA56828008F5ED9 /* BarView.xib in Resources */,
 				4FB03A401EC5040A00AF82AE /* TerceroView.xib in Resources */,
 			);
@@ -1226,7 +1236,6 @@
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				4062C1581E3BE9A800617265 /* Service.swift in Sources */,
 				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
-				408D901C1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */,
 				4FC042721EC3D37800B93031 /* PMListadoView.swift in Sources */,
 				4FA8EFAD1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D8991EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
@@ -1242,12 +1251,14 @@
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 				40293EF71E405385007EF98D /* Calendar.swift in Sources */,
 				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,
+				403589621ED3595200B8B692 /* PMRecibosView.swift in Sources */,
 				4FB51BD01EBB7F4D00712249 /* PMStateView.swift in Sources */,
 				4F973EDB1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */,
 				4FB51BDF1EC0C49400712249 /* PMFont.swift in Sources */,
 				4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */,
 				4FC0426E1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
+				403589681ED396D400B8B692 /* PMReciboCell.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
 				40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */,
 				40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */,
@@ -1315,7 +1326,6 @@
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,
 				408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */,
 				4FC042731EC3D37800B93031 /* PMListadoView.swift in Sources */,
-				408D901D1ECE5957006CA163 /* PMListaRecibosViewController.swift in Sources */,
 				4FA8EFAE1EB0F8AC00A596EA /* Extras.swift in Sources */,
 				4F43D89A1EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
 				408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */,
@@ -1331,12 +1341,14 @@
 				408CB6D51E54E73D00D308D3 /* PMTabBarViewController.swift in Sources */,
 				408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */,
 				4FB51BD11EBB7F4D00712249 /* PMStateView.swift in Sources */,
+				403589631ED3595200B8B692 /* PMRecibosView.swift in Sources */,
 				408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */,
 				4F973EDC1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */,
 				4FB51BE01EC0C49400712249 /* PMFont.swift in Sources */,
 				4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */,
 				4FC0426F1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
 				408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */,
+				403589691ED396D400B8B692 /* PMReciboCell.swift in Sources */,
 				408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */,
 				408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */,
 				408CB6E31E54E73D00D308D3 /* AgendaTableViewCell.swift in Sources */,

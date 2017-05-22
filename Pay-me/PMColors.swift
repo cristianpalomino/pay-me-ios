@@ -51,6 +51,10 @@ extension UIColor {
         return UIColor(red: 204/255, green: 209/255, blue: 217/255, alpha: 1)
     }
     
+    class var pmSilver: UIColor {
+        return UIColor(red: 204.0 / 255.0, green: 209.0 / 255.0, blue: 217.0 / 255.0, alpha: 1.0)
+    }
+    
     //Etiquetas
     public class func appRedColor() -> UIColor {
         return UIColor(red: 218/255, green: 68/255, blue: 83/255, alpha: 1)
