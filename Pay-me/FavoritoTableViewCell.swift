@@ -43,7 +43,7 @@ extension FavoritoTableViewCell {
 extension FavoritoTableViewCell {
     
     func update(favorito :Favorito) {
-        guard let item = Session.sharedInstance.staticData.getItem(idCompanySPS: favorito.idCompanySPS)  else {
+        guard let item = Session.shared.staticData.getItem(idCompanySPS: favorito.idCompanySPS)  else {
             return
         }
     

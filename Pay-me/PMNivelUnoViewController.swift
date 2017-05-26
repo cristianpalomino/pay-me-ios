@@ -45,9 +45,9 @@ extension PMNivelUnoViewController: Touchable {
     func touch(params: Any?) {
         if let view = params as? PMItemView {
             let index = view.tag
-            let sg = Session.sharedInstance.staticData.serviciosGenerales[index]
+            let sg = Session.shared.staticData.serviciosGenerales[index]
             if !sg.categorias.isEmpty {
-                Session.sharedInstance.current.servicioGeneral = sg
+                Session.shared.current.servicioGeneral = sg
                 toSegue(identifier: "toSegundo")
             }
         }

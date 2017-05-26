@@ -9,10 +9,8 @@
 import UIKit
 
 class PMMessageViewController: UIViewController {
-
-    typealias Information = (title: String, description: String)
     
-    var information: Information?
+    var information: (title: String, description: String)?
     
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDescripcion: UILabel!

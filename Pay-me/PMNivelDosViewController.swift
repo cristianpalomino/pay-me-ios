@@ -11,7 +11,7 @@ import UIKit
 class PMNivelDosViewController: PMViewController {
     
     override var headerTitle: String {
-        guard let title = Session.sharedInstance.current.servicioGeneral?.name else {
+        guard let title = Session.shared.current.servicioGeneral?.name else {
             return "NONE"
         }
         return title
@@ -27,7 +27,7 @@ class PMNivelDosViewController: PMViewController {
     }
     
     func prepare() {
-        if let servicioGeneral = Session.sharedInstance.current.servicioGeneral {
+        if let servicioGeneral = Session.shared.current.servicioGeneral {
             
             let pmSpinnerView = PMSpinnerView(frame: container.bounds)
             pmSpinnerView.backgroundColor = UIColor.pmPaleGrey80
@@ -45,10 +45,10 @@ extension PMNivelDosViewController: Touchable {
         
         if let view = params as? PMItemView {
             let index = view.tag
-            if let sg = Session.sharedInstance.current.servicioGeneral {
+            if let sg = Session.shared.current.servicioGeneral {
                 let categoria = sg.categorias[index]
                 if !categoria.items.isEmpty {
-                    Session.sharedInstance.current.categoria = categoria
+                    Session.shared.current.categoria = categoria
                     toSegue(identifier: "toTercero")
                 }
             }

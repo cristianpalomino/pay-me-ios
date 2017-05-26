@@ -35,7 +35,7 @@ class PMListaServiciosView: UIView {
     @IBOutlet weak var mainButton: UIButton!
     
     var labels: [String] {
-        guard let strings  = Session.sharedInstance.current.item?.label else {
+        guard let strings  = Session.shared.current.item?.label else {
             return ["NONE"]
         }
         return strings.components(separatedBy: ",")
@@ -65,7 +65,7 @@ class PMListaServiciosView: UIView {
     }
     
     func loadBanners() {
-        if let item = Session.sharedInstance.current.item {
+        if let item = Session.shared.current.item {
             let url = URL(string: item.logo_2)!
             imgBanner.af_setImage(withURL: url,
                                   placeholderImage: nil,

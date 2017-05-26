@@ -6,6 +6,9 @@ PODS:
     - Fabric (~> 1.6.3)
   - Fabric (1.6.11)
   - FSCalendar (2.7.4)
+  - RxCocoa (3.4.1):
+    - RxSwift (~> 3.4)
+  - RxSwift (3.4.1)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -19,6 +22,8 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - FSCalendar (from `https://github.com/WenchaoD/FSCalendar.git`, branch `development`)
+  - RxCocoa
+  - RxSwift
   - SDWebImage
   - SVProgressHUD
   - SwiftyJSON
@@ -40,11 +45,13 @@ SPEC CHECKSUMS:
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   FSCalendar: e95995a746acae531c4a7dd636b8393233125ec5
+  RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
+  RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
 
-PODFILE CHECKSUM: bc6dc6de95459642f0ed90d826985f8b32a2b5bd
+PODFILE CHECKSUM: a9dbd7f6e4ff014ce7c322e7467f15d655b7e531
 
 COCOAPODS: 1.2.1

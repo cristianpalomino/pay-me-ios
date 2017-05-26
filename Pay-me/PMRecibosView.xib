@@ -24,6 +24,7 @@
             <connections>
                 <outlet property="btnPagar" destination="PoH-cX-BWJ" id="zqU-jZ-Ag8"/>
                 <outlet property="collectionView" destination="f3C-cd-lVN" id="RG7-4e-NxW"/>
+                <outlet property="imgBanner" destination="Gnw-JO-lE9" id="jRu-sW-ln8"/>
                 <outlet property="lblIdentifier" destination="WEY-GM-Fsi" id="NWz-Vi-g38"/>
                 <outlet property="lblIdentifierTitle" destination="qaP-cu-txq" id="5Jl-BB-Ddo"/>
                 <outlet property="view" destination="nRH-fX-d8U" id="d1b-cD-VAi"/>
@@ -45,13 +46,13 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Código de alumno" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaP-cu-txq">
-                            <rect key="frame" x="177" y="15" width="91" height="13"/>
+                            <rect key="frame" x="177" y="15" width="85.5" height="13"/>
                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="11"/>
                             <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WLAN 38476 F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEY-GM-Fsi">
-                            <rect key="frame" x="177" y="33" width="74.5" height="13"/>
+                            <rect key="frame" x="177" y="33" width="69.5" height="13"/>
                             <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="11"/>
                             <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>

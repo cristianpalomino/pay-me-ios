@@ -23,7 +23,7 @@ class PMSuministroView: UIView {
     weak var field: PMTextField!
     
     var labels: [String] {
-        guard let strings  = Session.sharedInstance.current.item?.label else {
+        guard let strings  = Session.shared.current.item?.label else {
             return ["NONE"]
         }
         return strings.components(separatedBy: ",")
@@ -73,7 +73,7 @@ class PMSuministroView: UIView {
     }
     
     func loadBanners() {
-        if let item = Session.sharedInstance.current.item {
+        if let item = Session.shared.current.item {
             let urlLogo1 = URL(string: item.empresa.logo)!
             let urlLogo2 = URL(string: item.logo_2)!
             imgBigBanner.af_setImage(withURL: urlLogo1,
@@ -108,7 +108,7 @@ class PMSuministroView: UIView {
     func showInfo() {
         frameInfo.isHidden = true
         let infoView = PMInfoView.instanceFromNib()
-        infoView.empresa = Session.sharedInstance.current.item?.empresa
+        infoView.empresa = Session.shared.current.item?.empresa
         infoView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(infoView)
         

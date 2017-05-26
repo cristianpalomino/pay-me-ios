@@ -15,7 +15,7 @@ class PMSuministroViewController: PMViewController {
     
     
     override var headerTitle: String {
-        guard let title = Session.sharedInstance.current.item?.empresa.shortName else {
+        guard let title = Session.shared.current.item?.empresa.shortName else {
             return "NONE"
         }
         return title
@@ -38,12 +38,13 @@ class PMSuministroViewController: PMViewController {
     
     func callDebtConsult() {
         if let identifier = suministroView.identifier {
-            Request.debtConsult(identifier: identifier, completionHandler: { response in
-                
-                self.responseConsult = response
-                self.hideIndicator()
-            }, errorHandler: { error in
-                
+            PaymeService.debtConsult(identifier: identifier, completion: { response in
+                switch response {
+                case .success(let tuple):
+                    self.responseConsult = tuple
+                case .failure:
+                    break
+                }
                 self.hideIndicator()
             })
         }
@@ -59,7 +60,7 @@ class PMSuministroViewController: PMViewController {
         toSegue(identifier: "toDetalleSuministro")
     }
     
-    var responseConsult: ResponseHandlerDebtConsult?
+    var responseConsult: (name: String, services: [Service])?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let dvc = segue.destination as? PMDetalleSuministroViewController {

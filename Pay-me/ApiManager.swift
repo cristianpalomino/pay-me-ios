@@ -16,19 +16,14 @@ enum BackendError: Error {
     case dataSerialization(error: Error)
     case jsonSerialization(error: Error)
     case objectSerialization(reason: String)
+    case errorCode(reason: String)
     case notAnswerCode(reason: String)
-    case errorCode(reaseon: String)
 }
 
 protocol JSONObjectSerializable {
     
     init?(json: JSON)
 }
-
-typealias ErrorHandler = Error
-typealias SuccessHandler = ()
-typealias ResponseHandlerFavoritos = [Favorito]
-typealias ResponseHandlerDebtConsult = (name: String, services: [Service])
 
 struct PaymeApi {
     
@@ -42,31 +37,32 @@ struct PaymeApi {
     }()
 }
 
-struct Request {
+struct PaymeService {
     
-    static func getFavoritos(completionHandler: @escaping (ResponseHandlerFavoritos) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
-        PaymeApi.sessionManager.request(ServiciosRouter.list).responseJSON(completionHandler: {
+    static func getFavoritos(completion: @escaping (Result<[Favorito]>) -> Void) {
+        PaymeApi.sessionManager.request(Router.list).responseJSON(completionHandler: {
             response in
             switch response.result {
             case .success(let value):
                 
                 let json = JSON(value)
                 
+                
                 guard let answerCode = json["answerCode"].string else {
                     let reason = "No 'answerCode'"
-                    errorHandler(BackendError.notAnswerCode(reason: reason))
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
                     return
                 }
                 
                 guard answerCode.decrypt() == "000" else {
                     let reason = json["answerMessage"].stringValue.decrypt()
-                    errorHandler(BackendError.errorCode(reaseon: reason))
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
                     return
                 }
                 
                 guard let array = json["services"].array else {
                     if let favorito = Favorito(json: json["services"]) {
-                        completionHandler([favorito])
+                        completion(Result.success([favorito]))
                     }
                     return
                 }
@@ -77,17 +73,16 @@ struct Request {
                         favoritos.append(favorito)
                     }
                 }
-                
-                completionHandler(favoritos)
+                completion(Result.success(favoritos))
                 
             case .failure(let error):
-                errorHandler(error)
+                completion(Result.failure(error))
             }
         })
     }
     
-    static func debtConsult(identifier: String, completionHandler: @escaping (ResponseHandlerDebtConsult) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
-        PaymeApi.sessionManager.request(ServiciosRouter.consult(identifier: identifier)).responseJSON {
+    static func debtConsult(identifier: String, completion: @escaping (Result<(name: String, services: [Service])>) -> Void) {
+        PaymeApi.sessionManager.request(Router.consult(identifier: identifier)).responseJSON {
             response in
             
             switch response.result {
@@ -97,13 +92,13 @@ struct Request {
                 
                 guard let answerCode = json["answerCode"].string else {
                     let reason = "No 'answerCode'"
-                    errorHandler(BackendError.notAnswerCode(reason: reason))
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
                     return
                 }
                 
                 guard answerCode.decrypt() == "000" else {
                     let reason = json["answerMessage"].stringValue.decrypt()
-                    errorHandler(BackendError.errorCode(reaseon: reason))
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
                     return
                 }
                 
@@ -113,11 +108,11 @@ struct Request {
                 
                 guard let array = json["services"].array else {
                     if let service = Service(json: json["services"]) {
-                        completionHandler(ResponseHandlerDebtConsult(name, [service]))
+                        completion(Result.success((name, [service])))
                         return
                     }
                     
-                    completionHandler(ResponseHandlerDebtConsult(name, []))
+                    completion(Result.success((name, [])))
                     return
                 }
                 
@@ -128,16 +123,66 @@ struct Request {
                     }
                 }
                 
-                completionHandler(ResponseHandlerDebtConsult(name, servicios))
+                completion(Result.success((name, servicios)))
                 
             case .failure(let error):
-                errorHandler(error)
+                completion(Result.failure(error))
             }
         }
     }
     
-    static func addServices(services: [Service], owner: String, identifier: String, completionHandler: @escaping (SuccessHandler) -> Void, errorHandler: @escaping (ErrorHandler) -> Void) {
-        PaymeApi.sessionManager.request(ServiciosRouter.add(services: services, owner: owner, identifier: identifier)).responseJSON {
+    static func getReceipts(favorito: Favorito, completion: @escaping (Result<(name: String, services: [Service])>) -> Void) {
+        PaymeApi.sessionManager.request(Router.listReceipts(favorito: favorito)).responseJSON {
+            response in
+            
+            switch response.result {
+            case .success(let value):
+                
+                let json = JSON(value)
+                
+                guard let answerCode = json["answerCode"].string else {
+                    let reason = "No 'answerCode'"
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
+                    return
+                }
+                
+                guard answerCode.decrypt() == "000" else {
+                    let reason = json["answerMessage"].stringValue.decrypt()
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
+                    return
+                }
+                
+                guard let name = json["clientName"].string else {
+                    return
+                }
+                
+                guard let array = json["services"].array else {
+                    if let service = Service(json: json["services"]) {
+                        completion(Result.success((name, [service])))
+                        return
+                    }
+                    
+                    completion(Result.success((name, [])))
+                    return
+                }
+                
+                var servicios = [Service]()
+                array.forEach {
+                    if let servicio = Service(json: $0) {
+                        servicios.append(servicio)
+                    }
+                }
+                
+                completion(Result.success((name, servicios)))
+                
+            case .failure(let error):
+                completion(Result.failure(error))
+            }
+        }
+    }
+    
+    static func addServices(services: [Service], owner: String, identifier: String, completion: @escaping (Result<Void>) -> Void) {
+        PaymeApi.sessionManager.request(Router.add(services: services, owner: owner, identifier: identifier)).responseJSON {
             response in
            
             switch response.result {
@@ -147,20 +192,20 @@ struct Request {
                 
                 guard let answerCode = json["answerCode"].string else {
                     let reason = "No 'answerCode'"
-                    errorHandler(BackendError.notAnswerCode(reason: reason))
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
                     return
                 }
                 
                 guard answerCode.decrypt() == "000" else {
                     let reason = json["answerMessage"].stringValue.decrypt()
-                    errorHandler(BackendError.errorCode(reaseon: reason))
+                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
                     return
                 }
                 
-                completionHandler()
+                completion(Result.success())
                 
             case .failure(let error):
-                errorHandler(error)
+                completion(Result.failure(error))
             }
         }
     }

@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class PMListadoFavoritosViewController: PMViewController {    
+    
+    let vm = FavoritosViewModel()
+    let disposeBag = DisposeBag()
     
     var listadoView = PMListadoView.instanceFromNib()
     
@@ -22,45 +27,59 @@ class PMListadoFavoritosViewController: PMViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        request()
+        bind()
     }
     
     override func didReceiveMemoryWarning() {
         didReceiveMemoryWarning()
     }
-    
-    func request() {
-        Request.getFavoritos(completionHandler: {
-            (response: ResponseHandlerFavoritos) in
 
-            self.listadoView.favoritos = response
-            self.listadoView.reloadTableView()
-        }, errorHandler: {
-            error in
-            
-        })
-    }
-    
     override func initComponents() {        
         super.initComponents()
         prepare()
     }
     
     func prepare() {
+        listadoView.initUI()
+        add(mainView: listadoView)
+    }
+    
+    func bind() {
+    
+        vm.observableFavoritos().subscribe(
+            onNext: { favoritos in
+                self.listadoView.favoritos = favoritos
+                self.listadoView.reloadTableView()
+        },
+            onError: { error in
+                print(error.localizedDescription)
+        },
+            onCompleted: {
+                print("Finish *getServices*")
+        }
+            ).addDisposableTo(disposeBag)
         
-        let onTouchAdd: (() -> Void)? = {
+        
+        listadoView.onTouchAdd = {
             self.toSegue(identifier: "toPrimero")
         }
         
-        let onTouchPay: ((_ favorito: Favorito) -> Void)?  = { favorito in
-            let vc = PMRecibosView(with: favorito)
-            vc.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(vc, animated: true)
+        listadoView.onTouchPay = { favorito in
+            
+            self.vm.observableRecibos(favorito: favorito).subscribe(
+                onNext: { tuple in
+                    let recibosView = PMRecibosView()
+                    recibosView.vm = RecibosViewModel(tuple)
+                    recibosView.hidesBottomBarWhenPushed = true
+                    self.navigationController?.pushViewController(recibosView, animated: true)
+            },
+                onError: { error in
+                    print(error.localizedDescription)
+            },
+                onCompleted: {
+                    print("Finish *getRecibos*")
+            }
+                ).addDisposableTo(self.disposeBag)
         }
-        
-        listadoView.initUI()
-        listadoView.onTouchAdd = onTouchAdd
-        listadoView.onTouchPay = onTouchPay
-        add(mainView: listadoView)
     }
 }

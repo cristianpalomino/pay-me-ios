@@ -17,6 +17,12 @@
 		40293EF91E40D2DE007EF98D /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		40293EFB1E40DFEE007EF98D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFA1E40DFEE007EF98D /* Order.swift */; };
 		40293EFD1E40E2E3007EF98D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFC1E40E2E3007EF98D /* Product.swift */; };
+		40330A941ED738DE0086074A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
+		40330A951ED738DE0086074A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
+		40330A961ED738DF0086074A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
+		40330A971ED738DF0086074A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
+		40330A991ED78FC90086074A /* FavoritosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330A981ED78FC90086074A /* FavoritosViewModel.swift */; };
+		40330A9A1ED78FC90086074A /* FavoritosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330A981ED78FC90086074A /* FavoritosViewModel.swift */; };
 		403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377371E03D41900261759 /* PMNivelUnoViewController.swift */; };
 		4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
 		4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
@@ -122,7 +128,7 @@
 		408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */; };
 		408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
-		409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
+		409889E81EC939E50028FC67 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* Router.swift */; };
 		409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
 		409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
 		40A420131E203FF200D74D22 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
@@ -152,8 +158,8 @@
 		4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1898461E11BA470060DD41 /* Notify.storyboard */; };
 		4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
 		4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */; };
-		4F28D7AF1EB8EC5500703CB4 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7AE1EB8EC5500703CB4 /* Api.swift */; };
-		4F28D7B01EB8EC5500703CB4 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7AE1EB8EC5500703CB4 /* Api.swift */; };
+		4F28D7AF1EB8EC5500703CB4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7AE1EB8EC5500703CB4 /* ApiManager.swift */; };
+		4F28D7B01EB8EC5500703CB4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7AE1EB8EC5500703CB4 /* ApiManager.swift */; };
 		4F28D7B21EB9271400703CB4 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7B11EB9271400703CB4 /* Favorito.swift */; };
 		4F28D7B31EB9271400703CB4 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7B11EB9271400703CB4 /* Favorito.swift */; };
 		4F43D88B1EA699C700403292 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA291DFB0D88005D2E87 /* Info.plist */; };
@@ -168,10 +174,6 @@
 		4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
-		4F83292A1EC231240011267B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
-		4F83292B1EC231240011267B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
-		4F83292C1EC235880011267B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
-		4F83292D1EC2358C0011267B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
 		4F973ED81ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */; };
 		4F973ED91ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */; };
 		4F973EDB1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */; };
@@ -232,7 +234,7 @@
 		4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
 		4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
 		4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
-		4FD3CA051EC9F731003DABAC /* ServiciosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* ServiciosRouter.swift */; };
+		4FD3CA051EC9F731003DABAC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* Router.swift */; };
 		4FD3CA071EC9FFEF003DABAC /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */; };
 		4FD3CA081EC9FFEF003DABAC /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */; };
 		4FD3CA0A1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */; };
@@ -257,6 +259,7 @@
 		40293EF81E40D2DE007EF98D /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		40293EFA1E40DFEE007EF98D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		40293EFC1E40E2E3007EF98D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		40330A981ED78FC90086074A /* FavoritosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosViewModel.swift; sourceTree = "<group>"; };
 		403377371E03D41900261759 /* PMNivelUnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelUnoViewController.swift; sourceTree = "<group>"; };
 		403377391E03D42600261759 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
 		4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelTresViewController.swift; sourceTree = "<group>"; };
@@ -297,7 +300,7 @@
 		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		409889E71EC939E50028FC67 /* ServiciosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiciosRouter.swift; sourceTree = "<group>"; };
+		409889E71EC939E50028FC67 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		409889EA1ECABCBD0028FC67 /* PMErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMErrorView.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
 		40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPagosViewController.swift; sourceTree = "<group>"; };
@@ -326,7 +329,7 @@
 		4F1898461E11BA470060DD41 /* Notify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify.storyboard; sourceTree = "<group>"; };
 		4F1898481E11BB240060DD41 /* Notificacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacion.swift; sourceTree = "<group>"; };
 		4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionTableViewCell.swift; sourceTree = "<group>"; };
-		4F28D7AE1EB8EC5500703CB4 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		4F28D7AE1EB8EC5500703CB4 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		4F28D7B11EB9271400703CB4 /* Favorito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
 		4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListadoFavoritosViewController.swift; sourceTree = "<group>"; };
 		4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUITableViewController.swift; sourceTree = "<group>"; };
@@ -419,6 +422,7 @@
 		400190831E647CA30080DDA4 /* Favoritos */ = {
 			isa = PBXGroup;
 			children = (
+				40330A981ED78FC90086074A /* FavoritosViewModel.swift */,
 				4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */,
 				4FC042711EC3D37800B93031 /* PMListadoView.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
@@ -514,8 +518,8 @@
 		4062C1501E3BC43F00617265 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4F28D7AE1EB8EC5500703CB4 /* Api.swift */,
-				409889E71EC939E50028FC67 /* ServiciosRouter.swift */,
+				4F28D7AE1EB8EC5500703CB4 /* ApiManager.swift */,
+				409889E71EC939E50028FC67 /* Router.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -985,8 +989,7 @@
 				40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */,
 				40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
 				4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */,
-				4F83292A1EC231240011267B /* Default-568h@2x.png in Resources */,
-				4F83292B1EC231240011267B /* Default@2x.png in Resources */,
+				40330A971ED738DF0086074A /* Default@2x.png in Resources */,
 				4F43D88B1EA699C700403292 /* Info.plist in Resources */,
 				4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */,
 				4FD3CA071EC9FFEF003DABAC /* ListaServicios.xib in Resources */,
@@ -1000,6 +1003,7 @@
 				40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
 				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4FB03A3B1EC4F85900AF82AE /* AgregarServicio.storyboard in Resources */,
+				40330A961ED738DF0086074A /* Default-568h@2x.png in Resources */,
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
 				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
@@ -1027,8 +1031,7 @@
 				408CB6EF1E54E73D00D308D3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
 				408CB6F01E54E73D00D308D3 /* Notify.storyboard in Resources */,
 				4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */,
-				4F83292C1EC235880011267B /* Default-568h@2x.png in Resources */,
-				4F83292D1EC2358C0011267B /* Default@2x.png in Resources */,
+				40330A951ED738DE0086074A /* Default@2x.png in Resources */,
 				408CB6F11E54E73D00D308D3 /* Home.storyboard in Resources */,
 				408CB6F21E54E73D00D308D3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
 				4FD3CA081EC9FFEF003DABAC /* ListaServicios.xib in Resources */,
@@ -1042,6 +1045,7 @@
 				4F43D88E1EA699CE00403292 /* Development.plist in Resources */,
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
 				4FB03A3C1EC4F8E700AF82AE /* AgregarServicio.storyboard in Resources */,
+				40330A941ED738DE0086074A /* Default-568h@2x.png in Resources */,
 				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
 				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
@@ -1186,13 +1190,13 @@
 				40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */,
 				4F973ED81ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */,
 				4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */,
-				409889E81EC939E50028FC67 /* ServiciosRouter.swift in Sources */,
+				409889E81EC939E50028FC67 /* Router.swift in Sources */,
 				40293EFB1E40DFEE007EF98D /* Order.swift in Sources */,
 				403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */,
 				405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */,
 				4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */,
 				40CF1E491E068AAF0072CB29 /* PMSuministroViewController.swift in Sources */,
-				4F28D7AF1EB8EC5500703CB4 /* Api.swift in Sources */,
+				4F28D7AF1EB8EC5500703CB4 /* ApiManager.swift in Sources */,
 				4FF4309F1EC6916100E4E16D /* PMDetalleView.swift in Sources */,
 				4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */,
 				4F43D89F1EA7C34000403292 /* PMInfoView.swift in Sources */,
@@ -1243,6 +1247,7 @@
 				405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */,
 				40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */,
 				4FB51BD71EBBE51200712249 /* PMCenterView.swift in Sources */,
+				40330A991ED78FC90086074A /* FavoritosViewModel.swift in Sources */,
 				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
 				4FD3CA0A1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
 				409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */,
@@ -1276,13 +1281,13 @@
 				408CB69C1E54E73D00D308D3 /* DetalleReciboViewController.swift in Sources */,
 				4F973ED91ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */,
 				408CB69D1E54E73D00D308D3 /* LaunchViewController.swift in Sources */,
-				4FD3CA051EC9F731003DABAC /* ServiciosRouter.swift in Sources */,
+				4FD3CA051EC9F731003DABAC /* Router.swift in Sources */,
 				408CB69E1E54E73D00D308D3 /* Order.swift in Sources */,
 				408CB69F1E54E73D00D308D3 /* PMNivelUnoViewController.swift in Sources */,
 				408CB6A01E54E73D00D308D3 /* Card.swift in Sources */,
 				408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */,
 				408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */,
-				4F28D7B01EB8EC5500703CB4 /* Api.swift in Sources */,
+				4F28D7B01EB8EC5500703CB4 /* ApiManager.swift in Sources */,
 				4FF430A01EC6916100E4E16D /* PMDetalleView.swift in Sources */,
 				4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */,
 				408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */,
@@ -1333,6 +1338,7 @@
 				408CB6D11E54E73D00D308D3 /* PMSizes.swift in Sources */,
 				4FB51BD81EBBE51200712249 /* PMCenterView.swift in Sources */,
 				408CB6D21E54E73D00D308D3 /* ListaPagosViewController.swift in Sources */,
+				40330A9A1ED78FC90086074A /* FavoritosViewModel.swift in Sources */,
 				408CB6D41E54E73D00D308D3 /* NotificacionesViewController.swift in Sources */,
 				4FD3CA0B1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
 				409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */,

@@ -10,6 +10,8 @@ target 'Pay-me' do
   pod 'Crashlytics'
   pod 'SWTableViewCell'
   pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'AlamofireImage'
   pod 'SwiftyJSON'
   pod 'SVProgressHUD'
@@ -25,6 +27,8 @@ target 'Pay-me Development' do
     
     # Pods for Pay-me
     pod 'Fabric'
+    pod 'RxSwift'
+    pod 'RxCocoa'
     pod 'Crashlytics'
     pod 'SWTableViewCell'
     pod 'Alamofire'

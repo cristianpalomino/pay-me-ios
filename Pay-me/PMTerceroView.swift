@@ -27,7 +27,7 @@ class PMTerceroView: UIView {
     }
     
     func initUI() {
-        items = Session.sharedInstance.current.categoria?.items
+        items = Session.shared.current.categoria?.items
         registerCell()
         titleStrip.titles = titles
     }
@@ -56,7 +56,7 @@ extension PMTerceroView : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = items?[indexPath.row]
-        Session.sharedInstance.current.item = item
+        Session.shared.current.item = item
         touchDelegate?.touch(params: nil)
     }
 }

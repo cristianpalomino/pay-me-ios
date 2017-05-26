@@ -13,7 +13,7 @@ class PMNivelTresViewController: PMViewController {
     var terceroView: PMTerceroView?
     
     override var headerTitle: String {
-        guard let title = Session.sharedInstance.current.categoria?.name else {
+        guard let title = Session.shared.current.categoria?.name else {
             return "NONE"
         }
         return title

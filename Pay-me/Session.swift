@@ -9,11 +9,13 @@
 import Foundation
 
 class Session {
+
+    var currentFavorito: Favorito?
     
     var current = Current()
     var staticData = Static()
     
-    static let sharedInstance = Session()
+    static let shared = Session()
     fileprivate init() {}
 }
 

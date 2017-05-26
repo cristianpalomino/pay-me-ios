@@ -48,7 +48,7 @@ class PMCenterView: UIView {
     }
     
     func centerImage() {
-        guard let sg = Session.sharedInstance.current.servicioGeneral else {
+        guard let sg = Session.shared.current.servicioGeneral else {
             prepareImageCenter(named: "isotipo-pay-me")
             return
         }

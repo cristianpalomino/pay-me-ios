@@ -7,21 +7,36 @@
 //
 
 import UIKit
+import AlamofireImage
+import RxSwift
+
+class RecibosViewModel: NSObject {
+
+    var identifier: String!
+    var labelIdentifier: String!
+    var url: URL!
+    
+    init(_ data: (Favorito, [Debt])) {
+        
+        guard let item = Session.shared.staticData.getItem(idCompanySPS: data.0.idCompanySPS) else {
+            return
+        }
+        
+        identifier = data.0.serviceIdentifier
+        labelIdentifier = item.label.components(separatedBy: ",")[1]
+        url = URL(string: item.logo_2!)
+    }
+}
 
 class PMRecibosView: PMViewController {
     
-    var item: Item?
-    var favorito: Favorito!
+    var vm: RecibosViewModel?
     
     @IBOutlet weak var lblIdentifier: UILabel!
     @IBOutlet weak var lblIdentifierTitle: UILabel!
     @IBOutlet weak var btnPagar: UIButton!
+    @IBOutlet weak var imgBanner: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    convenience init(with favorito: Favorito) {
-        self.init()
-        self.favorito = favorito
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,24 +47,27 @@ class PMRecibosView: PMViewController {
         prepare()
         register()
         header()
+        banner()
     }
     
     func prepare() {
-        item = Session.sharedInstance.staticData.getItem(idCompanySPS: favorito.idCompanySPS)
-        
         btnPagar.setGradientBackground()
         collectionView.layer.borderColor = UIColor.pmSilver.cgColor
         collectionView.layer.borderWidth = 0.5
     }
     
     func header() {
-        lblIdentifier.text = favorito.serviceIdentifier
-        lblIdentifierTitle.text = item?.codeDescription
+        lblIdentifier.text = vm?.identifier
+        lblIdentifierTitle.text = vm?.labelIdentifier
     }
     
     func register() {
         let nib = UINib(nibName: "PMReciboCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "ReciboCell")
+    }
+    
+    func banner() {
+        imgBanner.af_setImage(withURL: vm!.url, placeholderImage: nil, imageTransition: .crossDissolve(0.2))
     }
     
     let insets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

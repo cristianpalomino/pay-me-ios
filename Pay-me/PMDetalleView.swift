@@ -121,7 +121,7 @@ class PMDetalleView: UIView {
     }
     
     func loadBanners() {
-        if let item = Session.sharedInstance.current.item {
+        if let item = Session.shared.current.item {
             let url = URL(string: item.logo_2)!
             imgBanner.af_setImage(withURL: url,
                                   placeholderImage: nil,
