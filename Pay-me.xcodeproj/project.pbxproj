@@ -21,8 +21,6 @@
 		40330A951ED738DE0086074A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
 		40330A961ED738DF0086074A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
 		40330A971ED738DF0086074A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
-		40330A991ED78FC90086074A /* FavoritosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330A981ED78FC90086074A /* FavoritosViewModel.swift */; };
-		40330A9A1ED78FC90086074A /* FavoritosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40330A981ED78FC90086074A /* FavoritosViewModel.swift */; };
 		403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377371E03D41900261759 /* PMNivelUnoViewController.swift */; };
 		4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
 		4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
@@ -35,6 +33,10 @@
 		403589691ED396D400B8B692 /* PMReciboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589661ED396D400B8B692 /* PMReciboCell.swift */; };
 		4035896A1ED396D400B8B692 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589671ED396D400B8B692 /* PMReciboCell.xib */; };
 		4035896B1ED396D400B8B692 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589671ED396D400B8B692 /* PMReciboCell.xib */; };
+		403C13621EDC86A200A37939 /* PMPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13601EDC86A200A37939 /* PMPinView.swift */; };
+		403C13631EDC86A200A37939 /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C13611EDC86A200A37939 /* PinView.xib */; };
+		403C13641EDC8FD600A37939 /* PMPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13601EDC86A200A37939 /* PMPinView.swift */; };
+		403C13651EDC8FD600A37939 /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C13611EDC86A200A37939 /* PinView.xib */; };
 		40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
 		40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
 		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
@@ -259,7 +261,6 @@
 		40293EF81E40D2DE007EF98D /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		40293EFA1E40DFEE007EF98D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		40293EFC1E40E2E3007EF98D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		40330A981ED78FC90086074A /* FavoritosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosViewModel.swift; sourceTree = "<group>"; };
 		403377371E03D41900261759 /* PMNivelUnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelUnoViewController.swift; sourceTree = "<group>"; };
 		403377391E03D42600261759 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
 		4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelTresViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +269,8 @@
 		403589611ED3595200B8B692 /* PMRecibosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMRecibosView.xib; sourceTree = "<group>"; };
 		403589661ED396D400B8B692 /* PMReciboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMReciboCell.swift; sourceTree = "<group>"; };
 		403589671ED396D400B8B692 /* PMReciboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMReciboCell.xib; sourceTree = "<group>"; };
+		403C13601EDC86A200A37939 /* PMPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PMPinView.swift; path = ../../Downloads/pinValidator/PMPinView.swift; sourceTree = "<group>"; };
+		403C13611EDC86A200A37939 /* PinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PinView.xib; path = ../../Downloads/pinValidator/PinView.xib; sourceTree = "<group>"; };
 		40463D271E19CF8000F663B0 /* PMItemCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCard.swift; sourceTree = "<group>"; };
 		40463D291E19CF9E00F663B0 /* PMItemCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCard.xib; sourceTree = "<group>"; };
 		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
@@ -422,7 +425,6 @@
 		400190831E647CA30080DDA4 /* Favoritos */ = {
 			isa = PBXGroup;
 			children = (
-				40330A981ED78FC90086074A /* FavoritosViewModel.swift */,
 				4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */,
 				4FC042711EC3D37800B93031 /* PMListadoView.swift */,
 				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
@@ -440,6 +442,15 @@
 				4033773D1E03D44800261759 /* PMViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		403C13661EDCCC2B00A37939 /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				403C13601EDC86A200A37939 /* PMPinView.swift */,
+				403C13611EDC86A200A37939 /* PinView.xib */,
+			);
+			name = Pin;
 			sourceTree = "<group>";
 		};
 		404BBFB91E268F5A0050CA30 /* Agenda */ = {
@@ -753,6 +764,7 @@
 		4FC042771EC3D7B300B93031 /* Reutilizables */ = {
 			isa = PBXGroup;
 			children = (
+				403C13661EDCCC2B00A37939 /* Pin */,
 				4F973ED31ECB4A5F003D3CAF /* Messages */,
 				4FD3CA0C1ECA6E06003DABAC /* Error */,
 				4FB03A441EC5FF4200AF82AE /* TextField */,
@@ -997,6 +1009,7 @@
 				40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
 				4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */,
 				4FD3CA0E1ECA6E16003DABAC /* ErrorView.xib in Resources */,
+				403C13631EDC86A200A37939 /* PinView.xib in Resources */,
 				4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				4FF4309C1EC6915500E4E16D /* DetalleView.xib in Resources */,
@@ -1039,6 +1052,7 @@
 				408CB6F41E54E73D00D308D3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
 				408CB6F51E54E73D00D308D3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
 				4FD3CA0F1ECA6E16003DABAC /* ErrorView.xib in Resources */,
+				403C13651EDC8FD600A37939 /* PinView.xib in Resources */,
 				4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */,
 				408CB6F61E54E73D00D308D3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
 				4FF4309D1EC6915500E4E16D /* DetalleView.xib in Resources */,
@@ -1227,6 +1241,7 @@
 				40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */,
 				4FB51BE21EC1112200712249 /* PMSpinnerView.swift in Sources */,
 				4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */,
+				403C13621EDC86A200A37939 /* PMPinView.swift in Sources */,
 				4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
 				4FA0E3061EA5674C008F5ED9 /* PMBarView.swift in Sources */,
@@ -1247,7 +1262,6 @@
 				405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */,
 				40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */,
 				4FB51BD71EBBE51200712249 /* PMCenterView.swift in Sources */,
-				40330A991ED78FC90086074A /* FavoritosViewModel.swift in Sources */,
 				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
 				4FD3CA0A1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
 				409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */,
@@ -1318,6 +1332,7 @@
 				4FB51BE31EC1112200712249 /* PMSpinnerView.swift in Sources */,
 				408CB6C21E54E73D00D308D3 /* PMHeaderView.swift in Sources */,
 				408CB6C31E54E73D00D308D3 /* PMNivelDosViewController.swift in Sources */,
+				403C13641EDC8FD600A37939 /* PMPinView.swift in Sources */,
 				408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */,
 				4FA0E3071EA5674C008F5ED9 /* PMBarView.swift in Sources */,
@@ -1338,7 +1353,6 @@
 				408CB6D11E54E73D00D308D3 /* PMSizes.swift in Sources */,
 				4FB51BD81EBBE51200712249 /* PMCenterView.swift in Sources */,
 				408CB6D21E54E73D00D308D3 /* ListaPagosViewController.swift in Sources */,
-				40330A9A1ED78FC90086074A /* FavoritosViewModel.swift in Sources */,
 				408CB6D41E54E73D00D308D3 /* NotificacionesViewController.swift in Sources */,
 				4FD3CA0B1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
 				409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */,
@@ -1537,7 +1551,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.payme.alignet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payme.alignest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1563,7 +1577,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = com.payme.alignet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.payme.alignest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pay-me/Pay-me-Bridging-Header.h";

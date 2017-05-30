@@ -12,9 +12,7 @@ import RxSwift
 
 class PMListadoFavoritosViewController: PMViewController {    
     
-    let vm = FavoritosViewModel()
     let disposeBag = DisposeBag()
-    
     var listadoView = PMListadoView.instanceFromNib()
     
     override var headerTitle: String {
@@ -46,19 +44,14 @@ class PMListadoFavoritosViewController: PMViewController {
     
     func bind() {
     
-        vm.observableFavoritos().subscribe(
-            onNext: { favoritos in
-                self.listadoView.favoritos = favoritos
-                self.listadoView.reloadTableView()
-        },
-            onError: { error in
-                print(error.localizedDescription)
-        },
-            onCompleted: {
-                print("Finish *getServices*")
-        }
-            ).addDisposableTo(disposeBag)
-        
+        PaymeService.getFavoritos().subscribe( onNext: { favoritos in
+            self.listadoView.favoritos = favoritos
+            self.listadoView.reloadTableView()
+        }, onError: { error in
+            print(error.localizedDescription)
+        }, onCompleted: {
+            print("onCompleted - getServices")
+        }).addDisposableTo(disposeBag)
         
         listadoView.onTouchAdd = {
             self.toSegue(identifier: "toPrimero")
@@ -66,20 +59,15 @@ class PMListadoFavoritosViewController: PMViewController {
         
         listadoView.onTouchPay = { favorito in
             
-            self.vm.observableRecibos(favorito: favorito).subscribe(
-                onNext: { tuple in
-                    let recibosView = PMRecibosView()
-                    recibosView.vm = RecibosViewModel(tuple)
-                    recibosView.hidesBottomBarWhenPushed = true
-                    self.navigationController?.pushViewController(recibosView, animated: true)
-            },
-                onError: { error in
-                    print(error.localizedDescription)
-            },
-                onCompleted: {
-                    print("Finish *getRecibos*")
-            }
-                ).addDisposableTo(self.disposeBag)
+            PaymeService.getReceipts(favorito: favorito).subscribe( onNext: { tuple in
+                let recibosView = PMRecibosView()
+                recibosView.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(recibosView, animated: true)
+            }, onError: { error in
+                print(error.localizedDescription)
+            }, onCompleted: {
+                print("onCompleted - getRecibos")
+            }).addDisposableTo(self.disposeBag)
         }
     }
 }

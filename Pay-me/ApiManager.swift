@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import RxSwift
 
 enum BackendError: Error {
     
@@ -38,46 +39,27 @@ struct PaymeApi {
 }
 
 struct PaymeService {
-    
-    static func getFavoritos(completion: @escaping (Result<[Favorito]>) -> Void) {
-        PaymeApi.sessionManager.request(Router.list).responseJSON(completionHandler: {
-            response in
-            switch response.result {
-            case .success(let value):
-                
-                let json = JSON(value)
-                
-                
-                guard let answerCode = json["answerCode"].string else {
-                    let reason = "No 'answerCode'"
-                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
-                    return
+
+    static func responseJSON(url: URLRequestConvertible) -> Observable<JSON> {
+        return Observable.create { observer in
+            let request = PaymeApi.sessionManager.request(url).responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    observer.onNext(JSON(value))
+                case .failure(let error):
+                    observer.onError(error)
                 }
-                
-                guard answerCode.decrypt() == "000" else {
-                    let reason = json["answerMessage"].stringValue.decrypt()
-                    completion(Result.failure(BackendError.notAnswerCode(reason: reason)))
-                    return
-                }
-                
-                guard let array = json["services"].array else {
-                    if let favorito = Favorito(json: json["services"]) {
-                        completion(Result.success([favorito]))
-                    }
-                    return
-                }
-                
-                var favoritos = [Favorito]()
-                array.forEach {
-                    if let favorito = Favorito(json: $0) {
-                        favoritos.append(favorito)
-                    }
-                }
-                completion(Result.success(favoritos))
-                
-            case .failure(let error):
-                completion(Result.failure(error))
+                observer.onCompleted()
             }
+            return Disposables.create(with: request.cancel)
+        }
+    }
+    
+    static func getFavoritos() -> Observable<[Favorito]> {
+        return responseJSON(url: Router.list).map({ json in
+            json["services"].arrayValue
+        }).map({ json in
+            json.map({ Favorito(json: $0)! })
         })
     }
     
@@ -129,6 +111,18 @@ struct PaymeService {
                 completion(Result.failure(error))
             }
         }
+    }
+    
+    static func getReceipts(favorito: Favorito) -> Observable<(Item, [Debt])> {
+        return responseJSON(url: Router.listReceipts(favorito: favorito)).map({ json in
+            json["services"].arrayValue.map({ Service(json: $0)! })
+        }).map({ services in
+            services.filter({ item in item.idServiceSPS == favorito.idServiceSPS }).first!
+        }).map({ service in
+            let item = Session.shared.staticData.getItem(idCompanySPS: favorito.idServiceSPS)!
+            let debts = service.debts
+            return (item, debts)
+        })
     }
     
     static func getReceipts(favorito: Favorito, completion: @escaping (Result<(name: String, services: [Service])>) -> Void) {

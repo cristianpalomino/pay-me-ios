@@ -10,28 +10,8 @@ import UIKit
 import AlamofireImage
 import RxSwift
 
-class RecibosViewModel: NSObject {
-
-    var identifier: String!
-    var labelIdentifier: String!
-    var url: URL!
-    
-    init(_ data: (Favorito, [Debt])) {
-        
-        guard let item = Session.shared.staticData.getItem(idCompanySPS: data.0.idCompanySPS) else {
-            return
-        }
-        
-        identifier = data.0.serviceIdentifier
-        labelIdentifier = item.label.components(separatedBy: ",")[1]
-        url = URL(string: item.logo_2!)
-    }
-}
-
 class PMRecibosView: PMViewController {
-    
-    var vm: RecibosViewModel?
-    
+        
     @IBOutlet weak var lblIdentifier: UILabel!
     @IBOutlet weak var lblIdentifierTitle: UILabel!
     @IBOutlet weak var btnPagar: UIButton!
@@ -46,8 +26,8 @@ class PMRecibosView: PMViewController {
         super.initComponents()
         prepare()
         register()
-        header()
-        banner()
+//        header()
+//        banner()
     }
     
     func prepare() {
@@ -56,21 +36,58 @@ class PMRecibosView: PMViewController {
         collectionView.layer.borderWidth = 0.5
     }
     
-    func header() {
-        lblIdentifier.text = vm?.identifier
-        lblIdentifierTitle.text = vm?.labelIdentifier
-    }
+//    func header() {
+//        lblIdentifier.text = vm?.identifier
+//        lblIdentifierTitle.text = vm?.labelIdentifier
+//    }
     
     func register() {
         let nib = UINib(nibName: "PMReciboCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "ReciboCell")
     }
     
-    func banner() {
-        imgBanner.af_setImage(withURL: vm!.url, placeholderImage: nil, imageTransition: .crossDissolve(0.2))
+//    func banner() {
+//        imgBanner.af_setImage(withURL: vm!.url, placeholderImage: nil, imageTransition: .crossDissolve(0.2))
+//    }
+    
+    @IBAction func tapPagar() {
+        let pinView = PMPinView.instanceFromNib()
+        pinView.initUI()
+        pinView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let transition = CATransition()
+        transition.duration = 1.0
+        transition.type = kCATransitionReveal
+        pinView.layer.add(transition, forKey: nil)
+        self.view.addSubview(pinView)
+        
+        pinView.heightAnchor.constraint(equalToConstant: 125).isActive = true
+        pinView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -167).isActive = true
+        pinView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
+        pinView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
     }
     
     let insets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    
+    
+    func keyBoardObservers() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.showsKeyBoard(notification:)),
+                                               name: .UIKeyboardWillShow,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.hideshowKeyBoard(notification:)),
+                                               name: .UIKeyboardWillHide,
+                                               object: nil)
+    }
+    
+    func showsKeyBoard(notification: NSNotification) {
+        
+    }
+    
+    func hideshowKeyBoard(notification: NSNotification) {
+        
+    }
 }
 
 //MARK: - UICollectionViewDataSource
