@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Regular.ttf">
+            <string>SanFranciscoDisplay-Regular</string>
+        </array>
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PMChangePinViewController" customModule="payme" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmTextfield" destination="t6d-fs-og7" id="mzI-hT-6Jt"/>
+                <outlet property="confirmpinLabel" destination="0Zh-01-Rfo" id="Uui-80-BaS"/>
+                <outlet property="formView" destination="RJ2-6z-bZ4" id="dBM-Fz-35d"/>
+                <outlet property="ingresaLabel" destination="oEk-Ht-bXb" id="uUa-n6-rZz"/>
+                <outlet property="ingresapinLabel" destination="PnC-fb-sPj" id="wvc-9t-TpP"/>
+                <outlet property="newpinButton" destination="t0S-R3-yUg" id="JSZ-V4-amh"/>
+                <outlet property="newpinTextfield" destination="FxX-uh-lVx" id="wTv-ZY-jkV"/>
+                <outlet property="newpinView" destination="XtY-Vg-Ny5" id="sHw-eJ-fWF"/>
+                <outlet property="oldPinView" destination="HHO-u6-flF" id="nwX-fS-Dmy"/>
+                <outlet property="pinTextfield" destination="usd-GT-SAn" id="lfp-Cy-6oX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="pindotButton" destination="ORa-CI-hYr" collectionClass="NSMutableArray" id="BGU-ro-xQr"/>
+                <outletCollection property="pindotButton" destination="5Xx-gt-n1e" collectionClass="NSMutableArray" id="d7B-iQ-nBy"/>
+                <outletCollection property="pindotButton" destination="zO6-YL-BnS" collectionClass="NSMutableArray" id="ccD-9M-6Oa"/>
+                <outletCollection property="pindotButton" destination="B7G-lN-DL0" collectionClass="NSMutableArray" id="abD-B8-qrI"/>
+                <outletCollection property="newpinButton" destination="wDP-xy-oMG" collectionClass="NSMutableArray" id="Gpq-jJ-jdQ"/>
+                <outletCollection property="newpinButton" destination="K09-IS-vxi" collectionClass="NSMutableArray" id="Kf0-aS-oLB"/>
+                <outletCollection property="newpinButton" destination="t0S-R3-yUg" collectionClass="NSMutableArray" id="p0M-Na-8CE"/>
+                <outletCollection property="newpinButton" destination="K09-IS-vxi" collectionClass="NSMutableArray" id="uyI-UL-I36"/>
+                <outletCollection property="newpinButton" destination="Gx8-k4-UEr" collectionClass="NSMutableArray" id="sx4-c4-GKK"/>
+                <outletCollection property="newpinreButton" destination="Emt-6z-jOh" collectionClass="NSMutableArray" id="zMi-8e-EUv"/>
+                <outletCollection property="newpinreButton" destination="Na2-QT-jBg" collectionClass="NSMutableArray" id="mHC-O3-2Md"/>
+                <outletCollection property="newpinreButton" destination="Ly6-rY-5T2" collectionClass="NSMutableArray" id="MAJ-4G-iUX"/>
+                <outletCollection property="newpinreButton" destination="CBT-uf-wis" collectionClass="NSMutableArray" id="e8G-IS-xO4"/>
+                <outletCollection property="newpinreButton" destination="CBT-uf-wis" collectionClass="NSMutableArray" id="JVT-0A-O2I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xG3-Nb-TDV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cambiar Pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHq-tx-pfI">
+                            <rect key="frame" x="0.5" y="0.0" width="319.5" height="35.5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="HHO-u6-flF">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mzb-CS-lhz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cs7-p7-Jml">
+                            <rect key="frame" x="0.0" y="116" width="320" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresa tu Pin anterior" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-CJ-1ti">
+                            <rect key="frame" x="0.0" y="30" width="320" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="19"/>
+                            <color key="textColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Actualiza la seguridad de tu cuenta regularmente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBk-zC-eRr">
+                            <rect key="frame" x="45" y="56" width="226" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="12"/>
+                            <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E1V-df-T1M">
+                            <rect key="frame" x="0.0" y="103" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90588235294117647" green="0.91764705882352937" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nF-ly-F6M">
+                    <rect key="frame" x="0.0" y="104" width="320" height="154"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico-pin" translatesAutoresizingMaskIntoConstraints="NO" id="fAA-g8-FaH">
+                            <rect key="frame" x="16" y="21" width="21" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresa tu PIN anterior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEk-Ht-bXb">
+                            <rect key="frame" x="45" y="21" width="200" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                            <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xx-gt-n1e">
+                            <rect key="frame" x="51" y="60" width="41" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="ico-pinWhite"/>
+                            <state key="selected" image="ico-pinBlack"/>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO6-YL-BnS">
+                            <rect key="frame" x="110" y="60" width="41" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="ico-pinWhite"/>
+                            <state key="selected" image="ico-pinBlack"/>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORa-CI-hYr">
+                            <rect key="frame" x="170" y="60" width="41" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="ico-pinWhite"/>
+                            <state key="selected" image="ico-pinBlack"/>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7G-lN-DL0">
+                            <rect key="frame" x="230" y="60" width="41" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="ico-pinWhite"/>
+                            <state key="selected" image="ico-pinBlack"/>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="usd-GT-SAn">
+                            <rect key="frame" x="-115" y="0.0" width="93" height="17"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                            <connections>
+                                <action selector="textFieldChanged:" destination="-1" eventType="editingChanged" id="rFp-dV-6aX"/>
+                                <outlet property="delegate" destination="-1" id="58S-RZ-Q2K"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="469" y="-569"/>
+        </view>
+        <view contentMode="scaleToFill" id="XtY-Vg-Ny5">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-z6-XFd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FsG-5N-isZ">
+                            <rect key="frame" x="0.0" y="116" width="320" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresa tu nuevo Pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTl-vj-VSL">
+                            <rect key="frame" x="0.0" y="30" width="320" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="19"/>
+                            <color key="textColor" red="0.0" green="0.51372549020000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Actualiza la seguridad de tu cuenta regularmente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEF-Sn-EFO">
+                            <rect key="frame" x="45" y="56" width="226" height="42"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="12"/>
+                            <color key="textColor" red="0.66666666669999997" green="0.69803921570000005" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W2B-QS-wNt">
+                            <rect key="frame" x="0.0" y="103" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJ2-6z-bZ4">
+                    <rect key="frame" x="0.0" y="104" width="320" height="340"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNn-my-Aij">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico-pin" translatesAutoresizingMaskIntoConstraints="NO" id="VxC-5g-w7y">
+                                    <rect key="frame" x="16" y="21" width="21" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingresa tu nuevo Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnC-fb-sPj">
+                                    <rect key="frame" x="45" y="21" width="200" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="13"/>
+                                    <color key="textColor" red="0.26274509800000001" green="0.2901960784" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDP-xy-oMG">
+                                    <rect key="frame" x="51" y="60" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="newpinTouch:" destination="-1" eventType="touchUpInside" id="GKa-P1-deZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K09-IS-vxi">
+                                    <rect key="frame" x="110" y="60" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="newpinTouch:" destination="-1" eventType="touchUpInside" id="TAC-4A-ggv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0S-R3-yUg">
+                                    <rect key="frame" x="170" y="60" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="newpinTouch:" destination="-1" eventType="touchUpInside" id="MLx-oG-RS0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx8-k4-UEr">
+                                    <rect key="frame" x="230" y="60" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="newpinTouch:" destination="-1" eventType="touchUpInside" id="aqE-aw-geo"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="FxX-uh-lVx">
+                                    <rect key="frame" x="-115" y="0.0" width="93" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                    <connections>
+                                        <action selector="newpinTextChanged:" destination="-1" eventType="editingChanged" id="JLZ-jT-fRN"/>
+                                        <outlet property="delegate" destination="-1" id="KS0-jZ-8C3"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                        </view>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4KI-ud-eJK">
+                            <rect key="frame" x="0.0" y="117" width="320" height="115"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ico-pin" translatesAutoresizingMaskIntoConstraints="NO" id="j7D-FF-ML2">
+                                    <rect key="frame" x="16" y="15" width="21" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirma tu nuevo Pin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zh-01-Rfo">
+                                    <rect key="frame" x="45" y="15" width="200" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="12"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ly6-rY-5T2">
+                                    <rect key="frame" x="110" y="54" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="confirmTouch:" destination="-1" eventType="touchUpInside" id="2cW-p4-lch"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBT-uf-wis">
+                                    <rect key="frame" x="51" y="54" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="confirmTouch:" destination="-1" eventType="touchUpInside" id="paA-eh-zmG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emt-6z-jOh">
+                                    <rect key="frame" x="170" y="54" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="confirmTouch:" destination="-1" eventType="touchUpInside" id="pJ9-mO-3kl"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Na2-QT-jBg">
+                                    <rect key="frame" x="230" y="54" width="41" height="41"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="ico-pinWhite"/>
+                                    <state key="selected" image="ico-pinBlack"/>
+                                    <connections>
+                                        <action selector="confirmTouch:" destination="-1" eventType="touchUpInside" id="60b-Xh-j1i"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="t6d-fs-og7">
+                                    <rect key="frame" x="-87" y="5" width="92" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                    <connections>
+                                        <action selector="confirmTextChanged:" destination="-1" eventType="editingChanged" id="MEG-3G-gAP"/>
+                                        <outlet property="delegate" destination="-1" id="oSd-Ud-03W"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="836" y="-569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico-pin" width="21" height="21"/>
+        <image name="ico-pinBlack" width="41" height="41"/>
+        <image name="ico-pinWhite" width="41" height="41"/>
+    </resources>
+</document>

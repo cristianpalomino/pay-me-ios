@@ -8,14 +8,6 @@
 
 import Foundation
 
-enum CardType {
-    
-    case VALID
-    case INVALID
-    case ADD
-    case DEFAULT
-}
-
 enum FlowType {
     
     case FIRST_TIME

@@ -21,26 +21,256 @@
 		40330A951ED738DE0086074A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
 		40330A961ED738DF0086074A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329281EC231240011267B /* Default-568h@2x.png */; };
 		40330A971ED738DF0086074A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8329291EC231240011267B /* Default@2x.png */; };
-		403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377371E03D41900261759 /* PMNivelUnoViewController.swift */; };
-		4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
-		4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
 		4033773E1E03D44800261759 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
-		403589621ED3595200B8B692 /* PMRecibosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589601ED3595200B8B692 /* PMRecibosView.swift */; };
-		403589631ED3595200B8B692 /* PMRecibosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589601ED3595200B8B692 /* PMRecibosView.swift */; };
-		403589641ED3595200B8B692 /* PMRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589611ED3595200B8B692 /* PMRecibosView.xib */; };
-		403589651ED3595200B8B692 /* PMRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589611ED3595200B8B692 /* PMRecibosView.xib */; };
-		403589681ED396D400B8B692 /* PMReciboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589661ED396D400B8B692 /* PMReciboCell.swift */; };
-		403589691ED396D400B8B692 /* PMReciboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403589661ED396D400B8B692 /* PMReciboCell.swift */; };
-		4035896A1ED396D400B8B692 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589671ED396D400B8B692 /* PMReciboCell.xib */; };
-		4035896B1ED396D400B8B692 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403589671ED396D400B8B692 /* PMReciboCell.xib */; };
-		403C13621EDC86A200A37939 /* PMPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13601EDC86A200A37939 /* PMPinView.swift */; };
-		403C13631EDC86A200A37939 /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C13611EDC86A200A37939 /* PinView.xib */; };
-		403C13641EDC8FD600A37939 /* PMPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C13601EDC86A200A37939 /* PMPinView.swift */; };
-		403C13651EDC8FD600A37939 /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C13611EDC86A200A37939 /* PinView.xib */; };
-		40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
-		40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
-		404672DA1E14608500A578EA /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
-		404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */; };
+		403C15211EDE315800A37939 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C15181EDE315800A37939 /* SanFranciscoDisplay-Black.ttf */; };
+		403C15231EDE315800A37939 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C15191EDE315800A37939 /* SanFranciscoDisplay-Bold.ttf */; };
+		403C15251EDE315800A37939 /* SanFranciscoDisplay-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151A1EDE315800A37939 /* SanFranciscoDisplay-Heavy.ttf */; };
+		403C15271EDE315800A37939 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151B1EDE315800A37939 /* SanFranciscoDisplay-Light.ttf */; };
+		403C15291EDE315800A37939 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151C1EDE315800A37939 /* SanFranciscoDisplay-Medium.ttf */; };
+		403C152B1EDE315800A37939 /* SanFranciscoDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151D1EDE315800A37939 /* SanFranciscoDisplay-Regular.ttf */; };
+		403C152D1EDE315800A37939 /* SanFranciscoDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151E1EDE315800A37939 /* SanFranciscoDisplay-Semibold.ttf */; };
+		403C152F1EDE315800A37939 /* SanFranciscoDisplay-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151F1EDE315800A37939 /* SanFranciscoDisplay-Thin.ttf */; };
+		403C15311EDE315800A37939 /* SanFranciscoDisplay-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C15201EDE315800A37939 /* SanFranciscoDisplay-Ultralight.ttf */; };
+		403C15AD1EDE31B500A37939 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15351EDE31B500A37939 /* AgendaTableViewCell.swift */; };
+		403C15AE1EDE31B500A37939 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15351EDE31B500A37939 /* AgendaTableViewCell.swift */; };
+		403C15AF1EDE31B500A37939 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15361EDE31B500A37939 /* AgendaViewController.swift */; };
+		403C15B01EDE31B500A37939 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15361EDE31B500A37939 /* AgendaViewController.swift */; };
+		403C15DB1EDE31B500A37939 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C154E1EDE31B500A37939 /* CardTableViewCell.swift */; };
+		403C15DD1EDE31B500A37939 /* DetalleReciboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C154F1EDE31B500A37939 /* DetalleReciboViewController.swift */; };
+		403C15DF1EDE31B500A37939 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15501EDE31B500A37939 /* ListaPagosViewController.swift */; };
+		403C15E01EDE31B500A37939 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15501EDE31B500A37939 /* ListaPagosViewController.swift */; };
+		403C15E11EDE31B500A37939 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15511EDE31B500A37939 /* PayTableViewCell.swift */; };
+		403C15E21EDE31B500A37939 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15511EDE31B500A37939 /* PayTableViewCell.swift */; };
+		403C15E31EDE31B500A37939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C15521EDE31B500A37939 /* Main.storyboard */; };
+		403C15E41EDE31B500A37939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C15521EDE31B500A37939 /* Main.storyboard */; };
+		403C15E51EDE31B600A37939 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15541EDE31B500A37939 /* ConfiguracionNotificacionesViewController.swift */; };
+		403C15E61EDE31B600A37939 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15541EDE31B500A37939 /* ConfiguracionNotificacionesViewController.swift */; };
+		403C15E71EDE31B600A37939 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C15551EDE31B500A37939 /* Home.storyboard */; };
+		403C15E81EDE31B600A37939 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C15551EDE31B500A37939 /* Home.storyboard */; };
+		403C15E91EDE31B600A37939 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15561EDE31B500A37939 /* HomeViewController.swift */; };
+		403C15EA1EDE31B600A37939 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15561EDE31B500A37939 /* HomeViewController.swift */; };
+		403C15EB1EDE31B600A37939 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15571EDE31B500A37939 /* LaunchViewController.swift */; };
+		403C15EC1EDE31B600A37939 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15571EDE31B500A37939 /* LaunchViewController.swift */; };
+		403C15ED1EDE31B600A37939 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15581EDE31B500A37939 /* MostrarAgendaViewController.swift */; };
+		403C15EE1EDE31B600A37939 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15581EDE31B500A37939 /* MostrarAgendaViewController.swift */; };
+		403C15EF1EDE31B600A37939 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15591EDE31B500A37939 /* NotificacionesViewController.swift */; };
+		403C15F01EDE31B600A37939 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15591EDE31B500A37939 /* NotificacionesViewController.swift */; };
+		403C15F11EDE31B600A37939 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C155A1EDE31B500A37939 /* Notify.storyboard */; };
+		403C15F21EDE31B600A37939 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C155A1EDE31B500A37939 /* Notify.storyboard */; };
+		403C15F31EDE31B600A37939 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C155B1EDE31B500A37939 /* PagoAutomaticoViewController.swift */; };
+		403C15F51EDE31B600A37939 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C155C1EDE31B500A37939 /* ServiceConfiguration.storyboard */; };
+		403C15F61EDE31B600A37939 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C155C1EDE31B500A37939 /* ServiceConfiguration.storyboard */; };
+		403C15F71EDE31B600A37939 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C155D1EDE31B500A37939 /* ServiceConfigurationViewController.swift */; };
+		403C15F81EDE31B600A37939 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C155D1EDE31B500A37939 /* ServiceConfigurationViewController.swift */; };
+		403C15F91EDE31B600A37939 /* PayTicketResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C155F1EDE31B500A37939 /* PayTicketResultViewController.swift */; };
+		403C15FA1EDE31B600A37939 /* PayTicketResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C155F1EDE31B500A37939 /* PayTicketResultViewController.swift */; };
+		403C15FB1EDE31B600A37939 /* PayTicketResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15601EDE31B500A37939 /* PayTicketResultViewController.xib */; };
+		403C15FC1EDE31B600A37939 /* PayTicketResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15601EDE31B500A37939 /* PayTicketResultViewController.xib */; };
+		403C15FD1EDE31B600A37939 /* PayTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15611EDE31B500A37939 /* PayTicketViewController.swift */; };
+		403C15FE1EDE31B600A37939 /* PayTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15611EDE31B500A37939 /* PayTicketViewController.swift */; };
+		403C15FF1EDE31B600A37939 /* PayTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15621EDE31B500A37939 /* PayTicketViewController.xib */; };
+		403C16001EDE31B600A37939 /* PayTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15621EDE31B500A37939 /* PayTicketViewController.xib */; };
+		403C16011EDE31B600A37939 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15631EDE31B500A37939 /* PinViewController.swift */; };
+		403C16021EDE31B600A37939 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15631EDE31B500A37939 /* PinViewController.swift */; };
+		403C16031EDE31B600A37939 /* PinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15641EDE31B500A37939 /* PinViewController.xib */; };
+		403C16041EDE31B600A37939 /* PinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15641EDE31B500A37939 /* PinViewController.xib */; };
+		403C16051EDE31B600A37939 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15651EDE31B500A37939 /* ResultViewController.swift */; };
+		403C16061EDE31B600A37939 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15651EDE31B500A37939 /* ResultViewController.swift */; };
+		403C16071EDE31B600A37939 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15661EDE31B500A37939 /* ResultViewController.xib */; };
+		403C16081EDE31B600A37939 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15661EDE31B500A37939 /* ResultViewController.xib */; };
+		403C16091EDE31B600A37939 /* CreditCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15691EDE31B500A37939 /* CreditCardDetailViewController.swift */; };
+		403C160A1EDE31B600A37939 /* CreditCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15691EDE31B500A37939 /* CreditCardDetailViewController.swift */; };
+		403C160B1EDE31B600A37939 /* CreditCardDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C156A1EDE31B500A37939 /* CreditCardDetailViewController.xib */; };
+		403C160C1EDE31B600A37939 /* CreditCardDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C156A1EDE31B500A37939 /* CreditCardDetailViewController.xib */; };
+		403C160D1EDE31B600A37939 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C156B1EDE31B500A37939 /* CreditCardViewController.swift */; };
+		403C160E1EDE31B600A37939 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C156B1EDE31B500A37939 /* CreditCardViewController.swift */; };
+		403C160F1EDE31B600A37939 /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C156C1EDE31B500A37939 /* CreditCardViewController.xib */; };
+		403C16101EDE31B600A37939 /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C156C1EDE31B500A37939 /* CreditCardViewController.xib */; };
+		403C16111EDE31B600A37939 /* ProfileMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C156D1EDE31B500A37939 /* ProfileMenuViewController.swift */; };
+		403C16121EDE31B600A37939 /* ProfileMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C156D1EDE31B500A37939 /* ProfileMenuViewController.swift */; };
+		403C16131EDE31B600A37939 /* ProfileMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C156E1EDE31B500A37939 /* ProfileMenuViewController.xib */; };
+		403C16141EDE31B600A37939 /* ProfileMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C156E1EDE31B500A37939 /* ProfileMenuViewController.xib */; };
+		403C16151EDE31B600A37939 /* ProfilePersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C156F1EDE31B500A37939 /* ProfilePersonalViewController.swift */; };
+		403C16161EDE31B600A37939 /* ProfilePersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C156F1EDE31B500A37939 /* ProfilePersonalViewController.swift */; };
+		403C16171EDE31B600A37939 /* ProfilePersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15701EDE31B500A37939 /* ProfilePersonalViewController.xib */; };
+		403C16181EDE31B600A37939 /* ProfilePersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15701EDE31B500A37939 /* ProfilePersonalViewController.xib */; };
+		403C16191EDE31B600A37939 /* ProfilePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15711EDE31B500A37939 /* ProfilePhotoViewController.swift */; };
+		403C161A1EDE31B600A37939 /* ProfilePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15711EDE31B500A37939 /* ProfilePhotoViewController.swift */; };
+		403C161B1EDE31B600A37939 /* ProfilePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15721EDE31B500A37939 /* ProfilePhotoViewController.xib */; };
+		403C161C1EDE31B600A37939 /* ProfilePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15721EDE31B500A37939 /* ProfilePhotoViewController.xib */; };
+		403C161D1EDE31B600A37939 /* BienvenidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15741EDE31B500A37939 /* BienvenidoViewController.swift */; };
+		403C161E1EDE31B600A37939 /* BienvenidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15741EDE31B500A37939 /* BienvenidoViewController.swift */; };
+		403C161F1EDE31B600A37939 /* BienvenidoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15751EDE31B500A37939 /* BienvenidoViewController.xib */; };
+		403C16201EDE31B600A37939 /* BienvenidoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15751EDE31B500A37939 /* BienvenidoViewController.xib */; };
+		403C16211EDE31B600A37939 /* CreatePinSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15761EDE31B500A37939 /* CreatePinSuccessViewController.swift */; };
+		403C16221EDE31B600A37939 /* CreatePinSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15761EDE31B500A37939 /* CreatePinSuccessViewController.swift */; };
+		403C16231EDE31B600A37939 /* CreatePinSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15771EDE31B500A37939 /* CreatePinSuccessViewController.xib */; };
+		403C16241EDE31B600A37939 /* CreatePinSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15771EDE31B500A37939 /* CreatePinSuccessViewController.xib */; };
+		403C16251EDE31B600A37939 /* CreatePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15781EDE31B500A37939 /* CreatePinViewController.swift */; };
+		403C16261EDE31B600A37939 /* CreatePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15781EDE31B500A37939 /* CreatePinViewController.swift */; };
+		403C16271EDE31B600A37939 /* CreatePinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15791EDE31B500A37939 /* CreatePinViewController.xib */; };
+		403C16281EDE31B600A37939 /* CreatePinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15791EDE31B500A37939 /* CreatePinViewController.xib */; };
+		403C16291EDE31B600A37939 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C157A1EDE31B500A37939 /* RegisterViewController.swift */; };
+		403C162A1EDE31B600A37939 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C157A1EDE31B500A37939 /* RegisterViewController.swift */; };
+		403C162B1EDE31B600A37939 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C157B1EDE31B500A37939 /* RegisterViewController.xib */; };
+		403C162C1EDE31B600A37939 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C157B1EDE31B500A37939 /* RegisterViewController.xib */; };
+		403C162D1EDE31B600A37939 /* SMSValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C157C1EDE31B500A37939 /* SMSValidationViewController.swift */; };
+		403C162E1EDE31B600A37939 /* SMSValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C157C1EDE31B500A37939 /* SMSValidationViewController.swift */; };
+		403C162F1EDE31B600A37939 /* SMSValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C157D1EDE31B500A37939 /* SMSValidationViewController.xib */; };
+		403C16301EDE31B600A37939 /* SMSValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C157D1EDE31B500A37939 /* SMSValidationViewController.xib */; };
+		403C16311EDE31B600A37939 /* TermAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C157E1EDE31B500A37939 /* TermAndConditionViewController.swift */; };
+		403C16321EDE31B600A37939 /* TermAndConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C157E1EDE31B500A37939 /* TermAndConditionViewController.swift */; };
+		403C16331EDE31B600A37939 /* TermAndConditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C157F1EDE31B500A37939 /* TermAndConditionViewController.xib */; };
+		403C16341EDE31B600A37939 /* TermAndConditionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C157F1EDE31B500A37939 /* TermAndConditionViewController.xib */; };
+		403C16351EDE31B600A37939 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C15811EDE31B500A37939 /* AgregarServicio.storyboard */; };
+		403C16361EDE31B600A37939 /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C15811EDE31B500A37939 /* AgregarServicio.storyboard */; };
+		403C16371EDE31B600A37939 /* PMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15831EDE31B500A37939 /* PMInfoView.swift */; };
+		403C16381EDE31B600A37939 /* PMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15831EDE31B500A37939 /* PMInfoView.swift */; };
+		403C16391EDE31B600A37939 /* PMSuministroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15841EDE31B500A37939 /* PMSuministroView.swift */; };
+		403C163A1EDE31B600A37939 /* PMSuministroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15841EDE31B500A37939 /* PMSuministroView.swift */; };
+		403C163B1EDE31B600A37939 /* PMSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15851EDE31B500A37939 /* PMSuministroViewController.swift */; };
+		403C163C1EDE31B600A37939 /* PMSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15851EDE31B500A37939 /* PMSuministroViewController.swift */; };
+		403C163D1EDE31B600A37939 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15861EDE31B500A37939 /* SuministroView.xib */; };
+		403C163E1EDE31B600A37939 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15861EDE31B500A37939 /* SuministroView.xib */; };
+		403C163F1EDE31B600A37939 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15881EDE31B500A37939 /* NotificacionTableViewCell.swift */; };
+		403C16401EDE31B600A37939 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15881EDE31B500A37939 /* NotificacionTableViewCell.swift */; };
+		403C16411EDE31B600A37939 /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C158A1EDE31B500A37939 /* DetalleView.xib */; };
+		403C16421EDE31B600A37939 /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C158A1EDE31B500A37939 /* DetalleView.xib */; };
+		403C16431EDE31B600A37939 /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C158B1EDE31B500A37939 /* PMDetalleSuministroViewController.swift */; };
+		403C16441EDE31B600A37939 /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C158B1EDE31B500A37939 /* PMDetalleSuministroViewController.swift */; };
+		403C16451EDE31B600A37939 /* PMDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C158C1EDE31B500A37939 /* PMDetalleView.swift */; };
+		403C16461EDE31B600A37939 /* PMDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C158C1EDE31B500A37939 /* PMDetalleView.swift */; };
+		403C16471EDE31B600A37939 /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C158E1EDE31B500A37939 /* FavoritoTableViewCell.swift */; };
+		403C16481EDE31B600A37939 /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C158E1EDE31B500A37939 /* FavoritoTableViewCell.swift */; };
+		403C16491EDE31B600A37939 /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C158F1EDE31B500A37939 /* FavoritoTableViewCell.xib */; };
+		403C164A1EDE31B600A37939 /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C158F1EDE31B500A37939 /* FavoritoTableViewCell.xib */; };
+		403C164B1EDE31B600A37939 /* ListadoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15901EDE31B500A37939 /* ListadoView.xib */; };
+		403C164C1EDE31B600A37939 /* ListadoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15901EDE31B500A37939 /* ListadoView.xib */; };
+		403C164D1EDE31B600A37939 /* PMListadoFavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15911EDE31B500A37939 /* PMListadoFavoritosViewController.swift */; };
+		403C164E1EDE31B600A37939 /* PMListadoFavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15911EDE31B500A37939 /* PMListadoFavoritosViewController.swift */; };
+		403C164F1EDE31B600A37939 /* PMListadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15921EDE31B500A37939 /* PMListadoView.swift */; };
+		403C16501EDE31B600A37939 /* PMListadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15921EDE31B500A37939 /* PMListadoView.swift */; };
+		403C16511EDE31B600A37939 /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15941EDE31B500A37939 /* ListaServicios.xib */; };
+		403C16521EDE31B600A37939 /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15941EDE31B500A37939 /* ListaServicios.xib */; };
+		403C16531EDE31B600A37939 /* PMListaServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15951EDE31B500A37939 /* PMListaServiciosView.swift */; };
+		403C16541EDE31B600A37939 /* PMListaServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15951EDE31B500A37939 /* PMListaServiciosView.swift */; };
+		403C16551EDE31B600A37939 /* PMListaServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15961EDE31B500A37939 /* PMListaServiciosViewController.swift */; };
+		403C16561EDE31B600A37939 /* PMListaServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15961EDE31B500A37939 /* PMListaServiciosViewController.swift */; };
+		403C16571EDE31B600A37939 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15971EDE31B500A37939 /* ServiceTableViewCell.swift */; };
+		403C16581EDE31B600A37939 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15971EDE31B500A37939 /* ServiceTableViewCell.swift */; };
+		403C16591EDE31B600A37939 /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15981EDE31B500A37939 /* ServiceTableViewCell.xib */; };
+		403C165A1EDE31B600A37939 /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15981EDE31B500A37939 /* ServiceTableViewCell.xib */; };
+		403C165B1EDE31B600A37939 /* EntidadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159A1EDE31B500A37939 /* EntidadTableViewCell.swift */; };
+		403C165C1EDE31B600A37939 /* EntidadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159A1EDE31B500A37939 /* EntidadTableViewCell.swift */; };
+		403C165D1EDE31B600A37939 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C159B1EDE31B500A37939 /* EntidadTableViewCell.xib */; };
+		403C165E1EDE31B600A37939 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C159B1EDE31B500A37939 /* EntidadTableViewCell.xib */; };
+		403C165F1EDE31B600A37939 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159C1EDE31B500A37939 /* PMNivelDosViewController.swift */; };
+		403C16601EDE31B600A37939 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159C1EDE31B500A37939 /* PMNivelDosViewController.swift */; };
+		403C16611EDE31B600A37939 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159D1EDE31B500A37939 /* PMNivelTresViewController.swift */; };
+		403C16621EDE31B600A37939 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159D1EDE31B500A37939 /* PMNivelTresViewController.swift */; };
+		403C16631EDE31B600A37939 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159E1EDE31B500A37939 /* PMNivelUnoViewController.swift */; };
+		403C16641EDE31B600A37939 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159E1EDE31B500A37939 /* PMNivelUnoViewController.swift */; };
+		403C16651EDE31B600A37939 /* PMTerceroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159F1EDE31B500A37939 /* PMTerceroView.swift */; };
+		403C16661EDE31B600A37939 /* PMTerceroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C159F1EDE31B500A37939 /* PMTerceroView.swift */; };
+		403C16671EDE31B600A37939 /* TerceroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15A01EDE31B500A37939 /* TerceroView.xib */; };
+		403C16681EDE31B600A37939 /* TerceroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15A01EDE31B500A37939 /* TerceroView.xib */; };
+		403C16691EDE31B600A37939 /* PMReciboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15A21EDE31B500A37939 /* PMReciboCell.swift */; };
+		403C166A1EDE31B600A37939 /* PMReciboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15A21EDE31B500A37939 /* PMReciboCell.swift */; };
+		403C166B1EDE31B600A37939 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15A31EDE31B500A37939 /* PMReciboCell.xib */; };
+		403C166C1EDE31B600A37939 /* PMReciboCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15A31EDE31B500A37939 /* PMReciboCell.xib */; };
+		403C16711EDE31B600A37939 /* AssistantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15A71EDE31B500A37939 /* AssistantViewController.swift */; };
+		403C16721EDE31B600A37939 /* AssistantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15A71EDE31B500A37939 /* AssistantViewController.swift */; };
+		403C16731EDE31B600A37939 /* AssistantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15A81EDE31B500A37939 /* AssistantViewController.xib */; };
+		403C16741EDE31B600A37939 /* AssistantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15A81EDE31B500A37939 /* AssistantViewController.xib */; };
+		403C16751EDE31B600A37939 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15A91EDE31B500A37939 /* DetailViewController.swift */; };
+		403C16761EDE31B600A37939 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15A91EDE31B500A37939 /* DetailViewController.swift */; };
+		403C16771EDE31B600A37939 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15AA1EDE31B500A37939 /* DetailViewController.xib */; };
+		403C16781EDE31B600A37939 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15AA1EDE31B500A37939 /* DetailViewController.xib */; };
+		403C16791EDE31B600A37939 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15AB1EDE31B500A37939 /* SupportViewController.swift */; };
+		403C167A1EDE31B600A37939 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15AB1EDE31B500A37939 /* SupportViewController.swift */; };
+		403C167B1EDE31B600A37939 /* SupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15AC1EDE31B500A37939 /* SupportViewController.xib */; };
+		403C167C1EDE31B600A37939 /* SupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15AC1EDE31B500A37939 /* SupportViewController.xib */; };
+		403C16891EDE358900A37939 /* CustomStyleFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16871EDE358900A37939 /* CustomStyleFormater.swift */; };
+		403C168A1EDE358900A37939 /* CustomStyleFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16871EDE358900A37939 /* CustomStyleFormater.swift */; };
+		403C168B1EDE358900A37939 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16881EDE358900A37939 /* Util.swift */; };
+		403C168C1EDE358900A37939 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16881EDE358900A37939 /* Util.swift */; };
+		403C168D1EDE370A00A37939 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C15181EDE315800A37939 /* SanFranciscoDisplay-Black.ttf */; };
+		403C168E1EDE370A00A37939 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C15191EDE315800A37939 /* SanFranciscoDisplay-Bold.ttf */; };
+		403C168F1EDE370A00A37939 /* SanFranciscoDisplay-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151A1EDE315800A37939 /* SanFranciscoDisplay-Heavy.ttf */; };
+		403C16901EDE370A00A37939 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151B1EDE315800A37939 /* SanFranciscoDisplay-Light.ttf */; };
+		403C16911EDE370A00A37939 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151C1EDE315800A37939 /* SanFranciscoDisplay-Medium.ttf */; };
+		403C16921EDE370A00A37939 /* SanFranciscoDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151D1EDE315800A37939 /* SanFranciscoDisplay-Regular.ttf */; };
+		403C16931EDE370A00A37939 /* SanFranciscoDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151E1EDE315800A37939 /* SanFranciscoDisplay-Semibold.ttf */; };
+		403C16941EDE370A00A37939 /* SanFranciscoDisplay-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C151F1EDE315800A37939 /* SanFranciscoDisplay-Thin.ttf */; };
+		403C16951EDE370A00A37939 /* SanFranciscoDisplay-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 403C15201EDE315800A37939 /* SanFranciscoDisplay-Ultralight.ttf */; };
+		403C16961EDE371A00A37939 /* BarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15381EDE31B500A37939 /* BarView.xib */; };
+		403C16971EDE371A00A37939 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15391EDE31B500A37939 /* ErrorView.xib */; };
+		403C16981EDE371A00A37939 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C153C1EDE31B500A37939 /* Messages.storyboard */; };
+		403C16991EDE371A00A37939 /* PMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C153D1EDE31B500A37939 /* PMBarView.swift */; };
+		403C169A1EDE371A00A37939 /* PMCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C153E1EDE31B500A37939 /* PMCenterView.swift */; };
+		403C169B1EDE371A00A37939 /* PMChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C153F1EDE31B500A37939 /* PMChangePinViewController.swift */; };
+		403C169C1EDE371A00A37939 /* PMChangePinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15401EDE31B500A37939 /* PMChangePinViewController.xib */; };
+		403C169D1EDE371A00A37939 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15411EDE31B500A37939 /* PMErrorView.swift */; };
+		403C169E1EDE371A00A37939 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15421EDE31B500A37939 /* PMItemView.swift */; };
+		403C169F1EDE371A00A37939 /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15431EDE31B500A37939 /* PMMessageViewController.swift */; };
+		403C16A01EDE371A00A37939 /* PMPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15441EDE31B500A37939 /* PMPinView.swift */; };
+		403C16A11EDE371A00A37939 /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C167D1EDE325F00A37939 /* PinView.xib */; };
+		403C16A21EDE371A00A37939 /* PMSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15451EDE31B500A37939 /* PMSecurityViewController.swift */; };
+		403C16A31EDE371A00A37939 /* PMSecurityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15461EDE31B500A37939 /* PMSecurityViewController.xib */; };
+		403C16A41EDE371A00A37939 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15471EDE31B500A37939 /* PMSpinnerView.swift */; };
+		403C16A51EDE371A00A37939 /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15481EDE31B500A37939 /* PMTextField.swift */; };
+		403C16A61EDE371A00A37939 /* PMTitleStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15491EDE31B500A37939 /* PMTitleStrip.swift */; };
+		403C16A71EDE371A00A37939 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C154A1EDE31B500A37939 /* PMTriangleView.swift */; };
+		403C16A81EDE371A00A37939 /* StoryboardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C154B1EDE31B500A37939 /* StoryboardMessages.swift */; };
+		403C16A91EDE371A00A37939 /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C154C1EDE31B500A37939 /* TextField.xib */; };
+		403C16AA1EDE371A00A37939 /* BarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15381EDE31B500A37939 /* BarView.xib */; };
+		403C16AB1EDE371A00A37939 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15391EDE31B500A37939 /* ErrorView.xib */; };
+		403C16AC1EDE371A00A37939 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403C153C1EDE31B500A37939 /* Messages.storyboard */; };
+		403C16AD1EDE371A00A37939 /* PMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C153D1EDE31B500A37939 /* PMBarView.swift */; };
+		403C16AE1EDE371A00A37939 /* PMCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C153E1EDE31B500A37939 /* PMCenterView.swift */; };
+		403C16AF1EDE371A00A37939 /* PMChangePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C153F1EDE31B500A37939 /* PMChangePinViewController.swift */; };
+		403C16B01EDE371A00A37939 /* PMChangePinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15401EDE31B500A37939 /* PMChangePinViewController.xib */; };
+		403C16B11EDE371A00A37939 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15411EDE31B500A37939 /* PMErrorView.swift */; };
+		403C16B21EDE371A00A37939 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15421EDE31B500A37939 /* PMItemView.swift */; };
+		403C16B31EDE371A00A37939 /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15431EDE31B500A37939 /* PMMessageViewController.swift */; };
+		403C16B41EDE371A00A37939 /* PMPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15441EDE31B500A37939 /* PMPinView.swift */; };
+		403C16B51EDE371A00A37939 /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C167D1EDE325F00A37939 /* PinView.xib */; };
+		403C16B61EDE371A00A37939 /* PMSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15451EDE31B500A37939 /* PMSecurityViewController.swift */; };
+		403C16B71EDE371A00A37939 /* PMSecurityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C15461EDE31B500A37939 /* PMSecurityViewController.xib */; };
+		403C16B81EDE371A00A37939 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15471EDE31B500A37939 /* PMSpinnerView.swift */; };
+		403C16B91EDE371A00A37939 /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15481EDE31B500A37939 /* PMTextField.swift */; };
+		403C16BA1EDE371A00A37939 /* PMTitleStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C15491EDE31B500A37939 /* PMTitleStrip.swift */; };
+		403C16BB1EDE371A00A37939 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C154A1EDE31B500A37939 /* PMTriangleView.swift */; };
+		403C16BC1EDE371A00A37939 /* StoryboardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C154B1EDE31B500A37939 /* StoryboardMessages.swift */; };
+		403C16BD1EDE371A00A37939 /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C154C1EDE31B500A37939 /* TextField.xib */; };
+		403C16C01EDE39B900A37939 /* PMRecibosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16BE1EDE39B900A37939 /* PMRecibosView.swift */; };
+		403C16C11EDE39B900A37939 /* PMRecibosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16BE1EDE39B900A37939 /* PMRecibosView.swift */; };
+		403C16C21EDE39B900A37939 /* PMRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16BF1EDE39B900A37939 /* PMRecibosView.xib */; };
+		403C16C31EDE39B900A37939 /* PMRecibosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16BF1EDE39B900A37939 /* PMRecibosView.xib */; };
+		403C16C51EDE3B0600A37939 /* ExtendedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16C41EDE3B0600A37939 /* ExtendedClass.swift */; };
+		403C16C61EDE3B0600A37939 /* ExtendedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16C41EDE3B0600A37939 /* ExtendedClass.swift */; };
+		403C16D11EDE3B7B00A37939 /* CredicardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16C71EDE3B7B00A37939 /* CredicardTableViewCell.swift */; };
+		403C16D21EDE3B7B00A37939 /* CredicardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16C71EDE3B7B00A37939 /* CredicardTableViewCell.swift */; };
+		403C16D31EDE3B7B00A37939 /* CredicardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16C81EDE3B7B00A37939 /* CredicardTableViewCell.xib */; };
+		403C16D41EDE3B7B00A37939 /* CredicardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16C81EDE3B7B00A37939 /* CredicardTableViewCell.xib */; };
+		403C16D51EDE3B7B00A37939 /* QuestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16C91EDE3B7B00A37939 /* QuestionsTableViewCell.swift */; };
+		403C16D61EDE3B7B00A37939 /* QuestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16C91EDE3B7B00A37939 /* QuestionsTableViewCell.swift */; };
+		403C16D71EDE3B7B00A37939 /* QuestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16CA1EDE3B7B00A37939 /* QuestionsTableViewCell.xib */; };
+		403C16D81EDE3B7B00A37939 /* QuestionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16CA1EDE3B7B00A37939 /* QuestionsTableViewCell.xib */; };
+		403C16D91EDE3B7B00A37939 /* TicketFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16CB1EDE3B7B00A37939 /* TicketFooterView.swift */; };
+		403C16DA1EDE3B7B00A37939 /* TicketFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16CB1EDE3B7B00A37939 /* TicketFooterView.swift */; };
+		403C16DB1EDE3B7B00A37939 /* TicketFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16CC1EDE3B7B00A37939 /* TicketFooterView.xib */; };
+		403C16DC1EDE3B7B00A37939 /* TicketFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16CC1EDE3B7B00A37939 /* TicketFooterView.xib */; };
+		403C16DD1EDE3B7B00A37939 /* TicketHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16CD1EDE3B7B00A37939 /* TicketHeaderView.swift */; };
+		403C16DE1EDE3B7B00A37939 /* TicketHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16CD1EDE3B7B00A37939 /* TicketHeaderView.swift */; };
+		403C16DF1EDE3B7B00A37939 /* TicketHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16CE1EDE3B7B00A37939 /* TicketHeaderView.xib */; };
+		403C16E01EDE3B7B00A37939 /* TicketHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16CE1EDE3B7B00A37939 /* TicketHeaderView.xib */; };
+		403C16E11EDE3B7B00A37939 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16CF1EDE3B7B00A37939 /* TicketTableViewCell.swift */; };
+		403C16E21EDE3B7B00A37939 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16CF1EDE3B7B00A37939 /* TicketTableViewCell.swift */; };
+		403C16E31EDE3B7B00A37939 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16D01EDE3B7B00A37939 /* TicketTableViewCell.xib */; };
+		403C16E41EDE3B7B00A37939 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403C16D01EDE3B7B00A37939 /* TicketTableViewCell.xib */; };
+		403C16E61EDE3C5C00A37939 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16E51EDE3C5C00A37939 /* PMStateView.swift */; };
+		403C16E71EDE3C5C00A37939 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C16E51EDE3C5C00A37939 /* PMStateView.swift */; };
 		405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
 		405D23121E157CEB006ED043 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
 		405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
@@ -54,200 +284,60 @@
 		406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
 		406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
 		406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
-		407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */; };
-		407C03621E0B1C1000CD5D4C /* PMListaServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */; };
-		407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */; };
-		407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407C03651E0B27BA00CD5D4C /* Main.storyboard */; };
-		407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */; };
-		407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036F1E0B530600CD5D4C /* PMLabel.swift */; };
 		4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088F8AA1E36628C00114BEE /* StaticData.swift */; };
-		408CB6981E54E73D00D308D3 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */; };
-		408CB6991E54E73D00D308D3 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */; };
 		408CB69B1E54E73D00D308D3 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1451E3B98D500617265 /* RSA.m */; };
-		408CB69C1E54E73D00D308D3 /* DetalleReciboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420211E25279600D74D22 /* DetalleReciboViewController.swift */; };
-		408CB69D1E54E73D00D308D3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
 		408CB69E1E54E73D00D308D3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFA1E40DFEE007EF98D /* Order.swift */; };
-		408CB69F1E54E73D00D308D3 /* PMNivelUnoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377371E03D41900261759 /* PMNivelUnoViewController.swift */; };
 		408CB6A01E54E73D00D308D3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABB1E1B36A5008CF767 /* Card.swift */; };
 		408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
-		408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */; };
 		408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4088F8AA1E36628C00114BEE /* StaticData.swift */; };
 		408CB6A81E54E73D00D308D3 /* PMNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E611E026BE40098B8C4 /* PMNavigationViewController.swift */; };
-		408CB6A91E54E73D00D308D3 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */; };
-		408CB6AA1E54E73D00D308D3 /* PMNivelTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */; };
 		408CB6AB1E54E73D00D308D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */; };
-		408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */; };
 		408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF81E40D2DE007EF98D /* Debt.swift */; };
 		408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB21E1A1D49008CF767 /* Enums.swift */; };
 		408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D23111E157CEB006ED043 /* Constants.swift */; };
-		408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */; };
 		408CB6B71E54E73D00D308D3 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
-		408CB6B81E54E73D00D308D3 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
-		408CB6BA1E54E73D00D308D3 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */; };
-		408CB6BB1E54E73D00D308D3 /* PMListaServiciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */; };
-		408CB6BC1E54E73D00D308D3 /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */; };
-		408CB6BD1E54E73D00D308D3 /* PMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C036F1E0B530600CD5D4C /* PMLabel.swift */; };
 		408CB6BE1E54E73D00D308D3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EFC1E40E2E3007EF98D /* Product.swift */; };
 		408CB6BF1E54E73D00D308D3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0AB91E1B04C0008CF767 /* Session.swift */; };
 		408CB6C01E54E73D00D308D3 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1471E3B994200617265 /* Security.swift */; };
-		408CB6C11E54E73D00D308D3 /* PMItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40463D271E19CF8000F663B0 /* PMItemCard.swift */; };
-		408CB6C21E54E73D00D308D3 /* PMHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */; };
-		408CB6C31E54E73D00D308D3 /* PMNivelDosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403377391E03D42600261759 /* PMNivelDosViewController.swift */; };
-		408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
 		408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405D230E1E157C94006ED043 /* PMStoryboard.swift */; };
-		408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420231E2528F700D74D22 /* CardTableViewCell.swift */; };
-		408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */; };
-		408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */; };
 		408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2E4021E0E5386003CBAC3 /* PMImage.swift */; };
 		408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4062C1571E3BE9A800617265 /* Service.swift */; };
 		408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201C1E24046F00D74D22 /* Pay.swift */; };
-		408CB6D01E54E73D00D308D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		408CB6D11E54E73D00D308D3 /* PMSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E0ABD1E1C86AD008CF767 /* PMSizes.swift */; };
-		408CB6D21E54E73D00D308D3 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */; };
-		408CB6D41E54E73D00D308D3 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */; };
 		408CB6D51E54E73D00D308D3 /* PMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40180E5F1E021D370098B8C4 /* PMTabBarViewController.swift */; };
-		408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40293EF61E405385007EF98D /* Calendar.swift */; };
 		408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
 		408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4033773D1E03D44800261759 /* PMViewController.swift */; };
 		408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E461E0680090072CB29 /* PMColors.swift */; };
-		408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */; };
-		408CB6E31E54E73D00D308D3 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */; };
-		408CB6E71E54E73D00D308D3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
 		408CB6E81E54E73D00D308D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */; };
-		408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F51E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf */; };
-		408CB6EA1E54E73D00D308D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407C03651E0B27BA00CD5D4C /* Main.storyboard */; };
-		408CB6EC1E54E73D00D308D3 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404672D91E14608500A578EA /* Messages.storyboard */; };
-		408CB6EE1E54E73D00D308D3 /* PMItemCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40463D291E19CF9E00F663B0 /* PMItemCard.xib */; };
-		408CB6EF1E54E73D00D308D3 /* SanFranciscoDisplay-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */; };
-		408CB6F01E54E73D00D308D3 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1898461E11BA470060DD41 /* Notify.storyboard */; };
-		408CB6F11E54E73D00D308D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2BED01E1E996C00A2D16B /* Home.storyboard */; };
-		408CB6F21E54E73D00D308D3 /* SanFranciscoDisplay-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F41E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf */; };
-		408CB6F31E54E73D00D308D3 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
-		408CB6F41E54E73D00D308D3 /* SanFranciscoDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F31E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf */; };
-		408CB6F51E54E73D00D308D3 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */; };
-		408CB6F61E54E73D00D308D3 /* SanFranciscoDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F21E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf */; };
 		408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4062C13A1E37B16200617265 /* StaticData.json */; };
-		408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */; };
 		408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA241DFB0D88005D2E87 /* Assets.xcassets */; };
-		408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
 		409889E81EC939E50028FC67 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* Router.swift */; };
-		409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
-		409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889EA1ECABCBD0028FC67 /* PMErrorView.swift */; };
 		40A420131E203FF200D74D22 /* PMString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420121E203FF200D74D22 /* PMString.swift */; };
-		40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */; };
 		40A4201D1E24046F00D74D22 /* Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201C1E24046F00D74D22 /* Pay.swift */; };
-		40A420201E24073D00D74D22 /* PayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */; };
-		40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420211E25279600D74D22 /* DetalleReciboViewController.swift */; };
-		40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A420231E2528F700D74D22 /* CardTableViewCell.swift */; };
-		40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */; };
-		40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */; };
-		40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */; };
-		40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */; };
-		40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */; };
-		40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F21E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf */; };
-		40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F31E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf */; };
-		40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F41E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf */; };
-		40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B2E3F51E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf */; };
 		40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2E4021E0E5386003CBAC3 /* PMImage.swift */; };
-		40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */; };
-		40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */; };
 		40CF1E471E0680090072CB29 /* PMColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E461E0680090072CB29 /* PMColors.swift */; };
-		40CF1E491E068AAF0072CB29 /* PMSuministroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */; };
-		40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */; };
-		40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */; };
 		4C36C99C446B1D9859B013C7 /* Pods_Pay_me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */; };
-		4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */; };
-		4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1898461E11BA470060DD41 /* Notify.storyboard */; };
 		4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1898481E11BB240060DD41 /* Notificacion.swift */; };
-		4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */; };
 		4F28D7AF1EB8EC5500703CB4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7AE1EB8EC5500703CB4 /* ApiManager.swift */; };
 		4F28D7B01EB8EC5500703CB4 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7AE1EB8EC5500703CB4 /* ApiManager.swift */; };
 		4F28D7B21EB9271400703CB4 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7B11EB9271400703CB4 /* Favorito.swift */; };
 		4F28D7B31EB9271400703CB4 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F28D7B11EB9271400703CB4 /* Favorito.swift */; };
 		4F43D88B1EA699C700403292 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406EEA291DFB0D88005D2E87 /* Info.plist */; };
 		4F43D88E1EA699CE00403292 /* Development.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3031EA5308D008F5ED9 /* Development.plist */; };
-		4F43D8991EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */; };
-		4F43D89A1EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */; };
 		4F43D89C1EA7AB9900403292 /* EUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */; };
 		4F43D89D1EA7AB9900403292 /* EUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */; };
-		4F43D89F1EA7C34000403292 /* PMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89E1EA7C34000403292 /* PMInfoView.swift */; };
-		4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D89E1EA7C34000403292 /* PMInfoView.swift */; };
 		4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
 		4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F43D8BD1EAA52F500403292 /* EProtocols.swift */; };
-		4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */; };
 		4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F638D721E1FF48400ECE514 /* NotificacionHome.swift */; };
-		4F973ED81ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */; };
-		4F973ED91ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */; };
-		4F973EDB1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */; };
-		4F973EDC1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */; };
-		4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
-		4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */; };
 		4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */; };
 		4F983A4E1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */; };
-		4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */; };
-		4FA0AF741EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */; };
-		4FA0AF751EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */; };
-		4FA0E3061EA5674C008F5ED9 /* PMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */; };
-		4FA0E3071EA5674C008F5ED9 /* PMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */; };
-		4FA0E3091EA56828008F5ED9 /* BarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* BarView.xib */; };
-		4FA0E30A1EA56828008F5ED9 /* BarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA0E3081EA56828008F5ED9 /* BarView.xib */; };
-		4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */; };
-		4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */; };
-		4FA8EFA81EB0F7B700A596EA /* PMTitleStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */; };
-		4FA8EFA91EB0F7B700A596EA /* PMTitleStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */; };
 		4FA8EFAD1EB0F8AC00A596EA /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */; };
 		4FA8EFAE1EB0F8AC00A596EA /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */; };
-		4FB03A3B1EC4F85900AF82AE /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */; };
-		4FB03A3C1EC4F8E700AF82AE /* AgregarServicio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */; };
-		4FB03A3F1EC5040A00AF82AE /* TerceroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */; };
-		4FB03A401EC5040A00AF82AE /* TerceroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */; };
-		4FB03A421EC5048C00AF82AE /* PMTerceroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */; };
-		4FB03A431EC5048C00AF82AE /* PMTerceroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */; };
-		4FB03A491EC5FF7400AF82AE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A481EC5FF7400AF82AE /* PMTextField.swift */; };
-		4FB03A4A1EC5FF7400AF82AE /* PMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB03A481EC5FF7400AF82AE /* PMTextField.swift */; };
-		4FB03A4C1EC603E600AF82AE /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A4B1EC603E600AF82AE /* TextField.xib */; };
-		4FB03A4D1EC6126C00AF82AE /* TextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FB03A4B1EC603E600AF82AE /* TextField.xib */; };
-		4FB51BD01EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
-		4FB51BD11EBB7F4D00712249 /* PMStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */; };
-		4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD21EBBD31200712249 /* PMItemView.swift */; };
-		4FB51BD41EBBD31200712249 /* PMItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD21EBBD31200712249 /* PMItemView.swift */; };
-		4FB51BD71EBBE51200712249 /* PMCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD61EBBE51200712249 /* PMCenterView.swift */; };
-		4FB51BD81EBBE51200712249 /* PMCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BD61EBBE51200712249 /* PMCenterView.swift */; };
 		4FB51BDF1EC0C49400712249 /* PMFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BDE1EC0C49400712249 /* PMFont.swift */; };
 		4FB51BE01EC0C49400712249 /* PMFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BDE1EC0C49400712249 /* PMFont.swift */; };
-		4FB51BE21EC1112200712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BE11EC1112200712249 /* PMSpinnerView.swift */; };
-		4FB51BE31EC1112200712249 /* PMSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB51BE11EC1112200712249 /* PMSpinnerView.swift */; };
-		4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB531C01E205DC200EABE52 /* LaunchViewController.swift */; };
-		4FC0426E1EC3AA9500B93031 /* PMSuministroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */; };
-		4FC0426F1EC3AA9500B93031 /* PMSuministroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */; };
-		4FC042721EC3D37800B93031 /* PMListadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC042711EC3D37800B93031 /* PMListadoView.swift */; };
-		4FC042731EC3D37800B93031 /* PMListadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC042711EC3D37800B93031 /* PMListadoView.swift */; };
-		4FC042751EC3D38700B93031 /* ListadoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC042741EC3D38700B93031 /* ListadoView.xib */; };
-		4FC042761EC3D38700B93031 /* ListadoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC042741EC3D38700B93031 /* ListadoView.xib */; };
-		4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
-		4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */; };
-		4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */; };
-		4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */; };
 		4FCC14CB1EAEB39300D6E7BC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14CA1EAEB39300D6E7BC /* UIView.swift */; };
 		4FCC14CC1EAEB39300D6E7BC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC14CA1EAEB39300D6E7BC /* UIView.swift */; };
-		4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */; };
-		4FCFBE021E2838D90029EE40 /* PagoAutomaticoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */; };
-		4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */; };
-		4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */; };
-		4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
-		4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD00CDA1EC3862700B37A09 /* SuministroView.xib */; };
 		4FD3CA051EC9F731003DABAC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409889E71EC939E50028FC67 /* Router.swift */; };
-		4FD3CA071EC9FFEF003DABAC /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */; };
-		4FD3CA081EC9FFEF003DABAC /* ListaServicios.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */; };
-		4FD3CA0A1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */; };
-		4FD3CA0B1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */; };
-		4FD3CA0E1ECA6E16003DABAC /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */; };
-		4FD3CA0F1ECA6E16003DABAC /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */; };
-		4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2BED01E1E996C00A2D16B /* Home.storyboard */; };
-		4FF4309C1EC6915500E4E16D /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF4309B1EC6915500E4E16D /* DetalleView.xib */; };
-		4FF4309D1EC6915500E4E16D /* DetalleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FF4309B1EC6915500E4E16D /* DetalleView.xib */; };
-		4FF4309F1EC6916100E4E16D /* PMDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */; };
-		4FF430A01EC6916100E4E16D /* PMDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */; };
 		586E7D5F3623569991AE606E /* Pods_Pay_me_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DAB47D34969A8E3DE24E83 /* Pods_Pay_me_Development.framework */; };
 /* End PBXBuildFile section */
 
@@ -261,20 +351,133 @@
 		40293EF81E40D2DE007EF98D /* Debt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		40293EFA1E40DFEE007EF98D /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		40293EFC1E40E2E3007EF98D /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		403377371E03D41900261759 /* PMNivelUnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelUnoViewController.swift; sourceTree = "<group>"; };
-		403377391E03D42600261759 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
-		4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelTresViewController.swift; sourceTree = "<group>"; };
 		4033773D1E03D44800261759 /* PMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
-		403589601ED3595200B8B692 /* PMRecibosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMRecibosView.swift; sourceTree = "<group>"; };
-		403589611ED3595200B8B692 /* PMRecibosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMRecibosView.xib; sourceTree = "<group>"; };
-		403589661ED396D400B8B692 /* PMReciboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMReciboCell.swift; sourceTree = "<group>"; };
-		403589671ED396D400B8B692 /* PMReciboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMReciboCell.xib; sourceTree = "<group>"; };
-		403C13601EDC86A200A37939 /* PMPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PMPinView.swift; path = ../../Downloads/pinValidator/PMPinView.swift; sourceTree = "<group>"; };
-		403C13611EDC86A200A37939 /* PinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PinView.xib; path = ../../Downloads/pinValidator/PinView.xib; sourceTree = "<group>"; };
-		40463D271E19CF8000F663B0 /* PMItemCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemCard.swift; sourceTree = "<group>"; };
-		40463D291E19CF9E00F663B0 /* PMItemCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMItemCard.xib; sourceTree = "<group>"; };
-		404672D91E14608500A578EA /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
-		404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
+		403C15181EDE315800A37939 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
+		403C15191EDE315800A37939 /* SanFranciscoDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		403C151A1EDE315800A37939 /* SanFranciscoDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Heavy.ttf"; sourceTree = "<group>"; };
+		403C151B1EDE315800A37939 /* SanFranciscoDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Light.ttf"; sourceTree = "<group>"; };
+		403C151C1EDE315800A37939 /* SanFranciscoDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		403C151D1EDE315800A37939 /* SanFranciscoDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		403C151E1EDE315800A37939 /* SanFranciscoDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Semibold.ttf"; sourceTree = "<group>"; };
+		403C151F1EDE315800A37939 /* SanFranciscoDisplay-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Thin.ttf"; sourceTree = "<group>"; };
+		403C15201EDE315800A37939 /* SanFranciscoDisplay-Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Ultralight.ttf"; sourceTree = "<group>"; };
+		403C15351EDE31B500A37939 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		403C15361EDE31B500A37939 /* AgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
+		403C15381EDE31B500A37939 /* BarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarView.xib; sourceTree = "<group>"; };
+		403C15391EDE31B500A37939 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		403C153C1EDE31B500A37939 /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
+		403C153D1EDE31B500A37939 /* PMBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMBarView.swift; sourceTree = "<group>"; };
+		403C153E1EDE31B500A37939 /* PMCenterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCenterView.swift; sourceTree = "<group>"; };
+		403C153F1EDE31B500A37939 /* PMChangePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMChangePinViewController.swift; sourceTree = "<group>"; };
+		403C15401EDE31B500A37939 /* PMChangePinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMChangePinViewController.xib; sourceTree = "<group>"; };
+		403C15411EDE31B500A37939 /* PMErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMErrorView.swift; sourceTree = "<group>"; };
+		403C15421EDE31B500A37939 /* PMItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemView.swift; sourceTree = "<group>"; };
+		403C15431EDE31B500A37939 /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
+		403C15441EDE31B500A37939 /* PMPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMPinView.swift; sourceTree = "<group>"; };
+		403C15451EDE31B500A37939 /* PMSecurityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSecurityViewController.swift; sourceTree = "<group>"; };
+		403C15461EDE31B500A37939 /* PMSecurityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMSecurityViewController.xib; sourceTree = "<group>"; };
+		403C15471EDE31B500A37939 /* PMSpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSpinnerView.swift; sourceTree = "<group>"; };
+		403C15481EDE31B500A37939 /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
+		403C15491EDE31B500A37939 /* PMTitleStrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleStrip.swift; sourceTree = "<group>"; };
+		403C154A1EDE31B500A37939 /* PMTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTriangleView.swift; sourceTree = "<group>"; };
+		403C154B1EDE31B500A37939 /* StoryboardMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardMessages.swift; sourceTree = "<group>"; };
+		403C154C1EDE31B500A37939 /* TextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextField.xib; sourceTree = "<group>"; };
+		403C154E1EDE31B500A37939 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		403C154F1EDE31B500A37939 /* DetalleReciboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleReciboViewController.swift; sourceTree = "<group>"; };
+		403C15501EDE31B500A37939 /* ListaPagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPagosViewController.swift; sourceTree = "<group>"; };
+		403C15511EDE31B500A37939 /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
+		403C15521EDE31B500A37939 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		403C15541EDE31B500A37939 /* ConfiguracionNotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionNotificacionesViewController.swift; sourceTree = "<group>"; };
+		403C15551EDE31B500A37939 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		403C15561EDE31B500A37939 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		403C15571EDE31B500A37939 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		403C15581EDE31B500A37939 /* MostrarAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostrarAgendaViewController.swift; sourceTree = "<group>"; };
+		403C15591EDE31B500A37939 /* NotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesViewController.swift; sourceTree = "<group>"; };
+		403C155A1EDE31B500A37939 /* Notify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify.storyboard; sourceTree = "<group>"; };
+		403C155B1EDE31B500A37939 /* PagoAutomaticoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAutomaticoViewController.swift; sourceTree = "<group>"; };
+		403C155C1EDE31B500A37939 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
+		403C155D1EDE31B500A37939 /* ServiceConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationViewController.swift; sourceTree = "<group>"; };
+		403C155F1EDE31B500A37939 /* PayTicketResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTicketResultViewController.swift; sourceTree = "<group>"; };
+		403C15601EDE31B500A37939 /* PayTicketResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayTicketResultViewController.xib; sourceTree = "<group>"; };
+		403C15611EDE31B500A37939 /* PayTicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTicketViewController.swift; sourceTree = "<group>"; };
+		403C15621EDE31B500A37939 /* PayTicketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayTicketViewController.xib; sourceTree = "<group>"; };
+		403C15631EDE31B500A37939 /* PinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
+		403C15641EDE31B500A37939 /* PinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinViewController.xib; sourceTree = "<group>"; };
+		403C15651EDE31B500A37939 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		403C15661EDE31B500A37939 /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		403C15691EDE31B500A37939 /* CreditCardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardDetailViewController.swift; sourceTree = "<group>"; };
+		403C156A1EDE31B500A37939 /* CreditCardDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardDetailViewController.xib; sourceTree = "<group>"; };
+		403C156B1EDE31B500A37939 /* CreditCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		403C156C1EDE31B500A37939 /* CreditCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
+		403C156D1EDE31B500A37939 /* ProfileMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileMenuViewController.swift; sourceTree = "<group>"; };
+		403C156E1EDE31B500A37939 /* ProfileMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileMenuViewController.xib; sourceTree = "<group>"; };
+		403C156F1EDE31B500A37939 /* ProfilePersonalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePersonalViewController.swift; sourceTree = "<group>"; };
+		403C15701EDE31B500A37939 /* ProfilePersonalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePersonalViewController.xib; sourceTree = "<group>"; };
+		403C15711EDE31B500A37939 /* ProfilePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePhotoViewController.swift; sourceTree = "<group>"; };
+		403C15721EDE31B500A37939 /* ProfilePhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilePhotoViewController.xib; sourceTree = "<group>"; };
+		403C15741EDE31B500A37939 /* BienvenidoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BienvenidoViewController.swift; sourceTree = "<group>"; };
+		403C15751EDE31B500A37939 /* BienvenidoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BienvenidoViewController.xib; sourceTree = "<group>"; };
+		403C15761EDE31B500A37939 /* CreatePinSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinSuccessViewController.swift; sourceTree = "<group>"; };
+		403C15771EDE31B500A37939 /* CreatePinSuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePinSuccessViewController.xib; sourceTree = "<group>"; };
+		403C15781EDE31B500A37939 /* CreatePinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePinViewController.swift; sourceTree = "<group>"; };
+		403C15791EDE31B500A37939 /* CreatePinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatePinViewController.xib; sourceTree = "<group>"; };
+		403C157A1EDE31B500A37939 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		403C157B1EDE31B500A37939 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		403C157C1EDE31B500A37939 /* SMSValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSValidationViewController.swift; sourceTree = "<group>"; };
+		403C157D1EDE31B500A37939 /* SMSValidationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMSValidationViewController.xib; sourceTree = "<group>"; };
+		403C157E1EDE31B500A37939 /* TermAndConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermAndConditionViewController.swift; sourceTree = "<group>"; };
+		403C157F1EDE31B500A37939 /* TermAndConditionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermAndConditionViewController.xib; sourceTree = "<group>"; };
+		403C15811EDE31B500A37939 /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
+		403C15831EDE31B500A37939 /* PMInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMInfoView.swift; sourceTree = "<group>"; };
+		403C15841EDE31B500A37939 /* PMSuministroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuministroView.swift; sourceTree = "<group>"; };
+		403C15851EDE31B500A37939 /* PMSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuministroViewController.swift; sourceTree = "<group>"; };
+		403C15861EDE31B500A37939 /* SuministroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuministroView.xib; sourceTree = "<group>"; };
+		403C15881EDE31B500A37939 /* NotificacionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionTableViewCell.swift; sourceTree = "<group>"; };
+		403C158A1EDE31B500A37939 /* DetalleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleView.xib; sourceTree = "<group>"; };
+		403C158B1EDE31B500A37939 /* PMDetalleSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleSuministroViewController.swift; sourceTree = "<group>"; };
+		403C158C1EDE31B500A37939 /* PMDetalleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleView.swift; sourceTree = "<group>"; };
+		403C158E1EDE31B500A37939 /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
+		403C158F1EDE31B500A37939 /* FavoritoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritoTableViewCell.xib; sourceTree = "<group>"; };
+		403C15901EDE31B500A37939 /* ListadoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListadoView.xib; sourceTree = "<group>"; };
+		403C15911EDE31B500A37939 /* PMListadoFavoritosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListadoFavoritosViewController.swift; sourceTree = "<group>"; };
+		403C15921EDE31B500A37939 /* PMListadoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListadoView.swift; sourceTree = "<group>"; };
+		403C15941EDE31B500A37939 /* ListaServicios.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListaServicios.xib; sourceTree = "<group>"; };
+		403C15951EDE31B500A37939 /* PMListaServiciosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaServiciosView.swift; sourceTree = "<group>"; };
+		403C15961EDE31B500A37939 /* PMListaServiciosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaServiciosViewController.swift; sourceTree = "<group>"; };
+		403C15971EDE31B500A37939 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		403C15981EDE31B500A37939 /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		403C159A1EDE31B500A37939 /* EntidadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntidadTableViewCell.swift; sourceTree = "<group>"; };
+		403C159B1EDE31B500A37939 /* EntidadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntidadTableViewCell.xib; sourceTree = "<group>"; };
+		403C159C1EDE31B500A37939 /* PMNivelDosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelDosViewController.swift; sourceTree = "<group>"; };
+		403C159D1EDE31B500A37939 /* PMNivelTresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelTresViewController.swift; sourceTree = "<group>"; };
+		403C159E1EDE31B500A37939 /* PMNivelUnoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNivelUnoViewController.swift; sourceTree = "<group>"; };
+		403C159F1EDE31B500A37939 /* PMTerceroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTerceroView.swift; sourceTree = "<group>"; };
+		403C15A01EDE31B500A37939 /* TerceroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TerceroView.xib; sourceTree = "<group>"; };
+		403C15A21EDE31B500A37939 /* PMReciboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMReciboCell.swift; sourceTree = "<group>"; };
+		403C15A31EDE31B500A37939 /* PMReciboCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMReciboCell.xib; sourceTree = "<group>"; };
+		403C15A71EDE31B500A37939 /* AssistantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantViewController.swift; sourceTree = "<group>"; };
+		403C15A81EDE31B500A37939 /* AssistantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssistantViewController.xib; sourceTree = "<group>"; };
+		403C15A91EDE31B500A37939 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		403C15AA1EDE31B500A37939 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		403C15AB1EDE31B500A37939 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		403C15AC1EDE31B500A37939 /* SupportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SupportViewController.xib; sourceTree = "<group>"; };
+		403C167D1EDE325F00A37939 /* PinView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinView.xib; sourceTree = "<group>"; };
+		403C16871EDE358900A37939 /* CustomStyleFormater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStyleFormater.swift; sourceTree = "<group>"; };
+		403C16881EDE358900A37939 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		403C16BE1EDE39B900A37939 /* PMRecibosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMRecibosView.swift; sourceTree = "<group>"; };
+		403C16BF1EDE39B900A37939 /* PMRecibosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMRecibosView.xib; sourceTree = "<group>"; };
+		403C16C41EDE3B0600A37939 /* ExtendedClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedClass.swift; sourceTree = "<group>"; };
+		403C16C71EDE3B7B00A37939 /* CredicardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredicardTableViewCell.swift; sourceTree = "<group>"; };
+		403C16C81EDE3B7B00A37939 /* CredicardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CredicardTableViewCell.xib; sourceTree = "<group>"; };
+		403C16C91EDE3B7B00A37939 /* QuestionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewCell.swift; sourceTree = "<group>"; };
+		403C16CA1EDE3B7B00A37939 /* QuestionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsTableViewCell.xib; sourceTree = "<group>"; };
+		403C16CB1EDE3B7B00A37939 /* TicketFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketFooterView.swift; sourceTree = "<group>"; };
+		403C16CC1EDE3B7B00A37939 /* TicketFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketFooterView.xib; sourceTree = "<group>"; };
+		403C16CD1EDE3B7B00A37939 /* TicketHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketHeaderView.swift; sourceTree = "<group>"; };
+		403C16CE1EDE3B7B00A37939 /* TicketHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketHeaderView.xib; sourceTree = "<group>"; };
+		403C16CF1EDE3B7B00A37939 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		403C16D01EDE3B7B00A37939 /* TicketTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketTableViewCell.xib; sourceTree = "<group>"; };
+		403C16E51EDE3C5C00A37939 /* PMStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStateView.swift; sourceTree = "<group>"; };
 		405D230E1E157C94006ED043 /* PMStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStoryboard.swift; sourceTree = "<group>"; };
 		405D23111E157CEB006ED043 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		405E0AB21E1A1D49008CF767 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -295,94 +498,28 @@
 		406EEA341DFB0D88005D2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		406EEA3D1DFB0D88005D2E87 /* Pay_meUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay_meUITests.swift; sourceTree = "<group>"; };
 		406EEA3F1DFB0D88005D2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleSuministroViewController.swift; sourceTree = "<group>"; };
-		407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaServiciosViewController.swift; sourceTree = "<group>"; };
-		407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
-		407C03651E0B27BA00CD5D4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
-		407C036F1E0B530600CD5D4C /* PMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLabel.swift; sourceTree = "<group>"; };
 		4088F8AA1E36628C00114BEE /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
 		408CB7011E54E73D00D308D3 /* Pay-me Development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pay-me Development.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		409889E71EC939E50028FC67 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		409889EA1ECABCBD0028FC67 /* PMErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMErrorView.swift; sourceTree = "<group>"; };
 		40A420121E203FF200D74D22 /* PMString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMString.swift; sourceTree = "<group>"; };
-		40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaPagosViewController.swift; sourceTree = "<group>"; };
 		40A4201C1E24046F00D74D22 /* Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pay.swift; sourceTree = "<group>"; };
-		40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayTableViewCell.swift; sourceTree = "<group>"; };
-		40A420211E25279600D74D22 /* DetalleReciboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleReciboViewController.swift; sourceTree = "<group>"; };
-		40A420231E2528F700D74D22 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
-		40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Black.ttf"; sourceTree = "<group>"; };
-		40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Bold.ttf"; sourceTree = "<group>"; };
-		40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Heavy.ttf"; sourceTree = "<group>"; };
-		40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Light.ttf"; sourceTree = "<group>"; };
-		40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Medium.ttf"; sourceTree = "<group>"; };
-		40B2E3F21E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Regular.ttf"; sourceTree = "<group>"; };
-		40B2E3F31E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Semibold.ttf"; sourceTree = "<group>"; };
-		40B2E3F41E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Thin.ttf"; sourceTree = "<group>"; };
-		40B2E3F51E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SanFranciscoDisplay-Ultralight.ttf"; sourceTree = "<group>"; };
 		40B2E4021E0E5386003CBAC3 /* PMImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMImage.swift; sourceTree = "<group>"; };
-		40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntidadTableViewCell.swift; sourceTree = "<group>"; };
-		40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMHeaderView.swift; sourceTree = "<group>"; };
 		40CF1E461E0680090072CB29 /* PMColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMColors.swift; sourceTree = "<group>"; };
-		40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuministroViewController.swift; sourceTree = "<group>"; };
-		40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTriangleView.swift; sourceTree = "<group>"; };
-		40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		4B2E4905704C8B9D9F63B120 /* Pods-Pay-me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.debug.xcconfig"; sourceTree = "<group>"; };
-		4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesViewController.swift; sourceTree = "<group>"; };
-		4F1898461E11BA470060DD41 /* Notify.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notify.storyboard; sourceTree = "<group>"; };
 		4F1898481E11BB240060DD41 /* Notificacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificacion.swift; sourceTree = "<group>"; };
-		4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionTableViewCell.swift; sourceTree = "<group>"; };
 		4F28D7AE1EB8EC5500703CB4 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		4F28D7B11EB9271400703CB4 /* Favorito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
-		4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListadoFavoritosViewController.swift; sourceTree = "<group>"; };
 		4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EUITableViewController.swift; sourceTree = "<group>"; };
-		4F43D89E1EA7C34000403292 /* PMInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMInfoView.swift; sourceTree = "<group>"; };
 		4F43D8BD1EAA52F500403292 /* EProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EProtocols.swift; sourceTree = "<group>"; };
 		4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pay-me-Bridging-Header.h"; sourceTree = "<group>"; };
-		4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4F638D721E1FF48400ECE514 /* NotificacionHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionHome.swift; sourceTree = "<group>"; };
 		4F8329281EC231240011267B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4F8329291EC231240011267B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMMessageViewController.swift; sourceTree = "<group>"; };
-		4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardMessages.swift; sourceTree = "<group>"; };
-		4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntidadTableViewCell.xib; sourceTree = "<group>"; };
 		4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
-		4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServiceConfiguration.storyboard; sourceTree = "<group>"; };
-		4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		4FA0E3031EA5308D008F5ED9 /* Development.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Development.plist; sourceTree = "<group>"; };
-		4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMBarView.swift; sourceTree = "<group>"; };
-		4FA0E3081EA56828008F5ED9 /* BarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarView.xib; sourceTree = "<group>"; };
-		4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritoTableViewCell.xib; sourceTree = "<group>"; };
-		4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTitleStrip.swift; sourceTree = "<group>"; };
 		4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
-		4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AgregarServicio.storyboard; sourceTree = "<group>"; };
-		4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TerceroView.xib; sourceTree = "<group>"; };
-		4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTerceroView.swift; sourceTree = "<group>"; };
-		4FB03A481EC5FF7400AF82AE /* PMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTextField.swift; sourceTree = "<group>"; };
-		4FB03A4B1EC603E600AF82AE /* TextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextField.xib; sourceTree = "<group>"; };
-		4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMStateView.swift; sourceTree = "<group>"; };
-		4FB51BD21EBBD31200712249 /* PMItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMItemView.swift; sourceTree = "<group>"; };
-		4FB51BD61EBBE51200712249 /* PMCenterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCenterView.swift; sourceTree = "<group>"; };
 		4FB51BDE1EC0C49400712249 /* PMFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMFont.swift; sourceTree = "<group>"; };
-		4FB51BE11EC1112200712249 /* PMSpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSpinnerView.swift; sourceTree = "<group>"; };
-		4FB531C01E205DC200EABE52 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSuministroView.swift; sourceTree = "<group>"; };
-		4FC042711EC3D37800B93031 /* PMListadoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListadoView.swift; sourceTree = "<group>"; };
-		4FC042741EC3D38700B93031 /* ListadoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListadoView.xib; sourceTree = "<group>"; };
-		4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4FCC14CA1EAEB39300D6E7BC /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationViewController.swift; sourceTree = "<group>"; };
-		4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoAutomaticoViewController.swift; sourceTree = "<group>"; };
-		4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracionNotificacionesViewController.swift; sourceTree = "<group>"; };
-		4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostrarAgendaViewController.swift; sourceTree = "<group>"; };
-		4FD00CDA1EC3862700B37A09 /* SuministroView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuministroView.xib; sourceTree = "<group>"; };
-		4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListaServicios.xib; sourceTree = "<group>"; };
-		4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMListaServiciosView.swift; sourceTree = "<group>"; };
-		4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
-		4FF2BED01E1E996C00A2D16B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		4FF4309B1EC6915500E4E16D /* DetalleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalleView.xib; sourceTree = "<group>"; };
-		4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetalleView.swift; sourceTree = "<group>"; };
 		84CD2D2548DDD66F70CFD6E4 /* Pods_Pay_me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAA1CD1299B8194122B061 /* Pods-Pay-me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay-me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay-me/Pods-Pay-me.release.xcconfig"; sourceTree = "<group>"; };
 		A6B45B0CB6A921601A91717B /* Pods_Pay_meUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pay_meUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -422,18 +559,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		400190831E647CA30080DDA4 /* Favoritos */ = {
-			isa = PBXGroup;
-			children = (
-				4F43D8981EA7A88C00403292 /* PMListadoFavoritosViewController.swift */,
-				4FC042711EC3D37800B93031 /* PMListadoView.swift */,
-				407C036D1E0B30E100CD5D4C /* FavoritoTableViewCell.swift */,
-				4FA8EF9D1EAF982D00A596EA /* FavoritoTableViewCell.xib */,
-				4FC042741EC3D38700B93031 /* ListadoView.xib */,
-			);
-			name = Favoritos;
-			sourceTree = "<group>";
-		};
 		40180E5E1E021D230098B8C4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,22 +569,288 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		403C13661EDCCC2B00A37939 /* Pin */ = {
+		403C15171EDE315800A37939 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				403C13601EDC86A200A37939 /* PMPinView.swift */,
-				403C13611EDC86A200A37939 /* PinView.xib */,
+				403C15181EDE315800A37939 /* SanFranciscoDisplay-Black.ttf */,
+				403C15191EDE315800A37939 /* SanFranciscoDisplay-Bold.ttf */,
+				403C151A1EDE315800A37939 /* SanFranciscoDisplay-Heavy.ttf */,
+				403C151B1EDE315800A37939 /* SanFranciscoDisplay-Light.ttf */,
+				403C151C1EDE315800A37939 /* SanFranciscoDisplay-Medium.ttf */,
+				403C151D1EDE315800A37939 /* SanFranciscoDisplay-Regular.ttf */,
+				403C151E1EDE315800A37939 /* SanFranciscoDisplay-Semibold.ttf */,
+				403C151F1EDE315800A37939 /* SanFranciscoDisplay-Thin.ttf */,
+				403C15201EDE315800A37939 /* SanFranciscoDisplay-Ultralight.ttf */,
 			);
-			name = Pin;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
-		404BBFB91E268F5A0050CA30 /* Agenda */ = {
+		403C15331EDE31B500A37939 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				40F40C631E26A58A0076C145 /* Cells */,
-				404BBFBA1E2695D70050CA30 /* AgendaViewController.swift */,
+				403C15521EDE31B500A37939 /* Main.storyboard */,
+				403C15801EDE31B500A37939 /* Servicio */,
+				403C15341EDE31B500A37939 /* Agenda */,
+				403C154D1EDE31B500A37939 /* Historico */,
+				403C15531EDE31B500A37939 /* Notificaciones */,
+				403C155E1EDE31B500A37939 /* PayTicket */,
+				403C15671EDE31B500A37939 /* Profile */,
+				403C15731EDE31B500A37939 /* Registro */,
+				403C15A61EDE31B500A37939 /* Soporte */,
 			);
-			name = Agenda;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		403C15341EDE31B500A37939 /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				403C15351EDE31B500A37939 /* AgendaTableViewCell.swift */,
+				403C15361EDE31B500A37939 /* AgendaViewController.swift */,
+			);
+			path = Agenda;
+			sourceTree = "<group>";
+		};
+		403C15371EDE31B500A37939 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				403C16E51EDE3C5C00A37939 /* PMStateView.swift */,
+				403C15381EDE31B500A37939 /* BarView.xib */,
+				403C15391EDE31B500A37939 /* ErrorView.xib */,
+				403C153C1EDE31B500A37939 /* Messages.storyboard */,
+				403C153D1EDE31B500A37939 /* PMBarView.swift */,
+				403C153E1EDE31B500A37939 /* PMCenterView.swift */,
+				403C153F1EDE31B500A37939 /* PMChangePinViewController.swift */,
+				403C15401EDE31B500A37939 /* PMChangePinViewController.xib */,
+				403C15411EDE31B500A37939 /* PMErrorView.swift */,
+				403C15421EDE31B500A37939 /* PMItemView.swift */,
+				403C15431EDE31B500A37939 /* PMMessageViewController.swift */,
+				403C15441EDE31B500A37939 /* PMPinView.swift */,
+				403C167D1EDE325F00A37939 /* PinView.xib */,
+				403C15451EDE31B500A37939 /* PMSecurityViewController.swift */,
+				403C15461EDE31B500A37939 /* PMSecurityViewController.xib */,
+				403C15471EDE31B500A37939 /* PMSpinnerView.swift */,
+				403C15481EDE31B500A37939 /* PMTextField.swift */,
+				403C15491EDE31B500A37939 /* PMTitleStrip.swift */,
+				403C154A1EDE31B500A37939 /* PMTriangleView.swift */,
+				403C154B1EDE31B500A37939 /* StoryboardMessages.swift */,
+				403C154C1EDE31B500A37939 /* TextField.xib */,
+			);
+			name = Extras;
+			path = ../Extras;
+			sourceTree = "<group>";
+		};
+		403C154D1EDE31B500A37939 /* Historico */ = {
+			isa = PBXGroup;
+			children = (
+				403C154E1EDE31B500A37939 /* CardTableViewCell.swift */,
+				403C154F1EDE31B500A37939 /* DetalleReciboViewController.swift */,
+				403C15501EDE31B500A37939 /* ListaPagosViewController.swift */,
+				403C15511EDE31B500A37939 /* PayTableViewCell.swift */,
+			);
+			path = Historico;
+			sourceTree = "<group>";
+		};
+		403C15531EDE31B500A37939 /* Notificaciones */ = {
+			isa = PBXGroup;
+			children = (
+				403C15541EDE31B500A37939 /* ConfiguracionNotificacionesViewController.swift */,
+				403C15551EDE31B500A37939 /* Home.storyboard */,
+				403C15561EDE31B500A37939 /* HomeViewController.swift */,
+				403C15571EDE31B500A37939 /* LaunchViewController.swift */,
+				403C15581EDE31B500A37939 /* MostrarAgendaViewController.swift */,
+				403C15591EDE31B500A37939 /* NotificacionesViewController.swift */,
+				403C155A1EDE31B500A37939 /* Notify.storyboard */,
+				403C155B1EDE31B500A37939 /* PagoAutomaticoViewController.swift */,
+				403C155C1EDE31B500A37939 /* ServiceConfiguration.storyboard */,
+				403C155D1EDE31B500A37939 /* ServiceConfigurationViewController.swift */,
+			);
+			path = Notificaciones;
+			sourceTree = "<group>";
+		};
+		403C155E1EDE31B500A37939 /* PayTicket */ = {
+			isa = PBXGroup;
+			children = (
+				403C155F1EDE31B500A37939 /* PayTicketResultViewController.swift */,
+				403C15601EDE31B500A37939 /* PayTicketResultViewController.xib */,
+				403C15611EDE31B500A37939 /* PayTicketViewController.swift */,
+				403C15621EDE31B500A37939 /* PayTicketViewController.xib */,
+				403C15631EDE31B500A37939 /* PinViewController.swift */,
+				403C15641EDE31B500A37939 /* PinViewController.xib */,
+				403C15651EDE31B500A37939 /* ResultViewController.swift */,
+				403C15661EDE31B500A37939 /* ResultViewController.xib */,
+			);
+			path = PayTicket;
+			sourceTree = "<group>";
+		};
+		403C15671EDE31B500A37939 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				403C15681EDE31B500A37939 /* CreditCard */,
+				403C156D1EDE31B500A37939 /* ProfileMenuViewController.swift */,
+				403C156E1EDE31B500A37939 /* ProfileMenuViewController.xib */,
+				403C156F1EDE31B500A37939 /* ProfilePersonalViewController.swift */,
+				403C15701EDE31B500A37939 /* ProfilePersonalViewController.xib */,
+				403C15711EDE31B500A37939 /* ProfilePhotoViewController.swift */,
+				403C15721EDE31B500A37939 /* ProfilePhotoViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		403C15681EDE31B500A37939 /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				403C15691EDE31B500A37939 /* CreditCardDetailViewController.swift */,
+				403C156A1EDE31B500A37939 /* CreditCardDetailViewController.xib */,
+				403C156B1EDE31B500A37939 /* CreditCardViewController.swift */,
+				403C156C1EDE31B500A37939 /* CreditCardViewController.xib */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		403C15731EDE31B500A37939 /* Registro */ = {
+			isa = PBXGroup;
+			children = (
+				403C15741EDE31B500A37939 /* BienvenidoViewController.swift */,
+				403C15751EDE31B500A37939 /* BienvenidoViewController.xib */,
+				403C15761EDE31B500A37939 /* CreatePinSuccessViewController.swift */,
+				403C15771EDE31B500A37939 /* CreatePinSuccessViewController.xib */,
+				403C15781EDE31B500A37939 /* CreatePinViewController.swift */,
+				403C15791EDE31B500A37939 /* CreatePinViewController.xib */,
+				403C157A1EDE31B500A37939 /* RegisterViewController.swift */,
+				403C157B1EDE31B500A37939 /* RegisterViewController.xib */,
+				403C157C1EDE31B500A37939 /* SMSValidationViewController.swift */,
+				403C157D1EDE31B500A37939 /* SMSValidationViewController.xib */,
+				403C157E1EDE31B500A37939 /* TermAndConditionViewController.swift */,
+				403C157F1EDE31B500A37939 /* TermAndConditionViewController.xib */,
+			);
+			path = Registro;
+			sourceTree = "<group>";
+		};
+		403C15801EDE31B500A37939 /* Servicio */ = {
+			isa = PBXGroup;
+			children = (
+				403C15371EDE31B500A37939 /* Extras */,
+				403C15811EDE31B500A37939 /* AgregarServicio.storyboard */,
+				403C15821EDE31B500A37939 /* Buscar */,
+				403C15871EDE31B500A37939 /* Cells */,
+				403C15891EDE31B500A37939 /* Detalle */,
+				403C158D1EDE31B500A37939 /* Favoritos */,
+				403C15931EDE31B500A37939 /* Lista */,
+				403C15991EDE31B500A37939 /* Niveles */,
+				403C15A11EDE31B500A37939 /* Pagar */,
+			);
+			path = Servicio;
+			sourceTree = "<group>";
+		};
+		403C15821EDE31B500A37939 /* Buscar */ = {
+			isa = PBXGroup;
+			children = (
+				403C15831EDE31B500A37939 /* PMInfoView.swift */,
+				403C15841EDE31B500A37939 /* PMSuministroView.swift */,
+				403C15851EDE31B500A37939 /* PMSuministroViewController.swift */,
+				403C15861EDE31B500A37939 /* SuministroView.xib */,
+			);
+			path = Buscar;
+			sourceTree = "<group>";
+		};
+		403C15871EDE31B500A37939 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				403C16C71EDE3B7B00A37939 /* CredicardTableViewCell.swift */,
+				403C16C81EDE3B7B00A37939 /* CredicardTableViewCell.xib */,
+				403C16C91EDE3B7B00A37939 /* QuestionsTableViewCell.swift */,
+				403C16CA1EDE3B7B00A37939 /* QuestionsTableViewCell.xib */,
+				403C16CB1EDE3B7B00A37939 /* TicketFooterView.swift */,
+				403C16CC1EDE3B7B00A37939 /* TicketFooterView.xib */,
+				403C16CD1EDE3B7B00A37939 /* TicketHeaderView.swift */,
+				403C16CE1EDE3B7B00A37939 /* TicketHeaderView.xib */,
+				403C16CF1EDE3B7B00A37939 /* TicketTableViewCell.swift */,
+				403C16D01EDE3B7B00A37939 /* TicketTableViewCell.xib */,
+				403C15881EDE31B500A37939 /* NotificacionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		403C15891EDE31B500A37939 /* Detalle */ = {
+			isa = PBXGroup;
+			children = (
+				403C158A1EDE31B500A37939 /* DetalleView.xib */,
+				403C158B1EDE31B500A37939 /* PMDetalleSuministroViewController.swift */,
+				403C158C1EDE31B500A37939 /* PMDetalleView.swift */,
+			);
+			path = Detalle;
+			sourceTree = "<group>";
+		};
+		403C158D1EDE31B500A37939 /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				403C158E1EDE31B500A37939 /* FavoritoTableViewCell.swift */,
+				403C158F1EDE31B500A37939 /* FavoritoTableViewCell.xib */,
+				403C15901EDE31B500A37939 /* ListadoView.xib */,
+				403C15911EDE31B500A37939 /* PMListadoFavoritosViewController.swift */,
+				403C15921EDE31B500A37939 /* PMListadoView.swift */,
+			);
+			path = Favoritos;
+			sourceTree = "<group>";
+		};
+		403C15931EDE31B500A37939 /* Lista */ = {
+			isa = PBXGroup;
+			children = (
+				403C15941EDE31B500A37939 /* ListaServicios.xib */,
+				403C15951EDE31B500A37939 /* PMListaServiciosView.swift */,
+				403C15961EDE31B500A37939 /* PMListaServiciosViewController.swift */,
+				403C15971EDE31B500A37939 /* ServiceTableViewCell.swift */,
+				403C15981EDE31B500A37939 /* ServiceTableViewCell.xib */,
+			);
+			path = Lista;
+			sourceTree = "<group>";
+		};
+		403C15991EDE31B500A37939 /* Niveles */ = {
+			isa = PBXGroup;
+			children = (
+				403C159A1EDE31B500A37939 /* EntidadTableViewCell.swift */,
+				403C159B1EDE31B500A37939 /* EntidadTableViewCell.xib */,
+				403C159C1EDE31B500A37939 /* PMNivelDosViewController.swift */,
+				403C159D1EDE31B500A37939 /* PMNivelTresViewController.swift */,
+				403C159E1EDE31B500A37939 /* PMNivelUnoViewController.swift */,
+				403C159F1EDE31B500A37939 /* PMTerceroView.swift */,
+				403C15A01EDE31B500A37939 /* TerceroView.xib */,
+			);
+			path = Niveles;
+			sourceTree = "<group>";
+		};
+		403C15A11EDE31B500A37939 /* Pagar */ = {
+			isa = PBXGroup;
+			children = (
+				403C16BE1EDE39B900A37939 /* PMRecibosView.swift */,
+				403C16BF1EDE39B900A37939 /* PMRecibosView.xib */,
+				403C15A21EDE31B500A37939 /* PMReciboCell.swift */,
+				403C15A31EDE31B500A37939 /* PMReciboCell.xib */,
+			);
+			path = Pagar;
+			sourceTree = "<group>";
+		};
+		403C15A61EDE31B500A37939 /* Soporte */ = {
+			isa = PBXGroup;
+			children = (
+				403C15A71EDE31B500A37939 /* AssistantViewController.swift */,
+				403C15A81EDE31B500A37939 /* AssistantViewController.xib */,
+				403C15A91EDE31B500A37939 /* DetailViewController.swift */,
+				403C15AA1EDE31B500A37939 /* DetailViewController.xib */,
+				403C15AB1EDE31B500A37939 /* SupportViewController.swift */,
+				403C15AC1EDE31B500A37939 /* SupportViewController.xib */,
+			);
+			path = Soporte;
+			sourceTree = "<group>";
+		};
+		403C16861EDE356400A37939 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4062C1431E3B987E00617265 /* Security */,
+				403C16871EDE358900A37939 /* CustomStyleFormater.swift */,
+				403C16881EDE358900A37939 /* Util.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		405D23101E157CDA006ED043 /* Core */ = {
@@ -485,35 +876,6 @@
 				4062C13A1E37B16200617265 /* StaticData.json */,
 			);
 			name = Files;
-			sourceTree = "<group>";
-		};
-		4062C13D1E37B1B100617265 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				407C03651E0B27BA00CD5D4C /* Main.storyboard */,
-				4FC042771EC3D7B300B93031 /* Reutilizables */,
-				4FCC14A51EAE4C6E00D6E7BC /* Servicio */,
-				404BBFB91E268F5A0050CA30 /* Agenda */,
-				40A420191E24039A00D74D22 /* Historico */,
-				4F1898431E11B7E80060DD41 /* Notify */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		4062C1421E380F3600617265 /* Adicionar */ = {
-			isa = PBXGroup;
-			children = (
-				4FB03A3A1EC4F85900AF82AE /* AgregarServicio.storyboard */,
-				400190831E647CA30080DDA4 /* Favoritos */,
-				4FC042791EC4DE3800B93031 /* Primero */,
-				4FC0427A1EC4DE4200B93031 /* Segundo */,
-				4FC0427B1EC4DE4C00B93031 /* Tercero */,
-				4FD00CDD1EC388C700B37A09 /* Suministro */,
-				4FC0427C1EC4F02600B93031 /* Detalle */,
-				4FC0427D1EC4F03800B93031 /* Servicios */,
-				4F43D8A41EA8235500403292 /* Cells */,
-			);
-			name = Adicionar;
 			sourceTree = "<group>";
 		};
 		4062C1431E3B987E00617265 /* Security */ = {
@@ -562,23 +924,22 @@
 				4F8329281EC231240011267B /* Default-568h@2x.png */,
 				4F8329291EC231240011267B /* Default@2x.png */,
 				406EEA1D1DFB0D88005D2E87 /* AppDelegate.swift */,
-				40B2E3EC1E0DDE07003CBAC3 /* Fonts */,
+				403C15331EDE31B500A37939 /* Modules */,
 				4062C1331E37154600617265 /* Files */,
 				405E0AB11E1A1D32008CF767 /* Enums */,
-				4062C1431E3B987E00617265 /* Security */,
-				405D23101E157CDA006ED043 /* Core */,
 				40B2E3FF1E0E445A003CBAC3 /* Beans */,
 				4062C1501E3BC43F00617265 /* Services */,
-				4062C13D1E37B1B100617265 /* UI */,
-				408E501E1DFB7A6D007BEEDE /* Views */,
 				40180E5E1E021D230098B8C4 /* Controllers */,
 				408E501D1DFB6DF0007BEEDE /* Utils */,
 				4FF780421EA58503002D4703 /* ExtendedClass */,
+				403C16861EDE356400A37939 /* Helpers */,
 				406EEA241DFB0D88005D2E87 /* Assets.xcassets */,
 				406EEA261DFB0D88005D2E87 /* LaunchScreen.storyboard */,
 				406EEA291DFB0D88005D2E87 /* Info.plist */,
 				4FA0E3031EA5308D008F5ED9 /* Development.plist */,
 				4F45029F1E1474EE00461E9A /* Pay-me-Bridging-Header.h */,
+				403C15171EDE315800A37939 /* Fonts */,
+				405D23101E157CDA006ED043 /* Core */,
 			);
 			path = "Pay-me";
 			sourceTree = "<group>";
@@ -601,17 +962,6 @@
 			path = "Pay-meUITests";
 			sourceTree = "<group>";
 		};
-		408D90201ECE5985006CA163 /* Recibos */ = {
-			isa = PBXGroup;
-			children = (
-				403589601ED3595200B8B692 /* PMRecibosView.swift */,
-				403589611ED3595200B8B692 /* PMRecibosView.xib */,
-				403589661ED396D400B8B692 /* PMReciboCell.swift */,
-				403589671ED396D400B8B692 /* PMReciboCell.xib */,
-			);
-			name = Recibos;
-			sourceTree = "<group>";
-		};
 		408E501D1DFB6DF0007BEEDE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,53 +973,6 @@
 				4FB51BDE1EC0C49400712249 /* PMFont.swift */,
 			);
 			name = Utils;
-			sourceTree = "<group>";
-		};
-		408E501E1DFB7A6D007BEEDE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4FB51BCF1EBB7F4D00712249 /* PMStateView.swift */,
-				40CF1E3E1E04B9620072CB29 /* PMHeaderView.swift */,
-				40463D271E19CF8000F663B0 /* PMItemCard.swift */,
-				40463D291E19CF9E00F663B0 /* PMItemCard.xib */,
-				407C036F1E0B530600CD5D4C /* PMLabel.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		40A420191E24039A00D74D22 /* Historico */ = {
-			isa = PBXGroup;
-			children = (
-				40A4201E1E24072D00D74D22 /* Cells */,
-				40A4201A1E2403BC00D74D22 /* ListaPagosViewController.swift */,
-				40A420211E25279600D74D22 /* DetalleReciboViewController.swift */,
-			);
-			name = Historico;
-			sourceTree = "<group>";
-		};
-		40A4201E1E24072D00D74D22 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				40A4201F1E24073D00D74D22 /* PayTableViewCell.swift */,
-				40A420231E2528F700D74D22 /* CardTableViewCell.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		40B2E3EC1E0DDE07003CBAC3 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				40B2E3ED1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf */,
-				40B2E3EE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf */,
-				40B2E3EF1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf */,
-				40B2E3F01E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf */,
-				40B2E3F11E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf */,
-				40B2E3F21E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf */,
-				40B2E3F31E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf */,
-				40B2E3F41E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf */,
-				40B2E3F51E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf */,
-			);
-			name = Fonts;
 			sourceTree = "<group>";
 		};
 		40B2E3FF1E0E445A003CBAC3 /* Beans */ = {
@@ -690,196 +993,14 @@
 			name = Beans;
 			sourceTree = "<group>";
 		};
-		40F40C631E26A58A0076C145 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				40F40C641E26A5A70076C145 /* AgendaTableViewCell.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		4F1898431E11B7E80060DD41 /* Notify */ = {
-			isa = PBXGroup;
-			children = (
-				4FB531C01E205DC200EABE52 /* LaunchViewController.swift */,
-				4F1898441E11B8FB0060DD41 /* NotificacionesViewController.swift */,
-				4F1898461E11BA470060DD41 /* Notify.storyboard */,
-				4FF2BED01E1E996C00A2D16B /* Home.storyboard */,
-				4F5007741E1EB8E800B4EDD8 /* HomeViewController.swift */,
-				4F9C64A51E27D79600456C63 /* ServiceConfiguration.storyboard */,
-				4FCFBDFF1E27DFD70029EE40 /* ServiceConfigurationViewController.swift */,
-				4FCFBE011E2838D90029EE40 /* PagoAutomaticoViewController.swift */,
-				4FCFBE031E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift */,
-				4FCFBE051E28390E0029EE40 /* MostrarAgendaViewController.swift */,
-			);
-			name = Notify;
-			sourceTree = "<group>";
-		};
-		4F43D8A41EA8235500403292 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				4F18984A1E11BDD50060DD41 /* NotificacionTableViewCell.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		4F973ED31ECB4A5F003D3CAF /* Messages */ = {
-			isa = PBXGroup;
-			children = (
-				4F973EDA1ECB6C0A003D3CAF /* StoryboardMessages.swift */,
-				4F973ED71ECB66D6003D3CAF /* PMMessageViewController.swift */,
-				404672D91E14608500A578EA /* Messages.storyboard */,
-			);
-			name = Messages;
-			sourceTree = "<group>";
-		};
-		4FB03A441EC5FF4200AF82AE /* TextField */ = {
-			isa = PBXGroup;
-			children = (
-				4FB03A481EC5FF7400AF82AE /* PMTextField.swift */,
-				4FB03A4B1EC603E600AF82AE /* TextField.xib */,
-			);
-			name = TextField;
-			sourceTree = "<group>";
-		};
-		4FB51BD51EBBE4EC00712249 /* Spinner */ = {
-			isa = PBXGroup;
-			children = (
-				4FB51BE11EC1112200712249 /* PMSpinnerView.swift */,
-				4FB51BD61EBBE51200712249 /* PMCenterView.swift */,
-				4FB51BD21EBBD31200712249 /* PMItemView.swift */,
-			);
-			name = Spinner;
-			sourceTree = "<group>";
-		};
-		4FC042701EC3D1A700B93031 /* Bar */ = {
-			isa = PBXGroup;
-			children = (
-				4FA0E3051EA5674C008F5ED9 /* PMBarView.swift */,
-				4FA0E3081EA56828008F5ED9 /* BarView.xib */,
-			);
-			name = Bar;
-			sourceTree = "<group>";
-		};
-		4FC042771EC3D7B300B93031 /* Reutilizables */ = {
-			isa = PBXGroup;
-			children = (
-				403C13661EDCCC2B00A37939 /* Pin */,
-				4F973ED31ECB4A5F003D3CAF /* Messages */,
-				4FD3CA0C1ECA6E06003DABAC /* Error */,
-				4FB03A441EC5FF4200AF82AE /* TextField */,
-				4FB51BD51EBBE4EC00712249 /* Spinner */,
-				4FC042781EC3D7BF00B93031 /* Title */,
-				4FC042701EC3D1A700B93031 /* Bar */,
-			);
-			name = Reutilizables;
-			sourceTree = "<group>";
-		};
-		4FC042781EC3D7BF00B93031 /* Title */ = {
-			isa = PBXGroup;
-			children = (
-				4FA8EFA61EB0F7B700A596EA /* PMTitleStrip.swift */,
-			);
-			name = Title;
-			sourceTree = "<group>";
-		};
-		4FC042791EC4DE3800B93031 /* Primero */ = {
-			isa = PBXGroup;
-			children = (
-				403377371E03D41900261759 /* PMNivelUnoViewController.swift */,
-			);
-			name = Primero;
-			sourceTree = "<group>";
-		};
-		4FC0427A1EC4DE4200B93031 /* Segundo */ = {
-			isa = PBXGroup;
-			children = (
-				403377391E03D42600261759 /* PMNivelDosViewController.swift */,
-			);
-			name = Segundo;
-			sourceTree = "<group>";
-		};
-		4FC0427B1EC4DE4C00B93031 /* Tercero */ = {
-			isa = PBXGroup;
-			children = (
-				4033773B1E03D43A00261759 /* PMNivelTresViewController.swift */,
-				40CF1E3C1E04AE010072CB29 /* EntidadTableViewCell.swift */,
-				4FB03A411EC5048C00AF82AE /* PMTerceroView.swift */,
-				4F983A491EB2AB0000C81CB0 /* EntidadTableViewCell.xib */,
-				4FB03A3E1EC5040A00AF82AE /* TerceroView.xib */,
-			);
-			name = Tercero;
-			sourceTree = "<group>";
-		};
-		4FC0427C1EC4F02600B93031 /* Detalle */ = {
-			isa = PBXGroup;
-			children = (
-				407C035F1E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift */,
-				4FF4309E1EC6916100E4E16D /* PMDetalleView.swift */,
-				4FF4309B1EC6915500E4E16D /* DetalleView.xib */,
-			);
-			name = Detalle;
-			sourceTree = "<group>";
-		};
-		4FC0427D1EC4F03800B93031 /* Servicios */ = {
-			isa = PBXGroup;
-			children = (
-				407C03611E0B1C1000CD5D4C /* PMListaServiciosViewController.swift */,
-				4FD3CA091ECA0267003DABAC /* PMListaServiciosView.swift */,
-				407C03631E0B211200CD5D4C /* ServiceTableViewCell.swift */,
-				4FD3CA061EC9FFEF003DABAC /* ListaServicios.xib */,
-				4FA0AF731EB3A59700400BCC /* ServiceTableViewCell.xib */,
-			);
-			name = Servicios;
-			sourceTree = "<group>";
-		};
-		4FCC14A41EAE4C6200D6E7BC /* Pagar */ = {
-			isa = PBXGroup;
-			children = (
-				408D90201ECE5985006CA163 /* Recibos */,
-			);
-			name = Pagar;
-			sourceTree = "<group>";
-		};
-		4FCC14A51EAE4C6E00D6E7BC /* Servicio */ = {
-			isa = PBXGroup;
-			children = (
-				4062C1421E380F3600617265 /* Adicionar */,
-				4FCC14A41EAE4C6200D6E7BC /* Pagar */,
-			);
-			name = Servicio;
-			sourceTree = "<group>";
-		};
-		4FD00CDD1EC388C700B37A09 /* Suministro */ = {
-			isa = PBXGroup;
-			children = (
-				40CF1E481E068AAF0072CB29 /* PMSuministroViewController.swift */,
-				4FC0426D1EC3AA9500B93031 /* PMSuministroView.swift */,
-				4F43D89E1EA7C34000403292 /* PMInfoView.swift */,
-				4FD00CDA1EC3862700B37A09 /* SuministroView.xib */,
-			);
-			name = Suministro;
-			sourceTree = "<group>";
-		};
-		4FD3CA0C1ECA6E06003DABAC /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				40CF1E4A1E068D4C0072CB29 /* PMTriangleView.swift */,
-				409889EA1ECABCBD0028FC67 /* PMErrorView.swift */,
-				4FD3CA0D1ECA6E16003DABAC /* ErrorView.xib */,
-			);
-			name = Error;
-			sourceTree = "<group>";
-		};
 		4FF780421EA58503002D4703 /* ExtendedClass */ = {
 			isa = PBXGroup;
 			children = (
+				403C16C41EDE3B0600A37939 /* ExtendedClass.swift */,
 				4001908A1E6495150080DDA4 /* Currency.swift */,
-				4FCC14C41EAE8D1400D6E7BC /* UIButton.swift */,
 				400190971E64EC220080DDA4 /* UIViewController.swift */,
 				4F43D89B1EA7AB9900403292 /* EUITableViewController.swift */,
 				4F43D8BD1EAA52F500403292 /* EProtocols.swift */,
-				4FCC14C71EAE8E0900D6E7BC /* UIColor.swift */,
 				4FCC14CA1EAEB39300D6E7BC /* UIView.swift */,
 				4FA8EFAC1EB0F8AC00A596EA /* Extras.swift */,
 				4F983A4C1EB2AE0300C81CB0 /* UITableViewCell.swift */,
@@ -989,42 +1110,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B2E3F61E0DDE1D003CBAC3 /* SanFranciscoDisplay-Black.ttf in Resources */,
+				403C15211EDE315800A37939 /* SanFranciscoDisplay-Black.ttf in Resources */,
+				403C16131EDE31B600A37939 /* ProfileMenuViewController.xib in Resources */,
+				403C16D31EDE3B7B00A37939 /* CredicardTableViewCell.xib in Resources */,
+				403C15F11EDE31B600A37939 /* Notify.storyboard in Resources */,
+				403C160B1EDE31B600A37939 /* CreditCardDetailViewController.xib in Resources */,
+				403C16271EDE31B600A37939 /* CreatePinViewController.xib in Resources */,
+				403C16031EDE31B600A37939 /* PinViewController.xib in Resources */,
+				403C15F51EDE31B600A37939 /* ServiceConfiguration.storyboard in Resources */,
+				403C163D1EDE31B600A37939 /* SuministroView.xib in Resources */,
+				403C15271EDE315800A37939 /* SanFranciscoDisplay-Light.ttf in Resources */,
+				403C164B1EDE31B600A37939 /* ListadoView.xib in Resources */,
 				406EEA281DFB0D88005D2E87 /* LaunchScreen.storyboard in Resources */,
-				4FC042751EC3D38700B93031 /* ListadoView.xib in Resources */,
-				4FA0AF741EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */,
-				40B2E3FE1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
-				407C03661E0B27BA00CD5D4C /* Main.storyboard in Resources */,
-				4FA0E3091EA56828008F5ED9 /* BarView.xib in Resources */,
-				4FB03A4C1EC603E600AF82AE /* TextField.xib in Resources */,
-				404672DA1E14608500A578EA /* Messages.storyboard in Resources */,
-				40463D2A1E19CF9E00F663B0 /* PMItemCard.xib in Resources */,
-				40B2E3F81E0DDE1D003CBAC3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
-				4FD00CDB1EC3862700B37A09 /* SuministroView.xib in Resources */,
+				403C16071EDE31B600A37939 /* ResultViewController.xib in Resources */,
+				403C16491EDE31B600A37939 /* FavoritoTableViewCell.xib in Resources */,
+				403C16591EDE31B600A37939 /* ServiceTableViewCell.xib in Resources */,
+				403C166B1EDE31B600A37939 /* PMReciboCell.xib in Resources */,
+				403C16331EDE31B600A37939 /* TermAndConditionViewController.xib in Resources */,
+				403C161B1EDE31B600A37939 /* ProfilePhotoViewController.xib in Resources */,
+				403C16981EDE371A00A37939 /* Messages.storyboard in Resources */,
+				403C15E31EDE31B500A37939 /* Main.storyboard in Resources */,
+				403C169C1EDE371A00A37939 /* PMChangePinViewController.xib in Resources */,
+				403C15231EDE315800A37939 /* SanFranciscoDisplay-Bold.ttf in Resources */,
+				403C16971EDE371A00A37939 /* ErrorView.xib in Resources */,
 				40330A971ED738DF0086074A /* Default@2x.png in Resources */,
+				403C16A31EDE371A00A37939 /* PMSecurityViewController.xib in Resources */,
+				403C16C21EDE39B900A37939 /* PMRecibosView.xib in Resources */,
 				4F43D88B1EA699C700403292 /* Info.plist in Resources */,
-				4F1898471E11BA470060DD41 /* Notify.storyboard in Resources */,
-				4FD3CA071EC9FFEF003DABAC /* ListaServicios.xib in Resources */,
-				4FF2BED11E1E996C00A2D16B /* Home.storyboard in Resources */,
-				40B2E3FD1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
-				4F9C64A61E27D79600456C63 /* ServiceConfiguration.storyboard in Resources */,
-				4FD3CA0E1ECA6E16003DABAC /* ErrorView.xib in Resources */,
-				403C13631EDC86A200A37939 /* PinView.xib in Resources */,
-				4F983A4A1EB2AB0000C81CB0 /* EntidadTableViewCell.xib in Resources */,
-				40B2E3FC1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
-				4FF4309C1EC6915500E4E16D /* DetalleView.xib in Resources */,
-				40B2E3F71E0DDE1D003CBAC3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
-				40B2E3FB1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
-				4FB03A3B1EC4F85900AF82AE /* AgregarServicio.storyboard in Resources */,
+				403C16231EDE31B600A37939 /* CreatePinSuccessViewController.xib in Resources */,
+				403C16411EDE31B600A37939 /* DetalleView.xib in Resources */,
+				403C16671EDE31B600A37939 /* TerceroView.xib in Resources */,
+				403C16961EDE371A00A37939 /* BarView.xib in Resources */,
+				403C16A91EDE371A00A37939 /* TextField.xib in Resources */,
+				403C16511EDE31B600A37939 /* ListaServicios.xib in Resources */,
+				403C165D1EDE31B600A37939 /* EntidadTableViewCell.xib in Resources */,
+				403C16731EDE31B600A37939 /* AssistantViewController.xib in Resources */,
+				403C161F1EDE31B600A37939 /* BienvenidoViewController.xib in Resources */,
+				403C152B1EDE315800A37939 /* SanFranciscoDisplay-Regular.ttf in Resources */,
+				403C15311EDE315800A37939 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
+				403C16D71EDE3B7B00A37939 /* QuestionsTableViewCell.xib in Resources */,
+				403C16A11EDE371A00A37939 /* PinView.xib in Resources */,
+				403C15291EDE315800A37939 /* SanFranciscoDisplay-Medium.ttf in Resources */,
+				403C16771EDE31B600A37939 /* DetailViewController.xib in Resources */,
+				403C16E31EDE3B7B00A37939 /* TicketTableViewCell.xib in Resources */,
+				403C152F1EDE315800A37939 /* SanFranciscoDisplay-Thin.ttf in Resources */,
 				40330A961ED738DF0086074A /* Default-568h@2x.png in Resources */,
 				4062C13B1E37B16200617265 /* StaticData.json in Resources */,
-				40B2E3F91E0DDE1D003CBAC3 /* SanFranciscoDisplay-Light.ttf in Resources */,
-				4FA8EF9E1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
+				403C152D1EDE315800A37939 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
+				403C160F1EDE31B600A37939 /* CreditCardViewController.xib in Resources */,
+				403C16351EDE31B600A37939 /* AgregarServicio.storyboard in Resources */,
+				403C16DB1EDE3B7B00A37939 /* TicketFooterView.xib in Resources */,
+				403C162B1EDE31B600A37939 /* RegisterViewController.xib in Resources */,
+				403C16171EDE31B600A37939 /* ProfilePersonalViewController.xib in Resources */,
+				403C15E71EDE31B600A37939 /* Home.storyboard in Resources */,
+				403C15251EDE315800A37939 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
+				403C15FB1EDE31B600A37939 /* PayTicketResultViewController.xib in Resources */,
+				403C15FF1EDE31B600A37939 /* PayTicketViewController.xib in Resources */,
+				403C162F1EDE31B600A37939 /* SMSValidationViewController.xib in Resources */,
+				403C16DF1EDE3B7B00A37939 /* TicketHeaderView.xib in Resources */,
+				403C167B1EDE31B600A37939 /* SupportViewController.xib in Resources */,
 				406EEA251DFB0D88005D2E87 /* Assets.xcassets in Resources */,
-				4035896A1ED396D400B8B692 /* PMReciboCell.xib in Resources */,
-				403589641ED3595200B8B692 /* PMRecibosView.xib in Resources */,
-				40B2E3FA1E0DDE1D003CBAC3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
-				4FB03A3F1EC5040A00AF82AE /* TerceroView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1032,42 +1177,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408CB6E71E54E73D00D308D3 /* SanFranciscoDisplay-Black.ttf in Resources */,
+				403C16141EDE31B600A37939 /* ProfileMenuViewController.xib in Resources */,
+				403C15F21EDE31B600A37939 /* Notify.storyboard in Resources */,
+				403C16D41EDE3B7B00A37939 /* CredicardTableViewCell.xib in Resources */,
+				403C160C1EDE31B600A37939 /* CreditCardDetailViewController.xib in Resources */,
+				403C168D1EDE370A00A37939 /* SanFranciscoDisplay-Black.ttf in Resources */,
+				403C16931EDE370A00A37939 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
+				403C16281EDE31B600A37939 /* CreatePinViewController.xib in Resources */,
+				403C16041EDE31B600A37939 /* PinViewController.xib in Resources */,
+				403C15F61EDE31B600A37939 /* ServiceConfiguration.storyboard in Resources */,
+				403C163E1EDE31B600A37939 /* SuministroView.xib in Resources */,
+				403C164C1EDE31B600A37939 /* ListadoView.xib in Resources */,
 				408CB6E81E54E73D00D308D3 /* LaunchScreen.storyboard in Resources */,
-				4FC042761EC3D38700B93031 /* ListadoView.xib in Resources */,
-				4FA0AF751EB3A59700400BCC /* ServiceTableViewCell.xib in Resources */,
-				408CB6E91E54E73D00D308D3 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
-				408CB6EA1E54E73D00D308D3 /* Main.storyboard in Resources */,
-				408CB6EC1E54E73D00D308D3 /* Messages.storyboard in Resources */,
-				4FB03A4D1EC6126C00AF82AE /* TextField.xib in Resources */,
-				408CB6EE1E54E73D00D308D3 /* PMItemCard.xib in Resources */,
-				408CB6EF1E54E73D00D308D3 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
-				408CB6F01E54E73D00D308D3 /* Notify.storyboard in Resources */,
-				4FD00CDC1EC3862700B37A09 /* SuministroView.xib in Resources */,
+				403C16081EDE31B600A37939 /* ResultViewController.xib in Resources */,
+				403C164A1EDE31B600A37939 /* FavoritoTableViewCell.xib in Resources */,
+				403C165A1EDE31B600A37939 /* ServiceTableViewCell.xib in Resources */,
+				403C166C1EDE31B600A37939 /* PMReciboCell.xib in Resources */,
+				403C168F1EDE370A00A37939 /* SanFranciscoDisplay-Heavy.ttf in Resources */,
+				403C16341EDE31B600A37939 /* TermAndConditionViewController.xib in Resources */,
+				403C16AC1EDE371A00A37939 /* Messages.storyboard in Resources */,
+				403C161C1EDE31B600A37939 /* ProfilePhotoViewController.xib in Resources */,
+				403C16B01EDE371A00A37939 /* PMChangePinViewController.xib in Resources */,
+				403C15E41EDE31B500A37939 /* Main.storyboard in Resources */,
+				403C16AB1EDE371A00A37939 /* ErrorView.xib in Resources */,
 				40330A951ED738DE0086074A /* Default@2x.png in Resources */,
-				408CB6F11E54E73D00D308D3 /* Home.storyboard in Resources */,
-				408CB6F21E54E73D00D308D3 /* SanFranciscoDisplay-Thin.ttf in Resources */,
-				4FD3CA081EC9FFEF003DABAC /* ListaServicios.xib in Resources */,
-				408CB6F31E54E73D00D308D3 /* ServiceConfiguration.storyboard in Resources */,
-				408CB6F41E54E73D00D308D3 /* SanFranciscoDisplay-Semibold.ttf in Resources */,
-				408CB6F51E54E73D00D308D3 /* SanFranciscoDisplay-Bold.ttf in Resources */,
-				4FD3CA0F1ECA6E16003DABAC /* ErrorView.xib in Resources */,
-				403C13651EDC8FD600A37939 /* PinView.xib in Resources */,
-				4F983A4B1EB2AB0800C81CB0 /* EntidadTableViewCell.xib in Resources */,
-				408CB6F61E54E73D00D308D3 /* SanFranciscoDisplay-Regular.ttf in Resources */,
-				4FF4309D1EC6915500E4E16D /* DetalleView.xib in Resources */,
+				403C16B71EDE371A00A37939 /* PMSecurityViewController.xib in Resources */,
+				403C16C31EDE39B900A37939 /* PMRecibosView.xib in Resources */,
 				4F43D88E1EA699CE00403292 /* Development.plist in Resources */,
+				403C16241EDE31B600A37939 /* CreatePinSuccessViewController.xib in Resources */,
+				403C16421EDE31B600A37939 /* DetalleView.xib in Resources */,
+				403C16681EDE31B600A37939 /* TerceroView.xib in Resources */,
+				403C16AA1EDE371A00A37939 /* BarView.xib in Resources */,
+				403C16BD1EDE371A00A37939 /* TextField.xib in Resources */,
+				403C16521EDE31B600A37939 /* ListaServicios.xib in Resources */,
+				403C165E1EDE31B600A37939 /* EntidadTableViewCell.xib in Resources */,
+				403C16741EDE31B600A37939 /* AssistantViewController.xib in Resources */,
+				403C16201EDE31B600A37939 /* BienvenidoViewController.xib in Resources */,
+				403C16921EDE370A00A37939 /* SanFranciscoDisplay-Regular.ttf in Resources */,
+				403C16911EDE370A00A37939 /* SanFranciscoDisplay-Medium.ttf in Resources */,
+				403C16D81EDE3B7B00A37939 /* QuestionsTableViewCell.xib in Resources */,
+				403C16B51EDE371A00A37939 /* PinView.xib in Resources */,
+				403C168E1EDE370A00A37939 /* SanFranciscoDisplay-Bold.ttf in Resources */,
+				403C16781EDE31B600A37939 /* DetailViewController.xib in Resources */,
+				403C16E41EDE3B7B00A37939 /* TicketTableViewCell.xib in Resources */,
 				408CB6F71E54E73D00D308D3 /* StaticData.json in Resources */,
-				4FB03A3C1EC4F8E700AF82AE /* AgregarServicio.storyboard in Resources */,
 				40330A941ED738DE0086074A /* Default-568h@2x.png in Resources */,
-				408CB6F81E54E73D00D308D3 /* SanFranciscoDisplay-Light.ttf in Resources */,
+				403C16901EDE370A00A37939 /* SanFranciscoDisplay-Light.ttf in Resources */,
+				403C16101EDE31B600A37939 /* CreditCardViewController.xib in Resources */,
+				403C16361EDE31B600A37939 /* AgregarServicio.storyboard in Resources */,
+				403C162C1EDE31B600A37939 /* RegisterViewController.xib in Resources */,
+				403C16DC1EDE3B7B00A37939 /* TicketFooterView.xib in Resources */,
+				403C16181EDE31B600A37939 /* ProfilePersonalViewController.xib in Resources */,
+				403C15E81EDE31B600A37939 /* Home.storyboard in Resources */,
+				403C16951EDE370A00A37939 /* SanFranciscoDisplay-Ultralight.ttf in Resources */,
+				403C15FC1EDE31B600A37939 /* PayTicketResultViewController.xib in Resources */,
+				403C16001EDE31B600A37939 /* PayTicketViewController.xib in Resources */,
+				403C16941EDE370A00A37939 /* SanFranciscoDisplay-Thin.ttf in Resources */,
+				403C16301EDE31B600A37939 /* SMSValidationViewController.xib in Resources */,
+				403C16E01EDE3B7B00A37939 /* TicketHeaderView.xib in Resources */,
+				403C167C1EDE31B600A37939 /* SupportViewController.xib in Resources */,
 				408CB6F91E54E73D00D308D3 /* Assets.xcassets in Resources */,
-				4FA8EF9F1EAF982D00A596EA /* FavoritoTableViewCell.xib in Resources */,
-				408CB6FA1E54E73D00D308D3 /* SanFranciscoDisplay-Medium.ttf in Resources */,
-				4035896B1ED396D400B8B692 /* PMReciboCell.xib in Resources */,
-				403589651ED3595200B8B692 /* PMRecibosView.xib in Resources */,
-				4FA0E30A1EA56828008F5ED9 /* BarView.xib in Resources */,
-				4FB03A401EC5040A00AF82AE /* TerceroView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1197,90 +1366,113 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A420201E24073D00D74D22 /* PayTableViewCell.swift in Sources */,
-				4FCFBE021E2838D90029EE40 /* PagoAutomaticoViewController.swift in Sources */,
-				4FB03A421EC5048C00AF82AE /* PMTerceroView.swift in Sources */,
+				403C16291EDE31B600A37939 /* RegisterViewController.swift in Sources */,
 				4062C1461E3B98D500617265 /* RSA.m in Sources */,
-				40A420221E25279600D74D22 /* DetalleReciboViewController.swift in Sources */,
-				4F973ED81ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */,
-				4FB531C11E205DC200EABE52 /* LaunchViewController.swift in Sources */,
 				409889E81EC939E50028FC67 /* Router.swift in Sources */,
+				403C169B1EDE371A00A37939 /* PMChangePinViewController.swift in Sources */,
+				403C164D1EDE31B600A37939 /* PMListadoFavoritosViewController.swift in Sources */,
 				40293EFB1E40DFEE007EF98D /* Order.swift in Sources */,
-				403377381E03D41900261759 /* PMNivelUnoViewController.swift in Sources */,
+				403C15DF1EDE31B500A37939 /* ListaPagosViewController.swift in Sources */,
+				403C16531EDE31B600A37939 /* PMListaServiciosView.swift in Sources */,
 				405E0ABC1E1B36A5008CF767 /* Card.swift in Sources */,
+				403C16A41EDE371A00A37939 /* PMSpinnerView.swift in Sources */,
+				403C15E91EDE31B600A37939 /* HomeViewController.swift in Sources */,
 				4F638D731E1FF48400ECE514 /* NotificacionHome.swift in Sources */,
-				40CF1E491E068AAF0072CB29 /* PMSuministroViewController.swift in Sources */,
+				403C16191EDE31B600A37939 /* ProfilePhotoViewController.swift in Sources */,
 				4F28D7AF1EB8EC5500703CB4 /* ApiManager.swift in Sources */,
-				4FF4309F1EC6916100E4E16D /* PMDetalleView.swift in Sources */,
+				403C16A61EDE371A00A37939 /* PMTitleStrip.swift in Sources */,
+				403C16DD1EDE3B7B00A37939 /* TicketHeaderView.swift in Sources */,
+				403C16A01EDE371A00A37939 /* PMPinView.swift in Sources */,
+				403C16151EDE31B600A37939 /* ProfilePersonalViewController.swift in Sources */,
+				403C164F1EDE31B600A37939 /* PMListadoView.swift in Sources */,
 				4088F8AB1E36628C00114BEE /* StaticData.swift in Sources */,
-				4F43D89F1EA7C34000403292 /* PMInfoView.swift in Sources */,
+				403C15F71EDE31B600A37939 /* ServiceConfigurationViewController.swift in Sources */,
+				403C16391EDE31B600A37939 /* PMSuministroView.swift in Sources */,
 				4001908B1E6495150080DDA4 /* Currency.swift in Sources */,
 				40180E621E026BE40098B8C4 /* PMNavigationViewController.swift in Sources */,
-				4FCFBE001E27DFD70029EE40 /* ServiceConfigurationViewController.swift in Sources */,
-				4033773C1E03D43A00261759 /* PMNivelTresViewController.swift in Sources */,
+				403C16251EDE31B600A37939 /* CreatePinViewController.swift in Sources */,
+				403C16471EDE31B600A37939 /* FavoritoTableViewCell.swift in Sources */,
+				403C15EB1EDE31B600A37939 /* LaunchViewController.swift in Sources */,
+				403C168B1EDE358900A37939 /* Util.swift in Sources */,
+				403C16431EDE31B600A37939 /* PMDetalleSuministroViewController.swift in Sources */,
+				403C16A81EDE371A00A37939 /* StoryboardMessages.swift in Sources */,
 				406EEA1E1DFB0D88005D2E87 /* AppDelegate.swift in Sources */,
-				4FA8EFA81EB0F7B700A596EA /* PMTitleStrip.swift in Sources */,
-				4FCC14C81EAE8E0900D6E7BC /* UIColor.swift in Sources */,
-				4FB51BD31EBBD31200712249 /* PMItemView.swift in Sources */,
-				407C03641E0B211200CD5D4C /* ServiceTableViewCell.swift in Sources */,
+				403C16451EDE31B600A37939 /* PMDetalleView.swift in Sources */,
+				403C16091EDE31B600A37939 /* CreditCardDetailViewController.swift in Sources */,
+				403C16551EDE31B600A37939 /* PMListaServiciosViewController.swift in Sources */,
+				403C16C51EDE3B0600A37939 /* ExtendedClass.swift in Sources */,
+				403C169A1EDE371A00A37939 /* PMCenterView.swift in Sources */,
 				40293EF91E40D2DE007EF98D /* Debt.swift in Sources */,
+				403C16631EDE31B600A37939 /* PMNivelUnoViewController.swift in Sources */,
 				405E0AB31E1A1D49008CF767 /* Enums.swift in Sources */,
+				403C15AD1EDE31B500A37939 /* AgendaTableViewCell.swift in Sources */,
+				403C15F91EDE31B600A37939 /* PayTicketResultViewController.swift in Sources */,
+				403C16751EDE31B600A37939 /* DetailViewController.swift in Sources */,
+				403C16891EDE358900A37939 /* CustomStyleFormater.swift in Sources */,
+				403C15F31EDE31B600A37939 /* PagoAutomaticoViewController.swift in Sources */,
+				403C15EF1EDE31B600A37939 /* NotificacionesViewController.swift in Sources */,
+				403C16311EDE31B600A37939 /* TermAndConditionViewController.swift in Sources */,
+				403C16E61EDE3C5C00A37939 /* PMStateView.swift in Sources */,
+				403C16571EDE31B600A37939 /* ServiceTableViewCell.swift in Sources */,
 				405D23121E157CEB006ED043 /* Constants.swift in Sources */,
-				407C03601E0B189C00CD5D4C /* PMDetalleSuministroViewController.swift in Sources */,
 				40A420131E203FF200D74D22 /* PMString.swift in Sources */,
-				4FCFBE061E28390E0029EE40 /* MostrarAgendaViewController.swift in Sources */,
-				4F18984B1E11BDD50060DD41 /* NotificacionTableViewCell.swift in Sources */,
-				407C03621E0B1C1000CD5D4C /* PMListaServiciosViewController.swift in Sources */,
-				407C036E1E0B30E100CD5D4C /* FavoritoTableViewCell.swift in Sources */,
-				4FCC14C51EAE8D1400D6E7BC /* UIButton.swift in Sources */,
-				407C03701E0B530600CD5D4C /* PMLabel.swift in Sources */,
+				403C16011EDE31B600A37939 /* PinViewController.swift in Sources */,
 				40293EFD1E40E2E3007EF98D /* Product.swift in Sources */,
+				403C16051EDE31B600A37939 /* ResultViewController.swift in Sources */,
 				405E0ABA1E1B04C0008CF767 /* Session.swift in Sources */,
 				4062C1481E3B994200617265 /* Security.swift in Sources */,
-				40463D281E19CF8000F663B0 /* PMItemCard.swift in Sources */,
-				40CF1E3F1E04B9620072CB29 /* PMHeaderView.swift in Sources */,
-				4FB51BE21EC1112200712249 /* PMSpinnerView.swift in Sources */,
-				4033773A1E03D42600261759 /* PMNivelDosViewController.swift in Sources */,
-				403C13621EDC86A200A37939 /* PMPinView.swift in Sources */,
-				4FCFBE041E2838F90029EE40 /* ConfiguracionNotificacionesViewController.swift in Sources */,
+				403C160D1EDE31B600A37939 /* CreditCardViewController.swift in Sources */,
+				403C165F1EDE31B600A37939 /* PMNivelDosViewController.swift in Sources */,
+				403C16691EDE31B600A37939 /* PMReciboCell.swift in Sources */,
+				403C169E1EDE371A00A37939 /* PMItemView.swift in Sources */,
+				403C15FD1EDE31B600A37939 /* PayTicketViewController.swift in Sources */,
 				405D230F1E157C94006ED043 /* PMStoryboard.swift in Sources */,
-				4FA0E3061EA5674C008F5ED9 /* PMBarView.swift in Sources */,
-				40A420241E2528F700D74D22 /* CardTableViewCell.swift in Sources */,
 				4F983A4D1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
-				40CF1E3D1E04AE010072CB29 /* EntidadTableViewCell.swift in Sources */,
-				404BBFBB1E2695D70050CA30 /* AgendaViewController.swift in Sources */,
 				4F28D7B21EB9271400703CB4 /* Favorito.swift in Sources */,
-				4FB03A491EC5FF7400AF82AE /* PMTextField.swift in Sources */,
+				403C169D1EDE371A00A37939 /* PMErrorView.swift in Sources */,
 				4FCC14CB1EAEB39300D6E7BC /* UIView.swift in Sources */,
+				403C16991EDE371A00A37939 /* PMBarView.swift in Sources */,
+				403C16D11EDE3B7B00A37939 /* CredicardTableViewCell.swift in Sources */,
+				403C16211EDE31B600A37939 /* CreatePinSuccessViewController.swift in Sources */,
+				403C161D1EDE31B600A37939 /* BienvenidoViewController.swift in Sources */,
+				403C15E51EDE31B600A37939 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				40B2E4031E0E5386003CBAC3 /* PMImage.swift in Sources */,
 				4062C1581E3BE9A800617265 /* Service.swift in Sources */,
 				40A4201D1E24046F00D74D22 /* Pay.swift in Sources */,
-				4FC042721EC3D37800B93031 /* PMListadoView.swift in Sources */,
+				403C16711EDE31B600A37939 /* AssistantViewController.swift in Sources */,
+				403C16371EDE31B600A37939 /* PMInfoView.swift in Sources */,
+				403C16D51EDE3B7B00A37939 /* QuestionsTableViewCell.swift in Sources */,
+				403C15DD1EDE31B500A37939 /* DetalleReciboViewController.swift in Sources */,
+				403C16A21EDE371A00A37939 /* PMSecurityViewController.swift in Sources */,
+				403C163F1EDE31B600A37939 /* NotificacionTableViewCell.swift in Sources */,
 				4FA8EFAD1EB0F8AC00A596EA /* Extras.swift in Sources */,
-				4F43D8991EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
-				4F5007751E1EB8E800B4EDD8 /* HomeViewController.swift in Sources */,
+				403C16111EDE31B600A37939 /* ProfileMenuViewController.swift in Sources */,
+				403C16C01EDE39B900A37939 /* PMRecibosView.swift in Sources */,
+				403C162D1EDE31B600A37939 /* SMSValidationViewController.swift in Sources */,
 				405E0ABE1E1C86AD008CF767 /* PMSizes.swift in Sources */,
-				40A4201B1E2403BC00D74D22 /* ListaPagosViewController.swift in Sources */,
-				4FB51BD71EBBE51200712249 /* PMCenterView.swift in Sources */,
-				4F1898451E11B8FB0060DD41 /* NotificacionesViewController.swift in Sources */,
-				4FD3CA0A1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
-				409889EB1ECABCBD0028FC67 /* PMErrorView.swift in Sources */,
+				403C169F1EDE371A00A37939 /* PMMessageViewController.swift in Sources */,
+				403C16611EDE31B600A37939 /* PMNivelTresViewController.swift in Sources */,
 				4F43D89C1EA7AB9900403292 /* EUITableViewController.swift in Sources */,
+				403C16791EDE31B600A37939 /* SupportViewController.swift in Sources */,
+				403C15AF1EDE31B500A37939 /* AgendaViewController.swift in Sources */,
+				403C15DB1EDE31B500A37939 /* CardTableViewCell.swift in Sources */,
+				403C16A71EDE371A00A37939 /* PMTriangleView.swift in Sources */,
 				400190981E64EC220080DDA4 /* UIViewController.swift in Sources */,
 				40180E601E021D370098B8C4 /* PMTabBarViewController.swift in Sources */,
 				40293EF71E405385007EF98D /* Calendar.swift in Sources */,
+				403C165B1EDE31B600A37939 /* EntidadTableViewCell.swift in Sources */,
+				403C16A51EDE371A00A37939 /* PMTextField.swift in Sources */,
+				403C15ED1EDE31B600A37939 /* MostrarAgendaViewController.swift in Sources */,
+				403C15E11EDE31B500A37939 /* PayTableViewCell.swift in Sources */,
+				403C16651EDE31B600A37939 /* PMTerceroView.swift in Sources */,
+				403C16E11EDE3B7B00A37939 /* TicketTableViewCell.swift in Sources */,
 				4F1898491E11BB240060DD41 /* Notificacion.swift in Sources */,
-				403589621ED3595200B8B692 /* PMRecibosView.swift in Sources */,
-				4FB51BD01EBB7F4D00712249 /* PMStateView.swift in Sources */,
-				4F973EDB1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */,
+				403C16D91EDE3B7B00A37939 /* TicketFooterView.swift in Sources */,
 				4FB51BDF1EC0C49400712249 /* PMFont.swift in Sources */,
+				403C163B1EDE31B600A37939 /* PMSuministroViewController.swift in Sources */,
 				4F43D8BE1EAA52F500403292 /* EProtocols.swift in Sources */,
-				4FC0426E1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
 				4033773E1E03D44800261759 /* PMViewController.swift in Sources */,
-				403589681ED396D400B8B692 /* PMReciboCell.swift in Sources */,
 				40CF1E471E0680090072CB29 /* PMColors.swift in Sources */,
-				40CF1E4B1E068D4C0072CB29 /* PMTriangleView.swift in Sources */,
-				40F40C651E26A5A70076C145 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1288,90 +1480,109 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408CB6981E54E73D00D308D3 /* PayTableViewCell.swift in Sources */,
-				408CB6991E54E73D00D308D3 /* PagoAutomaticoViewController.swift in Sources */,
-				4FB03A431EC5048C00AF82AE /* PMTerceroView.swift in Sources */,
+				403C162A1EDE31B600A37939 /* RegisterViewController.swift in Sources */,
 				408CB69B1E54E73D00D308D3 /* RSA.m in Sources */,
-				408CB69C1E54E73D00D308D3 /* DetalleReciboViewController.swift in Sources */,
-				4F973ED91ECB66D6003D3CAF /* PMMessageViewController.swift in Sources */,
-				408CB69D1E54E73D00D308D3 /* LaunchViewController.swift in Sources */,
 				4FD3CA051EC9F731003DABAC /* Router.swift in Sources */,
+				403C16AF1EDE371A00A37939 /* PMChangePinViewController.swift in Sources */,
+				403C164E1EDE31B600A37939 /* PMListadoFavoritosViewController.swift in Sources */,
 				408CB69E1E54E73D00D308D3 /* Order.swift in Sources */,
-				408CB69F1E54E73D00D308D3 /* PMNivelUnoViewController.swift in Sources */,
+				403C15E01EDE31B500A37939 /* ListaPagosViewController.swift in Sources */,
+				403C16541EDE31B600A37939 /* PMListaServiciosView.swift in Sources */,
 				408CB6A01E54E73D00D308D3 /* Card.swift in Sources */,
+				403C16B81EDE371A00A37939 /* PMSpinnerView.swift in Sources */,
+				403C15EA1EDE31B600A37939 /* HomeViewController.swift in Sources */,
 				408CB6A11E54E73D00D308D3 /* NotificacionHome.swift in Sources */,
-				408CB6A21E54E73D00D308D3 /* PMSuministroViewController.swift in Sources */,
+				403C161A1EDE31B600A37939 /* ProfilePhotoViewController.swift in Sources */,
 				4F28D7B01EB8EC5500703CB4 /* ApiManager.swift in Sources */,
-				4FF430A01EC6916100E4E16D /* PMDetalleView.swift in Sources */,
-				4F43D8A01EA7C34000403292 /* PMInfoView.swift in Sources */,
+				403C16BA1EDE371A00A37939 /* PMTitleStrip.swift in Sources */,
+				403C16DE1EDE3B7B00A37939 /* TicketHeaderView.swift in Sources */,
+				403C16B41EDE371A00A37939 /* PMPinView.swift in Sources */,
+				403C16161EDE31B600A37939 /* ProfilePersonalViewController.swift in Sources */,
+				403C16501EDE31B600A37939 /* PMListadoView.swift in Sources */,
 				408CB6A71E54E73D00D308D3 /* StaticData.swift in Sources */,
+				403C15F81EDE31B600A37939 /* ServiceConfigurationViewController.swift in Sources */,
+				403C163A1EDE31B600A37939 /* PMSuministroView.swift in Sources */,
 				4001908C1E6495150080DDA4 /* Currency.swift in Sources */,
 				408CB6A81E54E73D00D308D3 /* PMNavigationViewController.swift in Sources */,
-				408CB6A91E54E73D00D308D3 /* ServiceConfigurationViewController.swift in Sources */,
-				408CB6AA1E54E73D00D308D3 /* PMNivelTresViewController.swift in Sources */,
+				403C16261EDE31B600A37939 /* CreatePinViewController.swift in Sources */,
+				403C16481EDE31B600A37939 /* FavoritoTableViewCell.swift in Sources */,
+				403C15EC1EDE31B600A37939 /* LaunchViewController.swift in Sources */,
+				403C168C1EDE358900A37939 /* Util.swift in Sources */,
+				403C16441EDE31B600A37939 /* PMDetalleSuministroViewController.swift in Sources */,
+				403C16BC1EDE371A00A37939 /* StoryboardMessages.swift in Sources */,
 				408CB6AB1E54E73D00D308D3 /* AppDelegate.swift in Sources */,
-				4FA8EFA91EB0F7B700A596EA /* PMTitleStrip.swift in Sources */,
-				4FCC14C91EAE8E0900D6E7BC /* UIColor.swift in Sources */,
-				4FB51BD41EBBD31200712249 /* PMItemView.swift in Sources */,
-				408CB6AD1E54E73D00D308D3 /* ServiceTableViewCell.swift in Sources */,
+				403C16461EDE31B600A37939 /* PMDetalleView.swift in Sources */,
+				403C160A1EDE31B600A37939 /* CreditCardDetailViewController.swift in Sources */,
+				403C16561EDE31B600A37939 /* PMListaServiciosViewController.swift in Sources */,
+				403C16C61EDE3B0600A37939 /* ExtendedClass.swift in Sources */,
+				403C16AE1EDE371A00A37939 /* PMCenterView.swift in Sources */,
 				408CB6AE1E54E73D00D308D3 /* Debt.swift in Sources */,
+				403C16641EDE31B600A37939 /* PMNivelUnoViewController.swift in Sources */,
 				408CB6AF1E54E73D00D308D3 /* Enums.swift in Sources */,
+				403C15AE1EDE31B500A37939 /* AgendaTableViewCell.swift in Sources */,
+				403C15FA1EDE31B600A37939 /* PayTicketResultViewController.swift in Sources */,
+				403C16761EDE31B600A37939 /* DetailViewController.swift in Sources */,
+				403C168A1EDE358900A37939 /* CustomStyleFormater.swift in Sources */,
+				403C15F01EDE31B600A37939 /* NotificacionesViewController.swift in Sources */,
+				403C16321EDE31B600A37939 /* TermAndConditionViewController.swift in Sources */,
+				403C16581EDE31B600A37939 /* ServiceTableViewCell.swift in Sources */,
 				408CB6B21E54E73D00D308D3 /* Constants.swift in Sources */,
-				408CB6B51E54E73D00D308D3 /* PMDetalleSuministroViewController.swift in Sources */,
 				408CB6B71E54E73D00D308D3 /* PMString.swift in Sources */,
-				408CB6B81E54E73D00D308D3 /* MostrarAgendaViewController.swift in Sources */,
-				408CB6BA1E54E73D00D308D3 /* NotificacionTableViewCell.swift in Sources */,
-				408CB6BB1E54E73D00D308D3 /* PMListaServiciosViewController.swift in Sources */,
-				4FCC14C61EAE8D1400D6E7BC /* UIButton.swift in Sources */,
-				408CB6BC1E54E73D00D308D3 /* FavoritoTableViewCell.swift in Sources */,
-				408CB6BD1E54E73D00D308D3 /* PMLabel.swift in Sources */,
+				403C16021EDE31B600A37939 /* PinViewController.swift in Sources */,
 				408CB6BE1E54E73D00D308D3 /* Product.swift in Sources */,
+				403C16061EDE31B600A37939 /* ResultViewController.swift in Sources */,
 				408CB6BF1E54E73D00D308D3 /* Session.swift in Sources */,
 				408CB6C01E54E73D00D308D3 /* Security.swift in Sources */,
-				408CB6C11E54E73D00D308D3 /* PMItemCard.swift in Sources */,
-				4FB51BE31EC1112200712249 /* PMSpinnerView.swift in Sources */,
-				408CB6C21E54E73D00D308D3 /* PMHeaderView.swift in Sources */,
-				408CB6C31E54E73D00D308D3 /* PMNivelDosViewController.swift in Sources */,
-				403C13641EDC8FD600A37939 /* PMPinView.swift in Sources */,
-				408CB6C41E54E73D00D308D3 /* ConfiguracionNotificacionesViewController.swift in Sources */,
+				403C160E1EDE31B600A37939 /* CreditCardViewController.swift in Sources */,
+				403C16601EDE31B600A37939 /* PMNivelDosViewController.swift in Sources */,
+				403C166A1EDE31B600A37939 /* PMReciboCell.swift in Sources */,
+				403C16B21EDE371A00A37939 /* PMItemView.swift in Sources */,
+				403C15FE1EDE31B600A37939 /* PayTicketViewController.swift in Sources */,
 				408CB6C51E54E73D00D308D3 /* PMStoryboard.swift in Sources */,
-				4FA0E3071EA5674C008F5ED9 /* PMBarView.swift in Sources */,
+				403C16E71EDE3C5C00A37939 /* PMStateView.swift in Sources */,
 				4F983A4E1EB2AE0300C81CB0 /* UITableViewCell.swift in Sources */,
-				408CB6C71E54E73D00D308D3 /* CardTableViewCell.swift in Sources */,
-				408CB6C81E54E73D00D308D3 /* EntidadTableViewCell.swift in Sources */,
-				408CB6C91E54E73D00D308D3 /* AgendaViewController.swift in Sources */,
 				4F28D7B31EB9271400703CB4 /* Favorito.swift in Sources */,
-				4FB03A4A1EC5FF7400AF82AE /* PMTextField.swift in Sources */,
+				403C16B11EDE371A00A37939 /* PMErrorView.swift in Sources */,
 				4FCC14CC1EAEB39300D6E7BC /* UIView.swift in Sources */,
+				403C16AD1EDE371A00A37939 /* PMBarView.swift in Sources */,
+				403C16D21EDE3B7B00A37939 /* CredicardTableViewCell.swift in Sources */,
+				403C16221EDE31B600A37939 /* CreatePinSuccessViewController.swift in Sources */,
+				403C161E1EDE31B600A37939 /* BienvenidoViewController.swift in Sources */,
+				403C15E61EDE31B600A37939 /* ConfiguracionNotificacionesViewController.swift in Sources */,
 				408CB6CC1E54E73D00D308D3 /* PMImage.swift in Sources */,
 				408CB6CD1E54E73D00D308D3 /* Service.swift in Sources */,
-				4FC042731EC3D37800B93031 /* PMListadoView.swift in Sources */,
 				4FA8EFAE1EB0F8AC00A596EA /* Extras.swift in Sources */,
-				4F43D89A1EA7A88C00403292 /* PMListadoFavoritosViewController.swift in Sources */,
+				403C16721EDE31B600A37939 /* AssistantViewController.swift in Sources */,
+				403C16381EDE31B600A37939 /* PMInfoView.swift in Sources */,
+				403C16D61EDE3B7B00A37939 /* QuestionsTableViewCell.swift in Sources */,
+				403C16B61EDE371A00A37939 /* PMSecurityViewController.swift in Sources */,
+				403C16401EDE31B600A37939 /* NotificacionTableViewCell.swift in Sources */,
 				408CB6CE1E54E73D00D308D3 /* Pay.swift in Sources */,
-				408CB6D01E54E73D00D308D3 /* HomeViewController.swift in Sources */,
+				403C16121EDE31B600A37939 /* ProfileMenuViewController.swift in Sources */,
+				403C16C11EDE39B900A37939 /* PMRecibosView.swift in Sources */,
+				403C162E1EDE31B600A37939 /* SMSValidationViewController.swift in Sources */,
 				408CB6D11E54E73D00D308D3 /* PMSizes.swift in Sources */,
-				4FB51BD81EBBE51200712249 /* PMCenterView.swift in Sources */,
-				408CB6D21E54E73D00D308D3 /* ListaPagosViewController.swift in Sources */,
-				408CB6D41E54E73D00D308D3 /* NotificacionesViewController.swift in Sources */,
-				4FD3CA0B1ECA0267003DABAC /* PMListaServiciosView.swift in Sources */,
-				409889EC1ECABCBD0028FC67 /* PMErrorView.swift in Sources */,
+				403C16B31EDE371A00A37939 /* PMMessageViewController.swift in Sources */,
+				403C16621EDE31B600A37939 /* PMNivelTresViewController.swift in Sources */,
 				4F43D89D1EA7AB9900403292 /* EUITableViewController.swift in Sources */,
+				403C167A1EDE31B600A37939 /* SupportViewController.swift in Sources */,
+				403C15B01EDE31B500A37939 /* AgendaViewController.swift in Sources */,
+				403C16BB1EDE371A00A37939 /* PMTriangleView.swift in Sources */,
 				400190991E64EC220080DDA4 /* UIViewController.swift in Sources */,
 				408CB6D51E54E73D00D308D3 /* PMTabBarViewController.swift in Sources */,
-				408CB6D61E54E73D00D308D3 /* Calendar.swift in Sources */,
-				4FB51BD11EBB7F4D00712249 /* PMStateView.swift in Sources */,
-				403589631ED3595200B8B692 /* PMRecibosView.swift in Sources */,
+				403C165C1EDE31B600A37939 /* EntidadTableViewCell.swift in Sources */,
+				403C16B91EDE371A00A37939 /* PMTextField.swift in Sources */,
+				403C15EE1EDE31B600A37939 /* MostrarAgendaViewController.swift in Sources */,
+				403C15E21EDE31B500A37939 /* PayTableViewCell.swift in Sources */,
+				403C16661EDE31B600A37939 /* PMTerceroView.swift in Sources */,
+				403C16E21EDE3B7B00A37939 /* TicketTableViewCell.swift in Sources */,
 				408CB6D81E54E73D00D308D3 /* Notificacion.swift in Sources */,
-				4F973EDC1ECB6C0A003D3CAF /* StoryboardMessages.swift in Sources */,
+				403C16DA1EDE3B7B00A37939 /* TicketFooterView.swift in Sources */,
 				4FB51BE01EC0C49400712249 /* PMFont.swift in Sources */,
+				403C163C1EDE31B600A37939 /* PMSuministroViewController.swift in Sources */,
 				4F43D8BF1EAA602300403292 /* EProtocols.swift in Sources */,
-				4FC0426F1EC3AA9500B93031 /* PMSuministroView.swift in Sources */,
 				408CB6DF1E54E73D00D308D3 /* PMViewController.swift in Sources */,
-				403589691ED396D400B8B692 /* PMReciboCell.swift in Sources */,
 				408CB6E01E54E73D00D308D3 /* PMColors.swift in Sources */,
-				408CB6E11E54E73D00D308D3 /* PMTriangleView.swift in Sources */,
-				408CB6E31E54E73D00D308D3 /* AgendaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CreditCardForm-CreditCardForm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CreditCardForm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FSCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,7 +64,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Stripe-Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZoomTransitioning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,22 +87,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>359DD0D331970CCCDD8834D870F8633B</key>
+		<key>0CA27E1E64D3BA116F1A54B43E1A3810</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5457B76263EAE6F0A0802A4F4BE4FF00</key>
+		<key>20669F46A7981335563573045BEA65E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>71F7F60E5D0F174E80BDFFBC203A6D1D</key>
+		<key>6284D80CF30F955EBAA93BEFFA0134BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>78DAB06AEA8660882A17D96558314C24</key>
+		<key>6DDC0665C7C12A3B120BD15BD72D1D98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CFCDDE55EB7C8D3CC87FE179D0DBC88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,22 +117,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8E95EB60D2626E34A45484E191D28C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97E86322BDDC755BA6FFC6FE72AEC885</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADF5F426426F0878AB9173B1587D5DBD</key>
+		<key>A079CB586D71AF74F2469B5CB06F719F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBF1964B8E96D94467FA5884D5D0E9D9</key>
+		<key>B25878823B6D1D8E2FDF0B0FF0987F9B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BD22B0DEFA6638FACEFCD19FECA15830</key>
+		<key>C224BE304A8DBA02274DEAC0BD95A5BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C519CFDF00D93E10734160CD25CA768B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,7 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA498C757E970F8753312892173000AF</key>
+		<key>E11429A74B00BBFDBBBD53E910EB8ED7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF402F81D772843D7E04CC45538A498B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
