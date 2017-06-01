@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CreditCardForm-CreditCardForm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CreditCardForm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FSCalendar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +35,16 @@
 			<false/>
 		</dict>
 		<key>Pods-Pay-me.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,7 +64,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Stripe-Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZoomTransitioning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,17 +87,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4E76AFE74E82D94593EE883D3F1C4909</key>
+		<key>0CA27E1E64D3BA116F1A54B43E1A3810</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>646232609BE1D98A7606B955EF07D7C6</key>
+		<key>20669F46A7981335563573045BEA65E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7659E838796925DC049A80A0296FB35F</key>
+		<key>6284D80CF30F955EBAA93BEFFA0134BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DDC0665C7C12A3B120BD15BD72D1D98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CFCDDE55EB7C8D3CC87FE179D0DBC88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +117,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8E95EB60D2626E34A45484E191D28C78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97E86322BDDC755BA6FFC6FE72AEC885</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF2A5366C222793F3DCE930B1954A12B</key>
+		<key>A079CB586D71AF74F2469B5CB06F719F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3F23FF80F35128252005101FFE8C645</key>
+		<key>B25878823B6D1D8E2FDF0B0FF0987F9B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C224BE304A8DBA02274DEAC0BD95A5BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C519CFDF00D93E10734160CD25CA768B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,7 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA77CE9803E54F864BFA9B412672B229</key>
+		<key>E11429A74B00BBFDBBBD53E910EB8ED7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF402F81D772843D7E04CC45538A498B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

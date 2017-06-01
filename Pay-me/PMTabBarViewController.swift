@@ -12,7 +12,7 @@ import UIKit
 class PMTabBarController: UITabBarController {
     
     let controlerIniTab1 = UIStoryboard.flowAgregarServicio() // VivoVC(nibName: "VivoVC", bundle: nil)
-    let controlerIniTab2 = UIViewController()// VodVC(nibName: "VodVC", bundle: nil)
+    let controlerIniTab2 = PMRecibosView()// VodVC(nibName: "VodVC", bundle: nil)
     let controlerIniTab3 = UIViewController()// NpvrVC(nibName: "NpvrVC", bundle: nil)
     let controlerIniTab4 = UIViewController()// NpvrVC(nibName: "NpvrVC", bundle: nil)
     let controlerIniTab5 = UIViewController()// NpvrVC(nibName: "NpvrVC", bundle: nil)

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Semibold.ttf">
+            <string>SanFranciscoDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PMListadoView" customModule="Pay_me" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNL-RM-H7p" customClass="PMTitleStrip" customModule="Pay_me" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="15X-Ma-L0w"/>
+                        <constraint firstAttribute="width" constant="320" id="vzD-tX-KZa"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B5j-Im-sWD">
+                    <rect key="frame" x="0.0" y="35" width="320" height="484"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="AYh-bs-wf8"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="TtH-ay-jRZ"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7m-5N-0gB">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="0.46274509800000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="HGp-Fl-317"/>
+                        <constraint firstAttribute="width" constant="320" id="Nug-ZO-VbO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SanFranciscoDisplay-Semibold" family="San Francisco Display" pointSize="15"/>
+                    <state key="normal" title="    Agregar otros servicios" image="icono_agregar-white">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapAdd" destination="iN0-l3-epB" eventType="touchUpInside" id="jks-n1-ZmF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="W7m-5N-0gB" secondAttribute="bottom" id="8Q8-FO-CN3"/>
+                <constraint firstAttribute="trailing" secondItem="W7m-5N-0gB" secondAttribute="trailing" id="Fxw-J3-Lvm"/>
+                <constraint firstItem="MNL-RM-H7p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ksm-0B-40d"/>
+                <constraint firstItem="B5j-Im-sWD" firstAttribute="top" secondItem="MNL-RM-H7p" secondAttribute="bottom" id="N2U-mk-aOO"/>
+                <constraint firstItem="W7m-5N-0gB" firstAttribute="top" secondItem="B5j-Im-sWD" secondAttribute="bottom" id="QRa-Te-eFC"/>
+                <constraint firstItem="MNL-RM-H7p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ygp-Oi-XU4"/>
+                <constraint firstAttribute="trailing" secondItem="B5j-Im-sWD" secondAttribute="trailing" id="d6t-Sc-3pt"/>
+                <constraint firstItem="W7m-5N-0gB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eND-vJ-xgC"/>
+                <constraint firstAttribute="trailing" secondItem="MNL-RM-H7p" secondAttribute="trailing" id="i9i-kT-mz3"/>
+                <constraint firstItem="B5j-Im-sWD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lH0-OC-mDt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainButton" destination="W7m-5N-0gB" id="6HA-qM-M3e"/>
+                <outlet property="tableView" destination="B5j-Im-sWD" id="Sth-IV-Zjw"/>
+                <outlet property="titleStrip" destination="MNL-RM-H7p" id="Okl-xL-jrK"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icono_agregar-white" width="21" height="21"/>
+    </resources>
+</document>
